@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import HeaderClient from "./HeaderClient";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -55,35 +56,7 @@ export default function RootLayout({
       </head>
       <body style={{ fontFamily: "var(--font-outfit), sans-serif" }}>
         {/* Navigation Header */}
-        <header className="mainHeader">
-          <div className="headerContainer">
-            <a href="/" className="logoContainer">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img 
-                src="/favicon.png" 
-                alt="PromoRegistry Logo" 
-                width="32" 
-                height="32" 
-                style={{ borderRadius: "var(--radius-sm)", objectFit: "contain" }} 
-              />
-              <span className="logoText">
-                Promo<span style={{ color: "var(--primary-blue)" }}>Registry</span>
-              </span>
-            </a>
-
-            <nav className="navLinks">
-              <a href="/" className="navLinkItem">Home</a>
-              <a href="/#stores" className="navLinkItem">All Stores</a>
-              <a href="/#coupons" className="navLinkItem">Active Deals</a>
-              <a href="/about" className="navLinkItem">About Us</a>
-              <a href="/contact" className="navLinkItem">Contact Us</a>
-            </nav>
-
-            <div className="actionsArea">
-              <a href="/#stores" className="ctaButton">Browse Brands</a>
-            </div>
-          </div>
-        </header>
+        <HeaderClient />
 
         {/* Main Content */}
         <main style={{ flex: 1, paddingBottom: "60px" }}>
