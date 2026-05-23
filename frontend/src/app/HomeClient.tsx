@@ -113,12 +113,12 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       {/* Hero Search Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <span className={styles.heroBadge}>✨ Curated & verified by real humans • Live updates</span>
+          <span className={styles.heroBadge}>🔥 Trusted by 10,000+ smart shoppers every month</span>
           <h1 className={styles.heroTitle}>
-            Discounts you&apos;ll <span style={{ fontStyle: "italic", fontWeight: 700 }}>actually</span> use. Codes that <span className={styles.gradientText}>actually work.</span>
+            Stop paying full price. <span className={styles.gradientText}>Start saving today.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Access a hand-selected collection of 100% working discount promo codes and coupon deals from the world&apos;s leading brands. No clickbait, no spam.
+            We test every single code before adding it here. If it&apos;s on PromoRegistry, it works — guaranteed. No expired junk, no clickbait traps.
           </p>
 
           {/* Premium Search Bar */}
