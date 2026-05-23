@@ -477,7 +477,7 @@ Do not include any markdown syntax like \`\`\`json or \`\`\`. Return ONLY the ra
                   <span>💻 Terminal Console Output</span>
                   <span style={{ fontSize: "0.75rem", color: "#64748b" }}>Real-time sync</span>
                 </h4>
-                <div style={{ display: "flex", flexDirection: "column", gap: "8px", maxH: "200px", overflowY: "auto" }}>
+                <div style={{ display: "flex", flexDirection: "column", gap: "8px", maxHeight: "200px", overflowY: "auto" }}>
                   {log.map((line, idx) => (
                     <div key={idx} style={{ color: line.includes("❌") ? "#f87171" : line.includes("successfully") ? "#34d399" : "#e2e8f0" }}>
                       {line}
