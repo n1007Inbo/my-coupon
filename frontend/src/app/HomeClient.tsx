@@ -113,12 +113,12 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       {/* Hero Search Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <span className={styles.heroBadge}>🔥 PromoRegistry.com Verified Discounts</span>
+          <span className={styles.heroBadge}>✨ Curated & verified by real humans • Live updates</span>
           <h1 className={styles.heroTitle}>
-            Smart Shopping, <span className={styles.gradientText}>Better Savings</span>
+            Discounts you&apos;ll <span style={{ fontStyle: "italic", fontWeight: 700 }}>actually</span> use. Codes that <span className={styles.gradientText}>actually work.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            Access hundreds of 100% working discount promo codes and coupon deals from the world&apos;s leading brands on PromoRegistry.
+            Access a hand-selected collection of 100% working discount promo codes and coupon deals from the world&apos;s leading brands. No clickbait, no spam.
           </p>
 
           {/* Premium Search Bar */}
