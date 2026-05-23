@@ -1,0 +1,614 @@
+.mainContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Hero Section */
+.heroSection {
+  padding: 80px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.heroBadge {
+  display: inline-block;
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue-hover);
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
+  animation: fadeIn 0.8s ease;
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.04em;
+  margin-bottom: 20px;
+}
+
+.gradientText {
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-green));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 40px;
+  font-weight: 400;
+  max-width: 600px;
+}
+
+/* Search Bar Wrapper */
+.searchBarWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 8px 12px 8px 20px;
+  box-shadow: var(--shadow-md), 0 10px 30px -10px rgba(15, 23, 42, 0.04);
+  transition: all var(--transition-normal);
+}
+
+.searchBarWrapper:focus-within {
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-glow), var(--shadow-lg), 0 10px 30px -10px rgba(2, 132, 199, 0.12);
+  transform: translateY(-1px);
+}
+
+.searchIcon {
+  color: var(--text-tertiary);
+  margin-right: 12px;
+  transition: color var(--transition-fast);
+}
+
+.searchBarWrapper:focus-within .searchIcon {
+  color: var(--primary-blue);
+}
+
+.searchInput {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  font-family: var(--font-outfit), sans-serif;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  background: transparent;
+  padding: 8px 0;
+  width: 100%;
+}
+
+.searchInput::placeholder {
+  color: var(--text-tertiary);
+}
+
+.btnClearSearch {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.btnClearSearch:hover {
+  background-color: #e2e8f0;
+  color: var(--text-primary);
+}
+
+/* Content Layout Area */
+.contentLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding-bottom: 80px;
+}
+
+/* Brand Filters */
+.filterSection {
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.filterCapsules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-bottom: 8px;
+}
+
+.filterCapsule {
+  background-color: #ffffff;
+  color: var(--text-secondary);
+  border: 1px solid var(--border-light);
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.filterCapsule:hover {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  border-color: var(--border-focus);
+}
+
+.activeCapsule {
+  background-color: var(--primary-blue) !important;
+  color: #ffffff !important;
+  border-color: var(--primary-blue) !important;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25) !important;
+}
+
+/* Coupons Section Layout */
+.couponsSection {
+  width: 100%;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.couponCount {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--accent-green-hover);
+  background-color: var(--accent-green-light);
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(16, 185, 129, 0.15);
+}
+
+.couponsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 28px;
+}
+
+/* Empty State / No Results found */
+.noResults {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 60px 24px;
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  max-width: 580px;
+  margin: 40px auto 0 auto;
+}
+
+.noResults svg {
+  color: var(--text-tertiary);
+  margin-bottom: 20px;
+}
+
+.noResults h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 8px;
+}
+
+.noResults p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 24px;
+  max-width: 80%;
+}
+
+.btnResetFilters {
+  background-color: var(--primary-blue);
+  color: #ffffff;
+  border: none;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-outfit), sans-serif;
+}
+
+.btnResetFilters:hover {
+  background-color: var(--primary-blue-hover);
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+}
+
+.sectionSubtitle {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: -12px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+
+.storesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.storeCard {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 24px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+}
+
+.storeCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  border-color: var(--primary-blue);
+}
+
+.storeCardLogoWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  padding: 8px;
+  margin-bottom: 14px;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.02);
+  transition: all var(--transition-fast);
+}
+
+.storeCard:hover .storeCardLogoWrapper {
+  transform: scale(1.05);
+  border-color: var(--primary-blue-light);
+}
+
+.storeCardLogo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.storeCardFallback {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.storeCardName {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  transition: color var(--transition-fast);
+}
+
+.storeCard:hover .storeCardName {
+  color: var(--primary-blue);
+}
+
+.storeCardLink {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-tertiary);
+  transition: color var(--transition-fast);
+}
+
+.storeCard:hover .storeCardLink {
+  color: var(--accent-green);
+}
+
+/* Responsive Rules */
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 0 16px; /* Optimized container margins for tablets/mobile */
+  }
+
+  .heroSection {
+    padding: 60px 0 40px 0;
+  }
+  
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+  
+  .heroSubtitle {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+  }
+  
+  .couponsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .storesGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Prevent section title and deal counts from clashing/overlapping */
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sectionTitle {
+    margin-bottom: 0;
+    font-size: 1.3rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 0.92rem;
+    margin-top: -6px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 1.9rem;
+  }
+
+  /* Compact responsive search bar for mobile viewports */
+  .searchBarWrapper {
+    padding: 6px 6px 6px 14px;
+    border-radius: var(--radius-md);
+  }
+
+  .searchIcon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+  }
+
+  .searchInput {
+    font-size: 0.95rem;
+    padding: 6px 0;
+  }
+
+  .btnClearSearch {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+  }
+
+  .storesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .storeCard {
+    padding: 16px 8px;
+  }
+
+  .storeCardLogoWrapper {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+  }
+
+  .storeCardFallback {
+    width: 48px;
+    height: 48px;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+
+  .storeCardName {
+    font-size: 0.88rem;
+  }
+}
+
+/* Infinite Auto-Scrolling Carousel */
+.carouselContainer {
+  width: 100%;
+  padding: 10px 0 44px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-bottom: 1px dashed var(--border-light);
+}
+
+.carouselTitle {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.carouselSlider {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  padding: 4px 0;
+}
+
+/* Premium gradient fades on sides of the scroller */
+.carouselSlider::before,
+.carouselSlider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 120px;
+  height: 100%;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.carouselSlider::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-primary), transparent);
+}
+
+.carouselSlider::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-primary), transparent);
+}
+
+.carouselTrack {
+  display: flex;
+  gap: 28px;
+  width: max-content;
+  animation: infiniteScroll 25s linear infinite;
+}
+
+.carouselTrack:hover {
+  animation-play-state: paused; /* Hover to pause: extremely modern and helpful feature */
+}
+
+.carouselItem {
+  background-color: #ffffff;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  cursor: pointer;
+}
+
+.carouselItem:hover {
+  border-color: var(--primary-blue);
+  box-shadow: var(--shadow-glow), var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.carouselLogo {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.carouselFallback {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  background-color: var(--primary-blue-light);
+  color: var(--primary-blue-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.carouselItem span {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  white-space: nowrap;
+  transition: color var(--transition-fast);
+}
+
+.carouselItem:hover span {
+  color: var(--primary-blue);
+}
+
+@keyframes infiniteScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .carouselContainer {
+    padding: 8px 0 32px 0;
+  }
+  
+  .carouselSlider::before,
+  .carouselSlider::after {
+    width: 60px;
+  }
+  
+  .carouselTrack {
+    gap: 20px;
+    animation-duration: 20s;
+  }
+  
+  .carouselItem {
+    padding: 8px 16px;
+    gap: 10px;
+  }
+  
+  .carouselItem span {
+    font-size: 0.85rem;
+  }
+}
