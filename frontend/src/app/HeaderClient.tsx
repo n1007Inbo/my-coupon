@@ -25,12 +25,6 @@ export default function HeaderClient() {
             </span>
           </a>
 
-          {/* Mobile Hot Deal Badge (Middle Empty Space Solution!) */}
-          <div className="mobileDealBadge">
-            <span className="badgeIcon">🔥</span>
-            <span className="badgeText">121 Live Deals</span>
-          </div>
-
           {/* Desktop Nav Links */}
           <nav className="navLinks desktopOnly">
             <a href="/" className="navLinkItem">Home</a>
