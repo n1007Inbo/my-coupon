@@ -151,7 +151,7 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 54, code: "MarkPaul15", discount: "15% OFF", description: "Save 15% off Height Adjustable Desk Frame (HomePro) dual-motor model.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-frame-homepro" },
   { id: 55, code: "MarkPaul15", discount: "15% OFF", description: "Enjoy 15% off Height Adjustable Standing Desk (HomePro) dual-motor complete setup.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-desk-homepro" },
   { id: 56, code: "MarkPaul15", discount: "15% OFF", description: "Enjoy 15% off Height Adjustable Standing Desk (HomeOne) single-motor complete setup.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-desk-homeone" },
-  { id: 57, code: "MarkPaul15", discount: "Free Shipping", description: "Get free standard UK delivery on all orders above £100.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" }
+  { id: 57, code: "MarkPaul15", discount: "Free Shipping", description: "Get free standard UK delivery on all orders above £100.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
 
   // Desktronic US
   { id: 64, code: "DESKUS10", discount: "10% OFF", description: "Get 10% off your next purchase of advanced standing desks.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
