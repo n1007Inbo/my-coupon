@@ -1,0 +1,630 @@
+"Explain the difference between Search and Performance Max campaigns."
+Notifications
+199-821-4225 COUPON TIME
+sami.techeyedigital@gmail.com
+Google account (sami.techeyedigital@gmail.com)
+Create
+View (2 filters)
+All campaigns
+Campaign
+ARK - DIRECT - NL - LOW
+Ad groups (1)
+Select an ad group
+Enabled
+ 
+Status:
+Eligible
+Type:
+ 
+Search
+Budget:
+ 
+PKR5,000/day
+Optimization score:
+62.4%
+Campaigns
+Campaign name
+
+ARK - DIRECT - NL - LOW
+Campaign status
+
+ Enabled
+Networks
+
+Google Search Network
+Budget and bidding optimization
+Your Search campaign is optimized to drive 
+Your bidding strategy is 
+ 
+Your budget is 
+Budget
+
+PKR5,000/day
+Conversion goals
+
+Account-default: Outbound clicks, Page views
+Bidding
+
+Manual CPC
+Try Smart Bidding to optimize your campaign
+Customer acquisition
+
+Bid equally for new and existing customers
+Value rules
+
+No rule set
+AI Max for Search campaigns
+Get the best AI-powered performance on Google Search
+Advertisers that activate AI Max in Search Campaigns will typically see 14% more conversions or conversion value at a similar CPA / ROAS
+Engage more customers and boost performance. Easily expand your keywords with broad match technology and let Google AI match content from your landing pages and assets to help you show up on more relevant searches. New ad group settings help you guide which customers you reach.
+Tailor your ads and keep them fresh. Use Google AI to serve the most relevant ad copy and landing pages to each customer based on their unique interest and intent.
+Take charge and understand how the newest and best Google AI is working for you. You'll get new actionable insights in search term reports that show how AI Max improves performance.
+Optimize your campaign with AI Max
+Asset optimization
+
+Text customization and Final URL expansion turned off
+Brands
+
+Limiting to: 0 brand lists
+Excluding: 0 brand lists
+Other settings
+
+Locations
+
+Select locations for this campaign
+All countries and territories
+Pakistan
+Enter another location
+Locations (1)	Reach
+Netherlands
+country
+36,300,000	
+Reach India urban or rural areas
+
+Urban: Enter the full state name followed by "Urban" (e.g., "Maharashtra Urban") to find the location.
+Rural: Select the entire state (e.g., "Maharashtra"), then add the urban location (e.g., "Maharashtra Urban") to Excluded locations.
+Excluded locations (196)	Reach
+1014, North Holland, Netherlands
+postal code
+45,000	
+Afghanistan
+country
+3,310,000	
+Albania
+country
+2,170,000	
+Algeria
+country
+20,700,000	
+Andorra
+country
+165,000	
+Angola
+country
+3,090,000	
+Antigua and Barbuda
+country
+146,000	
+Argentina
+country
+43,800,000	
+Armenia
+country
+1,960,000	
+Australia
+country
+24,600,000	
+Austria
+country
+9,670,000	
+Azerbaijan
+country
+5,900,000	
+Bahrain
+country
+1,670,000	
+Bangladesh
+country
+48,000,000	
+Barbados
+country
+284,000	
+Belarus
+country
+5,360,000	
+Belgium
+country
+11,400,000	
+Belize
+country
+304,000	
+Benin
+country
+1,600,000	
+Bhutan
+country
+431,000	
+Bolivia
+country
+7,950,000	
+Bosnia and Herzegovina
+country
+2,350,000	
+Botswana
+country
+833,000	
+Brazil
+country
+180,000,000	
+Brunei
+country
+469,000	
+Bulgaria
+country
+5,990,000	
+Burkina Faso
+country
+1,740,000	
+Burundi
+country
+388,000	
+Cabo Verde
+country
+271,000	
+Cambodia
+country
+6,220,000	
+Cameroon
+country
+3,820,000	
+Canada
+country
+42,200,000	
+Central African Republic
+country
+120,000	
+Chad
+country
+693,000	
+Chile
+country
+18,400,000	
+China
+country
+10,300,000	
+Colombia
+country
+40,000,000	
+Comoros
+country
+123,000	
+Costa Rica
+country
+4,480,000	
+Cote d'Ivoire
+country
+5,230,000	
+Croatia
+country
+3,990,000	
+Cuba, Missouri, United States
+city
+50,000	
+Cyprus
+country
+1,690,000	
+Czechia
+country
+10,200,000	
+Democratic Republic of the Congo
+country
+5,120,000	
+Denmark
+country
+5,170,000	
+Djibouti
+country
+208,000	
+Dominica
+country
+56,000	
+Dominican Republic
+country
+7,800,000	
+Ecuador
+country
+13,100,000	
+Egypt
+country
+45,600,000	
+El Salvador
+country
+4,270,000	
+Equatorial Guinea
+country
+149,000	
+Eritrea
+country
+16,000	
+Estonia
+country
+1,330,000	
+Eswatini
+country
+386,000	
+Ethiopia
+country
+5,860,000	
+Fiji
+country
+488,000	
+Finland
+country
+5,030,000	
+France
+country
+73,200,000	
+French Guiana
+region
+203,000	
+Gabon
+country
+799,000	
+Georgia
+country
+3,200,000	
+Germany
+country
+83,200,000	
+Ghana
+country
+7,510,000	
+Greece
+country
+8,930,000	
+Greenland
+region
+44,000	
+Grenada
+country
+106,000	
+Guatemala
+country
+9,590,000	
+Guinea
+country
+1,180,000	
+Guinea-Bissau
+country
+220,000	
+Guyana
+country
+630,000	
+Haiti
+country
+2,300,000	
+Honduras
+country
+4,710,000	
+Hungary
+country
+7,950,000	
+Iceland
+country
+508,000	
+India
+country
+567,000,000	
+Indonesia
+country
+185,000,000	
+Iraq
+country
+22,600,000	
+Ireland
+country
+5,520,000	
+Israel
+country
+8,140,000	
+Italy
+country
+51,400,000	
+Jamaica
+country
+1,680,000	
+Japan
+country
+94,300,000	
+Jordan
+country
+7,100,000	
+Kazakhstan
+country
+14,000,000	
+Kenya
+country
+12,300,000	
+Kiribati
+country
+37,000	
+Kuwait
+country
+3,890,000	
+Kyrgyzstan
+country
+4,700,000	
+Laos
+country
+2,780,000	
+Latvia
+country
+2,120,000	
+Lebanon
+country
+3,760,000	
+Lesotho
+country
+325,000	
+Liberia
+country
+458,000	
+Libya
+country
+4,440,000	
+Liechtenstein
+country
+58,000	
+Lithuania
+country
+2,740,000	
+Luxembourg
+country
+1,060,000	
+Madagascar
+country
+1,150,000	
+Load 100 more
+Enter a location to include or exclude
+For example, a country, city, region, or postal code
+Location options
+Languages
+
+English and Dutch
+EU political ads
+
+Doesn't have EU political ads
+Automatically created assets
+
+Off: Use only assets I provide directly for my ads
+Start and end dates
+
+Start date: March 27, 2025 End date: Not set
+Broad match keywords
+
+Off: Use keyword match types
+Dynamic Search Ads setting
+
+Get automated search targeting and customized ad headlines based on your website
+Ad rotation
+
+Optimize: Prefer best performing ads
+Campaign URL options
+
+No options set
+Page feeds
+
+Add page feeds to your campaign
+IP exclusions
+
+No exclusions set
+Brands
+
+Limiting to: 0 brand lists
+Excluding: 0 brand lists
+© Google, 2026.
+
+Turn off ad blockers
+Google Ads can't work when you're using an ad blocker.
+To use Google Ads, please turn off any ad blockers for now.
+
+
+
+"Explain the difference between Search and Performance Max campaigns."
+Notifications
+199-821-4225 COUPON TIME
+sami.techeyedigital@gmail.com
+Google account (sami.techeyedigital@gmail.com)
+Create
+View (2 filters)
+All campaigns
+Campaign
+ARK - DIRECT - NL - LOW
+Ad groups (1)
+Select an ad group
+Enabled
+ 
+Status:
+Eligible
+Type:
+ 
+Search
+Budget:
+ 
+PKR5,000/day
+Optimization score:
+62.4%
+Campaigns
+Campaign name
+
+ARK - DIRECT - NL - LOW
+Campaign status
+
+ Enabled
+Networks
+
+Google Search Network
+Budget and bidding optimization
+Your Search campaign is optimized to drive 
+Your bidding strategy is 
+ 
+Your budget is 
+Budget
+
+PKR5,000/day
+Conversion goals
+
+Account-default: Outbound clicks, Page views
+Bidding
+
+Manual CPC
+Try Smart Bidding to optimize your campaign
+Customer acquisition
+
+Bid equally for new and existing customers
+Value rules
+
+No rule set
+AI Max for Search campaigns
+Get the best AI-powered performance on Google Search
+Advertisers that activate AI Max in Search Campaigns will typically see 14% more conversions or conversion value at a similar CPA / ROAS
+Engage more customers and boost performance. Easily expand your keywords with broad match technology and let Google AI match content from your landing pages and assets to help you show up on more relevant searches. New ad group settings help you guide which customers you reach.
+Tailor your ads and keep them fresh. Use Google AI to serve the most relevant ad copy and landing pages to each customer based on their unique interest and intent.
+Take charge and understand how the newest and best Google AI is working for you. You'll get new actionable insights in search term reports that show how AI Max improves performance.
+Optimize your campaign with AI Max
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Other settings
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+Loading name
+
+Loading summary
+
+© Google, 2026.
+
+Turn off ad blockers
+Google Ads can't work when you're using an ad blocker.
+To use Google Ads, please turn off any ad blockers for now.
+
+
+
+"Explain the difference between Search and Performance Max campaigns."
+Notifications
+199-821-4225 COUPON TIME
+sami.techeyedigital@gmail.com
+Google account (sami.techeyedigital@gmail.com)
+Create
+Enabled
+ 
+Status:
+Eligible
+Type:
+ 
+Standard
+Max. CPC:
+ 
+PKR700
+Keywords
+You don't have any URL exclusions yet
+Reporting is not real-time. Time zone for all dates and times: (GMT+05:00) Pakistan Standard Time. Learn more
+Some inventory may be provided through third party intermediaries.
+You'll see Media Rating Council (MRC) accreditation noted in the column header's hover text for accredited metrics.
+© Google, 2026.
+
+Turn off ad blockers
+Google Ads can't work when you're using an ad blocker.
+To use Google Ads, please turn off any ad blockers for now.
+
+Ad group settings
+Status:
+ 
+Eligible
+Type:
+ 
+Standard
+Overview
+Ad group name
+
+Tenways (800)
+Ad group status
+
+ Enabled
+Ad group type
+
+Standard
+Budget and bidding optimization
+Bidding
+
+Max. CPC: PKR700
+Ad group settings for AI Max
+Turn on AI Max in your campaign to use these ad group level settings
+
+Search term matching Beta
+
+Using only your keywords and match types
+Brand inclusions
+
+Limiting to: 0 brand lists
+Locations of interest
+
+Add locations of interest
+URL inclusions
+
+No URL inclusions
+Other settings
+Ad group URL options
+
+No options set
+Ad rotation
+
+Use campaign setting
+© Google, 2026.
