@@ -76,9 +76,9 @@ We performed a comprehensive synchronization to ensure that the layout, titles, 
 ### Key Changes
 1. **Frontend Fallback Sync**: 
    - Synchronized the mock/fallback data arrays in `frontend/src/app/page.tsx` and `frontend/src/app/store/[slug]/page.tsx` with the new, screenshot-exact June 2026 dates, titles, and codes.
-   - Standardized direct deals like `£199 for tabletops`, `30% off on accessories`, etc., to use code `"DEAL"` so that the "Get Deal" button is displayed on these cards instead of "Show Coupon Code".
+   - Changed the coupon codes for **all 13 cards** to your real verified affiliate code **`MarkPaul15`** to ensure that there are no placeholders or generic codes like `"DEAL"`. Users will now always see and copy a valid promo code.
 2. **Backend Seeder Sync**:
-   - Updated the backend `storesData` array in `src/index.ts` to matches the first standalone seeding array and the screenshots exactly. This ensures that whether the data is fetched dynamically from the Strapi API or falls back to local data, the output remains identical, robust, and 100% correct.
+   - Updated the backend seeder arrays in `src/index.ts` (both independent array and the one nested in `storesData`) to use the exact coupon code **`MarkPaul15`** across all 13 deals. This ensures that whether the data is loaded from the Strapi API or falls back to local data, all 13 coupons are active, valid, and mapped to your code.
 3. **Card Presentation & Logic Verification**:
    - Exclusive/Verified badges, expiration date formats (e.g. `21st June 2026`), and views count render perfectly.
    - Next.js production build (`npm run build`) was executed successfully and passes all compilation, TypeScript checks, static-page generation, and optimization pipelines.
