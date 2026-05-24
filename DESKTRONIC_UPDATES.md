@@ -69,8 +69,24 @@ All coupons are sitewide or product-specific and use the verified coupon code: *
 
 ---
 
+## 🔄 May 24, 2026 Update: Screen-Exact Design & Alignment Sync
+
+We performed a comprehensive synchronization to ensure that the layout, titles, dates, codes, and affiliate redirects perfectly match the screenshots provided by the user.
+
+### Key Changes
+1. **Frontend Fallback Sync**: 
+   - Synchronized the mock/fallback data arrays in `frontend/src/app/page.tsx` and `frontend/src/app/store/[slug]/page.tsx` with the new, screenshot-exact June 2026 dates, titles, and codes.
+   - Standardized direct deals like `£199 for tabletops`, `30% off on accessories`, etc., to use code `"DEAL"` so that the "Get Deal" button is displayed on these cards instead of "Show Coupon Code".
+2. **Backend Seeder Sync**:
+   - Updated the backend `storesData` array in `src/index.ts` to matches the first standalone seeding array and the screenshots exactly. This ensures that whether the data is fetched dynamically from the Strapi API or falls back to local data, the output remains identical, robust, and 100% correct.
+3. **Card Presentation & Logic Verification**:
+   - Exclusive/Verified badges, expiration date formats (e.g. `21st June 2026`), and views count render perfectly.
+   - Next.js production build (`npm run build`) was executed successfully and passes all compilation, TypeScript checks, static-page generation, and optimization pipelines.
+
+---
+
 ## 🛠️ Note for Future Agents
 
 - **Unique Constraints on Code**: The `code` attribute in the Coupon model is NOT unique. This is intentional to allow multiple offers to share the same coupon/affiliate code (e.g. `MarkPaul15`). Do NOT add unique constraints back.
 - **Strapi Seeding Protocol**: The database updates automatically on start. There is **no need** to run custom manual seeding scripts inside the Strapi admin dashboard. If you change a link or description inside `src/index.ts` or `frontend/src/app/page.tsx`, simply commit the changes and trigger a build. The database and fallback dataset will automatically align!
-- **Affiliate Commision Check**: Ensure that any new Desktronic UK coupon added uses one of the `/go/...` redirect handles, so Next.js redirects are maintained and commission cookies are successfully applied to shoppers' browser sessions.
+- **Affiliate Commission Check**: Ensure that any new Desktronic UK coupon added uses one of the `/go/...` redirect handles, so Next.js redirects are maintained and commission cookies are successfully applied to shoppers' browser sessions.
