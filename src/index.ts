@@ -250,12 +250,18 @@ export default {
             website: '/go/desktronic-uk',
             coupons: [
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Exclusive 15% off discount code sitewide on premium standing desks and frames.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '£150 OFF', description: 'Save £150 on complete ergonomic office packages and standing desk bundles.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% on high-performance 4-Leg standing desks for professional workspaces.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-4leg' },
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Get 15% off Height Adjustable Desk Frame (HomeOne) with advanced single-motor preset memory.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-frame-homeone' },
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% off Height Adjustable Desk Frame (HomePro) dual-motor model.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-frame-homepro' },
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomePro) dual-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-desk-homepro' },
               { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomeOne) single-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-desk-homeone' },
-              { code: 'MarkPaul15', discount: 'Free Shipping', description: 'Get free standard UK delivery on all orders above £100.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' }
+              { code: 'MarkPaul15', discount: '30% OFF', description: 'Save 30% on active ergonomic office chairs with lumbar support.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '£15 OFF', description: 'Get £15 off your first standing desk order on newsletter signup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '20% OFF', description: 'Verified 20% off coupon code sitewide on smart height-adjustable tables.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: 'Free Shipping', description: 'Get free standard UK delivery on all orders above £100.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '30% OFF', description: 'Get 30% off on selected desk accessories, cable trays, and monitors.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '28% OFF', description: 'Save an extra 28% on under-desk drawers and metal filing cabinets.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' }
             ]
           },
           {
