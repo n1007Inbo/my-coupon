@@ -256,7 +256,7 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 121, code: "SHARKSTUDENT", discount: "15% OFF", description: "Impact exclusive: Students save 15% on latest fitness clothes.", expiry_date: "2026-08-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] }
 ];
 
-export const revalidate = 0; // Fetch dynamic data on every request
+export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
 
 export default async function HomePage() {
   const apiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337";
@@ -266,10 +266,10 @@ export default async function HomePage() {
   let fetchedSuccessfully = false;
 
   try {
-    // Parallel fetching for optimal performance
+    // Parallel fetching for optimal performance with Next.js ISR caching
     const [couponsRes, storesRes] = await Promise.all([
-      fetch(`${apiUrl}/api/coupons?populate=store&pagination[pageSize]=200`, { cache: "no-store", next: { revalidate: 0 } }),
-      fetch(`${apiUrl}/api/stores?pagination[pageSize]=200`, { cache: "no-store", next: { revalidate: 0 } })
+      fetch(`${apiUrl}/api/coupons?populate=store&pagination[pageSize]=200`, { next: { revalidate: 600 } }),
+      fetch(`${apiUrl}/api/stores?pagination[pageSize]=200`, { next: { revalidate: 600 } })
     ]);
 
     if (couponsRes.ok && storesRes.ok) {

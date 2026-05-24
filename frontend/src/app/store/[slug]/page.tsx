@@ -256,7 +256,7 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 121, code: "SHARKSTUDENT", discount: "15% OFF", description: "Impact exclusive: Students save 15% on latest fitness clothes.", expiry_date: "2026-08-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] }
 ];
 
-export const revalidate = 0; // Dynamic rendering
+export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
 
 interface StorePageProps {
   params: Promise<{
@@ -273,8 +273,8 @@ export default async function StorePage({ params }: StorePageProps) {
   let fetchedSuccessfully = false;
 
   try {
-    // 1. Fetch store by slug or find it
-    const storesRes = await fetch(`${apiUrl}/api/stores?filters[slug][$eq]=${slug}`, { cache: "no-store" });
+    // 1. Fetch store by slug or find it with ISR caching
+    const storesRes = await fetch(`${apiUrl}/api/stores?filters[slug][$eq]=${slug}`, { next: { revalidate: 600 } });
     if (storesRes.ok) {
       const storesData = await storesRes.json();
       if (Array.isArray(storesData.data) && storesData.data.length > 0) {
@@ -287,8 +287,8 @@ export default async function StorePage({ params }: StorePageProps) {
           website: s.website
         };
 
-        // 2. Fetch coupons associated with this store
-        const couponsRes = await fetch(`${apiUrl}/api/coupons?filters[store][slug][$eq]=${slug}&populate=store&pagination[pageSize]=200`, { cache: "no-store" });
+        // 2. Fetch coupons associated with this store with ISR caching
+        const couponsRes = await fetch(`${apiUrl}/api/coupons?filters[store][slug][$eq]=${slug}&populate=store&pagination[pageSize]=200`, { next: { revalidate: 600 } });
         if (couponsRes.ok) {
           const couponsData = await couponsRes.json();
           if (Array.isArray(couponsData.data)) {
