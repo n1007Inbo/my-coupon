@@ -247,15 +247,15 @@ export default {
           {
             name: 'Desktronic UK',
             slug: 'desktronic-uk',
-            website: 'https://desktronic.co.uk/muhammadhaziqueali',
+            website: '/go/desktronic-uk',
             coupons: [
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Exclusive 15% off discount code sitewide on premium standing desks and frames.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/muhammadhaziqueali' },
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% on high-performance 4-Leg standing desks for professional workspaces.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/products/4-leg-standing-desk?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program' },
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Get 15% off Height Adjustable Desk Frame (HomeOne) with advanced single-motor preset memory.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/products/height-adjustable-desk-frame-homeone?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program' },
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% off Height Adjustable Desk Frame (HomePro) dual-motor model.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/products/height-adjustable-desk-frame-homepro?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program' },
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomePro) dual-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/products/height-adjustable-desk-homepro?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program' },
-              { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomeOne) single-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/products/height-adjustable-desk-homeone?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program' },
-              { code: 'MarkPaul15', discount: 'Free Shipping', description: 'Get free standard UK delivery on all orders above £100.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://desktronic.co.uk/muhammadhaziqueali' }
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Exclusive 15% off discount code sitewide on premium standing desks and frames.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% on high-performance 4-Leg standing desks for professional workspaces.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-4leg' },
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Get 15% off Height Adjustable Desk Frame (HomeOne) with advanced single-motor preset memory.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-frame-homeone' },
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Save 15% off Height Adjustable Desk Frame (HomePro) dual-motor model.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-frame-homepro' },
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomePro) dual-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-desk-homepro' },
+              { code: 'MarkPaul15', discount: '15% OFF', description: 'Enjoy 15% off Height Adjustable Standing Desk (HomeOne) single-motor complete setup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-desk-homeone' },
+              { code: 'MarkPaul15', discount: 'Free Shipping', description: 'Get free standard UK delivery on all orders above £100.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' }
             ]
           },
           {
