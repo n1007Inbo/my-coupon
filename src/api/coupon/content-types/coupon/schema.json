@@ -17,8 +17,7 @@
   "attributes": {
     "code": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "required": true
     },
     "discount": {
       "type": "string",

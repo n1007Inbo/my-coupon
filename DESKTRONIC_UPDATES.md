@@ -16,8 +16,14 @@ This document provides a clear record of the updates made to the **Desktronic UK
    - Anyone visiting the site and clicking **"Get Code"** is seamlessly redirected using your exact tracking parameter `bg_ref=fek2GZmWHH`, ensuring you receive 100% of your earned commission!
    
 3. **13 Verified Standing Desk & Frame Coupons**:
-   - Programmed exactly **13 premium coupons** sitewide using your custom code `MarkPaul15`.
+   - Programmed exactly **13 premium coupons** sitewide using your custom code **`MarkPaul15`**.
    - Updated descriptions, discount values, and links to target specific bestselling products on Desktronic UK.
+
+4. **Unique Constraint Removal (`schema.json`)**:
+   - **Critical Fix**: Discovered that the Strapi `coupon` Content-Type schema had `"unique": true` set on the `code` attribute.
+   - This database constraint prevented more than one coupon from using the exact same code. Because you have 13 coupons that all share your personal affiliate code `MarkPaul15`, the database blocked all coupons after the first one from being seeded!
+   - We modified `src/api/coupon/content-types/coupon/schema.json` to remove `"unique": true`.
+   - Now, multiple coupons can share the same code (e.g. `MarkPaul15` across all 13 deals), allowing all 13 to successfully seed and display on the website!
 
 ---
 
@@ -58,5 +64,6 @@ All coupons are sitewide or product-specific and use the verified coupon code: *
 
 ## 🛠️ Note for Future Agents
 
+- **Unique Constraints on Code**: The `code` attribute in the Coupon model is NOT unique. This is intentional to allow multiple offers to share the same coupon/affiliate code (e.g. `MarkPaul15`). Do NOT add unique constraints back.
 - **Strapi Seeding Protocol**: The database updates automatically on start. There is **no need** to run custom manual seeding scripts inside the Strapi admin dashboard. If you change a link or description inside `src/index.ts` or `frontend/src/app/page.tsx`, simply commit the changes and trigger a build. The database and fallback dataset will automatically align!
 - **Affiliate Commision Check**: Ensure that any new Desktronic UK coupon added uses one of the `/go/...` redirect handles, so Next.js redirects are maintained and commission cookies are successfully applied to shoppers' browser sessions.
