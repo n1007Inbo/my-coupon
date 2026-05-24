@@ -78,7 +78,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
     const storeName = isStoreObject ? (coupon.store as Store).name : (coupon.store as string);
     const website = isStoreObject ? (coupon.store as Store).website : undefined;
-    const storeUrl = website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
+    const storeUrl = coupon.affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
     
     // Automatically copy code to user's clipboard instantly on click
     try {

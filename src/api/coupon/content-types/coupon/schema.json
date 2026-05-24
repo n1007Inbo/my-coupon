@@ -39,6 +39,9 @@
     "is_verified": {
       "type": "boolean",
       "default": false
+    },
+    "affiliate_url": {
+      "type": "string"
     }
   }
 }

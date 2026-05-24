@@ -19,6 +19,7 @@ export interface Coupon {
   is_verified: boolean;
   expiry_date: string;
   store: string | Store;
+  affiliate_url?: string;
 }
 
 interface CouponCardProps {

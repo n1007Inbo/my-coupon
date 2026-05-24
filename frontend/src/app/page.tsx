@@ -31,7 +31,7 @@ const FALLBACK_STORES: Store[] = [
   { id: 18, name: "Fiverr", slug: "fiverr", logo: getLogoUrl("fiverr"), website: "https://fiverr.com" },
   { id: 19, name: "Booking.com", slug: "bookingcom", logo: getLogoUrl("bookingcom"), website: "https://booking.com" },
   { id: 20, name: "Udemy", slug: "udemy", logo: getLogoUrl("udemy"), website: "https://udemy.com" },
-  { id: 21, name: "Desktronic UK", slug: "desktronic-uk", logo: getLogoUrl("desktronic-uk"), website: "https://desktronic.co.uk" },
+  { id: 21, name: "Desktronic UK", slug: "desktronic-uk", logo: getLogoUrl("desktronic-uk"), website: "https://desktronic.co.uk/muhammadhaziqueali" },
   { id: 22, name: "Desktronic US", slug: "desktronic-us", logo: getLogoUrl("desktronic-us"), website: "https://desktronic.com" },
   { id: 23, name: "Tenways UK", slug: "tenways-uk", logo: getLogoUrl("tenways-uk"), website: "https://tenways.com/pages/uk-store" },
   { id: 24, name: "Tenways US", slug: "tenways-us", logo: getLogoUrl("tenways-us"), website: "https://tenways.com" },
@@ -145,19 +145,13 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 50, code: "UDEMYFIRST", discount: "$10 OFF", description: "Get any professional developer course for just $10 flat for new accounts.", expiry_date: "2026-12-25T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[19] },
 
   // Desktronic UK
-  { id: 51, code: "DESKUK15", discount: "15% OFF", description: "Exclusive 15% off discount code sitewide on premium standing desks.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 52, code: "SEASON150", discount: "£150 OFF", description: "Save £150 on seasonal deals on complete ergonomic office packages.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 53, code: "DESKTRONIC20", discount: "20% OFF", description: "Verified 20% off coupon code sitewide on smart height-adjustable tables.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 54, code: "DESKSPRING50", discount: "50% OFF", description: "Huge 50% off limited-time offer on clearance ergonomic items.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 55, code: "FREESHIPUK", discount: "Free Shipping", description: "Get free standard UK delivery on all orders above £100.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 56, code: "FRAME35", discount: "35% OFF", description: "Save 35% off on desk frame bundles and motorized dual-motor models.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 57, code: "ADJUST34", discount: "34% OFF", description: "Enjoy 34% off on height-adjustable desks with smart memory presets.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 58, code: "CHAIR30", discount: "30% OFF", description: "Save 30% on active ergonomic office chairs with lumbar support.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 59, code: "TABTOP199", discount: "£199 Deal", description: "Special offer: Premium bamboo and oak tabletops starting from just £199.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 60, code: "ACCESSORY30", discount: "30% OFF", description: "Get 30% off on selected desk accessories, cable trays, and monitors.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 61, code: "DRAWER28", discount: "28% OFF", description: "Save an extra 28% on under-desk drawers and metal filing cabinets.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 62, code: "SOLIDWOOD20", discount: "20% OFF", description: "Get 20% off on premium solid wood desktop collections.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
-  { id: 63, code: "NEWSLETTER15", discount: "£15 OFF", description: "Get £15 off your first standing desk order on newsletter signup.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20] },
+  { id: 51, code: "MarkPaul15", discount: "15% OFF", description: "Exclusive 15% off discount code sitewide on premium standing desks and frames.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/muhammadhaziqueali" },
+  { id: 52, code: "MarkPaul15", discount: "15% OFF", description: "Save 15% on high-performance 4-Leg standing desks for professional workspaces.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/products/4-leg-standing-desk?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program" },
+  { id: 53, code: "MarkPaul15", discount: "15% OFF", description: "Get 15% off Height Adjustable Desk Frame (HomeOne) with advanced single-motor preset memory.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/products/height-adjustable-desk-frame-homeone?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program" },
+  { id: 54, code: "MarkPaul15", discount: "15% OFF", description: "Save 15% off Height Adjustable Desk Frame (HomePro) dual-motor model.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/products/height-adjustable-desk-frame-homepro?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program" },
+  { id: 55, code: "MarkPaul15", discount: "15% OFF", description: "Enjoy 15% off Height Adjustable Standing Desk (HomePro) dual-motor complete setup.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/products/height-adjustable-desk-homepro?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program" },
+  { id: 56, code: "MarkPaul15", discount: "15% OFF", description: "Enjoy 15% off Height Adjustable Standing Desk (HomeOne) single-motor complete setup.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/products/height-adjustable-desk-homeone?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program" },
+  { id: 57, code: "MarkPaul15", discount: "Free Shipping", description: "Get free standard UK delivery on all orders above £100.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "https://desktronic.co.uk/muhammadhaziqueali" }
 
   // Desktronic US
   { id: 64, code: "DESKUS10", discount: "10% OFF", description: "Get 10% off your next purchase of advanced standing desks.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
@@ -285,6 +279,7 @@ export default async function HomePage() {
           description: c.description,
           is_verified: !!c.is_verified,
           expiry_date: c.expiry_date,
+          affiliate_url: c.affiliate_url || "",
           store: c.store ? {
             id: c.store.id,
             name: c.store.name,

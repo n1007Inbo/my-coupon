@@ -109,7 +109,7 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
   
   // Create a fallback URL based on the store slug or name
   const storeSlug = isStoreObject ? (store as Store).slug : storeName.toLowerCase().replace(/\s+/g, "-");
-  const storeUrl = `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
+  const storeUrl = coupon.affiliate_url || (isStoreObject && (store as Store).website ? (store as Store).website : `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`);
 
 
 
