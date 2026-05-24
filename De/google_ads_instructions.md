@@ -1,37 +1,42 @@
 # 🎯 Google Ads - Desktronic UK Campaign Upload Instructions
 
-We have parsed the keywords and structure from your text dumps inside the `De` folder and created two perfectly formatted bulk import CSV files:
-1. `google_ads_keywords.csv` (contains all your highly targeted exact-match keywords)
-2. `google_ads_responsive_ad.csv` (contains the responsive search ad template with your website's final URL)
+We have fully updated your campaign configuration:
+- **Campaign Status**: Set to **`Paused`** in both import files. When you upload them to Google Ads Editor or the web interface, the campaign will import in a paused state. It will **never** go live automatically. You can review everything and click "Enable" to make it live manually whenever you want!
+- **Final URL**: Updated to your exact website URL with `www.`: `https://www.promoregistry.com/store/desktronic-uk`
 
-Both files are saved in your `De` folder at:
+Both import files are saved in your `De` folder at:
 `C:\Users\rdp\.gemini\antigravity\scratch\my-coupon\De\`
 
 ---
 
-## 🚀 How to Import into Google Ads Editor (Recommended)
+## ❓ Why do we upload 2 separate CSV files?
 
-Google Ads Editor is the fastest way to import these campaigns.
+In Google Ads architecture, **Keywords** and **Ads (Creative Copy)** are two completely different entities:
+1. **`google_ads_keywords.csv`**: This handles your targeting (tells Google *when* to show your ad—i.e., when someone searches for these specific 15 Desktronic exact-match keywords).
+2. **`google_ads_responsive_ad.csv`**: This handles your presentation (tells Google *what* to show to the user—i.e., your headlines, descriptions, sub-paths, and the final URL pointing to your store).
+
+While Google Ads Editor allows importing sheets, keeping them in two separate, clean files is the industry standard because:
+* **Avoids Mapping Conflicts**: If keywords and ads are in a single sheet, Google Ads Editor gets confused because keywords require columns like `Keyword` and `Match Type` (which ads don't use), and ads require columns like `Headline 1`, `Description 1`, `Final URL` (which keywords don't use).
+* **Step-by-Step Control**: Importing the Keywords file first sets up your campaign, ad group, and targeting. Importing the Ads file second attaches the ad copy to that exact campaign/ad group cleanly.
+
+---
+
+## 🚀 How to Import into Google Ads Editor
 
 ### Step 1: Import Keywords
 1. Open **Google Ads Editor** and select your account.
 2. In the left panel, click on **Account** > **Import** > **From file...**
 3. Select [google_ads_keywords.csv](file:///C:/Users/rdp/.gemini/antigravity/scratch/my-coupon/De/google_ads_keywords.csv).
-4. Google Ads Editor will automatically map the columns (`Campaign`, `Ad Group`, `Keyword`, `Match Type`). Click **Finish and review changes**.
+4. Google Ads Editor will automatically map the columns (`Campaign`, `Campaign Status`, `Ad Group`, `Keyword`, `Match Type`). Click **Finish and review changes**.
 5. Click **Keep** at the top right to save the keywords import.
 
 ### Step 2: Import Responsive Search Ad
 1. Go to **Account** > **Import** > **From file...**
 2. Select [google_ads_responsive_ad.csv](file:///C:/Users/rdp/.gemini/antigravity/scratch/my-coupon/De/google_ads_responsive_ad.csv).
-3. Review the column mapping (it maps `Final URL`, `Headline 1-3`, `Description 1-2`, and `Path 1-2` to their correct Google Ads attributes).
+3. Review the column mapping (it maps `Campaign Status`, `Final URL`, `Headline 1-5`, `Description 1-3`, and `Path 1-2` to their correct Google Ads attributes).
 4. Click **Finish and review changes** and click **Keep**.
 
-### Step 3: Propose Custom Ad Copy (Headline & Description)
-The template uses highly converting headlines and descriptions pointing to your site `promoregistry.com` and your promo code `MarkPaul15`. 
-If you want to change these headlines or descriptions before pushing the campaign live, tell me your preferred text and I will instantly regenerate the CSV files for you!
-
-### Step 4: Publish
-- Double-check your daily budget (default is ready for your configuration in the interface) and click **Post** in Google Ads Editor to make the campaign live!
+*Note: Since the `Campaign Status` is set to `Paused` in both files, the entire campaign is created as Paused. It will not run until you manually toggle it to Active!*
 
 ---
 
@@ -42,4 +47,4 @@ If you don't have Google Ads Editor installed:
 2. Click on **Tools** (spanner icon) > **Bulk Actions** > **Uploads**.
 3. Click the blue `+` button.
 4. Set source to **Upload a file** and choose **Google Ads templates** or CSV.
-5. Upload both CSV files to create your campaign, ad group, keywords, and ads automatically!
+5. Upload both CSV files one by one to create your campaign, ad group, keywords, and ads automatically in a paused state!
