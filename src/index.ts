@@ -48,21 +48,16 @@ export default {
         }
       }
 
-      // 1.5 Clean old Desktronic UK database entries if they are using the old mock codes
+      // 1.5 Clean old Desktronic UK database entries ALWAYS to force update with correct affiliate links
       const deskStore = await strapi.query('api::store.store').findOne({ where: { slug: 'desktronic-uk' } });
       if (deskStore) {
-        const oldCop = await strapi.query('api::coupon.coupon').findOne({ where: { code: 'DESKUK15' } });
-        if (oldCop) {
-          strapi.log.info('Found outdated Desktronic UK data in database. Deleting to force update...');
-          await strapi.query('api::coupon.coupon').deleteMany({ where: { store: deskStore.id } });
-          await strapi.query('api::store.store').delete({ where: { id: deskStore.id } });
-        }
+        strapi.log.info("Cleaning existing Desktronic UK data in database to update with user's verified affiliate coupons...");
+        await strapi.query('api::coupon.coupon').deleteMany({ where: { store: deskStore.id } });
+        await strapi.query('api::store.store').delete({ where: { id: deskStore.id } });
       }
 
-      // 1.6 Dedicated seeding of Desktronic UK with user\'s verified affiliate coupons
-      const deskStoreCheck = await strapi.query('api::store.store').findOne({ where: { slug: 'desktronic-uk' } });
-      if (!deskStoreCheck) {
-        strapi.log.info('Seeding Desktronic UK store and coupons independently...');
+      // 1.6 Dedicated seeding of Desktronic UK with user's verified affiliate coupons
+      strapi.log.info('Seeding Desktronic UK store and coupons independently...');
         const s = {
           name: 'Desktronic UK',
           slug: 'desktronic-uk',
@@ -108,7 +103,6 @@ export default {
           });
         }
         strapi.log.info('Seeded Desktronic UK successfully!');
-      }
 
       // 2. Seed mock Stores and Coupons if empty
       const storeCount = await strapi.query('api::store.store').count({});
