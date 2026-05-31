@@ -158,7 +158,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
           {/* Premium Popular Searches Tagline */}
           <div className={styles.popularSearches}>
             <span className={styles.popularSearchesTitle}>⚡ Popular Searches:</span>
-            {["Desktronic", "Amazon", "Nike", "Hostinger"].map((tag) => (
+            {["Tenways", "Amazon", "Nike", "Hostinger"].map((tag) => (
               <button
                 key={tag}
                 onClick={() => setSearchQuery(tag)}
