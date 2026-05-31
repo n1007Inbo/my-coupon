@@ -345,6 +345,39 @@ export default async function HomePage() {
   if (!fetchedSuccessfully || coupons.length === 0) {
     coupons = FALLBACK_COUPONS;
     stores = FALLBACK_STORES;
+  } else {
+    // Hybrid injection: Guarantee Desktronic UK, US, and NL are ALWAYS present in the stores and coupons list!
+    // This keeps the 3 crucial campaigns live even if the database is in transitional state or has missing entries.
+    const crucialStoreSlugs = ["desktronic-uk", "desktronic-us", "desktronic-nl"];
+    
+    // 1. Ensure crucial stores exist
+    crucialStoreSlugs.forEach((slug) => {
+      const exists = stores.some((s) => s.slug === slug);
+      if (!exists) {
+        const fallbackStore = FALLBACK_STORES.find((s) => s.slug === slug);
+        if (fallbackStore) {
+          stores.push(fallbackStore);
+        }
+      }
+    });
+
+    // 2. Ensure crucial coupons exist
+    crucialStoreSlugs.forEach((slug) => {
+      const hasCoupons = coupons.some((c) => {
+        const isStoreObject = typeof c.store === "object" && c.store !== null;
+        const cStoreSlug = isStoreObject ? (c.store as Store).slug : String(c.store).toLowerCase();
+        return cStoreSlug === slug;
+      });
+
+      if (!hasCoupons) {
+        const fallbackCoupons = FALLBACK_COUPONS.filter((c) => {
+          const isStoreObject = typeof c.store === "object" && c.store !== null;
+          const cStoreSlug = isStoreObject ? (c.store as Store).slug : String(c.store).toLowerCase();
+          return cStoreSlug === slug;
+        });
+        coupons.push(...fallbackCoupons);
+      }
+    });
   }
 
   return <HomeClient initialCoupons={coupons} initialStores={stores} />;

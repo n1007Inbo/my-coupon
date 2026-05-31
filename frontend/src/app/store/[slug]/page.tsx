@@ -344,10 +344,17 @@ export default async function StorePage({ params }: StorePageProps) {
     if (store) {
       coupons = FALLBACK_COUPONS.filter((c) => {
         const isStoreObject = typeof c.store === "object" && c.store !== null;
-        const cStoreSlug = isStoreObject ? (c.store as Store).slug : (c.store as string).toLowerCase();
+        const cStoreSlug = isStoreObject ? (c.store as Store).slug : String(c.store).toLowerCase();
         return cStoreSlug === slug;
       });
     }
+  } else if (store && coupons.length === 0) {
+    // If store exists in DB but has no coupons yet (seeding delay), load fallback coupons safely
+    coupons = FALLBACK_COUPONS.filter((c) => {
+      const isStoreObject = typeof c.store === "object" && c.store !== null;
+      const cStoreSlug = isStoreObject ? (c.store as Store).slug : String(c.store).toLowerCase();
+      return cStoreSlug === slug;
+    });
   }
 
   // If store is completely invalid/unknown, render a nice 404 or unknown state
