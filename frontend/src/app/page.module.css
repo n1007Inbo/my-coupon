@@ -344,7 +344,7 @@
 }
 
 .storeCardLogoWrapper {
-  width: 64px;
+  width: 100px;
   height: 64px;
   border-radius: var(--radius-md);
   border: 1px solid var(--border-light);
@@ -352,7 +352,7 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  padding: 8px;
+  padding: 6px 12px;
   margin-bottom: 14px;
   box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.02);
   transition: all var(--transition-fast);
@@ -370,7 +370,7 @@
 }
 
 .storeCardFallback {
-  width: 64px;
+  width: 100px;
   height: 64px;
   border-radius: var(--radius-md);
   background-color: var(--primary-blue-light);
@@ -378,7 +378,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: 800;
   margin-bottom: 14px;
 }
@@ -493,15 +493,16 @@
   }
 
   .storeCardLogoWrapper {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 52px;
     margin-bottom: 8px;
+    padding: 4px 8px;
   }
 
   .storeCardFallback {
-    width: 48px;
-    height: 48px;
-    font-size: 1.2rem;
+    width: 80px;
+    height: 52px;
+    font-size: 1.1rem;
     margin-bottom: 8px;
   }
 

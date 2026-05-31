@@ -43,7 +43,7 @@
 }
 
 .storeLargeLogoWrapper {
-  width: 96px;
+  width: 150px;
   height: 96px;
   border-radius: var(--radius-lg);
   overflow: hidden;
@@ -60,17 +60,17 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  padding: 8px;
+  padding: 8px 16px;
 }
 
 .storeLargeLogoFallback {
-  width: 96px;
+  width: 150px;
   height: 96px;
   border-radius: var(--radius-lg);
   background: linear-gradient(135deg, var(--primary-blue-light), #bae6fd);
   color: var(--primary-blue-hover);
   font-weight: 800;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,14 +261,14 @@
   }
 
   .storeLargeLogoWrapper {
-    width: 80px;
-    height: 80px;
+    width: 110px;
+    height: 72px;
   }
 
   .storeLargeLogoFallback {
-    width: 80px;
-    height: 80px;
-    font-size: 2.2rem;
+    width: 110px;
+    height: 72px;
+    font-size: 1.6rem;
   }
 
   .storeTitle {
