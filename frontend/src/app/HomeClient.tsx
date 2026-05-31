@@ -18,14 +18,27 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   // Auto-open coupon modal if coupon parameter is present in URL
   React.useEffect(() => {
     if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const couponParam = params.get("coupon");
-      if (couponParam) {
-        const found = initialCoupons.find(c => String(c.id) === String(couponParam));
-        if (found) {
-          setActiveCoupon(found);
+      const checkParams = () => {
+        const params = new URLSearchParams(window.location.search);
+        const couponParam = params.get("coupon");
+        const codeParam = params.get("code");
+        if (couponParam || codeParam) {
+          const found = initialCoupons.find(c => 
+            (couponParam && String(c.id) === String(couponParam)) ||
+            (codeParam && c.code === codeParam)
+          );
+          if (found) {
+            setActiveCoupon(found);
+          }
         }
-      }
+      };
+
+      // Check instantly
+      checkParams();
+
+      // Check with a small delay to handle hydration perfectly
+      const timer = setTimeout(checkParams, 150);
+      return () => clearTimeout(timer);
     }
   }, [initialCoupons]);
 
@@ -89,17 +102,16 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       console.warn("Failed to automatically copy code to clipboard:", err);
     }
 
-    // 1. Show the copy coupon modal instantly in the active tab
-    setActiveCoupon(coupon);
-
-    // 2. Open the merchant store's affiliate URL in a new tab safely
+    // 1. Open our own website in a new tab, passing the coupon query params to auto-trigger the modal
     try {
-      window.open(storeUrl, "_blank", "noopener,noreferrer");
+      const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}&code=${coupon.code}`;
+      window.open(ourSiteUrl, "_blank", "noopener,noreferrer");
     } catch (err) {
-      console.warn("Failed to open merchant website in a new tab:", err);
-      // Fallback: if popup is blocked, redirect the current tab instead
-      window.location.href = storeUrl;
+      console.warn("Failed to open our website in a new tab:", err);
     }
+
+    // 2. Redirect the current active tab to the merchant store's affiliate URL
+    window.location.href = storeUrl;
   };
 
   // Dynamically find matching stores based on the search query
