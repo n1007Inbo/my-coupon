@@ -89,16 +89,17 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       console.warn("Failed to automatically copy code to clipboard:", err);
     }
 
-    // 1. Open our own website in a new tab, passing the coupon query param to auto-trigger the modal
-    try {
-      const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}`;
-      window.open(ourSiteUrl, "_blank", "noopener,noreferrer");
-    } catch (err) {
-      console.warn("Failed to open our website in a new tab:", err);
-    }
+    // 1. Show the copy coupon modal instantly in the active tab
+    setActiveCoupon(coupon);
 
-    // 2. Redirect the current active tab to the merchant store's affiliate URL
-    window.location.href = storeUrl;
+    // 2. Open the merchant store's affiliate URL in a new tab safely
+    try {
+      window.open(storeUrl, "_blank", "noopener,noreferrer");
+    } catch (err) {
+      console.warn("Failed to open merchant website in a new tab:", err);
+      // Fallback: if popup is blocked, redirect the current tab instead
+      window.location.href = storeUrl;
+    }
   };
 
   // Dynamically find matching stores based on the search query
