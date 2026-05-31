@@ -10,12 +10,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/desktronic-us",
-        destination: "https://desktronic.com",
+        destination: "https://desktronic.com/methewdippy",
         permanent: false,
       },
       {
         source: "/go/desktronic-nl",
-        destination: "https://desktronic.nl",
+        destination: "https://desktronic.nl/methewdippy",
         permanent: false,
       },
       {
