@@ -32,7 +32,7 @@ const FALLBACK_STORES: Store[] = [
   { id: 19, name: "Booking.com", slug: "bookingcom", logo: getLogoUrl("bookingcom"), website: "https://booking.com" },
   { id: 20, name: "Udemy", slug: "udemy", logo: getLogoUrl("udemy"), website: "https://udemy.com" },
   { id: 21, name: "Desktronic UK", slug: "desktronic-uk", logo: getLogoUrl("desktronic-uk"), website: "/go/desktronic-uk" },
-  { id: 22, name: "Desktronic US", slug: "desktronic-us", logo: getLogoUrl("desktronic-us"), website: "https://desktronic.com" },
+  { id: 22, name: "Desktronic US", slug: "desktronic-us", logo: getLogoUrl("desktronic-us"), website: "/go/desktronic-us" },
   { id: 23, name: "Tenways UK", slug: "tenways-uk", logo: getLogoUrl("tenways-uk"), website: "https://tenways.com/pages/uk-store" },
   { id: 24, name: "Tenways US", slug: "tenways-us", logo: getLogoUrl("tenways-us"), website: "https://tenways.com" },
   { id: 25, name: "Geekbuying", slug: "geekbuying", logo: getLogoUrl("geekbuying"), website: "https://geekbuying.com" },
@@ -50,7 +50,8 @@ const FALLBACK_STORES: Store[] = [
   { id: 37, name: "Skillshare", slug: "skillshare", logo: getLogoUrl("skillshare"), website: "https://skillshare.com" },
   { id: 38, name: "NordPass", slug: "nordpass", logo: getLogoUrl("nordpass"), website: "https://nordpass.com" },
   { id: 39, name: "GoDaddy", slug: "godaddy", logo: getLogoUrl("godaddy"), website: "https://godaddy.com" },
-  { id: 40, name: "Gymshark", slug: "gymshark", logo: getLogoUrl("gymshark"), website: "https://gymshark.com" }
+  { id: 40, name: "Gymshark", slug: "gymshark", logo: getLogoUrl("gymshark"), website: "https://gymshark.com" },
+  { id: 41, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" }
 ];
 
 const FALLBACK_COUPONS: Coupon[] = [
@@ -160,16 +161,19 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 63, code: "MarkPaul15", discount: "£15 off on newsletter signup", description: "Get £15 off your first standing desk order on newsletter signup.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
 
   // Desktronic US
-  { id: 64, code: "DESKUS10", discount: "10% OFF", description: "Get 10% off your next purchase of advanced standing desks.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 65, code: "SPRING36", discount: "36% OFF", description: "Enjoy 36% off during our limited-time Spring Sale promotion.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 66, code: "USWIDE10", discount: "10% OFF", description: "Exclusive 10% off discount code sitewide on all ergonomic frames.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 67, code: "ERGOUS35", discount: "35% OFF", description: "Save 35% on high-performance ergonomic office chairs.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 68, code: "FREESHIPUS", discount: "Free Shipping", description: "Free delivery on all shipments across the United States.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 69, code: "ACCESSUS35", discount: "35% OFF", description: "Get 35% off on desk accessories, cable sleeves, and mouse mats.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 70, code: "FRAMEUS30", discount: "30% OFF", description: "Save 30% on smart height-adjustable desk frames.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 71, code: "BESTSELL30", discount: "30% OFF", description: "Enjoy 30% off on our best-selling ergonomic furniture.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 72, code: "SELECT20", discount: "20% OFF", description: "Save 20% on selected ergonomic office setups and accessories.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
-  { id: 73, code: "USNEWS10", discount: "10% OFF", description: "Enjoy 10% off your first purchase when subscribing to the newsletter.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21] },
+  { id: 64, code: "MarkPaul15", discount: "15% off discount code", description: "Exclusive $15 off discount code sitewide on premium standing desks and frames.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 65, code: "MarkPaul15", discount: "$150 off - Seasonal deals", description: "Save $150 on complete ergonomic office packages and standing desk bundles.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 66, code: "MarkPaul15", discount: "20% off coupon code sitewide", description: "Verified 20% off coupon code sitewide on smart height-adjustable tables.", expiry_date: "2026-06-16T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 67, code: "MarkPaul15", discount: "50% off - limited time offer", description: "Huge 50% off limited-time offer on clearance ergonomic items.", expiry_date: "2026-06-18T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 68, code: "MarkPaul15", discount: "free shipping", description: "Get free standard US delivery on all orders above $100.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 69, code: "MarkPaul15", discount: "35% off on desk frame", description: "Save 35% off on desk frame bundles and motorized dual-motor models.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 70, code: "MarkPaul15", discount: "34% off on height-adjustable desk", description: "Enjoy 34% off on height-adjustable desks with smart memory presets.", expiry_date: "2026-06-16T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 71, code: "MarkPaul15", discount: "30% off on office chairs", description: "Save 30% on active ergonomic office chairs with lumbar support.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 72, code: "MarkPaul15", discount: "$199 for tabletops", description: "Special offer: Premium bamboo and oak tabletops starting from just $199.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 73, code: "MarkPaul15", discount: "30% off on accessories", description: "Get 30% off on selected desk accessories, cable trays, and monitors.", expiry_date: "2026-06-18T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 731, code: "MarkPaul15", discount: "28% off on desk drawer", description: "Save an extra 28% on under-desk drawers and metal filing cabinets.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 732, code: "MarkPaul15", discount: "20% off on solid wood desks", description: "Get 20% off on premium solid wood desktop collections.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 733, code: "MarkPaul15", discount: "$15 off on newsletter signup", description: "Get $15 off your first standing desk order on newsletter signup.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
 
   // Tenways UK
   { id: 74, code: "TENWAYSUK", discount: "£50 OFF", description: "Special launch coupon: £50 off your first Tenways electric bike order.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[22] },
@@ -253,7 +257,22 @@ const FALLBACK_COUPONS: Coupon[] = [
   // Gymshark
   { id: 119, code: "GYMSHARK10", discount: "10% OFF", description: "Save 10% sitewide on gym sportswear, activewear, and gear.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] },
   { id: 120, code: "SHARKFREESHIP", discount: "Free Shipping", description: "Get free shipping on fitness gear orders above $75 sitewide.", expiry_date: "2026-09-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] },
-  { id: 121, code: "SHARKSTUDENT", discount: "15% OFF", description: "Impact exclusive: Students save 15% on latest fitness clothes.", expiry_date: "2026-08-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] }
+  { id: 121, code: "SHARKSTUDENT", discount: "15% OFF", description: "Impact exclusive: Students save 15% on latest fitness clothes.", expiry_date: "2026-08-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[39] },
+
+  // Desktronic NL
+  { id: 122, code: "MarkPaul15", discount: "15% actiecode", description: "Exclusieve kortingscode voor €15 korting op het hele assortiment sta-bureaus en frames.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 123, code: "MarkPaul15", discount: "€150 korting - Complete bureaus", description: "Bespaar €150 op complete ergonomische kantoorpakketten en sta-bureau combinaties.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 124, code: "MarkPaul15", discount: "20% kortingscode sitewide", description: "Geverifieerde 20% kortingscode op alle slimme in hoogte verstelbare bureaus.", expiry_date: "2026-06-16T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 125, code: "MarkPaul15", discount: "50% korting - Tijdelijke aanbieding", description: "Enorme 50% korting op geselecteerde ergonomische kantoorartikelen.", expiry_date: "2026-06-18T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 126, code: "MarkPaul15", discount: "gratis verzending", description: "Gratis standaard verzending in heel Nederland bij bestellingen vanaf €100.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 127, code: "MarkPaul15", discount: "35% korting op bureauframe", description: "Bespaar 35% op in hoogte verstelbare bureauframe (HomePro) met dubbele motor.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 128, code: "MarkPaul15", discount: "34% korting op sta-bureau", description: "Geniet van 34% korting op sta-bureaus met slimme geheugeninstellingen.", expiry_date: "2026-06-16T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 129, code: "MarkPaul15", discount: "30% korting op bureaustoelen", description: "Bespaar 30% op actieve ergonomische bureaustoelen met lendensteun.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 130, code: "MarkPaul15", discount: "€199 voor bureaubladen", description: "Speciale aanbieding: Premium bureaubladen collectie vanaf slechts €199.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 131, code: "MarkPaul15", discount: "30% korting op accessoires", description: "Ontvang 30% korting op geselecteerde bureau-accessoires, kabelgoten en armen.", expiry_date: "2026-06-18T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 132, code: "MarkPaul15", discount: "28% korting op ladeblokken", description: "Bespaar 28% extra op onderbureau lades en metalen archiefkasten.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 133, code: "MarkPaul15", discount: "20% korting op massief hout", description: "Ontvang 20% korting op de premium bureaubladen collectie van massief hout.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 134, code: "MarkPaul15", discount: "€15 korting bij nieuwsbrief", description: "Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" }
 ];
 
 export const revalidate = 600; // Cache page and revalidate in background every 10 minutes

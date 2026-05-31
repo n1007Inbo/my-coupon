@@ -9,6 +9,16 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/go/desktronic-us",
+        destination: "https://desktronic.com",
+        permanent: false,
+      },
+      {
+        source: "/go/desktronic-nl",
+        destination: "https://desktronic.nl",
+        permanent: false,
+      },
+      {
         source: "/go/desktronic-4leg",
         destination: "https://desktronic.co.uk/products/4-leg-standing-desk?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program",
         permanent: false,
