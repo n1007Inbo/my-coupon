@@ -62,10 +62,10 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       // Filter by search query (match store name, coupon code, or description)
       if (searchQuery.trim() !== "") {
         const query = searchQuery.toLowerCase();
-        const matchesStore = storeName.toLowerCase().includes(query);
-        const matchesCode = coupon.code.toLowerCase().includes(query);
-        const matchesDesc = coupon.description.toLowerCase().includes(query);
-        const matchesDiscount = coupon.discount.toLowerCase().includes(query);
+        const matchesStore = storeName ? storeName.toLowerCase().includes(query) : false;
+        const matchesCode = coupon.code ? coupon.code.toLowerCase().includes(query) : false;
+        const matchesDesc = coupon.description ? coupon.description.toLowerCase().includes(query) : false;
+        const matchesDiscount = coupon.discount ? coupon.discount.toLowerCase().includes(query) : false;
 
         return matchesStore || matchesCode || matchesDesc || matchesDiscount;
       }

@@ -86,9 +86,9 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
     if (searchQuery.trim() === "") return coupons;
     const query = searchQuery.toLowerCase();
     return coupons.filter((coupon) => {
-      const matchesCode = coupon.code.toLowerCase().includes(query);
-      const matchesDesc = coupon.description.toLowerCase().includes(query);
-      const matchesDiscount = coupon.discount.toLowerCase().includes(query);
+      const matchesCode = coupon.code ? coupon.code.toLowerCase().includes(query) : false;
+      const matchesDesc = coupon.description ? coupon.description.toLowerCase().includes(query) : false;
+      const matchesDiscount = coupon.discount ? coupon.discount.toLowerCase().includes(query) : false;
       return matchesCode || matchesDesc || matchesDiscount;
     });
   }, [coupons, searchQuery]);

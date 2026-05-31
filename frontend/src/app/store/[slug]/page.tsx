@@ -3,7 +3,8 @@ import StoreClient from "./StoreClient";
 import { Coupon, Store } from "../../../components/CouponCard";
 
 // Helper to retrieve beautiful corporate logos dynamically from local SVG files
-const getLogoUrl = (slug: string) => {
+const getLogoUrl = (slug: string | undefined | null) => {
+  if (!slug || typeof slug !== "string") return "/logos/default.svg";
   if (slug.startsWith("desktronic-")) return "/logos/desktronic.svg";
   if (slug.startsWith("tenways-")) return "/logos/tenways.svg";
   return `/logos/${slug}.svg`;

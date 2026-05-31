@@ -137,10 +137,10 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
       {/* 1. Left side: Store Logo */}
       <div className={styles.logoSection}>
         {storeLogo ? (
-          <img src={storeLogo} alt={storeName} className={styles.logoImg} />
+          <img src={storeLogo} alt={storeName || "Store"} className={styles.logoImg} />
         ) : (
           <div className={styles.logoFallback}>
-            {storeName.charAt(0).toUpperCase()}
+            {storeName ? storeName.charAt(0).toUpperCase() : "?"}
           </div>
         )}
       </div>
