@@ -49,11 +49,22 @@ export default {
       }
 
       // 1.5 Clean old Desktronic UK database entries ALWAYS to force update with correct affiliate links
-      const deskStore = await strapi.query('api::store.store').findOne({ where: { slug: 'desktronic-uk' } });
-      if (deskStore) {
-        strapi.log.info("Cleaning existing Desktronic UK data in database to update with user's verified affiliate coupons...");
-        await strapi.query('api::coupon.coupon').deleteMany({ where: { store: deskStore.id } });
-        await strapi.query('api::store.store').delete({ where: { id: deskStore.id } });
+      strapi.log.info("Checking for any existing Desktronic UK entries to clean...");
+      
+      // Clean by slug
+      const deskStoreBySlug = await strapi.query('api::store.store').findOne({ where: { slug: 'desktronic-uk' } });
+      if (deskStoreBySlug) {
+        strapi.log.info(`Found Desktronic UK by slug (ID: ${deskStoreBySlug.id}). Cleaning coupons and store...`);
+        await strapi.query('api::coupon.coupon').deleteMany({ where: { store: deskStoreBySlug.id } });
+        await strapi.query('api::store.store').delete({ where: { id: deskStoreBySlug.id } });
+      }
+
+      // Clean by name (ensures no unique constraint issues with duplicate names)
+      const deskStoreByName = await strapi.query('api::store.store').findOne({ where: { name: 'Desktronic UK' } });
+      if (deskStoreByName) {
+        strapi.log.info(`Found Desktronic UK by name (ID: ${deskStoreByName.id}). Cleaning coupons and store...`);
+        await strapi.query('api::coupon.coupon').deleteMany({ where: { store: deskStoreByName.id } });
+        await strapi.query('api::store.store').delete({ where: { id: deskStoreByName.id } });
       }
 
       // 1.6 Dedicated seeding of Desktronic UK with user's verified affiliate coupons
