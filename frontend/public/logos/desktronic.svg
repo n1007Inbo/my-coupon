@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80">
-  <!-- Minimalist, high-end transparent background brand logo wordmark -->
-  <text x="50%" y="52" text-anchor="middle" font-family="'Outfit', 'Inter', 'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="44" fill="#0f172a" letter-spacing="-1.5">
-    desk<tspan fill="#0ea5e9">tronic</tspan>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80">
+  <!-- Exact official typographic uppercase bold wordmark of Desktronic -->
+  <text x="50%" y="52" text-anchor="middle" font-family="'Outfit', 'Inter', 'Montserrat', -apple-system, sans-serif" font-weight="900" font-size="38" fill="#1e293b" letter-spacing="1">
+    DESKTRONIC
   </text>
-  
-  <!-- Sleek minimalist height-adjustment arrows integrated representation -->
-  <path d="M110 62 H190" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" opacity="0.6" />
-  <polyline points="146 59 150 56 154 59" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-  <polyline points="146 65 150 68 154 65" fill="none" stroke="#0ea5e9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
