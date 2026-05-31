@@ -160,6 +160,8 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 61, code: "MarkPaul15", discount: "28% off on desk drawer", description: "Save an extra 28% on under-desk drawers and metal filing cabinets.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
   { id: 62, code: "MarkPaul15", discount: "20% off on solid wood desks", description: "Get 20% off on premium solid wood desktop collections.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
   { id: 63, code: "MarkPaul15", discount: "£15 off on newsletter signup", description: "Get £15 off your first standing desk order on newsletter signup.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
+  { id: 631, code: "MarkPaul15", discount: "15% off student discount", description: "Verified 15% off student and educator discount code on premium ergonomic standing desks.", expiry_date: "2026-06-25T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
+  { id: 632, code: "MarkPaul15", discount: "£200 off - Corporate bulk deals", description: "Save an extra £200 on business and home office bulk standing desk package orders.", expiry_date: "2026-06-26T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[20], affiliate_url: "/go/desktronic-uk" },
 
   // Desktronic US
   { id: 64, code: "METHEWDIPPY", discount: "15% off discount code", description: "Exclusive $15 off discount code sitewide on premium standing desks and frames.", expiry_date: "2026-06-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
@@ -175,6 +177,8 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 731, code: "METHEWDIPPY", discount: "28% off on desk drawer", description: "Save an extra 28% on under-desk drawers and metal filing cabinets.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
   { id: 732, code: "METHEWDIPPY", discount: "20% off on solid wood desks", description: "Get 20% off on premium solid wood desktop collections.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
   { id: 733, code: "METHEWDIPPY", discount: "$15 off on newsletter signup", description: "Get $15 off your first standing desk order on newsletter signup.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 734, code: "METHEWDIPPY", discount: "15% off student discount", description: "Verified 15% off student and educator discount code on premium ergonomic standing desks.", expiry_date: "2026-06-25T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
+  { id: 735, code: "METHEWDIPPY", discount: "$200 off - Corporate bulk deals", description: "Save an extra $200 on business and home office bulk standing desk package orders.", expiry_date: "2026-06-26T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[21], affiliate_url: "/go/desktronic-us" },
 
   // Tenways UK
   { id: 74, code: "TENWAYSUK", discount: "£50 OFF", description: "Special launch coupon: £50 off your first Tenways electric bike order.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[22] },
@@ -273,7 +277,9 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 131, code: "METHEW", discount: "30% korting op accessoires", description: "Ontvang 30% korting op geselecteerde bureau-accessoires, kabelgoten en armen.", expiry_date: "2026-06-18T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
   { id: 132, code: "METHEW", discount: "28% korting op ladeblokken", description: "Bespaar 28% extra op onderbureau lades en metalen archiefkasten.", expiry_date: "2026-06-19T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
   { id: 133, code: "METHEW", discount: "20% korting op massief hout", description: "Ontvang 20% korting op de premium bureaubladen collectie van massief hout.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
-  { id: 134, code: "METHEW", discount: "€15 korting bij nieuwsbrief", description: "Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" }
+  { id: 134, code: "METHEW", discount: "€15 korting bij nieuwsbrief", description: "Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 1341, code: "METHEW", discount: "15% studentenkorting", description: "Geverifieerde 15% studenten- en docentenkorting op het gehele assortiment sta-bureaus.", expiry_date: "2026-06-25T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
+  { id: 1342, code: "METHEW", discount: "€200 korting - Zakelijke bulkdeals", description: "Bespaar €200 extra op zakelijke en thuiswerkers bulkbestellingen van sta-bureaus.", expiry_date: "2026-06-26T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" }
 
 ];
 

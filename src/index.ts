@@ -67,7 +67,9 @@ export default {
             { code: 'MarkPaul15', discount: '30% off on accessories', description: 'Get 30% off on selected desk accessories, cable trays, and monitors.', expiry_date: '2026-06-18T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
             { code: 'MarkPaul15', discount: '28% off on desk drawer', description: 'Save an extra 28% on under-desk drawers and metal filing cabinets.', expiry_date: '2026-06-19T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
             { code: 'MarkPaul15', discount: '20% off on solid wood desks', description: 'Get 20% off on premium solid wood desktop collections.', expiry_date: '2026-06-21T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
-            { code: 'MarkPaul15', discount: '£15 off on newsletter signup', description: 'Get £15 off your first standing desk order on newsletter signup.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' }
+            { code: 'MarkPaul15', discount: '£15 off on newsletter signup', description: 'Get £15 off your first standing desk order on newsletter signup.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+            { code: 'MarkPaul15', discount: '15% off student discount', description: 'Verified 15% off student and educator discount code on premium ergonomic standing desks.', expiry_date: '2026-06-25T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' },
+            { code: 'MarkPaul15', discount: '£200 off - Corporate bulk deals', description: 'Save an extra £200 on business and home office bulk standing desk package orders.', expiry_date: '2026-06-26T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-uk' }
           ]
         },
         {
@@ -87,7 +89,9 @@ export default {
             { code: 'METHEWDIPPY', discount: '30% off on accessories', description: 'Get 30% off on selected desk accessories, cable trays, and monitors.', expiry_date: '2026-06-18T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' },
             { code: 'METHEWDIPPY', discount: '28% off on desk drawer', description: 'Save an extra 28% on under-desk drawers and metal filing cabinets.', expiry_date: '2026-06-19T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' },
             { code: 'METHEWDIPPY', discount: '20% off on solid wood desks', description: 'Get 20% off on premium solid wood desktop collections.', expiry_date: '2026-06-21T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' },
-            { code: 'METHEWDIPPY', discount: '$15 off on newsletter signup', description: 'Get $15 off your first standing desk order on newsletter signup.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' }
+            { code: 'METHEWDIPPY', discount: '$15 off on newsletter signup', description: 'Get $15 off your first standing desk order on newsletter signup.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' },
+            { code: 'METHEWDIPPY', discount: '15% off student discount', description: 'Verified 15% off student and educator discount code on premium ergonomic standing desks.', expiry_date: '2026-06-25T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' },
+            { code: 'METHEWDIPPY', discount: '$200 off - Corporate bulk deals', description: 'Save an extra $200 on business and home office bulk standing desk package orders.', expiry_date: '2026-06-26T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-us' }
           ]
         },
         {
@@ -107,7 +111,9 @@ export default {
             { code: 'METHEW', discount: '30% korting op accessoires', description: 'Ontvang 30% korting op geselecteerde bureau-accessoires, kabelgoten en armen.', expiry_date: '2026-06-18T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
             { code: 'METHEW', discount: '28% korting op ladeblokken', description: 'Bespaar 28% extra op onderbureau lades en metalen archiefkasten.', expiry_date: '2026-06-19T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
             { code: 'METHEW', discount: '20% korting op massief hout', description: 'Ontvang 20% korting op de premium bureaubladen collectie van massief hout.', expiry_date: '2026-06-21T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
-            { code: 'METHEW', discount: '€15 korting bij nieuwsbrief', description: 'Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' }
+            { code: 'METHEW', discount: '€15 korting bij nieuwsbrief', description: 'Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.', expiry_date: '2026-06-15T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
+            { code: 'METHEW', discount: '15% studentenkorting', description: 'Geverifieerde 15% studenten- en docentenkorting op het gehele assortiment sta-bureaus.', expiry_date: '2026-06-25T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
+            { code: 'METHEW', discount: '€200 korting - Zakelijke bulkdeals', description: 'Bespaar €200 extra op zakelijke en thuiswerkers bulkbestellingen van sta-bureaus.', expiry_date: '2026-06-26T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' }
           ]
         }
       ];
