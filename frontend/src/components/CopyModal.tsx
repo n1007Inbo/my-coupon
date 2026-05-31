@@ -113,23 +113,15 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
 
 
 
-  // Handle click outside to close
+  // Lock body scroll when modal is open
   useEffect(() => {
-    const handleOutsideClick = (event: MouseEvent) => {
-      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-        onClose();
-      }
-    };
-
     // Prevent scrolling when modal is open
     document.body.style.overflow = "hidden";
-    document.addEventListener("mousedown", handleOutsideClick);
 
     return () => {
       document.body.style.overflow = "";
-      document.removeEventListener("mousedown", handleOutsideClick);
     };
-  }, [onClose]);
+  }, []);
 
   // Handle Escape key to close
   useEffect(() => {
