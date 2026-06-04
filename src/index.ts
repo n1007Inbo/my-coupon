@@ -115,6 +115,116 @@ export default {
             { code: 'METHEW', discount: '15% studentenkorting', description: 'Geverifieerde 15% studenten- en docentenkorting op het gehele assortiment sta-bureaus.', expiry_date: '2026-06-25T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' },
             { code: 'METHEW', discount: '€200 korting - Zakelijke bulkdeals', description: 'Bespaar €200 extra op zakelijke en thuiswerkers bulkbestellingen van sta-bureaus.', expiry_date: '2026-06-26T23:59:59.000Z', is_verified: true, affiliate_url: '/go/desktronic-nl' }
           ]
+        },
+        {
+          name: 'PatPat US',
+          slug: 'patpat-us',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'FAM-VIP603', discount: '15% off', description: 'Apply this verified family VIP code at checkout to save 15% on your baby and toddler clothes order.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME15', discount: '15% off first order', description: 'Save 15% sitewide on your first order. Coupon code valid for new customers only.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'APP15', discount: '15% off app purchase', description: 'Download the mobile app and save 15% on your first app purchase using this code.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'PPT10', discount: '10% off sitewide', description: 'Save 10% on your next order at checkout. Enter discount code before paying.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Free shipping over $35', description: 'Get free standard shipping on all US orders above $35. No code required.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: '30% off matching family outfits', description: 'Buy 3 get 1 30% off on all matching family outfits and pajamas. Auto-applied.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'PatPat DE',
+          slug: 'patpat-de',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'FAM-VIP603', discount: '15% rabatt', description: 'Verifizierter Familien-VIP-Code. Erhalten Sie 15% Rabatt auf Baby- und Kinderkleidung.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME15', discount: '15% rabatt für neukunden', description: 'Sparen Sie 15% auf Ihre erste Bestellung. Nur für Neukunden gültig.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'APP15', discount: '15% rabatt in der app', description: 'Laden Sie die offizielle PatPat-App herunter und erhalten Sie 15% Rabatt auf Ihre erste In-App-Bestellung.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'PPT10', discount: '10% rabatt auf alles', description: 'Erhalten Sie 10% Rabatt auf Ihre Bestellung. Rabattcode an der Kasse eingeben.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Gratis versand ab 35 €', description: 'Kostenlose Standardlieferung ab einem Bestellwert von 35 €. Kein Code erforderlich.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Bis zu 50% Rabatt im sale', description: 'Sparen Sie bis zu 50% auf ausgewählte Kollektionen im Outlet. Auto-Rabatt.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'PatPat FR',
+          slug: 'patpat-fr',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'FAM-VIP603', discount: '15% de réduction', description: 'Code VIP famille vérifié. Bénéficiez de 15% de réduction sur la mode bébé et enfant.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME15', discount: '15% de rabais nouveau client', description: 'Économisez 15% sur votre première commande. Valable uniquement pour les nouveaux clients.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'APP15', discount: "15% de remise sur l'app", description: "Téléchargez l'application officielle et économisez 15% sur votre première commande in-app.", expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'PPT10', discount: '10% de réduction sitewide', description: 'Économisez 10% sur votre commande. Saisissez ce code promo lors du paiement.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Livraison gratuite dès 35 €', description: 'Profitez de la livraison gratuite sur vos commandes de 35 € ou plus. Sans code.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: "Jusqu'à 50% de réduction dans l'outlet", description: "Bénéficiez de remises allant jusqu'à 50% sur une sélection de vêtements bébé et famille.", expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'PatPat NL',
+          slug: 'patpat-nl',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'FAM-VIP603', discount: '15% kortingscode', description: 'Geverifieerde familie-VIP-code. Ontvang 15% korting op baby- en kinderkleding.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME15', discount: '15% korting voor nieuwe klanten', description: 'Bespaar 15% op je eerste bestelling. Code uitsluitend geldig voor nieuwe klanten.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'APP15', discount: '15% korting via de app', description: 'Download de officiële PatPat app en bespaar direct 15% op je eerste in-app aankoop.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'PPT10', discount: '10% korting op de hele site', description: 'Bespaar 10% op je volgende bestelling. Voer deze actiecode in bij het afrekenen.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Gratis bezorging vanaf €35', description: 'Gratis standaard verzending bij bestellingen vanaf €35. Geen code vereist.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Tot 50% korting in de outlet', description: 'Bespaar tot 50% op geselecteerde babykleding en familie pjs. Automatische korting.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'PatPat IT',
+          slug: 'patpat-it',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'FAM-VIP603', discount: '15% codice sconto', description: 'Codice VIP famiglia verificato. Ottieni il 15% di sconto su abbigliamento neonati e bambini.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME15', discount: '15% di sconto nuovi clienti', description: 'Risparmia il 15% sul tuo primo acquisto. Codice valido solo per i nuovi utenti.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'APP15', discount: "15% di sconto sull'app", description: "Scarica l'app ufficiale di PatPat e risparmia il 15% sul tuo primo ordine tramite app.", expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'PPT10', discount: '10% di sconto su tutto il sito', description: 'Risparmia il 10% sul tuo ordine. Inserisci il codice promozionale prima di pagare.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Consegna gratuita da 35 €', description: 'Spedizione standard gratuita per tutti gli ordini superiori a 35 €. Senza codice.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: '', discount: 'Sconti fino al 50% nell\'outlet', description: 'Risparmia fino al 50% su una selezione di completini per neonati e vestiti coordinati.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'Lola & Lykke',
+          slug: 'lola-lykke',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'LOLA10', discount: '10% OFF', description: 'Verified 10% discount code on smart breast pumps and maternal care packages.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME10', discount: '10% OFF first order', description: 'Save 10% on your first order. Valid on all smart pumps and postpartum support gear.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'Kossma Beauty',
+          slug: 'kossma',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'KOSSMA15', discount: '15% OFF', description: 'Save 15% on luxury ancestral skincare and tallow-based beauty products sitewide.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'KOSSMA10', discount: 'Extra 10% OFF', description: 'Get 10% off your first skincare order on newsletter signup.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'Ryze Superfoods',
+          slug: 'ryze',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'RYZE15', discount: '15% OFF', description: 'Enjoy 15% off your organic mushroom coffee starter kit or subscription order.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME10', discount: '10% OFF first order', description: 'Get 10% off your first bag of viral mushroom coffee blend.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'Dreame Tech',
+          slug: 'dreame',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'DREAME10', discount: '10% OFF', description: 'Get 10% off high-end robot vacuums, cordless vacuums, and smart hair dryers.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'DREAMENEW', discount: 'Extra 5% OFF', description: 'Save an extra 5% on your first purchase sitewide.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
+        },
+        {
+          name: 'Lume Deodorant',
+          slug: 'lume',
+          website: 'https://litl.si/oNGx4G',
+          coupons: [
+            { code: 'LUME10', discount: '10% OFF', description: 'Verified 10% off coupon code sitewide on whole-body deodorants and starter packs.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
+            { code: 'WELCOME10', discount: '10% OFF first order', description: 'Save 10% on your first order when you sign up for newsletter updates.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+          ]
         }
       ];
 
