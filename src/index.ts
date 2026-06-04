@@ -211,10 +211,15 @@ export default {
         {
           name: 'Dreame Tech',
           slug: 'dreame',
-          website: 'https://litl.si/oNGx4G',
+          website: 'https://vert.si/VlYZn_',
           coupons: [
-            { code: 'DREAME10', discount: '10% OFF', description: 'Get 10% off high-end robot vacuums, cordless vacuums, and smart hair dryers.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
-            { code: 'DREAMENEW', discount: 'Extra 5% OFF', description: 'Save an extra 5% on your first purchase sitewide.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
+            { code: 'DREAMENEW', discount: '12% OFF', description: 'Get 12% off sitewide on premium robot vacuums, wet-dry vacuums, and styling tools. Active code for new customers.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: 'WELCOME10', discount: '10% OFF', description: 'Enjoy 10% off your first purchase sitewide. Register your email on Dreame Tech and save.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: 'A10URWS', discount: '$400 OFF', description: 'Special promo: Save $400 on the premium Aqua10 Ultra Roller wet/dry vacuum cleaner.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: 'HERO10', discount: '10% OFF', description: 'Get an extra 10% off for verified educators, military members, healthcare workers, and first responders.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: 'DREAME5', discount: '5% OFF', description: 'Earn a 5% discount code for your next order by referring a friend who completes their first purchase.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: '', discount: 'Free Shipping over $99', description: 'Enjoy free standard delivery across the United States on all orders of $99 or more. Auto-applied.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' },
+            { code: '', discount: 'Up to 35% OFF', description: 'Shop smart vacuums, robot mowers, and hair dryers in the summer flash sale with up to 35% discount.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://vert.si/VlYZn_' }
           ]
         },
         {
