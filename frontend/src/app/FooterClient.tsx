@@ -64,6 +64,7 @@ export default function FooterClient() {
             <h4 className="footerColHeader">Quick Links</h4>
             <a href="/" className="footerLinkItem">Home</a>
             <a href="/#stores" className="footerLinkItem">Featured Stores</a>
+            <a href="/blog" className="footerLinkItem">Trending Blog</a>
             <a href="/about" className="footerLinkItem">About Us</a>
             <a href="/contact" className="footerLinkItem">Contact Us</a>
           </div>
