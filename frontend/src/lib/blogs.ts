@@ -58,13 +58,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "summer-maternity-comfort-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
-        price: "$89.99",
+        name: "Reformation Linen Maternity Dress",
+        brand: "Reformation",
+        price: "$218.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-reformation",
+        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -74,12 +74,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "summer-maternity-comfort-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "Earth Mama Organic Perineal Balm",
+        brand: "Earth Mama",
+        price: "$27.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -94,8 +94,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "summer-maternity-comfort-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "summer-maternity-comfort-prod2", title: "Product B", price: "$18.50" }
+      { x: 45, y: 65, productId: "summer-maternity-comfort-prod1", title: "Product A", price: "$218.00" },
+      { x: 75, y: 35, productId: "summer-maternity-comfort-prod2", title: "Product B", price: "$27.99" }
     ]
   },
   "baby-travel-gear-guide": {
@@ -113,12 +113,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "baby-travel-gear-guide-prod1",
-        name: "Aesthetic Diaper Bag Travel Backpack",
-        brand: "Target Essentials",
-        price: "$78.00",
+        name: "Babyzen YOYO2 Travel Stroller",
+        brand: "Babyzen",
+        price: "$449.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -129,12 +129,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "baby-travel-gear-guide-prod2",
-        name: "Portable Baby Bottle Warmer Sleeve",
-        brand: "Mavely Baby",
-        price: "$24.99",
+        name: "Dagne Dover Indi Neoprene Diaper Backpack",
+        brand: "Dagne Dover",
+        price: "$165.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -149,8 +149,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "baby-travel-gear-guide-prod1", title: "Product A", price: "$78.00" },
-      { x: 75, y: 35, productId: "baby-travel-gear-guide-prod2", title: "Product B", price: "$24.99" }
+      { x: 45, y: 65, productId: "baby-travel-gear-guide-prod1", title: "Product A", price: "$449.00" },
+      { x: 75, y: 35, productId: "baby-travel-gear-guide-prod2", title: "Product B", price: "$165.00" }
     ]
   },
   "nursery-decor-inspiration": {
@@ -168,12 +168,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "nursery-decor-inspiration-prod1",
-        name: "Aesthetic Solid Wood Convertible Crib",
-        brand: "Target Home",
-        price: "$299.99",
+        name: "Babyletto Hudson 3-in-1 Convertible Crib",
+        brand: "Babyletto",
+        price: "$399.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -184,12 +184,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "nursery-decor-inspiration-prod2",
-        name: "Minimalist Pastel Baby Crib Mobile",
-        brand: "AliExpress Baby",
-        price: "$19.99",
+        name: "AliExpress Wooden Baby Activity Gym",
+        brand: "AliExpress",
+        price: "$24.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/aliexpress",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -204,8 +204,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "nursery-decor-inspiration-prod1", title: "Product A", price: "$299.99" },
-      { x: 75, y: 35, productId: "nursery-decor-inspiration-prod2", title: "Product B", price: "$19.99" }
+      { x: 45, y: 65, productId: "nursery-decor-inspiration-prod1", title: "Product A", price: "$399.00" },
+      { x: 75, y: 35, productId: "nursery-decor-inspiration-prod2", title: "Product B", price: "$24.99" }
     ]
   },
   "maternity-wardrobe-basics": {
@@ -223,13 +223,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "maternity-wardrobe-basics-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
-        price: "$89.99",
+        name: "Lululemon Align High-Rise Maternity Pants",
+        brand: "Lululemon",
+        price: "$98.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lululemon",
+        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -239,13 +239,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "maternity-wardrobe-basics-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "Spanx AirEssentials Maternity Lounge Top",
+        brand: "Spanx",
+        price: "$118.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-spanx",
+        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -259,8 +259,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "maternity-wardrobe-basics-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "maternity-wardrobe-basics-prod2", title: "Product B", price: "$18.50" }
+      { x: 45, y: 65, productId: "maternity-wardrobe-basics-prod1", title: "Product A", price: "$98.00" },
+      { x: 75, y: 35, productId: "maternity-wardrobe-basics-prod2", title: "Product B", price: "$118.00" }
     ]
   },
   "baby-sensory-toys": {
@@ -278,12 +278,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "baby-sensory-toys-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
-        price: "$89.99",
+        name: "Lovevery Play Gym Sensory Mat",
+        brand: "Lovevery",
+        price: "$140.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -294,12 +294,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "baby-sensory-toys-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "AliExpress Montessori Sensory Toy Box",
+        brand: "AliExpress",
+        price: "$19.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/aliexpress",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -314,8 +314,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "baby-sensory-toys-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "baby-sensory-toys-prod2", title: "Product B", price: "$18.50" }
+      { x: 45, y: 65, productId: "baby-sensory-toys-prod1", title: "Product A", price: "$140.00" },
+      { x: 75, y: 35, productId: "baby-sensory-toys-prod2", title: "Product B", price: "$19.99" }
     ]
   },
   "postpartum-recovery-checklist": {
@@ -333,13 +333,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "postpartum-recovery-checklist-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
-        price: "$89.99",
+        name: "Frida Mom Postpartum Recovery Essentials Kit",
+        brand: "Frida Mom",
+        price: "$99.99",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -349,12 +349,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "postpartum-recovery-checklist-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "Earth Mama Organic Perineal Spray",
+        brand: "Earth Mama",
+        price: "$15.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -369,8 +369,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "postpartum-recovery-checklist-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "postpartum-recovery-checklist-prod2", title: "Product B", price: "$18.50" }
+      { x: 45, y: 65, productId: "postpartum-recovery-checklist-prod1", title: "Product A", price: "$99.99" },
+      { x: 75, y: 35, productId: "postpartum-recovery-checklist-prod2", title: "Product B", price: "$15.99" }
     ]
   },
   "baby-feeding-musthaves": {
@@ -388,12 +388,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "baby-feeding-musthaves-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
-        price: "$89.99",
+        name: "Lalo The High Chair & Booster",
+        brand: "Lalo",
+        price: "$185.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -404,12 +404,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "baby-feeding-musthaves-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "EZPZ Silicone First Foods Set",
+        brand: "EZPZ",
+        price: "$34.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -424,8 +424,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "baby-feeding-musthaves-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "baby-feeding-musthaves-prod2", title: "Product B", price: "$18.50" }
+      { x: 45, y: 65, productId: "baby-feeding-musthaves-prod1", title: "Product A", price: "$185.00" },
+      { x: 75, y: 35, productId: "baby-feeding-musthaves-prod2", title: "Product B", price: "$34.99" }
     ]
   },
   "organic-baby-skincare": {
@@ -443,13 +443,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "organic-baby-skincare-prod1",
-        name: "Kossma Botanical Radiance Vitamin C Serum",
-        brand: "Kossma",
-        price: "$39.00",
+        name: "Tubby Todd All Over Ointment",
+        brand: "Tubby Todd",
+        price: "$24.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -459,13 +459,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "organic-baby-skincare-prod2",
-        name: "Kossma Anti-Aging Rosehip Oil",
-        brand: "Kossma",
-        price: "$32.00",
+        name: "Earth Mama Soothing Diaper Rash Cream",
+        brand: "Earth Mama",
+        price: "$14.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -479,8 +479,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "organic-baby-skincare-prod1", title: "Product A", price: "$39.00" },
-      { x: 75, y: 35, productId: "organic-baby-skincare-prod2", title: "Product B", price: "$32.00" }
+      { x: 45, y: 65, productId: "organic-baby-skincare-prod1", title: "Product A", price: "$24.00" },
+      { x: 75, y: 35, productId: "organic-baby-skincare-prod2", title: "Product B", price: "$14.99" }
     ]
   },
   "stroller-comparison-2026": {
@@ -498,12 +498,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "stroller-comparison-2026-prod1",
-        name: "Aesthetic City Foldable Stroller",
-        brand: "Target Essentials",
-        price: "$199.99",
+        name: "Mockingbird Single-to-Double Stroller",
+        brand: "Mockingbird",
+        price: "$450.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -514,13 +514,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "stroller-comparison-2026-prod2",
-        name: "Anti-Vibration Stroller Comfort Liner",
-        brand: "Mavely Baby",
-        price: "$29.99",
+        name: "UppaBaby Vista V2 Premium Stroller",
+        brand: "UppaBaby",
+        price: "$999.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-nordstrom",
+        imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -534,8 +534,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "stroller-comparison-2026-prod1", title: "Product A", price: "$199.99" },
-      { x: 75, y: 35, productId: "stroller-comparison-2026-prod2", title: "Product B", price: "$29.99" }
+      { x: 45, y: 65, productId: "stroller-comparison-2026-prod1", title: "Product A", price: "$450.00" },
+      { x: 75, y: 35, productId: "stroller-comparison-2026-prod2", title: "Product B", price: "$999.00" }
     ]
   },
   "toddler-playroom-storage": {
@@ -553,12 +553,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "toddler-playroom-storage-prod1",
-        name: "Premium Infant Sensory Play Gym",
-        brand: "Target Essentials",
+        name: "Aosom Kids Toy Organizer & Bookshelf",
+        brand: "Aosom",
         price: "$89.99",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/aosom",
         imageUrl: "https://images.unsplash.com/photo-1591088398332-8a7791972843?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -569,12 +569,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "toddler-playroom-storage-prod2",
-        name: "Ergonomic Silicone Baby Feeding Set",
-        brand: "Mavely Baby",
-        price: "$18.50",
+        name: "Pehr Canvas Storage Bins (Set of 3)",
+        brand: "Pehr",
+        price: "$68.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -590,7 +590,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     ],
     hotspots: [
       { x: 45, y: 65, productId: "toddler-playroom-storage-prod1", title: "Product A", price: "$89.99" },
-      { x: 75, y: 35, productId: "toddler-playroom-storage-prod2", title: "Product B", price: "$18.50" }
+      { x: 75, y: 35, productId: "toddler-playroom-storage-prod2", title: "Product B", price: "$68.00" }
     ]
   },
   "aesthetic-wfh-desk-setup": {
@@ -608,12 +608,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "aesthetic-wfh-desk-setup-prod1",
-        name: "Desktronic HomePro Height Adjustable Standing Desk",
-        brand: "Desktronic",
-        price: "£289.00",
+        name: "Aosom Height Adjustable Standing Desk",
+        brand: "Aosom",
+        price: "$259.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/aosom",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -624,12 +624,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "aesthetic-wfh-desk-setup-prod2",
-        name: "NuPhy Air60 Minimalist Wireless Keyboard",
+        name: "NuPhy Air75 V2 Mechanical Keyboard",
         brand: "NuPhy",
-        price: "$109.99",
+        price: "$119.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -644,8 +644,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "aesthetic-wfh-desk-setup-prod1", title: "Product A", price: "£289.00" },
-      { x: 75, y: 35, productId: "aesthetic-wfh-desk-setup-prod2", title: "Product B", price: "$109.99" }
+      { x: 45, y: 65, productId: "aesthetic-wfh-desk-setup-prod1", title: "Product A", price: "$259.99" },
+      { x: 75, y: 35, productId: "aesthetic-wfh-desk-setup-prod2", title: "Product B", price: "$119.99" }
     ]
   },
   "minimalist-wooden-workspace": {
@@ -663,12 +663,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "minimalist-wooden-workspace-prod1",
-        name: "Desktronic HomePro Height Adjustable Standing Desk",
-        brand: "Desktronic",
-        price: "£289.00",
+        name: "Grovemade Walnut Monitor Stand",
+        brand: "Grovemade",
+        price: "$149.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -679,13 +679,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "minimalist-wooden-workspace-prod2",
-        name: "NuPhy Air60 Minimalist Wireless Keyboard",
-        brand: "NuPhy",
-        price: "$109.99",
+        name: "Aosom Solid Wood Adjustable Desk",
+        brand: "Aosom",
+        price: "$299.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/aosom",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -699,8 +699,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "minimalist-wooden-workspace-prod1", title: "Product A", price: "£289.00" },
-      { x: 75, y: 35, productId: "minimalist-wooden-workspace-prod2", title: "Product B", price: "$109.99" }
+      { x: 45, y: 65, productId: "minimalist-wooden-workspace-prod1", title: "Product A", price: "$149.00" },
+      { x: 75, y: 35, productId: "minimalist-wooden-workspace-prod2", title: "Product B", price: "$299.99" }
     ]
   },
   "mechanical-keyboards-guide": {
@@ -718,12 +718,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "mechanical-keyboards-guide-prod1",
-        name: "NuPhy Air75 V2 Mechanical Keyboard",
+        name: "NuPhy Halo75 Wireless Mechanical Keyboard",
         brand: "NuPhy",
-        price: "$119.99",
+        price: "$139.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -734,13 +734,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "mechanical-keyboards-guide-prod2",
-        name: "Custom Dye-Sub PBT Tactile Keycaps",
-        brand: "NuPhy Accessories",
-        price: "$34.99",
+        name: "Logitech MX Mechanical Mini Keyboard",
+        brand: "Logitech",
+        price: "$149.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -754,8 +754,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "mechanical-keyboards-guide-prod1", title: "Product A", price: "$119.99" },
-      { x: 75, y: 35, productId: "mechanical-keyboards-guide-prod2", title: "Product B", price: "$34.99" }
+      { x: 45, y: 65, productId: "mechanical-keyboards-guide-prod1", title: "Product A", price: "$139.99" },
+      { x: 75, y: 35, productId: "mechanical-keyboards-guide-prod2", title: "Product B", price: "$149.99" }
     ]
   },
   "ergonomic-office-chairs": {
@@ -773,12 +773,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "ergonomic-office-chairs-prod1",
-        name: "Ergonomic Gas-Spring Dual Monitor Mount",
-        brand: "Desktronic Accessories",
-        price: "£59.00",
+        name: "Herman Miller Aeron Ergonomic Chair",
+        brand: "Herman Miller",
+        price: "$1495.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -789,13 +789,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "ergonomic-office-chairs-prod2",
-        name: "Minimalist Anti-Slip Felt Desk Pad",
-        brand: "NuPhy Accessories",
-        price: "$24.99",
+        name: "Aosom Ergonomic Office Chair",
+        brand: "Aosom",
+        price: "$189.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/aosom",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -809,8 +809,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "ergonomic-office-chairs-prod1", title: "Product A", price: "£59.00" },
-      { x: 75, y: 35, productId: "ergonomic-office-chairs-prod2", title: "Product B", price: "$24.99" }
+      { x: 45, y: 65, productId: "ergonomic-office-chairs-prod1", title: "Product A", price: "$1495.00" },
+      { x: 75, y: 35, productId: "ergonomic-office-chairs-prod2", title: "Product B", price: "$189.99" }
     ]
   },
   "desk-organization-hacks": {
@@ -828,12 +828,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "desk-organization-hacks-prod1",
-        name: "Ergonomic Gas-Spring Dual Monitor Mount",
-        brand: "Desktronic Accessories",
-        price: "£59.00",
+        name: "Grovemade Walnut Desk Organizer Tray",
+        brand: "Grovemade",
+        price: "$120.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -844,13 +844,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "desk-organization-hacks-prod2",
-        name: "Minimalist Anti-Slip Felt Desk Pad",
-        brand: "NuPhy Accessories",
-        price: "$24.99",
+        name: "Songmics Desktop Organizer Drawer",
+        brand: "Songmics",
+        price: "$34.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/songmics",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -864,8 +864,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "desk-organization-hacks-prod1", title: "Product A", price: "£59.00" },
-      { x: 75, y: 35, productId: "desk-organization-hacks-prod2", title: "Product B", price: "$24.99" }
+      { x: 45, y: 65, productId: "desk-organization-hacks-prod1", title: "Product A", price: "$120.00" },
+      { x: 75, y: 35, productId: "desk-organization-hacks-prod2", title: "Product B", price: "$34.99" }
     ]
   },
   "dual-monitor-setup": {
@@ -883,12 +883,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "dual-monitor-setup-prod1",
-        name: "Ergonomic Gas-Spring Dual Monitor Mount",
-        brand: "Desktronic Accessories",
-        price: "£59.00",
+        name: "Samsung Odyssey G5 Curved Monitor",
+        brand: "Samsung",
+        price: "$349.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/samsung",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -899,13 +899,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "dual-monitor-setup-prod2",
-        name: "Minimalist Anti-Slip Felt Desk Pad",
-        brand: "NuPhy Accessories",
-        price: "$24.99",
+        name: "Aosom Gas Spring Dual Monitor Arm",
+        brand: "Aosom",
+        price: "$69.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/aosom",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -919,8 +919,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "dual-monitor-setup-prod1", title: "Product A", price: "£59.00" },
-      { x: 75, y: 35, productId: "dual-monitor-setup-prod2", title: "Product B", price: "$24.99" }
+      { x: 45, y: 65, productId: "dual-monitor-setup-prod1", title: "Product A", price: "$349.99" },
+      { x: 75, y: 35, productId: "dual-monitor-setup-prod2", title: "Product B", price: "$69.99" }
     ]
   },
   "desk-lighting-guide": {
@@ -938,13 +938,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "desk-lighting-guide-prod1",
-        name: "Ergonomic Gas-Spring Dual Monitor Mount",
-        brand: "Desktronic Accessories",
-        price: "£59.00",
+        name: "BenQ ScreenBar Monitor LED Light",
+        brand: "BenQ",
+        price: "$109.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -954,12 +954,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "desk-lighting-guide-prod2",
-        name: "Minimalist Anti-Slip Felt Desk Pad",
-        brand: "NuPhy Accessories",
-        price: "$24.99",
+        name: "Philips Hue Play Light Bar (2-Pack)",
+        brand: "Philips",
+        price: "$159.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -974,8 +974,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "desk-lighting-guide-prod1", title: "Product A", price: "£59.00" },
-      { x: 75, y: 35, productId: "desk-lighting-guide-prod2", title: "Product B", price: "$24.99" }
+      { x: 45, y: 65, productId: "desk-lighting-guide-prod1", title: "Product A", price: "$109.00" },
+      { x: 75, y: 35, productId: "desk-lighting-guide-prod2", title: "Product B", price: "$159.99" }
     ]
   },
   "compact-desk-setups": {
@@ -993,12 +993,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "compact-desk-setups-prod1",
-        name: "Desktronic HomePro Height Adjustable Standing Desk",
-        brand: "Desktronic",
-        price: "£289.00",
+        name: "Aosom Compact Folding Desk",
+        brand: "Aosom",
+        price: "$79.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/aosom",
         imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1009,13 +1009,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "compact-desk-setups-prod2",
-        name: "NuPhy Air60 Minimalist Wireless Keyboard",
-        brand: "NuPhy",
-        price: "$109.99",
+        name: "Grovemade Wood Vertical Laptop Stand",
+        brand: "Grovemade",
+        price: "$95.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1029,8 +1029,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "compact-desk-setups-prod1", title: "Product A", price: "£289.00" },
-      { x: 75, y: 35, productId: "compact-desk-setups-prod2", title: "Product B", price: "$109.99" }
+      { x: 45, y: 65, productId: "compact-desk-setups-prod1", title: "Product A", price: "$79.99" },
+      { x: 75, y: 35, productId: "compact-desk-setups-prod2", title: "Product B", price: "$95.00" }
     ]
   },
   "standing-desk-accessories": {
@@ -1048,13 +1048,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "standing-desk-accessories-prod1",
-        name: "Desktronic HomePro Height Adjustable Standing Desk",
-        brand: "Desktronic",
-        price: "£289.00",
+        name: "Grovemade Wool Felt Desk Mat",
+        brand: "Grovemade",
+        price: "$80.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -1064,13 +1064,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "standing-desk-accessories-prod2",
-        name: "NuPhy Air60 Minimalist Wireless Keyboard",
-        brand: "NuPhy",
-        price: "$109.99",
+        name: "Songmics Anti-Fatigue Standing Mat",
+        brand: "Songmics",
+        price: "$49.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/songmics",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1084,8 +1084,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "standing-desk-accessories-prod1", title: "Product A", price: "£289.00" },
-      { x: 75, y: 35, productId: "standing-desk-accessories-prod2", title: "Product B", price: "$109.99" }
+      { x: 45, y: 65, productId: "standing-desk-accessories-prod1", title: "Product A", price: "$80.00" },
+      { x: 75, y: 35, productId: "standing-desk-accessories-prod2", title: "Product B", price: "$49.99" }
     ]
   },
   "programmer-workspace-inspo": {
@@ -1103,13 +1103,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "programmer-workspace-inspo-prod1",
-        name: "Desktronic HomePro Height Adjustable Standing Desk",
-        brand: "Desktronic",
-        price: "£289.00",
+        name: "NuPhy Field75 Wireless Mechanical Keyboard",
+        brand: "NuPhy",
+        price: "$159.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -1119,13 +1119,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "programmer-workspace-inspo-prod2",
-        name: "NuPhy Air60 Minimalist Wireless Keyboard",
-        brand: "NuPhy",
-        price: "$109.99",
+        name: "Samsung Smart Monitor M8 32-Inch",
+        brand: "Samsung",
+        price: "$399.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/samsung",
+        imageUrl: "https://images.unsplash.com/photo-1593642532842-98d0fd5ebc1a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1139,8 +1139,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "programmer-workspace-inspo-prod1", title: "Product A", price: "£289.00" },
-      { x: 75, y: 35, productId: "programmer-workspace-inspo-prod2", title: "Product B", price: "$109.99" }
+      { x: 45, y: 65, productId: "programmer-workspace-inspo-prod1", title: "Product A", price: "$159.99" },
+      { x: 75, y: 35, productId: "programmer-workspace-inspo-prod2", title: "Product B", price: "$399.99" }
     ]
   },
   "glossy-summer-skincare": {
@@ -1158,12 +1158,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "glossy-summer-skincare-prod1",
-        name: "Kossma Botanical Radiance Vitamin C Serum",
-        brand: "Kossma",
+        name: "Lookfantastic Botanical Radiance Vitamin C Serum",
+        brand: "Lookfantastic",
         price: "$39.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1174,12 +1174,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "glossy-summer-skincare-prod2",
-        name: "Kossma Anti-Aging Rosehip Oil",
-        brand: "Kossma",
-        price: "$32.00",
+        name: "Lookfantastic Chamomile Whipped Tallow Balm",
+        brand: "Lookfantastic",
+        price: "$36.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1195,7 +1195,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     ],
     hotspots: [
       { x: 45, y: 65, productId: "glossy-summer-skincare-prod1", title: "Product A", price: "$39.00" },
-      { x: 75, y: 35, productId: "glossy-summer-skincare-prod2", title: "Product B", price: "$32.00" }
+      { x: 75, y: 35, productId: "glossy-summer-skincare-prod2", title: "Product B", price: "$36.00" }
     ]
   },
   "whipped-tallow-moisturizer": {
@@ -1213,12 +1213,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "whipped-tallow-moisturizer-prod1",
-        name: "Kossma Organic Grass-Fed Whipped Tallow Balm",
-        brand: "Kossma",
+        name: "Lookfantastic Organic Whipped Tallow Balm",
+        brand: "Lookfantastic",
         price: "$34.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1229,12 +1229,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "whipped-tallow-moisturizer-prod2",
-        name: "Kossma Active Herbal Lip balm",
-        brand: "Kossma",
+        name: "Lookfantastic Soothing Lip Balm",
+        brand: "Lookfantastic",
         price: "$9.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1268,12 +1268,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "ionic-blow-dryers-review-prod1",
-        name: "Professional Saloon Ionic Hair Dryer",
-        brand: "Kossma Beauty",
-        price: "$59.99",
+        name: "Lookfantastic Dyson Supersonic Hair Dryer",
+        brand: "Lookfantastic",
+        price: "$429.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1284,13 +1284,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "ionic-blow-dryers-review-prod2",
-        name: "Premium Heat Protectant Styling Spray",
-        brand: "Mavely Beauty",
-        price: "$18.00",
+        name: "Lookfantastic Shark HyperAIR Ionic Hair Dryer",
+        brand: "Lookfantastic",
+        price: "$199.99",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1304,8 +1304,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "ionic-blow-dryers-review-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "ionic-blow-dryers-review-prod2", title: "Product B", price: "$18.00" }
+      { x: 45, y: 65, productId: "ionic-blow-dryers-review-prod1", title: "Product A", price: "$429.00" },
+      { x: 75, y: 35, productId: "ionic-blow-dryers-review-prod2", title: "Product B", price: "$199.99" }
     ]
   },
   "organic-serums-glow": {
@@ -1323,12 +1323,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "organic-serums-glow-prod1",
-        name: "Kossma Botanical Radiance Vitamin C Serum",
-        brand: "Kossma",
-        price: "$39.00",
+        name: "Lookfantastic Vitamin C Brightening Oil Serum",
+        brand: "Lookfantastic",
+        price: "$42.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1339,13 +1339,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "organic-serums-glow-prod2",
-        name: "Kossma Anti-Aging Rosehip Oil",
-        brand: "Kossma",
-        price: "$32.00",
+        name: "The Ordinary Niacinamide Serum",
+        brand: "Lookfantastic",
+        price: "$8.90",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1359,8 +1359,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "organic-serums-glow-prod1", title: "Product A", price: "$39.00" },
-      { x: 75, y: 35, productId: "organic-serums-glow-prod2", title: "Product B", price: "$32.00" }
+      { x: 45, y: 65, productId: "organic-serums-glow-prod1", title: "Product A", price: "$42.00" },
+      { x: 75, y: 35, productId: "organic-serums-glow-prod2", title: "Product B", price: "$8.90" }
     ]
   },
   "clean-cosmetics-checklist": {
@@ -1378,12 +1378,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "clean-cosmetics-checklist-prod1",
-        name: "Premium Jade Gua Sha Scraping Tool",
-        brand: "Kossma Beauty",
-        price: "$15.00",
+        name: "Kiko Milano Sculpting Skin Tint SPF 30",
+        brand: "Kiko Milano",
+        price: "$38.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/kiko",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1394,13 +1394,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "clean-cosmetics-checklist-prod2",
-        name: "Double-Ended Rose Quartz Face Roller",
-        brand: "Kossma Beauty",
-        price: "$18.00",
+        name: "Kiko Milano Complexion Rescue Tinted Cream",
+        brand: "Kiko Milano",
+        price: "$29.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/kiko",
+        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1414,8 +1414,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "clean-cosmetics-checklist-prod1", title: "Product A", price: "$15.00" },
-      { x: 75, y: 35, productId: "clean-cosmetics-checklist-prod2", title: "Product B", price: "$18.00" }
+      { x: 45, y: 65, productId: "clean-cosmetics-checklist-prod1", title: "Product A", price: "$38.00" },
+      { x: 75, y: 35, productId: "clean-cosmetics-checklist-prod2", title: "Product B", price: "$29.00" }
     ]
   },
   "clay-masks-detox": {
@@ -1433,13 +1433,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "clay-masks-detox-prod1",
-        name: "Premium Jade Gua Sha Scraping Tool",
-        brand: "Kossma Beauty",
-        price: "$15.00",
+        name: "Lookfantastic Deep Pore Detox Clay Mask",
+        brand: "Lookfantastic",
+        price: "$14.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -1449,12 +1449,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "clay-masks-detox-prod2",
-        name: "Double-Ended Rose Quartz Face Roller",
-        brand: "Kossma Beauty",
-        price: "$18.00",
+        name: "Lookfantastic Innisfree Pore Clearing Clay Mask",
+        brand: "Lookfantastic",
+        price: "$16.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1469,8 +1469,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "clay-masks-detox-prod1", title: "Product A", price: "$15.00" },
-      { x: 75, y: 35, productId: "clay-masks-detox-prod2", title: "Product B", price: "$18.00" }
+      { x: 45, y: 65, productId: "clay-masks-detox-prod1", title: "Product A", price: "$14.99" },
+      { x: 75, y: 35, productId: "clay-masks-detox-prod2", title: "Product B", price: "$16.00" }
     ]
   },
   "face-massage-tools": {
@@ -1488,12 +1488,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "face-massage-tools-prod1",
-        name: "Premium Jade Gua Sha Scraping Tool",
-        brand: "Kossma Beauty",
-        price: "$15.00",
+        name: "Lookfantastic Jade Gua Sha Lifting Tool",
+        brand: "Lookfantastic",
+        price: "$24.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1504,12 +1504,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "face-massage-tools-prod2",
-        name: "Double-Ended Rose Quartz Face Roller",
-        brand: "Kossma Beauty",
-        price: "$18.00",
+        name: "Lookfantastic Rose Quartz Facial Roller",
+        brand: "Lookfantastic",
+        price: "$28.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1524,8 +1524,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "face-massage-tools-prod1", title: "Product A", price: "$15.00" },
-      { x: 75, y: 35, productId: "face-massage-tools-prod2", title: "Product B", price: "$18.00" }
+      { x: 45, y: 65, productId: "face-massage-tools-prod1", title: "Product A", price: "$24.00" },
+      { x: 75, y: 35, productId: "face-massage-tools-prod2", title: "Product B", price: "$28.00" }
     ]
   },
   "nighttime-skincare-routine": {
@@ -1543,12 +1543,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "nighttime-skincare-routine-prod1",
-        name: "Kossma Botanical Radiance Vitamin C Serum",
-        brand: "Kossma",
-        price: "$39.00",
+        name: "Laneige Water Sleeping Mask 70ml",
+        brand: "Lookfantastic",
+        price: "$29.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1559,12 +1559,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "nighttime-skincare-routine-prod2",
-        name: "Kossma Anti-Aging Rosehip Oil",
-        brand: "Kossma",
-        price: "$32.00",
+        name: "Sunday Riley Luna Sleeping Night Oil",
+        brand: "Lookfantastic",
+        price: "$55.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
+        affiliateUrl: "/go/lookfantastic",
         imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1579,8 +1579,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "nighttime-skincare-routine-prod1", title: "Product A", price: "$39.00" },
-      { x: 75, y: 35, productId: "nighttime-skincare-routine-prod2", title: "Product B", price: "$32.00" }
+      { x: 45, y: 65, productId: "nighttime-skincare-routine-prod1", title: "Product A", price: "$29.00" },
+      { x: 75, y: 35, productId: "nighttime-skincare-routine-prod2", title: "Product B", price: "$55.00" }
     ]
   },
   "anti-aging-botanicals": {
@@ -1598,13 +1598,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "anti-aging-botanicals-prod1",
-        name: "Kossma Botanical Radiance Vitamin C Serum",
-        brand: "Kossma",
-        price: "$39.00",
+        name: "Lookfantastic Anti-Aging Rosehip Oil",
+        brand: "Lookfantastic",
+        price: "$32.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -1614,13 +1614,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "anti-aging-botanicals-prod2",
-        name: "Kossma Anti-Aging Rosehip Oil",
-        brand: "Kossma",
-        price: "$32.00",
+        name: "Lookfantastic Herbivore Bakuchiol Wrinkle Serum",
+        brand: "Lookfantastic",
+        price: "$54.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1634,8 +1634,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "anti-aging-botanicals-prod1", title: "Product A", price: "$39.00" },
-      { x: 75, y: 35, productId: "anti-aging-botanicals-prod2", title: "Product B", price: "$32.00" }
+      { x: 45, y: 65, productId: "anti-aging-botanicals-prod1", title: "Product A", price: "$32.00" },
+      { x: 75, y: 35, productId: "anti-aging-botanicals-prod2", title: "Product B", price: "$54.00" }
     ]
   },
   "travel-size-beauty-essentials": {
@@ -1653,13 +1653,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "travel-size-beauty-essentials-prod1",
-        name: "Premium Jade Gua Sha Scraping Tool",
-        brand: "Kossma Beauty",
-        price: "$15.00",
+        name: "Lookfantastic Travel Size Cleanser & Mist",
+        brand: "Lookfantastic",
+        price: "$22.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/lookfantastic",
+        imageUrl: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -1669,13 +1669,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "travel-size-beauty-essentials-prod2",
-        name: "Double-Ended Rose Quartz Face Roller",
-        brand: "Kossma Beauty",
-        price: "$18.00",
+        name: "Cuyana Leather Mini Toiletry Bag",
+        brand: "Cuyana",
+        price: "$95.00",
         originalPrice: "$40.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://kossma.com/discount/MarkPaul15",
-        imageUrl: "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-nordstrom",
+        imageUrl: "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -1689,8 +1689,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "travel-size-beauty-essentials-prod1", title: "Product A", price: "$15.00" },
-      { x: 75, y: 35, productId: "travel-size-beauty-essentials-prod2", title: "Product B", price: "$18.00" }
+      { x: 45, y: 65, productId: "travel-size-beauty-essentials-prod1", title: "Product A", price: "$22.00" },
+      { x: 75, y: 35, productId: "travel-size-beauty-essentials-prod2", title: "Product B", price: "$95.00" }
     ]
   },
   "summer-vacation-fashion": {
@@ -1708,12 +1708,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "summer-vacation-fashion-prod1",
-        name: "Premium Pure Organic Linen Midi Dress",
-        brand: "Mavely Fashion",
-        price: "$48.00",
+        name: "Alo Yoga Airbrush Sporty Ribbed Knit Set",
+        brand: "Alo Yoga",
+        price: "$118.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-aloyoga",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1724,12 +1724,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "summer-vacation-fashion-prod2",
-        name: "Handwoven Straw Summer Bag",
-        brand: "AliExpress Fashion",
-        price: "$14.99",
+        name: "Ray-Ban Aviator Classic Sunglasses",
+        brand: "Ray-Ban",
+        price: "$163.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1744,8 +1744,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "summer-vacation-fashion-prod1", title: "Product A", price: "$48.00" },
-      { x: 75, y: 35, productId: "summer-vacation-fashion-prod2", title: "Product B", price: "$14.99" }
+      { x: 45, y: 65, productId: "summer-vacation-fashion-prod1", title: "Product A", price: "$118.00" },
+      { x: 75, y: 35, productId: "summer-vacation-fashion-prod2", title: "Product B", price: "$163.00" }
     ]
   },
   "organic-linen-midi-dress": {
@@ -1763,12 +1763,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "organic-linen-midi-dress-prod1",
-        name: "Premium Pure Organic Linen Midi Dress",
-        brand: "Mavely Fashion",
-        price: "$48.00",
+        name: "Reformation Linen Midi Dress",
+        brand: "Reformation",
+        price: "$218.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-reformation",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1779,12 +1779,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "organic-linen-midi-dress-prod2",
-        name: "Handwoven Straw Summer Bag",
-        brand: "AliExpress Fashion",
-        price: "$14.99",
+        name: "Steve Madden Leather Flat Slide Sandals",
+        brand: "Steve Madden",
+        price: "$59.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1799,8 +1799,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "organic-linen-midi-dress-prod1", title: "Product A", price: "$48.00" },
-      { x: 75, y: 35, productId: "organic-linen-midi-dress-prod2", title: "Product B", price: "$14.99" }
+      { x: 45, y: 65, productId: "organic-linen-midi-dress-prod1", title: "Product A", price: "$218.00" },
+      { x: 75, y: 35, productId: "organic-linen-midi-dress-prod2", title: "Product B", price: "$59.99" }
     ]
   },
   "vintage-polarized-sunglasses": {
@@ -1818,12 +1818,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "vintage-polarized-sunglasses-prod1",
-        name: "Vintage Polarized 70s Aviator Sunglasses",
-        brand: "Mavely Fashion",
-        price: "$29.99",
+        name: "Quay Australia Polarized Sunglasses",
+        brand: "Quay",
+        price: "$65.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1834,12 +1834,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "vintage-polarized-sunglasses-prod2",
-        name: "Textured Leather Sunglasses Protective Case",
-        brand: "AliExpress",
-        price: "$12.00",
+        name: "Nordstrom Textured Leather Sunglasses Case",
+        brand: "Nordstrom",
+        price: "$25.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1854,8 +1854,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "vintage-polarized-sunglasses-prod1", title: "Product A", price: "$29.99" },
-      { x: 75, y: 35, productId: "vintage-polarized-sunglasses-prod2", title: "Product B", price: "$12.00" }
+      { x: 45, y: 65, productId: "vintage-polarized-sunglasses-prod1", title: "Product A", price: "$65.00" },
+      { x: 75, y: 35, productId: "vintage-polarized-sunglasses-prod2", title: "Product B", price: "$25.00" }
     ]
   },
   "minimalist-capsule-wardrobe": {
@@ -1873,12 +1873,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "minimalist-capsule-wardrobe-prod1",
-        name: "Premium Pure Organic Linen Midi Dress",
-        brand: "Mavely Fashion",
-        price: "$48.00",
+        name: "Everlane Classic White Linen Button Down",
+        brand: "Everlane",
+        price: "$88.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-everlane",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1889,12 +1889,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "minimalist-capsule-wardrobe-prod2",
-        name: "Handwoven Straw Summer Bag",
-        brand: "AliExpress Fashion",
-        price: "$14.99",
+        name: "Polene Number One Nano Bag",
+        brand: "Polene",
+        price: "$380.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1909,8 +1909,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "minimalist-capsule-wardrobe-prod1", title: "Product A", price: "$48.00" },
-      { x: 75, y: 35, productId: "minimalist-capsule-wardrobe-prod2", title: "Product B", price: "$14.99" }
+      { x: 45, y: 65, productId: "minimalist-capsule-wardrobe-prod1", title: "Product A", price: "$88.00" },
+      { x: 75, y: 35, productId: "minimalist-capsule-wardrobe-prod2", title: "Product B", price: "$380.00" }
     ]
   },
   "resort-wear-outfit-ideas": {
@@ -1928,12 +1928,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "resort-wear-outfit-ideas-prod1",
-        name: "Premium Pure Organic Linen Midi Dress",
-        brand: "Mavely Fashion",
-        price: "$48.00",
+        name: "Dissh Linen Resort Maxi Dress",
+        brand: "Dissh",
+        price: "$149.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1944,12 +1944,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "resort-wear-outfit-ideas-prod2",
-        name: "Handwoven Straw Summer Bag",
-        brand: "AliExpress Fashion",
-        price: "$14.99",
+        name: "Lack of Color Spencer Boater Straw Hat",
+        brand: "Lack of Color",
+        price: "$99.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -1964,8 +1964,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "resort-wear-outfit-ideas-prod1", title: "Product A", price: "$48.00" },
-      { x: 75, y: 35, productId: "resort-wear-outfit-ideas-prod2", title: "Product B", price: "$14.99" }
+      { x: 45, y: 65, productId: "resort-wear-outfit-ideas-prod1", title: "Product A", price: "$149.00" },
+      { x: 75, y: 35, productId: "resort-wear-outfit-ideas-prod2", title: "Product B", price: "$99.00" }
     ]
   },
   "comfortable-airport-style": {
@@ -1983,12 +1983,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "comfortable-airport-style-prod1",
-        name: "Cozy Travel Lounge Outfit Set (2-Piece)",
-        brand: "Mavely Fashion",
-        price: "$59.99",
+        name: "Spanx AirEssentials Lounge Set",
+        brand: "Spanx",
+        price: "$246.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-spanx",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -1999,12 +1999,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "comfortable-airport-style-prod2",
-        name: "Premium Leather Travel Slide Sandals",
-        brand: "Mavely Fashion",
-        price: "$38.00",
+        name: "Cuyana Classic Leather Duffle Bag",
+        brand: "Cuyana",
+        price: "$398.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2019,8 +2019,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "comfortable-airport-style-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "comfortable-airport-style-prod2", title: "Product B", price: "$38.00" }
+      { x: 45, y: 65, productId: "comfortable-airport-style-prod1", title: "Product A", price: "$246.00" },
+      { x: 75, y: 35, productId: "comfortable-airport-style-prod2", title: "Product B", price: "$398.00" }
     ]
   },
   "activewear-styling-tips": {
@@ -2038,12 +2038,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "activewear-styling-tips-prod1",
-        name: "Cozy Travel Lounge Outfit Set (2-Piece)",
-        brand: "Mavely Fashion",
-        price: "$59.99",
+        name: "Lululemon Align High-Rise Active Pants",
+        brand: "Lululemon",
+        price: "$98.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/lululemon",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -2054,13 +2054,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "activewear-styling-tips-prod2",
-        name: "Premium Leather Travel Slide Sandals",
-        brand: "Mavely Fashion",
-        price: "$38.00",
+        name: "Alo Yoga Athletic Cropped Tank Top",
+        brand: "Alo Yoga",
+        price: "$48.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
-        imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-aloyoga",
+        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -2074,8 +2074,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "activewear-styling-tips-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "activewear-styling-tips-prod2", title: "Product B", price: "$38.00" }
+      { x: 45, y: 65, productId: "activewear-styling-tips-prod1", title: "Product A", price: "$98.00" },
+      { x: 75, y: 35, productId: "activewear-styling-tips-prod2", title: "Product B", price: "$48.00" }
     ]
   },
   "summer-sandals-flatlay": {
@@ -2093,13 +2093,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "summer-sandals-flatlay-prod1",
-        name: "Cozy Travel Lounge Outfit Set (2-Piece)",
-        brand: "Mavely Fashion",
-        price: "$59.99",
+        name: "Birkenstock Arizona Shearling Sandals",
+        brand: "Birkenstock",
+        price: "$160.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-nordstrom",
+        imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -2109,12 +2109,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "summer-sandals-flatlay-prod2",
-        name: "Premium Leather Travel Slide Sandals",
-        brand: "Mavely Fashion",
-        price: "$38.00",
+        name: "Steve Madden Leather Flat Slide Sandals",
+        brand: "Steve Madden",
+        price: "$59.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2129,8 +2129,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "summer-sandals-flatlay-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "summer-sandals-flatlay-prod2", title: "Product B", price: "$38.00" }
+      { x: 45, y: 65, productId: "summer-sandals-flatlay-prod1", title: "Product A", price: "$160.00" },
+      { x: 75, y: 35, productId: "summer-sandals-flatlay-prod2", title: "Product B", price: "$59.99" }
     ]
   },
   "boho-beach-accessories": {
@@ -2148,13 +2148,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "boho-beach-accessories-prod1",
-        name: "Cozy Travel Lounge Outfit Set (2-Piece)",
-        brand: "Mavely Fashion",
-        price: "$59.99",
+        name: "Loewe Woven Boho Straw Tote Bag",
+        brand: "Loewe",
+        price: "$590.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-nordstrom",
+        imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -2164,12 +2164,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "boho-beach-accessories-prod2",
-        name: "Premium Leather Travel Slide Sandals",
-        brand: "Mavely Fashion",
-        price: "$38.00",
+        name: "Brixton Joanna Straw Sun Hat",
+        brand: "Brixton",
+        price: "$55.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2184,8 +2184,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "boho-beach-accessories-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "boho-beach-accessories-prod2", title: "Product B", price: "$38.00" }
+      { x: 45, y: 65, productId: "boho-beach-accessories-prod1", title: "Product A", price: "$590.00" },
+      { x: 75, y: 35, productId: "boho-beach-accessories-prod2", title: "Product B", price: "$55.00" }
     ]
   },
   "varsity-aesthetic-outfits": {
@@ -2203,12 +2203,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "varsity-aesthetic-outfits-prod1",
-        name: "Cozy Travel Lounge Outfit Set (2-Piece)",
-        brand: "Mavely Fashion",
-        price: "$59.99",
+        name: "Vintage Varsity Jacket",
+        brand: "Nordstrom",
+        price: "$180.00",
         originalPrice: "$219.00",
         couponCode: "MAVSAVE10",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/mavely-nordstrom",
         imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -2219,13 +2219,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "varsity-aesthetic-outfits-prod2",
-        name: "Premium Leather Travel Slide Sandals",
-        brand: "Mavely Fashion",
-        price: "$38.00",
+        name: "Alo Yoga Pleated Sporty Skirt",
+        brand: "Alo Yoga",
+        price: "$68.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
-        imageUrl: "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/mavely-aloyoga",
+        imageUrl: "https://images.unsplash.com/photo-1595777457583-95e059d581b8?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -2239,8 +2239,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "varsity-aesthetic-outfits-prod1", title: "Product A", price: "$59.99" },
-      { x: 75, y: 35, productId: "varsity-aesthetic-outfits-prod2", title: "Product B", price: "$38.00" }
+      { x: 45, y: 65, productId: "varsity-aesthetic-outfits-prod1", title: "Product A", price: "$180.00" },
+      { x: 75, y: 35, productId: "varsity-aesthetic-outfits-prod2", title: "Product B", price: "$68.00" }
     ]
   },
   "clean-kitchen-organization": {
@@ -2258,12 +2258,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "clean-kitchen-organization-prod1",
-        name: "Magnetic Refrigerator Heavy Duty Spice Rack",
-        brand: "Wayfair Home",
+        name: "Songmics Lazy Susan Turntable Spice Organizer",
+        brand: "Songmics",
         price: "$24.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -2274,12 +2274,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "clean-kitchen-organization-prod2",
-        name: "Aesthetic Glass Pantry Spice Jars (Set of 12)",
-        brand: "AliExpress Home",
-        price: "$19.99",
+        name: "Songmics Glass Jar Food Storage Set with Bamboo Lids",
+        brand: "Songmics",
+        price: "$45.00",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2295,7 +2295,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     ],
     hotspots: [
       { x: 45, y: 65, productId: "clean-kitchen-organization-prod1", title: "Product A", price: "$24.99" },
-      { x: 75, y: 35, productId: "clean-kitchen-organization-prod2", title: "Product B", price: "$19.99" }
+      { x: 75, y: 35, productId: "clean-kitchen-organization-prod2", title: "Product B", price: "$45.00" }
     ]
   },
   "magnetic-fridge-spice-rack": {
@@ -2313,12 +2313,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "magnetic-fridge-spice-rack-prod1",
-        name: "Magnetic Refrigerator Heavy Duty Spice Rack",
-        brand: "Wayfair Home",
-        price: "$24.99",
+        name: "Songmics Magnetic Fridge Spice Shelf",
+        brand: "Songmics",
+        price: "$28.00",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -2329,12 +2329,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "magnetic-fridge-spice-rack-prod2",
-        name: "Aesthetic Glass Pantry Spice Jars (Set of 12)",
-        brand: "AliExpress Home",
-        price: "$19.99",
+        name: "Adhesive Kitchen Utility Hooks (10-Pack)",
+        brand: "Target",
+        price: "$12.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/mavely-target",
         imageUrl: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2349,8 +2349,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "magnetic-fridge-spice-rack-prod1", title: "Product A", price: "$24.99" },
-      { x: 75, y: 35, productId: "magnetic-fridge-spice-rack-prod2", title: "Product B", price: "$19.99" }
+      { x: 45, y: 65, productId: "magnetic-fridge-spice-rack-prod1", title: "Product A", price: "$28.00" },
+      { x: 75, y: 35, productId: "magnetic-fridge-spice-rack-prod2", title: "Product B", price: "$12.99" }
     ]
   },
   "woven-laundry-baskets": {
@@ -2368,12 +2368,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "woven-laundry-baskets-prod1",
-        name: "Aesthetic Woven Laundry Hamper Basket",
-        brand: "Wayfair Home",
-        price: "$34.99",
+        name: "Songmics Woven Canvas Laundry Hamper with Leather Handles",
+        brand: "Songmics",
+        price: "$39.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
@@ -2384,13 +2384,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "woven-laundry-baskets-prod2",
-        name: "Clear Closet Dividers & Hangers Set",
-        brand: "Wayfair Home",
-        price: "$15.99",
+        name: "Songmics Collapsible Canvas Laundry Basket",
+        brand: "Songmics",
+        price: "$29.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
-        imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/songmics",
+        imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
         reviewsCount: 92,
@@ -2404,8 +2404,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "woven-laundry-baskets-prod1", title: "Product A", price: "$34.99" },
-      { x: 75, y: 35, productId: "woven-laundry-baskets-prod2", title: "Product B", price: "$15.99" }
+      { x: 45, y: 65, productId: "woven-laundry-baskets-prod1", title: "Product A", price: "$39.99" },
+      { x: 75, y: 35, productId: "woven-laundry-baskets-prod2", title: "Product B", price: "$29.99" }
     ]
   },
   "pantry-jar-labeling": {
@@ -2423,13 +2423,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "pantry-jar-labeling-prod1",
-        name: "Magnetic Refrigerator Heavy Duty Spice Rack",
-        brand: "Wayfair Home",
-        price: "$24.99",
+        name: "Songmics Glass Jar Set with Bamboo Lids (Set of 12)",
+        brand: "Songmics",
+        price: "$34.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/songmics",
+        imageUrl: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -2439,12 +2439,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "pantry-jar-labeling-prod2",
-        name: "Aesthetic Glass Pantry Spice Jars (Set of 12)",
-        brand: "AliExpress Home",
-        price: "$19.99",
+        name: "Songmics Waterproof Minimalist Pantry Labels Set",
+        brand: "Songmics",
+        price: "$14.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2459,8 +2459,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "pantry-jar-labeling-prod1", title: "Product A", price: "$24.99" },
-      { x: 75, y: 35, productId: "pantry-jar-labeling-prod2", title: "Product B", price: "$19.99" }
+      { x: 45, y: 65, productId: "pantry-jar-labeling-prod1", title: "Product A", price: "$34.99" },
+      { x: 75, y: 35, productId: "pantry-jar-labeling-prod2", title: "Product B", price: "$14.99" }
     ]
   },
   "closet-decluttering-hacks": {
@@ -2478,13 +2478,13 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     products: [
       {
         id: "closet-decluttering-hacks-prod1",
-        name: "Aesthetic Woven Laundry Hamper Basket",
-        brand: "Wayfair Home",
-        price: "$34.99",
+        name: "Songmics Non-Slip Velvet Hanger Set (50-Pack)",
+        brand: "Songmics",
+        price: "$32.99",
         originalPrice: "$219.00",
         couponCode: "MarkPaul15",
-        affiliateUrl: "https://mavely.app.link/EOkCCu97I3b",
-        imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=500&q=80",
+        affiliateUrl: "/go/songmics",
+        imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
         description: "A highly visual and elegant product designed for modern aesthetic layouts.",
         rating: 4.9,
         reviewsCount: 148,
@@ -2494,12 +2494,12 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       },
       {
         id: "closet-decluttering-hacks-prod2",
-        name: "Clear Closet Dividers & Hangers Set",
-        brand: "Wayfair Home",
-        price: "$15.99",
+        name: "Songmics Acrylic Closet Shelf Dividers (Set of 4)",
+        brand: "Songmics",
+        price: "$29.99",
         originalPrice: "$40.00",
         couponCode: "ALSAVE12",
-        affiliateUrl: "https://promoregistry.com/go/aliexpress",
+        affiliateUrl: "/go/songmics",
         imageUrl: "https://images.unsplash.com/photo-1588854337236-6889d631faa8?auto=format&fit=crop&w=500&q=80",
         description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
         rating: 4.8,
@@ -2514,8 +2514,8 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
     ],
     hotspots: [
-      { x: 45, y: 65, productId: "closet-decluttering-hacks-prod1", title: "Product A", price: "$34.99" },
-      { x: 75, y: 35, productId: "closet-decluttering-hacks-prod2", title: "Product B", price: "$15.99" }
+      { x: 45, y: 65, productId: "closet-decluttering-hacks-prod1", title: "Product A", price: "$32.99" },
+      { x: 75, y: 35, productId: "closet-decluttering-hacks-prod2", title: "Product B", price: "$29.99" }
     ]
   },
 };
