@@ -49,7 +49,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on The Ultimate Summer Maternity & Baby Comfort Essentials (June 2026 Checklist).",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/summer-maternity-comfort.jpg",
+    bannerImage: "/images/summer-maternity-comfort.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -104,7 +104,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on 10 Essential Travel Gear Items for Babies and Toddlers.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/baby-travel-gear-guide.jpg",
+    bannerImage: "/images/baby-travel-gear-guide.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -159,7 +159,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Designing an Aesthetic and Safe Nursery on a Budget.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/nursery-decor-inspiration.jpg",
+    bannerImage: "/images/nursery-decor-inspiration.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -214,7 +214,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Building a Comfortable and Chic Maternity Capsule Wardrobe.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/maternity-wardrobe-basics.jpg",
+    bannerImage: "/images/maternity-wardrobe-basics.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -269,7 +269,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Top Recommended Sensory Toys for Infant Development.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/baby-sensory-toys.jpg",
+    bannerImage: "/images/baby-sensory-toys.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -324,7 +324,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on The Ultimate Postpartum Recovery Essentials Verified by Moms.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/postpartum-recovery-checklist.jpg",
+    bannerImage: "/images/postpartum-recovery-checklist.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -379,7 +379,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on High-Quality Feeding and Weaning Accessories for Newborns.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/baby-feeding-musthaves.jpg",
+    bannerImage: "/images/baby-feeding-musthaves.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -434,7 +434,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Natural and Organic Skincare Remedies for Sensitive Baby Skin.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/organic-baby-skincare.jpg",
+    bannerImage: "/images/organic-baby-skincare.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -489,7 +489,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Top Premium Urban Stroller Systems Compared (June 2026).",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/stroller-comparison-2026.jpg",
+    bannerImage: "/images/stroller-comparison-2026.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -544,7 +544,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Aesthetic Playroom Storage and Toy Organization Ideas.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/toddler-playroom-storage.jpg",
+    bannerImage: "/images/toddler-playroom-storage.jpg",
     category: "Maternity & Parenting",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -599,7 +599,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on 10 Essential Pieces for an Aesthetic & Ergonomic WFH Desk Setup.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/aesthetic-wfh-desk-setup.jpg",
+    bannerImage: "/images/aesthetic-wfh-desk-setup.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -654,7 +654,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Building a Warm Minimalist Workspace with Solid Wood Accents.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/minimalist-wooden-workspace.jpg",
+    bannerImage: "/images/minimalist-wooden-workspace.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -709,7 +709,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Choosing the Perfect Tactile Mechanical Keyboard for Office Work.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/mechanical-keyboards-guide.jpg",
+    bannerImage: "/images/mechanical-keyboards-guide.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -764,7 +764,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Best Ergonomic Office Chairs to Prevent Back and Neck Pain.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/ergonomic-office-chairs.jpg",
+    bannerImage: "/images/ergonomic-office-chairs.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -819,7 +819,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Decluttering Your Workspace: Simple Space-Saving Desk Organizers.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/desk-organization-hacks.jpg",
+    bannerImage: "/images/desk-organization-hacks.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -874,7 +874,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on How to Style a Clean and Functional Dual-Monitor Setup.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/dual-monitor-setup.jpg",
+    bannerImage: "/images/dual-monitor-setup.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -929,7 +929,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Cozy Ambient Desk Lighting Ideas for Night Coding & Writing.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/desk-lighting-guide.jpg",
+    bannerImage: "/images/desk-lighting-guide.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -984,7 +984,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Small Space WFH Solutions: Maximizing Tiny Workspaces.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/compact-desk-setups.jpg",
+    bannerImage: "/images/compact-desk-setups.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1039,7 +1039,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Custom Accessories to Elevate Your Motorized Standing Desk.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/standing-desk-accessories.jpg",
+    bannerImage: "/images/standing-desk-accessories.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1094,7 +1094,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Top Desk Setup Configurations for Software Developers.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/programmer-workspace-inspo.jpg",
+    bannerImage: "/images/programmer-workspace-inspo.jpg",
     category: "Home Office & Ergonomics",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1149,7 +1149,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on The Ancestral Skin Secrets: Achieving a Glossy Summer Glow Naturally.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/glossy-summer-skincare.jpg",
+    bannerImage: "/images/glossy-summer-skincare.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1204,7 +1204,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Why Grass-Fed Whipped Tallow is the Ultimate Organic Skincare Balm.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/whipped-tallow-moisturizer.jpg",
+    bannerImage: "/images/whipped-tallow-moisturizer.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1259,7 +1259,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Achieving Saloon-Grade Hair Shine with Professional Ionic Dryers.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/ionic-blow-dryers-review.jpg",
+    bannerImage: "/images/ionic-blow-dryers-review.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1314,7 +1314,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Top Botanical Face Serums for Hydrating and Brightening Skin.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/organic-serums-glow.jpg",
+    bannerImage: "/images/organic-serums-glow.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1369,7 +1369,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on How to Build a 100% Non-Toxic Everyday Makeup Routine.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/clean-cosmetics-checklist.jpg",
+    bannerImage: "/images/clean-cosmetics-checklist.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1424,7 +1424,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on The Best Deep Pore Detoxifying Clay Masks for Acne-Prone Skin.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/clay-masks-detox.jpg",
+    bannerImage: "/images/clay-masks-detox.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1479,7 +1479,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Gua Sha and Face Rollers: Natural Skin Lifting Techniques.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/face-massage-tools.jpg",
+    bannerImage: "/images/face-massage-tools.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1534,7 +1534,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on A Hydrating Nighttime Routine for Plump, Glossy Morning Skin.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/nighttime-skincare-routine.jpg",
+    bannerImage: "/images/nighttime-skincare-routine.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1589,7 +1589,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Ancestral Herbs and Botanicals for Natural Anti-Aging Care.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/anti-aging-botanicals.jpg",
+    bannerImage: "/images/anti-aging-botanicals.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1644,7 +1644,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on The Minimalist Travel-Size Skincare and Beauty Kit Checklist.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/travel-size-beauty-essentials.jpg",
+    bannerImage: "/images/travel-size-beauty-essentials.jpg",
     category: "Beauty & Skincare",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1699,7 +1699,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Unveiling the Sporty Summer Chic: 2026 Women's Vacation Capsule.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/summer-vacation-fashion.jpg",
+    bannerImage: "/images/summer-vacation-fashion.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1754,7 +1754,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Why Pure Organic Linen Midi Dresses are Essential for Travel.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/organic-linen-midi-dress.jpg",
+    bannerImage: "/images/organic-linen-midi-dress.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1809,7 +1809,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Polarized Aviator Sunglasses: Styling 70s Retro Eyewear.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/vintage-polarized-sunglasses.jpg",
+    bannerImage: "/images/vintage-polarized-sunglasses.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1864,7 +1864,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Building a Classy and Minimalist Summer Capsule Wardrobe.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/minimalist-capsule-wardrobe.jpg",
+    bannerImage: "/images/minimalist-capsule-wardrobe.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1919,7 +1919,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Effortless Resort Wear and Outfits for Beach Holidays.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/resort-wear-outfit-ideas.jpg",
+    bannerImage: "/images/resort-wear-outfit-ideas.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -1974,7 +1974,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Elegant and Travel-Ready Airport Outfits for Women.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/comfortable-airport-style.jpg",
+    bannerImage: "/images/comfortable-airport-style.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2029,7 +2029,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Athleisure Chic: Styling High-Performance Activewear.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/activewear-styling-tips.jpg",
+    bannerImage: "/images/activewear-styling-tips.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2084,7 +2084,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Comfortable and Stylish Leather Sandals for City Walks.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/summer-sandals-flatlay.jpg",
+    bannerImage: "/images/summer-sandals-flatlay.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2139,7 +2139,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Styling Straw Bags and Wide-Brim Sun Hats for Beach Days.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/boho-beach-accessories.jpg",
+    bannerImage: "/images/boho-beach-accessories.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2194,7 +2194,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Styling Varsity Jackets and Sporty Skirts for 2026 Trends.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/varsity-aesthetic-outfits.jpg",
+    bannerImage: "/images/varsity-aesthetic-outfits.jpg",
     category: "Women's Fashion & Capsule",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2249,7 +2249,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Modern Kitchen & Pantry Organization Hacks That Save Counter Space.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/clean-kitchen-organization.jpg",
+    bannerImage: "/images/clean-kitchen-organization.jpg",
     category: "Home & Utility Organization",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2304,7 +2304,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Space-Saving Magnetic Storage Shelves for Kitchen Spices.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/magnetic-fridge-spice-rack.jpg",
+    bannerImage: "/images/magnetic-fridge-spice-rack.jpg",
     category: "Home & Utility Organization",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2359,7 +2359,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Styling Woven Canvas Hampers and Laundry Organization Accessories.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/woven-laundry-baskets.jpg",
+    bannerImage: "/images/woven-laundry-baskets.jpg",
     category: "Home & Utility Organization",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2414,7 +2414,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Aesthetic Glass Jar Systems for pantry Organization.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/pantry-jar-labeling.jpg",
+    bannerImage: "/images/pantry-jar-labeling.jpg",
     category: "Home & Utility Organization",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
@@ -2469,7 +2469,7 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
     description: "Discover verified coupon savings and reviews on Maximizing Closet Space: Hangers, Dividers, and Storage Bins.",
     publishDate: "June 6, 2026",
     readTime: "4 min read",
-    bannerImage: "https://archive.org/download/promoregistry_pinterest_assets_2026/closet-decluttering-hacks.jpg",
+    bannerImage: "/images/closet-decluttering-hacks.jpg",
     category: "Home & Utility Organization",
     content: [
       "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
