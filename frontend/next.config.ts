@@ -110,12 +110,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/mavely-target",
-        destination: "https://www.target.com",
+        destination: "https://mavely.app.link/2Qiqpt6iK3b",
         permanent: false,
       },
       {
         source: "/go/mavely-nordstrom",
-        destination: "https://www.nordstrom.com",
+        destination: "https://mavely.app.link/RKiKh09mK3b",
         permanent: false,
       },
       {
