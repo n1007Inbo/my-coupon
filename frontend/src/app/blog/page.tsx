@@ -3,7 +3,7 @@ import styles from "./BlogIndex.module.css";
 import { BLOGS_DATABASE } from "../../lib/blogs";
 
 export default async function BlogIndexPage() {
-  const posts = Object.values(BLOGS_DATABASE);
+  const posts = Object.values(BLOGS_DATABASE).reverse();
 
   return (
     <div className={styles.container}>

@@ -108,46 +108,7 @@ const nextConfig: NextConfig = {
         destination: "https://vert.si/ReOuZI",
         permanent: false,
       },
-      {
-        source: "/go/mavely-target",
-        destination: "https://mavely.app.link/2Qiqpt6iK3b",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-nordstrom",
-        destination: "https://mavely.app.link/RKiKh09mK3b",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-dyson",
-        destination: "https://www.dyson.com",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-reformation",
-        destination: "https://www.reformation.com",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-spanx",
-        destination: "https://www.spanx.com",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-everlane",
-        destination: "https://www.everlane.com",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-wayfair",
-        destination: "https://www.wayfair.com",
-        permanent: false,
-      },
-      {
-        source: "/go/mavely-aloyoga",
-        destination: "https://www.aloyoga.com",
-        permanent: false,
-      },
+
     ];
   },
 };
