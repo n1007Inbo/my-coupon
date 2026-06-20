@@ -4,6 +4,22 @@ This guide outlines how developers or AI agents can add new posts and product sh
 
 ---
 
+## 🛑 CRITICAL RULES FOR ALL AI AGENTS 🛑
+**READ THESE RULES BEFORE CREATING ANY POST:**
+
+1. **NO PLACEHOLDER IMAGES:** Do NOT copy-paste dummy Unsplash URLs. You MUST use the `generate_image` tool to dynamically create 3 unique, aesthetic images for each post:
+   - 1 `bannerImage` (a flatlay or lifestyle aesthetic image representing the post category).
+   - 2 `imageUrl` product images (one for each product, isolated on a clean aesthetic background).
+   - Save these generated images to `frontend/public/images/` and link them appropriately (e.g., `/images/product_name.png`).
+2. **STRICTLY AMAZON ASIN LINKS:** Do NOT use Mavely, ConvertSocial, or any other dummy affiliate links. 
+   - You MUST use the `search_web` tool to find the exact **Amazon US ASIN** and Live Price for the products.
+   - Format the `affiliateUrl` strictly as: `https://www.amazon.com/dp/[ASIN]?tag=hazique1122-20`
+   - **Fallback Rule:** If an exact ASIN cannot be verified or the item is out of stock, use the Amazon Search URL format: `https://www.amazon.com/s?k=[Product+Name]&tag=hazique1122-20`
+
+Failure to follow these rules will result in broken sites and lost commission.
+
+---
+
 ## 🛠️ Step 1: Open the Blogs Database
 All blog posts are driven by a single local database file:
 👉 **[src/lib/blogs.ts](file:///C:/Users/rdp/.gemini/antigravity/scratch/github_repos/my-coupon/frontend/src/lib/blogs.ts)**
@@ -23,7 +39,7 @@ Add your new post block inside the `BLOGS_DATABASE` object:
   publishDate: "June 5, 2026",
   readTime: "4 min read",
   category: "Your Target Niche",
-  bannerImage: "https://images.unsplash.com/photo-xxx?auto=format&fit=crop&w=1200&q=80",
+  bannerImage: "/images/your-generated-banner.png", // Must be generated!
   content: [
     "Paragraph 1 introduction to the trend and problem.",
     "Paragraph 2 listing the curated recommendations."
@@ -33,11 +49,11 @@ Add your new post block inside the `BLOGS_DATABASE` object:
       id: "unique-product-id-1",
       name: "Full Product Name",
       brand: "Merchant Name",
-      price: "$99.99",
+      price: "$99.99", // Must be live Amazon price!
       originalPrice: "$129.99", // Optional
       couponCode: "YOURCODE",
-      affiliateUrl: "https://your-mavely-or-csl-link.com",
-      imageUrl: "https://images.unsplash.com/photo-yyy?auto=format&fit=crop&w=600&q=80",
+      affiliateUrl: "https://www.amazon.com/dp/B0XYZ123?tag=hazique1122-20", // Must be Amazon!
+      imageUrl: "/images/your-generated-product-1.png", // Must be generated!
       description: "Brief review details about the product, features, and why it is trending.",
       rating: 4.9,
       reviewsCount: 154,
