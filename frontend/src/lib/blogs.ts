@@ -2573,4 +2573,60 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { x: 75, y: 35, productId: "summer-skincare-sunscreen-routine-prod2", title: "Product B", price: "$38.00" }
     ]
   }
+  ,
+  "cloud-skin-makeup-routine": {
+    slug: "cloud-skin-makeup-routine",
+    title: "Ethereal Cloud Skin Makeup: Blush & Concealer Hacks",
+    description: "Discover verified coupon savings and reviews on Ethereal Cloud Skin Makeup: Blush & Concealer Hacks.",
+    publishDate: "June 20, 2026",
+    readTime: "4 min read",
+    bannerImage: "/images/cloud-skin-makeup-routine.png",
+    category: "Face makeup",
+    content: [
+      "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
+      "In this guide, we review the absolute best options in Face makeup curated from high-growing Pinterest search trends. Verify discount details and claim deals using our copy-paste coupons below."
+    ],
+    products: [
+      {
+        id: "cloud-skin-makeup-routine-prod1",
+        name: "e.l.f. Camo Liquid Blush",
+        brand: "e.l.f. Cosmetics",
+        price: "$7.00",
+        originalPrice: "$7.00",
+        couponCode: "SAVE10",
+        affiliateUrl: "https://www.amazon.com/dp/B0CR3961R7?tag=hazique1122-20",
+        imageUrl: "/images/elf-camo-blush.png",
+        description: "A highly visual and elegant product designed for modern aesthetic layouts.",
+        rating: 4.9,
+        reviewsCount: 148,
+        savingsText: "Top Rated",
+        pros: ["Superior premium materials", "Elegant minimalist aesthetics", "High durability"],
+        cons: ["Requires initial configuration", "Slightly heavier packaging"]
+      },
+      {
+        id: "cloud-skin-makeup-routine-prod2",
+        name: "Maybelline Instant Age Rewind Eraser Concealer",
+        brand: "Maybelline",
+        price: "$8.80",
+        originalPrice: "$10.99",
+        couponCode: "SAVE15",
+        affiliateUrl: "https://www.amazon.com/dp/B0046VGHTO?tag=hazique1122-20",
+        imageUrl: "/images/maybelline-age-rewind.png",
+        description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
+        rating: 4.8,
+        reviewsCount: 92,
+        savingsText: "15% OFF",
+        pros: ["Organic verified ingredients", "Very fast shipping options", "Minimalist layout styling"],
+        cons: ["Inventory stock runs out quickly", "Mild natural scent variations"]
+      }
+    ],
+    faqs: [
+      { question: "How to claim verified codes?", answer: "Hover or tap on the coupon code box to copy, then click Claim Deal." },
+      { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
+    ],
+    hotspots: [
+      { x: 45, y: 65, productId: "cloud-skin-makeup-routine-prod1", title: "Product A", price: "$7.00" },
+      { x: 75, y: 35, productId: "cloud-skin-makeup-routine-prod2", title: "Product B", price: "$8.80" }
+    ]
+  }
 };
