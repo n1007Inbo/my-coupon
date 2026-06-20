@@ -2518,4 +2518,59 @@ export const BLOGS_DATABASE: Record<string, BlogPost> = {
       { x: 75, y: 35, productId: "closet-decluttering-hacks-prod2", title: "Product B", price: "$29.99" }
     ]
   },
+  "summer-skincare-sunscreen-routine": {
+    slug: "summer-skincare-sunscreen-routine",
+    title: "The Ultimate Summer Skincare and Sunscreen Routine",
+    description: "Discover verified coupon savings and reviews on The Ultimate Summer Skincare and Sunscreen Routine.",
+    publishDate: "June 20, 2026",
+    readTime: "4 min read",
+    bannerImage: "/images/summer-skincare-sunscreen-routine.jpg",
+    category: "Skincare & Sunscreen",
+    content: [
+      "Finding high-quality, aesthetic, and functional items that elevate your daily routine is the key to summer comfort and lifestyle organization.",
+      "In this guide, we review the absolute best options in Skincare & Sunscreen curated from high-growing Pinterest search trends. Verify discount details and claim deals using our copy-paste coupons below."
+    ],
+    products: [
+      {
+        id: "summer-skincare-sunscreen-routine-prod1",
+        name: "CeraVe Hydrating Facial Cleanser",
+        brand: "CeraVe",
+        price: "$14.99",
+        originalPrice: "$19.99",
+        couponCode: "MAVSAVE10",
+        affiliateUrl: "/go/mavely-target",
+        imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=80",
+        description: "A highly visual and elegant product designed for modern aesthetic layouts.",
+        rating: 4.9,
+        reviewsCount: 148,
+        savingsText: "SAVE $5",
+        pros: ["Superior premium materials", "Elegant minimalist aesthetics", "High durability"],
+        cons: ["Requires initial configuration", "Slightly heavier packaging"]
+      },
+      {
+        id: "summer-skincare-sunscreen-routine-prod2",
+        name: "Supergoop! Unseen Sunscreen SPF 40",
+        brand: "Supergoop!",
+        price: "$38.00",
+        originalPrice: "$45.00",
+        couponCode: "MarkPaul15",
+        affiliateUrl: "/go/mavely-sephora",
+        imageUrl: "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=500&q=80",
+        description: "Perfect natural addition featuring non-toxic formulation and clean premium packaging.",
+        rating: 4.8,
+        reviewsCount: 92,
+        savingsText: "15% OFF",
+        pros: ["Organic verified ingredients", "Very fast shipping options", "Minimalist layout styling"],
+        cons: ["Inventory stock runs out quickly", "Mild natural scent variations"]
+      }
+    ],
+    faqs: [
+      { question: "How to claim verified codes?", answer: "Hover or tap on the coupon code box to copy, then click Claim Deal." },
+      { question: "Are shipping options secure?", answer: "Yes, fully tracked delivery is provided on all products." }
+    ],
+    hotspots: [
+      { x: 45, y: 65, productId: "summer-skincare-sunscreen-routine-prod1", title: "Product A", price: "$14.99" },
+      { x: 75, y: 35, productId: "summer-skincare-sunscreen-routine-prod2", title: "Product B", price: "$38.00" }
+    ]
+  }
 };
