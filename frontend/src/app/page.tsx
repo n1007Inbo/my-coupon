@@ -1,3 +1,4 @@
+// Force Vercel rebuild to refresh ISR cache with newly seeded 12 coupons from live backend database
 import React from "react";
 import HomeClient from "./HomeClient";
 import { Coupon, Store } from "../components/CouponCard";
