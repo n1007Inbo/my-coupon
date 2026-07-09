@@ -7,6 +7,7 @@ const getLogoUrl = (slug: string | undefined | null) => {
   if (!slug || typeof slug !== "string") return "/logos/default.svg";
   if (slug.startsWith("desktronic-")) return "/logos/desktronic.svg";
   if (slug.startsWith("tenways-")) return "/logos/tenways.svg";
+  if (slug === "parc-asterix-fr") return "/logos/parc-asterix-fr.webp";
   return `/logos/${slug}.svg`;
 };
 
@@ -52,7 +53,8 @@ const FALLBACK_STORES: Store[] = [
   { id: 38, name: "NordPass", slug: "nordpass", logo: getLogoUrl("nordpass"), website: "https://nordpass.com" },
   { id: 39, name: "GoDaddy", slug: "godaddy", logo: getLogoUrl("godaddy"), website: "https://godaddy.com" },
   { id: 40, name: "Gymshark", slug: "gymshark", logo: getLogoUrl("gymshark"), website: "https://gymshark.com" },
-  { id: 41, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" }
+  { id: 41, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" },
+  { id: 42, name: "Parc Astérix FR", slug: "parc-asterix-fr", logo: getLogoUrl("parc-asterix-fr"), website: "https://litl.si/Tlxjk" }
 ];
 
 const FALLBACK_COUPONS: Coupon[] = [
@@ -279,8 +281,15 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 133, code: "METHEW", discount: "20% korting op massief hout", description: "Ontvang 20% korting op de premium bureaubladen collectie van massief hout.", expiry_date: "2026-06-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
   { id: 134, code: "METHEW", discount: "€15 korting bij nieuwsbrief", description: "Meld je aan voor de nieuwsbrief en ontvang direct €15 korting op je eerste sta-bureau.", expiry_date: "2026-06-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
   { id: 1341, code: "METHEW", discount: "15% studentenkorting", description: "Geverifieerde 15% studenten- en docentenkorting op het gehele assortiment sta-bureaus.", expiry_date: "2026-06-25T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
-  { id: 1342, code: "METHEW", discount: "€200 korting - Zakelijke bulkdeals", description: "Bespaar €200 extra op zakelijke en thuiswerkers bulkbestellingen van sta-bureaus.", expiry_date: "2026-06-26T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" }
+  { id: 1342, code: "METHEW", discount: "€200 korting - Zakelijke bulkdeals", description: "Bespaar €200 extra op zakelijke en thuiswerkers bulkbestellingen van sta-bureaus.", expiry_date: "2026-06-26T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[40], affiliate_url: "/go/desktronic-nl" },
 
+  // Parc Astérix FR
+  { id: 1343, code: "DEAL", discount: "10% de réduction", description: "Profitez de 10% de réduction sur vos réservations de billets à l'avance au Parc Astérix. Planifiez votre visite et économisez.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  { id: 1344, code: "DEAL", discount: "10% de réduction", description: "Inscrivez-vous à la newsletter du Parc Astérix et recevez un code promo exclusif de 10% de réduction sur votre prochaine commande.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  { id: 1345, code: "DEAL", discount: "À partir de 139€", description: "Découvrez le Pass Gaulois à partir de 139€ et bénéficiez d'un accès illimité et de nombreux avantages exclusifs au parc.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  { id: 1346, code: "DEAL", discount: "15% de réduction", description: "Économisez 15% sur les billets famille du Parc Astérix. Une offre idéale pour profiter d'un moment inoubliable en famille.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  { id: 1347, code: "DEAL", discount: "Dès 55€", description: "Achetez vos billets à prix spécial à partir de 55€ seulement. Profitez des attractions à un tarif exceptionnel.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  { id: 1348, code: "DEAL", discount: "Gratuit", description: "Entrée gratuite pour les enfants accompagnés d'un adulte muni d'un billet payant. Une offre spéciale à ne pas manquer.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" }
 ];
 
 export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
