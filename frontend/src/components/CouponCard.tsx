@@ -126,8 +126,8 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
     return (sum % 200) + 180;
   }, [coupon.id]);
 
-  // Determine if it is a Direct Deal (e.g. coupon has code "DEAL" or "DIRECT")
-  const isDirectDeal = code === "DEAL" || code === "DIRECT";
+  // Determine if it is a Direct Deal (e.g. coupon has empty code, "DEAL" or "DIRECT")
+  const isDirectDeal = !code || code === "DEAL" || code === "DIRECT";
 
   return (
     <div 

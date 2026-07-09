@@ -96,6 +96,8 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
   const [copied, setCopied] = useState(true); // Set to true as it is copied automatically on click
   const modalRef = useRef<HTMLDivElement>(null);
 
+  const isDirectDeal = !code || code === "DEAL" || code === "DIRECT";
+
   // Set timeout to reset the copied visual state after 2.5 seconds
   useEffect(() => {
     const timer = setTimeout(() => setCopied(false), 2500);
@@ -110,8 +112,6 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
   // Create a fallback URL based on the store slug or name
   const storeSlug = isStoreObject ? (store as Store).slug : storeName.toLowerCase().replace(/\s+/g, "-");
   const storeUrl = coupon.affiliate_url || (isStoreObject && (store as Store).website ? (store as Store).website : `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`);
-
-
 
   // Lock body scroll when modal is open
   useEffect(() => {
@@ -135,6 +135,7 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
   }, [onClose]);
 
   const handleCopy = async () => {
+    if (isDirectDeal) return;
     try {
       await navigator.clipboard.writeText(code);
       setCopied(true);
@@ -169,39 +170,51 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
               </div>
             )}
             <h2 id="modal-title" className={styles.title}>
-              Copy Code for {storeName}
+              {isDirectDeal ? `${storeName} Deal Activated` : `Copy Code for {storeName}`}
             </h2>
             <div className={styles.discountBadge}>
-              {discount} OFF
+              {discount}
             </div>
             <p className={styles.description}>{description}</p>
           </div>
 
           {/* Code Copy Area */}
           <div className={styles.copyArea}>
-            <p className={styles.copyLabel}>Copy the promo code below and paste it at checkout:</p>
-            
-            <button 
-              className={`${styles.codeContainer} ${copied ? styles.copied : ""}`} 
-              onClick={handleCopy}
-              title="Click to copy code"
-              aria-live="polite"
-            >
-              <span className={styles.codeText}>{code}</span>
-              <div className={`${styles.copyIndicator} ${copied ? styles.copyIndicatorSuccess : ""}`}>
-                {copied ? (
-                  <>
-                    <CheckIcon />
-                    <span>Copied!</span>
-                  </>
-                ) : (
-                  <>
-                    <CopyIcon />
-                    <span>Copy Code</span>
-                  </>
-                )}
-              </div>
-            </button>
+            {isDirectDeal ? (
+              <>
+                <p className={styles.copyLabel}>No coupon code required. The discount will be automatically applied at checkout!</p>
+                <div className={styles.dealActivatedBox}>
+                  <CheckIcon />
+                  <span>Deal Activated!</span>
+                </div>
+              </>
+            ) : (
+              <>
+                <p className={styles.copyLabel}>Copy the promo code below and paste it at checkout:</p>
+                
+                <button 
+                  className={`${styles.codeContainer} ${copied ? styles.copied : ""}`} 
+                  onClick={handleCopy}
+                  title="Click to copy code"
+                  aria-live="polite"
+                >
+                  <span className={styles.codeText}>{code}</span>
+                  <div className={`${styles.copyIndicator} ${copied ? styles.copyIndicatorSuccess : ""}`}>
+                    {copied ? (
+                      <>
+                        <CheckIcon />
+                        <span>Copied!</span>
+                      </>
+                    ) : (
+                      <>
+                        <CopyIcon />
+                        <span>Copy Code</span>
+                      </>
+                    )}
+                  </div>
+                </button>
+              </>
+            )}
           </div>
 
           {/* Redirect / Instructions Message */}
@@ -209,10 +222,18 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
             <InfoIcon />
             <div className={styles.noticeText}>
               <p>
-                We have opened <span className={styles.highlight}>{storeName}&apos;s</span> website in a new tab.
+                {isDirectDeal ? (
+                  <>We have redirected you to <span className={styles.highlight}>{storeName}</span> in a new tab.</>
+                ) : (
+                  <>We have opened <span className={styles.highlight}>{storeName}&apos;s</span> website in a new tab.</>
+                )}
               </p>
               <p className={styles.noticeSubText}>
-                If it didn&apos;t open automatically, you can click the link below to visit the official store:
+                {isDirectDeal ? (
+                  <>If the website did not load, please click the button below to claim your discount manually:</>
+                ) : (
+                  <>If it didn&apos;t open automatically, you can click the link below to visit the official store:</>
+                )}
               </p>
             </div>
           </div>
@@ -223,9 +244,9 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
               href={storeUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={styles.shopLink}
+              className={isDirectDeal ? styles.shopLinkPrimary : styles.shopLink}
             >
-              <span>Shop at {storeName}</span>
+              <span>{isDirectDeal ? `Claim Deal at ${storeName}` : `Shop at ${storeName}`}</span>
               <ExternalLinkIcon />
             </a>
           </div>

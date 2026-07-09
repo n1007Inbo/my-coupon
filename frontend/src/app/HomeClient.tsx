@@ -93,18 +93,22 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     const website = isStoreObject ? (coupon.store as Store).website : undefined;
     const storeUrl = coupon.affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
     
-    // Automatically copy code to user's clipboard instantly on click
-    try {
-      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(coupon.code);
+    const isDirect = !coupon.code || coupon.code === "DEAL" || coupon.code === "DIRECT";
+
+    // Automatically copy code to user's clipboard instantly on click if it's not a direct deal
+    if (!isDirect) {
+      try {
+        if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(coupon.code);
+        }
+      } catch (err) {
+        console.warn("Failed to automatically copy code to clipboard:", err);
       }
-    } catch (err) {
-      console.warn("Failed to automatically copy code to clipboard:", err);
     }
 
     // 1. Open our own website in a new tab, passing the coupon query params to auto-trigger the modal
     try {
-      const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}&code=${coupon.code}`;
+      const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}&code=${coupon.code || "DEAL"}`;
       window.open(ourSiteUrl, "_blank", "noopener,noreferrer");
     } catch (err) {
       console.warn("Failed to open our website in a new tab:", err);

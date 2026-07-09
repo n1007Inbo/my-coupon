@@ -230,6 +230,19 @@ export default {
             { code: 'LUME10', discount: '10% OFF', description: 'Verified 10% off coupon code sitewide on whole-body deodorants and starter packs.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' },
             { code: 'WELCOME10', discount: '10% OFF first order', description: 'Save 10% on your first order when you sign up for newsletter updates.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/oNGx4G' }
           ]
+        },
+        {
+          name: 'Parc Astérix FR',
+          slug: 'parc-asterix-fr',
+          website: 'https://litl.si/Tlxjk',
+          coupons: [
+            { code: 'DEAL', discount: '10% de réduction', description: 'Profitez de 10% de réduction sur vos réservations de billets à l\'avance au Parc Astérix. Planifiez votre visite et économisez.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
+            { code: 'DEAL', discount: '10% de réduction', description: 'Inscrivez-vous à la newsletter du Parc Astérix et recevez un code promo exclusif de 10% de réduction sur votre prochaine commande.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
+            { code: 'DEAL', discount: 'À partir de 139€', description: 'Découvrez le Pass Gaulois à partir de 139€ et bénéficiez d\'un accès illimité et de nombreux avantages exclusifs au parc.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
+            { code: 'DEAL', discount: '15% de réduction', description: 'Économisez 15% sur les billets famille du Parc Astérix. Une offre idéale pour profiter d\'un moment inoubliable en famille.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
+            { code: 'DEAL', discount: 'Dès 55€', description: 'Achetez vos billets à prix spécial à partir de 55€ seulement. Profitez des attractions à un tarif exceptionnel.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
+            { code: 'DEAL', discount: 'Gratuit', description: 'Entrée gratuite pour les enfants accompagnés d\'un adulte muni d\'un billet payant. Une offre spéciale à ne pas manquer.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' }
+          ]
         }
       ];
 
