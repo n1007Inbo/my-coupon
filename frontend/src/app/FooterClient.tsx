@@ -37,6 +37,24 @@ export default function FooterClient() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
+  // Capture Google Ads tracking parameters and store them in sessionStorage
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      try {
+        const urlParams = new URLSearchParams(window.location.search);
+        const trackingKeys = ["utm_campaign", "utm_term", "gclid", "utm_source"];
+        trackingKeys.forEach(key => {
+          const val = urlParams.get(key);
+          if (val) {
+            sessionStorage.setItem(key, val);
+          }
+        });
+      } catch (err) {
+        console.warn("Failed to capture tracking query parameters:", err);
+      }
+    }
+  }, []);
+
   return (
     <footer className="mainFooter">
       <div className="footerContainer">

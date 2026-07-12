@@ -91,7 +91,29 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
     const storeName = isStoreObject ? (coupon.store as Store).name : (coupon.store as string);
     const website = isStoreObject ? (coupon.store as Store).website : undefined;
-    const storeUrl = coupon.affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
+    const rawStoreUrl = coupon.affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
+    
+    // Append Google Ads campaign and keyword SubIDs if it's an affiliate redirect link
+    let storeUrl = rawStoreUrl;
+    if (typeof window !== "undefined" && rawStoreUrl) {
+      const isAffiliate = rawStoreUrl.includes("admitad") || rawStoreUrl.includes("convert") || rawStoreUrl.includes("csl");
+      if (isAffiliate) {
+        try {
+          const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
+          const utmTerm = sessionStorage.getItem("utm_term") || "";
+          const gclid = sessionStorage.getItem("gclid") || "";
+          const urlObj = new URL(rawStoreUrl);
+          
+          if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
+          if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
+          if (gclid) urlObj.searchParams.set("subid3", gclid);
+          
+          storeUrl = urlObj.toString();
+        } catch (e) {
+          console.warn("Failed to append tracking SubIDs:", e);
+        }
+      }
+    }
     
     const isDirect = !coupon.code || coupon.code === "DEAL" || coupon.code === "DIRECT";
 
