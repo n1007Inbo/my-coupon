@@ -57,6 +57,9 @@ export default function FooterClient() {
           <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: "1.6", maxWidth: "320px" }}>
             Your premier source for 100% verified shopping coupons, promotional codes, and discount offers online.
           </p>
+          <p style={{ color: "var(--text-tertiary)", fontSize: "0.75rem", lineHeight: "1.5", maxWidth: "320px", marginTop: "12px" }}>
+            PromoRegistry utilizes secure OAuth integrations, including the Google Ads API, strictly for internal campaign performance reporting, ad spend auditing, and ROI analysis.
+          </p>
         </div>
 
         <div className="footerLinksContainer">
