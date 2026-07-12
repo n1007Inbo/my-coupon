@@ -23,6 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.variable}>
       <head>
+        <meta name="verify-admitad" content="dc1c933d28" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         {/* Rich Structured JSON-LD Schema Markup */}
         <script
