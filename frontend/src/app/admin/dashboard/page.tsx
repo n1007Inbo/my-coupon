@@ -65,6 +65,7 @@ export default function AdminDashboard() {
   const [overrideBrandId, setOverrideBrandId] = useState<string | null>(null);
   const [overrideSpend, setOverrideSpend] = useState("");
   const [overrideRevenue, setOverrideRevenue] = useState("");
+  const [overrideRevenueCurrency, setOverrideRevenueCurrency] = useState("PKR");
   const [manualAdjustments, setManualAdjustments] = useState<{ [key: string]: { spend: number, revenue: number } }>({});
 
   // Authentication barrier
@@ -96,6 +97,41 @@ export default function AdminDashboard() {
       }
     }
   }, []);
+
+  // Quick date range selectors
+  const setQuickRange = (range: string) => {
+    const today = new Date();
+    let start = new Date();
+    let end = new Date();
+
+    switch (range) {
+      case "today":
+        break;
+      case "yesterday":
+        start.setDate(today.getDate() - 1);
+        end.setDate(today.getDate() - 1);
+        break;
+      case "last7":
+        start.setDate(today.getDate() - 7);
+        break;
+      case "last30":
+        start.setDate(today.getDate() - 30);
+        break;
+      case "thisMonth":
+        start = new Date(today.getFullYear(), today.getMonth(), 1);
+        break;
+      case "lastMonth":
+        start = new Date(today.getFullYear(), today.getMonth() - 1, 1);
+        end = new Date(today.getFullYear(), today.getMonth(), 0);
+        break;
+      default:
+        break;
+    }
+
+    // Set local dates in YYYY-MM-DD
+    setStartDate(start.toISOString().split("T")[0]);
+    setEndDate(end.toISOString().split("T")[0]);
+  };
 
   // Fetch Dashboard Stats API
   const fetchStats = useCallback(async () => {
@@ -137,7 +173,13 @@ export default function AdminDashboard() {
     if (!overrideBrandId) return;
 
     const spendOffset = parseFloat(overrideSpend) || 0;
-    const revOffset = parseFloat(overrideRevenue) || 0;
+    
+    // Currency conversion logic
+    const rawRev = parseFloat(overrideRevenue) || 0;
+    let revOffset = rawRev;
+    if (overrideRevenueCurrency === "GBP") revOffset = rawRev * 360.0;
+    else if (overrideRevenueCurrency === "USD") revOffset = rawRev * 280.0;
+    else if (overrideRevenueCurrency === "EUR") revOffset = rawRev * 305.0;
 
     const updated = {
       ...manualAdjustments,
@@ -149,6 +191,7 @@ export default function AdminDashboard() {
     setOverrideBrandId(null);
     setOverrideSpend("");
     setOverrideRevenue("");
+    setOverrideRevenueCurrency("PKR");
   };
 
   // Clear specific override
@@ -337,6 +380,17 @@ export default function AdminDashboard() {
             </button>
           </div>
         </header>
+
+        {/* Predefined Quick Date Filters Row */}
+        <div style={{ display: "flex", gap: "10px", flexWrap: "wrap", justifyContent: "flex-start", backgroundColor: "rgba(17, 24, 39, 0.3)", border: "1px solid rgba(255, 255, 255, 0.05)", borderRadius: "var(--radius-md)", padding: "10px 16px" }}>
+          <span style={{ color: "#94a3b8", fontSize: "0.82rem", alignSelf: "center", marginRight: "6px", fontWeight: 600 }}>Quick Ranges:</span>
+          <button type="button" onClick={() => setQuickRange("today")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>Today</button>
+          <button type="button" onClick={() => setQuickRange("yesterday")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>Yesterday</button>
+          <button type="button" onClick={() => setQuickRange("last7")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>Last 7 Days</button>
+          <button type="button" onClick={() => setQuickRange("last30")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>Last 30 Days</button>
+          <button type="button" onClick={() => setQuickRange("thisMonth")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>This Month</button>
+          <button type="button" onClick={() => setQuickRange("lastMonth")} className={styles.actionBtn} style={{ padding: "5px 12px", fontSize: "0.78rem" }}>Last Month</button>
+        </div>
 
         {error && (
           <div className={styles.loginError} style={{ margin: 0, textAlign: "left" }}>
@@ -694,17 +748,30 @@ export default function AdminDashboard() {
 
               <div>
                 <label style={{ display: "block", fontSize: "0.8rem", color: "#94a3b8", marginBottom: "6px" }}>
-                  CSL Revenue Offset (PKR)
+                  CSL Revenue Offset
                 </label>
-                <input
-                  type="number"
-                  step="0.01"
-                  placeholder="e.g. +15000"
-                  value={overrideRevenue}
-                  onChange={(e) => setOverrideRevenue(e.target.value)}
-                  className={styles.loginInput}
-                  style={{ textAlign: "left" }}
-                />
+                <div style={{ display: "flex", gap: "10px" }}>
+                  <input
+                    type="number"
+                    step="0.01"
+                    placeholder="e.g. 15000"
+                    value={overrideRevenue}
+                    onChange={(e) => setOverrideRevenue(e.target.value)}
+                    className={styles.loginInput}
+                    style={{ textAlign: "left", flex: 2 }}
+                  />
+                  <select
+                    value={overrideRevenueCurrency}
+                    onChange={(e) => setOverrideRevenueCurrency(e.target.value)}
+                    className={styles.loginInput}
+                    style={{ flex: 1, cursor: "pointer", background: "rgba(255, 255, 255, 0.05)", border: "1px solid rgba(255, 255, 255, 0.1)", borderRadius: "var(--radius-md)", color: "#ffffff", padding: "12px 6px" }}
+                  >
+                    <option value="PKR" style={{ background: "#0f172a" }}>PKR</option>
+                    <option value="USD" style={{ background: "#0f172a" }}>USD ($)</option>
+                    <option value="GBP" style={{ background: "#0f172a" }}>GBP (£)</option>
+                    <option value="EUR" style={{ background: "#0f172a" }}>EUR (€)</option>
+                  </select>
+                </div>
               </div>
 
               <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
