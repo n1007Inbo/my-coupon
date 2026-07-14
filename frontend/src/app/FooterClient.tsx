@@ -24,11 +24,16 @@ export default function FooterClient() {
     }
   }, [clickCount]);
 
-  // Secret keyboard shortcut: Ctrl+Shift+K to navigate to AI Portal
+  // Secret keyboard shortcut: Ctrl+Shift+K to navigate to AI Portal, Ctrl+Shift+D to Dashboard
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.ctrlKey && e.shiftKey && e.key === "K") {
-      e.preventDefault();
-      window.location.href = "/admin/ai-creator";
+    if (e.ctrlKey && e.shiftKey) {
+      if (e.key === "K" || e.key === "k") {
+        e.preventDefault();
+        window.location.href = "/admin/ai-creator";
+      } else if (e.key === "D" || e.key === "d") {
+        e.preventDefault();
+        window.location.href = "/admin/dashboard";
+      }
     }
   }, []);
 
@@ -106,27 +111,48 @@ export default function FooterClient() {
 
         {/* Secret AI Portal Link - Only appears after 5 rapid clicks on copyright */}
         {showPortalLink && (
-          <a 
-            href="/admin/ai-creator"
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: "6px",
-              marginTop: "12px",
-              padding: "6px 16px",
-              fontSize: "0.78rem",
-              fontWeight: 600,
-              color: "#6366f1",
-              backgroundColor: "rgba(99, 102, 241, 0.06)",
-              border: "1px solid rgba(99, 102, 241, 0.15)",
-              borderRadius: "999px",
-              textDecoration: "none",
-              animation: "fadeIn 0.3s ease",
-              transition: "all 0.2s ease"
-            }}
-          >
-            <span>🤖</span> AI Creator Portal
-          </a>
+          <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap", marginTop: "12px" }}>
+            <a 
+              href="/admin/ai-creator"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                padding: "6px 16px",
+                fontSize: "0.78rem",
+                fontWeight: 600,
+                color: "#6366f1",
+                backgroundColor: "rgba(99, 102, 241, 0.06)",
+                border: "1px solid rgba(99, 102, 241, 0.15)",
+                borderRadius: "999px",
+                textDecoration: "none",
+                animation: "fadeIn 0.3s ease",
+                transition: "all 0.2s ease"
+              }}
+            >
+              <span>🤖</span> AI Creator Portal
+            </a>
+            <a 
+              href="/admin/dashboard"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                padding: "6px 16px",
+                fontSize: "0.78rem",
+                fontWeight: 600,
+                color: "#10b981",
+                backgroundColor: "rgba(16, 185, 129, 0.06)",
+                border: "1px solid rgba(16, 185, 129, 0.15)",
+                borderRadius: "999px",
+                textDecoration: "none",
+                animation: "fadeIn 0.3s ease",
+                transition: "all 0.2s ease"
+              }}
+            >
+              <span>📈</span> AI ROI Dashboard
+            </a>
+          </div>
         )}
       </div>
     </footer>
