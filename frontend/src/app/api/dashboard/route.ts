@@ -119,7 +119,7 @@ export async function GET(request: NextRequest) {
       WHERE segments.date BETWEEN '${start_date}' AND '${end_date}'
     `;
 
-    const googleAdsResponse = await fetch(`https://googleads.googleapis.com/v17/customers/${customerId}/googleAds:search`, {
+    const googleAdsResponse = await fetch(`https://googleads.googleapis.com/v24/customers/${customerId}/googleAds:search`, {
       method: "POST",
       headers: {
         "Authorization": `Bearer ${googleToken}`,
