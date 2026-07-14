@@ -537,7 +537,7 @@ export default function AdminDashboard() {
             <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
               <p><strong>Connected Manager Account (MCC):</strong> 664-785-0378</p>
               <p><strong>Developer Token Access:</strong> Approved (Basic Access - 15,000 Operations/Day)</p>
-              <p><strong>API Client:</strong> REST gRPC-over-JSON Gateway (V17)</p>
+              <p><strong>API Client:</strong> REST gRPC-over-JSON Gateway (V24)</p>
             </div>
             <div>
               <p><strong>How to Link a New Google Ads Account:</strong></p>
