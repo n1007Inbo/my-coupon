@@ -1,7 +1,16 @@
 "use client";
 
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import styles from "./Dashboard.module.css";
+
+interface CampaignDetail {
+  id: string;
+  name: string;
+  status: string;
+  spend: number;
+  clicks: number;
+  impressions: number;
+}
 
 interface BrandStats {
   id: string;
@@ -13,6 +22,7 @@ interface BrandStats {
   roi: number;
   status: string;
   recommendation: string;
+  campaignsDetail: CampaignDetail[];
 }
 
 interface Summary {
@@ -28,6 +38,7 @@ interface DashboardPayload {
   summary: Summary;
   brands: BrandStats[];
   dataSource: string;
+  error?: string;
 }
 
 export default function AdminDashboard() {
@@ -44,10 +55,17 @@ export default function AdminDashboard() {
   const [endDate, setEndDate] = useState(todayStr);
 
   // Data states
-  const [data, setData] = useState<DashboardPayload | null>(null);
+  const [payload, setPayload] = useState<DashboardPayload | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [isRefreshing, setIsRefreshing] = useState(false);
+
+  // Modals / Overrides states
+  const [activeBrandModal, setActiveBrandModal] = useState<BrandStats | null>(null);
+  const [overrideBrandId, setOverrideBrandId] = useState<string | null>(null);
+  const [overrideSpend, setOverrideSpend] = useState("");
+  const [overrideRevenue, setOverrideRevenue] = useState("");
+  const [manualAdjustments, setManualAdjustments] = useState<{ [key: string]: { spend: number, revenue: number } }>({});
 
   // Authentication barrier
   const handleLogin = (e: React.FormEvent) => {
@@ -61,33 +79,40 @@ export default function AdminDashboard() {
     }
   };
 
-  // Hydrate auth status
+  // Hydrate auth and manual adjustments status
   useEffect(() => {
     if (typeof window !== "undefined") {
       const isAuth = sessionStorage.getItem("dashboard_auth") === "true";
       if (isAuth) {
         setIsAuthenticated(true);
       }
+      try {
+        const stored = localStorage.getItem("dashboard_manual_adjustments");
+        if (stored) {
+          setManualAdjustments(JSON.parse(stored));
+        }
+      } catch (err) {
+        console.warn("Failed to load manual adjustments:", err);
+      }
     }
   }, []);
 
   // Fetch Dashboard Stats API
-  const fetchStats = useCallback(async (forcedMock = false) => {
+  const fetchStats = useCallback(async () => {
     setIsLoading(true);
     setError(null);
     try {
-      let url = `/api/dashboard?start_date=${startDate}&end_date=${endDate}`;
-      if (forcedMock) url += "&mock=true";
-      
+      const url = `/api/dashboard?start_date=${startDate}&end_date=${endDate}`;
       const response = await fetch(url);
+      const data = await response.json();
+      
       if (!response.ok) {
-        throw new Error(`Server returned error: ${response.statusText}`);
+        throw new Error(data.error || `Server returned error: ${response.statusText}`);
       }
-      const payload: DashboardPayload = await response.json();
-      setData(payload);
+      setPayload(data);
     } catch (err: any) {
       console.error("Dashboard fetch error:", err);
-      setError(err.message || "Failed to load dashboard statistics.");
+      setError(err.message || "Failed to load dashboard statistics from Google Ads.");
     } finally {
       setIsLoading(false);
       setIsRefreshing(false);
@@ -106,12 +131,93 @@ export default function AdminDashboard() {
     fetchStats();
   };
 
-  // CSV Report Exporter
+  // Save manual overrides
+  const handleSaveOverride = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!overrideBrandId) return;
+
+    const spendOffset = parseFloat(overrideSpend) || 0;
+    const revOffset = parseFloat(overrideRevenue) || 0;
+
+    const updated = {
+      ...manualAdjustments,
+      [overrideBrandId]: { spend: spendOffset, revenue: revOffset }
+    };
+
+    setManualAdjustments(updated);
+    localStorage.setItem("dashboard_manual_adjustments", JSON.stringify(updated));
+    setOverrideBrandId(null);
+    setOverrideSpend("");
+    setOverrideRevenue("");
+  };
+
+  // Clear specific override
+  const handleClearOverride = (brandId: string) => {
+    const updated = { ...manualAdjustments };
+    delete updated[brandId];
+    setManualAdjustments(updated);
+    localStorage.setItem("dashboard_manual_adjustments", JSON.stringify(updated));
+  };
+
+  // Grouped and Merged Data with Manual Overrides applied
+  const processedData = useMemo(() => {
+    if (!payload) return null;
+
+    let adjustedSpend = 0;
+    let adjustedRevenue = 0;
+
+    const brands = payload.brands.map(b => {
+      const adj = manualAdjustments[b.id] || { spend: 0, revenue: 0 };
+      const finalSpend = Math.max(0, b.spend + adj.spend);
+      const finalRevenue = Math.max(0, b.revenue + adj.revenue);
+      const finalProfit = finalRevenue - finalSpend;
+      const finalRoi = finalSpend > 0 ? Number((finalProfit / finalSpend * 100).toFixed(2)) : 0;
+
+      adjustedSpend += finalSpend;
+      adjustedRevenue += finalRevenue;
+
+      let rec = b.recommendation;
+      if (finalSpend > 0) {
+        if (finalRoi < 0) {
+          rec = "Pause immediately 🛑 - Campaign runs in loss.";
+        } else if (finalRoi > 80) {
+          rec = "Scale campaign 🚀 - High ROI, increase bids.";
+        } else {
+          rec = "Keep Running 🟢 - Stable performance.";
+        }
+      }
+
+      return {
+        ...b,
+        spend: finalSpend,
+        revenue: finalRevenue,
+        roi: finalRoi,
+        recommendation: rec,
+        hasAdjustment: adj.spend !== 0 || adj.revenue !== 0
+      };
+    });
+
+    const netProfit = adjustedRevenue - adjustedSpend;
+    const avgRoi = adjustedSpend > 0 ? (netProfit / adjustedSpend * 100) : 0;
+
+    return {
+      ...payload,
+      summary: {
+        totalSpend: Number(adjustedSpend.toFixed(2)),
+        totalRevenue: Number(adjustedRevenue.toFixed(2)),
+        netProfit: Number(netProfit.toFixed(2)),
+        avgRoi: Number(avgRoi.toFixed(2))
+      },
+      brands
+    };
+  }, [payload, manualAdjustments]);
+
+  // CSV Exporter
   const handleExportCSV = () => {
-    if (!data || data.brands.length === 0) return;
+    if (!processedData || processedData.brands.length === 0) return;
     try {
       const headers = ["Brand Name", "Status", "Clicks", "Conversions", "Spend (PKR)", "Revenue (PKR)", "Net Profit (PKR)", "ROI %", "AI Recommendation"];
-      const rows = data.brands.map(b => [
+      const rows = processedData.brands.map(b => [
         b.name,
         b.status,
         b.clicks,
@@ -120,7 +226,7 @@ export default function AdminDashboard() {
         b.revenue,
         (b.revenue - b.spend).toFixed(2),
         b.roi + "%",
-        b.recommendation.replace(/,/g, ";") // Escape comma
+        b.recommendation.replace(/,/g, ";")
       ]);
 
       const csvContent = "data:text/csv;charset=utf-8," 
@@ -129,7 +235,7 @@ export default function AdminDashboard() {
       const encodedUri = encodeURI(csvContent);
       const link = document.createElement("a");
       link.setAttribute("href", encodedUri);
-      link.setAttribute("download", `PromoRegistry_Arbitrage_Report_${data.startDate}_to_${data.endDate}.csv`);
+      link.setAttribute("download", `PromoRegistry_ROI_Report_${processedData.startDate}_to_${processedData.endDate}.csv`);
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -138,7 +244,6 @@ export default function AdminDashboard() {
     }
   };
 
-  // Direct login block UI
   if (!isAuthenticated) {
     return (
       <div className={styles.dashboardContainer}>
@@ -184,14 +289,18 @@ export default function AdminDashboard() {
     <div className={styles.dashboardContainer}>
       <div className={styles.dashboardContent}>
         
-        {/* Header section with badge */}
+        {/* Header section with status */}
         <header className={styles.dashboardHeader}>
           <div className={styles.titleSection}>
             <div className={styles.titleRow}>
               <h1 className={styles.pageTitle}>AI Arbitrage ROI Dashboard</h1>
-              <span className={styles.liveBadge}>
-                <span className={styles.liveDot}></span>
-                <span>API Connection Active</span>
+              <span className={styles.liveBadge} style={{ 
+                backgroundColor: error ? "rgba(239, 68, 68, 0.1)" : "rgba(16, 185, 129, 0.1)",
+                borderColor: error ? "rgba(239, 68, 68, 0.2)" : "rgba(16, 185, 129, 0.2)",
+                color: error ? "#f87171" : "#34d399"
+              }}>
+                <span className={styles.liveDot} style={{ backgroundColor: error ? "#ef4444" : "#10b981" }}></span>
+                <span>{error ? "API Connection Offline" : "Live API Connection Active"}</span>
               </span>
             </div>
             <p className={styles.pageSubtitle}>
@@ -199,7 +308,7 @@ export default function AdminDashboard() {
             </p>
           </div>
 
-          {/* Date controls and refresh toolbar */}
+          {/* Date Picker & Sync Toolbar */}
           <div className={styles.toolbarSection}>
             <div className={styles.datePickerWrapper}>
               <span>From:</span>
@@ -231,28 +340,13 @@ export default function AdminDashboard() {
 
         {error && (
           <div className={styles.loginError} style={{ margin: 0, textAlign: "left" }}>
-            ⚠️ <strong>Backend Error:</strong> {error}. Using simulated mock-ups temporarily.
-            <button 
-              onClick={() => fetchStats(true)} 
-              style={{
-                marginLeft: "20px",
-                backgroundColor: "#f87171",
-                color: "#0f172a",
-                border: "none",
-                padding: "2px 10px",
-                borderRadius: "4px",
-                fontWeight: 700,
-                fontSize: "0.8rem",
-                cursor: "pointer"
-              }}
-            >
-              Force Fallback Mock
-            </button>
+            ⚠️ <strong>API Error:</strong> {error}. Please check your credentials configured in Vercel. 
+            You can still use the <strong>Manual Overrides</strong> below to input adjustments and run calculations.
           </div>
         )}
 
         {/* Dynamic Summary Cards */}
-        {isLoading || !data ? (
+        {isLoading || !processedData ? (
           <div className={styles.summaryGrid}>
             <div className={styles.skeletonCard}></div>
             <div className={styles.skeletonCard}></div>
@@ -265,7 +359,7 @@ export default function AdminDashboard() {
               <span className={styles.cardIcon}>💸</span>
               <span className={styles.cardLabel}>Ad Spend</span>
               <span className={styles.cardValue} style={{ color: "#f87171" }}>
-                {data.summary.totalSpend.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
+                {processedData.summary.totalSpend.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
               </span>
               <span className={styles.cardSubtext}>Google Ads Costs</span>
             </div>
@@ -274,7 +368,7 @@ export default function AdminDashboard() {
               <span className={styles.cardIcon}>💰</span>
               <span className={styles.cardLabel}>CSL Revenue</span>
               <span className={styles.cardValue} style={{ color: "#34d399" }}>
-                {data.summary.totalRevenue.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
+                {processedData.summary.totalRevenue.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
               </span>
               <span className={styles.cardSubtext}>Affiliate Commissions</span>
             </div>
@@ -282,19 +376,19 @@ export default function AdminDashboard() {
             <div className={styles.summaryCard}>
               <span className={styles.cardIcon}>📈</span>
               <span className={styles.cardLabel}>Net Profit</span>
-              <span className={styles.cardValue} style={{ color: data.summary.netProfit >= 0 ? "#10b981" : "#ef4444" }}>
-                {data.summary.netProfit.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
+              <span className={styles.cardValue} style={{ color: processedData.summary.netProfit >= 0 ? "#10b981" : "#ef4444" }}>
+                {processedData.summary.netProfit.toLocaleString()} <span style={{ fontSize: "1rem" }}>PKR</span>
               </span>
               <span className={styles.cardSubtext}>
-                {data.summary.netProfit >= 0 ? "🟢 Profitable Campaign Run" : "🔴 Loss Incurred"}
+                {processedData.summary.netProfit >= 0 ? "🟢 Profitable Campaign Run" : "🔴 Loss Incurred"}
               </span>
             </div>
 
             <div className={styles.summaryCard}>
               <span className={styles.cardIcon}>🚀</span>
               <span className={styles.cardLabel}>Average ROI</span>
-              <span className={styles.cardValue} style={{ color: data.summary.avgRoi >= 50 ? "#34d399" : data.summary.avgRoi >= 0 ? "#fbbf24" : "#ef4444" }}>
-                {data.summary.avgRoi.toFixed(2)}%
+              <span className={styles.cardValue} style={{ color: processedData.summary.avgRoi >= 50 ? "#34d399" : processedData.summary.avgRoi >= 0 ? "#fbbf24" : "#ef4444" }}>
+                {processedData.summary.avgRoi.toFixed(2)}%
               </span>
               <span className={styles.cardSubtext}>Return on Ad Spend (ROAS)</span>
             </div>
@@ -302,7 +396,7 @@ export default function AdminDashboard() {
         )}
 
         {/* Dynamic Table Section */}
-        {isLoading || !data ? (
+        {isLoading || !processedData ? (
           <div className={styles.skeletonTable}></div>
         ) : (
           <section className={styles.reportSection}>
@@ -310,7 +404,7 @@ export default function AdminDashboard() {
               <div>
                 <h3 className={styles.sectionTitle}>Campaign Metrics By Brand</h3>
                 <p style={{ color: "#64748b", fontSize: "0.82rem", margin: "4px 0" }}>
-                  Data source: {data.dataSource} | Period: {data.startDate} to {data.endDate}
+                  Data source: {processedData.dataSource} | Period: {processedData.startDate} to {processedData.endDate}
                 </p>
               </div>
 
@@ -322,59 +416,316 @@ export default function AdminDashboard() {
               </div>
             </div>
 
-            <div className={styles.tableContainer}>
-              <table className={styles.performanceTable}>
-                <thead>
-                  <tr>
-                    <th>Brand / Campaign</th>
-                    <th>Status</th>
-                    <th>Clicks</th>
-                    <th>Conversions</th>
-                    <th>Cost (Spend)</th>
-                    <th>CSL Revenue</th>
-                    <th>ROI</th>
-                    <th>AI Recommendation & Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {data.brands.map((b) => (
-                    <tr key={b.id}>
-                      <td>
-                        <div className={styles.brandInfo}>
-                          <span className={styles.brandName}>{b.name}</span>
-                          <span className={styles.brandId}>Ref: {b.id}</span>
-                        </div>
-                      </td>
-                      <td>
-                        <span className={`${styles.badge} ${b.status === "ACTIVE" ? styles.badgeActive : styles.badgePaused}`}>
-                          {b.status}
-                        </span>
-                      </td>
-                      <td style={{ fontWeight: 600 }}>{b.clicks}</td>
-                      <td style={{ fontWeight: 600 }}>{b.conversions}</td>
-                      <td style={{ color: "#f87171", fontWeight: 700 }}>
-                        {b.spend > 0 ? b.spend.toLocaleString() : "0"} PKR
-                      </td>
-                      <td style={{ color: "#34d399", fontWeight: 700 }}>
-                        {b.revenue > 0 ? b.revenue.toLocaleString() : "0"} PKR
-                      </td>
-                      <td style={{ 
-                        fontWeight: 800, 
-                        color: b.roi > 50 ? "#34d399" : b.roi > 0 ? "#fbbf24" : b.spend > 0 ? "#f87171" : "#64748b" 
-                      }}>
-                        {b.spend > 0 ? `${b.roi}%` : "—"}
-                      </td>
-                      <td>
-                        <div className={styles.recommendationCol}>
-                          {b.recommendation}
-                        </div>
-                      </td>
+            {processedData.brands.length === 0 ? (
+              <div style={{ textAlign: "center", padding: "40px", color: "#64748b" }}>
+                <span style={{ fontSize: "3rem" }}>📭</span>
+                <h4>No campaigns or ad spend found for this date range.</h4>
+                <p>Google Ads API returned 0 campaign records between {startDate} and {endDate}.</p>
+                <button 
+                  onClick={() => {
+                    // Set to June 1 - June 8 (historical test date range)
+                    setStartDate("2026-06-01");
+                    setEndDate("2026-06-08");
+                  }}
+                  className={styles.refreshButton}
+                  style={{ margin: "20px auto 0" }}
+                >
+                  Load June 1 - June 8 Test Period
+                </button>
+              </div>
+            ) : (
+              <div className={styles.tableContainer}>
+                <table className={styles.performanceTable}>
+                  <thead>
+                    <tr>
+                      <th>Brand / Campaign</th>
+                      <th>Status</th>
+                      <th>Clicks</th>
+                      <th>Conversions</th>
+                      <th>Cost (Spend)</th>
+                      <th>CSL Revenue</th>
+                      <th>ROI</th>
+                      <th>AI Recommendation & Action</th>
+                      <th>Manual Actions</th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody>
+                    {processedData.brands.map((b) => (
+                      <tr key={b.id}>
+                        <td>
+                          <div className={styles.brandInfo}>
+                            <span className={styles.brandName}>{b.name}</span>
+                            <span className={styles.brandId}>Ref: {b.id}</span>
+                          </div>
+                        </td>
+                        <td>
+                          <span className={`${styles.badge} ${b.status === "ACTIVE" ? styles.badgeActive : styles.badgePaused}`}>
+                            {b.status}
+                          </span>
+                        </td>
+                        <td style={{ fontWeight: 600 }}>{b.clicks}</td>
+                        <td style={{ fontWeight: 600 }}>{b.conversions}</td>
+                        <td style={{ color: "#f87171", fontWeight: 700 }}>
+                          {b.spend > 0 ? b.spend.toLocaleString() : "0"} PKR
+                        </td>
+                        <td style={{ color: "#34d399", fontWeight: 700 }}>
+                          {b.revenue > 0 ? b.revenue.toLocaleString() : "0"} PKR
+                        </td>
+                        <td style={{ 
+                          fontWeight: 800, 
+                          color: b.roi > 50 ? "#34d399" : b.roi > 0 ? "#fbbf24" : b.spend > 0 ? "#f87171" : "#64748b" 
+                        }}>
+                          {b.spend > 0 ? `${b.roi}%` : "—"}
+                        </td>
+                        <td>
+                          <div className={styles.recommendationCol}>
+                            {b.recommendation}
+                            {b.hasAdjustment && (
+                              <div style={{ fontSize: "0.72rem", color: "#38bdf8", marginTop: "2px" }}>
+                                [Manual Adjustments Applied]
+                              </div>
+                            )}
+                          </div>
+                        </td>
+                        <td>
+                          <div style={{ display: "flex", gap: "6px" }}>
+                            {b.campaignsDetail && b.campaignsDetail.length > 0 && (
+                              <button 
+                                onClick={() => setActiveBrandModal(b)} 
+                                className={styles.actionBtn}
+                                style={{ padding: "4px 8px", fontSize: "0.75rem" }}
+                              >
+                                Detail 🔍
+                              </button>
+                            )}
+                            <button 
+                              onClick={() => {
+                                setOverrideBrandId(b.id);
+                                const adj = manualAdjustments[b.id] || { spend: 0, revenue: 0 };
+                                setOverrideSpend(String(adj.spend));
+                                setOverrideRevenue(String(adj.revenue));
+                              }} 
+                              className={styles.actionBtn}
+                              style={{ padding: "4px 8px", fontSize: "0.75rem", borderColor: "rgba(56, 189, 248, 0.3)" }}
+                            >
+                              Adjust ✏️
+                            </button>
+                            {b.hasAdjustment && (
+                              <button 
+                                onClick={() => handleClearOverride(b.id)} 
+                                className={styles.actionBtn}
+                                style={{ padding: "4px 8px", fontSize: "0.75rem", borderColor: "rgba(239, 68, 68, 0.3)", color: "#f87171" }}
+                              >
+                                Clear ❌
+                              </button>
+                            )}
+                          </div>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
           </section>
+        )}
+
+        {/* API Credentials Information & Config Panel */}
+        <section className={styles.reportSection} style={{ background: "rgba(17, 24, 39, 0.25)" }}>
+          <h3 className={styles.sectionTitle} style={{ fontSize: "1.1rem" }}>🛠️ Google Ads API & Integration Status</h3>
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "24px", fontSize: "0.85rem", color: "#cbd5e1" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+              <p><strong>Connected Manager Account (MCC):</strong> 664-785-0378</p>
+              <p><strong>Developer Token Access:</strong> Approved (Basic Access - 15,000 Operations/Day)</p>
+              <p><strong>API Client:</strong> REST gRPC-over-JSON Gateway (V17)</p>
+            </div>
+            <div>
+              <p><strong>How to Link a New Google Ads Account:</strong></p>
+              <ol style={{ paddingLeft: "20px", margin: "4px 0" }}>
+                <li>Login to Manager Account MCC (664-785-0378).</li>
+                <li>Go to <em>Sub-account settings</em>, click the blue plus "+" button, and select <em>Link existing account</em>.</li>
+                <li>Enter the 10-digit ID of the running account and send the link request. Accept it in the client account.</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        {/* 1. Modal overlay for Campaign Level Detail breakdown */}
+        {activeBrandModal && (
+          <div style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+            backdropFilter: "blur(4px)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "20px"
+          }}>
+            <div style={{
+              background: "#0f172a",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+              borderRadius: "var(--radius-lg)",
+              padding: "32px",
+              width: "100%",
+              maxWidth: "760px",
+              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.6)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "24px"
+            }}>
+              <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px solid rgba(255, 255, 255, 0.08)", paddingBottom: "12px" }}>
+                <h3 style={{ margin: 0, fontSize: "1.3rem" }}>Campaign Breakdown: {activeBrandModal.name}</h3>
+                <button 
+                  onClick={() => setActiveBrandModal(null)} 
+                  style={{
+                    background: "transparent",
+                    border: "none",
+                    color: "#94a3b8",
+                    fontSize: "1.5rem",
+                    cursor: "pointer"
+                  }}
+                >
+                  &times;
+                </button>
+              </div>
+
+              <div style={{ overflowX: "auto" }}>
+                <table className={styles.performanceTable}>
+                  <thead>
+                    <tr>
+                      <th>Google Ads Campaign Name</th>
+                      <th>Campaign ID</th>
+                      <th>Status</th>
+                      <th>Spend (PKR)</th>
+                      <th>Clicks</th>
+                      <th>Impressions</th>
+                      <th>Avg CPC</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {activeBrandModal.campaignsDetail.map((c) => (
+                      <tr key={c.id}>
+                        <td style={{ fontWeight: 700 }}>{c.name}</td>
+                        <td style={{ fontFamily: "monospace", fontSize: "0.8rem", color: "#64748b" }}>{c.id}</td>
+                        <td>
+                          <span className={`${styles.badge} ${c.status === "ENABLED" ? styles.badgeActive : styles.badgePaused}`}>
+                            {c.status === "ENABLED" ? "ACTIVE" : "PAUSED"}
+                          </span>
+                        </td>
+                        <td style={{ color: "#f87171", fontWeight: 700 }}>{c.spend.toLocaleString()} PKR</td>
+                        <td>{c.clicks}</td>
+                        <td>{c.impressions}</td>
+                        <td style={{ fontWeight: 600 }}>
+                          {c.clicks > 0 ? (c.spend / c.clicks).toFixed(2) : "0.00"} PKR
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                <button 
+                  onClick={() => setActiveBrandModal(null)} 
+                  className={styles.loginButton} 
+                  style={{ width: "auto", padding: "10px 24px" }}
+                >
+                  Close Breakdown
+                </button>
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* 2. Modal overlay for Manual Cost/Revenue Overrides Adjuster */}
+        {overrideBrandId && (
+          <div style={{
+            position: "fixed",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.75)",
+            backdropFilter: "blur(4px)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            zIndex: 1000,
+            padding: "20px"
+          }}>
+            <form onSubmit={handleSaveOverride} style={{
+              background: "#0f172a",
+              border: "1px solid rgba(255, 255, 255, 0.1)",
+              borderRadius: "var(--radius-lg)",
+              padding: "32px",
+              width: "100%",
+              maxWidth: "400px",
+              boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.6)",
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px"
+            }}>
+              <div>
+                <h3 style={{ margin: 0, fontSize: "1.2rem" }}>Manual Adjustments</h3>
+                <p style={{ color: "#64748b", fontSize: "0.8rem", margin: "4px 0" }}>
+                  Adjust stats for brand: <strong>{overrideBrandId}</strong>. Values will be added/subtracted locally.
+                </p>
+              </div>
+
+              <div>
+                <label style={{ display: "block", fontSize: "0.8rem", color: "#94a3b8", marginBottom: "6px" }}>
+                  Spend Offset (PKR) - Use negative for discount
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  placeholder="e.g. +5000 or -2000"
+                  value={overrideSpend}
+                  onChange={(e) => setOverrideSpend(e.target.value)}
+                  className={styles.loginInput}
+                  style={{ textAlign: "left" }}
+                />
+              </div>
+
+              <div>
+                <label style={{ display: "block", fontSize: "0.8rem", color: "#94a3b8", marginBottom: "6px" }}>
+                  CSL Revenue Offset (PKR)
+                </label>
+                <input
+                  type="number"
+                  step="0.01"
+                  placeholder="e.g. +15000"
+                  value={overrideRevenue}
+                  onChange={(e) => setOverrideRevenue(e.target.value)}
+                  className={styles.loginInput}
+                  style={{ textAlign: "left" }}
+                />
+              </div>
+
+              <div style={{ display: "flex", gap: "10px", marginTop: "10px" }}>
+                <button 
+                  type="button" 
+                  onClick={() => setOverrideBrandId(null)} 
+                  className={styles.actionBtn}
+                  style={{ flex: 1, padding: "12px", justifyContent: "center" }}
+                >
+                  Cancel
+                </button>
+                <button 
+                  type="submit" 
+                  className={styles.loginButton} 
+                  style={{ flex: 1, padding: "12px" }}
+                >
+                  Save Adjustments
+                </button>
+              </div>
+            </form>
+          </div>
         )}
 
       </div>
