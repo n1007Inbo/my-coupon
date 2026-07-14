@@ -158,3 +158,4 @@ export default function FooterClient() {
     </footer>
   );
 }
+// Trigger rebuild with new Vercel env variables
