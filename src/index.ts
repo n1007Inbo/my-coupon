@@ -249,6 +249,18 @@ export default {
             { code: 'DEAL', discount: 'Dès 49€', description: 'Tarif Tribu : Obtenez un tarif réduit à partir de 49€ par personne pour tout achat simultané de 5 à 15 billets.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' },
             { code: 'DEAL', discount: 'Dès 10€', description: 'Profitez de l\'option coupe-file Filotomatix à partir de 10€ pour éviter les files d\'attente aux attractions phares.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://litl.si/Tlxjk' }
           ]
+        },
+        {
+          name: 'Bouquets by Post',
+          slug: 'bouquets-by-post',
+          website: 'https://bouquetsbypost.com/muhammadhaziqueali',
+          coupons: [
+            { code: 'DEAL', discount: '20% off', description: 'Get 20% off on all flower bouquet orders. Limited time summer offer.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: 'Free shipping', description: 'Free standard UK flower delivery on all orders. No minimum spend required.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '£5 off', description: 'Save £5 on your first flower delivery order. Sign up for updates.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '15% off', description: 'Special discount on letterbox flowers and gift bundles.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '10% off', description: 'Verified 10% off coupon code sitewide on fresh flower gifts.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' }
+          ]
         }
       ];
 

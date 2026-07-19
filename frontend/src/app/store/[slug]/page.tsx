@@ -54,7 +54,8 @@ const FALLBACK_STORES: Store[] = [
   { id: 39, name: "GoDaddy", slug: "godaddy", logo: getLogoUrl("godaddy"), website: "https://godaddy.com" },
   { id: 40, name: "Gymshark", slug: "gymshark", logo: getLogoUrl("gymshark"), website: "https://gymshark.com" },
   { id: 41, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" },
-  { id: 42, name: "Parc Astérix FR", slug: "parc-asterix-fr", logo: getLogoUrl("parc-asterix-fr"), website: "https://litl.si/Tlxjk" }
+  { id: 42, name: "Parc Astérix FR", slug: "parc-asterix-fr", logo: getLogoUrl("parc-asterix-fr"), website: "https://litl.si/Tlxjk" },
+  { id: 43, name: "Bouquets by Post", slug: "bouquets-by-post", logo: getLogoUrl("bouquets-by-post"), website: "https://bouquetsbypost.com/muhammadhaziqueali" }
 ];
 
 const FALLBACK_COUPONS: Coupon[] = [
@@ -295,7 +296,14 @@ const FALLBACK_COUPONS: Coupon[] = [
   { id: 1351, code: "DEAL", discount: "Dès 55€", description: "Achetez vos billets à prix spécial à partir de 55€ seulement. Profitez des attractions à un tarif exceptionnel.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
   { id: 1352, code: "DEAL", discount: "Gratuit", description: "Entrée gratuite pour les enfants accompagnés d'un adulte muni d'un billet payant lors des périodes spéciales.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
   { id: 1353, code: "DEAL", discount: "Dès 49€", description: "Tarif Tribu : Obtenez un tarif réduit à partir de 49€ par personne pour tout achat simultané de 5 à 15 billets.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
-  { id: 1354, code: "DEAL", discount: "Dès 10€", description: "Profitez de l'option coupe-file Filotomatix à partir de 10€ pour éviter les files d'attente aux attractions phares.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" }
+  { id: 1354, code: "DEAL", discount: "Dès 10€", description: "Profitez de l'option coupe-file Filotomatix à partir de 10€ pour éviter les files d'attente aux attractions phares.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
+  
+  // Bouquets by Post
+  { id: 1355, code: "DEAL", discount: "20% off", description: "Get 20% off on all flower bouquet orders. Limited time summer offer.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  { id: 1356, code: "DEAL", discount: "Free shipping", description: "Free standard UK flower delivery on all orders. No minimum spend required.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  { id: 1357, code: "DEAL", discount: "£5 off", description: "Save £5 on your first flower delivery order. Sign up for updates.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  { id: 1358, code: "DEAL", discount: "15% off", description: "Special discount on letterbox flowers and gift bundles.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  { id: 1359, code: "DEAL", discount: "10% off", description: "Verified 10% off coupon code sitewide on fresh flower gifts.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" }
 ];
 
 export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
