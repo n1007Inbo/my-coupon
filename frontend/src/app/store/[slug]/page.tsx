@@ -8,6 +8,7 @@ const getLogoUrl = (slug: string | undefined | null) => {
   if (slug.startsWith("desktronic-")) return "/logos/desktronic.svg";
   if (slug.startsWith("tenways-")) return "/logos/tenways.svg";
   if (slug === "parc-asterix-fr") return "/logos/parc-asterix-fr.webp";
+  if (slug === "bouquets-by-post") return "/logos/bouquets-by-post.jpg";
   return `/logos/${slug}.svg`;
 };
 
