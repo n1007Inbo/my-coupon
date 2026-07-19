@@ -255,11 +255,17 @@ export default {
           slug: 'bouquets-by-post',
           website: 'https://bouquetsbypost.com/muhammadhaziqueali',
           coupons: [
-            { code: 'DEAL', discount: '20% off', description: 'Get 20% off on all flower bouquet orders. Limited time summer offer.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
-            { code: 'DEAL', discount: 'Free shipping', description: 'Free standard UK flower delivery on all orders. No minimum spend required.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
-            { code: 'DEAL', discount: '£5 off', description: 'Save £5 on your first flower delivery order. Sign up for updates.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
-            { code: 'DEAL', discount: '15% off', description: 'Special discount on letterbox flowers and gift bundles.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
-            { code: 'DEAL', discount: '10% off', description: 'Verified 10% off coupon code sitewide on fresh flower gifts.', expiry_date: '2026-12-31T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' }
+            { code: 'DEAL', discount: '10% off', description: 'Exclusive 10% off coupon code sitewide on fresh flower gifts.', expiry_date: '2026-08-10T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '70% off', description: 'Get up to 70% off on stunning hand-tied bouquets and flower arrangements.', expiry_date: '2026-08-07T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '5% off', description: 'Exclusive 5% off discount code sitewide on all order values.', expiry_date: '2026-08-07T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '50% off', description: 'Save 50% off on selected flower bouquets and summer collections.', expiry_date: '2026-08-08T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: 'Free shipping', description: 'Free UK standard delivery on all flower orders. No minimum spend required.', expiry_date: '2026-08-08T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '50% off', description: 'Birthday flowers promotion: Save 50% on special birthday flower arrangements.', expiry_date: '2026-08-07T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '45% off', description: 'Enjoy 45% off on cute teddy bears when added to your flower order.', expiry_date: '2026-08-07T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '40% off', description: 'Get 40% off on celebratory helium and latex balloons with your flowers.', expiry_date: '2026-08-06T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '20% off', description: 'Save 20% off on custom greeting cards and personalized messages.', expiry_date: '2026-08-09T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '10% off', description: 'Get 10% off your first flower delivery order when you sign up for newsletter updates.', expiry_date: '2026-08-10T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' },
+            { code: 'DEAL', discount: '5% off', description: 'Save 5% on luxury chocolates and truffles bundles added to any order.', expiry_date: '2026-08-06T23:59:59.000Z', is_verified: true, affiliate_url: 'https://bouquetsbypost.com/muhammadhaziqueali' }
           ]
         }
       ];
