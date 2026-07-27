@@ -1,4 +1,5 @@
 import { MetadataRoute } from "next";
+import { BLOGS_DATABASE } from "../lib/blogs";
 
 const STORE_SLUGS = [
   "amazon", "nike", "hostinger", "adidas", "walmart", "ebay", "target", "apple",
@@ -6,12 +7,14 @@ const STORE_SLUGS = [
   "lenovo", "puma", "fiverr", "bookingcom", "udemy", "desktronic-uk", "desktronic-us",
   "tenways-uk", "tenways-us", "geekbuying", "banggood", "zaful", "massivemobile",
   "dhgate", "envato", "semrush", "namecheap", "squarespace", "hostgator",
-  "bluehost", "coursera", "skillshare", "nordpass", "godaddy", "gymshark"
+  "bluehost", "coursera", "skillshare", "nordpass", "godaddy", "gymshark",
+  "desktronic-nl", "parc-asterix-fr", "bouquets-by-post", "im8health"
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://promoregistry.com";
   const apiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL || "http://localhost:1337";
+  const staticDate = new Date("2026-07-01T00:00:00Z");
 
   let slugs = STORE_SLUGS;
 
@@ -33,31 +36,37 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const staticPages = [
     {
       url: baseUrl,
-      lastModified: new Date(),
+      lastModified: staticDate,
       changeFrequency: "daily" as const,
       priority: 1.0,
     },
     {
+      url: `${baseUrl}/blog`,
+      lastModified: staticDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: staticDate,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: staticDate,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      lastModified: staticDate,
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      lastModified: staticDate,
       changeFrequency: "monthly" as const,
       priority: 0.5,
     },
@@ -66,10 +75,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Dynamic store pages
   const storePages = slugs.map((slug) => ({
     url: `${baseUrl}/store/${slug}`,
-    lastModified: new Date(),
+    lastModified: staticDate,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
-  return [...staticPages, ...storePages];
+  // Blog post pages
+  const blogPages = Object.keys(BLOGS_DATABASE).map((slug) => ({
+    url: `${baseUrl}/blog/${slug}`,
+    lastModified: staticDate,
+    changeFrequency: "monthly" as const,
+    priority: 0.7,
+  }));
+
+  return [...staticPages, ...storePages, ...blogPages];
 }

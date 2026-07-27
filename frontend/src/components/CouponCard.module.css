@@ -3,11 +3,8 @@
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 12px;
-  padding: 24px;
   display: flex;
-  flex-direction: row; /* Horizontal row layout! */
-  align-items: center;
-  gap: 24px;
+  flex-direction: column;
   min-height: 160px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
@@ -27,6 +24,15 @@
   cursor: not-allowed;
   transform: none !important;
   box-shadow: none !important;
+}
+
+/* Main content row (logo + info + button) */
+.cardContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
 }
 
 /* Left side: Store Logo Box */
@@ -69,7 +75,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 0; /* Enable text truncation in flex items */
+  min-width: 0;
 }
 
 .title {
@@ -166,8 +172,8 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1eeff; /* Light purple background */
-  color: #583fbc; /* Dark purple text */
+  background-color: #f1eeff;
+  color: #583fbc;
   border: none;
   padding: 12px 24px;
   border-radius: 6px;
@@ -197,9 +203,97 @@
   box-shadow: none;
 }
 
-/* Responsive Rules */
+/* ===== Feedback Footer Strip ===== */
+.feedbackStrip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 24px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border-top: 1px solid #e2e8f0;
+  gap: 16px;
+}
+
+.feedbackLeft {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.successPill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid #a7f3d0;
+  border-radius: 100px;
+  padding: 3px 12px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.successPill svg {
+  color: #059669;
+}
+
+.feedbackUsed {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: #94a3b8;
+}
+
+.feedbackRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.feedbackQuestion {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.feedbackBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #64748b;
+}
+
+.feedbackBtn:hover {
+  border-color: #cbd5e1;
+  background-color: #f8fafc;
+}
+
+.feedbackBtnYes {}
+.feedbackBtnNo {}
+
+.feedbackBtnYesActive {
+  background-color: #ecfdf5 !important;
+  border-color: #10b981 !important;
+  color: #059669 !important;
+}
+
+.feedbackBtnNoActive {
+  background-color: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #dc2626 !important;
+}
+
+/* ===== Responsive Rules ===== */
 @media (max-width: 768px) {
-  .card {
+  .cardContent {
     gap: 16px;
     padding: 20px;
   }
@@ -213,11 +307,15 @@
   .title {
     font-size: 1.1rem;
   }
+
+  .feedbackStrip {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 600px) {
-  .card {
-    flex-direction: column; /* Stack vertically on small screens */
+  .cardContent {
+    flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     min-height: auto;
@@ -235,7 +333,7 @@
   }
 
   .title {
-    white-space: normal; /* Allow wrapping on mobile */
+    white-space: normal;
     overflow: visible;
   }
 
@@ -244,7 +342,19 @@
   }
 
   .btnGetCode {
-    width: 100%; /* Full width button on mobile */
+    width: 100%;
     padding: 12px;
+  }
+
+  .feedbackStrip {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  .feedbackRight {
+    width: 100%;
+    justify-content: flex-start;
   }
 }

@@ -14,6 +14,26 @@ interface StoreClientProps {
 export default function StoreClient({ store, coupons }: StoreClientProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
+  const [email, setEmail] = useState("");
+  const [subscribed, setSubscribed] = useState(false);
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) {
+      if (typeof window !== "undefined") {
+        localStorage.setItem(`subscribed_${store.slug}`, email);
+        if ((window as any).gtag) {
+          (window as any).gtag("event", "sign_up", {
+            event_category: "Newsletter",
+            event_label: store.name,
+            method: "Email"
+          });
+        }
+      }
+      setSubscribed(true);
+      setEmail("");
+    }
+  };
 
   // Auto-open coupon modal if coupon parameter is present in URL
   React.useEffect(() => {
@@ -158,11 +178,54 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       console.warn("Failed to open our website in a new tab:", err);
     }
 
+    // GA4 Button Click Event Tracking
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "generate_lead", {
+        event_category: "Affiliate Button Click",
+        event_label: `${storeName} - ${coupon.discount}`,
+        value: 1.0,
+        currency: "USD",
+        coupon_id: String(coupon.id),
+        is_direct_deal: isDirect
+      });
+    }
+
     // 2. Redirect the current active tab to the merchant store's affiliate URL
     window.location.href = storeUrl;
   };
 
-  const storeUrl = `https://www.google.com/search?q=${encodeURIComponent(store.name + " official website")}`;
+  const [officialWebsiteUrl, setOfficialWebsiteUrl] = useState<string | null>(null);
+
+  const baseStoreUrl = coupons.find(c => c.affiliate_url)?.affiliate_url || store.website || `https://www.google.com/search?q=${encodeURIComponent(store.name + " official website")}`;
+
+  React.useEffect(() => {
+    let finalUrl = baseStoreUrl;
+    try {
+      if (baseStoreUrl.startsWith("http")) {
+        const isAffiliate = baseStoreUrl.includes("admitad") || 
+                            baseStoreUrl.includes("convert") || 
+                            baseStoreUrl.includes("csl") || 
+                            baseStoreUrl.includes("bouquetsbypost") || 
+                            baseStoreUrl.includes("litl.si") ||
+                            baseStoreUrl.includes("/go/");
+        if (isAffiliate) {
+          const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
+          const utmTerm = sessionStorage.getItem("utm_term") || "";
+          const gclid = sessionStorage.getItem("gclid") || "";
+          const urlObj = new URL(baseStoreUrl);
+          
+          if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
+          if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
+          if (gclid) urlObj.searchParams.set("subid3", gclid);
+          
+          finalUrl = urlObj.toString();
+        }
+      }
+    } catch (e) {
+      console.warn("Failed to process officialWebsiteUrl:", e);
+    }
+    setOfficialWebsiteUrl(finalUrl);
+  }, [baseStoreUrl]);
 
   return (
     <div className={styles.mainContainer}>
@@ -198,13 +261,23 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
             </p>
             
             <a 
-              href={storeUrl} 
+              href={officialWebsiteUrl || baseStoreUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
               className={storeStyles.storeWebsiteLink}
+              onClick={() => {
+                if (typeof window !== "undefined" && (window as any).gtag) {
+                  (window as any).gtag("event", "generate_lead", {
+                    event_category: "Official Website Link Click",
+                    event_label: store.name,
+                    value: 1.0,
+                    currency: "USD"
+                  });
+                }
+              }}
             >
               <GlobeIcon />
-              <span>Visit Official {store.name} Website</span>
+              <span>Visit Official Website</span>
             </a>
           </div>
         </div>
@@ -278,6 +351,71 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
               </button>
             </div>
           )}
+        </section>
+
+        {/* Email Subscription Box */}
+        <section className={storeStyles.newsletterSection}>
+          {subscribed ? (
+            <div className={storeStyles.newsletterSuccess}>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#10b981", marginBottom: "8px" }}>
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              <h4>Successfully subscribed!</h4>
+              <p>We will alert you as soon as new {store.name} discount codes are released.</p>
+            </div>
+          ) : (
+            <div className={storeStyles.newsletterBody}>
+              <div className={storeStyles.newsletterContent}>
+                <h4>Never miss a {store.name} discount again!</h4>
+                <p>Subscribe to get the best verified coupons and deals sent straight to your inbox.</p>
+              </div>
+              <form onSubmit={handleSubscribe} className={storeStyles.newsletterForm}>
+                <input 
+                  type="email" 
+                  placeholder="Enter your email address" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required 
+                  className={storeStyles.newsletterInput}
+                />
+                <button type="submit" className={storeStyles.newsletterSubmit}>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          )}
+        </section>
+
+        {/* 4. SEO Coupon Redemption Guide */}
+        <section className={storeStyles.seoGuideSection}>
+          <h2 className={storeStyles.seoGuideTitle}>How to Redeem a {store.name} Promo Code</h2>
+          <div className={storeStyles.seoGuideContent}>
+            <p>
+              Saving money at {store.name} is quick and easy when you use a verified coupon code from PromoRegistry. 
+              Follow these simple steps to claim your discount:
+            </p>
+            <ol className={storeStyles.seoGuideSteps}>
+              <li>
+                <strong>Choose Your Offer:</strong> Browse our list of active {store.name} discount codes and deals above. 
+                Find the offer that matches your shopping needs and click <strong>&quot;Show Coupon Code&quot;</strong> or <strong>&quot;Get Deal&quot;</strong>.
+              </li>
+              <li>
+                <strong>Copy the Code:</strong> A popup window will display the promo code. Click the code box to automatically copy 
+                it to your clipboard.
+              </li>
+              <li>
+                <strong>Shop the Store:</strong> Click the link to go to the official {store.name} website, select your items, and add 
+                them to your shopping cart.
+              </li>
+              <li>
+                <strong>Apply the Discount:</strong> At checkout, look for the promo code input box (often labeled &quot;Promo Code&quot;, &quot;Discount Code&quot;, 
+                or &quot;Voucher&quot;). Paste your copied code into this box and click apply. Your total price will be reduced instantly!
+              </li>
+            </ol>
+            <p className={storeStyles.seoGuideFooter}>
+              All {store.name} coupons on PromoRegistry are verified daily by our team to ensure you get the best possible discount at checkout.
+            </p>
+          </div>
         </section>
       </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import HeaderClient from "./HeaderClient";
 import FooterClient from "./FooterClient";
@@ -13,6 +14,19 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "PromoRegistry | 100% Verified Promo Codes & Discount Coupons",
   description: "Find the latest 100% verified coupon codes, discount offers, and promotional deals for Amazon, Nike, Adidas, Hostinger, eBay, Target, Starbucks, and more on PromoRegistry.com.",
+  openGraph: {
+    title: "PromoRegistry | 100% Verified Promo Codes & Discount Coupons",
+    description: "Find the latest 100% verified coupon codes, discount offers, and promotional deals for Amazon, Nike, Adidas, Hostinger, eBay, Target, Starbucks, and more on PromoRegistry.com.",
+    url: 'https://www.promoregistry.com',
+    siteName: 'PromoRegistry',
+    type: 'website',
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "PromoRegistry | 100% Verified Promo Codes & Discount Coupons",
+    description: "Find the latest 100% verified coupon codes, discount offers, and promotional deals for Amazon, Nike, Adidas, Hostinger, eBay, Target, Starbucks, and more on PromoRegistry.com.",
+  },
 };
 
 export default function RootLayout({
@@ -20,9 +34,41 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+
   return (
     <html lang="en" className={outfit.variable}>
       <head>
+        {gaId && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${gaId}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${gaId}');
+              `}
+            </Script>
+          </>
+        )}
+        {/* Crisp Live Chat Widget */}
+        <Script id="crisp-widget" strategy="lazyOnload">
+          {`
+            window.$crisp=[];
+            window.CRISP_WEBSITE_ID="c7db60dc-54a5-4cb2-ab98-3f52994e91b3";
+            (function(){
+              d=document;
+              s=d.createElement("script");
+              s.src="https://client.crisp.chat/l.js";
+              s.async=1;
+              d.getElementsByTagName("head")[0].appendChild(s);
+            })();
+          `}
+        </Script>
         <meta name="verify-admitad" content="dc1c933d28" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         {/* Rich Structured JSON-LD Schema Markup */}

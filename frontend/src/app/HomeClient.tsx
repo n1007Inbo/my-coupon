@@ -42,6 +42,21 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     }
   }, [initialCoupons]);
 
+  // Handle hash scrolling dynamically on initial render/hydration
+  React.useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const hash = window.location.hash;
+      const timer = setTimeout(() => {
+        const id = hash.replace("#", "");
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 400);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   // Search Icon Component
   const SearchIcon = () => (
     <svg
