@@ -10,6 +10,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "im8health") return "/logos/im8health.jpg";
   if (slug === "redusculpt") return "/logos/redusculpt.jpg";
   if (slug === "evolution-power-tools") return "/logos/evolution-power-tools.jpg";
+  if (slug === "maple-prime") return "/logos/maple-prime.png";
   return `/logos/${slug}.svg`;
 };
 
@@ -60,7 +61,8 @@ export const FALLBACK_STORES: Store[] = [
   { id: 43, name: "Bouquets by Post", slug: "bouquets-by-post", logo: getLogoUrl("bouquets-by-post"), website: "https://bouquetsbypost.com/muhammadhaziqueali" },
   { id: 44, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" },
   { id: 45, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
-  { id: 46, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" }
+  { id: 46, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 47, name: "Maple Prime US", slug: "maple-prime", logo: getLogoUrl("maple-prime"), website: "https://mapleprime.com" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -351,5 +353,18 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1393, code: "METHEWDIPPY5", discount: "15% Off Outdoor", description: "Save 15% off on outdoor tools including chainsaws and blowers.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
   { id: 1394, code: "METHEWDIPPY5", discount: "$145 Off Chop Saw", description: "Get $145 off on chop saw stand combo from Evolution Power Tools.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
   { id: 1395, code: "METHEWDIPPY5", discount: "10% Off Accessories", description: "Save 10% off on service rewards and accessories.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
-  { id: 1396, code: "METHEWDIPPY5", discount: "5% Off Newsletter", description: "Sign up for newsletter and get 5% off your first Evolution Power Tools order.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" }
+  { id: 1396, code: "METHEWDIPPY5", discount: "5% Off Newsletter", description: "Sign up for newsletter and get 5% off your first Evolution Power Tools order.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+
+  // Maple Prime US
+  { id: 1397, code: "DEAL", discount: "20% Off", description: "Exclusive 20% off coupon code on all Maple Prime fragrances and perfumes.", expiry_date: "2026-08-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1398, code: "DEAL", discount: "50% Off Summer Sale", description: "Save 50% off during the summer sale on Maple Prime collection.", expiry_date: "2026-08-12T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1399, code: "DEAL", discount: "15% Off Sitewide", description: "Get 15% off discount code sitewide on Maple Prime products.", expiry_date: "2026-08-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1400, code: "DEAL", discount: "10% Off Summer Vibes", description: "Get 10% off promo code - summer vibes collection on Maple Prime.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1401, code: "DEAL", discount: "Free Shipping", description: "Enjoy free shipping on all Maple Prime orders over $49.", expiry_date: "2026-08-14T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1402, code: "DEAL", discount: "89% Off EDP", description: "Get up to 89% off on Eau de Parfum at Maple Prime fragrance outlet.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1403, code: "DEAL", discount: "80% Off Perfume Oil", description: "Save 80% off on luxury perfume oils and roll-ons.", expiry_date: "2026-08-08T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1404, code: "DEAL", discount: "75% Off Unisex", description: "Get 75% off on popular unisex perfumes and signature scents.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1405, code: "DEAL", discount: "70% Off Body Spray", description: "Save 70% off on body sprays and daily fragrance essentials.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1406, code: "DEAL", discount: "60% Off Skincare", description: "Get 60% off on premium skincare and cosmetics brands at Maple Prime.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" },
+  { id: 1407, code: "DEAL", discount: "15% Off Newsletter", description: "Sign up for newsletter updates and get 15% off your first purchase.", expiry_date: "2026-08-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com" }
 ];
