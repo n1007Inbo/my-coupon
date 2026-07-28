@@ -8,6 +8,8 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "parc-asterix-fr") return "/logos/parc-asterix-fr.jpg";
   if (slug === "bouquets-by-post") return "/logos/bouquets-by-post.jpg";
   if (slug === "im8health") return "/logos/im8health.jpg";
+  if (slug === "redusculpt") return "/logos/redusculpt.jpg";
+  if (slug === "evolution-power-tools") return "/logos/evolution-power-tools.jpg";
   return `/logos/${slug}.svg`;
 };
 
@@ -56,7 +58,9 @@ export const FALLBACK_STORES: Store[] = [
   { id: 41, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" },
   { id: 42, name: "Parc Astérix FR", slug: "parc-asterix-fr", logo: getLogoUrl("parc-asterix-fr"), website: "https://litl.si/Tlxjk" },
   { id: 43, name: "Bouquets by Post", slug: "bouquets-by-post", logo: getLogoUrl("bouquets-by-post"), website: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 44, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" }
+  { id: 44, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" },
+  { id: 45, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
+  { id: 46, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -320,5 +324,32 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1370, code: "METHEW29111", discount: "30% Off Subscription", description: "Get 30% off - Daily Ultimate Essentials Pro 90-Days Subscription.", expiry_date: "2026-08-23T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
   { id: 1371, code: "METHEW29111", discount: "20% Off Subscription", description: "Save 20% off - Daily Ultimate Longevity Monthly Subscription.", expiry_date: "2026-08-21T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
   { id: 1372, code: "METHEW29111", discount: "$208/mo Bundle", description: "Get The Beckham Stack Bundle starting from just $208/mo at checkout.", expiry_date: "2026-08-17T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
-  { id: 1373, code: "METHEW29111", discount: "5% Off Newsletter", description: "Get an extra 5% off on newsletter sign-up for your first order.", expiry_date: "2026-08-22T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" }
+  { id: 1373, code: "METHEW29111", discount: "5% Off Newsletter", description: "Get an extra 5% off on newsletter sign-up for your first order.", expiry_date: "2026-08-22T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
+
+  // Redu Sculpt US
+  { id: 1374, code: "METHEW46097", discount: "15% Off", description: "Exclusive 15% off coupon code on all Redu Sculpt body sculpting products.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1375, code: "METHEW46097", discount: "45% Off Summer Sale", description: "Save 45% off during the summer sale on Redu Sculpt body sculpting essentials.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1376, code: "METHEW46097", discount: "10% Off Sitewide", description: "Get 10% off discount code sitewide on Redu Sculpt products.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1377, code: "METHEW46097", discount: "5% Off Promo Code", description: "Exclusive 5% off promo code on Redu Sculpt entire collection.", expiry_date: "2026-08-08T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1378, code: "METHEW46097", discount: "60% Off Subscription", description: "Save 60% off on Redu Sculpt subscription plans and auto-delivery.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1379, code: "METHEW46097", discount: "Free Shipping", description: "Enjoy free shipping sitewide on all Redu Sculpt orders.", expiry_date: "2026-08-12T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1380, code: "METHEW46097", discount: "60% Off Gel & Oil", description: "Get 60% off on Redu Sculpt sculpting gel and body oil products.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1381, code: "METHEW46097", discount: "46% Off Essentials", description: "Save 46% off on body sculpting essentials kit from Redu Sculpt.", expiry_date: "2026-08-08T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1382, code: "METHEW46097", discount: "33% Off Bundles", description: "Get 33% off on Redu Sculpt product bundles and value packs.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1383, code: "METHEW46097", discount: "20% Off Supplements", description: "Save 20% off on Redu Sculpt health supplements and wellness products.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1384, code: "METHEW46097", discount: "$30 Off Green Tea", description: "Get $30 off on Redu Sculpt green tea dietary supplement.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+  { id: 1385, code: "METHEW46097", discount: "15% Off Newsletter", description: "Sign up for newsletter and get 15% off on your first Redu Sculpt order.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[44], affiliate_url: "https://www.redusculpt.com/METHEW46097" },
+
+  // Evolution Power Tools US
+  { id: 1386, code: "METHEWDIPPY5", discount: "15% Off", description: "Exclusive 15% off coupon code on Evolution Power Tools products.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1387, code: "METHEWDIPPY5", discount: "10% Off Sitewide", description: "Get 10% off discount code sitewide on all Evolution Power Tools.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1388, code: "METHEWDIPPY5", discount: "10% Off Price Drop", description: "Save 10% off during the price drop sale on Evolution Power Tools.", expiry_date: "2026-08-08T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1389, code: "METHEWDIPPY5", discount: "30% Off Selected", description: "Get 30% off on selected Evolution Power Tools items.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1390, code: "METHEWDIPPY5", discount: "Free Shipping", description: "Enjoy free shipping on all Evolution Power Tools orders.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1391, code: "METHEWDIPPY5", discount: "25% Off Drills", description: "Save 25% off on drills and cutters from Evolution Power Tools.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1392, code: "METHEWDIPPY5", discount: "20% Off Metal Cutting", description: "Get 20% off on metal cutting tools and blades.", expiry_date: "2026-08-08T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1393, code: "METHEWDIPPY5", discount: "15% Off Outdoor", description: "Save 15% off on outdoor tools including chainsaws and blowers.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1394, code: "METHEWDIPPY5", discount: "$145 Off Chop Saw", description: "Get $145 off on chop saw stand combo from Evolution Power Tools.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1395, code: "METHEWDIPPY5", discount: "10% Off Accessories", description: "Save 10% off on service rewards and accessories.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
+  { id: 1396, code: "METHEWDIPPY5", discount: "5% Off Newsletter", description: "Sign up for newsletter and get 5% off your first Evolution Power Tools order.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" }
 ];

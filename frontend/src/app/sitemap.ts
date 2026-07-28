@@ -8,7 +8,7 @@ const STORE_SLUGS = [
   "tenways-uk", "tenways-us", "geekbuying", "banggood", "zaful", "massivemobile",
   "dhgate", "envato", "semrush", "namecheap", "squarespace", "hostgator",
   "bluehost", "coursera", "skillshare", "nordpass", "godaddy", "gymshark",
-  "desktronic-nl", "parc-asterix-fr", "bouquets-by-post", "im8health"
+  "desktronic-nl", "parc-asterix-fr", "bouquets-by-post", "im8health", "redusculpt", "evolution-power-tools"
 ];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
