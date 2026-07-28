@@ -78,12 +78,14 @@ const CheckIcon = () => (
 );
 
 export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => {
-  const { store, discount, code, is_verified, expiry_date } = coupon;
+  const { store, discount, code, is_verified, expiry_date, description } = coupon;
 
   // Extract store properties safely
   const isStoreObject = typeof store === "object" && store !== null;
   const storeName = isStoreObject ? (store as Store).name : (store as string);
   const storeLogo = isStoreObject ? (store as Store).logo : undefined;
+  const storeSlug = isStoreObject ? (store as Store).slug : undefined;
+  const isTenways = storeSlug && storeSlug.startsWith("tenways-");
 
   // Formatting date to matches image (e.g. 21st June 2026 or 21 June 2026)
   const formatExpiryDate = (dateString: string) => {
@@ -168,21 +170,27 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
     >
       {/* Main Card Content Row */}
       <div className={styles.cardContent}>
-        {/* 1. Left side: Store Logo */}
-        <div className={styles.logoSection}>
-          {storeLogo ? (
-            <img src={storeLogo} alt={storeName || "Store"} className={styles.logoImg} />
-          ) : (
-            <div className={styles.logoFallback}>
-              {storeName ? storeName.charAt(0).toUpperCase() : "?"}
-            </div>
-          )}
-        </div>
+        {/* 1. Left side: Store Logo or Dashed Discount Box */}
+        {isTenways ? (
+          <div className={styles.discountBox}>
+            <span className={styles.discountBoxText}>{discount}</span>
+          </div>
+        ) : (
+          <div className={styles.logoSection}>
+            {storeLogo ? (
+              <img src={storeLogo} alt={storeName || "Store"} className={styles.logoImg} />
+            ) : (
+              <div className={styles.logoFallback}>
+                {storeName ? storeName.charAt(0).toUpperCase() : "?"}
+              </div>
+            )}
+          </div>
+        )}
 
         {/* 2. Middle: Content Section */}
         <div className={styles.infoSection}>
           {/* Title/Discount header */}
-          <h3 className={styles.title}>{discount}</h3>
+          <h3 className={styles.title}>{isTenways ? description : discount}</h3>
 
           {/* Badges Row */}
           <div className={styles.badgeContainer}>
