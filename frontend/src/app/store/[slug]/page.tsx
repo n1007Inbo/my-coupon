@@ -44,7 +44,24 @@ export default async function StorePage({ params }: StorePageProps) {
   let store: Store | null = null;
   let fetchedSuccessfully = false;
 
+  const forceFallbackSlugs = [
+    "desktronic-us", 
+    "desktronic-uk", 
+    "desktronic-nl", 
+    "redusculpt", 
+    "evolution-power-tools", 
+    "nobodys-child", 
+    "maple-prime", 
+    "im8health", 
+    "bouquets-by-post", 
+    "parc-asterix-fr"
+  ];
+  const shouldForceFallback = forceFallbackSlugs.includes(slug);
+
   try {
+    if (shouldForceFallback) {
+      throw new Error("Forcing local fallback data for updated premium store: " + slug);
+    }
     // 1. Fetch store by slug or find it with ISR caching
     const storesRes = await fetch(`${apiUrl}/api/stores?filters[slug][$eq]=${slug}`, { next: { revalidate: 600 } });
     if (storesRes.ok) {
