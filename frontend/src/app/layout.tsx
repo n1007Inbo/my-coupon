@@ -114,6 +114,13 @@ export default function RootLayout({
 
         {/* Elegant Footer with Secret Admin Access */}
         <FooterClient />
+
+        {/* Skimlinks script */}
+        <Script 
+          type="text/javascript" 
+          src="https://s.skimresources.com/js/306923X1795194.skimlinks.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
