@@ -12,6 +12,10 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "evolution-power-tools") return "/logos/evolution-power-tools.jpg";
   if (slug === "maple-prime") return "/logos/maple-prime.png";
   if (slug === "nobodys-child") return "/logos/nobodys-child.jpg";
+  if (slug === "anycubic-us") return "/logos/anycubic.svg";
+  if (slug === "hitway-uk") return "/logos/hitway.svg";
+  if (slug === "wolfbox-uk") return "/logos/wolfbox.svg";
+  if (slug === "fitueyes-uk") return "/logos/fitueyes.svg";
   return `/logos/${slug}.svg`;
 };
 
@@ -64,7 +68,11 @@ export const FALLBACK_STORES: Store[] = [
   { id: 45, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
   { id: 46, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
   { id: 47, name: "Maple Prime US", slug: "maple-prime", logo: getLogoUrl("maple-prime"), website: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 48, name: "Nobody's Child US", slug: "nobodys-child", logo: getLogoUrl("nobodys-child"), website: "https://www.nobodyschild.com/" }
+  { id: 48, name: "Nobody's Child US", slug: "nobodys-child", logo: getLogoUrl("nobodys-child"), website: "https://www.nobodyschild.com/" },
+  { id: 49, name: "Anycubic US", slug: "anycubic-us", logo: getLogoUrl("anycubic-us"), website: "/go/anycubic-us" },
+  { id: 50, name: "Hitway UK", slug: "hitway-uk", logo: getLogoUrl("hitway-uk"), website: "/go/hitway-uk" },
+  { id: 51, name: "Wolfbox UK", slug: "wolfbox-uk", logo: getLogoUrl("wolfbox-uk"), website: "/go/wolfbox-uk" },
+  { id: 52, name: "Fitueyes UK", slug: "fitueyes-uk", logo: getLogoUrl("fitueyes-uk"), website: "/go/fitueyes-uk" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -381,5 +389,26 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1415, code: "SAVE10", discount: "10% Off", description: "Get 10% off sitewide discount code on dresses, tops and outerwear.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
   { id: 1416, code: "EXTRA5", discount: "5% Off", description: "Get an extra 5% off promo code on all sale items.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
   { id: 1417, code: "STYLE15", discount: "15% Off", description: "Save 15% off on sustainable midi dresses and knitwear collection.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
-  { id: 1418, code: "DRESS10", discount: "10% Off", description: "Get 10% off selected dresses and tops at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" }
+  { id: 1418, code: "DRESS10", discount: "10% Off", description: "Get 10% off selected dresses and tops at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+
+  // Anycubic US
+  { id: 1419, code: "PODI25", discount: "$25 Off", description: "Save $25 on your Anycubic 3D printers and wash & cure stations.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[48], affiliate_url: "/go/anycubic-us" },
+  { id: 1420, code: "ACSUN15", discount: "$15 Off", description: "Get $15 off on select Anycubic 3D printers and accessories.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[48], affiliate_url: "/go/anycubic-us" },
+  { id: 1421, code: "DEAL", discount: "Up to 30% Off", description: "Save up to 30% on Kobra & Photon series 3D printers in summer sale.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[48], affiliate_url: "/go/anycubic-us" },
+  { id: 1422, code: "DEAL", discount: "Free Shipping", description: "Free standard shipping on all printer orders over $100.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[48], affiliate_url: "/go/anycubic-us" },
+
+  // Hitway UK
+  { id: 1423, code: "HW50", discount: "£50 Off", description: "Get £50 off on HITWAY electric bikes and scooters at checkout.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[49], affiliate_url: "/go/hitway-uk" },
+  { id: 1424, code: "DEAL", discount: "£20 Off", description: "Get £20 off your first e-bike order by signing up for the HITWAY newsletter.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[49], affiliate_url: "/go/hitway-uk" },
+  { id: 1425, code: "DEAL", discount: "Up to 45% Off", description: "Save up to 45% on electric scooters and hoverboards during summer sale.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[49], affiliate_url: "/go/hitway-uk" },
+
+  // Wolfbox UK
+  { id: 1426, code: "WBBESTGEAR", discount: "25% Off", description: "Save 25% sitewide on WOLFBOX dash cams and backup cameras.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[50], affiliate_url: "/go/wolfbox-uk" },
+  { id: 1427, code: "ER20", discount: "20% Off", description: "Get 20% off sitewide on smart rear-view mirrors and inflators.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[50], affiliate_url: "/go/wolfbox-uk" },
+  { id: 1428, code: "DEAL", discount: "Free Shipping", description: "Enjoy free UK shipping on all WOLFBOX camera system orders.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[50], affiliate_url: "/go/wolfbox-uk" },
+
+  // Fitueyes UK
+  { id: 1429, code: "JEAM", discount: "6% Off", description: "Get an extra 6% off sitewide on TV stands and ergonomic office desks.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" },
+  { id: 1430, code: "TRAVIES", discount: "6% Off", description: "Save 6% sitewide on smart height-adjustable standing desks.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" },
+  { id: 1431, code: "DEAL", discount: "5% Off", description: "Sign up for the newsletter and receive 5% off your first Fitueyes order.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" }
 ];

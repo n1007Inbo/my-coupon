@@ -126,6 +126,26 @@ const nextConfig: NextConfig = {
         destination: "https://vert.si/ReOuZI",
         permanent: true,
       },
+      {
+        source: "/go/anycubic-us",
+        destination: "https://us.anycubic3d.com/?ref=METHEWDIPPY",
+        permanent: true,
+      },
+      {
+        source: "/go/hitway-uk",
+        destination: "https://uk.hitway.eu/?ref=METHEWDIPPY",
+        permanent: true,
+      },
+      {
+        source: "/go/wolfbox-uk",
+        destination: "https://uk.wolfbox.com/?ref=METHEWDIPPY",
+        permanent: true,
+      },
+      {
+        source: "/go/fitueyes-uk",
+        destination: "https://uk.fitueyes.com/?ref=METHEWDIPPY",
+        permanent: true,
+      },
 
     ];
   },

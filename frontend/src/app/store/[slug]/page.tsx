@@ -54,7 +54,11 @@ export default async function StorePage({ params }: StorePageProps) {
     "maple-prime", 
     "im8health", 
     "bouquets-by-post", 
-    "parc-asterix-fr"
+    "parc-asterix-fr",
+    "anycubic-us",
+    "hitway-uk",
+    "wolfbox-uk",
+    "fitueyes-uk"
   ];
   const shouldForceFallback = forceFallbackSlugs.includes(slug);
 
