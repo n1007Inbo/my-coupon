@@ -11,6 +11,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "redusculpt") return "/logos/redusculpt.jpg";
   if (slug === "evolution-power-tools") return "/logos/evolution-power-tools.jpg";
   if (slug === "maple-prime") return "/logos/maple-prime.png";
+  if (slug === "nobodys-child") return "/logos/nobodys-child.jpg";
   return `/logos/${slug}.svg`;
 };
 
@@ -62,7 +63,8 @@ export const FALLBACK_STORES: Store[] = [
   { id: 44, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" },
   { id: 45, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
   { id: 46, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
-  { id: 47, name: "Maple Prime US", slug: "maple-prime", logo: getLogoUrl("maple-prime"), website: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" }
+  { id: 47, name: "Maple Prime US", slug: "maple-prime", logo: getLogoUrl("maple-prime"), website: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
+  { id: 48, name: "Nobody's Child US", slug: "nobodys-child", logo: getLogoUrl("nobodys-child"), website: "https://www.nobodyschild.com/" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -366,5 +368,18 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1404, code: "REF-7442", discount: "75% Off Unisex", description: "Get 75% off on popular unisex perfumes and signature scents.", expiry_date: "2026-08-09T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
   { id: 1405, code: "REF-7442", discount: "70% Off Body Spray", description: "Save 70% off on body sprays and daily fragrance essentials.", expiry_date: "2026-08-11T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
   { id: 1406, code: "REF-7442", discount: "60% Off Skincare", description: "Get 60% off on premium skincare and cosmetics brands at Maple Prime.", expiry_date: "2026-08-10T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1407, code: "REF-7442", discount: "15% Off Newsletter", description: "Sign up for newsletter updates and get 15% off your first purchase.", expiry_date: "2026-08-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" }
+  { id: 1407, code: "REF-7442", discount: "15% Off Newsletter", description: "Sign up for newsletter updates and get 15% off your first purchase.", expiry_date: "2026-08-15T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
+
+  // Nobody's Child US
+  { id: 1408, code: "WELCOME15", discount: "15% Off", description: "Get 15% off your first order on newsletter sign up at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1409, code: "STUDENT15", discount: "15% Off", description: "Verified 15% student discount at Nobody's Child via UNiDAYS.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1410, code: "KEYWORKER20", discount: "20% Off", description: "Exclusive 20% keyworker discount for healthcare, teachers & transport staff.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1411, code: "FRIEND20", discount: "20% Off", description: "Refer-a-friend and get 20% off your next purchase at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1412, code: "DEAL", discount: "Up to 60% Off", description: "Save up to 60% off during the seasonal sale & outlet at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1413, code: "DEAL", discount: "Free Shipping", description: "Enjoy free standard shipping on apparel orders over $120.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1414, code: "NC15", discount: "15% Off", description: "Save an extra 15% off sitewide on sustainable womenswear.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1415, code: "SAVE10", discount: "10% Off", description: "Get 10% off sitewide discount code on dresses, tops and outerwear.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1416, code: "EXTRA5", discount: "5% Off", description: "Get an extra 5% off promo code on all sale items.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1417, code: "STYLE15", discount: "15% Off", description: "Save 15% off on sustainable midi dresses and knitwear collection.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
+  { id: 1418, code: "DRESS10", discount: "10% Off", description: "Get 10% off selected dresses and tops at Nobody's Child.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" }
 ];

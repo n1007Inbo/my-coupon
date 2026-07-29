@@ -69,7 +69,7 @@ export default async function HomePage() {
   } else {
     // Hybrid injection: Guarantee crucial stores are ALWAYS present in the stores and coupons list!
     // This keeps campaigns live even if the database is in transitional draft state or has missing entries.
-    const crucialStoreSlugs = ["desktronic-uk", "desktronic-us", "desktronic-nl", "bouquets-by-post", "parc-asterix-fr", "tenways-uk", "tenways-us", "im8health", "redusculpt", "evolution-power-tools", "maple-prime"];
+    const crucialStoreSlugs = ["desktronic-uk", "desktronic-us", "desktronic-nl", "bouquets-by-post", "parc-asterix-fr", "tenways-uk", "tenways-us", "im8health", "redusculpt", "evolution-power-tools", "maple-prime", "nobodys-child"];
     
     // 1. Ensure crucial stores exist
     crucialStoreSlugs.forEach((slug) => {
