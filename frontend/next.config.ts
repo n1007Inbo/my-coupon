@@ -28,7 +28,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/desktronic-us",
-        destination: "https://www.xjcs5z7m.com/29T6R6/6JHXF/",
+        destination: "https://www.xjcs5z7m.com/METHEWDIPPY/",
         permanent: true,
       },
       {
