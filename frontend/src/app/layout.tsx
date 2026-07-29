@@ -69,6 +69,7 @@ export default function RootLayout({
             })();
           `}
         </Script>
+        <meta name="fo-verify" content="21153cba-a2c3-435d-aff2-e91717e8564c" />
         <meta name="verify-admitad" content="dc1c933d28" />
         <link rel="icon" href="/favicon.png" type="image/png" />
         {/* Rich Structured JSON-LD Schema Markup */}
