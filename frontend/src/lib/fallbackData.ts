@@ -16,6 +16,9 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "hitway-uk") return "/logos/hitway.svg";
   if (slug === "wolfbox-uk") return "/logos/wolfbox.svg";
   if (slug === "fitueyes-uk") return "/logos/fitueyes.svg";
+  if (slug === "helvetus") return "/logos/helvetus.svg";
+  if (slug === "xsteel-targets") return "/logos/xsteel-targets.svg";
+  if (slug === "reconstitution-solution") return "/logos/reconstitution-solution.svg";
   return `/logos/${slug}.svg`;
 };
 
@@ -72,7 +75,10 @@ export const FALLBACK_STORES: Store[] = [
   { id: 49, name: "Anycubic US", slug: "anycubic-us", logo: getLogoUrl("anycubic-us"), website: "/go/anycubic-us" },
   { id: 50, name: "Hitway UK", slug: "hitway-uk", logo: getLogoUrl("hitway-uk"), website: "/go/hitway-uk" },
   { id: 51, name: "Wolfbox UK", slug: "wolfbox-uk", logo: getLogoUrl("wolfbox-uk"), website: "/go/wolfbox-uk" },
-  { id: 52, name: "Fitueyes UK", slug: "fitueyes-uk", logo: getLogoUrl("fitueyes-uk"), website: "/go/fitueyes-uk" }
+  { id: 52, name: "Fitueyes UK", slug: "fitueyes-uk", logo: getLogoUrl("fitueyes-uk"), website: "/go/fitueyes-uk" },
+  { id: 53, name: "Helvetus US", slug: "helvetus", logo: getLogoUrl("helvetus"), website: "/go/helvetus" },
+  { id: 54, name: "Xsteel Targets US", slug: "xsteel-targets", logo: getLogoUrl("xsteel-targets"), website: "/go/xsteel-targets" },
+  { id: 55, name: "Reconstitution Solution US", slug: "reconstitution-solution", logo: getLogoUrl("reconstitution-solution"), website: "/go/reconstitution-solution" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -410,5 +416,18 @@ export const FALLBACK_COUPONS: Coupon[] = [
   // Fitueyes UK
   { id: 1429, code: "JEAM", discount: "6% Off", description: "Get an extra 6% off sitewide on TV stands and ergonomic office desks.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" },
   { id: 1430, code: "TRAVIES", discount: "6% Off", description: "Save 6% sitewide on smart height-adjustable standing desks.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" },
-  { id: 1431, code: "DEAL", discount: "5% Off", description: "Sign up for the newsletter and receive 5% off your first Fitueyes order.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" }
+  { id: 1431, code: "DEAL", discount: "5% Off", description: "Sign up for the newsletter and receive 5% off your first Fitueyes order.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[51], affiliate_url: "/go/fitueyes-uk" },
+
+  // Helvetus US
+  { id: 1432, code: "WELCOME10", discount: "10% Off", description: "Get 10% off sitewide discount code on premium Helvetus Swiss products.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[52], affiliate_url: "/go/helvetus" },
+  { id: 1433, code: "DEAL", discount: "Free Shipping", description: "Enjoy free standard shipping worldwide on all orders from Helvetus.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[52], affiliate_url: "/go/helvetus" },
+
+  // Xsteel Targets US
+  { id: 1434, code: "XSTEEL10", discount: "10% Off", description: "Save 10% off discount code sitewide on high-quality steel shooting targets.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[53], affiliate_url: "/go/xsteel-targets" },
+  { id: 1435, code: "DEAL", discount: "Free Shipping", description: "Free standard shipping on all steel targets orders over $150.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[53], affiliate_url: "/go/xsteel-targets" },
+
+  // Reconstitution Solution US
+  { id: 1436, code: "WATER10", discount: "10% Off", description: "Get 10% off sitewide on sterile and bacteriostatic reconstitution water.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" },
+  { id: 1437, code: "DEAL", discount: "Free Shipping", description: "Free standard delivery on bacteriostatic water bulk packs.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" }
+];
 ];

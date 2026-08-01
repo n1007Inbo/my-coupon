@@ -146,6 +146,21 @@ const nextConfig: NextConfig = {
         destination: "https://uk.fitueyes.com/?ref=METHEWDIPPY",
         permanent: true,
       },
+      {
+        source: "/go/helvetus",
+        destination: "https://helvetus.com/?ref=METHEWDIPPY",
+        permanent: true,
+      },
+      {
+        source: "/go/xsteel-targets",
+        destination: "https://www.xsteeltargets.com/?ref=METHEWDIPPY",
+        permanent: true,
+      },
+      {
+        source: "/go/reconstitution-solution",
+        destination: "https://reconstitution-solution.io/?ref=METHEWDIPPY",
+        permanent: true,
+      },
 
     ];
   },
