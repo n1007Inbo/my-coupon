@@ -430,4 +430,3 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1436, code: "WATER10", discount: "10% Off", description: "Get 10% off sitewide on sterile and bacteriostatic reconstitution water.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" },
   { id: 1437, code: "DEAL", discount: "Free Shipping", description: "Free standard delivery on bacteriostatic water bulk packs.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" }
 ];
-];
