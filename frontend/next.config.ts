@@ -161,6 +161,11 @@ const nextConfig: NextConfig = {
         destination: "https://reconstitution-solution.io/?ref=METHEWDIPPY",
         permanent: true,
       },
+      {
+        source: "/go/tuxmat-us",
+        destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F",
+        permanent: true,
+      },
 
     ];
   },

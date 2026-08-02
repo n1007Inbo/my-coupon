@@ -19,6 +19,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "helvetus") return "/logos/helvetus.svg";
   if (slug === "xsteel-targets") return "/logos/xsteel-targets.svg";
   if (slug === "reconstitution-solution") return "/logos/reconstitution-solution.svg";
+  if (slug === "tuxmat-us") return "/logos/tuxmat.svg";
   return `/logos/${slug}.svg`;
 };
 
@@ -78,7 +79,8 @@ export const FALLBACK_STORES: Store[] = [
   { id: 52, name: "Fitueyes UK", slug: "fitueyes-uk", logo: getLogoUrl("fitueyes-uk"), website: "/go/fitueyes-uk" },
   { id: 53, name: "Helvetus US", slug: "helvetus", logo: getLogoUrl("helvetus"), website: "/go/helvetus" },
   { id: 54, name: "Xsteel Targets US", slug: "xsteel-targets", logo: getLogoUrl("xsteel-targets"), website: "/go/xsteel-targets" },
-  { id: 55, name: "Reconstitution Solution US", slug: "reconstitution-solution", logo: getLogoUrl("reconstitution-solution"), website: "/go/reconstitution-solution" }
+  { id: 55, name: "Reconstitution Solution US", slug: "reconstitution-solution", logo: getLogoUrl("reconstitution-solution"), website: "/go/reconstitution-solution" },
+  { id: 56, name: "TuxMat US", slug: "tuxmat-us", logo: getLogoUrl("tuxmat-us"), website: "/go/tuxmat-us" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -428,5 +430,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
 
   // Reconstitution Solution US
   { id: 1436, code: "WATER10", discount: "10% Off", description: "Get 10% off sitewide on sterile and bacteriostatic reconstitution water.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" },
-  { id: 1437, code: "DEAL", discount: "Free Shipping", description: "Free standard delivery on bacteriostatic water bulk packs.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" }
+  { id: 1437, code: "DEAL", discount: "Free Shipping", description: "Free standard delivery on bacteriostatic water bulk packs.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" },
+
+  // TuxMat US
+  { id: 1438, code: "DEAL", discount: "Free Shipping", description: "Get free standard shipping on all custom-fit floor mats in the US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1439, code: "DEAL", discount: "$20 Off", description: "Returning customers can save $20 on their next order by contacting customer support.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1440, code: "DEAL", discount: "Lifetime Warranty", description: "Enjoy a lifetime warranty on laser-measured, premium custom car mats.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" }
 ];

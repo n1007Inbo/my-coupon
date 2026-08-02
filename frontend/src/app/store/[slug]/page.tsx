@@ -61,7 +61,8 @@ export default async function StorePage({ params }: StorePageProps) {
     "fitueyes-uk",
     "helvetus",
     "xsteel-targets",
-    "reconstitution-solution"
+    "reconstitution-solution",
+    "tuxmat-us"
   ];
   const shouldForceFallback = forceFallbackSlugs.includes(slug);
 
