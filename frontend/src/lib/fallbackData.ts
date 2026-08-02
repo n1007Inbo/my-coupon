@@ -19,7 +19,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "helvetus") return "/logos/helvetus.svg";
   if (slug === "xsteel-targets") return "/logos/xsteel-targets.svg";
   if (slug === "reconstitution-solution") return "/logos/reconstitution-solution.svg";
-  if (slug === "tuxmat-us") return "/logos/tuxmat.svg";
+  if (slug === "tuxmat-us") return "/logos/tuxmat.jpg";
   return `/logos/${slug}.svg`;
 };
 
@@ -433,7 +433,12 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1437, code: "DEAL", discount: "Free Shipping", description: "Free standard delivery on bacteriostatic water bulk packs.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[54], affiliate_url: "/go/reconstitution-solution" },
 
   // TuxMat US
-  { id: 1438, code: "DEAL", discount: "Free Shipping", description: "Get free standard shipping on all custom-fit floor mats in the US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
-  { id: 1439, code: "DEAL", discount: "$20 Off", description: "Returning customers can save $20 on their next order by contacting customer support.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
-  { id: 1440, code: "DEAL", discount: "Lifetime Warranty", description: "Enjoy a lifetime warranty on laser-measured, premium custom car mats.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" }
+  { id: 1438, code: "WELCOME", discount: "10% Off", description: "Get an exclusive 10% off coupon code sitewide on custom-fit car mats.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1439, code: "DEAL", discount: "30% Off Selected", description: "Save up to 30% on selected laser-measured floor mats and clearance items.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1440, code: "DEAL", discount: "Free Shipping", description: "Enjoy free standard shipping on all custom floor liners across the United States.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1441, code: "DEAL", discount: "20% Off Audi Mats", description: "Save 20% on custom laser-measured floor mats specifically for Audi models.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1442, code: "DEAL", discount: "15% Off Nissan Altima", description: "Get 15% off premium custom-fit trunk mats for Nissan Altima models.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1443, code: "DEAL", discount: "$229.80 BMW 2 Series", description: "Purchase custom laser-measured full set floor mats for BMW 2 Series Coupe for just $229.80.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1444, code: "DEAL", discount: "$153 Back Seat Only", description: "Buy back seat custom floor mats starting from just $153 for selected car models.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" },
+  { id: 1445, code: "DEAL", discount: "10% Off Newsletter", description: "Sign up for the newsletter and receive 10% off coupon code on your first TuxMat order.", expiry_date: "2026-08-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[55], affiliate_url: "/go/tuxmat-us" }
 ];
