@@ -1,4 +1,5 @@
 import React from "react";
+import { Metadata } from "next";
 import BlogClient from "./BlogClient";
 import { BLOGS_DATABASE } from "../../../lib/blogs";
 
@@ -6,6 +7,47 @@ interface BlogPageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const post = BLOGS_DATABASE[slug];
+
+  if (!post) {
+    return {
+      title: "Article Not Found | PromoRegistry",
+      description: "We could not find the blog article you are looking for.",
+    };
+  }
+
+  const cleanTitle = post.title.length > 60 ? post.title.slice(0, 57) + "..." : post.title;
+
+  return {
+    title: `${cleanTitle} | PromoRegistry`,
+    description: post.description,
+    openGraph: {
+      title: `${post.title} | PromoRegistry`,
+      description: post.description,
+      url: `https://www.promoregistry.com/blog/${slug}`,
+      siteName: 'PromoRegistry',
+      type: 'article',
+      locale: 'en_US',
+      images: [
+        {
+          url: post.bannerImage.startsWith("http") ? post.bannerImage : `https://www.promoregistry.com${post.bannerImage}`,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${post.title} | PromoRegistry`,
+      description: post.description,
+      images: [post.bannerImage.startsWith("http") ? post.bannerImage : `https://www.promoregistry.com${post.bannerImage}`],
+    }
+  };
 }
 
 export async function generateStaticParams() {

@@ -138,13 +138,22 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
     // Append Google Ads campaign and keyword SubIDs if it's an affiliate redirect link
     let storeUrl = rawStoreUrl;
     if (typeof window !== "undefined" && rawStoreUrl) {
-      const isAffiliate = rawStoreUrl.includes("admitad") || rawStoreUrl.includes("convert") || rawStoreUrl.includes("csl");
+      const isAffiliate = rawStoreUrl.includes("admitad") || 
+                          rawStoreUrl.includes("convert") || 
+                          rawStoreUrl.includes("csl") || 
+                          rawStoreUrl.includes("bouquetsbypost") || 
+                          rawStoreUrl.includes("litl.si") ||
+                          rawStoreUrl.includes("fatcoupon") ||
+                          rawStoreUrl.includes("/go/");
       if (isAffiliate) {
         try {
           const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
           const utmTerm = sessionStorage.getItem("utm_term") || "";
           const gclid = sessionStorage.getItem("gclid") || "";
-          const urlObj = new URL(rawStoreUrl);
+          
+          const urlObj = rawStoreUrl.startsWith("http")
+            ? new URL(rawStoreUrl)
+            : new URL(rawStoreUrl, window.location.origin);
           
           if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
           if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
@@ -201,18 +210,22 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
   React.useEffect(() => {
     let finalUrl = baseStoreUrl;
     try {
-      if (baseStoreUrl.startsWith("http")) {
+      if (baseStoreUrl) {
         const isAffiliate = baseStoreUrl.includes("admitad") || 
                             baseStoreUrl.includes("convert") || 
                             baseStoreUrl.includes("csl") || 
                             baseStoreUrl.includes("bouquetsbypost") || 
                             baseStoreUrl.includes("litl.si") ||
+                            baseStoreUrl.includes("fatcoupon") ||
                             baseStoreUrl.includes("/go/");
         if (isAffiliate) {
           const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
           const utmTerm = sessionStorage.getItem("utm_term") || "";
           const gclid = sessionStorage.getItem("gclid") || "";
-          const urlObj = new URL(baseStoreUrl);
+          
+          const urlObj = baseStoreUrl.startsWith("http")
+            ? new URL(baseStoreUrl)
+            : new URL(baseStoreUrl, window.location.origin);
           
           if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
           if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
@@ -417,6 +430,152 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
             </p>
           </div>
         </section>
+
+        {/* 5. Custom Brand SEO Content & FAQs for High Rankings */}
+        {store.slug === "hotel-tonight" && (
+          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
+            <h2 className={storeStyles.seoGuideTitle}>Expert Savings Guide for HotelTonight</h2>
+            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                To get the absolute lowest prices on your next booking with HotelTonight, keep these proven tips in mind:
+              </p>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. How do I use a Hotel Tonight Promo Code?</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Unlike typical booking engines, HotelTonight promo codes are designed to be applied directly in their mobile app. Open the app, go to your Account Profile, select &quot;Invites &amp; Promo Codes&quot;, and paste your coupon there. The credits will be deducted from your next reservation.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Join HT Perks Loyalty Program</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  HT Perks is HotelTonight&apos;s official rewards program. You level up automatically as you spend. Level 1 gets you extra 8% off, Level 2 gets you 12% off plus other perks, and Level 3 unlocks up to 15% off and additional booking credits.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Reveal the Daily Drop Deal</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Checking the app daily unlocks the &quot;Daily Drop&quot; feature, which provides highly discounted, localized rates (sometimes 30% to 40% off). These deals expire within 15 minutes of being revealed, so act fast!
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {store.slug === "swatch" && (
+          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
+            <h2 className={storeStyles.seoGuideTitle}>How to Get the Best Deals on Swatch Watches</h2>
+            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                Swatch watches are highly sought-after Swiss timepieces. While they rarely offer massive sitewide sales, you can easily save using these strategies:
+              </p>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Join the Swatch Club</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Becoming a member of the Swatch Club grants you exclusive access to limited-edition watch releases (such as the MoonSwatch series), free entry to brand events, and members-only discount codes throughout the year.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Get Free Shipping on Your Order</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Swatch offers free standard shipping on all orders over $50. Since most Swatch watches cost between $80 and $250, you are almost guaranteed to qualify for free shipping.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Swatch Warranty and Returns</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Every Swatch watch purchased using verified links comes with a 24-month international warranty, covering material and manufacturing defects. Plus, you get 14-day free returns on unworn items.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {store.slug === "tuxmat-us" && (
+          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
+            <h2 className={storeStyles.seoGuideTitle}>Why TuxMat Floor Liners Are Worth the Investment</h2>
+            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                TuxMat custom-fit floor liners offer ultimate cabin protection. Here is how to maximize your savings:
+              </p>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Maximum Coverage &amp; Perfect Fit</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  TuxMat liners are laser-measured for exact vehicle specifications, providing up to 3x more coverage than competing brands. They cover the entire footwell and side panels, protecting your vehicle from snow, water, mud, and salt.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Does TuxMat Have a Lifetime Warranty?</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Yes, TuxMat floor liners come with a lifetime warranty against manufacturer defects. This means your purchase is fully protected for the lifetime of your vehicle, making it a high-value purchase.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Save with TuxMat Promo Codes</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Use verified TuxMat promo codes to save up to 10% off sitewide, plus get free standard shipping across the United States. Signing up for their email list is also a great way to receive exclusive first-purchase coupon codes.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {store.slug === "harrys" && (
+          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
+            <h2 className={storeStyles.seoGuideTitle}>Harry&apos;s Shaving &amp; Grooming Savings Guide</h2>
+            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                Harry&apos;s provides premium shaving kits, blades, and body care. Follow these tips to get the best value:
+              </p>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Get the $5 Trial Shave Set</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  New customers can purchase a Harry&apos;s Starter Set for just $5 (valued at $13). This includes a Truman razor handle, a 5-blade cartridge, foaming shave gel, and a travel blade cover.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Subscribe to Shave Plan Refills</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  By joining a custom shave plan, you save on replacement blade cartridges and receive free shipping on all recurring refills. You can easily adjust, pause, or cancel your subscription at any time.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. How to Apply a Harry&apos;s Promo Code?</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  To redeem your coupon code at Harry&apos;s, add your razor sets, blades, or body wash to the cart. During checkout, paste your promo code in the discount field and click apply to see your updated total.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
+
+        {store.slug === "shipt" && (
+          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
+            <h2 className={storeStyles.seoGuideTitle}>How to Save Big on Shipt Grocery Delivery</h2>
+            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <p>
+                Shipt offers convenient grocery and same-day home delivery. Maximize your budget with these savings hacks:
+              </p>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Save 50% on Shipt Annual Membership</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Look out for active promo codes that offer up to 50% off the annual Shipt membership, reducing the cost from $99 to just $49 for your first year of unlimited free deliveries on orders over $35.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Get Free Delivery on Orders Over $35</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Shipt members get free delivery on all eligible retail, grocery, and pharmacy orders over $35. Combine smaller orders into a single weekly delivery to avoid standard delivery fees.
+                </p>
+              </div>
+              <div>
+                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Shop Exclusives &amp; Weekly Retailer Deals</h4>
+                <p style={{ color: "var(--text-secondary)" }}>
+                  Check the Shipt app daily for exclusive digital coupons and buy-one-get-one deals from popular local retailers like Target, CVS, Costco, and major grocery chains.
+                </p>
+              </div>
+            </div>
+          </section>
+        )}
       </div>
 
       {/* Copy modal popup */}

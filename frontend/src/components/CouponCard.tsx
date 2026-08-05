@@ -85,16 +85,21 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
   const storeName = isStoreObject ? (store as Store).name : (store as string);
   const storeLogo = isStoreObject ? (store as Store).logo : undefined;
 
-  // Formatting date to matches image (e.g. 21st June 2026 or 21 June 2026)
+  // Formatting date to matches image (e.g. 21st June 2026 or 21 June 2026) (UTC and locale-agnostic to prevent hydration mismatch)
   const formatExpiryDate = (dateString: string) => {
     if (!dateString) return "No expiration";
     try {
       const date = new Date(dateString);
       if (isNaN(date.getTime())) return dateString;
       
-      const day = date.getDate();
-      const month = date.toLocaleDateString("en-GB", { month: "long" });
-      const year = date.getFullYear();
+      const day = date.getUTCDate();
+      const year = date.getUTCFullYear();
+      
+      const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+      ];
+      const month = months[date.getUTCMonth()];
 
       // Add ordinal suffix (st, nd, rd, th)
       let suffix = "th";
@@ -119,12 +124,26 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
     }
   }, [expiry_date]);
 
-  // Generates stable but random views between 180 and 380 based on ID
-  const viewsCount = React.useMemo(() => {
+  // Scrambled deterministic hash based on ID
+  const hashedValue = React.useMemo(() => {
+    let hash = 0;
     const idStr = String(coupon.id);
-    const sum = idStr.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return (sum % 200) + 180;
+    for (let i = 0; i < idStr.length; i++) {
+      hash = (hash * 31 + idStr.charCodeAt(i)) | 0;
+    }
+    // MurmurHash3-like bit scrambler to break sequential patterns
+    hash ^= hash >>> 16;
+    hash = Math.imul(hash, 0x85ebca6b);
+    hash ^= hash >>> 13;
+    hash = Math.imul(hash, 0xc2b2ae35);
+    hash ^= hash >>> 16;
+    return Math.abs(hash);
   }, [coupon.id]);
+
+  // Generates stable but random views between 120 and 290 based on ID
+  const viewsCount = React.useMemo(() => {
+    return (hashedValue % 170) + 120;
+  }, [hashedValue]);
 
   // Determine if it is a Direct Deal (e.g. coupon has empty code, "DEAL" or "DIRECT")
   const isDirectDeal = !code || code === "DEAL" || code === "DIRECT";
@@ -154,12 +173,10 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
     }
   };
 
-  // Generate a deterministic success rate based on coupon id
+  // Generate a deterministic success rate based on scrambled hash
   const successRate = React.useMemo(() => {
-    const idStr = String(coupon.id);
-    const sum = idStr.split("").reduce((acc, char) => acc + char.charCodeAt(0), 0);
-    return (sum % 18) + 82; // 82% to 99%
-  }, [coupon.id]);
+    return (hashedValue % 16) + 83; // 83% to 98%
+  }, [hashedValue]);
 
   return (
     <div 

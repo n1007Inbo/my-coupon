@@ -15,6 +15,42 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   const [selectedStoreSlug, setSelectedStoreSlug] = useState<string | null>(null);
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
 
+  const [storePage, setStorePage] = useState(1);
+  const [couponPage, setCouponPage] = useState(1);
+
+  const STORES_PER_PAGE = 16;
+  const COUPONS_PER_PAGE = 12;
+
+  const isFirstRender = React.useRef(true);
+
+  // Reset pagination when filters change to ensure the user always sees results from page 1
+  React.useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
+    }
+    setStorePage(1);
+    setCouponPage(1);
+  }, [searchQuery, selectedStoreSlug]);
+
+  // Initialize states from URL parameters if present
+  React.useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const cpage = params.get("cpage");
+      const spage = params.get("spage");
+      if (cpage) {
+        const p = parseInt(cpage, 10);
+        if (!isNaN(p)) setCouponPage(p);
+      }
+      if (spage) {
+        const p = parseInt(spage, 10);
+        if (!isNaN(p)) setStorePage(p);
+      }
+    }
+  }, []);
+
+
   // Auto-open coupon modal if coupon parameter is present in URL
   React.useEffect(() => {
     if (typeof window !== "undefined") {
@@ -101,6 +137,125 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       return true;
     });
   }, [initialCoupons, searchQuery, selectedStoreSlug]);
+
+  const paginatedStores = useMemo(() => {
+    const startIndex = (storePage - 1) * STORES_PER_PAGE;
+    return initialStores.slice(startIndex, startIndex + STORES_PER_PAGE);
+  }, [initialStores, storePage]);
+
+  const paginatedCoupons = useMemo(() => {
+    const startIndex = (couponPage - 1) * COUPONS_PER_PAGE;
+    return filteredCoupons.slice(startIndex, startIndex + COUPONS_PER_PAGE);
+  }, [filteredCoupons, couponPage]);
+
+  const totalStorePages = Math.ceil(initialStores.length / STORES_PER_PAGE);
+  const totalCouponPages = Math.ceil(filteredCoupons.length / COUPONS_PER_PAGE);
+
+  const renderPagination = (currentPage: number, totalPages: number, onPageChange: (page: number) => void, sectionId?: string) => {
+    if (totalPages <= 1) return null;
+    
+    const pages: (number | string)[] = [];
+    const delta = 1; // Number of pages to show before and after current page
+    
+    // Always include page 1
+    pages.push(1);
+    
+    let left = currentPage - delta;
+    let right = currentPage + delta;
+    
+    if (left < 2) {
+      left = 2;
+      right = Math.min(2 + delta * 2, totalPages - 1);
+    }
+    if (right > totalPages - 1) {
+      right = totalPages - 1;
+      left = Math.max(totalPages - 1 - delta * 2, 2);
+    }
+    
+    if (left > 2) {
+      pages.push("...");
+    }
+    
+    for (let i = left; i <= right; i++) {
+      pages.push(i);
+    }
+    
+    if (right < totalPages - 1) {
+      pages.push("...");
+    }
+    
+    // Always include last page
+    if (totalPages > 1) {
+      pages.push(totalPages);
+    }
+
+    const handlePageClick = (e: React.MouseEvent, p: number) => {
+      e.preventDefault();
+      e.stopPropagation();
+      onPageChange(p);
+      
+      // Update URL parameters
+      if (typeof window !== "undefined") {
+        const params = new URLSearchParams(window.location.search);
+        if (sectionId === "coupons") {
+          params.set("cpage", String(p));
+        } else if (sectionId === "stores") {
+          params.set("spage", String(p));
+        }
+        const newUrl = `${window.location.pathname}?${params.toString()}${window.location.hash}`;
+        window.history.pushState({}, "", newUrl);
+      }
+
+      if (typeof window !== "undefined" && sectionId) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }
+    };
+
+    return (
+      <div className={styles.paginationContainer}>
+        <button
+          type="button"
+          onClick={(e) => handlePageClick(e, currentPage - 1)}
+          disabled={currentPage === 1}
+          className={`${styles.paginationBtn} ${currentPage === 1 ? styles.paginationBtnDisabled : ""}`}
+        >
+          ← Prev
+        </button>
+        {pages.map((p, idx) => {
+          if (p === "...") {
+            return (
+              <span key={`ell-${idx}`} className={styles.paginationEllipsis} style={{ padding: "0 8px", color: "var(--text-tertiary)", fontWeight: "bold" }}>
+                ...
+              </span>
+            );
+          }
+          const pageNum = p as number;
+          return (
+            <button
+              type="button"
+              key={pageNum}
+              onClick={(e) => handlePageClick(e, pageNum)}
+              className={`${styles.paginationBtn} ${currentPage === pageNum ? styles.paginationBtnActive : ""}`}
+            >
+              {pageNum}
+            </button>
+          );
+        })}
+        <button
+          type="button"
+          onClick={(e) => handlePageClick(e, currentPage + 1)}
+          disabled={currentPage === totalPages}
+          className={`${styles.paginationBtn} ${currentPage === totalPages ? styles.paginationBtnDisabled : ""}`}
+        >
+          Next →
+        </button>
+      </div>
+    );
+  };
+
 
   const handleGetCode = (coupon: Coupon) => {
     const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
@@ -193,6 +348,27 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
               >
                 Clear
               </button>
+            )}
+
+            {/* Dynamic Autocomplete Suggestion Dropdown */}
+            {searchQuery.trim() !== "" && matchedStores.length > 0 && (
+              <div className={styles.searchSuggestionsDropdown}>
+                {matchedStores.map((store) => (
+                  <a 
+                    key={store.id || store.slug} 
+                    href={`/store/${store.slug}`}
+                    className={styles.searchSuggestionItem}
+                  >
+                    {store.logo ? (
+                      <img src={store.logo} alt={store.name} className={styles.suggestionLogo} />
+                    ) : (
+                      <div className={styles.suggestionFallback}>{store.name.charAt(0).toUpperCase()}</div>
+                    )}
+                    <span className={styles.suggestionName}>{store.name}</span>
+                    <span className={styles.suggestionBadge}>View Coupons</span>
+                  </a>
+                ))}
+              </div>
             )}
           </div>
 
@@ -293,7 +469,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
           <h2 className={styles.sectionTitle}>Browse Coupons by Brand</h2>
           <p className={styles.sectionSubtitle}>Click on any brand to open its dedicated store page and view verified discount codes.</p>
           <div className={styles.storesGrid}>
-            {initialStores.map((store) => (
+            {paginatedStores.map((store) => (
               <a
                 key={store.id || store.slug}
                 href={`/store/${store.slug}`}
@@ -314,6 +490,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
               </a>
             ))}
           </div>
+          {renderPagination(storePage, totalStorePages, setStorePage, "stores")}
         </section>
 
         {/* Coupons Grid Section */}
@@ -331,13 +508,16 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
           </div>
 
           {filteredCoupons.length > 0 ? (
-            <div className={styles.couponsGrid}>
-              {filteredCoupons.map((coupon) => (
-                <div key={coupon.id} className="animate-slide-up">
-                  <CouponCard coupon={coupon} onGetCode={handleGetCode} />
-                </div>
-              ))}
-            </div>
+            <>
+              <div className={styles.couponsGrid}>
+                {paginatedCoupons.map((coupon) => (
+                  <div key={coupon.id} className="animate-slide-up">
+                    <CouponCard coupon={coupon} onGetCode={handleGetCode} />
+                  </div>
+                ))}
+              </div>
+              {renderPagination(couponPage, totalCouponPages, setCouponPage, "coupons")}
+            </>
           ) : (
             <div className={styles.noResults}>
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">

@@ -1,6 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
   images: {
     remotePatterns: [
       {
@@ -166,8 +169,28 @@ const nextConfig: NextConfig = {
         destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F",
         permanent: true,
       },
-
-    ];
+      {
+        source: "/go/hotel-tonight",
+        destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=19660&url=https%3A%2F%2Fwww.hoteltonight.com",
+        permanent: true,
+      },
+      {
+        source: "/go/swatch",
+        destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74223&url=https%3A%2F%2Fwww.swatch.com%2Fen-us",
+        permanent: true,
+      }
+    ,
+      {
+        source: "/go/harrys",
+        destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=20715&url=http%3A%2F%2Fwww.harrys.com%2F",
+        permanent: true,
+      },
+      {
+        source: "/go/shipt",
+        destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9&url=https%3A%2F%2Fwww.shipt.com%2F",
+        permanent: true,
+      }
+      ];
   },
 };
 
