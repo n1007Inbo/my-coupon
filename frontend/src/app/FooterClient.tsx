@@ -95,6 +95,12 @@ export default function FooterClient() {
             <a href="/contact" className="footerLinkItem">Contact Us</a>
           </div>
           <div className="footerColumn">
+            <h4 className="footerColHeader">Premium Planners</h4>
+            <a href="/budget-tracker" className="footerLinkItem">Budget Google Sheets</a>
+            <a href="/notion-second-brain" className="footerLinkItem">Notion Second Brain</a>
+            <a href="/giveaway" className="footerLinkItem">Gift Card Giveaways</a>
+          </div>
+          <div className="footerColumn">
             <h4 className="footerColHeader">Legal Policies</h4>
             <a href="/privacy" className="footerLinkItem">Privacy Policy</a>
             <a href="/terms" className="footerLinkItem">Terms of Service</a>

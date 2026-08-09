@@ -60,6 +60,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/budget-tracker`,
+      lastModified: staticDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/notion-second-brain`,
+      lastModified: staticDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/giveaway`,
+      lastModified: staticDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/giveaway/success`,
+      lastModified: staticDate,
+      changeFrequency: "weekly" as const,
+      priority: 0.8,
+    },
+    {
       url: `${baseUrl}/privacy`,
       lastModified: staticDate,
       changeFrequency: "monthly" as const,

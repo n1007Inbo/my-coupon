@@ -56,19 +56,6 @@ export default function BudgetTrackerPage() {
 
   return (
     <div className={styles.container}>
-      {/* Navbar */}
-      <header className={styles.nav}>
-        <div className={styles.logo}>
-          <span>📈</span> PromoRegistry Finance
-        </div>
-        <button 
-          onClick={() => window.open(gumroadUrl, '_blank')}
-          className={styles.navBtn}
-        >
-          Buy Now
-        </button>
-      </header>
-
       {/* Hero Section */}
       <section className={styles.hero}>
         <span className={styles.badge}>Special launch offer — 60% Off</span>
@@ -100,7 +87,7 @@ export default function BudgetTrackerPage() {
         {/* Dynamic Mockup Wrapper */}
         <div className={styles.previewContainer}>
           <img 
-            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" 
+            src="/images/budget-tracker-cover.jpg" 
             alt="Google Sheets Budget Dashboard Mockup" 
             className={styles.mockupImage}
           />
