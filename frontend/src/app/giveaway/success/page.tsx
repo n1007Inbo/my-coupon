@@ -116,6 +116,91 @@ function SuccessContent() {
             "Make sure you are logged into your Notion workspace."
           ],
         };
+      case "robux":
+        return {
+          title: "Roblox Robux Digital Card",
+          subtitle: "Robux voucher has been generated and validated.",
+          logo: "🎮",
+          color: "#1f2937",
+          glow: "rgba(31, 41, 55, 0.15)",
+          isDownload: false,
+          value: "10,000 Robux Card",
+          code: "RBX-7821-ROB-4592",
+          actionText: "Redeem on Roblox.com",
+          instructions: [
+            "Copy your digital Pin code below.",
+            "Go to roblox.com/redeem in your browser.",
+            "Enter the pin and click 'Redeem' to credit Robux balance directly to your account."
+          ],
+        };
+      case "steam":
+        return {
+          title: "Steam Wallet Digital Card",
+          subtitle: "Congratulations! Your digital Steam Wallet code is ready.",
+          logo: "🎮",
+          color: "#171a21",
+          glow: "rgba(23, 26, 33, 0.15)",
+          isDownload: false,
+          value: "$50.00 Steam Wallet",
+          code: "STM-9821-WLT-0412",
+          actionText: "Redeem on Steam",
+          instructions: [
+            "Copy the Steam Wallet code below.",
+            "Open Steam Client -> Add Funds -> Redeem a Steam Wallet Code.",
+            "Paste the code and click Redeem to add $50 to your Steam Wallet."
+          ],
+        };
+      case "amazon":
+        return {
+          title: "Amazon Digital Gift Card",
+          subtitle: "Your Amazon Shopping promo code is ready for checkout.",
+          logo: "🛍️",
+          color: "#ff9900",
+          glow: "rgba(255, 153, 0, 0.15)",
+          isDownload: false,
+          value: "$100.00 Gift Card",
+          code: "AMZ-9021-GFT-2819",
+          actionText: "Redeem on Amazon.com",
+          instructions: [
+            "Copy the gift card claim code below.",
+            "Go to amazon.com/redeem or checkout payment settings.",
+            "Enter your claim code and click 'Apply to Your Balance'."
+          ],
+        };
+      case "playstation":
+        return {
+          title: "PlayStation Network Card",
+          subtitle: "Your PSN Store wallet credit code is unlocked.",
+          logo: "🎮",
+          color: "#003087",
+          glow: "rgba(0, 48, 135, 0.15)",
+          isDownload: false,
+          value: "$50.00 PSN Wallet",
+          code: "PSN-8921-WLT-9281",
+          actionText: "Redeem on PSN Store",
+          instructions: [
+            "Copy the 12-digit PSN voucher code below.",
+            "Open PlayStation Store -> click on your Profile Avatar -> Redeem Code.",
+            "Paste the code to credit $50 to your PSN wallet balance."
+          ],
+        };
+      case "googleplay":
+        return {
+          title: "Google Play Gift Voucher",
+          subtitle: "Your Play Store credit voucher is generated successfully.",
+          logo: "🛍️",
+          color: "#34a853",
+          glow: "rgba(52, 168, 83, 0.15)",
+          isDownload: false,
+          value: "$50.00 Play Store Credit",
+          code: "GPL-8721-PLAY-0182",
+          actionText: "Redeem in Play Store",
+          instructions: [
+            "Copy the Google Play redeem code below.",
+            "Open Google Play Store app -> click Profile -> Payments & subscriptions -> Redeem code.",
+            "Paste the code to apply $50 credit to your balance."
+          ],
+        };
       case "walmart":
       default:
         return {
