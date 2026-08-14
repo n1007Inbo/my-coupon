@@ -20,7 +20,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   if (slug === "xsteel-targets") return "/logos/xsteel-targets.svg";
   if (slug === "reconstitution-solution") return "/logos/reconstitution-solution.svg";
   if (slug === "tuxmat-us") return "/logos/tuxmat.jpg";
-  return `/logos/${slug}.svg`;
+    return `/logos/${slug}.svg`;
 };
 
 // Mock fallback identical dataset
@@ -187,6 +187,9 @@ export const FALLBACK_STORES: Store[] = [
   { id: 158, name: "Ubeauty", slug: "ubeauty", logo: "https://d3itvsmwj0r86k.cloudfront.net/images/b4d5879e-673f-42db-bb19-5754d7c82d2c.png", website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=3242&url=https%3A%2F%2Fubeauty.com%2F" },
   { id: 159, name: "Myaerotel", slug: "myaerotel", logo: "https://d3itvsmwj0r86k.cloudfront.net/images/20250106/0f369fdd-fe6b-46f0-a674-9016eae9bbd6.png", website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30663&url=https%3A%2F%2Fwww.myaerotel.com%2Fen-uk" },
   { id: 160, name: "Super.com - Travel", slug: "supercom-travel", logo: "https://static.fatcoupon.com/images/20260511/800c7f8b-b050-4cde-8216-7cbcc1e6a62b.png", website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73002&url=https%3A%2F%2Fwww.super.com%2Ftravel" }
+,
+  { id: 161, name: "ScholarshipOwl", slug: "scholarshipowl", logo: getLogoUrl("scholarshipowl"), website: "https://scholarshipowl.com" },
+  { id: 162, name: "Mac Duggal", slug: "mac-duggal", logo: getLogoUrl("mac-duggal"), website: "https://macduggal.com" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -1174,4 +1177,17 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1860, code: "WELCOME10", discount: "10% Off First Order", description: "Save 10% on your first order when you sign up for Super.com - Travel newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[159], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73002&url=https%3A%2F%2Fwww.super.com%2Ftravel" },
   { id: 1861, code: "DEAL", discount: "Free Shipping Offer", description: "Enjoy free standard shipping on eligible orders from Super.com - Travel.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[159], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73002&url=https%3A%2F%2Fwww.super.com%2Ftravel" },
   { id: 1862, code: "DEAL", discount: "Up to 30% Off Sale", description: "Save up to 30% on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[159], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73002&url=https%3A%2F%2Fwww.super.com%2Ftravel" }
+,
+
+  // ScholarshipOwl Coupons
+  { id: 1863, code: "SCHOLAR15", discount: "15% Off Premium", description: "Get 15% off on your premium subscription plans using this verified coupon code.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[160], affiliate_url: "https://scholarshipowl.com" },
+  { id: 1864, code: "FREE7", discount: "7-Day Free Trial", description: "Unlock a 7-day free trial on ScholarshipOwl premium features and find matching scholarships instantly.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[160], affiliate_url: "https://scholarshipowl.com" },
+  { id: 1865, code: "DEAL", discount: "Apply to 100+ Scholarships", description: "Apply to hundreds of verified scholarships automatically with a single application layout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[160], affiliate_url: "https://scholarshipowl.com" },
+  { id: 1866, code: "DEAL", discount: "$1,000 Monthly Giveaway", description: "Enter the free monthly $1,000 scholarship draw directly from the student dashboard.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[160], affiliate_url: "https://scholarshipowl.com" },
+
+  // Mac Duggal Coupons
+  { id: 1867, code: "DUGGAL20", discount: "20% Off Dresses", description: "Save 20% on luxury designer dresses, evening gowns, and prom wear at Mac Duggal.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" },
+  { id: 1868, code: "WELCOME50", discount: "$50 Off First Order", description: "Sign up for the newsletter and receive an exclusive $50 coupon code on your first gown purchase.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" },
+  { id: 1869, code: "DEAL", discount: "Free US Shipping", description: "Enjoy free standard shipping and returns on all orders within the continental United States.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" },
+  { id: 1870, code: "DEAL", discount: "Up to 40% Off Sale", description: "Save up to 40% off on premium runway dresses and seasonal outlet collection items.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" }
 ];

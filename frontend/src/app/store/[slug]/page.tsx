@@ -209,6 +209,9 @@ export default async function StorePage({ params }: StorePageProps) {
     "ubeauty",
     "myaerotel",
     "supercom-travel"
+  ,
+    "scholarshipowl",
+    "mac-duggal"
   ];
   const shouldForceFallback = forceFallbackSlugs.includes(slug);
 
