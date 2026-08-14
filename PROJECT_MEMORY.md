@@ -147,3 +147,54 @@ For immediate, zero-budget conversion testing:
 1.  **TikTok / Shorts:** Post 7-15 second screen recordings showing user navigating PromoRegistry giveaway card loader, then getting redirected. Overlay trending sound and write: *"Legit free $100 Walmart card in 2 mins. link in profile!"*
 2.  **Pinterest Pins:** Generate Canva pins for "How to get free gift cards legally" redirecting to `https://www.promoregistry.com/giveaway`.
 3.  **Discord/Reddit:** Participate in Roblox/freebie groups and share the PromoRegistry link when people query about cards.
+
+---
+
+## 7. Vercel Deployment (IMPORTANT — READ THIS FIRST)
+
+⚠️ **GitHub repo is PRIVATE.** Vercel Hobby (free) plan does NOT auto-deploy private repos via Git integration — it asks for a paid Pro subscription. **DO NOT try to fix this by making the repo public or paying.**
+
+### ✅ Free Deployment Method: Vercel CLI Direct Deploy
+
+Instead of relying on Git push → Vercel auto-deploy, use the **Vercel CLI** to upload and deploy files directly from the local machine. This bypasses the private repo restriction entirely.
+
+**Step-by-step for agents:**
+
+1.  **Check if Vercel CLI is logged in:**
+    ```bash
+    npx.cmd vercel whoami
+    ```
+    If not logged in, run `npx.cmd vercel whoami` — it will print a device flow URL like:
+    `Visit https://vercel.com/oauth/device?user_code=XXXX-XXXX`
+    Ask the user to visit that URL in their browser and click "Authorize".
+
+2.  **Ensure the project is linked** (only needed once per clone):
+    ```bash
+    npx.cmd vercel link --yes --project my-coupon
+    ```
+    Run this from the **project root** directory: `C:\Users\Supreme_Traders\.gemini\antigravity\scratch\all_repos\my-coupon`
+    (NOT from `frontend/` — the Vercel project setting has `frontend` as root directory, so it auto-appends it.)
+
+3.  **Deploy to production:**
+    ```bash
+    npx.cmd vercel deploy --prod --yes
+    ```
+    Run from the **project root** directory. This uploads, builds, and deploys to production in ~2-3 minutes.
+
+4.  **After deploy, push to GitHub for version control:**
+    ```bash
+    git add -A && git commit -m "feat: description" && git push origin main
+    ```
+
+### 🔑 Credentials
+*   **Vercel Account Email:** `razaraghib549@gmail.com`
+*   **Vercel Username:** `razaraghib549-1754`
+*   **Vercel Team/Scope:** `hazique-s-projects`
+*   **Vercel Project:** `my-coupon` (root directory set to `frontend`)
+*   **GitHub Repo:** `https://github.com/n1007Inbo/my-coupon.git` (PRIVATE)
+*   **Git Author Config:** `Methew Dippy <methewdippy@gmail.com>`
+
+### ⚠️ Rules
+*   **DO NOT** make the repo public to fix deployment — use CLI deploy.
+*   **DO NOT** delete existing pages, stores, or data.
+*   **DO NOT** generate AI images for logos — use text-based fallback initials or download from competitor sites.

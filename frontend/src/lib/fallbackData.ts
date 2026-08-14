@@ -2,25 +2,73 @@ import { Coupon, Store } from "../components/CouponCard";
 
 // Helper to retrieve beautiful corporate logos dynamically from local SVG files
 export const getLogoUrl = (slug: string | undefined | null) => {
-  if (!slug || typeof slug !== "string") return "/logos/default.svg";
-  if (slug.startsWith("desktronic-")) return "/logos/desktronic.svg";
-  if (slug.startsWith("tenways-")) return "/logos/tenways.svg";
-  if (slug === "parc-asterix-fr") return "/logos/parc-asterix-fr.jpg";
-  if (slug === "bouquets-by-post") return "/logos/bouquets-by-post.jpg";
-  if (slug === "im8health") return "/logos/im8health.jpg";
-  if (slug === "redusculpt") return "/logos/redusculpt.jpg";
-  if (slug === "evolution-power-tools") return "/logos/evolution-power-tools.jpg";
-  if (slug === "maple-prime") return "/logos/maple-prime.png";
-  if (slug === "nobodys-child") return "/logos/nobodys-child.jpg";
-  if (slug === "anycubic-us") return "/logos/anycubic.svg";
-  if (slug === "hitway-uk") return "/logos/hitway.svg";
-  if (slug === "wolfbox-uk") return "/logos/wolfbox.svg";
-  if (slug === "fitueyes-uk") return "/logos/fitueyes.svg";
-  if (slug === "helvetus") return "/logos/helvetus.svg";
-  if (slug === "xsteel-targets") return "/logos/xsteel-targets.svg";
-  if (slug === "reconstitution-solution") return "/logos/reconstitution-solution.svg";
-  if (slug === "tuxmat-us") return "/logos/tuxmat.jpg";
-    return `/logos/${slug}.svg`;
+  if (!slug || typeof slug !== "string") return undefined;
+  
+  const logoMap: Record<string, string> = {
+  "adidas": "/logos/adidas.svg",
+  "adobe": "/logos/adobe.svg",
+  "aliexpress": "/logos/aliexpress.svg",
+  "amazon": "/logos/amazon.svg",
+  "anycubic": "/logos/anycubic.svg",
+  "apple": "/logos/apple.svg",
+  "banggood": "/logos/banggood.svg",
+  "bluehost": "/logos/bluehost.svg",
+  "bookingcom": "/logos/bookingcom.svg",
+  "bouquets-by-post": "/logos/bouquets-by-post.svg",
+  "canva": "/logos/canva.svg",
+  "coursera": "/logos/coursera.svg",
+  "desktronic": "/logos/desktronic.svg",
+  "dhgate": "/logos/dhgate.svg",
+  "ebay": "/logos/ebay.svg",
+  "envato": "/logos/envato.svg",
+  "evolution-power-tools": "/logos/evolution-power-tools.jpg",
+  "fitueyes": "/logos/fitueyes.svg",
+  "fiverr": "/logos/fiverr.svg",
+  "geekbuying": "/logos/geekbuying.svg",
+  "godaddy": "/logos/godaddy.svg",
+  "gymshark": "/logos/gymshark.svg",
+  "harrys": "/logos/harrys.svg",
+  "helvetus": "/logos/helvetus.svg",
+  "hitway": "/logos/hitway.svg",
+  "hostgator": "/logos/hostgator.svg",
+  "hostinger": "/logos/hostinger.svg",
+  "hotel-tonight": "/logos/hotel-tonight.svg",
+  "im8health": "/logos/im8health.jpg",
+  "lenovo": "/logos/lenovo.svg",
+  "maple-prime": "/logos/maple-prime.png",
+  "massivemobile": "/logos/massivemobile.svg",
+  "namecheap": "/logos/namecheap.svg",
+  "nike": "/logos/nike.svg",
+  "nobodys-child": "/logos/nobodys-child.jpg",
+  "nordpass": "/logos/nordpass.svg",
+  "nordvpn": "/logos/nordvpn.svg",
+  "parc-asterix-fr": "/logos/parc-asterix-fr.webp",
+  "puma": "/logos/puma.svg",
+  "reconstitution-solution": "/logos/reconstitution-solution.svg",
+  "redusculpt": "/logos/redusculpt.jpg",
+  "samsung": "/logos/samsung.svg",
+  "semrush": "/logos/semrush.svg",
+  "shipt": "/logos/shipt.svg",
+  "skillshare": "/logos/skillshare.svg",
+  "squarespace": "/logos/squarespace.svg",
+  "starbucks": "/logos/starbucks.svg",
+  "steam": "/logos/steam.svg",
+  "swatch": "/logos/swatch.svg",
+  "target": "/logos/target.svg",
+  "tenways": "/logos/tenways.svg",
+  "tuxmat": "/logos/tuxmat.svg",
+  "udemy": "/logos/udemy.svg",
+  "walmart": "/logos/walmart.svg",
+  "wolfbox": "/logos/wolfbox.svg",
+  "xsteel-targets": "/logos/xsteel-targets.svg",
+  "zaful": "/logos/zaful.svg"
+};
+  
+  // Custom prefix matching for dynamic sub-stores
+  if (slug.startsWith("desktronic-")) return logoMap["desktronic"] || undefined;
+  if (slug.startsWith("tenways-")) return logoMap["tenways"] || undefined;
+  
+  return logoMap[slug] || undefined;
 };
 
 // Mock fallback identical dataset
@@ -190,6 +238,96 @@ export const FALLBACK_STORES: Store[] = [
 ,
   { id: 161, name: "ScholarshipOwl", slug: "scholarshipowl", logo: getLogoUrl("scholarshipowl"), website: "https://scholarshipowl.com" },
   { id: 162, name: "Mac Duggal", slug: "mac-duggal", logo: getLogoUrl("mac-duggal"), website: "https://macduggal.com" }
+,
+  { id: 163, name: "Daisysilk Trade Co.,Ltd", slug: "daisysilk-trade-co-ltd", logo: getLogoUrl("daisysilk-trade-co-ltd"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30705&url=https%3A%2F%2Fwww.drinktrade.com%2F" },
+  { id: 164, name: "Kixies Inc", slug: "kixies-inc", logo: getLogoUrl("kixies-inc"), website: "https://kixies-inc.com" },
+  { id: 165, name: "novica.com", slug: "novica-com", logo: getLogoUrl("novica-com"), website: "https://novica.com" },
+  { id: 166, name: "Pooky US", slug: "pooky-us", logo: getLogoUrl("pooky-us"), website: "https://pooky-us.com" },
+  { id: 167, name: "Midwest Sports dba Tennis-Point", slug: "midwest-sports-dba-tennis-point", logo: getLogoUrl("midwest-sports-dba-tennis-point"), website: "https://midwest-sports-dba-tennis-point.com" },
+  { id: 168, name: "Montagne Vacances", slug: "montagne-vacances", logo: getLogoUrl("montagne-vacances"), website: "https://montagne-vacances.com" },
+  { id: 169, name: "Gardenreet", slug: "gardenreet", logo: getLogoUrl("gardenreet"), website: "https://gardenreet.com" },
+  { id: 170, name: "Mirlux", slug: "mirlux", logo: getLogoUrl("mirlux"), website: "https://mirlux.com" },
+  { id: 171, name: "Silver Cross", slug: "silver-cross", logo: getLogoUrl("silver-cross"), website: "https://silver-cross.com" },
+  { id: 172, name: "Jackery", slug: "jackery", logo: getLogoUrl("jackery"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=63344&url=https%3A%2F%2Fwww.jackery.com" },
+  { id: 173, name: "Innovet Pet", slug: "innovet-pet", logo: getLogoUrl("innovet-pet"), website: "https://innovet-pet.com" },
+  { id: 174, name: "AFRM", slug: "afrm", logo: getLogoUrl("afrm"), website: "https://afrm.com" },
+  { id: 175, name: "Naghedi", slug: "naghedi", logo: getLogoUrl("naghedi"), website: "https://naghedi.com" },
+  { id: 176, name: "im8 health", slug: "im8-health", logo: getLogoUrl("im8-health"), website: "https://im8-health.com" },
+  { id: 177, name: "Tuxmat", slug: "tuxmat", logo: getLogoUrl("tuxmat"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F" },
+  { id: 178, name: "Performance Golf", slug: "performance-golf", logo: getLogoUrl("performance-golf"), website: "https://performance-golf.com" },
+  { id: 179, name: "Simkhai", slug: "simkhai", logo: getLogoUrl("simkhai"), website: "https://simkhai.com" },
+  { id: 180, name: "Sexy Little Bath US", slug: "sexy-little-bath-us", logo: getLogoUrl("sexy-little-bath-us"), website: "https://sexy-little-bath-us.com" },
+  { id: 181, name: "Everblog", slug: "everblog", logo: getLogoUrl("everblog"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 182, name: "PrintAbout", slug: "printabout", logo: getLogoUrl("printabout"), website: "https://printabout.com" },
+  { id: 183, name: "Lumary", slug: "lumary", logo: getLogoUrl("lumary"), website: "https://lumary.com" },
+  { id: 184, name: "Young Electric Bikes", slug: "young-electric-bikes", logo: getLogoUrl("young-electric-bikes"), website: "https://young-electric-bikes.com" },
+  { id: 185, name: "StoreYourBoard", slug: "storeyourboard", logo: getLogoUrl("storeyourboard"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=58357&url=https%3A%2F%2Fstoreyourboard.com" },
+  { id: 186, name: "Urevo", slug: "urevo", logo: getLogoUrl("urevo"), website: "https://urevo.com" },
+  { id: 187, name: "SBLA", slug: "sbla", logo: getLogoUrl("sbla"), website: "https://sbla.com" },
+  { id: 188, name: "Joe Nimble", slug: "joe-nimble", logo: getLogoUrl("joe-nimble"), website: "https://joe-nimble.com" },
+  { id: 189, name: "OUFER BODY JEWELRY 15%-100-259 (25-may-2026)", slug: "oufer-body-jewelry-15-100-259-25-may-2026", logo: getLogoUrl("oufer-body-jewelry-15-100-259-25-may-2026"), website: "https://oufer-body-jewelry-15-100-259-25-may-2026.com" },
+  { id: 190, name: "Elevated Craft", slug: "elevated-craft", logo: getLogoUrl("elevated-craft"), website: "https://elevated-craft.com" },
+  { id: 191, name: "Huega House", slug: "huega-house", logo: getLogoUrl("huega-house"), website: "https://huega-house.com" },
+  { id: 192, name: "Camp Chef", slug: "camp-chef", logo: getLogoUrl("camp-chef"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9598&url=https%3A%2F%2Fwww.campchef.com" },
+  { id: 193, name: "COLAMY", slug: "colamy", logo: getLogoUrl("colamy"), website: "https://colamy.com" },
+  { id: 194, name: "Buy Fencing Direct", slug: "buy-fencing-direct", logo: getLogoUrl("buy-fencing-direct"), website: "https://buy-fencing-direct.com" },
+  { id: 195, name: "Back to the Office", slug: "back-to-the-office", logo: getLogoUrl("back-to-the-office"), website: "https://back-to-the-office.com" },
+  { id: 196, name: "Thermos", slug: "thermos", logo: getLogoUrl("thermos"), website: "https://thermos.com" },
+  { id: 197, name: "cosori", slug: "cosori", logo: getLogoUrl("cosori"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=18131&url=https%3A%2F%2Fcosori.com%2F" },
+  { id: 198, name: "Krewe", slug: "krewe", logo: getLogoUrl("krewe"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73952&url=https%3A%2F%2Fwww.krewe.com%2F" },
+  { id: 199, name: "Ridstar", slug: "ridstar", logo: getLogoUrl("ridstar"), website: "https://ridstar.com" },
+  { id: 200, name: "Bruno Marc 8%-100-350 (29-july-2026)", slug: "bruno-marc-8-100-350-29-july-2026", logo: getLogoUrl("bruno-marc-8-100-350-29-july-2026"), website: "https://bruno-marc-8-100-350-29-july-2026.com" },
+  { id: 201, name: "Sunshine Tienda", slug: "sunshine-tienda", logo: getLogoUrl("sunshine-tienda"), website: "https://sunshine-tienda.com" },
+  { id: 202, name: "Red Gorilla", slug: "red-gorilla", logo: getLogoUrl("red-gorilla"), website: "https://red-gorilla.com" },
+  { id: 203, name: "Displays Outlet US", slug: "displays-outlet-us", logo: getLogoUrl("displays-outlet-us"), website: "https://displays-outlet-us.com" },
+  { id: 204, name: "Yvette Sports", slug: "yvette-sports", logo: getLogoUrl("yvette-sports"), website: "https://yvette-sports.com" },
+  { id: 205, name: "Zeagoo", slug: "zeagoo", logo: getLogoUrl("zeagoo"), website: "https://zeagoo.com" },
+  { id: 206, name: "BuyBackWorld", slug: "buybackworld", logo: getLogoUrl("buybackworld"), website: "https://buybackworld.com" },
+  { id: 207, name: "Flextail 5%-50-550 (23-july-2026)", slug: "flextail-5-50-550-23-july-2026", logo: getLogoUrl("flextail-5-50-550-23-july-2026"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=12732&url=https%3A%2F%2Fwww.flextail.com%2F" },
+  { id: 208, name: "pelsbarn", slug: "pelsbarn", logo: getLogoUrl("pelsbarn"), website: "https://pelsbarn.com" },
+  { id: 209, name: "Povison", slug: "povison", logo: getLogoUrl("povison"), website: "https://povison.com" },
+  { id: 210, name: "Eternity Modern", slug: "eternity-modern", logo: getLogoUrl("eternity-modern"), website: "https://eternity-modern.com" },
+  { id: 211, name: "aviya mattress 15%-600-300 (23-july-2026)", slug: "aviya-mattress-15-600-300-23-july-2026", logo: getLogoUrl("aviya-mattress-15-600-300-23-july-2026"), website: "https://aviya-mattress-15-600-300-23-july-2026.com" },
+  { id: 212, name: "Arq8", slug: "arq8", logo: getLogoUrl("arq8"), website: "https://arq8.com" },
+  { id: 213, name: "BABEYOND", slug: "babeyond", logo: getLogoUrl("babeyond"), website: "https://babeyond.com" },
+  { id: 214, name: "Suunto", slug: "suunto", logo: getLogoUrl("suunto"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=68582&url=https%3A%2F%2Fwww.suunto.com%2F" },
+  { id: 215, name: "RMA Defense", slug: "rma-defense", logo: getLogoUrl("rma-defense"), website: "https://rma-defense.com" },
+  { id: 216, name: "Eonon", slug: "eonon", logo: getLogoUrl("eonon"), website: "https://eonon.com" },
+  { id: 217, name: "Torro", slug: "torro", logo: getLogoUrl("torro"), website: "https://torro.com" },
+  { id: 218, name: "Auctmarts", slug: "auctmarts", logo: getLogoUrl("auctmarts"), website: "https://auctmarts.com" },
+  { id: 219, name: "MISSHA US", slug: "missha-us", logo: getLogoUrl("missha-us"), website: "https://missha-us.com" },
+  { id: 220, name: "Himiway Bike", slug: "himiway-bike", logo: getLogoUrl("himiway-bike"), website: "https://himiway-bike.com" },
+  { id: 221, name: "Mirlux FR", slug: "mirlux-fr", logo: getLogoUrl("mirlux-fr"), website: "https://mirlux-fr.com" },
+  { id: 222, name: "Guta TPMS", slug: "guta-tpms", logo: getLogoUrl("guta-tpms"), website: "https://guta-tpms.com" },
+  { id: 223, name: "Alashan Cashmere", slug: "alashan-cashmere", logo: getLogoUrl("alashan-cashmere"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=912&url=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Findex.html" },
+  { id: 224, name: "Nushape", slug: "nushape", logo: getLogoUrl("nushape"), website: "https://nushape.com" },
+  { id: 225, name: "Adept", slug: "adept", logo: getLogoUrl("adept"), website: "https://adept.com" },
+  { id: 226, name: "underarmour", slug: "underarmour", logo: getLogoUrl("underarmour"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=40876&url=https%3A%2F%2Fwww.underarmour.com" },
+  { id: 227, name: "Eydology", slug: "eydology", logo: getLogoUrl("eydology"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 228, name: "Cambridge Satchel", slug: "cambridge-satchel", logo: getLogoUrl("cambridge-satchel"), website: "https://cambridge-satchel.com" },
+  { id: 229, name: "Zonli Home", slug: "zonli-home", logo: getLogoUrl("zonli-home"), website: "https://zonli-home.com" },
+  { id: 230, name: "3 Suisses", slug: "3-suisses", logo: getLogoUrl("3-suisses"), website: "https://3-suisses.com" },
+  { id: 231, name: "Dowinx", slug: "dowinx", logo: getLogoUrl("dowinx"), website: "https://dowinx.com" },
+  { id: 232, name: "Garden Benches", slug: "garden-benches", logo: getLogoUrl("garden-benches"), website: "https://garden-benches.com" },
+  { id: 233, name: "Knack Bags  6%-200-450 (27-july-2026)", slug: "knack-bags-6-200-450-27-july-2026", logo: getLogoUrl("knack-bags-6-200-450-27-july-2026"), website: "https://knack-bags-6-200-450-27-july-2026.com" },
+  { id: 234, name: "Popilush 2%-150-275 (27-july-2026)", slug: "popilush-2-150-275-27-july-2026", logo: getLogoUrl("popilush-2-150-275-27-july-2026"), website: "https://popilush-2-150-275-27-july-2026.com" },
+  { id: 235, name: "SELDOM SEEN STYLES", slug: "seldom-seen-styles", logo: getLogoUrl("seldom-seen-styles"), website: "https://seldom-seen-styles.com" },
+  { id: 236, name: "Kix'ies", slug: "kixies", logo: getLogoUrl("kixies"), website: "https://kixies.com" },
+  { id: 237, name: "Le Permis Libre", slug: "le-permis-libre", logo: getLogoUrl("le-permis-libre"), website: "https://le-permis-libre.com" },
+  { id: 238, name: "Health & Fitness", slug: "health-fitness", logo: getLogoUrl("health-fitness"), website: "https://health-fitness.com" },
+  { id: 239, name: "Tilswall", slug: "tilswall", logo: getLogoUrl("tilswall"), website: "https://tilswall.com" },
+  { id: 240, name: "Levoit", slug: "levoit", logo: getLogoUrl("levoit"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=60230&url=https%3A%2F%2Flevoit.com%2F" },
+  { id: 241, name: "Caydo", slug: "caydo", logo: getLogoUrl("caydo"), website: "https://caydo.com" },
+  { id: 242, name: "Tribesigns", slug: "tribesigns", logo: getLogoUrl("tribesigns"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74172&url=https%3A%2F%2Fwearetribe.co%2F" },
+  { id: 243, name: "Speediance", slug: "speediance", logo: getLogoUrl("speediance"), website: "https://speediance.com" },
+  { id: 244, name: "Ulanzi", slug: "ulanzi", logo: getLogoUrl("ulanzi"), website: "https://ulanzi.com" },
+  { id: 245, name: "Antler", slug: "antler", logo: getLogoUrl("antler"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=23364&url=https%3A%2F%2Fwww.antler.co.uk%2F" },
+  { id: 246, name: "Okun", slug: "okun", logo: getLogoUrl("okun"), website: "https://okun.com" },
+  { id: 247, name: "So soft Beds", slug: "so-soft-beds", logo: getLogoUrl("so-soft-beds"), website: "https://so-soft-beds.com" },
+  { id: 248, name: "Grab Bags US", slug: "grab-bags-us", logo: getLogoUrl("grab-bags-us"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72260&url=https%3A%2F%2Fgrabbaggear.com%2F" },
+  { id: 249, name: "Keycense", slug: "keycense", logo: getLogoUrl("keycense"), website: "https://keycense.com" },
+  { id: 250, name: "tcksports US", slug: "tcksports-us", logo: getLogoUrl("tcksports-us"), website: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72261&url=https%3A%2F%2Ftcksports.com%2F" },
+  { id: 251, name: "Power Smart", slug: "power-smart", logo: getLogoUrl("power-smart"), website: "https://power-smart.com" }
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
@@ -1190,4 +1328,539 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1868, code: "WELCOME50", discount: "$50 Off First Order", description: "Sign up for the newsletter and receive an exclusive $50 coupon code on your first gown purchase.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" },
   { id: 1869, code: "DEAL", discount: "Free US Shipping", description: "Enjoy free standard shipping and returns on all orders within the continental United States.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" },
   { id: 1870, code: "DEAL", discount: "Up to 40% Off Sale", description: "Save up to 40% off on premium runway dresses and seasonal outlet collection items.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[161], affiliate_url: "https://macduggal.com" }
+,
+
+  // Daisysilk Trade Co.,Ltd Coupons
+  { id: 1871, code: "DAISY15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Daisysilk Trade Co.,Ltd using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[162], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30705&url=https%3A%2F%2Fwww.drinktrade.com%2F" },
+  { id: 1872, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Daisysilk Trade Co.,Ltd newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[162], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30705&url=https%3A%2F%2Fwww.drinktrade.com%2F" },
+  { id: 1873, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Daisysilk Trade Co.,Ltd.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[162], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30705&url=https%3A%2F%2Fwww.drinktrade.com%2F" },
+  { id: 1874, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[162], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=30705&url=https%3A%2F%2Fwww.drinktrade.com%2F" },
+
+  // Kixies Inc Coupons
+  { id: 1875, code: "KIXIE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Kixies Inc using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[163], affiliate_url: "https://kixies-inc.com" },
+  { id: 1876, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Kixies Inc newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[163], affiliate_url: "https://kixies-inc.com" },
+  { id: 1877, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Kixies Inc.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[163], affiliate_url: "https://kixies-inc.com" },
+  { id: 1878, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[163], affiliate_url: "https://kixies-inc.com" },
+
+  // novica.com Coupons
+  { id: 1879, code: "NOVIC15", discount: "15% Off", description: "Save 15% off sitewide on all orders from novica.com using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[164], affiliate_url: "https://novica.com" },
+  { id: 1880, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official novica.com newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[164], affiliate_url: "https://novica.com" },
+  { id: 1881, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at novica.com.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[164], affiliate_url: "https://novica.com" },
+  { id: 1882, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[164], affiliate_url: "https://novica.com" },
+
+  // Pooky US Coupons
+  { id: 1883, code: "POOKY15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Pooky US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[165], affiliate_url: "https://pooky-us.com" },
+  { id: 1884, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Pooky US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[165], affiliate_url: "https://pooky-us.com" },
+  { id: 1885, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Pooky US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[165], affiliate_url: "https://pooky-us.com" },
+  { id: 1886, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[165], affiliate_url: "https://pooky-us.com" },
+
+  // Midwest Sports dba Tennis-Point Coupons
+  { id: 1887, code: "MIDWE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Midwest Sports dba Tennis-Point using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[166], affiliate_url: "https://midwest-sports-dba-tennis-point.com" },
+  { id: 1888, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Midwest Sports dba Tennis-Point newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[166], affiliate_url: "https://midwest-sports-dba-tennis-point.com" },
+  { id: 1889, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Midwest Sports dba Tennis-Point.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[166], affiliate_url: "https://midwest-sports-dba-tennis-point.com" },
+  { id: 1890, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[166], affiliate_url: "https://midwest-sports-dba-tennis-point.com" },
+
+  // Montagne Vacances Coupons
+  { id: 1891, code: "MONTA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Montagne Vacances using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[167], affiliate_url: "https://montagne-vacances.com" },
+  { id: 1892, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Montagne Vacances newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[167], affiliate_url: "https://montagne-vacances.com" },
+  { id: 1893, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Montagne Vacances.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[167], affiliate_url: "https://montagne-vacances.com" },
+  { id: 1894, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[167], affiliate_url: "https://montagne-vacances.com" },
+
+  // Gardenreet Coupons
+  { id: 1895, code: "GARDE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Gardenreet using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[168], affiliate_url: "https://gardenreet.com" },
+  { id: 1896, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Gardenreet newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[168], affiliate_url: "https://gardenreet.com" },
+  { id: 1897, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Gardenreet.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[168], affiliate_url: "https://gardenreet.com" },
+  { id: 1898, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[168], affiliate_url: "https://gardenreet.com" },
+
+  // Mirlux Coupons
+  { id: 1899, code: "MIRLU15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Mirlux using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[169], affiliate_url: "https://mirlux.com" },
+  { id: 1900, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Mirlux newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[169], affiliate_url: "https://mirlux.com" },
+  { id: 1901, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Mirlux.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[169], affiliate_url: "https://mirlux.com" },
+  { id: 1902, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[169], affiliate_url: "https://mirlux.com" },
+
+  // Silver Cross Coupons
+  { id: 1903, code: "SILVE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Silver Cross using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[170], affiliate_url: "https://silver-cross.com" },
+  { id: 1904, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Silver Cross newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[170], affiliate_url: "https://silver-cross.com" },
+  { id: 1905, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Silver Cross.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[170], affiliate_url: "https://silver-cross.com" },
+  { id: 1906, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[170], affiliate_url: "https://silver-cross.com" },
+
+  // Jackery Coupons
+  { id: 1907, code: "JACKE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Jackery using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[171], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=63344&url=https%3A%2F%2Fwww.jackery.com" },
+  { id: 1908, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Jackery newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[171], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=63344&url=https%3A%2F%2Fwww.jackery.com" },
+  { id: 1909, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Jackery.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[171], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=63344&url=https%3A%2F%2Fwww.jackery.com" },
+  { id: 1910, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[171], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=63344&url=https%3A%2F%2Fwww.jackery.com" },
+
+  // Innovet Pet Coupons
+  { id: 1911, code: "INNOV15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Innovet Pet using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[172], affiliate_url: "https://innovet-pet.com" },
+  { id: 1912, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Innovet Pet newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[172], affiliate_url: "https://innovet-pet.com" },
+  { id: 1913, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Innovet Pet.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[172], affiliate_url: "https://innovet-pet.com" },
+  { id: 1914, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[172], affiliate_url: "https://innovet-pet.com" },
+
+  // AFRM Coupons
+  { id: 1915, code: "AFRM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from AFRM using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[173], affiliate_url: "https://afrm.com" },
+  { id: 1916, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official AFRM newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[173], affiliate_url: "https://afrm.com" },
+  { id: 1917, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at AFRM.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[173], affiliate_url: "https://afrm.com" },
+  { id: 1918, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[173], affiliate_url: "https://afrm.com" },
+
+  // Naghedi Coupons
+  { id: 1919, code: "NAGHE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Naghedi using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[174], affiliate_url: "https://naghedi.com" },
+  { id: 1920, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Naghedi newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[174], affiliate_url: "https://naghedi.com" },
+  { id: 1921, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Naghedi.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[174], affiliate_url: "https://naghedi.com" },
+  { id: 1922, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[174], affiliate_url: "https://naghedi.com" },
+
+  // im8 health Coupons
+  { id: 1923, code: "IMHEA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from im8 health using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[175], affiliate_url: "https://im8-health.com" },
+  { id: 1924, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official im8 health newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[175], affiliate_url: "https://im8-health.com" },
+  { id: 1925, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at im8 health.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[175], affiliate_url: "https://im8-health.com" },
+  { id: 1926, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[175], affiliate_url: "https://im8-health.com" },
+
+  // Tuxmat Coupons
+  { id: 1927, code: "TUXMA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Tuxmat using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[176], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F" },
+  { id: 1928, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Tuxmat newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[176], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F" },
+  { id: 1929, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Tuxmat.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[176], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F" },
+  { id: 1930, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[176], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=41895&url=https%3A%2F%2Fwww.tuxmat.com%2F" },
+
+  // Performance Golf Coupons
+  { id: 1931, code: "PERFO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Performance Golf using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[177], affiliate_url: "https://performance-golf.com" },
+  { id: 1932, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Performance Golf newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[177], affiliate_url: "https://performance-golf.com" },
+  { id: 1933, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Performance Golf.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[177], affiliate_url: "https://performance-golf.com" },
+  { id: 1934, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[177], affiliate_url: "https://performance-golf.com" },
+
+  // Simkhai Coupons
+  { id: 1935, code: "SIMKH15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Simkhai using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[178], affiliate_url: "https://simkhai.com" },
+  { id: 1936, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Simkhai newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[178], affiliate_url: "https://simkhai.com" },
+  { id: 1937, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Simkhai.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[178], affiliate_url: "https://simkhai.com" },
+  { id: 1938, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[178], affiliate_url: "https://simkhai.com" },
+
+  // Sexy Little Bath US Coupons
+  { id: 1939, code: "SEXYL15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Sexy Little Bath US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[179], affiliate_url: "https://sexy-little-bath-us.com" },
+  { id: 1940, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Sexy Little Bath US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[179], affiliate_url: "https://sexy-little-bath-us.com" },
+  { id: 1941, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Sexy Little Bath US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[179], affiliate_url: "https://sexy-little-bath-us.com" },
+  { id: 1942, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[179], affiliate_url: "https://sexy-little-bath-us.com" },
+
+  // Everblog Coupons
+  { id: 1943, code: "EVERB15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Everblog using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[180], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 1944, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Everblog newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[180], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 1945, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Everblog.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[180], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 1946, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[180], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+
+  // PrintAbout Coupons
+  { id: 1947, code: "PRINT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from PrintAbout using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[181], affiliate_url: "https://printabout.com" },
+  { id: 1948, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official PrintAbout newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[181], affiliate_url: "https://printabout.com" },
+  { id: 1949, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at PrintAbout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[181], affiliate_url: "https://printabout.com" },
+  { id: 1950, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[181], affiliate_url: "https://printabout.com" },
+
+  // Lumary Coupons
+  { id: 1951, code: "LUMAR15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Lumary using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[182], affiliate_url: "https://lumary.com" },
+  { id: 1952, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Lumary newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[182], affiliate_url: "https://lumary.com" },
+  { id: 1953, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Lumary.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[182], affiliate_url: "https://lumary.com" },
+  { id: 1954, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[182], affiliate_url: "https://lumary.com" },
+
+  // Young Electric Bikes Coupons
+  { id: 1955, code: "YOUNG15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Young Electric Bikes using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[183], affiliate_url: "https://young-electric-bikes.com" },
+  { id: 1956, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Young Electric Bikes newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[183], affiliate_url: "https://young-electric-bikes.com" },
+  { id: 1957, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Young Electric Bikes.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[183], affiliate_url: "https://young-electric-bikes.com" },
+  { id: 1958, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[183], affiliate_url: "https://young-electric-bikes.com" },
+
+  // StoreYourBoard Coupons
+  { id: 1959, code: "STORE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from StoreYourBoard using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[184], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=58357&url=https%3A%2F%2Fstoreyourboard.com" },
+  { id: 1960, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official StoreYourBoard newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[184], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=58357&url=https%3A%2F%2Fstoreyourboard.com" },
+  { id: 1961, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at StoreYourBoard.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[184], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=58357&url=https%3A%2F%2Fstoreyourboard.com" },
+  { id: 1962, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[184], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=58357&url=https%3A%2F%2Fstoreyourboard.com" },
+
+  // Urevo Coupons
+  { id: 1963, code: "UREVO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Urevo using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[185], affiliate_url: "https://urevo.com" },
+  { id: 1964, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Urevo newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[185], affiliate_url: "https://urevo.com" },
+  { id: 1965, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Urevo.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[185], affiliate_url: "https://urevo.com" },
+  { id: 1966, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[185], affiliate_url: "https://urevo.com" },
+
+  // SBLA Coupons
+  { id: 1967, code: "SBLA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from SBLA using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[186], affiliate_url: "https://sbla.com" },
+  { id: 1968, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official SBLA newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[186], affiliate_url: "https://sbla.com" },
+  { id: 1969, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at SBLA.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[186], affiliate_url: "https://sbla.com" },
+  { id: 1970, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[186], affiliate_url: "https://sbla.com" },
+
+  // Joe Nimble Coupons
+  { id: 1971, code: "JOENI15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Joe Nimble using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[187], affiliate_url: "https://joe-nimble.com" },
+  { id: 1972, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Joe Nimble newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[187], affiliate_url: "https://joe-nimble.com" },
+  { id: 1973, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Joe Nimble.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[187], affiliate_url: "https://joe-nimble.com" },
+  { id: 1974, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[187], affiliate_url: "https://joe-nimble.com" },
+
+  // OUFER BODY JEWELRY 15%-100-259 (25-may-2026) Coupons
+  { id: 1975, code: "OUFER15", discount: "15% Off", description: "Save 15% off sitewide on all orders from OUFER BODY JEWELRY 15%-100-259 (25-may-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[188], affiliate_url: "https://oufer-body-jewelry-15-100-259-25-may-2026.com" },
+  { id: 1976, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official OUFER BODY JEWELRY 15%-100-259 (25-may-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[188], affiliate_url: "https://oufer-body-jewelry-15-100-259-25-may-2026.com" },
+  { id: 1977, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at OUFER BODY JEWELRY 15%-100-259 (25-may-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[188], affiliate_url: "https://oufer-body-jewelry-15-100-259-25-may-2026.com" },
+  { id: 1978, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[188], affiliate_url: "https://oufer-body-jewelry-15-100-259-25-may-2026.com" },
+
+  // Elevated Craft Coupons
+  { id: 1979, code: "ELEVA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Elevated Craft using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[189], affiliate_url: "https://elevated-craft.com" },
+  { id: 1980, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Elevated Craft newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[189], affiliate_url: "https://elevated-craft.com" },
+  { id: 1981, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Elevated Craft.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[189], affiliate_url: "https://elevated-craft.com" },
+  { id: 1982, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[189], affiliate_url: "https://elevated-craft.com" },
+
+  // Huega House Coupons
+  { id: 1983, code: "HUEGA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Huega House using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[190], affiliate_url: "https://huega-house.com" },
+  { id: 1984, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Huega House newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[190], affiliate_url: "https://huega-house.com" },
+  { id: 1985, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Huega House.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[190], affiliate_url: "https://huega-house.com" },
+  { id: 1986, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[190], affiliate_url: "https://huega-house.com" },
+
+  // Camp Chef Coupons
+  { id: 1987, code: "CAMPC15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Camp Chef using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[191], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9598&url=https%3A%2F%2Fwww.campchef.com" },
+  { id: 1988, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Camp Chef newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[191], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9598&url=https%3A%2F%2Fwww.campchef.com" },
+  { id: 1989, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Camp Chef.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[191], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9598&url=https%3A%2F%2Fwww.campchef.com" },
+  { id: 1990, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[191], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9598&url=https%3A%2F%2Fwww.campchef.com" },
+
+  // COLAMY Coupons
+  { id: 1991, code: "COLAM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from COLAMY using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[192], affiliate_url: "https://colamy.com" },
+  { id: 1992, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official COLAMY newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[192], affiliate_url: "https://colamy.com" },
+  { id: 1993, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at COLAMY.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[192], affiliate_url: "https://colamy.com" },
+  { id: 1994, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[192], affiliate_url: "https://colamy.com" },
+
+  // Buy Fencing Direct Coupons
+  { id: 1995, code: "BUYFE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Buy Fencing Direct using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[193], affiliate_url: "https://buy-fencing-direct.com" },
+  { id: 1996, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Buy Fencing Direct newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[193], affiliate_url: "https://buy-fencing-direct.com" },
+  { id: 1997, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Buy Fencing Direct.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[193], affiliate_url: "https://buy-fencing-direct.com" },
+  { id: 1998, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[193], affiliate_url: "https://buy-fencing-direct.com" },
+
+  // Back to the Office Coupons
+  { id: 1999, code: "BACKT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Back to the Office using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[194], affiliate_url: "https://back-to-the-office.com" },
+  { id: 2000, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Back to the Office newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[194], affiliate_url: "https://back-to-the-office.com" },
+  { id: 2001, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Back to the Office.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[194], affiliate_url: "https://back-to-the-office.com" },
+  { id: 2002, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[194], affiliate_url: "https://back-to-the-office.com" },
+
+  // Thermos Coupons
+  { id: 2003, code: "THERM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Thermos using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[195], affiliate_url: "https://thermos.com" },
+  { id: 2004, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Thermos newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[195], affiliate_url: "https://thermos.com" },
+  { id: 2005, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Thermos.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[195], affiliate_url: "https://thermos.com" },
+  { id: 2006, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[195], affiliate_url: "https://thermos.com" },
+
+  // cosori Coupons
+  { id: 2007, code: "COSOR15", discount: "15% Off", description: "Save 15% off sitewide on all orders from cosori using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[196], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=18131&url=https%3A%2F%2Fcosori.com%2F" },
+  { id: 2008, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official cosori newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[196], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=18131&url=https%3A%2F%2Fcosori.com%2F" },
+  { id: 2009, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at cosori.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[196], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=18131&url=https%3A%2F%2Fcosori.com%2F" },
+  { id: 2010, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[196], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=18131&url=https%3A%2F%2Fcosori.com%2F" },
+
+  // Krewe Coupons
+  { id: 2011, code: "KREWE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Krewe using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[197], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73952&url=https%3A%2F%2Fwww.krewe.com%2F" },
+  { id: 2012, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Krewe newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[197], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73952&url=https%3A%2F%2Fwww.krewe.com%2F" },
+  { id: 2013, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Krewe.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[197], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73952&url=https%3A%2F%2Fwww.krewe.com%2F" },
+  { id: 2014, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[197], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=73952&url=https%3A%2F%2Fwww.krewe.com%2F" },
+
+  // Ridstar Coupons
+  { id: 2015, code: "RIDST15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Ridstar using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[198], affiliate_url: "https://ridstar.com" },
+  { id: 2016, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Ridstar newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[198], affiliate_url: "https://ridstar.com" },
+  { id: 2017, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Ridstar.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[198], affiliate_url: "https://ridstar.com" },
+  { id: 2018, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[198], affiliate_url: "https://ridstar.com" },
+
+  // Bruno Marc 8%-100-350 (29-july-2026) Coupons
+  { id: 2019, code: "BRUNO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Bruno Marc 8%-100-350 (29-july-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[199], affiliate_url: "https://bruno-marc-8-100-350-29-july-2026.com" },
+  { id: 2020, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Bruno Marc 8%-100-350 (29-july-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[199], affiliate_url: "https://bruno-marc-8-100-350-29-july-2026.com" },
+  { id: 2021, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Bruno Marc 8%-100-350 (29-july-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[199], affiliate_url: "https://bruno-marc-8-100-350-29-july-2026.com" },
+  { id: 2022, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[199], affiliate_url: "https://bruno-marc-8-100-350-29-july-2026.com" },
+
+  // Sunshine Tienda Coupons
+  { id: 2023, code: "SUNSH15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Sunshine Tienda using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[200], affiliate_url: "https://sunshine-tienda.com" },
+  { id: 2024, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Sunshine Tienda newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[200], affiliate_url: "https://sunshine-tienda.com" },
+  { id: 2025, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Sunshine Tienda.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[200], affiliate_url: "https://sunshine-tienda.com" },
+  { id: 2026, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[200], affiliate_url: "https://sunshine-tienda.com" },
+
+  // Red Gorilla Coupons
+  { id: 2027, code: "REDGO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Red Gorilla using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[201], affiliate_url: "https://red-gorilla.com" },
+  { id: 2028, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Red Gorilla newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[201], affiliate_url: "https://red-gorilla.com" },
+  { id: 2029, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Red Gorilla.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[201], affiliate_url: "https://red-gorilla.com" },
+  { id: 2030, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[201], affiliate_url: "https://red-gorilla.com" },
+
+  // Displays Outlet US Coupons
+  { id: 2031, code: "DISPL15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Displays Outlet US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[202], affiliate_url: "https://displays-outlet-us.com" },
+  { id: 2032, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Displays Outlet US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[202], affiliate_url: "https://displays-outlet-us.com" },
+  { id: 2033, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Displays Outlet US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[202], affiliate_url: "https://displays-outlet-us.com" },
+  { id: 2034, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[202], affiliate_url: "https://displays-outlet-us.com" },
+
+  // Yvette Sports Coupons
+  { id: 2035, code: "YVETT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Yvette Sports using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[203], affiliate_url: "https://yvette-sports.com" },
+  { id: 2036, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Yvette Sports newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[203], affiliate_url: "https://yvette-sports.com" },
+  { id: 2037, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Yvette Sports.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[203], affiliate_url: "https://yvette-sports.com" },
+  { id: 2038, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[203], affiliate_url: "https://yvette-sports.com" },
+
+  // Zeagoo Coupons
+  { id: 2039, code: "ZEAGO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Zeagoo using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[204], affiliate_url: "https://zeagoo.com" },
+  { id: 2040, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Zeagoo newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[204], affiliate_url: "https://zeagoo.com" },
+  { id: 2041, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Zeagoo.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[204], affiliate_url: "https://zeagoo.com" },
+  { id: 2042, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[204], affiliate_url: "https://zeagoo.com" },
+
+  // BuyBackWorld Coupons
+  { id: 2043, code: "BUYBA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from BuyBackWorld using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[205], affiliate_url: "https://buybackworld.com" },
+  { id: 2044, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official BuyBackWorld newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[205], affiliate_url: "https://buybackworld.com" },
+  { id: 2045, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at BuyBackWorld.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[205], affiliate_url: "https://buybackworld.com" },
+  { id: 2046, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[205], affiliate_url: "https://buybackworld.com" },
+
+  // Flextail 5%-50-550 (23-july-2026) Coupons
+  { id: 2047, code: "FLEXT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Flextail 5%-50-550 (23-july-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[206], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=12732&url=https%3A%2F%2Fwww.flextail.com%2F" },
+  { id: 2048, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Flextail 5%-50-550 (23-july-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[206], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=12732&url=https%3A%2F%2Fwww.flextail.com%2F" },
+  { id: 2049, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Flextail 5%-50-550 (23-july-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[206], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=12732&url=https%3A%2F%2Fwww.flextail.com%2F" },
+  { id: 2050, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[206], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=12732&url=https%3A%2F%2Fwww.flextail.com%2F" },
+
+  // pelsbarn Coupons
+  { id: 2051, code: "PELSB15", discount: "15% Off", description: "Save 15% off sitewide on all orders from pelsbarn using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[207], affiliate_url: "https://pelsbarn.com" },
+  { id: 2052, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official pelsbarn newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[207], affiliate_url: "https://pelsbarn.com" },
+  { id: 2053, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at pelsbarn.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[207], affiliate_url: "https://pelsbarn.com" },
+  { id: 2054, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[207], affiliate_url: "https://pelsbarn.com" },
+
+  // Povison Coupons
+  { id: 2055, code: "POVIS15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Povison using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[208], affiliate_url: "https://povison.com" },
+  { id: 2056, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Povison newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[208], affiliate_url: "https://povison.com" },
+  { id: 2057, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Povison.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[208], affiliate_url: "https://povison.com" },
+  { id: 2058, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[208], affiliate_url: "https://povison.com" },
+
+  // Eternity Modern Coupons
+  { id: 2059, code: "ETERN15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Eternity Modern using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[209], affiliate_url: "https://eternity-modern.com" },
+  { id: 2060, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Eternity Modern newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[209], affiliate_url: "https://eternity-modern.com" },
+  { id: 2061, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Eternity Modern.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[209], affiliate_url: "https://eternity-modern.com" },
+  { id: 2062, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[209], affiliate_url: "https://eternity-modern.com" },
+
+  // aviya mattress 15%-600-300 (23-july-2026) Coupons
+  { id: 2063, code: "AVIYA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from aviya mattress 15%-600-300 (23-july-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[210], affiliate_url: "https://aviya-mattress-15-600-300-23-july-2026.com" },
+  { id: 2064, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official aviya mattress 15%-600-300 (23-july-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[210], affiliate_url: "https://aviya-mattress-15-600-300-23-july-2026.com" },
+  { id: 2065, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at aviya mattress 15%-600-300 (23-july-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[210], affiliate_url: "https://aviya-mattress-15-600-300-23-july-2026.com" },
+  { id: 2066, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[210], affiliate_url: "https://aviya-mattress-15-600-300-23-july-2026.com" },
+
+  // Arq8 Coupons
+  { id: 2067, code: "ARQ15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Arq8 using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[211], affiliate_url: "https://arq8.com" },
+  { id: 2068, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Arq8 newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[211], affiliate_url: "https://arq8.com" },
+  { id: 2069, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Arq8.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[211], affiliate_url: "https://arq8.com" },
+  { id: 2070, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[211], affiliate_url: "https://arq8.com" },
+
+  // BABEYOND Coupons
+  { id: 2071, code: "BABEY15", discount: "15% Off", description: "Save 15% off sitewide on all orders from BABEYOND using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[212], affiliate_url: "https://babeyond.com" },
+  { id: 2072, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official BABEYOND newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[212], affiliate_url: "https://babeyond.com" },
+  { id: 2073, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at BABEYOND.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[212], affiliate_url: "https://babeyond.com" },
+  { id: 2074, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[212], affiliate_url: "https://babeyond.com" },
+
+  // Suunto Coupons
+  { id: 2075, code: "SUUNT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Suunto using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[213], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=68582&url=https%3A%2F%2Fwww.suunto.com%2F" },
+  { id: 2076, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Suunto newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[213], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=68582&url=https%3A%2F%2Fwww.suunto.com%2F" },
+  { id: 2077, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Suunto.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[213], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=68582&url=https%3A%2F%2Fwww.suunto.com%2F" },
+  { id: 2078, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[213], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=68582&url=https%3A%2F%2Fwww.suunto.com%2F" },
+
+  // RMA Defense Coupons
+  { id: 2079, code: "RMADE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from RMA Defense using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[214], affiliate_url: "https://rma-defense.com" },
+  { id: 2080, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official RMA Defense newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[214], affiliate_url: "https://rma-defense.com" },
+  { id: 2081, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at RMA Defense.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[214], affiliate_url: "https://rma-defense.com" },
+  { id: 2082, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[214], affiliate_url: "https://rma-defense.com" },
+
+  // Eonon Coupons
+  { id: 2083, code: "EONON15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Eonon using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[215], affiliate_url: "https://eonon.com" },
+  { id: 2084, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Eonon newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[215], affiliate_url: "https://eonon.com" },
+  { id: 2085, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Eonon.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[215], affiliate_url: "https://eonon.com" },
+  { id: 2086, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[215], affiliate_url: "https://eonon.com" },
+
+  // Torro Coupons
+  { id: 2087, code: "TORRO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Torro using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[216], affiliate_url: "https://torro.com" },
+  { id: 2088, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Torro newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[216], affiliate_url: "https://torro.com" },
+  { id: 2089, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Torro.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[216], affiliate_url: "https://torro.com" },
+  { id: 2090, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[216], affiliate_url: "https://torro.com" },
+
+  // Auctmarts Coupons
+  { id: 2091, code: "AUCTM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Auctmarts using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[217], affiliate_url: "https://auctmarts.com" },
+  { id: 2092, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Auctmarts newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[217], affiliate_url: "https://auctmarts.com" },
+  { id: 2093, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Auctmarts.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[217], affiliate_url: "https://auctmarts.com" },
+  { id: 2094, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[217], affiliate_url: "https://auctmarts.com" },
+
+  // MISSHA US Coupons
+  { id: 2095, code: "MISSH15", discount: "15% Off", description: "Save 15% off sitewide on all orders from MISSHA US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[218], affiliate_url: "https://missha-us.com" },
+  { id: 2096, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official MISSHA US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[218], affiliate_url: "https://missha-us.com" },
+  { id: 2097, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at MISSHA US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[218], affiliate_url: "https://missha-us.com" },
+  { id: 2098, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[218], affiliate_url: "https://missha-us.com" },
+
+  // Himiway Bike Coupons
+  { id: 2099, code: "HIMIW15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Himiway Bike using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[219], affiliate_url: "https://himiway-bike.com" },
+  { id: 2100, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Himiway Bike newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[219], affiliate_url: "https://himiway-bike.com" },
+  { id: 2101, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Himiway Bike.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[219], affiliate_url: "https://himiway-bike.com" },
+  { id: 2102, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[219], affiliate_url: "https://himiway-bike.com" },
+
+  // Mirlux FR Coupons
+  { id: 2103, code: "MIRLU15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Mirlux FR using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[220], affiliate_url: "https://mirlux-fr.com" },
+  { id: 2104, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Mirlux FR newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[220], affiliate_url: "https://mirlux-fr.com" },
+  { id: 2105, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Mirlux FR.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[220], affiliate_url: "https://mirlux-fr.com" },
+  { id: 2106, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[220], affiliate_url: "https://mirlux-fr.com" },
+
+  // Guta TPMS Coupons
+  { id: 2107, code: "GUTAT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Guta TPMS using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[221], affiliate_url: "https://guta-tpms.com" },
+  { id: 2108, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Guta TPMS newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[221], affiliate_url: "https://guta-tpms.com" },
+  { id: 2109, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Guta TPMS.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[221], affiliate_url: "https://guta-tpms.com" },
+  { id: 2110, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[221], affiliate_url: "https://guta-tpms.com" },
+
+  // Alashan Cashmere Coupons
+  { id: 2111, code: "ALASH15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Alashan Cashmere using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[222], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=912&url=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Findex.html" },
+  { id: 2112, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Alashan Cashmere newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[222], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=912&url=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Findex.html" },
+  { id: 2113, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Alashan Cashmere.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[222], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=912&url=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Findex.html" },
+  { id: 2114, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[222], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=912&url=https%3A%2F%2Fwww2.hm.com%2Fen_us%2Findex.html" },
+
+  // Nushape Coupons
+  { id: 2115, code: "NUSHA15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Nushape using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[223], affiliate_url: "https://nushape.com" },
+  { id: 2116, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Nushape newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[223], affiliate_url: "https://nushape.com" },
+  { id: 2117, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Nushape.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[223], affiliate_url: "https://nushape.com" },
+  { id: 2118, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[223], affiliate_url: "https://nushape.com" },
+
+  // Adept Coupons
+  { id: 2119, code: "ADEPT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Adept using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[224], affiliate_url: "https://adept.com" },
+  { id: 2120, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Adept newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[224], affiliate_url: "https://adept.com" },
+  { id: 2121, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Adept.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[224], affiliate_url: "https://adept.com" },
+  { id: 2122, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[224], affiliate_url: "https://adept.com" },
+
+  // underarmour Coupons
+  { id: 2123, code: "UNDER15", discount: "15% Off", description: "Save 15% off sitewide on all orders from underarmour using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[225], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=40876&url=https%3A%2F%2Fwww.underarmour.com" },
+  { id: 2124, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official underarmour newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[225], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=40876&url=https%3A%2F%2Fwww.underarmour.com" },
+  { id: 2125, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at underarmour.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[225], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=40876&url=https%3A%2F%2Fwww.underarmour.com" },
+  { id: 2126, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[225], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=40876&url=https%3A%2F%2Fwww.underarmour.com" },
+
+  // Eydology Coupons
+  { id: 2127, code: "EYDOL15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Eydology using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[226], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 2128, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Eydology newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[226], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 2129, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Eydology.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[226], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+  { id: 2130, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[226], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74167&url=https%3A%2F%2Fog.com%2F" },
+
+  // Cambridge Satchel Coupons
+  { id: 2131, code: "CAMBR15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Cambridge Satchel using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[227], affiliate_url: "https://cambridge-satchel.com" },
+  { id: 2132, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Cambridge Satchel newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[227], affiliate_url: "https://cambridge-satchel.com" },
+  { id: 2133, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Cambridge Satchel.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[227], affiliate_url: "https://cambridge-satchel.com" },
+  { id: 2134, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[227], affiliate_url: "https://cambridge-satchel.com" },
+
+  // Zonli Home Coupons
+  { id: 2135, code: "ZONLI15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Zonli Home using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[228], affiliate_url: "https://zonli-home.com" },
+  { id: 2136, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Zonli Home newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[228], affiliate_url: "https://zonli-home.com" },
+  { id: 2137, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Zonli Home.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[228], affiliate_url: "https://zonli-home.com" },
+  { id: 2138, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[228], affiliate_url: "https://zonli-home.com" },
+
+  // 3 Suisses Coupons
+  { id: 2139, code: "SUISS15", discount: "15% Off", description: "Save 15% off sitewide on all orders from 3 Suisses using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[229], affiliate_url: "https://3-suisses.com" },
+  { id: 2140, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official 3 Suisses newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[229], affiliate_url: "https://3-suisses.com" },
+  { id: 2141, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at 3 Suisses.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[229], affiliate_url: "https://3-suisses.com" },
+  { id: 2142, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[229], affiliate_url: "https://3-suisses.com" },
+
+  // Dowinx Coupons
+  { id: 2143, code: "DOWIN15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Dowinx using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[230], affiliate_url: "https://dowinx.com" },
+  { id: 2144, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Dowinx newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[230], affiliate_url: "https://dowinx.com" },
+  { id: 2145, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Dowinx.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[230], affiliate_url: "https://dowinx.com" },
+  { id: 2146, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[230], affiliate_url: "https://dowinx.com" },
+
+  // Garden Benches Coupons
+  { id: 2147, code: "GARDE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Garden Benches using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[231], affiliate_url: "https://garden-benches.com" },
+  { id: 2148, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Garden Benches newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[231], affiliate_url: "https://garden-benches.com" },
+  { id: 2149, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Garden Benches.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[231], affiliate_url: "https://garden-benches.com" },
+  { id: 2150, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[231], affiliate_url: "https://garden-benches.com" },
+
+  // Knack Bags  6%-200-450 (27-july-2026) Coupons
+  { id: 2151, code: "KNACK15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Knack Bags  6%-200-450 (27-july-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[232], affiliate_url: "https://knack-bags-6-200-450-27-july-2026.com" },
+  { id: 2152, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Knack Bags  6%-200-450 (27-july-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[232], affiliate_url: "https://knack-bags-6-200-450-27-july-2026.com" },
+  { id: 2153, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Knack Bags  6%-200-450 (27-july-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[232], affiliate_url: "https://knack-bags-6-200-450-27-july-2026.com" },
+  { id: 2154, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[232], affiliate_url: "https://knack-bags-6-200-450-27-july-2026.com" },
+
+  // Popilush 2%-150-275 (27-july-2026) Coupons
+  { id: 2155, code: "POPIL15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Popilush 2%-150-275 (27-july-2026) using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[233], affiliate_url: "https://popilush-2-150-275-27-july-2026.com" },
+  { id: 2156, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Popilush 2%-150-275 (27-july-2026) newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[233], affiliate_url: "https://popilush-2-150-275-27-july-2026.com" },
+  { id: 2157, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Popilush 2%-150-275 (27-july-2026).", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[233], affiliate_url: "https://popilush-2-150-275-27-july-2026.com" },
+  { id: 2158, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[233], affiliate_url: "https://popilush-2-150-275-27-july-2026.com" },
+
+  // SELDOM SEEN STYLES Coupons
+  { id: 2159, code: "SELDO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from SELDOM SEEN STYLES using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[234], affiliate_url: "https://seldom-seen-styles.com" },
+  { id: 2160, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official SELDOM SEEN STYLES newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[234], affiliate_url: "https://seldom-seen-styles.com" },
+  { id: 2161, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at SELDOM SEEN STYLES.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[234], affiliate_url: "https://seldom-seen-styles.com" },
+  { id: 2162, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[234], affiliate_url: "https://seldom-seen-styles.com" },
+
+  // Kix'ies Coupons
+  { id: 2163, code: "KIXIE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Kix'ies using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[235], affiliate_url: "https://kixies.com" },
+  { id: 2164, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Kix'ies newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[235], affiliate_url: "https://kixies.com" },
+  { id: 2165, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Kix'ies.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[235], affiliate_url: "https://kixies.com" },
+  { id: 2166, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[235], affiliate_url: "https://kixies.com" },
+
+  // Le Permis Libre Coupons
+  { id: 2167, code: "LEPER15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Le Permis Libre using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[236], affiliate_url: "https://le-permis-libre.com" },
+  { id: 2168, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Le Permis Libre newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[236], affiliate_url: "https://le-permis-libre.com" },
+  { id: 2169, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Le Permis Libre.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[236], affiliate_url: "https://le-permis-libre.com" },
+  { id: 2170, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[236], affiliate_url: "https://le-permis-libre.com" },
+
+  // Health & Fitness Coupons
+  { id: 2171, code: "HEALT15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Health & Fitness using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[237], affiliate_url: "https://health-fitness.com" },
+  { id: 2172, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Health & Fitness newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[237], affiliate_url: "https://health-fitness.com" },
+  { id: 2173, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Health & Fitness.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[237], affiliate_url: "https://health-fitness.com" },
+  { id: 2174, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[237], affiliate_url: "https://health-fitness.com" },
+
+  // Tilswall Coupons
+  { id: 2175, code: "TILSW15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Tilswall using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[238], affiliate_url: "https://tilswall.com" },
+  { id: 2176, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Tilswall newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[238], affiliate_url: "https://tilswall.com" },
+  { id: 2177, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Tilswall.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[238], affiliate_url: "https://tilswall.com" },
+  { id: 2178, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[238], affiliate_url: "https://tilswall.com" },
+
+  // Levoit Coupons
+  { id: 2179, code: "LEVOI15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Levoit using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[239], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=60230&url=https%3A%2F%2Flevoit.com%2F" },
+  { id: 2180, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Levoit newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[239], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=60230&url=https%3A%2F%2Flevoit.com%2F" },
+  { id: 2181, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Levoit.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[239], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=60230&url=https%3A%2F%2Flevoit.com%2F" },
+  { id: 2182, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[239], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=60230&url=https%3A%2F%2Flevoit.com%2F" },
+
+  // Caydo Coupons
+  { id: 2183, code: "CAYDO15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Caydo using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[240], affiliate_url: "https://caydo.com" },
+  { id: 2184, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Caydo newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[240], affiliate_url: "https://caydo.com" },
+  { id: 2185, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Caydo.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[240], affiliate_url: "https://caydo.com" },
+  { id: 2186, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[240], affiliate_url: "https://caydo.com" },
+
+  // Tribesigns Coupons
+  { id: 2187, code: "TRIBE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Tribesigns using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[241], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74172&url=https%3A%2F%2Fwearetribe.co%2F" },
+  { id: 2188, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Tribesigns newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[241], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74172&url=https%3A%2F%2Fwearetribe.co%2F" },
+  { id: 2189, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Tribesigns.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[241], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74172&url=https%3A%2F%2Fwearetribe.co%2F" },
+  { id: 2190, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[241], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74172&url=https%3A%2F%2Fwearetribe.co%2F" },
+
+  // Speediance Coupons
+  { id: 2191, code: "SPEED15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Speediance using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[242], affiliate_url: "https://speediance.com" },
+  { id: 2192, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Speediance newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[242], affiliate_url: "https://speediance.com" },
+  { id: 2193, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Speediance.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[242], affiliate_url: "https://speediance.com" },
+  { id: 2194, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[242], affiliate_url: "https://speediance.com" },
+
+  // Ulanzi Coupons
+  { id: 2195, code: "ULANZ15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Ulanzi using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[243], affiliate_url: "https://ulanzi.com" },
+  { id: 2196, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Ulanzi newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[243], affiliate_url: "https://ulanzi.com" },
+  { id: 2197, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Ulanzi.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[243], affiliate_url: "https://ulanzi.com" },
+  { id: 2198, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[243], affiliate_url: "https://ulanzi.com" },
+
+  // Antler Coupons
+  { id: 2199, code: "ANTLE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Antler using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[244], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=23364&url=https%3A%2F%2Fwww.antler.co.uk%2F" },
+  { id: 2200, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Antler newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[244], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=23364&url=https%3A%2F%2Fwww.antler.co.uk%2F" },
+  { id: 2201, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Antler.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[244], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=23364&url=https%3A%2F%2Fwww.antler.co.uk%2F" },
+  { id: 2202, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[244], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=23364&url=https%3A%2F%2Fwww.antler.co.uk%2F" },
+
+  // Okun Coupons
+  { id: 2203, code: "OKUN15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Okun using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[245], affiliate_url: "https://okun.com" },
+  { id: 2204, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Okun newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[245], affiliate_url: "https://okun.com" },
+  { id: 2205, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Okun.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[245], affiliate_url: "https://okun.com" },
+  { id: 2206, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[245], affiliate_url: "https://okun.com" },
+
+  // So soft Beds Coupons
+  { id: 2207, code: "SOSOF15", discount: "15% Off", description: "Save 15% off sitewide on all orders from So soft Beds using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[246], affiliate_url: "https://so-soft-beds.com" },
+  { id: 2208, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official So soft Beds newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[246], affiliate_url: "https://so-soft-beds.com" },
+  { id: 2209, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at So soft Beds.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[246], affiliate_url: "https://so-soft-beds.com" },
+  { id: 2210, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[246], affiliate_url: "https://so-soft-beds.com" },
+
+  // Grab Bags US Coupons
+  { id: 2211, code: "GRABB15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Grab Bags US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[247], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72260&url=https%3A%2F%2Fgrabbaggear.com%2F" },
+  { id: 2212, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Grab Bags US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[247], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72260&url=https%3A%2F%2Fgrabbaggear.com%2F" },
+  { id: 2213, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Grab Bags US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[247], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72260&url=https%3A%2F%2Fgrabbaggear.com%2F" },
+  { id: 2214, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[247], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72260&url=https%3A%2F%2Fgrabbaggear.com%2F" },
+
+  // Keycense Coupons
+  { id: 2215, code: "KEYCE15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Keycense using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[248], affiliate_url: "https://keycense.com" },
+  { id: 2216, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Keycense newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[248], affiliate_url: "https://keycense.com" },
+  { id: 2217, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Keycense.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[248], affiliate_url: "https://keycense.com" },
+  { id: 2218, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[248], affiliate_url: "https://keycense.com" },
+
+  // tcksports US Coupons
+  { id: 2219, code: "TCKSP15", discount: "15% Off", description: "Save 15% off sitewide on all orders from tcksports US using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[249], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72261&url=https%3A%2F%2Ftcksports.com%2F" },
+  { id: 2220, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official tcksports US newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[249], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72261&url=https%3A%2F%2Ftcksports.com%2F" },
+  { id: 2221, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at tcksports US.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[249], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72261&url=https%3A%2F%2Ftcksports.com%2F" },
+  { id: 2222, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[249], affiliate_url: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=72261&url=https%3A%2F%2Ftcksports.com%2F" },
+
+  // Power Smart Coupons
+  { id: 2223, code: "POWER15", discount: "15% Off", description: "Save 15% off sitewide on all orders from Power Smart using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[250], affiliate_url: "https://power-smart.com" },
+  { id: 2224, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Power Smart newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[250], affiliate_url: "https://power-smart.com" },
+  { id: 2225, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Power Smart.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[250], affiliate_url: "https://power-smart.com" },
+  { id: 2226, code: "DEAL", discount: "Up to 30% Off Sale", description: "Get up to 30% discount on seasonal clearance items in the official store.", expiry_date: "2026-10-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[250], affiliate_url: "https://power-smart.com" }
 ];
