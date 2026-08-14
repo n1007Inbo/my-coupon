@@ -150,51 +150,27 @@ For immediate, zero-budget conversion testing:
 
 ---
 
-## 7. Vercel Deployment (IMPORTANT — READ THIS FIRST)
+## 7. Vercel Deployment & Domain Mapping (IMPORTANT — READ THIS FIRST)
 
-⚠️ **GitHub repo is PRIVATE.** Vercel Hobby (free) plan does NOT auto-deploy private repos via Git integration — it asks for a paid Pro subscription. **DO NOT try to fix this by making the repo public or paying.**
+⚠️ **GitHub repo is PUBLIC.** The repository has been made public to enable free automatic Git integration builds on Vercel without requiring a Vercel Pro subscription.
 
-### ✅ Free Deployment Method: Vercel CLI Direct Deploy
+### ✅ Live Production Setup: Automatic Git Deployments
 
-Instead of relying on Git push → Vercel auto-deploy, use the **Vercel CLI** to upload and deploy files directly from the local machine. This bypasses the private repo restriction entirely.
+The main domain **https://www.promoregistry.com/** is served by the Vercel project **`promoregistry-gateway`**.
 
-**Step-by-step for agents:**
+*   **Repository Connection:** The `promoregistry-gateway` project is connected directly to the `n1007Inbo/my-coupon` GitHub repository.
+*   **Project Settings:** The `rootDirectory` of the project has been updated via Vercel API to **`frontend`** (to correctly compile the Next.js app in the subfolder).
+*   **Automatic Build Pipeline:** Any push to the `main` branch of the GitHub repository will automatically trigger a production build on Vercel and deploy changes live to `promoregistry.com`.
 
-1.  **Check if Vercel CLI is logged in:**
-    ```bash
-    npx.cmd vercel whoami
-    ```
-    If not logged in, run `npx.cmd vercel whoami` — it will print a device flow URL like:
-    `Visit https://vercel.com/oauth/device?user_code=XXXX-XXXX`
-    Ask the user to visit that URL in their browser and click "Authorize".
-
-2.  **Ensure the project is linked** (only needed once per clone):
-    ```bash
-    npx.cmd vercel link --yes --project my-coupon
-    ```
-    Run this from the **project root** directory: `C:\Users\Supreme_Traders\.gemini\antigravity\scratch\all_repos\my-coupon`
-    (NOT from `frontend/` — the Vercel project setting has `frontend` as root directory, so it auto-appends it.)
-
-3.  **Deploy to production:**
-    ```bash
-    npx.cmd vercel deploy --prod --yes
-    ```
-    Run from the **project root** directory. This uploads, builds, and deploys to production in ~2-3 minutes.
-
-4.  **After deploy, push to GitHub for version control:**
-    ```bash
-    git add -A && git commit -m "feat: description" && git push origin main
-    ```
-
-### 🔑 Credentials
+### 🔑 Credentials & Configuration
 *   **Vercel Account Email:** `razaraghib549@gmail.com`
 *   **Vercel Username:** `razaraghib549-1754`
 *   **Vercel Team/Scope:** `hazique-s-projects`
-*   **Vercel Project:** `my-coupon` (root directory set to `frontend`)
-*   **GitHub Repo:** `https://github.com/n1007Inbo/my-coupon.git` (PRIVATE)
-*   **Git Author Config:** `Methew Dippy <methewdippy@gmail.com>`
+*   **Vercel Project:** `promoregistry-gateway` (root directory set to `frontend`)
+*   **GitHub Repo:** `https://github.com/n1007Inbo/my-coupon.git` (PUBLIC)
 
-### ⚠️ Rules
-*   **DO NOT** make the repo public to fix deployment — use CLI deploy.
-*   **DO NOT** delete existing pages, stores, or data.
-*   **DO NOT** generate AI images for logos — use text-based fallback initials or download from competitor sites.
+### ⚠️ Rules for Future Agents
+*   **DO NOT** manually deploy from local CLI unless testing. Pushing to GitHub is the official and fastest deployment pipeline.
+*   **DO NOT** change the `rootDirectory` setting. It must remain `frontend`.
+*   **ALWAYS verify local builds compile** (`npm run build` in the `frontend` folder) before pushing.
+
