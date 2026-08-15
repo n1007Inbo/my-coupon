@@ -256,7 +256,15 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
           {store.logo ? (
             <div className={storeStyles.storeLargeLogoWrapper}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={store.logo} alt={store.name} className={storeStyles.storeLargeLogo} />
+              <img 
+                src={store.logo} 
+                alt={store.name} 
+                className={storeStyles.storeLargeLogo} 
+                width={100}
+                height={100}
+                decoding="async"
+                fetchPriority="high"
+              />
             </div>
           ) : (
             <div className={storeStyles.storeLargeLogoFallback}>

@@ -4,13 +4,39 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  compress: true,
+  poweredByHeader: false,
   images: {
+    formats: ["image/avif", "image/webp"],
+    minimumCacheTTL: 86400,
     remotePatterns: [
       {
         protocol: "https",
         hostname: "**",
       },
     ],
+  },
+  async headers() {
+    return [
+      {
+        source: "/logos/:path*",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+      {
+        source: "/favicon.png",
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000, immutable",
+          },
+        ],
+      },
+    ];
   },
   async redirects() {
     return [
@@ -178,8 +204,7 @@ const nextConfig: NextConfig = {
         source: "/go/swatch",
         destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=74223&url=https%3A%2F%2Fwww.swatch.com%2Fen-us",
         permanent: true,
-      }
-    ,
+      },
       {
         source: "/go/harrys",
         destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=20715&url=http%3A%2F%2Fwww.harrys.com%2F",
@@ -190,7 +215,7 @@ const nextConfig: NextConfig = {
         destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9&url=https%3A%2F%2Fwww.shipt.com%2F",
         permanent: true,
       }
-      ];
+    ];
   },
 };
 

@@ -394,7 +394,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
         <div className={styles.carouselSlider}>
           <div className={styles.carouselTrack}>
             {/* First Set of Brands */}
-            {initialStores.map((store) => (
+            {initialStores.slice(0, 20).map((store) => (
               <a 
                 key={`slide1-${store.id || store.slug}`} 
                 href={`/store/${store.slug}`} 
@@ -402,7 +402,15 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                 title={`Visit ${store.name} Store`}
               >
                 {store.logo ? (
-                  <img src={store.logo} alt={store.name} className={styles.carouselLogo} />
+                  <img 
+                    src={store.logo} 
+                    alt={store.name} 
+                    className={styles.carouselLogo} 
+                    loading="lazy" 
+                    decoding="async"
+                    width={36}
+                    height={36}
+                  />
                 ) : (
                   <div className={styles.carouselFallback}>{store.name.charAt(0).toUpperCase()}</div>
                 )}
@@ -410,7 +418,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
               </a>
             ))}
             {/* Second Duplicate Set for Seamless Loop */}
-            {initialStores.map((store) => (
+            {initialStores.slice(0, 20).map((store) => (
               <a 
                 key={`slide2-${store.id || store.slug}`} 
                 href={`/store/${store.slug}`} 
@@ -418,7 +426,15 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                 title={`Visit ${store.name} Store`}
               >
                 {store.logo ? (
-                  <img src={store.logo} alt={store.name} className={styles.carouselLogo} />
+                  <img 
+                    src={store.logo} 
+                    alt={store.name} 
+                    className={styles.carouselLogo} 
+                    loading="lazy" 
+                    decoding="async"
+                    width={36}
+                    height={36}
+                  />
                 ) : (
                   <div className={styles.carouselFallback}>{store.name.charAt(0).toUpperCase()}</div>
                 )}
@@ -449,7 +465,15 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                   {store.logo ? (
                     <div className={styles.storeCardLogoWrapper} style={{ width: "48px", height: "48px", marginBottom: "8px" }}>
                       {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img src={store.logo} alt={store.name} className={styles.storeCardLogo} />
+                      <img 
+                        src={store.logo} 
+                        alt={store.name} 
+                        className={styles.storeCardLogo} 
+                        loading="lazy" 
+                        decoding="async" 
+                        width={48} 
+                        height={48} 
+                      />
                     </div>
                   ) : (
                     <div className={styles.storeCardFallback} style={{ width: "48px", height: "48px", fontSize: "1.2rem", marginBottom: "8px" }}>
@@ -478,7 +502,15 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                 {store.logo ? (
                   <div className={styles.storeCardLogoWrapper}>
                     {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={store.logo} alt={store.name} className={styles.storeCardLogo} />
+                    <img 
+                      src={store.logo} 
+                      alt={store.name} 
+                      className={styles.storeCardLogo} 
+                      loading="lazy" 
+                      decoding="async" 
+                      width={48} 
+                      height={48} 
+                    />
                   </div>
                 ) : (
                   <div className={styles.storeCardFallback}>
