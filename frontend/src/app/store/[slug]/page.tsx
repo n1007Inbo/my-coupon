@@ -7,6 +7,13 @@ import { getLogoUrl, FALLBACK_STORES, FALLBACK_COUPONS } from "../../../lib/fall
 
 export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
 
+// Pre-render all 493 stores at build time for instant 0ms TTFB and top SEO performance
+export async function generateStaticParams() {
+  return FALLBACK_STORES.map((s) => ({
+    slug: s.slug,
+  }));
+}
+
 interface StorePageProps {
   params: Promise<{
     slug: string;
@@ -44,15 +51,18 @@ export async function generateMetadata({ params }: StorePageProps): Promise<Meta
   }
   
   const logoUrlStr = logoUrl || "";
-  const absoluteLogoUrl = logoUrlStr.startsWith("http") ? logoUrlStr : `https://my-coupon-hazique-s-projects.vercel.app${logoUrlStr}`;
+  const absoluteLogoUrl = logoUrlStr.startsWith("http") ? logoUrlStr : `https://www.promoregistry.com${logoUrlStr}`;
 
   return {
     title: `${storeName} Promo Codes & Discount Codes | PromoRegistry`,
     description: `Save money at ${storeName} with active promo codes, coupon codes, and verified discount offers.`,
+    alternates: {
+      canonical: `https://www.promoregistry.com/store/${slug}`,
+    },
     openGraph: {
       title: `${storeName} Promo Codes & Discount Codes | PromoRegistry`,
       description: `Save money at ${storeName} with active promo codes, coupon codes, and verified discount offers.`,
-      url: `https://my-coupon-hazique-s-projects.vercel.app/store/${slug}`,
+      url: `https://www.promoregistry.com/store/${slug}`,
       siteName: "PromoRegistry",
       type: "website",
       locale: "en_US",
@@ -81,7 +91,7 @@ export default async function StorePage({ params }: StorePageProps) {
   let coupons: Coupon[] = [];
   let store: Store | null = null;
 
-  // 1. Check fallback dataset first (instant 0ms resolution for all 443 stores!)
+  // 1. Check fallback dataset first (instant 0ms resolution for all 493 stores!)
   const fallbackStore = FALLBACK_STORES.find(s => s.slug === slug);
   if (fallbackStore) {
     store = fallbackStore;
