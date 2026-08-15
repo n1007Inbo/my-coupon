@@ -1,0 +1,3546 @@
+[
+  {
+    "id": 1,
+    "name": "Amazon",
+    "slug": "amazon",
+    "has_logo": true,
+    "logo_file": "amazon.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/amazon"
+  },
+  {
+    "id": 2,
+    "name": "Nike",
+    "slug": "nike",
+    "has_logo": true,
+    "logo_file": "nike.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nike"
+  },
+  {
+    "id": 3,
+    "name": "Hostinger",
+    "slug": "hostinger",
+    "has_logo": true,
+    "logo_file": "hostinger.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hostinger"
+  },
+  {
+    "id": 4,
+    "name": "Adidas",
+    "slug": "adidas",
+    "has_logo": true,
+    "logo_file": "adidas.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/adidas"
+  },
+  {
+    "id": 5,
+    "name": "Walmart",
+    "slug": "walmart",
+    "has_logo": true,
+    "logo_file": "walmart.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/walmart"
+  },
+  {
+    "id": 6,
+    "name": "eBay",
+    "slug": "ebay",
+    "has_logo": true,
+    "logo_file": "ebay.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ebay"
+  },
+  {
+    "id": 7,
+    "name": "Target",
+    "slug": "target",
+    "has_logo": true,
+    "logo_file": "target.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/target"
+  },
+  {
+    "id": 8,
+    "name": "Apple",
+    "slug": "apple",
+    "has_logo": true,
+    "logo_file": "apple.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/apple"
+  },
+  {
+    "id": 9,
+    "name": "Starbucks",
+    "slug": "starbucks",
+    "has_logo": true,
+    "logo_file": "starbucks.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/starbucks"
+  },
+  {
+    "id": 10,
+    "name": "Steam",
+    "slug": "steam",
+    "has_logo": true,
+    "logo_file": "steam.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/steam"
+  },
+  {
+    "id": 11,
+    "name": "AliExpress",
+    "slug": "aliexpress",
+    "has_logo": true,
+    "logo_file": "aliexpress.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aliexpress"
+  },
+  {
+    "id": 12,
+    "name": "Adobe",
+    "slug": "adobe",
+    "has_logo": true,
+    "logo_file": "adobe.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/adobe"
+  },
+  {
+    "id": 13,
+    "name": "Canva",
+    "slug": "canva",
+    "has_logo": true,
+    "logo_file": "canva.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/canva"
+  },
+  {
+    "id": 14,
+    "name": "Samsung",
+    "slug": "samsung",
+    "has_logo": true,
+    "logo_file": "samsung.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/samsung"
+  },
+  {
+    "id": 15,
+    "name": "NordVPN",
+    "slug": "nordvpn",
+    "has_logo": true,
+    "logo_file": "nordvpn.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nordvpn"
+  },
+  {
+    "id": 16,
+    "name": "Lenovo",
+    "slug": "lenovo",
+    "has_logo": true,
+    "logo_file": "lenovo.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lenovo"
+  },
+  {
+    "id": 17,
+    "name": "Puma",
+    "slug": "puma",
+    "has_logo": true,
+    "logo_file": "puma.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/puma"
+  },
+  {
+    "id": 18,
+    "name": "Fiverr",
+    "slug": "fiverr",
+    "has_logo": true,
+    "logo_file": "fiverr.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fiverr"
+  },
+  {
+    "id": 19,
+    "name": "Booking.com",
+    "slug": "bookingcom",
+    "has_logo": true,
+    "logo_file": "bookingcom.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bookingcom"
+  },
+  {
+    "id": 20,
+    "name": "Udemy",
+    "slug": "udemy",
+    "has_logo": true,
+    "logo_file": "udemy.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/udemy"
+  },
+  {
+    "id": 21,
+    "name": "Desktronic UK",
+    "slug": "desktronic-uk",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/desktronic-uk"
+  },
+  {
+    "id": 22,
+    "name": "Desktronic US",
+    "slug": "desktronic-us",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/desktronic-us"
+  },
+  {
+    "id": 23,
+    "name": "Tenways UK",
+    "slug": "tenways-uk",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tenways-uk"
+  },
+  {
+    "id": 24,
+    "name": "Tenways US",
+    "slug": "tenways-us",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tenways-us"
+  },
+  {
+    "id": 25,
+    "name": "Geekbuying",
+    "slug": "geekbuying",
+    "has_logo": true,
+    "logo_file": "geekbuying.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/geekbuying"
+  },
+  {
+    "id": 26,
+    "name": "Banggood",
+    "slug": "banggood",
+    "has_logo": true,
+    "logo_file": "banggood.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/banggood"
+  },
+  {
+    "id": 27,
+    "name": "Zaful",
+    "slug": "zaful",
+    "has_logo": true,
+    "logo_file": "zaful.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/zaful"
+  },
+  {
+    "id": 28,
+    "name": "MassiveMobile",
+    "slug": "massivemobile",
+    "has_logo": true,
+    "logo_file": "massivemobile.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/massivemobile"
+  },
+  {
+    "id": 29,
+    "name": "DHgate",
+    "slug": "dhgate",
+    "has_logo": true,
+    "logo_file": "dhgate.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dhgate"
+  },
+  {
+    "id": 30,
+    "name": "Envato Elements",
+    "slug": "envato",
+    "has_logo": true,
+    "logo_file": "envato.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/envato"
+  },
+  {
+    "id": 31,
+    "name": "Semrush",
+    "slug": "semrush",
+    "has_logo": true,
+    "logo_file": "semrush.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/semrush"
+  },
+  {
+    "id": 32,
+    "name": "Namecheap",
+    "slug": "namecheap",
+    "has_logo": true,
+    "logo_file": "namecheap.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/namecheap"
+  },
+  {
+    "id": 33,
+    "name": "Squarespace",
+    "slug": "squarespace",
+    "has_logo": true,
+    "logo_file": "squarespace.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/squarespace"
+  },
+  {
+    "id": 34,
+    "name": "HostGator",
+    "slug": "hostgator",
+    "has_logo": true,
+    "logo_file": "hostgator.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hostgator"
+  },
+  {
+    "id": 35,
+    "name": "Bluehost",
+    "slug": "bluehost",
+    "has_logo": true,
+    "logo_file": "bluehost.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bluehost"
+  },
+  {
+    "id": 36,
+    "name": "Coursera",
+    "slug": "coursera",
+    "has_logo": true,
+    "logo_file": "coursera.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/coursera"
+  },
+  {
+    "id": 37,
+    "name": "Skillshare",
+    "slug": "skillshare",
+    "has_logo": true,
+    "logo_file": "skillshare.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/skillshare"
+  },
+  {
+    "id": 38,
+    "name": "NordPass",
+    "slug": "nordpass",
+    "has_logo": true,
+    "logo_file": "nordpass.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nordpass"
+  },
+  {
+    "id": 39,
+    "name": "GoDaddy",
+    "slug": "godaddy",
+    "has_logo": true,
+    "logo_file": "godaddy.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/godaddy"
+  },
+  {
+    "id": 40,
+    "name": "Gymshark",
+    "slug": "gymshark",
+    "has_logo": true,
+    "logo_file": "gymshark.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/gymshark"
+  },
+  {
+    "id": 41,
+    "name": "Desktronic NL",
+    "slug": "desktronic-nl",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/desktronic-nl"
+  },
+  {
+    "id": 42,
+    "name": "Parc Astérix FR",
+    "slug": "parc-asterix-fr",
+    "has_logo": true,
+    "logo_file": "parc-asterix-fr.webp",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/parc-asterix-fr"
+  },
+  {
+    "id": 43,
+    "name": "Bouquets by Post",
+    "slug": "bouquets-by-post",
+    "has_logo": true,
+    "logo_file": "bouquets-by-post.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bouquets-by-post"
+  },
+  {
+    "id": 44,
+    "name": "IM8 Health US",
+    "slug": "im8health",
+    "has_logo": true,
+    "logo_file": "im8health.jpg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/im8health"
+  },
+  {
+    "id": 45,
+    "name": "Redu Sculpt US",
+    "slug": "redusculpt",
+    "has_logo": true,
+    "logo_file": "redusculpt.jpg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/redusculpt"
+  },
+  {
+    "id": 46,
+    "name": "Evolution Power Tools US",
+    "slug": "evolution-power-tools",
+    "has_logo": true,
+    "logo_file": "evolution-power-tools.jpg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/evolution-power-tools"
+  },
+  {
+    "id": 47,
+    "name": "Maple Prime US",
+    "slug": "maple-prime",
+    "has_logo": true,
+    "logo_file": "maple-prime.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/maple-prime"
+  },
+  {
+    "id": 48,
+    "name": "Nobody's Child US",
+    "slug": "nobodys-child",
+    "has_logo": true,
+    "logo_file": "nobodys-child.jpg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nobodys-child"
+  },
+  {
+    "id": 49,
+    "name": "Anycubic US",
+    "slug": "anycubic-us",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/anycubic-us"
+  },
+  {
+    "id": 50,
+    "name": "Hitway UK",
+    "slug": "hitway-uk",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hitway-uk"
+  },
+  {
+    "id": 51,
+    "name": "Wolfbox UK",
+    "slug": "wolfbox-uk",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/wolfbox-uk"
+  },
+  {
+    "id": 52,
+    "name": "Fitueyes UK",
+    "slug": "fitueyes-uk",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fitueyes-uk"
+  },
+  {
+    "id": 53,
+    "name": "Helvetus US",
+    "slug": "helvetus",
+    "has_logo": true,
+    "logo_file": "helvetus.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/helvetus"
+  },
+  {
+    "id": 54,
+    "name": "Xsteel Targets US",
+    "slug": "xsteel-targets",
+    "has_logo": true,
+    "logo_file": "xsteel-targets.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/xsteel-targets"
+  },
+  {
+    "id": 55,
+    "name": "Reconstitution Solution US",
+    "slug": "reconstitution-solution",
+    "has_logo": true,
+    "logo_file": "reconstitution-solution.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/reconstitution-solution"
+  },
+  {
+    "id": 56,
+    "name": "TuxMat US",
+    "slug": "tuxmat-us",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tuxmat-us"
+  },
+  {
+    "id": 57,
+    "name": "Hotel Tonight US",
+    "slug": "hotel-tonight",
+    "has_logo": true,
+    "logo_file": "hotel-tonight.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hotel-tonight"
+  },
+  {
+    "id": 58,
+    "name": "Swatch US",
+    "slug": "swatch",
+    "has_logo": true,
+    "logo_file": "swatch.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/swatch"
+  },
+  {
+    "id": 59,
+    "name": "Harry's US",
+    "slug": "harrys",
+    "has_logo": true,
+    "logo_file": "harrys.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/harrys"
+  },
+  {
+    "id": 60,
+    "name": "Shipt US",
+    "slug": "shipt",
+    "has_logo": true,
+    "logo_file": "shipt.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/shipt"
+  },
+  {
+    "id": 61,
+    "name": "Harry's",
+    "slug": "harrys",
+    "has_logo": true,
+    "logo_file": "harrys.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/harrys"
+  },
+  {
+    "id": 62,
+    "name": "Shipt",
+    "slug": "shipt",
+    "has_logo": true,
+    "logo_file": "shipt.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/shipt"
+  },
+  {
+    "id": 63,
+    "name": "Meowant",
+    "slug": "meowant",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/meowant"
+  },
+  {
+    "id": 64,
+    "name": "Shelly EU &",
+    "slug": "shelly-eu-",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/shelly-eu-"
+  },
+  {
+    "id": 65,
+    "name": "Larine Company",
+    "slug": "larine-company",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/larine-company"
+  },
+  {
+    "id": 66,
+    "name": "Spothero",
+    "slug": "spothero",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/spothero"
+  },
+  {
+    "id": 67,
+    "name": "Taylor Made",
+    "slug": "taylor-made",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/taylor-made"
+  },
+  {
+    "id": 68,
+    "name": "Choice Hotels",
+    "slug": "choice-hotels",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/choice-hotels"
+  },
+  {
+    "id": 69,
+    "name": "Meshy",
+    "slug": "meshy",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/meshy"
+  },
+  {
+    "id": 70,
+    "name": "Kate Spade",
+    "slug": "kate-spade",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/kate-spade"
+  },
+  {
+    "id": 71,
+    "name": "Hilo",
+    "slug": "hilo",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hilo"
+  },
+  {
+    "id": 72,
+    "name": "LegalZoom",
+    "slug": "legalzoom",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/legalzoom"
+  },
+  {
+    "id": 73,
+    "name": "Bedsure",
+    "slug": "bedsure",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bedsure"
+  },
+  {
+    "id": 74,
+    "name": "Dewenwils",
+    "slug": "dewenwils",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dewenwils"
+  },
+  {
+    "id": 75,
+    "name": "TORRAS",
+    "slug": "torras",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/torras"
+  },
+  {
+    "id": 76,
+    "name": "Jack Rogers",
+    "slug": "jack-rogers",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jack-rogers"
+  },
+  {
+    "id": 77,
+    "name": "Suzanne Somers",
+    "slug": "suzanne-somers",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/suzanne-somers"
+  },
+  {
+    "id": 78,
+    "name": "The Wine Collective",
+    "slug": "the-wine-collective",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/the-wine-collective"
+  },
+  {
+    "id": 79,
+    "name": "Sleepyhead",
+    "slug": "sleepyhead",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sleepyhead"
+  },
+  {
+    "id": 80,
+    "name": "Sperry",
+    "slug": "sperry",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sperry"
+  },
+  {
+    "id": 81,
+    "name": "Evelyn & Bobbie",
+    "slug": "evelyn-bobbie",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/evelyn-bobbie"
+  },
+  {
+    "id": 82,
+    "name": "1ink.com",
+    "slug": "1inkcom",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/1inkcom"
+  },
+  {
+    "id": 83,
+    "name": "Flick VPN",
+    "slug": "flick-vpn",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/flick-vpn"
+  },
+  {
+    "id": 84,
+    "name": "Champion Life Insurance",
+    "slug": "champion-life-insurance",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/champion-life-insurance"
+  },
+  {
+    "id": 85,
+    "name": "Remedy Meds",
+    "slug": "remedy-meds",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/remedy-meds"
+  },
+  {
+    "id": 86,
+    "name": "Norton LifeLock",
+    "slug": "norton-lifelock",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/norton-lifelock"
+  },
+  {
+    "id": 87,
+    "name": "Network Solutions",
+    "slug": "network-solutions",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/network-solutions"
+  },
+  {
+    "id": 88,
+    "name": "Cars24",
+    "slug": "cars24",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cars24"
+  },
+  {
+    "id": 89,
+    "name": "NexBurn",
+    "slug": "nexburn",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nexburn"
+  },
+  {
+    "id": 90,
+    "name": "Asknow",
+    "slug": "asknow",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/asknow"
+  },
+  {
+    "id": 91,
+    "name": "Lyca Mobile (US)",
+    "slug": "lyca-mobile-us",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lyca-mobile-us"
+  },
+  {
+    "id": 92,
+    "name": "Factor",
+    "slug": "factor",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/factor"
+  },
+  {
+    "id": 93,
+    "name": "American Dream Auto Protect",
+    "slug": "american-dream-auto-protect",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/american-dream-auto-protect"
+  },
+  {
+    "id": 94,
+    "name": "Bark Parental Controls",
+    "slug": "bark-parental-controls",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bark-parental-controls"
+  },
+  {
+    "id": 95,
+    "name": "Aura - Parental Controls",
+    "slug": "aura-parental-controls",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aura-parental-controls"
+  },
+  {
+    "id": 96,
+    "name": "Dropps.com",
+    "slug": "droppscom",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/droppscom"
+  },
+  {
+    "id": 97,
+    "name": "Greencross Vets",
+    "slug": "greencross-vets",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/greencross-vets"
+  },
+  {
+    "id": 98,
+    "name": "Bullion",
+    "slug": "bullion",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bullion"
+  },
+  {
+    "id": 99,
+    "name": "DeleteMe",
+    "slug": "deleteme",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/deleteme"
+  },
+  {
+    "id": 100,
+    "name": "College Ave",
+    "slug": "college-ave",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/college-ave"
+  },
+  {
+    "id": 101,
+    "name": "Select Home Warranty",
+    "slug": "select-home-warranty",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/select-home-warranty"
+  },
+  {
+    "id": 102,
+    "name": "Insurify",
+    "slug": "insurify",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/insurify"
+  },
+  {
+    "id": 103,
+    "name": "Compare.com",
+    "slug": "comparecom",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/comparecom"
+  },
+  {
+    "id": 104,
+    "name": "HomeSafe",
+    "slug": "homesafe",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/homesafe"
+  },
+  {
+    "id": 105,
+    "name": "The Times Literary Supplement",
+    "slug": "the-times-literary-supplement",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/the-times-literary-supplement"
+  },
+  {
+    "id": 106,
+    "name": "DaBella",
+    "slug": "dabella",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dabella"
+  },
+  {
+    "id": 107,
+    "name": "Income Insurance Limited",
+    "slug": "income-insurance-limited",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/income-insurance-limited"
+  },
+  {
+    "id": 108,
+    "name": "Squarespace",
+    "slug": "squarespace",
+    "has_logo": true,
+    "logo_file": "squarespace.svg",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/squarespace"
+  },
+  {
+    "id": 109,
+    "name": "Claim Climbers",
+    "slug": "claim-climbers",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/claim-climbers"
+  },
+  {
+    "id": 110,
+    "name": "Patriot Frontline",
+    "slug": "patriot-frontline",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/patriot-frontline"
+  },
+  {
+    "id": 111,
+    "name": "DocSearch - GLP-1",
+    "slug": "docsearch-glp-1",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/docsearch-glp-1"
+  },
+  {
+    "id": 112,
+    "name": "DocSearch",
+    "slug": "docsearch",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/docsearch"
+  },
+  {
+    "id": 113,
+    "name": "Lemonaid Health",
+    "slug": "lemonaid-health",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lemonaid-health"
+  },
+  {
+    "id": 114,
+    "name": "Global Trade Rates",
+    "slug": "global-trade-rates",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/global-trade-rates"
+  },
+  {
+    "id": 115,
+    "name": "Flashcloud",
+    "slug": "flashcloud",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/flashcloud"
+  },
+  {
+    "id": 116,
+    "name": "Macroplate",
+    "slug": "macroplate",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/macroplate"
+  },
+  {
+    "id": 117,
+    "name": "MINT home",
+    "slug": "mint-home",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mint-home"
+  },
+  {
+    "id": 118,
+    "name": "Artlist",
+    "slug": "artlist",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/artlist"
+  },
+  {
+    "id": 119,
+    "name": "Remedy Place",
+    "slug": "remedy-place",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/remedy-place"
+  },
+  {
+    "id": 120,
+    "name": "Neu Money No-Interest Credit Card",
+    "slug": "neu-money-no-interest-credit-card",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neu-money-no-interest-credit-card"
+  },
+  {
+    "id": 121,
+    "name": "Neu Money No-Annual-Fee Credit Card",
+    "slug": "neu-money-no-annual-fee-credit-card",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neu-money-no-annual-fee-credit-card"
+  },
+  {
+    "id": 122,
+    "name": "Qtrade",
+    "slug": "qtrade",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/qtrade"
+  },
+  {
+    "id": 123,
+    "name": "Neo Financial",
+    "slug": "neo-financial",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neo-financial"
+  },
+  {
+    "id": 124,
+    "name": "Spring Financial",
+    "slug": "spring-financial",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/spring-financial"
+  },
+  {
+    "id": 125,
+    "name": "AmazingClubs",
+    "slug": "amazingclubs",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/amazingclubs"
+  },
+  {
+    "id": 126,
+    "name": "McAfee",
+    "slug": "mcafee",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mcafee"
+  },
+  {
+    "id": 127,
+    "name": "Endurance",
+    "slug": "endurance",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/endurance"
+  },
+  {
+    "id": 128,
+    "name": "Fanatiz - Sports Streaming",
+    "slug": "fanatiz-sports-streaming",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fanatiz-sports-streaming"
+  },
+  {
+    "id": 129,
+    "name": "Quicken",
+    "slug": "quicken",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/quicken"
+  },
+  {
+    "id": 130,
+    "name": "Thimble",
+    "slug": "thimble",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/thimble"
+  },
+  {
+    "id": 131,
+    "name": "Strype Wellness",
+    "slug": "strype-wellness",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/strype-wellness"
+  },
+  {
+    "id": 132,
+    "name": "Western Union North America",
+    "slug": "western-union-north-america",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/western-union-north-america"
+  },
+  {
+    "id": 133,
+    "name": "Swooped",
+    "slug": "swooped",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/swooped"
+  },
+  {
+    "id": 134,
+    "name": "Mighties",
+    "slug": "mighties",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mighties"
+  },
+  {
+    "id": 135,
+    "name": "AKKO",
+    "slug": "akko",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/akko"
+  },
+  {
+    "id": 136,
+    "name": "HelloPrenup",
+    "slug": "helloprenup",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/helloprenup"
+  },
+  {
+    "id": 137,
+    "name": "NewSelf Ventures",
+    "slug": "newself-ventures",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/newself-ventures"
+  },
+  {
+    "id": 138,
+    "name": "OneTravel",
+    "slug": "onetravel",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/onetravel"
+  },
+  {
+    "id": 139,
+    "name": "Splitero",
+    "slug": "splitero",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/splitero"
+  },
+  {
+    "id": 140,
+    "name": "RVezy",
+    "slug": "rvezy",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/rvezy"
+  },
+  {
+    "id": 141,
+    "name": "HintMeds Inc",
+    "slug": "hintmeds-inc",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hintmeds-inc"
+  },
+  {
+    "id": 142,
+    "name": "Legendz",
+    "slug": "legendz",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/legendz"
+  },
+  {
+    "id": 143,
+    "name": "SmartCredit",
+    "slug": "smartcredit",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/smartcredit"
+  },
+  {
+    "id": 144,
+    "name": "Upwork Freelance Marketplace",
+    "slug": "upwork-freelance-marketplace",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/upwork-freelance-marketplace"
+  },
+  {
+    "id": 145,
+    "name": "Neo CA - Credit Card",
+    "slug": "neo-ca-credit-card",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neo-ca-credit-card"
+  },
+  {
+    "id": 146,
+    "name": "Whitebridge",
+    "slug": "whitebridge",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/whitebridge"
+  },
+  {
+    "id": 147,
+    "name": "Winona",
+    "slug": "winona",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/winona"
+  },
+  {
+    "id": 148,
+    "name": "BINGE Movies & TV",
+    "slug": "binge-movies-tv",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/binge-movies-tv"
+  },
+  {
+    "id": 149,
+    "name": "ECCO",
+    "slug": "ecco",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ecco"
+  },
+  {
+    "id": 150,
+    "name": "TryHackMe",
+    "slug": "tryhackme",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tryhackme"
+  },
+  {
+    "id": 151,
+    "name": "Flashark",
+    "slug": "flashark",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/flashark"
+  },
+  {
+    "id": 152,
+    "name": "Backcountry",
+    "slug": "backcountry",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/backcountry"
+  },
+  {
+    "id": 153,
+    "name": "Neiman Marcus",
+    "slug": "neiman-marcus",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neiman-marcus"
+  },
+  {
+    "id": 154,
+    "name": "Saks Fifth Avenue",
+    "slug": "saks-fifth-avenue",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/saks-fifth-avenue"
+  },
+  {
+    "id": 155,
+    "name": "xSuit",
+    "slug": "xsuit",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/xsuit"
+  },
+  {
+    "id": 156,
+    "name": "G-Star Raw",
+    "slug": "g-star-raw",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/g-star-raw"
+  },
+  {
+    "id": 157,
+    "name": "Wildflower Cases",
+    "slug": "wildflower-cases",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/wildflower-cases"
+  },
+  {
+    "id": 158,
+    "name": "Ubeauty",
+    "slug": "ubeauty",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ubeauty"
+  },
+  {
+    "id": 159,
+    "name": "Myaerotel",
+    "slug": "myaerotel",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/myaerotel"
+  },
+  {
+    "id": 160,
+    "name": "Super.com - Travel",
+    "slug": "supercom-travel",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/supercom-travel"
+  },
+  {
+    "id": 161,
+    "name": "ScholarshipOwl",
+    "slug": "scholarshipowl",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/scholarshipowl"
+  },
+  {
+    "id": 162,
+    "name": "Mac Duggal",
+    "slug": "mac-duggal",
+    "has_logo": false,
+    "logo_file": null,
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mac-duggal"
+  },
+  {
+    "id": 163,
+    "name": "Daisysilk Trade Co.,Ltd",
+    "slug": "daisysilk-trade-co-ltd",
+    "has_logo": true,
+    "logo_file": "daisysilk-trade-co-ltd.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/daisysilk-trade-co-ltd"
+  },
+  {
+    "id": 164,
+    "name": "Kixies Inc",
+    "slug": "kixies-inc",
+    "has_logo": true,
+    "logo_file": "kixies-inc.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/kixies-inc"
+  },
+  {
+    "id": 165,
+    "name": "novica.com",
+    "slug": "novica-com",
+    "has_logo": true,
+    "logo_file": "novica-com.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/novica-com"
+  },
+  {
+    "id": 166,
+    "name": "Pooky US",
+    "slug": "pooky-us",
+    "has_logo": true,
+    "logo_file": "pooky-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pooky-us"
+  },
+  {
+    "id": 167,
+    "name": "Midwest Sports dba Tennis-Point",
+    "slug": "midwest-sports-dba-tennis-point",
+    "has_logo": true,
+    "logo_file": "midwest-sports-dba-tennis-point.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/midwest-sports-dba-tennis-point"
+  },
+  {
+    "id": 168,
+    "name": "Montagne Vacances",
+    "slug": "montagne-vacances",
+    "has_logo": true,
+    "logo_file": "montagne-vacances.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/montagne-vacances"
+  },
+  {
+    "id": 169,
+    "name": "Gardenreet",
+    "slug": "gardenreet",
+    "has_logo": true,
+    "logo_file": "gardenreet.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/gardenreet"
+  },
+  {
+    "id": 170,
+    "name": "Mirlux",
+    "slug": "mirlux",
+    "has_logo": true,
+    "logo_file": "mirlux.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mirlux"
+  },
+  {
+    "id": 171,
+    "name": "Silver Cross",
+    "slug": "silver-cross",
+    "has_logo": true,
+    "logo_file": "silver-cross.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/silver-cross"
+  },
+  {
+    "id": 172,
+    "name": "Jackery",
+    "slug": "jackery",
+    "has_logo": true,
+    "logo_file": "jackery.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jackery"
+  },
+  {
+    "id": 173,
+    "name": "Innovet Pet",
+    "slug": "innovet-pet",
+    "has_logo": true,
+    "logo_file": "innovet-pet.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/innovet-pet"
+  },
+  {
+    "id": 174,
+    "name": "AFRM",
+    "slug": "afrm",
+    "has_logo": true,
+    "logo_file": "afrm.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/afrm"
+  },
+  {
+    "id": 175,
+    "name": "Naghedi",
+    "slug": "naghedi",
+    "has_logo": true,
+    "logo_file": "naghedi.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/naghedi"
+  },
+  {
+    "id": 176,
+    "name": "im8 health",
+    "slug": "im8-health",
+    "has_logo": true,
+    "logo_file": "im8-health.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/im8-health"
+  },
+  {
+    "id": 177,
+    "name": "Tuxmat",
+    "slug": "tuxmat",
+    "has_logo": true,
+    "logo_file": "tuxmat.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tuxmat"
+  },
+  {
+    "id": 178,
+    "name": "Performance Golf",
+    "slug": "performance-golf",
+    "has_logo": true,
+    "logo_file": "performance-golf.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/performance-golf"
+  },
+  {
+    "id": 179,
+    "name": "Simkhai",
+    "slug": "simkhai",
+    "has_logo": true,
+    "logo_file": "simkhai.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/simkhai"
+  },
+  {
+    "id": 180,
+    "name": "Sexy Little Bath US",
+    "slug": "sexy-little-bath-us",
+    "has_logo": true,
+    "logo_file": "sexy-little-bath-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sexy-little-bath-us"
+  },
+  {
+    "id": 181,
+    "name": "Everblog",
+    "slug": "everblog",
+    "has_logo": true,
+    "logo_file": "everblog.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/everblog"
+  },
+  {
+    "id": 182,
+    "name": "PrintAbout",
+    "slug": "printabout",
+    "has_logo": true,
+    "logo_file": "printabout.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/printabout"
+  },
+  {
+    "id": 183,
+    "name": "Lumary",
+    "slug": "lumary",
+    "has_logo": true,
+    "logo_file": "lumary.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lumary"
+  },
+  {
+    "id": 184,
+    "name": "Young Electric Bikes",
+    "slug": "young-electric-bikes",
+    "has_logo": true,
+    "logo_file": "young-electric-bikes.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/young-electric-bikes"
+  },
+  {
+    "id": 185,
+    "name": "StoreYourBoard",
+    "slug": "storeyourboard",
+    "has_logo": true,
+    "logo_file": "storeyourboard.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/storeyourboard"
+  },
+  {
+    "id": 186,
+    "name": "Urevo",
+    "slug": "urevo",
+    "has_logo": true,
+    "logo_file": "urevo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/urevo"
+  },
+  {
+    "id": 187,
+    "name": "SBLA",
+    "slug": "sbla",
+    "has_logo": true,
+    "logo_file": "sbla.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sbla"
+  },
+  {
+    "id": 188,
+    "name": "Joe Nimble",
+    "slug": "joe-nimble",
+    "has_logo": true,
+    "logo_file": "joe-nimble.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/joe-nimble"
+  },
+  {
+    "id": 189,
+    "name": "OUFER BODY JEWELRY 15%-100-259 (25-may-2026)",
+    "slug": "oufer-body-jewelry-15-100-259-25-may-2026",
+    "has_logo": true,
+    "logo_file": "oufer-body-jewelry-15-100-259-25-may-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/oufer-body-jewelry-15-100-259-25-may-2026"
+  },
+  {
+    "id": 190,
+    "name": "Elevated Craft",
+    "slug": "elevated-craft",
+    "has_logo": true,
+    "logo_file": "elevated-craft.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/elevated-craft"
+  },
+  {
+    "id": 191,
+    "name": "Huega House",
+    "slug": "huega-house",
+    "has_logo": true,
+    "logo_file": "huega-house.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/huega-house"
+  },
+  {
+    "id": 192,
+    "name": "Camp Chef",
+    "slug": "camp-chef",
+    "has_logo": true,
+    "logo_file": "camp-chef.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/camp-chef"
+  },
+  {
+    "id": 193,
+    "name": "COLAMY",
+    "slug": "colamy",
+    "has_logo": true,
+    "logo_file": "colamy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/colamy"
+  },
+  {
+    "id": 194,
+    "name": "Buy Fencing Direct",
+    "slug": "buy-fencing-direct",
+    "has_logo": true,
+    "logo_file": "buy-fencing-direct.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/buy-fencing-direct"
+  },
+  {
+    "id": 195,
+    "name": "Back to the Office",
+    "slug": "back-to-the-office",
+    "has_logo": true,
+    "logo_file": "back-to-the-office.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/back-to-the-office"
+  },
+  {
+    "id": 196,
+    "name": "Thermos",
+    "slug": "thermos",
+    "has_logo": true,
+    "logo_file": "thermos.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/thermos"
+  },
+  {
+    "id": 197,
+    "name": "cosori",
+    "slug": "cosori",
+    "has_logo": true,
+    "logo_file": "cosori.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cosori"
+  },
+  {
+    "id": 198,
+    "name": "Krewe",
+    "slug": "krewe",
+    "has_logo": true,
+    "logo_file": "krewe.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/krewe"
+  },
+  {
+    "id": 199,
+    "name": "Ridstar",
+    "slug": "ridstar",
+    "has_logo": true,
+    "logo_file": "ridstar.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ridstar"
+  },
+  {
+    "id": 200,
+    "name": "Bruno Marc 8%-100-350 (29-july-2026)",
+    "slug": "bruno-marc-8-100-350-29-july-2026",
+    "has_logo": true,
+    "logo_file": "bruno-marc-8-100-350-29-july-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bruno-marc-8-100-350-29-july-2026"
+  },
+  {
+    "id": 201,
+    "name": "Sunshine Tienda",
+    "slug": "sunshine-tienda",
+    "has_logo": true,
+    "logo_file": "sunshine-tienda.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sunshine-tienda"
+  },
+  {
+    "id": 202,
+    "name": "Red Gorilla",
+    "slug": "red-gorilla",
+    "has_logo": true,
+    "logo_file": "red-gorilla.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/red-gorilla"
+  },
+  {
+    "id": 203,
+    "name": "Displays Outlet US",
+    "slug": "displays-outlet-us",
+    "has_logo": true,
+    "logo_file": "displays-outlet-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/displays-outlet-us"
+  },
+  {
+    "id": 204,
+    "name": "Yvette Sports",
+    "slug": "yvette-sports",
+    "has_logo": true,
+    "logo_file": "yvette-sports.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/yvette-sports"
+  },
+  {
+    "id": 205,
+    "name": "Zeagoo",
+    "slug": "zeagoo",
+    "has_logo": true,
+    "logo_file": "zeagoo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/zeagoo"
+  },
+  {
+    "id": 206,
+    "name": "BuyBackWorld",
+    "slug": "buybackworld",
+    "has_logo": true,
+    "logo_file": "buybackworld.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/buybackworld"
+  },
+  {
+    "id": 207,
+    "name": "Flextail 5%-50-550 (23-july-2026)",
+    "slug": "flextail-5-50-550-23-july-2026",
+    "has_logo": true,
+    "logo_file": "flextail-5-50-550-23-july-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/flextail-5-50-550-23-july-2026"
+  },
+  {
+    "id": 208,
+    "name": "pelsbarn",
+    "slug": "pelsbarn",
+    "has_logo": true,
+    "logo_file": "pelsbarn.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pelsbarn"
+  },
+  {
+    "id": 209,
+    "name": "Povison",
+    "slug": "povison",
+    "has_logo": true,
+    "logo_file": "povison.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/povison"
+  },
+  {
+    "id": 210,
+    "name": "Eternity Modern",
+    "slug": "eternity-modern",
+    "has_logo": true,
+    "logo_file": "eternity-modern.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eternity-modern"
+  },
+  {
+    "id": 211,
+    "name": "aviya mattress 15%-600-300 (23-july-2026)",
+    "slug": "aviya-mattress-15-600-300-23-july-2026",
+    "has_logo": true,
+    "logo_file": "aviya-mattress-15-600-300-23-july-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aviya-mattress-15-600-300-23-july-2026"
+  },
+  {
+    "id": 212,
+    "name": "Arq8",
+    "slug": "arq8",
+    "has_logo": true,
+    "logo_file": "arq8.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/arq8"
+  },
+  {
+    "id": 213,
+    "name": "BABEYOND",
+    "slug": "babeyond",
+    "has_logo": true,
+    "logo_file": "babeyond.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/babeyond"
+  },
+  {
+    "id": 214,
+    "name": "Suunto",
+    "slug": "suunto",
+    "has_logo": true,
+    "logo_file": "suunto.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/suunto"
+  },
+  {
+    "id": 215,
+    "name": "RMA Defense",
+    "slug": "rma-defense",
+    "has_logo": true,
+    "logo_file": "rma-defense.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/rma-defense"
+  },
+  {
+    "id": 216,
+    "name": "Eonon",
+    "slug": "eonon",
+    "has_logo": true,
+    "logo_file": "eonon.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eonon"
+  },
+  {
+    "id": 217,
+    "name": "Torro",
+    "slug": "torro",
+    "has_logo": true,
+    "logo_file": "torro.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/torro"
+  },
+  {
+    "id": 218,
+    "name": "Auctmarts",
+    "slug": "auctmarts",
+    "has_logo": true,
+    "logo_file": "auctmarts.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/auctmarts"
+  },
+  {
+    "id": 219,
+    "name": "MISSHA US",
+    "slug": "missha-us",
+    "has_logo": true,
+    "logo_file": "missha-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/missha-us"
+  },
+  {
+    "id": 220,
+    "name": "Himiway Bike",
+    "slug": "himiway-bike",
+    "has_logo": true,
+    "logo_file": "himiway-bike.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/himiway-bike"
+  },
+  {
+    "id": 221,
+    "name": "Mirlux FR",
+    "slug": "mirlux-fr",
+    "has_logo": true,
+    "logo_file": "mirlux-fr.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mirlux-fr"
+  },
+  {
+    "id": 222,
+    "name": "Guta TPMS",
+    "slug": "guta-tpms",
+    "has_logo": true,
+    "logo_file": "guta-tpms.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/guta-tpms"
+  },
+  {
+    "id": 223,
+    "name": "Alashan Cashmere",
+    "slug": "alashan-cashmere",
+    "has_logo": true,
+    "logo_file": "alashan-cashmere.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/alashan-cashmere"
+  },
+  {
+    "id": 224,
+    "name": "Nushape",
+    "slug": "nushape",
+    "has_logo": true,
+    "logo_file": "nushape.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nushape"
+  },
+  {
+    "id": 225,
+    "name": "Adept",
+    "slug": "adept",
+    "has_logo": true,
+    "logo_file": "adept.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/adept"
+  },
+  {
+    "id": 226,
+    "name": "underarmour",
+    "slug": "underarmour",
+    "has_logo": true,
+    "logo_file": "underarmour.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/underarmour"
+  },
+  {
+    "id": 227,
+    "name": "Eydology",
+    "slug": "eydology",
+    "has_logo": true,
+    "logo_file": "eydology.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eydology"
+  },
+  {
+    "id": 228,
+    "name": "Cambridge Satchel",
+    "slug": "cambridge-satchel",
+    "has_logo": true,
+    "logo_file": "cambridge-satchel.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cambridge-satchel"
+  },
+  {
+    "id": 229,
+    "name": "Zonli Home",
+    "slug": "zonli-home",
+    "has_logo": true,
+    "logo_file": "zonli-home.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/zonli-home"
+  },
+  {
+    "id": 230,
+    "name": "3 Suisses",
+    "slug": "3-suisses",
+    "has_logo": true,
+    "logo_file": "3-suisses.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/3-suisses"
+  },
+  {
+    "id": 231,
+    "name": "Dowinx",
+    "slug": "dowinx",
+    "has_logo": true,
+    "logo_file": "dowinx.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dowinx"
+  },
+  {
+    "id": 232,
+    "name": "Garden Benches",
+    "slug": "garden-benches",
+    "has_logo": true,
+    "logo_file": "garden-benches.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/garden-benches"
+  },
+  {
+    "id": 233,
+    "name": "Knack Bags  6%-200-450 (27-july-2026)",
+    "slug": "knack-bags-6-200-450-27-july-2026",
+    "has_logo": true,
+    "logo_file": "knack-bags-6-200-450-27-july-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/knack-bags-6-200-450-27-july-2026"
+  },
+  {
+    "id": 234,
+    "name": "Popilush 2%-150-275 (27-july-2026)",
+    "slug": "popilush-2-150-275-27-july-2026",
+    "has_logo": true,
+    "logo_file": "popilush-2-150-275-27-july-2026.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/popilush-2-150-275-27-july-2026"
+  },
+  {
+    "id": 235,
+    "name": "SELDOM SEEN STYLES",
+    "slug": "seldom-seen-styles",
+    "has_logo": true,
+    "logo_file": "seldom-seen-styles.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/seldom-seen-styles"
+  },
+  {
+    "id": 236,
+    "name": "Kix'ies",
+    "slug": "kixies",
+    "has_logo": true,
+    "logo_file": "kixies.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/kixies"
+  },
+  {
+    "id": 237,
+    "name": "Le Permis Libre",
+    "slug": "le-permis-libre",
+    "has_logo": true,
+    "logo_file": "le-permis-libre.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/le-permis-libre"
+  },
+  {
+    "id": 238,
+    "name": "Health & Fitness",
+    "slug": "health-fitness",
+    "has_logo": true,
+    "logo_file": "health-fitness.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/health-fitness"
+  },
+  {
+    "id": 239,
+    "name": "Tilswall",
+    "slug": "tilswall",
+    "has_logo": true,
+    "logo_file": "tilswall.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tilswall"
+  },
+  {
+    "id": 240,
+    "name": "Levoit",
+    "slug": "levoit",
+    "has_logo": true,
+    "logo_file": "levoit.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/levoit"
+  },
+  {
+    "id": 241,
+    "name": "Caydo",
+    "slug": "caydo",
+    "has_logo": true,
+    "logo_file": "caydo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/caydo"
+  },
+  {
+    "id": 242,
+    "name": "Tribesigns",
+    "slug": "tribesigns",
+    "has_logo": true,
+    "logo_file": "tribesigns.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tribesigns"
+  },
+  {
+    "id": 243,
+    "name": "Speediance",
+    "slug": "speediance",
+    "has_logo": true,
+    "logo_file": "speediance.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/speediance"
+  },
+  {
+    "id": 244,
+    "name": "Ulanzi",
+    "slug": "ulanzi",
+    "has_logo": true,
+    "logo_file": "ulanzi.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ulanzi"
+  },
+  {
+    "id": 245,
+    "name": "Antler",
+    "slug": "antler",
+    "has_logo": true,
+    "logo_file": "antler.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/antler"
+  },
+  {
+    "id": 246,
+    "name": "Okun",
+    "slug": "okun",
+    "has_logo": true,
+    "logo_file": "okun.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/okun"
+  },
+  {
+    "id": 247,
+    "name": "So soft Beds",
+    "slug": "so-soft-beds",
+    "has_logo": true,
+    "logo_file": "so-soft-beds.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/so-soft-beds"
+  },
+  {
+    "id": 248,
+    "name": "Grab Bags US",
+    "slug": "grab-bags-us",
+    "has_logo": true,
+    "logo_file": "grab-bags-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/grab-bags-us"
+  },
+  {
+    "id": 249,
+    "name": "Keycense",
+    "slug": "keycense",
+    "has_logo": true,
+    "logo_file": "keycense.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/keycense"
+  },
+  {
+    "id": 250,
+    "name": "tcksports US",
+    "slug": "tcksports-us",
+    "has_logo": true,
+    "logo_file": "tcksports-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tcksports-us"
+  },
+  {
+    "id": 251,
+    "name": "Power Smart",
+    "slug": "power-smart",
+    "has_logo": true,
+    "logo_file": "power-smart.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/power-smart"
+  },
+  {
+    "id": 736,
+    "name": "Eagle Creek",
+    "slug": "eagle-creek",
+    "has_logo": true,
+    "logo_file": "eagle-creek.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eagle-creek"
+  },
+  {
+    "id": 737,
+    "name": "Overstock",
+    "slug": "overstock",
+    "has_logo": true,
+    "logo_file": "overstock.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/overstock"
+  },
+  {
+    "id": 738,
+    "name": "Xero Shoes",
+    "slug": "xero-shoes",
+    "has_logo": true,
+    "logo_file": "xero-shoes.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/xero-shoes"
+  },
+  {
+    "id": 739,
+    "name": "Park Sleep Fly",
+    "slug": "park-sleep-fly",
+    "has_logo": true,
+    "logo_file": "park-sleep-fly.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/park-sleep-fly"
+  },
+  {
+    "id": 740,
+    "name": "Shelly",
+    "slug": "shelly",
+    "has_logo": true,
+    "logo_file": "shelly.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/shelly"
+  },
+  {
+    "id": 741,
+    "name": "Sealy",
+    "slug": "sealy",
+    "has_logo": true,
+    "logo_file": "sealy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sealy"
+  },
+  {
+    "id": 742,
+    "name": "Viviscal",
+    "slug": "viviscal",
+    "has_logo": true,
+    "logo_file": "viviscal.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/viviscal"
+  },
+  {
+    "id": 743,
+    "name": "Florsheim",
+    "slug": "florsheim",
+    "has_logo": true,
+    "logo_file": "florsheim.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/florsheim"
+  },
+  {
+    "id": 744,
+    "name": "Wiley X",
+    "slug": "wiley-x",
+    "has_logo": true,
+    "logo_file": "wiley-x.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/wiley-x"
+  },
+  {
+    "id": 745,
+    "name": "Im",
+    "slug": "im",
+    "has_logo": true,
+    "logo_file": "im.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/im"
+  },
+  {
+    "id": 746,
+    "name": "Aerotel",
+    "slug": "aerotel",
+    "has_logo": true,
+    "logo_file": "aerotel.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aerotel"
+  },
+  {
+    "id": 747,
+    "name": "Sperry US",
+    "slug": "sperry-us",
+    "has_logo": true,
+    "logo_file": "sperry-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sperry-us"
+  },
+  {
+    "id": 748,
+    "name": "Miele",
+    "slug": "miele",
+    "has_logo": true,
+    "logo_file": "miele.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/miele"
+  },
+  {
+    "id": 749,
+    "name": "PatioLiving",
+    "slug": "patioliving",
+    "has_logo": true,
+    "logo_file": "patioliving.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/patioliving"
+  },
+  {
+    "id": 750,
+    "name": "Joroto",
+    "slug": "joroto",
+    "has_logo": true,
+    "logo_file": "joroto.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/joroto"
+  },
+  {
+    "id": 751,
+    "name": "Paddle Pro",
+    "slug": "paddle-pro",
+    "has_logo": true,
+    "logo_file": "paddle-pro.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/paddle-pro"
+  },
+  {
+    "id": 752,
+    "name": "Lovat Parks",
+    "slug": "lovat-parks",
+    "has_logo": true,
+    "logo_file": "lovat-parks.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lovat-parks"
+  },
+  {
+    "id": 753,
+    "name": "Soldiers Nutrition",
+    "slug": "soldiers-nutrition",
+    "has_logo": true,
+    "logo_file": "soldiers-nutrition.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/soldiers-nutrition"
+  },
+  {
+    "id": 754,
+    "name": "Comfrt",
+    "slug": "comfrt",
+    "has_logo": true,
+    "logo_file": "comfrt.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/comfrt"
+  },
+  {
+    "id": 755,
+    "name": "Elegant Shower",
+    "slug": "elegant-shower",
+    "has_logo": true,
+    "logo_file": "elegant-shower.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/elegant-shower"
+  },
+  {
+    "id": 756,
+    "name": "Anti Apex",
+    "slug": "anti-apex",
+    "has_logo": true,
+    "logo_file": "anti-apex.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/anti-apex"
+  },
+  {
+    "id": 757,
+    "name": "Invisawear",
+    "slug": "invisawear",
+    "has_logo": true,
+    "logo_file": "invisawear.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/invisawear"
+  },
+  {
+    "id": 758,
+    "name": "QuickPlay",
+    "slug": "quickplay",
+    "has_logo": true,
+    "logo_file": "quickplay.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/quickplay"
+  },
+  {
+    "id": 759,
+    "name": "Lumibricks",
+    "slug": "lumibricks",
+    "has_logo": true,
+    "logo_file": "lumibricks.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lumibricks"
+  },
+  {
+    "id": 760,
+    "name": "Tarkine AU",
+    "slug": "tarkine-au",
+    "has_logo": true,
+    "logo_file": "tarkine-au.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tarkine-au"
+  },
+  {
+    "id": 761,
+    "name": "Filter Baby",
+    "slug": "filter-baby",
+    "has_logo": true,
+    "logo_file": "filter-baby.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/filter-baby"
+  },
+  {
+    "id": 762,
+    "name": "Little Links Golf",
+    "slug": "little-links-golf",
+    "has_logo": true,
+    "logo_file": "little-links-golf.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/little-links-golf"
+  },
+  {
+    "id": 763,
+    "name": "Atoto",
+    "slug": "atoto",
+    "has_logo": true,
+    "logo_file": "atoto.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/atoto"
+  },
+  {
+    "id": 764,
+    "name": "Proactiv",
+    "slug": "proactiv",
+    "has_logo": true,
+    "logo_file": "proactiv.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/proactiv"
+  },
+  {
+    "id": 765,
+    "name": "Desktronic",
+    "slug": "desktronic",
+    "has_logo": true,
+    "logo_file": "desktronic.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/desktronic"
+  },
+  {
+    "id": 766,
+    "name": "redu sculpt",
+    "slug": "redu-sculpt",
+    "has_logo": true,
+    "logo_file": "redu-sculpt.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/redu-sculpt"
+  },
+  {
+    "id": 767,
+    "name": "Javvy Coffee",
+    "slug": "javvy-coffee",
+    "has_logo": true,
+    "logo_file": "javvy-coffee.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/javvy-coffee"
+  },
+  {
+    "id": 768,
+    "name": "Origo Shoes",
+    "slug": "origo-shoes",
+    "has_logo": true,
+    "logo_file": "origo-shoes.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/origo-shoes"
+  },
+  {
+    "id": 769,
+    "name": "Monument Grills",
+    "slug": "monument-grills",
+    "has_logo": true,
+    "logo_file": "monument-grills.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/monument-grills"
+  },
+  {
+    "id": 770,
+    "name": "Desktronic SE",
+    "slug": "desktronic-se",
+    "has_logo": true,
+    "logo_file": "desktronic-se.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/desktronic-se"
+  },
+  {
+    "id": 771,
+    "name": "Pretty Strap",
+    "slug": "pretty-strap",
+    "has_logo": true,
+    "logo_file": "pretty-strap.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pretty-strap"
+  },
+  {
+    "id": 772,
+    "name": "Silkiee",
+    "slug": "silkiee",
+    "has_logo": true,
+    "logo_file": "silkiee.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/silkiee"
+  },
+  {
+    "id": 773,
+    "name": "lumai BR",
+    "slug": "lumai-br",
+    "has_logo": true,
+    "logo_file": "lumai-br.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lumai-br"
+  },
+  {
+    "id": 774,
+    "name": "Love In Faith",
+    "slug": "love-in-faith",
+    "has_logo": true,
+    "logo_file": "love-in-faith.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/love-in-faith"
+  },
+  {
+    "id": 775,
+    "name": "Pop Ups Brand",
+    "slug": "pop-ups-brand",
+    "has_logo": true,
+    "logo_file": "pop-ups-brand.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pop-ups-brand"
+  },
+  {
+    "id": 776,
+    "name": "Tous",
+    "slug": "tous",
+    "has_logo": true,
+    "logo_file": "tous.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tous"
+  },
+  {
+    "id": 777,
+    "name": "Meshy AI",
+    "slug": "meshy-ai",
+    "has_logo": true,
+    "logo_file": "meshy-ai.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/meshy-ai"
+  },
+  {
+    "id": 778,
+    "name": "Wjs Home",
+    "slug": "wjs-home",
+    "has_logo": true,
+    "logo_file": "wjs-home.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/wjs-home"
+  },
+  {
+    "id": 779,
+    "name": "Roto Rooter",
+    "slug": "roto-rooter",
+    "has_logo": true,
+    "logo_file": "roto-rooter.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/roto-rooter"
+  },
+  {
+    "id": 780,
+    "name": "Buy Larine U",
+    "slug": "buy-larine-u",
+    "has_logo": true,
+    "logo_file": "buy-larine-u.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/buy-larine-u"
+  },
+  {
+    "id": 781,
+    "name": "Badlands Gear US",
+    "slug": "badlands-gear-us",
+    "has_logo": true,
+    "logo_file": "badlands-gear-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/badlands-gear-us"
+  },
+  {
+    "id": 782,
+    "name": "Fuji Sports",
+    "slug": "fuji-sports",
+    "has_logo": true,
+    "logo_file": "fuji-sports.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fuji-sports"
+  },
+  {
+    "id": 783,
+    "name": "Jiaro Pack",
+    "slug": "jiaro-pack",
+    "has_logo": true,
+    "logo_file": "jiaro-pack.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jiaro-pack"
+  },
+  {
+    "id": 784,
+    "name": "DC House",
+    "slug": "dc-house",
+    "has_logo": true,
+    "logo_file": "dc-house.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dc-house"
+  },
+  {
+    "id": 785,
+    "name": "OHMMU",
+    "slug": "ohmmu",
+    "has_logo": true,
+    "logo_file": "ohmmu.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ohmmu"
+  },
+  {
+    "id": 786,
+    "name": "Waterdrop",
+    "slug": "waterdrop",
+    "has_logo": true,
+    "logo_file": "waterdrop.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/waterdrop"
+  },
+  {
+    "id": 787,
+    "name": "Octobuddy US",
+    "slug": "octobuddy-us",
+    "has_logo": true,
+    "logo_file": "octobuddy-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/octobuddy-us"
+  },
+  {
+    "id": 788,
+    "name": "Mirai Clinical US",
+    "slug": "mirai-clinical-us",
+    "has_logo": true,
+    "logo_file": "mirai-clinical-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mirai-clinical-us"
+  },
+  {
+    "id": 789,
+    "name": "Bulletproof Fitness Equipment US",
+    "slug": "bulletproof-fitness-equipment-us",
+    "has_logo": true,
+    "logo_file": "bulletproof-fitness-equipment-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bulletproof-fitness-equipment-us"
+  },
+  {
+    "id": 790,
+    "name": "Acrtmatic",
+    "slug": "acrtmatic",
+    "has_logo": true,
+    "logo_file": "acrtmatic.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/acrtmatic"
+  },
+  {
+    "id": 791,
+    "name": "Pongbot",
+    "slug": "pongbot",
+    "has_logo": true,
+    "logo_file": "pongbot.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pongbot"
+  },
+  {
+    "id": 792,
+    "name": "BossHorn",
+    "slug": "bosshorn",
+    "has_logo": true,
+    "logo_file": "bosshorn.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bosshorn"
+  },
+  {
+    "id": 793,
+    "name": "venalisa",
+    "slug": "venalisa",
+    "has_logo": true,
+    "logo_file": "venalisa.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/venalisa"
+  },
+  {
+    "id": 794,
+    "name": "Zero Waste Store",
+    "slug": "zero-waste-store",
+    "has_logo": true,
+    "logo_file": "zero-waste-store.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/zero-waste-store"
+  },
+  {
+    "id": 795,
+    "name": "Burneek",
+    "slug": "burneek",
+    "has_logo": true,
+    "logo_file": "burneek.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/burneek"
+  },
+  {
+    "id": 796,
+    "name": "Amyet Bikes",
+    "slug": "amyet-bikes",
+    "has_logo": true,
+    "logo_file": "amyet-bikes.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/amyet-bikes"
+  },
+  {
+    "id": 797,
+    "name": "Parfait Lingerie",
+    "slug": "parfait-lingerie",
+    "has_logo": true,
+    "logo_file": "parfait-lingerie.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/parfait-lingerie"
+  },
+  {
+    "id": 798,
+    "name": "Avio Travel US",
+    "slug": "avio-travel-us",
+    "has_logo": true,
+    "logo_file": "avio-travel-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/avio-travel-us"
+  },
+  {
+    "id": 799,
+    "name": "Alpha Gear",
+    "slug": "alpha-gear",
+    "has_logo": true,
+    "logo_file": "alpha-gear.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/alpha-gear"
+  },
+  {
+    "id": 800,
+    "name": "Nikola Toy",
+    "slug": "nikola-toy",
+    "has_logo": true,
+    "logo_file": "nikola-toy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nikola-toy"
+  },
+  {
+    "id": 801,
+    "name": "LEVEL",
+    "slug": "level",
+    "has_logo": true,
+    "logo_file": "level.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/level"
+  },
+  {
+    "id": 802,
+    "name": "It Just Works Deodorant",
+    "slug": "it-just-works-deodorant",
+    "has_logo": true,
+    "logo_file": "it-just-works-deodorant.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/it-just-works-deodorant"
+  },
+  {
+    "id": 803,
+    "name": "Strike Nutrition",
+    "slug": "strike-nutrition",
+    "has_logo": true,
+    "logo_file": "strike-nutrition.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/strike-nutrition"
+  },
+  {
+    "id": 804,
+    "name": "Aecojoy",
+    "slug": "aecojoy",
+    "has_logo": true,
+    "logo_file": "aecojoy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aecojoy"
+  },
+  {
+    "id": 805,
+    "name": "Enjoy The Wood",
+    "slug": "enjoy-the-wood",
+    "has_logo": true,
+    "logo_file": "enjoy-the-wood.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/enjoy-the-wood"
+  },
+  {
+    "id": 806,
+    "name": "Pure Bio Labs",
+    "slug": "pure-bio-labs",
+    "has_logo": true,
+    "logo_file": "pure-bio-labs.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pure-bio-labs"
+  },
+  {
+    "id": 807,
+    "name": "Abacus Sportswear",
+    "slug": "abacus-sportswear",
+    "has_logo": true,
+    "logo_file": "abacus-sportswear.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/abacus-sportswear"
+  },
+  {
+    "id": 808,
+    "name": "Cosset",
+    "slug": "cosset",
+    "has_logo": true,
+    "logo_file": "cosset.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cosset"
+  },
+  {
+    "id": 809,
+    "name": "Evereden US",
+    "slug": "evereden-us",
+    "has_logo": true,
+    "logo_file": "evereden-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/evereden-us"
+  },
+  {
+    "id": 810,
+    "name": "Brightmeds",
+    "slug": "brightmeds",
+    "has_logo": true,
+    "logo_file": "brightmeds.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/brightmeds"
+  },
+  {
+    "id": 811,
+    "name": "Nantahala Outdoor Center",
+    "slug": "nantahala-outdoor-center",
+    "has_logo": true,
+    "logo_file": "nantahala-outdoor-center.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nantahala-outdoor-center"
+  },
+  {
+    "id": 812,
+    "name": "Antler UK",
+    "slug": "antler-uk",
+    "has_logo": true,
+    "logo_file": "antler-uk.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/antler-uk"
+  },
+  {
+    "id": 813,
+    "name": "Aldo",
+    "slug": "aldo",
+    "has_logo": true,
+    "logo_file": "aldo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aldo"
+  },
+  {
+    "id": 814,
+    "name": "Solo Stove",
+    "slug": "solo-stove",
+    "has_logo": true,
+    "logo_file": "solo-stove.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/solo-stove"
+  },
+  {
+    "id": 815,
+    "name": "Eileen Fisher",
+    "slug": "eileen-fisher",
+    "has_logo": true,
+    "logo_file": "eileen-fisher.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eileen-fisher"
+  },
+  {
+    "id": 816,
+    "name": "Magpul",
+    "slug": "magpul",
+    "has_logo": true,
+    "logo_file": "magpul.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/magpul"
+  },
+  {
+    "id": 817,
+    "name": "Democracy Clothing",
+    "slug": "democracy-clothing",
+    "has_logo": true,
+    "logo_file": "democracy-clothing.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/democracy-clothing"
+  },
+  {
+    "id": 818,
+    "name": "The Double F",
+    "slug": "the-double-f",
+    "has_logo": true,
+    "logo_file": "the-double-f.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/the-double-f"
+  },
+  {
+    "id": 819,
+    "name": "Brunt",
+    "slug": "brunt",
+    "has_logo": true,
+    "logo_file": "brunt.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/brunt"
+  },
+  {
+    "id": 820,
+    "name": "Showpo",
+    "slug": "showpo",
+    "has_logo": true,
+    "logo_file": "showpo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/showpo"
+  },
+  {
+    "id": 821,
+    "name": "Sneaxx",
+    "slug": "sneaxx",
+    "has_logo": true,
+    "logo_file": "sneaxx.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sneaxx"
+  },
+  {
+    "id": 822,
+    "name": "KittySpout",
+    "slug": "kittyspout",
+    "has_logo": true,
+    "logo_file": "kittyspout.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/kittyspout"
+  },
+  {
+    "id": 823,
+    "name": "Ohora",
+    "slug": "ohora",
+    "has_logo": true,
+    "logo_file": "ohora.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ohora"
+  },
+  {
+    "id": 824,
+    "name": "Ballboyz",
+    "slug": "ballboyz",
+    "has_logo": true,
+    "logo_file": "ballboyz.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ballboyz"
+  },
+  {
+    "id": 825,
+    "name": "ROCKBROS",
+    "slug": "rockbros",
+    "has_logo": true,
+    "logo_file": "rockbros.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/rockbros"
+  },
+  {
+    "id": 826,
+    "name": "Double Oak essentials",
+    "slug": "double-oak-essentials",
+    "has_logo": true,
+    "logo_file": "double-oak-essentials.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/double-oak-essentials"
+  },
+  {
+    "id": 827,
+    "name": "Parasol",
+    "slug": "parasol",
+    "has_logo": true,
+    "logo_file": "parasol.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/parasol"
+  },
+  {
+    "id": 828,
+    "name": "American Giant",
+    "slug": "american-giant",
+    "has_logo": true,
+    "logo_file": "american-giant.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/american-giant"
+  },
+  {
+    "id": 829,
+    "name": "Seagate",
+    "slug": "seagate",
+    "has_logo": true,
+    "logo_file": "seagate.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/seagate"
+  },
+  {
+    "id": 830,
+    "name": "Frost Buddy",
+    "slug": "frost-buddy",
+    "has_logo": true,
+    "logo_file": "frost-buddy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/frost-buddy"
+  },
+  {
+    "id": 831,
+    "name": "Cosabella",
+    "slug": "cosabella",
+    "has_logo": true,
+    "logo_file": "cosabella.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cosabella"
+  },
+  {
+    "id": 832,
+    "name": "Swolverine",
+    "slug": "swolverine",
+    "has_logo": true,
+    "logo_file": "swolverine.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/swolverine"
+  },
+  {
+    "id": 833,
+    "name": "Outdoor Gear Exchange",
+    "slug": "outdoor-gear-exchange",
+    "has_logo": true,
+    "logo_file": "outdoor-gear-exchange.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/outdoor-gear-exchange"
+  },
+  {
+    "id": 834,
+    "name": "Tuft & Needle",
+    "slug": "tuft-needle",
+    "has_logo": true,
+    "logo_file": "tuft-needle.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tuft-needle"
+  },
+  {
+    "id": 835,
+    "name": "Nexbelt",
+    "slug": "nexbelt",
+    "has_logo": true,
+    "logo_file": "nexbelt.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nexbelt"
+  },
+  {
+    "id": 836,
+    "name": "Sanfer Bike",
+    "slug": "sanfer-bike",
+    "has_logo": true,
+    "logo_file": "sanfer-bike.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sanfer-bike"
+  },
+  {
+    "id": 837,
+    "name": "Hyperice",
+    "slug": "hyperice",
+    "has_logo": true,
+    "logo_file": "hyperice.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hyperice"
+  },
+  {
+    "id": 838,
+    "name": "La Mer",
+    "slug": "la-mer",
+    "has_logo": true,
+    "logo_file": "la-mer.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/la-mer"
+  },
+  {
+    "id": 839,
+    "name": "Dermalogica",
+    "slug": "dermalogica",
+    "has_logo": true,
+    "logo_file": "dermalogica.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dermalogica"
+  },
+  {
+    "id": 840,
+    "name": "Lazyone",
+    "slug": "lazyone",
+    "has_logo": true,
+    "logo_file": "lazyone.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/lazyone"
+  },
+  {
+    "id": 841,
+    "name": "Steve Madden",
+    "slug": "steve-madden",
+    "has_logo": true,
+    "logo_file": "steve-madden.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/steve-madden"
+  },
+  {
+    "id": 842,
+    "name": "Dashing Diva",
+    "slug": "dashing-diva",
+    "has_logo": true,
+    "logo_file": "dashing-diva.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dashing-diva"
+  },
+  {
+    "id": 843,
+    "name": "Blue Seventy",
+    "slug": "blue-seventy",
+    "has_logo": true,
+    "logo_file": "blue-seventy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/blue-seventy"
+  },
+  {
+    "id": 844,
+    "name": "Salt Life",
+    "slug": "salt-life",
+    "has_logo": true,
+    "logo_file": "salt-life.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/salt-life"
+  },
+  {
+    "id": 845,
+    "name": "Zulay Kitchen",
+    "slug": "zulay-kitchen",
+    "has_logo": true,
+    "logo_file": "zulay-kitchen.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/zulay-kitchen"
+  },
+  {
+    "id": 846,
+    "name": "Piedmontese",
+    "slug": "piedmontese",
+    "has_logo": true,
+    "logo_file": "piedmontese.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/piedmontese"
+  },
+  {
+    "id": 847,
+    "name": "Coutr",
+    "slug": "coutr",
+    "has_logo": true,
+    "logo_file": "coutr.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/coutr"
+  },
+  {
+    "id": 848,
+    "name": "Apolosign",
+    "slug": "apolosign",
+    "has_logo": true,
+    "logo_file": "apolosign.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/apolosign"
+  },
+  {
+    "id": 849,
+    "name": "Sublue",
+    "slug": "sublue",
+    "has_logo": true,
+    "logo_file": "sublue.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sublue"
+  },
+  {
+    "id": 850,
+    "name": "Celestyal Cruise",
+    "slug": "celestyal-cruise",
+    "has_logo": true,
+    "logo_file": "celestyal-cruise.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/celestyal-cruise"
+  },
+  {
+    "id": 851,
+    "name": "Charles Bentley",
+    "slug": "charles-bentley",
+    "has_logo": true,
+    "logo_file": "charles-bentley.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/charles-bentley"
+  },
+  {
+    "id": 852,
+    "name": "Hunter Fan",
+    "slug": "hunter-fan",
+    "has_logo": true,
+    "logo_file": "hunter-fan.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/hunter-fan"
+  },
+  {
+    "id": 853,
+    "name": "QIDI",
+    "slug": "qidi",
+    "has_logo": true,
+    "logo_file": "qidi.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/qidi"
+  },
+  {
+    "id": 854,
+    "name": "Harlembling",
+    "slug": "harlembling",
+    "has_logo": true,
+    "logo_file": "harlembling.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/harlembling"
+  },
+  {
+    "id": 855,
+    "name": "Bond & Mason",
+    "slug": "bond-mason",
+    "has_logo": true,
+    "logo_file": "bond-mason.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bond-mason"
+  },
+  {
+    "id": 856,
+    "name": "Silver Jeans",
+    "slug": "silver-jeans",
+    "has_logo": true,
+    "logo_file": "silver-jeans.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/silver-jeans"
+  },
+  {
+    "id": 857,
+    "name": "Puckipuppy US",
+    "slug": "puckipuppy-us",
+    "has_logo": true,
+    "logo_file": "puckipuppy-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/puckipuppy-us"
+  },
+  {
+    "id": 858,
+    "name": "Mobapad",
+    "slug": "mobapad",
+    "has_logo": true,
+    "logo_file": "mobapad.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mobapad"
+  },
+  {
+    "id": 859,
+    "name": "Rebecca Minkoff",
+    "slug": "rebecca-minkoff",
+    "has_logo": true,
+    "logo_file": "rebecca-minkoff.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/rebecca-minkoff"
+  },
+  {
+    "id": 860,
+    "name": "Neo Sabers",
+    "slug": "neo-sabers",
+    "has_logo": true,
+    "logo_file": "neo-sabers.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/neo-sabers"
+  },
+  {
+    "id": 861,
+    "name": "Anastasia Beverly Hills",
+    "slug": "anastasia-beverly-hills",
+    "has_logo": true,
+    "logo_file": "anastasia-beverly-hills.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/anastasia-beverly-hills"
+  },
+  {
+    "id": 862,
+    "name": "JenniBag",
+    "slug": "jennibag",
+    "has_logo": true,
+    "logo_file": "jennibag.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jennibag"
+  },
+  {
+    "id": 863,
+    "name": "Professional Supplement Center",
+    "slug": "professional-supplement-center",
+    "has_logo": true,
+    "logo_file": "professional-supplement-center.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/professional-supplement-center"
+  },
+  {
+    "id": 864,
+    "name": "NordicTrack",
+    "slug": "nordictrack",
+    "has_logo": true,
+    "logo_file": "nordictrack.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nordictrack"
+  },
+  {
+    "id": 865,
+    "name": "Bodega",
+    "slug": "bodega",
+    "has_logo": true,
+    "logo_file": "bodega.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bodega"
+  },
+  {
+    "id": 866,
+    "name": "Naturnest US/UK",
+    "slug": "naturnest-us-uk",
+    "has_logo": true,
+    "logo_file": "naturnest-us-uk.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/naturnest-us-uk"
+  },
+  {
+    "id": 867,
+    "name": "navimow",
+    "slug": "navimow",
+    "has_logo": true,
+    "logo_file": "navimow.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/navimow"
+  },
+  {
+    "id": 868,
+    "name": "Omfort",
+    "slug": "omfort",
+    "has_logo": true,
+    "logo_file": "omfort.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/omfort"
+  },
+  {
+    "id": 869,
+    "name": "Walking Pad",
+    "slug": "walking-pad",
+    "has_logo": true,
+    "logo_file": "walking-pad.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/walking-pad"
+  },
+  {
+    "id": 870,
+    "name": "DreamCloud",
+    "slug": "dreamcloud",
+    "has_logo": true,
+    "logo_file": "dreamcloud.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dreamcloud"
+  },
+  {
+    "id": 871,
+    "name": "Mousse et Coussins",
+    "slug": "mousse-et-coussins",
+    "has_logo": true,
+    "logo_file": "mousse-et-coussins.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/mousse-et-coussins"
+  },
+  {
+    "id": 872,
+    "name": "Eric Favre CPA",
+    "slug": "eric-favre-cpa",
+    "has_logo": true,
+    "logo_file": "eric-favre-cpa.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/eric-favre-cpa"
+  },
+  {
+    "id": 873,
+    "name": "Pai Technology Inc.",
+    "slug": "pai-technology-inc",
+    "has_logo": true,
+    "logo_file": "pai-technology-inc.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pai-technology-inc"
+  },
+  {
+    "id": 874,
+    "name": "acousart",
+    "slug": "acousart",
+    "has_logo": true,
+    "logo_file": "acousart.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/acousart"
+  },
+  {
+    "id": 875,
+    "name": "Opticas LUX",
+    "slug": "opticas-lux",
+    "has_logo": true,
+    "logo_file": "opticas-lux.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/opticas-lux"
+  },
+  {
+    "id": 876,
+    "name": "AlFaram",
+    "slug": "alfaram",
+    "has_logo": true,
+    "logo_file": "alfaram.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/alfaram"
+  },
+  {
+    "id": 877,
+    "name": "Young Electric",
+    "slug": "young-electric",
+    "has_logo": true,
+    "logo_file": "young-electric.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/young-electric"
+  },
+  {
+    "id": 878,
+    "name": "Thread Wallets US",
+    "slug": "thread-wallets-us",
+    "has_logo": true,
+    "logo_file": "thread-wallets-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/thread-wallets-us"
+  },
+  {
+    "id": 879,
+    "name": "PTLOM",
+    "slug": "ptlom",
+    "has_logo": true,
+    "logo_file": "ptlom.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ptlom"
+  },
+  {
+    "id": 880,
+    "name": "Don't Buy Her Flowers",
+    "slug": "don-t-buy-her-flowers",
+    "has_logo": true,
+    "logo_file": "don-t-buy-her-flowers.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/don-t-buy-her-flowers"
+  },
+  {
+    "id": 881,
+    "name": "Parc Asterix",
+    "slug": "parc-asterix",
+    "has_logo": true,
+    "logo_file": "parc-asterix.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/parc-asterix"
+  },
+  {
+    "id": 882,
+    "name": "Bagsmart US",
+    "slug": "bagsmart-us",
+    "has_logo": true,
+    "logo_file": "bagsmart-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bagsmart-us"
+  },
+  {
+    "id": 883,
+    "name": "iROCKERSUP",
+    "slug": "irockersup",
+    "has_logo": true,
+    "logo_file": "irockersup.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/irockersup"
+  },
+  {
+    "id": 884,
+    "name": "Fuumuui",
+    "slug": "fuumuui",
+    "has_logo": true,
+    "logo_file": "fuumuui.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fuumuui"
+  },
+  {
+    "id": 885,
+    "name": "Laurence Boutique",
+    "slug": "laurence-boutique",
+    "has_logo": true,
+    "logo_file": "laurence-boutique.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/laurence-boutique"
+  },
+  {
+    "id": 886,
+    "name": "OUFER BODY JEWELRY",
+    "slug": "oufer-body-jewelry",
+    "has_logo": true,
+    "logo_file": "oufer-body-jewelry.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/oufer-body-jewelry"
+  },
+  {
+    "id": 887,
+    "name": "Aulumu US",
+    "slug": "aulumu-us",
+    "has_logo": true,
+    "logo_file": "aulumu-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/aulumu-us"
+  },
+  {
+    "id": 888,
+    "name": "Cocokind US",
+    "slug": "cocokind-us",
+    "has_logo": true,
+    "logo_file": "cocokind-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cocokind-us"
+  },
+  {
+    "id": 889,
+    "name": "Veise",
+    "slug": "veise",
+    "has_logo": true,
+    "logo_file": "veise.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/veise"
+  },
+  {
+    "id": 890,
+    "name": "Irislee Gallery",
+    "slug": "irislee-gallery",
+    "has_logo": true,
+    "logo_file": "irislee-gallery.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/irislee-gallery"
+  },
+  {
+    "id": 891,
+    "name": "Ozmoz",
+    "slug": "ozmoz",
+    "has_logo": true,
+    "logo_file": "ozmoz.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/ozmoz"
+  },
+  {
+    "id": 892,
+    "name": "blokees",
+    "slug": "blokees",
+    "has_logo": true,
+    "logo_file": "blokees.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/blokees"
+  },
+  {
+    "id": 893,
+    "name": "Quicksilver",
+    "slug": "quicksilver",
+    "has_logo": true,
+    "logo_file": "quicksilver.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/quicksilver"
+  },
+  {
+    "id": 894,
+    "name": "Cosyneo",
+    "slug": "cosyneo",
+    "has_logo": true,
+    "logo_file": "cosyneo.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/cosyneo"
+  },
+  {
+    "id": 895,
+    "name": "bmiMD",
+    "slug": "bmimd",
+    "has_logo": true,
+    "logo_file": "bmimd.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bmimd"
+  },
+  {
+    "id": 896,
+    "name": "Patricia Nash US",
+    "slug": "patricia-nash-us",
+    "has_logo": true,
+    "logo_file": "patricia-nash-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/patricia-nash-us"
+  },
+  {
+    "id": 897,
+    "name": "Serwall Outdoor US",
+    "slug": "serwall-outdoor-us",
+    "has_logo": true,
+    "logo_file": "serwall-outdoor-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/serwall-outdoor-us"
+  },
+  {
+    "id": 898,
+    "name": "Comix Panini IT",
+    "slug": "comix-panini-it",
+    "has_logo": true,
+    "logo_file": "comix-panini-it.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/comix-panini-it"
+  },
+  {
+    "id": 899,
+    "name": "Fantastic Services",
+    "slug": "fantastic-services",
+    "has_logo": true,
+    "logo_file": "fantastic-services.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/fantastic-services"
+  },
+  {
+    "id": 900,
+    "name": "Sport Service",
+    "slug": "sport-service",
+    "has_logo": true,
+    "logo_file": "sport-service.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/sport-service"
+  },
+  {
+    "id": 901,
+    "name": "Glowria",
+    "slug": "glowria",
+    "has_logo": true,
+    "logo_file": "glowria.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/glowria"
+  },
+  {
+    "id": 902,
+    "name": "Megawheels US",
+    "slug": "megawheels-us",
+    "has_logo": true,
+    "logo_file": "megawheels-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/megawheels-us"
+  },
+  {
+    "id": 903,
+    "name": "JanSport US",
+    "slug": "jansport-us",
+    "has_logo": true,
+    "logo_file": "jansport-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jansport-us"
+  },
+  {
+    "id": 904,
+    "name": "Shoes FR",
+    "slug": "shoes-fr",
+    "has_logo": true,
+    "logo_file": "shoes-fr.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/shoes-fr"
+  },
+  {
+    "id": 905,
+    "name": "Walabot US",
+    "slug": "walabot-us",
+    "has_logo": true,
+    "logo_file": "walabot-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/walabot-us"
+  },
+  {
+    "id": 906,
+    "name": "Artextured",
+    "slug": "artextured",
+    "has_logo": true,
+    "logo_file": "artextured.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/artextured"
+  },
+  {
+    "id": 907,
+    "name": "Pupper Crust",
+    "slug": "pupper-crust",
+    "has_logo": true,
+    "logo_file": "pupper-crust.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/pupper-crust"
+  },
+  {
+    "id": 908,
+    "name": "Bruno Marc US",
+    "slug": "bruno-marc-us",
+    "has_logo": true,
+    "logo_file": "bruno-marc-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/bruno-marc-us"
+  },
+  {
+    "id": 909,
+    "name": "Jade Leaf Matcha",
+    "slug": "jade-leaf-matcha",
+    "has_logo": true,
+    "logo_file": "jade-leaf-matcha.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/jade-leaf-matcha"
+  },
+  {
+    "id": 910,
+    "name": "Nanobag US",
+    "slug": "nanobag-us",
+    "has_logo": true,
+    "logo_file": "nanobag-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/nanobag-us"
+  },
+  {
+    "id": 911,
+    "name": "Maxpeedingrods US",
+    "slug": "maxpeedingrods-us",
+    "has_logo": true,
+    "logo_file": "maxpeedingrods-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/maxpeedingrods-us"
+  },
+  {
+    "id": 912,
+    "name": "DreamPairs US",
+    "slug": "dreampairs-us",
+    "has_logo": true,
+    "logo_file": "dreampairs-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/dreampairs-us"
+  },
+  {
+    "id": 913,
+    "name": "Perricone MD US",
+    "slug": "perricone-md-us",
+    "has_logo": true,
+    "logo_file": "perricone-md-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/perricone-md-us"
+  },
+  {
+    "id": 914,
+    "name": "PsPrint US",
+    "slug": "psprint-us",
+    "has_logo": true,
+    "logo_file": "psprint-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/psprint-us"
+  },
+  {
+    "id": 915,
+    "name": "Voyage Prive IT",
+    "slug": "voyage-prive-it",
+    "has_logo": true,
+    "logo_file": "voyage-prive-it.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/voyage-prive-it"
+  },
+  {
+    "id": 916,
+    "name": "Reima US",
+    "slug": "reima-us",
+    "has_logo": true,
+    "logo_file": "reima-us.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/reima-us"
+  },
+  {
+    "id": 917,
+    "name": "Minoston",
+    "slug": "minoston",
+    "has_logo": true,
+    "logo_file": "minoston.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/minoston"
+  },
+  {
+    "id": 918,
+    "name": "The Belly Lab",
+    "slug": "the-belly-lab",
+    "has_logo": true,
+    "logo_file": "the-belly-lab.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/the-belly-lab"
+  },
+  {
+    "id": 919,
+    "name": "Boroux",
+    "slug": "boroux",
+    "has_logo": true,
+    "logo_file": "boroux.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/boroux"
+  },
+  {
+    "id": 920,
+    "name": "Renogy",
+    "slug": "renogy",
+    "has_logo": true,
+    "logo_file": "renogy.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/renogy"
+  },
+  {
+    "id": 921,
+    "name": "TKEES",
+    "slug": "tkees",
+    "has_logo": true,
+    "logo_file": "tkees.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/tkees"
+  },
+  {
+    "id": 922,
+    "name": "YoungLA",
+    "slug": "youngla",
+    "has_logo": true,
+    "logo_file": "youngla.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/youngla"
+  },
+  {
+    "id": 923,
+    "name": "Inner Light Sauna",
+    "slug": "inner-light-sauna",
+    "has_logo": true,
+    "logo_file": "inner-light-sauna.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/inner-light-sauna"
+  },
+  {
+    "id": 924,
+    "name": "Capezio",
+    "slug": "capezio",
+    "has_logo": true,
+    "logo_file": "capezio.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/capezio"
+  },
+  {
+    "id": 925,
+    "name": "Gray Nicolls",
+    "slug": "gray-nicolls",
+    "has_logo": true,
+    "logo_file": "gray-nicolls.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/gray-nicolls"
+  },
+  {
+    "id": 926,
+    "name": "Freda Salvador",
+    "slug": "freda-salvador",
+    "has_logo": true,
+    "logo_file": "freda-salvador.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/freda-salvador"
+  },
+  {
+    "id": 927,
+    "name": "Underoutfit",
+    "slug": "underoutfit",
+    "has_logo": true,
+    "logo_file": "underoutfit.png",
+    "url": "https://my-coupon-hazique-s-projects.vercel.app/store/underoutfit"
+  }
+]

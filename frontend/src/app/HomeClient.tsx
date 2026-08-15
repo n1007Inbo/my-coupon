@@ -114,9 +114,10 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   // Filter coupons based on search query and active store filter
   const filteredCoupons = useMemo(() => {
     return initialCoupons.filter((coupon) => {
+      if (!coupon) return false;
       const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
-      const storeName = isStoreObject ? (coupon.store as Store).name : (coupon.store as string);
-      const storeSlug = isStoreObject ? (coupon.store as Store).slug : storeName.toLowerCase().replace(/\s+/g, "-");
+      const storeName = isStoreObject ? ((coupon.store as Store)?.name || "") : (typeof coupon.store === "string" ? coupon.store : "");
+      const storeSlug = isStoreObject ? ((coupon.store as Store)?.slug || "") : (storeName ? storeName.toLowerCase().replace(/\s+/g, "-") : "");
 
       // Filter by store slug if selected
       if (selectedStoreSlug && storeSlug !== selectedStoreSlug) {
@@ -314,7 +315,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   const matchedStores = useMemo(() => {
     if (searchQuery.trim() === "") return [];
     const query = searchQuery.toLowerCase();
-    return initialStores.filter(store => store.name.toLowerCase().includes(query));
+    return initialStores.filter(store => store && store.name && store.name.toLowerCase().includes(query));
   }, [initialStores, searchQuery]);
 
   return (

@@ -1,0 +1,2192 @@
+[
+  {
+    "id": "1",
+    "name": "Amazon",
+    "slug": "amazon"
+  },
+  {
+    "id": "2",
+    "name": "Nike",
+    "slug": "nike"
+  },
+  {
+    "id": "3",
+    "name": "Hostinger",
+    "slug": "hostinger"
+  },
+  {
+    "id": "4",
+    "name": "Adidas",
+    "slug": "adidas"
+  },
+  {
+    "id": "5",
+    "name": "Walmart",
+    "slug": "walmart"
+  },
+  {
+    "id": "6",
+    "name": "eBay",
+    "slug": "ebay"
+  },
+  {
+    "id": "7",
+    "name": "Target",
+    "slug": "target"
+  },
+  {
+    "id": "8",
+    "name": "Apple",
+    "slug": "apple"
+  },
+  {
+    "id": "9",
+    "name": "Starbucks",
+    "slug": "starbucks"
+  },
+  {
+    "id": "10",
+    "name": "Steam",
+    "slug": "steam"
+  },
+  {
+    "id": "11",
+    "name": "AliExpress",
+    "slug": "aliexpress"
+  },
+  {
+    "id": "12",
+    "name": "Adobe",
+    "slug": "adobe"
+  },
+  {
+    "id": "13",
+    "name": "Canva",
+    "slug": "canva"
+  },
+  {
+    "id": "14",
+    "name": "Samsung",
+    "slug": "samsung"
+  },
+  {
+    "id": "15",
+    "name": "NordVPN",
+    "slug": "nordvpn"
+  },
+  {
+    "id": "16",
+    "name": "Lenovo",
+    "slug": "lenovo"
+  },
+  {
+    "id": "17",
+    "name": "Puma",
+    "slug": "puma"
+  },
+  {
+    "id": "18",
+    "name": "Fiverr",
+    "slug": "fiverr"
+  },
+  {
+    "id": "19",
+    "name": "Booking.com",
+    "slug": "bookingcom"
+  },
+  {
+    "id": "20",
+    "name": "Udemy",
+    "slug": "udemy"
+  },
+  {
+    "id": "21",
+    "name": "Desktronic UK",
+    "slug": "desktronic-uk"
+  },
+  {
+    "id": "22",
+    "name": "Desktronic US",
+    "slug": "desktronic-us"
+  },
+  {
+    "id": "23",
+    "name": "Tenways UK",
+    "slug": "tenways-uk"
+  },
+  {
+    "id": "24",
+    "name": "Tenways US",
+    "slug": "tenways-us"
+  },
+  {
+    "id": "25",
+    "name": "Geekbuying",
+    "slug": "geekbuying"
+  },
+  {
+    "id": "26",
+    "name": "Banggood",
+    "slug": "banggood"
+  },
+  {
+    "id": "27",
+    "name": "Zaful",
+    "slug": "zaful"
+  },
+  {
+    "id": "28",
+    "name": "MassiveMobile",
+    "slug": "massivemobile"
+  },
+  {
+    "id": "29",
+    "name": "DHgate",
+    "slug": "dhgate"
+  },
+  {
+    "id": "30",
+    "name": "Envato Elements",
+    "slug": "envato"
+  },
+  {
+    "id": "31",
+    "name": "Semrush",
+    "slug": "semrush"
+  },
+  {
+    "id": "32",
+    "name": "Namecheap",
+    "slug": "namecheap"
+  },
+  {
+    "id": "33",
+    "name": "Squarespace",
+    "slug": "squarespace"
+  },
+  {
+    "id": "34",
+    "name": "HostGator",
+    "slug": "hostgator"
+  },
+  {
+    "id": "35",
+    "name": "Bluehost",
+    "slug": "bluehost"
+  },
+  {
+    "id": "36",
+    "name": "Coursera",
+    "slug": "coursera"
+  },
+  {
+    "id": "37",
+    "name": "Skillshare",
+    "slug": "skillshare"
+  },
+  {
+    "id": "38",
+    "name": "NordPass",
+    "slug": "nordpass"
+  },
+  {
+    "id": "39",
+    "name": "GoDaddy",
+    "slug": "godaddy"
+  },
+  {
+    "id": "40",
+    "name": "Gymshark",
+    "slug": "gymshark"
+  },
+  {
+    "id": "41",
+    "name": "Desktronic NL",
+    "slug": "desktronic-nl"
+  },
+  {
+    "id": "42",
+    "name": "Parc Astérix FR",
+    "slug": "parc-asterix-fr"
+  },
+  {
+    "id": "43",
+    "name": "Bouquets by Post",
+    "slug": "bouquets-by-post"
+  },
+  {
+    "id": "44",
+    "name": "IM8 Health US",
+    "slug": "im8health"
+  },
+  {
+    "id": "45",
+    "name": "Redu Sculpt US",
+    "slug": "redusculpt"
+  },
+  {
+    "id": "46",
+    "name": "Evolution Power Tools US",
+    "slug": "evolution-power-tools"
+  },
+  {
+    "id": "47",
+    "name": "Maple Prime US",
+    "slug": "maple-prime"
+  },
+  {
+    "id": "49",
+    "name": "Anycubic US",
+    "slug": "anycubic-us"
+  },
+  {
+    "id": "50",
+    "name": "Hitway UK",
+    "slug": "hitway-uk"
+  },
+  {
+    "id": "51",
+    "name": "Wolfbox UK",
+    "slug": "wolfbox-uk"
+  },
+  {
+    "id": "52",
+    "name": "Fitueyes UK",
+    "slug": "fitueyes-uk"
+  },
+  {
+    "id": "53",
+    "name": "Helvetus US",
+    "slug": "helvetus"
+  },
+  {
+    "id": "54",
+    "name": "Xsteel Targets US",
+    "slug": "xsteel-targets"
+  },
+  {
+    "id": "55",
+    "name": "Reconstitution Solution US",
+    "slug": "reconstitution-solution"
+  },
+  {
+    "id": "56",
+    "name": "TuxMat US",
+    "slug": "tuxmat-us"
+  },
+  {
+    "id": "57",
+    "name": "Hotel Tonight US",
+    "slug": "hotel-tonight"
+  },
+  {
+    "id": "58",
+    "name": "Swatch US",
+    "slug": "swatch"
+  },
+  {
+    "id": "60",
+    "name": "Shipt US",
+    "slug": "shipt"
+  },
+  {
+    "id": "62",
+    "name": "Shipt",
+    "slug": "shipt"
+  },
+  {
+    "id": "63",
+    "name": "Meowant",
+    "slug": "meowant"
+  },
+  {
+    "id": "64",
+    "name": "Shelly EU &",
+    "slug": "shelly-eu-"
+  },
+  {
+    "id": "65",
+    "name": "Larine Company",
+    "slug": "larine-company"
+  },
+  {
+    "id": "66",
+    "name": "Spothero",
+    "slug": "spothero"
+  },
+  {
+    "id": "67",
+    "name": "Taylor Made",
+    "slug": "taylor-made"
+  },
+  {
+    "id": "68",
+    "name": "Choice Hotels",
+    "slug": "choice-hotels"
+  },
+  {
+    "id": "69",
+    "name": "Meshy",
+    "slug": "meshy"
+  },
+  {
+    "id": "70",
+    "name": "Kate Spade",
+    "slug": "kate-spade"
+  },
+  {
+    "id": "71",
+    "name": "Hilo",
+    "slug": "hilo"
+  },
+  {
+    "id": "72",
+    "name": "LegalZoom",
+    "slug": "legalzoom"
+  },
+  {
+    "id": "73",
+    "name": "Bedsure",
+    "slug": "bedsure"
+  },
+  {
+    "id": "74",
+    "name": "Dewenwils",
+    "slug": "dewenwils"
+  },
+  {
+    "id": "75",
+    "name": "TORRAS",
+    "slug": "torras"
+  },
+  {
+    "id": "76",
+    "name": "Jack Rogers",
+    "slug": "jack-rogers"
+  },
+  {
+    "id": "77",
+    "name": "Suzanne Somers",
+    "slug": "suzanne-somers"
+  },
+  {
+    "id": "78",
+    "name": "The Wine Collective",
+    "slug": "the-wine-collective"
+  },
+  {
+    "id": "79",
+    "name": "Sleepyhead",
+    "slug": "sleepyhead"
+  },
+  {
+    "id": "80",
+    "name": "Sperry",
+    "slug": "sperry"
+  },
+  {
+    "id": "81",
+    "name": "Evelyn & Bobbie",
+    "slug": "evelyn-bobbie"
+  },
+  {
+    "id": "82",
+    "name": "1ink.com",
+    "slug": "1inkcom"
+  },
+  {
+    "id": "83",
+    "name": "Flick VPN",
+    "slug": "flick-vpn"
+  },
+  {
+    "id": "84",
+    "name": "Champion Life Insurance",
+    "slug": "champion-life-insurance"
+  },
+  {
+    "id": "85",
+    "name": "Remedy Meds",
+    "slug": "remedy-meds"
+  },
+  {
+    "id": "86",
+    "name": "Norton LifeLock",
+    "slug": "norton-lifelock"
+  },
+  {
+    "id": "87",
+    "name": "Network Solutions",
+    "slug": "network-solutions"
+  },
+  {
+    "id": "88",
+    "name": "Cars24",
+    "slug": "cars24"
+  },
+  {
+    "id": "89",
+    "name": "NexBurn",
+    "slug": "nexburn"
+  },
+  {
+    "id": "90",
+    "name": "Asknow",
+    "slug": "asknow"
+  },
+  {
+    "id": "91",
+    "name": "Lyca Mobile (US)",
+    "slug": "lyca-mobile-us"
+  },
+  {
+    "id": "92",
+    "name": "Factor",
+    "slug": "factor"
+  },
+  {
+    "id": "93",
+    "name": "American Dream Auto Protect",
+    "slug": "american-dream-auto-protect"
+  },
+  {
+    "id": "94",
+    "name": "Bark Parental Controls",
+    "slug": "bark-parental-controls"
+  },
+  {
+    "id": "95",
+    "name": "Aura - Parental Controls",
+    "slug": "aura-parental-controls"
+  },
+  {
+    "id": "96",
+    "name": "Dropps.com",
+    "slug": "droppscom"
+  },
+  {
+    "id": "97",
+    "name": "Greencross Vets",
+    "slug": "greencross-vets"
+  },
+  {
+    "id": "98",
+    "name": "Bullion",
+    "slug": "bullion"
+  },
+  {
+    "id": "99",
+    "name": "DeleteMe",
+    "slug": "deleteme"
+  },
+  {
+    "id": "100",
+    "name": "College Ave",
+    "slug": "college-ave"
+  },
+  {
+    "id": "101",
+    "name": "Select Home Warranty",
+    "slug": "select-home-warranty"
+  },
+  {
+    "id": "102",
+    "name": "Insurify",
+    "slug": "insurify"
+  },
+  {
+    "id": "103",
+    "name": "Compare.com",
+    "slug": "comparecom"
+  },
+  {
+    "id": "104",
+    "name": "HomeSafe",
+    "slug": "homesafe"
+  },
+  {
+    "id": "105",
+    "name": "The Times Literary Supplement",
+    "slug": "the-times-literary-supplement"
+  },
+  {
+    "id": "106",
+    "name": "DaBella",
+    "slug": "dabella"
+  },
+  {
+    "id": "107",
+    "name": "Income Insurance Limited",
+    "slug": "income-insurance-limited"
+  },
+  {
+    "id": "108",
+    "name": "Squarespace",
+    "slug": "squarespace"
+  },
+  {
+    "id": "109",
+    "name": "Claim Climbers",
+    "slug": "claim-climbers"
+  },
+  {
+    "id": "110",
+    "name": "Patriot Frontline",
+    "slug": "patriot-frontline"
+  },
+  {
+    "id": "111",
+    "name": "DocSearch - GLP-1",
+    "slug": "docsearch-glp-1"
+  },
+  {
+    "id": "112",
+    "name": "DocSearch",
+    "slug": "docsearch"
+  },
+  {
+    "id": "113",
+    "name": "Lemonaid Health",
+    "slug": "lemonaid-health"
+  },
+  {
+    "id": "114",
+    "name": "Global Trade Rates",
+    "slug": "global-trade-rates"
+  },
+  {
+    "id": "115",
+    "name": "Flashcloud",
+    "slug": "flashcloud"
+  },
+  {
+    "id": "116",
+    "name": "Macroplate",
+    "slug": "macroplate"
+  },
+  {
+    "id": "117",
+    "name": "MINT home",
+    "slug": "mint-home"
+  },
+  {
+    "id": "118",
+    "name": "Artlist",
+    "slug": "artlist"
+  },
+  {
+    "id": "119",
+    "name": "Remedy Place",
+    "slug": "remedy-place"
+  },
+  {
+    "id": "120",
+    "name": "Neu Money No-Interest Credit Card",
+    "slug": "neu-money-no-interest-credit-card"
+  },
+  {
+    "id": "121",
+    "name": "Neu Money No-Annual-Fee Credit Card",
+    "slug": "neu-money-no-annual-fee-credit-card"
+  },
+  {
+    "id": "122",
+    "name": "Qtrade",
+    "slug": "qtrade"
+  },
+  {
+    "id": "123",
+    "name": "Neo Financial",
+    "slug": "neo-financial"
+  },
+  {
+    "id": "124",
+    "name": "Spring Financial",
+    "slug": "spring-financial"
+  },
+  {
+    "id": "125",
+    "name": "AmazingClubs",
+    "slug": "amazingclubs"
+  },
+  {
+    "id": "126",
+    "name": "McAfee",
+    "slug": "mcafee"
+  },
+  {
+    "id": "127",
+    "name": "Endurance",
+    "slug": "endurance"
+  },
+  {
+    "id": "128",
+    "name": "Fanatiz - Sports Streaming",
+    "slug": "fanatiz-sports-streaming"
+  },
+  {
+    "id": "129",
+    "name": "Quicken",
+    "slug": "quicken"
+  },
+  {
+    "id": "130",
+    "name": "Thimble",
+    "slug": "thimble"
+  },
+  {
+    "id": "131",
+    "name": "Strype Wellness",
+    "slug": "strype-wellness"
+  },
+  {
+    "id": "132",
+    "name": "Western Union North America",
+    "slug": "western-union-north-america"
+  },
+  {
+    "id": "133",
+    "name": "Swooped",
+    "slug": "swooped"
+  },
+  {
+    "id": "134",
+    "name": "Mighties",
+    "slug": "mighties"
+  },
+  {
+    "id": "135",
+    "name": "AKKO",
+    "slug": "akko"
+  },
+  {
+    "id": "136",
+    "name": "HelloPrenup",
+    "slug": "helloprenup"
+  },
+  {
+    "id": "137",
+    "name": "NewSelf Ventures",
+    "slug": "newself-ventures"
+  },
+  {
+    "id": "138",
+    "name": "OneTravel",
+    "slug": "onetravel"
+  },
+  {
+    "id": "139",
+    "name": "Splitero",
+    "slug": "splitero"
+  },
+  {
+    "id": "140",
+    "name": "RVezy",
+    "slug": "rvezy"
+  },
+  {
+    "id": "141",
+    "name": "HintMeds Inc",
+    "slug": "hintmeds-inc"
+  },
+  {
+    "id": "142",
+    "name": "Legendz",
+    "slug": "legendz"
+  },
+  {
+    "id": "143",
+    "name": "SmartCredit",
+    "slug": "smartcredit"
+  },
+  {
+    "id": "144",
+    "name": "Upwork Freelance Marketplace",
+    "slug": "upwork-freelance-marketplace"
+  },
+  {
+    "id": "145",
+    "name": "Neo CA - Credit Card",
+    "slug": "neo-ca-credit-card"
+  },
+  {
+    "id": "146",
+    "name": "Whitebridge",
+    "slug": "whitebridge"
+  },
+  {
+    "id": "147",
+    "name": "Winona",
+    "slug": "winona"
+  },
+  {
+    "id": "148",
+    "name": "BINGE Movies & TV",
+    "slug": "binge-movies-tv"
+  },
+  {
+    "id": "149",
+    "name": "ECCO",
+    "slug": "ecco"
+  },
+  {
+    "id": "150",
+    "name": "TryHackMe",
+    "slug": "tryhackme"
+  },
+  {
+    "id": "151",
+    "name": "Flashark",
+    "slug": "flashark"
+  },
+  {
+    "id": "152",
+    "name": "Backcountry",
+    "slug": "backcountry"
+  },
+  {
+    "id": "153",
+    "name": "Neiman Marcus",
+    "slug": "neiman-marcus"
+  },
+  {
+    "id": "154",
+    "name": "Saks Fifth Avenue",
+    "slug": "saks-fifth-avenue"
+  },
+  {
+    "id": "155",
+    "name": "xSuit",
+    "slug": "xsuit"
+  },
+  {
+    "id": "156",
+    "name": "G-Star Raw",
+    "slug": "g-star-raw"
+  },
+  {
+    "id": "157",
+    "name": "Wildflower Cases",
+    "slug": "wildflower-cases"
+  },
+  {
+    "id": "158",
+    "name": "Ubeauty",
+    "slug": "ubeauty"
+  },
+  {
+    "id": "159",
+    "name": "Myaerotel",
+    "slug": "myaerotel"
+  },
+  {
+    "id": "160",
+    "name": "Super.com - Travel",
+    "slug": "supercom-travel"
+  },
+  {
+    "id": "161",
+    "name": "ScholarshipOwl",
+    "slug": "scholarshipowl"
+  },
+  {
+    "id": "162",
+    "name": "Mac Duggal",
+    "slug": "mac-duggal"
+  },
+  {
+    "id": "163",
+    "name": "Daisysilk Trade Co.,Ltd",
+    "slug": "daisysilk-trade-co-ltd"
+  },
+  {
+    "id": "164",
+    "name": "Kixies Inc",
+    "slug": "kixies-inc"
+  },
+  {
+    "id": "165",
+    "name": "novica.com",
+    "slug": "novica-com"
+  },
+  {
+    "id": "166",
+    "name": "Pooky US",
+    "slug": "pooky-us"
+  },
+  {
+    "id": "167",
+    "name": "Midwest Sports dba Tennis-Point",
+    "slug": "midwest-sports-dba-tennis-point"
+  },
+  {
+    "id": "168",
+    "name": "Montagne Vacances",
+    "slug": "montagne-vacances"
+  },
+  {
+    "id": "169",
+    "name": "Gardenreet",
+    "slug": "gardenreet"
+  },
+  {
+    "id": "170",
+    "name": "Mirlux",
+    "slug": "mirlux"
+  },
+  {
+    "id": "171",
+    "name": "Silver Cross",
+    "slug": "silver-cross"
+  },
+  {
+    "id": "172",
+    "name": "Jackery",
+    "slug": "jackery"
+  },
+  {
+    "id": "173",
+    "name": "Innovet Pet",
+    "slug": "innovet-pet"
+  },
+  {
+    "id": "174",
+    "name": "AFRM",
+    "slug": "afrm"
+  },
+  {
+    "id": "175",
+    "name": "Naghedi",
+    "slug": "naghedi"
+  },
+  {
+    "id": "176",
+    "name": "im8 health",
+    "slug": "im8-health"
+  },
+  {
+    "id": "177",
+    "name": "Tuxmat",
+    "slug": "tuxmat"
+  },
+  {
+    "id": "178",
+    "name": "Performance Golf",
+    "slug": "performance-golf"
+  },
+  {
+    "id": "179",
+    "name": "Simkhai",
+    "slug": "simkhai"
+  },
+  {
+    "id": "180",
+    "name": "Sexy Little Bath US",
+    "slug": "sexy-little-bath-us"
+  },
+  {
+    "id": "181",
+    "name": "Everblog",
+    "slug": "everblog"
+  },
+  {
+    "id": "182",
+    "name": "PrintAbout",
+    "slug": "printabout"
+  },
+  {
+    "id": "183",
+    "name": "Lumary",
+    "slug": "lumary"
+  },
+  {
+    "id": "184",
+    "name": "Young Electric Bikes",
+    "slug": "young-electric-bikes"
+  },
+  {
+    "id": "185",
+    "name": "StoreYourBoard",
+    "slug": "storeyourboard"
+  },
+  {
+    "id": "186",
+    "name": "Urevo",
+    "slug": "urevo"
+  },
+  {
+    "id": "187",
+    "name": "SBLA",
+    "slug": "sbla"
+  },
+  {
+    "id": "188",
+    "name": "Joe Nimble",
+    "slug": "joe-nimble"
+  },
+  {
+    "id": "189",
+    "name": "OUFER BODY JEWELRY 15%-100-259 (25-may-2026)",
+    "slug": "oufer-body-jewelry-15-100-259-25-may-2026"
+  },
+  {
+    "id": "190",
+    "name": "Elevated Craft",
+    "slug": "elevated-craft"
+  },
+  {
+    "id": "191",
+    "name": "Huega House",
+    "slug": "huega-house"
+  },
+  {
+    "id": "192",
+    "name": "Camp Chef",
+    "slug": "camp-chef"
+  },
+  {
+    "id": "193",
+    "name": "COLAMY",
+    "slug": "colamy"
+  },
+  {
+    "id": "194",
+    "name": "Buy Fencing Direct",
+    "slug": "buy-fencing-direct"
+  },
+  {
+    "id": "195",
+    "name": "Back to the Office",
+    "slug": "back-to-the-office"
+  },
+  {
+    "id": "196",
+    "name": "Thermos",
+    "slug": "thermos"
+  },
+  {
+    "id": "197",
+    "name": "cosori",
+    "slug": "cosori"
+  },
+  {
+    "id": "198",
+    "name": "Krewe",
+    "slug": "krewe"
+  },
+  {
+    "id": "199",
+    "name": "Ridstar",
+    "slug": "ridstar"
+  },
+  {
+    "id": "200",
+    "name": "Bruno Marc 8%-100-350 (29-july-2026)",
+    "slug": "bruno-marc-8-100-350-29-july-2026"
+  },
+  {
+    "id": "201",
+    "name": "Sunshine Tienda",
+    "slug": "sunshine-tienda"
+  },
+  {
+    "id": "202",
+    "name": "Red Gorilla",
+    "slug": "red-gorilla"
+  },
+  {
+    "id": "203",
+    "name": "Displays Outlet US",
+    "slug": "displays-outlet-us"
+  },
+  {
+    "id": "204",
+    "name": "Yvette Sports",
+    "slug": "yvette-sports"
+  },
+  {
+    "id": "205",
+    "name": "Zeagoo",
+    "slug": "zeagoo"
+  },
+  {
+    "id": "206",
+    "name": "BuyBackWorld",
+    "slug": "buybackworld"
+  },
+  {
+    "id": "207",
+    "name": "Flextail 5%-50-550 (23-july-2026)",
+    "slug": "flextail-5-50-550-23-july-2026"
+  },
+  {
+    "id": "208",
+    "name": "pelsbarn",
+    "slug": "pelsbarn"
+  },
+  {
+    "id": "209",
+    "name": "Povison",
+    "slug": "povison"
+  },
+  {
+    "id": "210",
+    "name": "Eternity Modern",
+    "slug": "eternity-modern"
+  },
+  {
+    "id": "211",
+    "name": "aviya mattress 15%-600-300 (23-july-2026)",
+    "slug": "aviya-mattress-15-600-300-23-july-2026"
+  },
+  {
+    "id": "212",
+    "name": "Arq8",
+    "slug": "arq8"
+  },
+  {
+    "id": "213",
+    "name": "BABEYOND",
+    "slug": "babeyond"
+  },
+  {
+    "id": "214",
+    "name": "Suunto",
+    "slug": "suunto"
+  },
+  {
+    "id": "215",
+    "name": "RMA Defense",
+    "slug": "rma-defense"
+  },
+  {
+    "id": "216",
+    "name": "Eonon",
+    "slug": "eonon"
+  },
+  {
+    "id": "217",
+    "name": "Torro",
+    "slug": "torro"
+  },
+  {
+    "id": "218",
+    "name": "Auctmarts",
+    "slug": "auctmarts"
+  },
+  {
+    "id": "219",
+    "name": "MISSHA US",
+    "slug": "missha-us"
+  },
+  {
+    "id": "220",
+    "name": "Himiway Bike",
+    "slug": "himiway-bike"
+  },
+  {
+    "id": "221",
+    "name": "Mirlux FR",
+    "slug": "mirlux-fr"
+  },
+  {
+    "id": "222",
+    "name": "Guta TPMS",
+    "slug": "guta-tpms"
+  },
+  {
+    "id": "223",
+    "name": "Alashan Cashmere",
+    "slug": "alashan-cashmere"
+  },
+  {
+    "id": "224",
+    "name": "Nushape",
+    "slug": "nushape"
+  },
+  {
+    "id": "225",
+    "name": "Adept",
+    "slug": "adept"
+  },
+  {
+    "id": "226",
+    "name": "underarmour",
+    "slug": "underarmour"
+  },
+  {
+    "id": "227",
+    "name": "Eydology",
+    "slug": "eydology"
+  },
+  {
+    "id": "228",
+    "name": "Cambridge Satchel",
+    "slug": "cambridge-satchel"
+  },
+  {
+    "id": "229",
+    "name": "Zonli Home",
+    "slug": "zonli-home"
+  },
+  {
+    "id": "230",
+    "name": "3 Suisses",
+    "slug": "3-suisses"
+  },
+  {
+    "id": "231",
+    "name": "Dowinx",
+    "slug": "dowinx"
+  },
+  {
+    "id": "232",
+    "name": "Garden Benches",
+    "slug": "garden-benches"
+  },
+  {
+    "id": "233",
+    "name": "Knack Bags  6%-200-450 (27-july-2026)",
+    "slug": "knack-bags-6-200-450-27-july-2026"
+  },
+  {
+    "id": "234",
+    "name": "Popilush 2%-150-275 (27-july-2026)",
+    "slug": "popilush-2-150-275-27-july-2026"
+  },
+  {
+    "id": "235",
+    "name": "SELDOM SEEN STYLES",
+    "slug": "seldom-seen-styles"
+  },
+  {
+    "id": "237",
+    "name": "Le Permis Libre",
+    "slug": "le-permis-libre"
+  },
+  {
+    "id": "238",
+    "name": "Health & Fitness",
+    "slug": "health-fitness"
+  },
+  {
+    "id": "239",
+    "name": "Tilswall",
+    "slug": "tilswall"
+  },
+  {
+    "id": "240",
+    "name": "Levoit",
+    "slug": "levoit"
+  },
+  {
+    "id": "241",
+    "name": "Caydo",
+    "slug": "caydo"
+  },
+  {
+    "id": "242",
+    "name": "Tribesigns",
+    "slug": "tribesigns"
+  },
+  {
+    "id": "243",
+    "name": "Speediance",
+    "slug": "speediance"
+  },
+  {
+    "id": "244",
+    "name": "Ulanzi",
+    "slug": "ulanzi"
+  },
+  {
+    "id": "245",
+    "name": "Antler",
+    "slug": "antler"
+  },
+  {
+    "id": "246",
+    "name": "Okun",
+    "slug": "okun"
+  },
+  {
+    "id": "247",
+    "name": "So soft Beds",
+    "slug": "so-soft-beds"
+  },
+  {
+    "id": "248",
+    "name": "Grab Bags US",
+    "slug": "grab-bags-us"
+  },
+  {
+    "id": "249",
+    "name": "Keycense",
+    "slug": "keycense"
+  },
+  {
+    "id": "250",
+    "name": "tcksports US",
+    "slug": "tcksports-us"
+  },
+  {
+    "id": "251",
+    "name": "Power Smart",
+    "slug": "power-smart"
+  },
+  {
+    "id": "736",
+    "name": "Eagle Creek",
+    "slug": "eagle-creek"
+  },
+  {
+    "id": "737",
+    "name": "Overstock",
+    "slug": "overstock"
+  },
+  {
+    "id": "738",
+    "name": "Xero Shoes",
+    "slug": "xero-shoes"
+  },
+  {
+    "id": "739",
+    "name": "Park Sleep Fly",
+    "slug": "park-sleep-fly"
+  },
+  {
+    "id": "740",
+    "name": "Shelly",
+    "slug": "shelly"
+  },
+  {
+    "id": "741",
+    "name": "Sealy",
+    "slug": "sealy"
+  },
+  {
+    "id": "742",
+    "name": "Viviscal",
+    "slug": "viviscal"
+  },
+  {
+    "id": "743",
+    "name": "Florsheim",
+    "slug": "florsheim"
+  },
+  {
+    "id": "744",
+    "name": "Wiley X",
+    "slug": "wiley-x"
+  },
+  {
+    "id": "745",
+    "name": "Im",
+    "slug": "im"
+  },
+  {
+    "id": "746",
+    "name": "Aerotel",
+    "slug": "aerotel"
+  },
+  {
+    "id": "747",
+    "name": "Sperry US",
+    "slug": "sperry-us"
+  },
+  {
+    "id": "748",
+    "name": "Miele",
+    "slug": "miele"
+  },
+  {
+    "id": "749",
+    "name": "PatioLiving",
+    "slug": "patioliving"
+  },
+  {
+    "id": "750",
+    "name": "Joroto",
+    "slug": "joroto"
+  },
+  {
+    "id": "751",
+    "name": "Paddle Pro",
+    "slug": "paddle-pro"
+  },
+  {
+    "id": "752",
+    "name": "Lovat Parks",
+    "slug": "lovat-parks"
+  },
+  {
+    "id": "753",
+    "name": "Soldiers Nutrition",
+    "slug": "soldiers-nutrition"
+  },
+  {
+    "id": "754",
+    "name": "Comfrt",
+    "slug": "comfrt"
+  },
+  {
+    "id": "755",
+    "name": "Elegant Shower",
+    "slug": "elegant-shower"
+  },
+  {
+    "id": "756",
+    "name": "Anti Apex",
+    "slug": "anti-apex"
+  },
+  {
+    "id": "757",
+    "name": "Invisawear",
+    "slug": "invisawear"
+  },
+  {
+    "id": "758",
+    "name": "QuickPlay",
+    "slug": "quickplay"
+  },
+  {
+    "id": "759",
+    "name": "Lumibricks",
+    "slug": "lumibricks"
+  },
+  {
+    "id": "760",
+    "name": "Tarkine AU",
+    "slug": "tarkine-au"
+  },
+  {
+    "id": "761",
+    "name": "Filter Baby",
+    "slug": "filter-baby"
+  },
+  {
+    "id": "762",
+    "name": "Little Links Golf",
+    "slug": "little-links-golf"
+  },
+  {
+    "id": "763",
+    "name": "Atoto",
+    "slug": "atoto"
+  },
+  {
+    "id": "764",
+    "name": "Proactiv",
+    "slug": "proactiv"
+  },
+  {
+    "id": "765",
+    "name": "Desktronic",
+    "slug": "desktronic"
+  },
+  {
+    "id": "766",
+    "name": "redu sculpt",
+    "slug": "redu-sculpt"
+  },
+  {
+    "id": "767",
+    "name": "Javvy Coffee",
+    "slug": "javvy-coffee"
+  },
+  {
+    "id": "768",
+    "name": "Origo Shoes",
+    "slug": "origo-shoes"
+  },
+  {
+    "id": "769",
+    "name": "Monument Grills",
+    "slug": "monument-grills"
+  },
+  {
+    "id": "770",
+    "name": "Desktronic SE",
+    "slug": "desktronic-se"
+  },
+  {
+    "id": "771",
+    "name": "Pretty Strap",
+    "slug": "pretty-strap"
+  },
+  {
+    "id": "772",
+    "name": "Silkiee",
+    "slug": "silkiee"
+  },
+  {
+    "id": "773",
+    "name": "lumai BR",
+    "slug": "lumai-br"
+  },
+  {
+    "id": "774",
+    "name": "Love In Faith",
+    "slug": "love-in-faith"
+  },
+  {
+    "id": "775",
+    "name": "Pop Ups Brand",
+    "slug": "pop-ups-brand"
+  },
+  {
+    "id": "776",
+    "name": "Tous",
+    "slug": "tous"
+  },
+  {
+    "id": "777",
+    "name": "Meshy AI",
+    "slug": "meshy-ai"
+  },
+  {
+    "id": "778",
+    "name": "Wjs Home",
+    "slug": "wjs-home"
+  },
+  {
+    "id": "779",
+    "name": "Roto Rooter",
+    "slug": "roto-rooter"
+  },
+  {
+    "id": "780",
+    "name": "Buy Larine U",
+    "slug": "buy-larine-u"
+  },
+  {
+    "id": "781",
+    "name": "Badlands Gear US",
+    "slug": "badlands-gear-us"
+  },
+  {
+    "id": "782",
+    "name": "Fuji Sports",
+    "slug": "fuji-sports"
+  },
+  {
+    "id": "783",
+    "name": "Jiaro Pack",
+    "slug": "jiaro-pack"
+  },
+  {
+    "id": "784",
+    "name": "DC House",
+    "slug": "dc-house"
+  },
+  {
+    "id": "785",
+    "name": "OHMMU",
+    "slug": "ohmmu"
+  },
+  {
+    "id": "786",
+    "name": "Waterdrop",
+    "slug": "waterdrop"
+  },
+  {
+    "id": "787",
+    "name": "Octobuddy US",
+    "slug": "octobuddy-us"
+  },
+  {
+    "id": "788",
+    "name": "Mirai Clinical US",
+    "slug": "mirai-clinical-us"
+  },
+  {
+    "id": "789",
+    "name": "Bulletproof Fitness Equipment US",
+    "slug": "bulletproof-fitness-equipment-us"
+  },
+  {
+    "id": "790",
+    "name": "Acrtmatic",
+    "slug": "acrtmatic"
+  },
+  {
+    "id": "791",
+    "name": "Pongbot",
+    "slug": "pongbot"
+  },
+  {
+    "id": "792",
+    "name": "BossHorn",
+    "slug": "bosshorn"
+  },
+  {
+    "id": "793",
+    "name": "venalisa",
+    "slug": "venalisa"
+  },
+  {
+    "id": "794",
+    "name": "Zero Waste Store",
+    "slug": "zero-waste-store"
+  },
+  {
+    "id": "795",
+    "name": "Burneek",
+    "slug": "burneek"
+  },
+  {
+    "id": "796",
+    "name": "Amyet Bikes",
+    "slug": "amyet-bikes"
+  },
+  {
+    "id": "797",
+    "name": "Parfait Lingerie",
+    "slug": "parfait-lingerie"
+  },
+  {
+    "id": "798",
+    "name": "Avio Travel US",
+    "slug": "avio-travel-us"
+  },
+  {
+    "id": "799",
+    "name": "Alpha Gear",
+    "slug": "alpha-gear"
+  },
+  {
+    "id": "800",
+    "name": "Nikola Toy",
+    "slug": "nikola-toy"
+  },
+  {
+    "id": "801",
+    "name": "LEVEL",
+    "slug": "level"
+  },
+  {
+    "id": "802",
+    "name": "It Just Works Deodorant",
+    "slug": "it-just-works-deodorant"
+  },
+  {
+    "id": "803",
+    "name": "Strike Nutrition",
+    "slug": "strike-nutrition"
+  },
+  {
+    "id": "804",
+    "name": "Aecojoy",
+    "slug": "aecojoy"
+  },
+  {
+    "id": "805",
+    "name": "Enjoy The Wood",
+    "slug": "enjoy-the-wood"
+  },
+  {
+    "id": "806",
+    "name": "Pure Bio Labs",
+    "slug": "pure-bio-labs"
+  },
+  {
+    "id": "807",
+    "name": "Abacus Sportswear",
+    "slug": "abacus-sportswear"
+  },
+  {
+    "id": "808",
+    "name": "Cosset",
+    "slug": "cosset"
+  },
+  {
+    "id": "809",
+    "name": "Evereden US",
+    "slug": "evereden-us"
+  },
+  {
+    "id": "810",
+    "name": "Brightmeds",
+    "slug": "brightmeds"
+  },
+  {
+    "id": "811",
+    "name": "Nantahala Outdoor Center",
+    "slug": "nantahala-outdoor-center"
+  },
+  {
+    "id": "812",
+    "name": "Antler UK",
+    "slug": "antler-uk"
+  },
+  {
+    "id": "813",
+    "name": "Aldo",
+    "slug": "aldo"
+  },
+  {
+    "id": "814",
+    "name": "Solo Stove",
+    "slug": "solo-stove"
+  },
+  {
+    "id": "815",
+    "name": "Eileen Fisher",
+    "slug": "eileen-fisher"
+  },
+  {
+    "id": "816",
+    "name": "Magpul",
+    "slug": "magpul"
+  },
+  {
+    "id": "817",
+    "name": "Democracy Clothing",
+    "slug": "democracy-clothing"
+  },
+  {
+    "id": "818",
+    "name": "The Double F",
+    "slug": "the-double-f"
+  },
+  {
+    "id": "819",
+    "name": "Brunt",
+    "slug": "brunt"
+  },
+  {
+    "id": "820",
+    "name": "Showpo",
+    "slug": "showpo"
+  },
+  {
+    "id": "821",
+    "name": "Sneaxx",
+    "slug": "sneaxx"
+  },
+  {
+    "id": "822",
+    "name": "KittySpout",
+    "slug": "kittyspout"
+  },
+  {
+    "id": "823",
+    "name": "Ohora",
+    "slug": "ohora"
+  },
+  {
+    "id": "824",
+    "name": "Ballboyz",
+    "slug": "ballboyz"
+  },
+  {
+    "id": "825",
+    "name": "ROCKBROS",
+    "slug": "rockbros"
+  },
+  {
+    "id": "826",
+    "name": "Double Oak essentials",
+    "slug": "double-oak-essentials"
+  },
+  {
+    "id": "827",
+    "name": "Parasol",
+    "slug": "parasol"
+  },
+  {
+    "id": "828",
+    "name": "American Giant",
+    "slug": "american-giant"
+  },
+  {
+    "id": "829",
+    "name": "Seagate",
+    "slug": "seagate"
+  },
+  {
+    "id": "830",
+    "name": "Frost Buddy",
+    "slug": "frost-buddy"
+  },
+  {
+    "id": "831",
+    "name": "Cosabella",
+    "slug": "cosabella"
+  },
+  {
+    "id": "832",
+    "name": "Swolverine",
+    "slug": "swolverine"
+  },
+  {
+    "id": "833",
+    "name": "Outdoor Gear Exchange",
+    "slug": "outdoor-gear-exchange"
+  },
+  {
+    "id": "834",
+    "name": "Tuft & Needle",
+    "slug": "tuft-needle"
+  },
+  {
+    "id": "835",
+    "name": "Nexbelt",
+    "slug": "nexbelt"
+  },
+  {
+    "id": "836",
+    "name": "Sanfer Bike",
+    "slug": "sanfer-bike"
+  },
+  {
+    "id": "837",
+    "name": "Hyperice",
+    "slug": "hyperice"
+  },
+  {
+    "id": "838",
+    "name": "La Mer",
+    "slug": "la-mer"
+  },
+  {
+    "id": "839",
+    "name": "Dermalogica",
+    "slug": "dermalogica"
+  },
+  {
+    "id": "840",
+    "name": "Lazyone",
+    "slug": "lazyone"
+  },
+  {
+    "id": "841",
+    "name": "Steve Madden",
+    "slug": "steve-madden"
+  },
+  {
+    "id": "842",
+    "name": "Dashing Diva",
+    "slug": "dashing-diva"
+  },
+  {
+    "id": "843",
+    "name": "Blue Seventy",
+    "slug": "blue-seventy"
+  },
+  {
+    "id": "844",
+    "name": "Salt Life",
+    "slug": "salt-life"
+  },
+  {
+    "id": "845",
+    "name": "Zulay Kitchen",
+    "slug": "zulay-kitchen"
+  },
+  {
+    "id": "846",
+    "name": "Piedmontese",
+    "slug": "piedmontese"
+  },
+  {
+    "id": "847",
+    "name": "Coutr",
+    "slug": "coutr"
+  },
+  {
+    "id": "848",
+    "name": "Apolosign",
+    "slug": "apolosign"
+  },
+  {
+    "id": "849",
+    "name": "Sublue",
+    "slug": "sublue"
+  },
+  {
+    "id": "850",
+    "name": "Celestyal Cruise",
+    "slug": "celestyal-cruise"
+  },
+  {
+    "id": "851",
+    "name": "Charles Bentley",
+    "slug": "charles-bentley"
+  },
+  {
+    "id": "852",
+    "name": "Hunter Fan",
+    "slug": "hunter-fan"
+  },
+  {
+    "id": "853",
+    "name": "QIDI",
+    "slug": "qidi"
+  },
+  {
+    "id": "854",
+    "name": "Harlembling",
+    "slug": "harlembling"
+  },
+  {
+    "id": "855",
+    "name": "Bond & Mason",
+    "slug": "bond-mason"
+  },
+  {
+    "id": "856",
+    "name": "Silver Jeans",
+    "slug": "silver-jeans"
+  },
+  {
+    "id": "857",
+    "name": "Puckipuppy US",
+    "slug": "puckipuppy-us"
+  },
+  {
+    "id": "858",
+    "name": "Mobapad",
+    "slug": "mobapad"
+  },
+  {
+    "id": "859",
+    "name": "Rebecca Minkoff",
+    "slug": "rebecca-minkoff"
+  },
+  {
+    "id": "860",
+    "name": "Neo Sabers",
+    "slug": "neo-sabers"
+  },
+  {
+    "id": "861",
+    "name": "Anastasia Beverly Hills",
+    "slug": "anastasia-beverly-hills"
+  },
+  {
+    "id": "862",
+    "name": "JenniBag",
+    "slug": "jennibag"
+  },
+  {
+    "id": "863",
+    "name": "Professional Supplement Center",
+    "slug": "professional-supplement-center"
+  },
+  {
+    "id": "864",
+    "name": "NordicTrack",
+    "slug": "nordictrack"
+  },
+  {
+    "id": "865",
+    "name": "Bodega",
+    "slug": "bodega"
+  },
+  {
+    "id": "866",
+    "name": "Naturnest US/UK",
+    "slug": "naturnest-us-uk"
+  },
+  {
+    "id": "867",
+    "name": "navimow",
+    "slug": "navimow"
+  },
+  {
+    "id": "868",
+    "name": "Omfort",
+    "slug": "omfort"
+  },
+  {
+    "id": "869",
+    "name": "Walking Pad",
+    "slug": "walking-pad"
+  },
+  {
+    "id": "870",
+    "name": "DreamCloud",
+    "slug": "dreamcloud"
+  },
+  {
+    "id": "871",
+    "name": "Mousse et Coussins",
+    "slug": "mousse-et-coussins"
+  },
+  {
+    "id": "872",
+    "name": "Eric Favre CPA",
+    "slug": "eric-favre-cpa"
+  },
+  {
+    "id": "873",
+    "name": "Pai Technology Inc.",
+    "slug": "pai-technology-inc"
+  },
+  {
+    "id": "874",
+    "name": "acousart",
+    "slug": "acousart"
+  },
+  {
+    "id": "875",
+    "name": "Opticas LUX",
+    "slug": "opticas-lux"
+  },
+  {
+    "id": "876",
+    "name": "AlFaram",
+    "slug": "alfaram"
+  },
+  {
+    "id": "877",
+    "name": "Young Electric",
+    "slug": "young-electric"
+  },
+  {
+    "id": "878",
+    "name": "Thread Wallets US",
+    "slug": "thread-wallets-us"
+  },
+  {
+    "id": "879",
+    "name": "PTLOM",
+    "slug": "ptlom"
+  },
+  {
+    "id": "881",
+    "name": "Parc Asterix",
+    "slug": "parc-asterix"
+  },
+  {
+    "id": "882",
+    "name": "Bagsmart US",
+    "slug": "bagsmart-us"
+  },
+  {
+    "id": "883",
+    "name": "iROCKERSUP",
+    "slug": "irockersup"
+  },
+  {
+    "id": "884",
+    "name": "Fuumuui",
+    "slug": "fuumuui"
+  },
+  {
+    "id": "885",
+    "name": "Laurence Boutique",
+    "slug": "laurence-boutique"
+  },
+  {
+    "id": "886",
+    "name": "OUFER BODY JEWELRY",
+    "slug": "oufer-body-jewelry"
+  },
+  {
+    "id": "887",
+    "name": "Aulumu US",
+    "slug": "aulumu-us"
+  },
+  {
+    "id": "888",
+    "name": "Cocokind US",
+    "slug": "cocokind-us"
+  },
+  {
+    "id": "889",
+    "name": "Veise",
+    "slug": "veise"
+  },
+  {
+    "id": "890",
+    "name": "Irislee Gallery",
+    "slug": "irislee-gallery"
+  },
+  {
+    "id": "891",
+    "name": "Ozmoz",
+    "slug": "ozmoz"
+  },
+  {
+    "id": "892",
+    "name": "blokees",
+    "slug": "blokees"
+  },
+  {
+    "id": "893",
+    "name": "Quicksilver",
+    "slug": "quicksilver"
+  },
+  {
+    "id": "894",
+    "name": "Cosyneo",
+    "slug": "cosyneo"
+  },
+  {
+    "id": "895",
+    "name": "bmiMD",
+    "slug": "bmimd"
+  },
+  {
+    "id": "896",
+    "name": "Patricia Nash US",
+    "slug": "patricia-nash-us"
+  },
+  {
+    "id": "897",
+    "name": "Serwall Outdoor US",
+    "slug": "serwall-outdoor-us"
+  },
+  {
+    "id": "898",
+    "name": "Comix Panini IT",
+    "slug": "comix-panini-it"
+  },
+  {
+    "id": "899",
+    "name": "Fantastic Services",
+    "slug": "fantastic-services"
+  },
+  {
+    "id": "900",
+    "name": "Sport Service",
+    "slug": "sport-service"
+  },
+  {
+    "id": "901",
+    "name": "Glowria",
+    "slug": "glowria"
+  },
+  {
+    "id": "902",
+    "name": "Megawheels US",
+    "slug": "megawheels-us"
+  },
+  {
+    "id": "903",
+    "name": "JanSport US",
+    "slug": "jansport-us"
+  },
+  {
+    "id": "904",
+    "name": "Shoes FR",
+    "slug": "shoes-fr"
+  },
+  {
+    "id": "905",
+    "name": "Walabot US",
+    "slug": "walabot-us"
+  },
+  {
+    "id": "906",
+    "name": "Artextured",
+    "slug": "artextured"
+  },
+  {
+    "id": "907",
+    "name": "Pupper Crust",
+    "slug": "pupper-crust"
+  },
+  {
+    "id": "908",
+    "name": "Bruno Marc US",
+    "slug": "bruno-marc-us"
+  },
+  {
+    "id": "909",
+    "name": "Jade Leaf Matcha",
+    "slug": "jade-leaf-matcha"
+  },
+  {
+    "id": "910",
+    "name": "Nanobag US",
+    "slug": "nanobag-us"
+  },
+  {
+    "id": "911",
+    "name": "Maxpeedingrods US",
+    "slug": "maxpeedingrods-us"
+  },
+  {
+    "id": "912",
+    "name": "DreamPairs US",
+    "slug": "dreampairs-us"
+  },
+  {
+    "id": "913",
+    "name": "Perricone MD US",
+    "slug": "perricone-md-us"
+  },
+  {
+    "id": "914",
+    "name": "PsPrint US",
+    "slug": "psprint-us"
+  },
+  {
+    "id": "915",
+    "name": "Voyage Prive IT",
+    "slug": "voyage-prive-it"
+  },
+  {
+    "id": "916",
+    "name": "Reima US",
+    "slug": "reima-us"
+  },
+  {
+    "id": "917",
+    "name": "Minoston",
+    "slug": "minoston"
+  },
+  {
+    "id": "918",
+    "name": "The Belly Lab",
+    "slug": "the-belly-lab"
+  },
+  {
+    "id": "919",
+    "name": "Boroux",
+    "slug": "boroux"
+  },
+  {
+    "id": "920",
+    "name": "Renogy",
+    "slug": "renogy"
+  },
+  {
+    "id": "921",
+    "name": "TKEES",
+    "slug": "tkees"
+  },
+  {
+    "id": "922",
+    "name": "YoungLA",
+    "slug": "youngla"
+  },
+  {
+    "id": "923",
+    "name": "Inner Light Sauna",
+    "slug": "inner-light-sauna"
+  },
+  {
+    "id": "924",
+    "name": "Capezio",
+    "slug": "capezio"
+  },
+  {
+    "id": "925",
+    "name": "Gray Nicolls",
+    "slug": "gray-nicolls"
+  },
+  {
+    "id": "926",
+    "name": "Freda Salvador",
+    "slug": "freda-salvador"
+  },
+  {
+    "id": "927",
+    "name": "Underoutfit",
+    "slug": "underoutfit"
+  }
+]
