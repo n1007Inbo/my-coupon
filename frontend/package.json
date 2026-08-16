@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "verify:chain": "node ../scripts/qa_chain_verifier.js"
   },
   "dependencies": {
     "next": "16.2.6",
