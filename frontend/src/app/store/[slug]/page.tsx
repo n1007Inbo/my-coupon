@@ -97,8 +97,8 @@ export default async function StorePage({ params }: StorePageProps) {
     store = fallbackStore;
     coupons = FALLBACK_COUPONS.filter(c => {
       const isStoreObject = typeof c.store === "object" && c.store !== null;
-      const cStoreSlug = isStoreObject ? (c.store as Store).slug : String(c.store).toLowerCase();
-      return cStoreSlug === slug;
+      const cStoreSlug = isStoreObject ? (c.store as Store).slug : ((c as any).storeSlug || String(c.store || "").toLowerCase());
+      return cStoreSlug === slug || (c as any).storeSlug === slug;
     });
   }
 
