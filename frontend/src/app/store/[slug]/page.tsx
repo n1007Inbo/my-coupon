@@ -96,9 +96,13 @@ export default async function StorePage({ params }: StorePageProps) {
   if (fallbackStore) {
     store = fallbackStore;
     coupons = FALLBACK_COUPONS.filter(c => {
-      const isStoreObject = typeof c.store === "object" && c.store !== null;
-      const cStoreSlug = isStoreObject ? (c.store as Store).slug : ((c as any).storeSlug || String(c.store || "").toLowerCase());
-      return cStoreSlug === slug || (c as any).storeSlug === slug;
+      const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase());
+      return cSlug === slug;
+    }).map(c => {
+      if (!c.store) {
+        c.store = fallbackStore;
+      }
+      return c;
     });
   }
 
