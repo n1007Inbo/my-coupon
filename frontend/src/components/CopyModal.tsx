@@ -106,18 +106,15 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
 
   // Extract store properties safely
   const isStoreObject = typeof store === "object" && store !== null;
-  const storeName = isStoreObject ? (store as Store).name : (store as string);
+  const storeName = isStoreObject ? (store as Store).name : (coupon.storeName || (typeof store === "string" ? store : "Store"));
   const storeLogo = isStoreObject ? (store as Store).logo : undefined;
   
-  // Create a fallback URL based on the store slug or name
-  const storeSlug = isStoreObject ? (store as Store).slug : storeName.toLowerCase().replace(/\s+/g, "-");
-  const storeUrl = coupon.affiliate_url || (isStoreObject && (store as Store).website ? (store as Store).website : `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`);
+  // Create a fallback URL based on the store slug or affiliate link
+  const storeUrl = coupon.affiliate_link || coupon.affiliate_url || (isStoreObject && (store as Store).website ? (store as Store).website : `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`);
 
   // Lock body scroll when modal is open
   useEffect(() => {
-    // Prevent scrolling when modal is open
     document.body.style.overflow = "hidden";
-
     return () => {
       document.body.style.overflow = "";
     };
@@ -170,7 +167,7 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
               </div>
             )}
             <h2 id="modal-title" className={styles.title}>
-              {isDirectDeal ? `${storeName} Deal Activated` : `Copy Code for {storeName}`}
+              {isDirectDeal ? `${storeName} Deal Activated` : `Copy Code for ${storeName}`}
             </h2>
             <div className={styles.discountBadge}>
               {discount}
