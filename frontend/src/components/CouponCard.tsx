@@ -248,7 +248,7 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
             aria-label={isDirectDeal ? `Get deal for ${storeName}` : `Get promo code for ${storeName}`}
             disabled={isExpired}
           >
-            {isDirectDeal ? "Get Deal" : "Show Coupon Code"}
+            {isDirectDeal ? "Get Deal →" : "Show Coupon Code →"}
           </button>
         </div>
       </div>
