@@ -191,6 +191,13 @@
   margin-bottom: 8px;
 }
 
+.storeCouponsStack {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
 .searchBarOverride {
   max-width: 320px !important;
   box-shadow: var(--shadow-sm) !important;

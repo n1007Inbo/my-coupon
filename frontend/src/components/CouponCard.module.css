@@ -5,18 +5,19 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  min-height: 160px;
+  min-height: 140px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   font-family: var(--font-outfit), sans-serif;
   cursor: pointer;
+  width: 100%;
 }
 
 .card:hover {
-  transform: translateY(-4px);
+  transform: translateY(-3px);
   border-color: #cbd5e1;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 16px -8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 16px -8px rgba(0, 0, 0, 0.04);
 }
 
 .cardExpired {
@@ -31,14 +32,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 24px;
-  padding: 24px;
+  gap: 20px;
+  padding: 20px 24px;
+  min-width: 0;
 }
 
 /* Left side: Store Logo Box */
 .logoSection {
-  width: 120px;
-  height: 80px;
+  width: 90px;
+  height: 65px;
   border-radius: 8px;
   border: 1px solid #f1f5f9;
   background-color: #ffffff;
@@ -46,8 +48,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 6px 12px;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.01);
+  padding: 6px 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .logoImg {
@@ -63,7 +65,7 @@
   background: linear-gradient(135deg, #f0fdf4, #dcfce7);
   color: #16a34a;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -71,7 +73,7 @@
 
 /* Middle: Info Content Section */
 .infoSection {
-  flex-grow: 1;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -79,49 +81,51 @@
 }
 
 .title {
-  font-size: 1.22rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
   letter-spacing: -0.01em;
-  line-height: 1.3;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  line-height: 1.35;
+  white-space: normal;
+  word-break: break-word;
 }
 
 /* Badges Row */
 .badgeContainer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .exclusiveBadge {
   background-color: #f3e8ff;
   color: #7e22ce;
-  border: 1px solid rgba(126, 34, 206, 0.15);
-  font-size: 0.68rem;
+  border: 1px solid rgba(126, 34, 206, 0.2);
+  font-size: 0.7rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 3px 10px;
+  padding: 3px 8px;
   border-radius: 4px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .verifiedBadge {
-  background-color: #0f172a;
+  background-color: #047857;
   color: #ffffff;
-  font-size: 0.68rem;
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 3px 10px;
+  padding: 3px 8px;
   border-radius: 4px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.04em;
   display: inline-flex;
   align-items: center;
   gap: 4px;
+  white-space: nowrap;
 }
 
 .verifiedIcon {
@@ -129,24 +133,25 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  color: #0f172a;
+  color: #047857;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   padding: 1px;
 }
 
 .verifiedIcon svg {
-  width: 7px;
-  height: 7px;
-  stroke-width: 4px;
+  width: 8px;
+  height: 8px;
+  stroke-width: 3.5px;
 }
 
 /* Meta info row */
 .metaRow {
   display: flex;
   align-items: center;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 14px;
   color: #64748b;
   font-size: 0.78rem;
   font-weight: 500;
@@ -155,7 +160,8 @@
 .metaItem {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 5px;
+  white-space: nowrap;
 }
 
 .icon {
@@ -166,82 +172,72 @@
 /* Right side: Action Button Section */
 .actionSection {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
 }
 
 .btnGetCode {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1eeff;
-  color: #583fbc;
+  background-color: #583fbc;
+  color: #ffffff;
   border: none;
-  padding: 12px 24px;
-  border-radius: 6px;
+  padding: 11px 22px;
+  border-radius: 8px;
   font-size: 0.88rem;
   font-weight: 700;
+  letter-spacing: 0.01em;
   cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(88, 63, 188, 0.25);
   transition: all 0.2s ease;
-  min-width: 160px;
-  text-align: center;
-  box-shadow: 0 1px 2px rgba(88, 63, 188, 0.05);
+  font-family: var(--font-outfit), sans-serif;
 }
 
-.btnGetCode:hover:not(:disabled) {
-  background-color: #e6e1ff;
-  color: #4b32a7;
+.btnGetCode:hover {
+  background-color: #4832a8;
+  box-shadow: 0 6px 16px rgba(88, 63, 188, 0.35);
   transform: translateY(-1px);
 }
 
-.btnGetCode:active:not(:disabled) {
-  transform: translateY(1px);
+.btnGetCode:active {
+  transform: translateY(0);
 }
 
-.btnGetCode:disabled {
-  background-color: #f1f5f9;
-  color: #94a3b8;
-  cursor: not-allowed;
-  box-shadow: none;
-}
-
-/* ===== Feedback Footer Strip ===== */
+/* 4. Bottom: Feedback Footer Strip */
 .feedbackStrip {
+  background-color: #f8fafc;
+  border-top: 1px solid #f1f5f9;
+  padding: 10px 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 24px;
-  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-  border-top: 1px solid #e2e8f0;
-  gap: 16px;
+  font-size: 0.78rem;
 }
 
 .feedbackLeft {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
 }
 
 .successPill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   background-color: #ecfdf5;
   color: #059669;
-  border: 1px solid #a7f3d0;
-  border-radius: 100px;
-  padding: 3px 12px;
-  font-size: 0.72rem;
+  padding: 2px 8px;
+  border-radius: 12px;
   font-weight: 700;
-  letter-spacing: 0.01em;
+  font-size: 0.74rem;
+  border: 1px solid rgba(5, 150, 105, 0.15);
 }
 
-.successPill svg {
-  color: #059669;
-}
-
-.feedbackUsed {
-  font-size: 0.72rem;
+.usedCount {
+  color: #64748b;
   font-weight: 500;
-  color: #94a3b8;
 }
 
 .feedbackRight {
@@ -250,91 +246,44 @@
   gap: 8px;
 }
 
-.feedbackQuestion {
-  font-size: 0.72rem;
-  font-weight: 600;
+.votePrompt {
   color: #64748b;
+  font-weight: 500;
+  margin-right: 4px;
 }
 
-.feedbackBtn {
+.btnVote {
   display: inline-flex;
   align-items: center;
   gap: 4px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 4px 12px;
-  font-size: 0.72rem;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-size: 0.74rem;
   font-weight: 600;
+  color: #475569;
   cursor: pointer;
-  transition: all 0.2s ease;
-  color: #64748b;
+  transition: all 0.15s ease;
 }
 
-.feedbackBtn:hover {
+.btnVote:hover {
+  background-color: #f1f5f9;
   border-color: #cbd5e1;
-  background-color: #f8fafc;
 }
 
-.feedbackBtnYes {}
-.feedbackBtnNo {}
-
-.feedbackBtnYesActive {
+.btnVoteActive {
   background-color: #ecfdf5 !important;
-  border-color: #10b981 !important;
   color: #059669 !important;
+  border-color: #10b981 !important;
 }
 
-.feedbackBtnNoActive {
-  background-color: #fef2f2 !important;
-  border-color: #ef4444 !important;
-  color: #dc2626 !important;
-}
-
-/* ===== Responsive Rules ===== */
-@media (max-width: 768px) {
-  .cardContent {
-    gap: 16px;
-    padding: 20px;
-  }
-  
-  .logoSection {
-    width: 100px;
-    height: 68px;
-    padding: 4px 8px;
-  }
-
-  .title {
-    font-size: 1.1rem;
-  }
-
-  .feedbackStrip {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 680px) {
   .cardContent {
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
-    min-height: auto;
-    gap: 16px;
-  }
-
-  .logoSection {
-    width: 90px;
-    height: 60px;
-    padding: 4px 8px;
-  }
-
-  .infoSection {
-    width: 100%;
-  }
-
-  .title {
-    white-space: normal;
-    overflow: visible;
+    padding: 16px;
+    gap: 14px;
   }
 
   .actionSection {
@@ -343,18 +292,11 @@
 
   .btnGetCode {
     width: 100%;
-    padding: 12px;
   }
 
   .feedbackStrip {
     flex-direction: column;
     align-items: flex-start;
-    padding: 12px 20px;
-    gap: 10px;
-  }
-
-  .feedbackRight {
-    width: 100%;
-    justify-content: flex-start;
+    gap: 8px;
   }
 }
