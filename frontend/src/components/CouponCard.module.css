@@ -17,7 +17,7 @@
 .card:hover {
   transform: translateY(-3px);
   border-color: #cbd5e1;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.06), 0 8px 16px -8px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 16px -8px rgba(0, 0, 0, 0.03);
 }
 
 .cardExpired {
@@ -32,15 +32,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 20px;
-  padding: 20px 24px;
+  gap: 12px;
+  padding: 16px 18px;
   min-width: 0;
 }
 
 /* Left side: Store Logo Box */
 .logoSection {
-  width: 90px;
-  height: 65px;
+  width: 80px;
+  height: 60px;
   border-radius: 8px;
   border: 1px solid #f1f5f9;
   background-color: #ffffff;
@@ -48,7 +48,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 6px 10px;
+  padding: 4px 8px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
@@ -65,7 +65,7 @@
   background: linear-gradient(135deg, #f0fdf4, #dcfce7);
   color: #16a34a;
   font-weight: 800;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,22 +73,24 @@
 
 /* Middle: Info Content Section */
 .infoSection {
-  flex: 1 1 auto;
+  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
+  overflow: hidden;
 }
 
 .title {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 6px 0;
+  margin: 0 0 5px 0;
   letter-spacing: -0.01em;
-  line-height: 1.35;
-  white-space: normal;
-  word-break: break-word;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 /* Badges Row */
@@ -96,32 +98,32 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 8px;
+  gap: 6px;
+  margin-bottom: 6px;
 }
 
 .exclusiveBadge {
   background-color: #f3e8ff;
   color: #7e22ce;
   border: 1px solid rgba(126, 34, 206, 0.2);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 3px 8px;
+  padding: 2px 7px;
   border-radius: 4px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   white-space: nowrap;
 }
 
 .verifiedBadge {
-  background-color: #047857;
+  background-color: #0f172a;
   color: #ffffff;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 3px 8px;
+  padding: 2px 7px;
   border-radius: 4px;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -133,16 +135,16 @@
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
-  color: #047857;
+  color: #0f172a;
   border-radius: 50%;
-  width: 12px;
-  height: 12px;
+  width: 10px;
+  height: 10px;
   padding: 1px;
 }
 
 .verifiedIcon svg {
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   stroke-width: 3.5px;
 }
 
@@ -151,16 +153,16 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 14px;
+  gap: 10px;
   color: #64748b;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   font-weight: 500;
 }
 
 .metaItem {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   white-space: nowrap;
 }
 
@@ -174,64 +176,61 @@
   flex-shrink: 0;
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 .btnGetCode {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background-color: #583fbc;
-  color: #ffffff;
-  border: none;
-  padding: 11px 22px;
-  border-radius: 8px;
-  font-size: 0.88rem;
+  background-color: #f1eeff;
+  color: #583fbc;
+  border: 1px solid #e0d9fc;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.01em;
   cursor: pointer;
   white-space: nowrap;
-  box-shadow: 0 4px 12px rgba(88, 63, 188, 0.25);
   transition: all 0.2s ease;
   font-family: var(--font-outfit), sans-serif;
 }
 
 .btnGetCode:hover {
-  background-color: #4832a8;
-  box-shadow: 0 6px 16px rgba(88, 63, 188, 0.35);
-  transform: translateY(-1px);
-}
-
-.btnGetCode:active {
-  transform: translateY(0);
+  background-color: #583fbc;
+  color: #ffffff;
+  border-color: #583fbc;
+  box-shadow: 0 4px 12px rgba(88, 63, 188, 0.2);
 }
 
 /* 4. Bottom: Feedback Footer Strip */
 .feedbackStrip {
   background-color: #f8fafc;
   border-top: 1px solid #f1f5f9;
-  padding: 10px 24px;
+  padding: 8px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.78rem;
+  font-size: 0.74rem;
 }
 
 .feedbackLeft {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
 
 .successPill {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   background-color: #ecfdf5;
   color: #059669;
-  padding: 2px 8px;
+  padding: 2px 7px;
   border-radius: 12px;
   font-weight: 700;
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   border: 1px solid rgba(5, 150, 105, 0.15);
 }
 
@@ -243,24 +242,24 @@
 .feedbackRight {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .votePrompt {
   color: #64748b;
   font-weight: 500;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .btnVote {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
   border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 0.74rem;
+  padding: 2px 7px;
+  font-size: 0.72rem;
   font-weight: 600;
   color: #475569;
   cursor: pointer;
@@ -282,21 +281,23 @@
   .cardContent {
     flex-direction: column;
     align-items: flex-start;
-    padding: 16px;
-    gap: 14px;
+    padding: 14px;
+    gap: 12px;
   }
 
   .actionSection {
     width: 100%;
+    margin-left: 0;
   }
 
   .btnGetCode {
     width: 100%;
+    padding: 11px;
   }
 
   .feedbackStrip {
     flex-direction: column;
     align-items: flex-start;
-    gap: 8px;
+    gap: 6px;
   }
 }

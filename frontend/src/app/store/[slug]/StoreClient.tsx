@@ -349,7 +349,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
 
         <section className={styles.couponsSection}>
           {filteredCoupons.length > 0 ? (
-            <div className={storeStyles.storeCouponsStack}>
+            <div className={styles.couponsGrid}>
               {filteredCoupons.map((coupon) => (
                 <div key={coupon.id} className="animate-slide-up">
                   <CouponCard coupon={coupon} onGetCode={handleGetCode} />
