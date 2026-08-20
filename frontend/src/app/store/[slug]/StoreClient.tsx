@@ -274,7 +274,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
           
           <div className={storeStyles.storeMetaInfo}>
             <div className={storeStyles.storeTitleRow}>
-              <h1 className={storeStyles.storeTitle}>{store.name} Promo Codes</h1>
+              <h1 className={storeStyles.storeTitle}>{store.name} Coupon Codes</h1>
               <span className={storeStyles.storeVerifiedBadge}>100% Working</span>
             </div>
             <p className={storeStyles.storeSubtitle}>
