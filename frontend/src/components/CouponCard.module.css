@@ -5,19 +5,18 @@
   border-radius: 12px;
   display: flex;
   flex-direction: column;
-  min-height: 140px;
+  min-height: 160px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
   transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
   overflow: hidden;
   font-family: var(--font-outfit), sans-serif;
   cursor: pointer;
-  width: 100%;
 }
 
 .card:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   border-color: #cbd5e1;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 16px -8px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 16px -8px rgba(0, 0, 0, 0.05);
 }
 
 .cardExpired {
@@ -32,15 +31,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 12px;
-  padding: 16px 18px;
-  min-width: 0;
+  gap: 20px;
+  padding: 24px;
 }
 
 /* Left side: Store Logo Box */
 .logoSection {
-  width: 80px;
-  height: 60px;
+  width: 110px;
+  height: 75px;
   border-radius: 8px;
   border: 1px solid #f1f5f9;
   background-color: #ffffff;
@@ -48,8 +46,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 4px 8px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
+  padding: 6px 10px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.01);
 }
 
 .logoImg {
@@ -65,7 +63,7 @@
   background: linear-gradient(135deg, #f0fdf4, #dcfce7);
   color: #16a34a;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,19 +71,18 @@
 
 /* Middle: Info Content Section */
 .infoSection {
-  flex: 1 1 0;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   min-width: 0;
-  overflow: hidden;
 }
 
 .title {
-  font-size: 1.05rem;
+  font-size: 1.18rem;
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 5px 0;
+  margin: 0 0 8px 0;
   letter-spacing: -0.01em;
   line-height: 1.3;
   overflow: hidden;
@@ -98,32 +95,32 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
-  margin-bottom: 6px;
+  gap: 8px;
+  margin-bottom: 10px;
 }
 
 .exclusiveBadge {
   background-color: #f3e8ff;
   color: #7e22ce;
-  border: 1px solid rgba(126, 34, 206, 0.2);
-  font-size: 0.65rem;
+  border: 1px solid rgba(126, 34, 206, 0.15);
+  font-size: 0.68rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 2px 7px;
+  padding: 3px 10px;
   border-radius: 4px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   white-space: nowrap;
 }
 
 .verifiedBadge {
   background-color: #0f172a;
   color: #ffffff;
-  font-size: 0.65rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  padding: 2px 7px;
+  padding: 3px 10px;
   border-radius: 4px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.05em;
   display: inline-flex;
   align-items: center;
   gap: 4px;
@@ -145,24 +142,24 @@
 .verifiedIcon svg {
   width: 7px;
   height: 7px;
-  stroke-width: 3.5px;
+  stroke-width: 4px;
 }
 
 /* Meta info row */
 .metaRow {
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
+  gap: 16px;
   color: #64748b;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   font-weight: 500;
+  flex-wrap: wrap;
 }
 
 .metaItem {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
   white-space: nowrap;
 }
 
@@ -174,9 +171,6 @@
 /* Right side: Action Button Section */
 .actionSection {
   flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  margin-left: auto;
 }
 
 .btnGetCode {
@@ -185,119 +179,185 @@
   justify-content: center;
   background-color: #f1eeff;
   color: #583fbc;
-  border: 1px solid #e0d9fc;
-  padding: 10px 16px;
+  border: none;
+  padding: 12px 20px;
   border-radius: 6px;
-  font-size: 0.82rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  letter-spacing: 0.01em;
   cursor: pointer;
   white-space: nowrap;
   transition: all 0.2s ease;
-  font-family: var(--font-outfit), sans-serif;
+  min-width: 140px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(88, 63, 188, 0.05);
 }
 
-.btnGetCode:hover {
-  background-color: #583fbc;
-  color: #ffffff;
-  border-color: #583fbc;
-  box-shadow: 0 4px 12px rgba(88, 63, 188, 0.2);
+.btnGetCode:hover:not(:disabled) {
+  background-color: #e6e1ff;
+  color: #4b32a7;
+  transform: translateY(-1px);
 }
 
-/* 4. Bottom: Feedback Footer Strip */
+.btnGetCode:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.btnGetCode:disabled {
+  background-color: #f1f5f9;
+  color: #94a3b8;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+/* ===== Feedback Footer Strip ===== */
 .feedbackStrip {
-  background-color: #f8fafc;
-  border-top: 1px solid #f1f5f9;
-  padding: 8px 18px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.74rem;
+  padding: 10px 24px;
+  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  border-top: 1px solid #e2e8f0;
+  gap: 16px;
 }
 
 .feedbackLeft {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 
 .successPill {
   display: inline-flex;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
   background-color: #ecfdf5;
   color: #059669;
-  padding: 2px 7px;
-  border-radius: 12px;
-  font-weight: 700;
+  border: 1px solid #a7f3d0;
+  border-radius: 100px;
+  padding: 3px 12px;
   font-size: 0.72rem;
-  border: 1px solid rgba(5, 150, 105, 0.15);
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
-.usedCount {
-  color: #64748b;
+.successPill svg {
+  color: #059669;
+}
+
+.feedbackUsed {
+  font-size: 0.72rem;
   font-weight: 500;
+  color: #94a3b8;
 }
 
 .feedbackRight {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
 }
 
-.votePrompt {
-  color: #64748b;
-  font-weight: 500;
-  margin-right: 2px;
-}
-
-.btnVote {
-  display: inline-flex;
-  align-items: center;
-  gap: 3px;
-  background-color: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 4px;
-  padding: 2px 7px;
+.feedbackQuestion {
   font-size: 0.72rem;
   font-weight: 600;
-  color: #475569;
+  color: #64748b;
+}
+
+.feedbackBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 4px 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
   cursor: pointer;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
+  color: #64748b;
 }
 
-.btnVote:hover {
-  background-color: #f1f5f9;
+.feedbackBtn:hover {
   border-color: #cbd5e1;
+  background-color: #f8fafc;
 }
 
-.btnVoteActive {
+.feedbackBtnYesActive {
   background-color: #ecfdf5 !important;
-  color: #059669 !important;
   border-color: #10b981 !important;
+  color: #059669 !important;
 }
 
-@media (max-width: 680px) {
+.feedbackBtnNoActive {
+  background-color: #fef2f2 !important;
+  border-color: #ef4444 !important;
+  color: #dc2626 !important;
+}
+
+/* ===== Responsive Rules ===== */
+@media (max-width: 768px) {
+  .cardContent {
+    gap: 16px;
+    padding: 20px;
+  }
+  
+  .logoSection {
+    width: 100px;
+    height: 68px;
+    padding: 4px 8px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .feedbackStrip {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 600px) {
   .cardContent {
     flex-direction: column;
     align-items: flex-start;
-    padding: 14px;
-    gap: 12px;
+    padding: 20px;
+    min-height: auto;
+    gap: 16px;
+  }
+
+  .logoSection {
+    width: 90px;
+    height: 60px;
+    padding: 4px 8px;
+  }
+
+  .infoSection {
+    width: 100%;
+  }
+
+  .title {
+    white-space: normal;
+    overflow: visible;
   }
 
   .actionSection {
     width: 100%;
-    margin-left: 0;
   }
 
   .btnGetCode {
     width: 100%;
-    padding: 11px;
+    padding: 12px;
   }
 
   .feedbackStrip {
     flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
+    padding: 12px 20px;
+    gap: 10px;
+  }
+
+  .feedbackRight {
+    width: 100%;
+    justify-content: flex-start;
   }
 }
