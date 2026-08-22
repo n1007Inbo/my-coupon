@@ -2,21 +2,23 @@
   position: relative;
   background-color: #ffffff;
   border: 1px solid #e2e8f0;
-  border-radius: 12px;
+  border-radius: 16px;
   display: flex;
-  flex-direction: column;
-  min-height: 160px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02), 0 4px 12px rgba(0, 0, 0, 0.03);
-  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
-  overflow: hidden;
+  flex-direction: row;
+  align-items: stretch;
+  padding: 18px;
+  gap: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0, 0, 0, 0.02);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
   font-family: var(--font-outfit), sans-serif;
   cursor: pointer;
+  box-sizing: border-box;
 }
 
 .card:hover {
   transform: translateY(-4px);
   border-color: #cbd5e1;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 16px -8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 28px -4px rgba(0, 0, 0, 0.08), 0 6px 12px -4px rgba(0, 0, 0, 0.04);
 }
 
 .cardExpired {
@@ -26,337 +28,201 @@
   box-shadow: none !important;
 }
 
-/* Main content row (logo + info + button) */
-.cardContent {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 24px;
-}
-
-/* Left side: Store Logo Box */
-.logoSection {
-  width: 110px;
-  height: 75px;
-  border-radius: 8px;
-  border: 1px solid #f1f5f9;
+/* 1. Left Side: Store Logo Box */
+.logoContainer {
+  width: 140px;
+  min-height: 130px;
   background-color: #ffffff;
+  border: 1px solid #edf2f7;
+  border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 12px;
   flex-shrink: 0;
-  padding: 6px 10px;
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.01);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.02);
 }
 
 .logoImg {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.02));
 }
 
 .logoFallback {
   width: 100%;
   height: 100%;
-  border-radius: 6px;
-  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-  color: #16a34a;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #3b82f6;
   font-weight: 800;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Middle: Info Content Section */
-.infoSection {
-  flex-grow: 1;
+/* 2. Right Side: Spacious Content Stack */
+.contentContainer {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   min-width: 0;
+  gap: 8px;
+}
+
+/* Header Row: Title & Exclusive Badge */
+.headerRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
 }
 
 .title {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: #0f172a;
-  margin: 0 0 6px 0;
-  letter-spacing: -0.01em;
+  margin: 0;
   line-height: 1.35;
-  white-space: normal;
+  letter-spacing: -0.01em;
   word-break: break-word;
-}
-
-/* Badges Row */
-.badgeContainer {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 10px;
+  white-space: normal;
+  flex: 1;
 }
 
 .exclusiveBadge {
-  background-color: #f3e8ff;
-  color: #7e22ce;
-  border: 1px solid rgba(126, 34, 206, 0.15);
-  font-size: 0.68rem;
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  color: #b45309;
+  border: 1px solid rgba(217, 119, 6, 0.2);
+  font-size: 0.72rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 4px;
-  letter-spacing: 0.05em;
-  white-space: nowrap;
-}
-
-.verifiedBadge {
-  background-color: #0f172a;
-  color: #ffffff;
-  font-size: 0.68rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: 4px;
-  letter-spacing: 0.05em;
+  padding: 4px 10px;
+  border-radius: 8px;
+  letter-spacing: 0.04em;
   display: inline-flex;
   align-items: center;
   gap: 4px;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
-.verifiedIcon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  color: #0f172a;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
+.star {
+  color: #d97706;
+  font-size: 0.75rem;
 }
 
-.verifiedIcon svg {
-  width: 7px;
-  height: 7px;
-  stroke-width: 4px;
-}
-
-/* Meta info row */
-.metaRow {
+/* Badges Row */
+.badgesRow {
   display: flex;
   align-items: center;
-  gap: 16px;
-  color: #64748b;
-  font-size: 0.78rem;
-  font-weight: 500;
+  gap: 10px;
   flex-wrap: wrap;
+  margin-top: 2px;
 }
 
-.metaItem {
+.verifiedBadge {
+  background-color: #ecfdf5;
+  color: #059669;
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+.viewsBadge {
+  background-color: #eef2ff;
+  color: #4f46e5;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+/* Expiry Row */
+.expiryRow {
   display: flex;
   align-items: center;
   gap: 6px;
-  white-space: nowrap;
+  color: #64748b;
+  font-size: 0.82rem;
+  font-weight: 500;
+  margin-bottom: 4px;
 }
 
-.icon {
+.clockIcon {
   color: #94a3b8;
-  flex-shrink: 0;
 }
 
-/* Right side: Action Button Section */
-.actionSection {
-  flex-shrink: 0;
-}
-
-.btnGetCode {
-  display: inline-flex;
+/* Action Button */
+.btnAction {
+  width: 100%;
+  background: linear-gradient(135deg, #6366f1, #7c3aed);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 20px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f1eeff;
-  color: #583fbc;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-size: 0.88rem;
-  font-weight: 700;
+  gap: 8px;
   cursor: pointer;
-  white-space: nowrap;
   transition: all 0.2s ease;
-  min-width: 140px;
-  text-align: center;
-  box-shadow: 0 1px 2px rgba(88, 63, 188, 0.05);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
+  margin-top: auto;
 }
 
-.btnGetCode:hover:not(:disabled) {
-  background-color: #e6e1ff;
-  color: #4b32a7;
+.btnAction:hover:not(:disabled) {
+  background: linear-gradient(135deg, #4f46e5, #6d28d9);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.35);
   transform: translateY(-1px);
 }
 
-.btnGetCode:active:not(:disabled) {
-  transform: translateY(1px);
+.btnAction:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
 }
 
-.btnGetCode:disabled {
-  background-color: #f1f5f9;
+.btnAction:disabled {
+  background: #cbd5e1;
   color: #94a3b8;
   cursor: not-allowed;
   box-shadow: none;
 }
 
-/* ===== Feedback Footer Strip ===== */
-.feedbackStrip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 24px;
-  background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
-  border-top: 1px solid #e2e8f0;
-  gap: 16px;
-}
-
-.feedbackLeft {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.successPill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background-color: #ecfdf5;
-  color: #059669;
-  border: 1px solid #a7f3d0;
-  border-radius: 100px;
-  padding: 3px 12px;
-  font-size: 0.72rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-}
-
-.successPill svg {
-  color: #059669;
-}
-
-.feedbackUsed {
-  font-size: 0.72rem;
-  font-weight: 500;
-  color: #94a3b8;
-}
-
-.feedbackRight {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.feedbackQuestion {
-  font-size: 0.72rem;
-  font-weight: 600;
-  color: #64748b;
-}
-
-.feedbackBtn {
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  background: #ffffff;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  padding: 4px 12px;
-  font-size: 0.72rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  color: #64748b;
-}
-
-.feedbackBtn:hover {
-  border-color: #cbd5e1;
-  background-color: #f8fafc;
-}
-
-.feedbackBtnYesActive {
-  background-color: #ecfdf5 !important;
-  border-color: #10b981 !important;
-  color: #059669 !important;
-}
-
-.feedbackBtnNoActive {
-  background-color: #fef2f2 !important;
-  border-color: #ef4444 !important;
-  color: #dc2626 !important;
-}
-
-/* ===== Responsive Rules ===== */
-@media (max-width: 768px) {
-  .cardContent {
-    gap: 16px;
-    padding: 20px;
-  }
-  
-  .logoSection {
-    width: 100px;
-    height: 68px;
-    padding: 4px 8px;
-  }
-
-  .title {
-    font-size: 1.1rem;
-  }
-
-  .feedbackStrip {
-    padding: 10px 20px;
-  }
-}
-
-@media (max-width: 600px) {
-  .cardContent {
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .card {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    min-height: auto;
+    padding: 16px;
     gap: 16px;
   }
 
-  .logoSection {
-    width: 90px;
-    height: 60px;
-    padding: 4px 8px;
-  }
-
-  .infoSection {
+  .logoContainer {
     width: 100%;
+    height: 100px;
+    min-height: unset;
   }
 
-  .title {
-    white-space: normal;
-    overflow: visible;
-  }
-
-  .actionSection {
-    width: 100%;
-  }
-
-  .btnGetCode {
-    width: 100%;
-    padding: 12px;
-  }
-
-  .feedbackStrip {
+  .headerRow {
     flex-direction: column;
-    align-items: flex-start;
-    padding: 12px 20px;
-    gap: 10px;
-  }
-
-  .feedbackRight {
-    width: 100%;
-    justify-content: flex-start;
+    gap: 6px;
   }
 }
