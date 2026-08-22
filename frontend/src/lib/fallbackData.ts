@@ -204,7 +204,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   "eonon": "/logos/eonon.png",
   "eric-favre-cpa": "/logos/eric-favre-cpa.png",
   "eternity-modern": "/logos/eternity-modern.png",
-  "everblog": "/logos/everblog.png",
+  "everblog": "/logos/everblog.svg",
   "evereden-us": "/logos/evereden-us.png",
   "evolution-power-tools": "/logos/evolution-power-tools.jpg",
   "eydology": "/logos/eydology.png",
