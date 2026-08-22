@@ -274,7 +274,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
           
           <div className={storeStyles.storeMetaInfo}>
             <div className={storeStyles.storeTitleRow}>
-              <h1 className={storeStyles.storeTitle}>{store.name} Coupon Codes</h1>
+              <h1 className={storeStyles.storeTitle}>{store.name} Discount Codes</h1>
               <span className={storeStyles.storeVerifiedBadge}>100% Working</span>
             </div>
             <p className={storeStyles.storeSubtitle}>
@@ -325,7 +325,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       {/* Search and Grid Filter Layout */}
       <div className={styles.contentLayout}>
         <div className={storeStyles.searchAndTitleRow}>
-          <h2 className={styles.sectionTitle}>Active {store.name} Coupons</h2>
+          <h2 className={styles.sectionTitle}>Active {store.name} Discount Codes</h2>
           
           <div className={`${styles.searchBarWrapper} ${storeStyles.searchBarOverride}`}>
             <SearchIcon />
