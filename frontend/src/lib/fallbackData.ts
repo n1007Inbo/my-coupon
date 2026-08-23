@@ -951,6 +951,30 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+  {
+    id: "evolution-code-1",
+    code: "METHEWDIPPY5",
+    title: "5% Off Sitewide with Exclusive Code",
+    description: "Get 5% off multi-material chop saws, magnetic drills, circular saws, and accessories at Evolution Power Tools. Verified active code for 2026.",
+    discount: "5% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "evolution-power-tools",
+    affiliateLink: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
+  },
+  {
+    id: "maple-code-1",
+    code: "Methew",
+    title: "Exclusive Maple Prime Discount Code - Save on Luxury Perfumes",
+    description: "Use official discount code 'Methew' at checkout to save on designer fragrances, colognes, and luxury beauty at Maple Prime. Verified active discount code for 2026.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
   // Young Electric Bikes (100% Direct 1-Click Deals via CSL)
   {
     id: 3010,
