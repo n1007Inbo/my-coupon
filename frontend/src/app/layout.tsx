@@ -29,6 +29,9 @@ export const metadata: Metadata = {
     title: "PromoRegistry | 100% Verified Promo Codes & Discount Coupons",
     description: "Find the latest 100% verified coupon codes, discount offers, and promotional deals for Amazon, Nike, Adidas, Hostinger, eBay, Target, Starbucks, and more on PromoRegistry.com.",
   },
+  other: {
+    'impact-site-verification': 'e8243051-e329-4f57-aedc-5f4539bfc2ac',
+  },
 };
 
 export default function RootLayout({
@@ -41,6 +44,8 @@ export default function RootLayout({
   return (
     <html lang="en" className={outfit.variable}>
       <head>
+        <meta name="impact-site-verification" value="e8243051-e329-4f57-aedc-5f4539bfc2ac" />
+        <meta name="impact-site-verification" content="e8243051-e329-4f57-aedc-5f4539bfc2ac" />
         {gaId && (
           <>
             <Script
