@@ -951,6 +951,55 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+  // --- FILTER BABY VERIFIED COUPONS ---
+  {
+    id: "fb-card-1",
+    code: "FILTER15",
+    title: "15% Off Sitewide with Exclusive Code",
+    description: "Save 15% on Filterbaby 2.0 faucet filters, refill packs, and skincare water filtration systems. Auto-applies at checkout.",
+    discount: "15% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "filter-baby",
+    affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
+  },
+  {
+    id: "fb-card-2",
+    code: "GLOW20",
+    title: "20% Off Annual Filter Replacement Subscription",
+    description: "Get 20% discount on yearly PRO refill subscriptions for clear, radiant and contaminant-free water.",
+    discount: "20% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "filter-baby",
+    affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
+  },
+  {
+    id: "fb-card-3",
+    code: "BUNDLE30",
+    title: "Up to 30% Off Starter Bundles & Faucet Adapters",
+    description: "Save up to 30% when purchasing the Filterbaby Deluxe bundle including multi-fit universal adapters.",
+    discount: "30% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "filter-baby",
+    affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
+  },
+  {
+    id: "fb-card-4",
+    code: "FREESHIP",
+    title: "Free US Shipping & 60-Day Money Back Guarantee",
+    description: "Enjoy 100% free delivery across the US and test Filterbaby risk-free for 60 days.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "filter-baby",
+    affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
+  },
   // --- DC HOUSE POWER VERIFIED COUPONS ---
   {
     id: "dc-card-1",
