@@ -951,6 +951,55 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+  // --- DC HOUSE POWER VERIFIED COUPONS ---
+  {
+    id: "dc-card-1",
+    code: "METHEWDIPPY",
+    title: "5% Off Sitewide with Exclusive Code METHEWDIPPY",
+    description: "Save 5% on all LiFePO4 lithium iron phosphate batteries, solar pumps, and off-grid accessories. Auto-applies at checkout.",
+    discount: "5% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-2",
+    code: "METHEWDIPPY",
+    title: "Up to $150 Off LiFePO4 Lithium Battery Bundles - Code METHEWDIPPY",
+    description: "Get massive instant savings on 12V, 24V, and 48V deep cycle LiFePO4 battery kits for RV, marine, and solar with code METHEWDIPPY.",
+    discount: "$150 OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-3",
+    code: "METHEWDIPPY",
+    title: "20% Off Electric Trolling Motors & Solar Pumps - Code METHEWDIPPY",
+    description: "Save 20% on saltwater and freshwater electric trolling motors with smart battery meter using code METHEWDIPPY.",
+    discount: "20% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-4",
+    code: "METHEWDIPPY",
+    title: "Free US Shipping & 5-Year Battery Warranty - Code METHEWDIPPY",
+    description: "Enjoy 100% free ground shipping across the US plus 5-year replacement warranty. Apply code METHEWDIPPY for maximum savings.",
+    discount: "FREE SHIPPING",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml"
+  },
   // --- FILTER BABY VERIFIED COUPONS ---
   {
     id: "fb-card-1",
@@ -999,19 +1048,6 @@ export const FALLBACK_COUPONS: Coupon[] = [
     isVerified: true,
     storeSlug: "filter-baby",
     affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
-  },
-  // --- DC HOUSE POWER VERIFIED COUPONS ---
-  {
-    id: "dc-card-1",
-    code: "METHEWDIPPY",
-    title: "5% Off Sitewide with Verified Code",
-    description: "Save 5% on all LiFePO4 lithium iron phosphate batteries, solar pumps, and off-grid accessories. Auto-applies at checkout.",
-    discount: "5% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml"
   },
   {
     id: "dc-card-2",
