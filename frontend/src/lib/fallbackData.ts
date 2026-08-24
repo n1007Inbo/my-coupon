@@ -951,12 +951,49 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
-  // --- EVERBLOG VERIFIED WORKING COUPON CODES ---
+
+  // --- EVERBLOG (10 CARDS MATCHING COMPETITOR COUPON-TIME.COM) ---
   {
     id: "eb-card-1",
+    code: "NEW10",
+    title: "15% Off Coupon Code",
+    description: "Get 15% discount on Everblog smart digital calendar displays and starter subscriptions with code NEW10.",
+    discount: "15% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-2",
+    code: "DEAL",
+    title: "$400 Off – Back to School Sale",
+    description: "Save up to $400 on Everblog smart touchscreen calendars during the limited-time seasonal event.",
+    discount: "$400 OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-3",
+    code: "EVER10",
+    title: "10% Off Discount Code Sitewide",
+    description: "Save 10% sitewide on all Everblog smart calendar devices, mounts, and accessories with code EVER10.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-4",
     code: "WELCOME10",
-    title: "10% Off Welcome Discount Code",
-    description: "Use official code 'WELCOME10' at checkout to get an extra 10% off your Everblog Smart Calendar & Planner.",
+    title: "10% Off Promo Code",
+    description: "Apply code WELCOME10 at checkout to unlock 10% off your first Everblog order.",
     discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
@@ -965,95 +1002,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliateLink: "https://everblog.com/discount/WELCOME10?sca_ref=12108488.4ricweGCagO1uP"
   },
   {
-    id: "eb-card-2",
-    code: "NEW10",
-    title: "10% Off New Customer Promo Code",
-    description: "Get 10% discount on first-time orders of Everblog digital smart calendar displays with code NEW10.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-3",
-    code: "EVER10",
-    title: "10% Off Sitewide Coupon Code",
-    description: "Save 10% on all Everblog smart calendar models and family hub accessories with code EVER10.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-4",
-    code: "DEAL",
-    title: "7-Day Free Trial (No Code Needed)",
-    description: "Start your 7-day risk free trial of Everblog AI family organizer with full pro feature access.",
-    discount: "FREE TRIAL",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
     id: "eb-card-5",
     code: "DEAL",
-    title: "Up to 50% Off Annual Subscription Plan",
-    description: "Get up to 50% instant savings when choosing annual billing for Everblog family calendar service.",
-    discount: "50% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-2",
-    code: "NEW10",
-    title: "10% Off New Customer Promo Code",
-    description: "Get 10% discount on first-time orders of Everblog digital smart calendar displays with code NEW10.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-3",
-    code: "EVER10",
-    title: "10% Off Sitewide Coupon Code",
-    description: "Save 10% on all Everblog smart calendar models and family hub accessories with code EVER10.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-4",
-    code: "SAVE15",
-    title: "15% Off Smart AI Planner Bundles",
-    description: "Save 15% when ordering Everblog calendar bundles with smart voice integration pro.",
-    discount: "15% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/SAVE15?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-5",
-    code: "ANNUAL50",
-    title: "Up to 50% Off Annual Subscription Plan",
-    description: "Get up to 50% instant savings when choosing annual billing for Everblog family calendar service.",
-    discount: "50% OFF",
+    title: "$50 Extra Off on HomeCal Calendar",
+    description: "Get an extra $50 instant discount on the HomeCal smart display system for family coordination.",
+    discount: "$50 OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
     isVerified: true,
@@ -1062,9 +1015,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "eb-card-6",
-    code: "FREESHIP",
-    title: "Free US Shipping & 30-Day Money Back Guarantee",
-    description: "Enjoy 100% free ground shipping across the US plus a risk-free 30-day money-back trial on Everblog.",
+    code: "DEAL",
+    title: "Free Shipping on All Orders",
+    description: "Enjoy 100% free US standard shipping on all Everblog calendar displays and bundles.",
     discount: "FREE SHIPPING",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
@@ -1072,13 +1025,62 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "everblog",
     affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
   },
-  // --- DC HOUSE POWER VERIFIED COUPONS ---
+  {
+    id: "eb-card-7",
+    code: "DEAL",
+    title: "40% Off on FridgeCal Calendar",
+    description: "Take 40% off the flagship FridgeCal magnetic smart touchscreen calendar.",
+    discount: "40% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-8",
+    code: "DEAL",
+    title: "25% Off on Accessories",
+    description: "Save 25% on wall mount brackets, power adapters, and custom stylus pens.",
+    discount: "25% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-9",
+    code: "DEAL",
+    title: "$79 – Charging Dock Bundle Deal",
+    description: "Grab the smart charging dock and cable organizer bundle for just $79.",
+    discount: "$79 DEAL",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-card-10",
+    code: "DEAL",
+    title: "10% Off on Newsletter Signup",
+    description: "Subscribe to the official newsletter and receive instant notification on upcoming firmware updates and sales.",
+    discount: "10% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+
+  // --- DC HOUSE (12 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
   {
     id: "dc-card-1",
     code: "METHEWDIPPY",
-    title: "5% Off Sitewide with Exclusive Code METHEWDIPPY",
-    description: "Save 5% on all LiFePO4 lithium iron phosphate batteries, solar pumps, and off-grid accessories. Auto-applies at checkout.",
-    discount: "5% OFF",
+    title: "15% Off Coupon Code",
+    description: "Save 15% on high-performance LiFePO4 batteries, trolling motors, and solar accessories with code METHEWDIPPY.",
+    discount: "15% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
     isVerified: true,
@@ -1088,9 +1090,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "dc-card-2",
     code: "METHEWDIPPY",
-    title: "Up to $150 Off LiFePO4 Lithium Battery Bundles - Code METHEWDIPPY",
-    description: "Get massive instant savings on 12V, 24V, and 48V deep cycle LiFePO4 battery kits for RV, marine, and solar with code METHEWDIPPY.",
-    discount: "$150 OFF",
+    title: "10% Off Code – August Power Sale",
+    description: "Get 10% instant discount during the August Power Sale on deep cycle battery banks with code METHEWDIPPY.",
+    discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
     isVerified: true,
@@ -1100,9 +1102,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "dc-card-3",
     code: "METHEWDIPPY",
-    title: "20% Off Electric Trolling Motors & Solar Pumps - Code METHEWDIPPY",
-    description: "Save 20% on saltwater and freshwater electric trolling motors with smart battery meter using code METHEWDIPPY.",
-    discount: "20% OFF",
+    title: "10% Off Discount Code Sitewide",
+    description: "Save 10% on all orders sitewide at DC House using verified promo code METHEWDIPPY at checkout.",
+    discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
     isVerified: true,
@@ -1112,15 +1114,112 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "dc-card-4",
     code: "METHEWDIPPY",
-    title: "Free US Shipping & 5-Year Battery Warranty - Code METHEWDIPPY",
-    description: "Enjoy 100% free ground shipping across the US plus 5-year replacement warranty. Apply code METHEWDIPPY for maximum savings.",
-    discount: "FREE SHIPPING",
+    title: "$10 Off Promo Code",
+    description: "Enjoy $10 off your purchase of off-grid solar equipment and water pumps with code METHEWDIPPY.",
+    discount: "$10 OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
     isVerified: true,
     storeSlug: "dc-house",
     affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
   },
+  {
+    id: "dc-card-5",
+    code: "DEAL",
+    title: "45% Off – Summer Sale",
+    description: "Get up to 45% off selected lithium battery packs and accessories during the DC House summer clearance.",
+    discount: "45% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-6",
+    code: "DEAL",
+    title: "Free Shipping on All Orders",
+    description: "Enjoy 100% free ground shipping across the US plus 5-year replacement factory warranty.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-7",
+    code: "DEAL",
+    title: "25% Off on Best Selling Items",
+    description: "Save 25% on top-rated 100Ah/200Ah LiFePO4 batteries and solar inverter systems.",
+    discount: "25% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-8",
+    code: "DEAL",
+    title: "22% Off on LiFePO4 Golf Cart Kit",
+    description: "Upgrade your golf cart with lightweight, fast-charging 36V/48V LiFePO4 lithium conversion kits at 22% off.",
+    discount: "22% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-9",
+    code: "DEAL",
+    title: "20% Off on 12V LiFePO4 Batteries",
+    description: "Get 20% off deep-cycle 12V batteries for marine trolling motors, RVs, and solar setups.",
+    discount: "20% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-10",
+    code: "DEAL",
+    title: "15% Off on Battery Accessories",
+    description: "Save 15% on smart battery chargers, monitors, high-amp cables, and connection terminal hardware.",
+    discount: "15% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-11",
+    code: "DEAL",
+    title: "10% Off on 36V LiFePO4 Batteries",
+    description: "Take 10% off high-voltage 36V lithium batteries designed for heavy-duty trolling motors.",
+    discount: "10% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: "dc-card-12",
+    code: "DEAL",
+    title: "$10 Off on Newsletter Sign-Up",
+    description: "Sign up for the official DC House mailing list to receive exclusive coupons, warranty guides, and flash sales.",
+    discount: "$10 OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "dc-house",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  // --- DC HOUSE POWER VERIFIED COUPONS ---
   // --- FILTER BABY VERIFIED COUPONS ---
   {
     id: "fb-card-1",
@@ -1169,42 +1268,6 @@ export const FALLBACK_COUPONS: Coupon[] = [
     isVerified: true,
     storeSlug: "filter-baby",
     affiliateLink: "https://filterbaby.com/discount/FILTER15?ref=promoregistry"
-  },
-  {
-    id: "dc-card-2",
-    code: "METHEWDIPPY",
-    title: "Up to $150 Off LiFePO4 Lithium Battery Bundles",
-    description: "Get massive instant savings on 12V, 24V, and 48V deep cycle LiFePO4 battery kits for RV, marine, and solar.",
-    discount: "$150 OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-card-3",
-    code: "METHEWDIPPY",
-    title: "20% Off Electric Trolling Motors & Accessories",
-    description: "Save 20% on saltwater and freshwater electric trolling motors with smart digital battery meter.",
-    discount: "20% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-card-4",
-    code: "METHEWDIPPY",
-    title: "Free US Shipping & 5-Year Factory Warranty",
-    description: "Enjoy 100% free ground shipping across the US plus a comprehensive 5-year replacement warranty on batteries.",
-    discount: "FREE SHIPPING",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   // --- EVOLUTION POWER TOOLS VERIFIED COUPONS ---
   {
