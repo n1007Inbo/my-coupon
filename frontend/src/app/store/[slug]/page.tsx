@@ -99,10 +99,14 @@ export default async function StorePage({ params }: StorePageProps) {
       const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase());
       return cSlug === slug;
     }).map(c => {
-      if (!c.store) {
-        c.store = fallbackStore;
-      }
-      return c;
+      const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
+      return {
+        ...c,
+        affiliate_url: normalizedAffiliate,
+        affiliate_link: normalizedAffiliate,
+        affiliateLink: normalizedAffiliate,
+        store: c.store || fallbackStore
+      };
     });
   }
 

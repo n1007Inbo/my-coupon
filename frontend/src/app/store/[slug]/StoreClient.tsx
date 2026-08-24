@@ -133,7 +133,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
     const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
     const storeName = isStoreObject ? (coupon.store as Store).name : (coupon.store as string);
     const website = isStoreObject ? (coupon.store as Store).website : undefined;
-    const rawStoreUrl = coupon.affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
+    const rawStoreUrl = coupon.affiliate_url || (coupon as any).affiliate_link || (coupon as any).affiliateLink || (store as any).affiliateLink || (store as any).affiliate_link || (store as any).affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
     
     // Append Google Ads campaign and keyword SubIDs if it's an affiliate redirect link
     let storeUrl = rawStoreUrl;
@@ -205,7 +205,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
 
   const [officialWebsiteUrl, setOfficialWebsiteUrl] = useState<string | null>(null);
 
-  const baseStoreUrl = coupons.find(c => c.affiliate_url)?.affiliate_url || store.website || `https://www.google.com/search?q=${encodeURIComponent(store.name + " official website")}`;
+  const baseStoreUrl = (store as any).affiliateLink || (store as any).affiliate_link || (store as any).affiliate_url || coupons.find(c => c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink)?.affiliate_url || (coupons.find(c => (c as any).affiliate_link) as any)?.affiliate_link || (coupons.find(c => (c as any).affiliateLink) as any)?.affiliateLink || store.website || `https://www.google.com/search?q=${encodeURIComponent(store.name + " official website")}`;
 
   React.useEffect(() => {
     let finalUrl = baseStoreUrl;

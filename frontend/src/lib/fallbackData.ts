@@ -446,6 +446,14 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
+  {
+    id: 99992,
+    name: "Maple Prime",
+    slug: "maple-prime",
+    logo: getLogoUrl("maple-prime"),
+    website: "https://mapleprime.com",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
   { id: 601, name: "AEKE", slug: "aeke", logo: getLogoUrl("aeke"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 602, name: "AEKE US", slug: "aeke-us", logo: getLogoUrl("aeke-us"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 0, name: "Amazon", slug: "amazon", logo: getLogoUrl("amazon"), website: "https://amazon.com" },
@@ -494,7 +502,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 43, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" },
   { id: 44, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
   { id: 45, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
-  { id: 46, name: "Maple Prime US", slug: "maple-prime", logo: getLogoUrl("maple-prime"), website: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
+  
   { id: 47, name: "Nobody's Child US", slug: "nobodys-child", logo: getLogoUrl("nobodys-child"), website: "https://www.nobodyschild.com/" },
   { id: 48, name: "Anycubic US", slug: "anycubic-us", logo: getLogoUrl("anycubic-us"), website: "/go/anycubic-us" },
   { id: 49, name: "Hitway UK", slug: "hitway-uk", logo: getLogoUrl("hitway-uk"), website: "/go/hitway-uk" },
@@ -952,6 +960,140 @@ export const FALLBACK_STORES: Store[] = [
 
 export const FALLBACK_COUPONS: Coupon[] = [
 
+  // --- MAPLE PRIME (11 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
+  {
+    id: "mp-card-1",
+    code: "Methew",
+    title: "20% Off Coupon Code",
+    description: "Save 20% on all designer fragrances, luxury perfumes, and colognes using verified code Methew at checkout.",
+    discount: "20% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-2",
+    code: "DEAL",
+    title: "50% Off on Summer Sale",
+    description: "Enjoy up to 50% off during the limited-time Maple Prime summer clearance event.",
+    discount: "50% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-3",
+    code: "Methew",
+    title: "15% Off Discount Code Sitewide",
+    description: "Save 15% sitewide on top fragrance brands including Creed, Tom Ford, and Chanel with code Methew.",
+    discount: "15% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-4",
+    code: "Methew",
+    title: "10% Off Promo Code – Summer Vibes",
+    description: "Get 10% instant savings on niche perfume collections with code Methew.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-5",
+    code: "DEAL",
+    title: "Free Shipping Over $49",
+    description: "Enjoy 100% free US standard shipping on all perfume orders over $49.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-6",
+    code: "DEAL",
+    title: "89% Off on Eau De Parfum",
+    description: "Massive savings up to 89% off on premium Eau De Parfum sprays and discovery sets.",
+    discount: "89% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-7",
+    code: "DEAL",
+    title: "80% Off on Perfume Oil",
+    description: "Save 80% on long-lasting concentrated perfume oils and artisanal rollerballs.",
+    discount: "80% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-8",
+    code: "DEAL",
+    title: "75% Off on Unisex Perfumes",
+    description: "Discover luxury gender-neutral perfumes at up to 75% off regular retail pricing.",
+    discount: "75% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-9",
+    code: "DEAL",
+    title: "70% Off on Body Spray",
+    description: "Save 70% on refreshing all-over body mists and scented grooming sprays.",
+    discount: "70% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-10",
+    code: "DEAL",
+    title: "60% Off on Skincare",
+    description: "Save 60% on premium scented lotions, aftershaves, and body hydration creams.",
+    discount: "60% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-card-11",
+    code: "DEAL",
+    title: "15% Off on Newsletter Signup",
+    description: "Subscribe to the official Maple Prime VIP list for exclusive drops and coupons.",
+    discount: "15% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    isVerified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+
   // --- EVERBLOG (10 CARDS MATCHING COMPETITOR COUPON-TIME.COM) ---
   {
     id: "eb-card-1",
@@ -1341,20 +1483,6 @@ export const FALLBACK_COUPONS: Coupon[] = [
     isVerified: true,
     storeSlug: "evolution-power-tools",
     affiliateLink: "https://store.evolutionpowertools.com/discount/METHEWDIPPY5?ref=METHEWDIPPY"
-  },
-
-  // --- MAPLE PRIME VERIFIED DISCOUNT CODES ---
-  {
-    id: "maple-card-1",
-    code: "Methew",
-    title: "Exclusive Maple Prime Discount Code - Save 10% Sitewide",
-    description: "Use official discount code 'Methew' at checkout for 10% off authentic luxury perfumes, colognes, and beauty.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/discount/Methew?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
   },
   {
     id: "maple-card-2",
