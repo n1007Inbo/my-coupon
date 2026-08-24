@@ -15,11 +15,14 @@ export interface Coupon {
   id: string | number;
   code: string;
   discount: string;
+  title?: string;
   description: string;
   is_verified: boolean;
   expiry_date: string;
   store: string | Store;
   affiliate_url?: string;
+  affiliate_link?: string;
+  affiliateLink?: string;
 }
 
 interface CouponCardProps {
@@ -75,14 +78,14 @@ const CheckIcon = () => (
 );
 
 export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => {
-  const { store, discount, code, is_verified, expiry_date } = coupon;
+  const { store, discount, code, is_verified, expiry_date, title, description } = coupon;
 
   const isStoreObject = typeof store === "object" && store !== null;
   const storeName = isStoreObject ? (store as Store).name : (store as string);
   const storeLogo = isStoreObject ? (store as Store).logo : undefined;
 
   const formatExpiryDate = (dateString: string) => {
-    if (!dateString) return "Sep 14, 2026";
+    if (!dateString) return "Dec 31, 2026";
     try {
       const date = new Date(dateString);
       if (isNaN(date.getTime())) return dateString;
@@ -128,15 +131,17 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
   }, [hashedValue]);
 
   const isDirectDeal = !code || code === "DEAL" || code === "DIRECT";
+  const displayTitle = title || description || discount;
 
   return (
     <div 
       className={`${styles.card} ${isExpired ? styles.cardExpired : ""}`}
       onClick={() => !isExpired && onGetCode(coupon)}
     >
-      {/* 1. Left Side: Large Clean White Logo Container */}
+      {/* 1. Left Side: Store Logo Box */}
       <div className={styles.logoContainer}>
         {storeLogo ? (
+          // eslint-disable-next-line @next/next/no-img-element
           <img 
             src={storeLogo} 
             alt={storeName || "Store Logo"} 
@@ -153,11 +158,11 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
         )}
       </div>
 
-      {/* 2. Right Side: Spacious Content Stack */}
+      {/* 2. Right Side: Content Stack */}
       <div className={styles.contentContainer}>
-        {/* Header Row: Title on Left, Exclusive Badge on Right */}
+        {/* Header Row: Title & Exclusive Badge */}
         <div className={styles.headerRow}>
-          <h3 className={styles.title}>{discount}</h3>
+          <h3 className={styles.title}>{displayTitle}</h3>
           {!isDirectDeal && (
             <span className={styles.exclusiveBadge}>
               <span className={styles.star}>★</span> EXCLUSIVE
@@ -165,8 +170,13 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
           )}
         </div>
 
-        {/* Badges Row: Verified & Views */}
+        {/* Badges Row: Discount Pill, Verified & Views */}
         <div className={styles.badgesRow}>
+          {discount && (
+            <span className={styles.discountPill}>
+              {discount}
+            </span>
+          )}
           {is_verified && (
             <span className={styles.verifiedBadge}>
               <CheckIcon />

@@ -133,6 +133,20 @@
   margin-top: 2px;
 }
 
+.discountPill {
+  background: linear-gradient(135deg, #eff6ff, #dbeafe);
+  color: #1d4ed8;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
 .verifiedBadge {
   background-color: #ecfdf5;
   color: #059669;
