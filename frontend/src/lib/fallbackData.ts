@@ -625,7 +625,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 174, name: "Performance Golf", slug: "performance-golf", logo: getLogoUrl("performance-golf"), website: "https://performance-golf.com" },
   { id: 175, name: "Simkhai", slug: "simkhai", logo: getLogoUrl("simkhai"), website: "https://simkhai.com" },
   { id: 176, name: "Sexy Little Bath US", slug: "sexy-little-bath-us", logo: getLogoUrl("sexy-little-bath-us"), website: "https://sexy-little-bath-us.com" },
-  { id: 504, name: "Everblog AI", slug: "everblog", logo: getLogoUrl("everblog"), website: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP" },
+  { id: 504, name: "Everblog", slug: "everblog", logo: getLogoUrl("everblog"), website: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP" },
   { id: 178, name: "PrintAbout", slug: "printabout", logo: getLogoUrl("printabout"), website: "https://printabout.com" },
   { id: 179, name: "Lumary", slug: "lumary", logo: getLogoUrl("lumary"), website: "https://lumary.com" },
   { id: 180, name: "Young Electric Bikes", slug: "young-electric-bikes", logo: getLogoUrl("young-electric-bikes"), website: "https://clickm.me/xZJ2NJ" },
@@ -956,7 +956,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     id: "eb-card-1",
     code: "WELCOME10",
     title: "10% Off Welcome Discount Code",
-    description: "Use official code 'WELCOME10' at checkout to get an extra 10% off your Everblog AI Smart Calendar & Planner.",
+    description: "Use official code 'WELCOME10' at checkout to get an extra 10% off your Everblog Smart Calendar & Planner.",
     discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
@@ -1004,7 +1004,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     id: "eb-card-5",
     code: "ANNUAL50",
     title: "Up to 50% Off Annual Subscription Plan",
-    description: "Get up to 50% instant savings when choosing annual billing for Everblog AI family sync & calendar service.",
+    description: "Get up to 50% instant savings when choosing annual billing for Everblog family sync & calendar service.",
     discount: "50% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
@@ -1390,15 +1390,15 @@ export const FALLBACK_COUPONS: Coupon[] = [
     verified_at: "Verified August 2026",
     uses_count: 360
   },
-  // Everblog AI
+  // Everblog
   {
     id: 2010,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "15% off discount code",
     title: "15% off discount code",
-    description: "Save 15% off instantly with this verified Everblog AI discount code at checkout.",
+    description: "Save 15% off instantly with this verified Everblog discount code at checkout.",
     category: "Software & AI",
     affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
     expiry_date: "2026-09-14",
@@ -1410,11 +1410,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2011,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "10% off discount code sitewide",
     title: "10% off discount code sitewide",
-    description: "Get 10% off sitewide discount on all Everblog AI writing plans.",
+    description: "Get 10% off sitewide discount on all Everblog writing plans.",
     category: "Software & AI",
     affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
     expiry_date: "2026-09-14",
@@ -1426,11 +1426,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2012,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "50% off discount code - annual plan",
     title: "50% off discount code - annual plan",
-    description: "Get 50% instant discount when choosing annual billing on Everblog AI auto-blogging software.",
+    description: "Get 50% instant discount when choosing annual billing on Everblog auto-blogging software.",
     category: "Software & AI",
     affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
     expiry_date: "2026-09-14",
@@ -1442,7 +1442,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2013,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "30% off discount code - lifetime deal",
     title: "30% off discount code - lifetime deal",
@@ -1458,7 +1458,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2014,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "20% off discount code - monthly plans",
     title: "20% off discount code - monthly plans",
@@ -1474,7 +1474,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2015,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "7-day free trial (no code needed)",
     title: "7-day free trial (no code needed)",
@@ -1490,7 +1490,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: 2016,
     storeSlug: "everblog",
-    storeName: "Everblog AI",
+    storeName: "Everblog",
     code: "DEAL",
     discount: "Free 10,000 AI Credits Bonus",
     title: "Free 10,000 AI Credits Bonus",
@@ -1503,7 +1503,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     verified_at: "Verified August 2026",
     uses_count: 450
   },
-  // Everblog AI
+  // Everblog
                 {
     id: 1960,
     storeSlug: "bouquets-by-post",
