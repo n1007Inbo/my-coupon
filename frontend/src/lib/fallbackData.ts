@@ -446,6 +446,48 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
+
+  // --- TOP ACTIVE AFFILIATE STORES WITH GUARANTEED ATTRIBUTION ---
+  {
+    id: 99991,
+    name: "DC House Power",
+    slug: "dc-house",
+    logo: getLogoUrl("dc-house"),
+    website: "https://www.dchousepower.com",
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
+  },
+  {
+    id: 99992,
+    name: "Maple Prime",
+    slug: "maple-prime",
+    logo: getLogoUrl("maple-prime"),
+    website: "https://mapleprime.com",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: 99993,
+    name: "Everblog",
+    slug: "everblog",
+    logo: getLogoUrl("everblog"),
+    website: "https://everblog.com",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: 99994,
+    name: "Bouquets by Post",
+    slug: "bouquets-by-post",
+    logo: getLogoUrl("bouquets-by-post"),
+    website: "https://bouquetsbypost.com",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
   
   { id: 601, name: "AEKE", slug: "aeke", logo: getLogoUrl("aeke"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 602, name: "AEKE US", slug: "aeke-us", logo: getLogoUrl("aeke-us"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
