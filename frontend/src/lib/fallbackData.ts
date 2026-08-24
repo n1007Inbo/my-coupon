@@ -446,14 +446,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
-  {
-    id: 99992,
-    name: "Maple Prime",
-    slug: "maple-prime",
-    logo: getLogoUrl("maple-prime"),
-    website: "https://mapleprime.com",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
+  
   { id: 601, name: "AEKE", slug: "aeke", logo: getLogoUrl("aeke"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 602, name: "AEKE US", slug: "aeke-us", logo: getLogoUrl("aeke-us"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 0, name: "Amazon", slug: "amazon", logo: getLogoUrl("amazon"), website: "https://amazon.com" },
@@ -498,7 +491,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 39, name: "Gymshark", slug: "gymshark", logo: getLogoUrl("gymshark"), website: "https://gymshark.com" },
   { id: 40, name: "Desktronic NL", slug: "desktronic-nl", logo: getLogoUrl("desktronic-nl"), website: "/go/desktronic-nl" },
   { id: 41, name: "Parc Astérix FR", slug: "parc-asterix-fr", logo: getLogoUrl("parc-asterix-fr"), website: "https://litl.si/Tlxjk" },
-  { id: 42, name: "Bouquets by Post", slug: "bouquets-by-post", logo: getLogoUrl("bouquets-by-post"), website: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  
   { id: 43, name: "IM8 Health US", slug: "im8health", logo: getLogoUrl("im8health"), website: "https://www.im8health.com/METHEW29111" },
   { id: 44, name: "Redu Sculpt US", slug: "redusculpt", logo: getLogoUrl("redusculpt"), website: "https://www.redusculpt.com/METHEW46097" },
   { id: 45, name: "Evolution Power Tools US", slug: "evolution-power-tools", logo: getLogoUrl("evolution-power-tools"), website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
@@ -633,7 +626,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 174, name: "Performance Golf", slug: "performance-golf", logo: getLogoUrl("performance-golf"), website: "https://performance-golf.com" },
   { id: 175, name: "Simkhai", slug: "simkhai", logo: getLogoUrl("simkhai"), website: "https://simkhai.com" },
   { id: 176, name: "Sexy Little Bath US", slug: "sexy-little-bath-us", logo: getLogoUrl("sexy-little-bath-us"), website: "https://sexy-little-bath-us.com" },
-  { id: 504, name: "Everblog", slug: "everblog", logo: getLogoUrl("everblog"), website: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP" },
+  
   { id: 178, name: "PrintAbout", slug: "printabout", logo: getLogoUrl("printabout"), website: "https://printabout.com" },
   { id: 179, name: "Lumary", slug: "lumary", logo: getLogoUrl("lumary"), website: "https://lumary.com" },
   { id: 180, name: "Young Electric Bikes", slug: "young-electric-bikes", logo: getLogoUrl("young-electric-bikes"), website: "https://clickm.me/xZJ2NJ" },
@@ -752,7 +745,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 293, name: "Badlands Gear US", slug: "badlands-gear-us", logo: getLogoUrl("badlands-gear-us"), website: "https://badlandsgear.com/" },
   { id: 294, name: "Fuji Sports", slug: "fuji-sports", logo: getLogoUrl("fuji-sports"), website: "https://fujisports.com/" },
   { id: 295, name: "Jiaro Pack", slug: "jiaro-pack", logo: getLogoUrl("jiaro-pack"), website: "https://jiaropack.com/" },
-  { id: 296, name: "DC House Power", slug: "dc-house", logo: getLogoUrl("dc-house"), website: "https://www.dchousepower.com", affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml" },
+  
   { id: 297, name: "OHMMU", slug: "ohmmu", logo: getLogoUrl("ohmmu"), website: "https://ohmmu.com/" },
   { id: 298, name: "Waterdrop", slug: "waterdrop", logo: getLogoUrl("waterdrop"), website: "https://waterdropfilter.com/" },
   { id: 299, name: "Octobuddy US", slug: "octobuddy-us", logo: getLogoUrl("octobuddy-us"), website: "https://octobuddy.com/" },
@@ -960,407 +953,772 @@ export const FALLBACK_STORES: Store[] = [
 
 export const FALLBACK_COUPONS: Coupon[] = [
 
-  // --- MAPLE PRIME (11 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
+  // --- DC HOUSE (12 VERIFIED CARDS) ---
   {
-    id: "mp-card-1",
-    code: "Methew",
-    title: "20% Off Coupon Code",
-    description: "Save 20% on all designer fragrances, luxury perfumes, and colognes using verified code Methew at checkout.",
-    discount: "20% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-2",
-    code: "DEAL",
-    title: "50% Off on Summer Sale",
-    description: "Enjoy up to 50% off during the limited-time Maple Prime summer clearance event.",
-    discount: "50% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-3",
-    code: "Methew",
-    title: "15% Off Discount Code Sitewide",
-    description: "Save 15% sitewide on top fragrance brands including Creed, Tom Ford, and Chanel with code Methew.",
-    discount: "15% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-4",
-    code: "Methew",
-    title: "10% Off Promo Code – Summer Vibes",
-    description: "Get 10% instant savings on niche perfume collections with code Methew.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-5",
-    code: "DEAL",
-    title: "Free Shipping Over $49",
-    description: "Enjoy 100% free US standard shipping on all perfume orders over $49.",
-    discount: "FREE SHIPPING",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-6",
-    code: "DEAL",
-    title: "89% Off on Eau De Parfum",
-    description: "Massive savings up to 89% off on premium Eau De Parfum sprays and discovery sets.",
-    discount: "89% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-7",
-    code: "DEAL",
-    title: "80% Off on Perfume Oil",
-    description: "Save 80% on long-lasting concentrated perfume oils and artisanal rollerballs.",
-    discount: "80% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-8",
-    code: "DEAL",
-    title: "75% Off on Unisex Perfumes",
-    description: "Discover luxury gender-neutral perfumes at up to 75% off regular retail pricing.",
-    discount: "75% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-9",
-    code: "DEAL",
-    title: "70% Off on Body Spray",
-    description: "Save 70% on refreshing all-over body mists and scented grooming sprays.",
-    discount: "70% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-10",
-    code: "DEAL",
-    title: "60% Off on Skincare",
-    description: "Save 60% on premium scented lotions, aftershaves, and body hydration creams.",
-    discount: "60% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "mp-card-11",
-    code: "DEAL",
-    title: "15% Off on Newsletter Signup",
-    description: "Subscribe to the official Maple Prime VIP list for exclusive drops and coupons.",
-    discount: "15% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-
-  // --- EVERBLOG (10 CARDS MATCHING COMPETITOR COUPON-TIME.COM) ---
-  {
-    id: "eb-card-1",
-    code: "NEW10",
-    title: "15% Off Coupon Code",
-    description: "Get 15% discount on Everblog smart digital calendar displays and starter subscriptions with code NEW10.",
-    discount: "15% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-2",
-    code: "DEAL",
-    title: "$400 Off – Back to School Sale",
-    description: "Save up to $400 on Everblog smart touchscreen calendars during the limited-time seasonal event.",
-    discount: "$400 OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-3",
-    code: "EVER10",
-    title: "10% Off Discount Code Sitewide",
-    description: "Save 10% sitewide on all Everblog smart calendar devices, mounts, and accessories with code EVER10.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-4",
-    code: "WELCOME10",
-    title: "10% Off Promo Code",
-    description: "Apply code WELCOME10 at checkout to unlock 10% off your first Everblog order.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com/discount/WELCOME10?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-5",
-    code: "DEAL",
-    title: "$50 Extra Off on HomeCal Calendar",
-    description: "Get an extra $50 instant discount on the HomeCal smart display system for family coordination.",
-    discount: "$50 OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-6",
-    code: "DEAL",
-    title: "Free Shipping on All Orders",
-    description: "Enjoy 100% free US standard shipping on all Everblog calendar displays and bundles.",
-    discount: "FREE SHIPPING",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-7",
-    code: "DEAL",
-    title: "40% Off on FridgeCal Calendar",
-    description: "Take 40% off the flagship FridgeCal magnetic smart touchscreen calendar.",
-    discount: "40% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-8",
-    code: "DEAL",
-    title: "25% Off on Accessories",
-    description: "Save 25% on wall mount brackets, power adapters, and custom stylus pens.",
-    discount: "25% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-9",
-    code: "DEAL",
-    title: "$79 – Charging Dock Bundle Deal",
-    description: "Grab the smart charging dock and cable organizer bundle for just $79.",
-    discount: "$79 DEAL",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-  {
-    id: "eb-card-10",
-    code: "DEAL",
-    title: "10% Off on Newsletter Signup",
-    description: "Subscribe to the official newsletter and receive instant notification on upcoming firmware updates and sales.",
-    discount: "10% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "everblog",
-    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
-  },
-
-  // --- DC HOUSE (12 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
-  {
-    id: "dc-card-1",
+    id: "dc-1",
     code: "METHEWDIPPY",
     title: "15% Off Coupon Code",
     description: "Save 15% on high-performance LiFePO4 batteries, trolling motors, and solar accessories with code METHEWDIPPY.",
     discount: "15% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-2",
+    id: "dc-2",
     code: "METHEWDIPPY",
     title: "10% Off Code – August Power Sale",
     description: "Get 10% instant discount during the August Power Sale on deep cycle battery banks with code METHEWDIPPY.",
     discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-3",
+    id: "dc-3",
     code: "METHEWDIPPY",
     title: "10% Off Discount Code Sitewide",
     description: "Save 10% on all orders sitewide at DC House using verified promo code METHEWDIPPY at checkout.",
     discount: "10% OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-4",
+    id: "dc-4",
     code: "METHEWDIPPY",
     title: "$10 Off Promo Code",
     description: "Enjoy $10 off your purchase of off-grid solar equipment and water pumps with code METHEWDIPPY.",
     discount: "$10 OFF",
     type: "code" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-5",
+    id: "dc-5",
     code: "DEAL",
     title: "45% Off – Summer Sale",
     description: "Get up to 45% off selected lithium battery packs and accessories during the DC House summer clearance.",
     discount: "45% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-6",
+    id: "dc-6",
     code: "DEAL",
     title: "Free Shipping on All Orders",
     description: "Enjoy 100% free ground shipping across the US plus 5-year replacement factory warranty.",
     discount: "FREE SHIPPING",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-7",
+    id: "dc-7",
     code: "DEAL",
     title: "25% Off on Best Selling Items",
     description: "Save 25% on top-rated 100Ah/200Ah LiFePO4 batteries and solar inverter systems.",
     discount: "25% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-8",
+    id: "dc-8",
     code: "DEAL",
     title: "22% Off on LiFePO4 Golf Cart Kit",
     description: "Upgrade your golf cart with lightweight, fast-charging 36V/48V LiFePO4 lithium conversion kits at 22% off.",
     discount: "22% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-9",
+    id: "dc-9",
     code: "DEAL",
     title: "20% Off on 12V LiFePO4 Batteries",
     description: "Get 20% off deep-cycle 12V batteries for marine trolling motors, RVs, and solar setups.",
     discount: "20% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-10",
+    id: "dc-10",
     code: "DEAL",
     title: "15% Off on Battery Accessories",
     description: "Save 15% on smart battery chargers, monitors, high-amp cables, and connection terminal hardware.",
     discount: "15% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-11",
+    id: "dc-11",
     code: "DEAL",
     title: "10% Off on 36V LiFePO4 Batteries",
     description: "Take 10% off high-voltage 36V lithium batteries designed for heavy-duty trolling motors.",
     discount: "10% OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
   {
-    id: "dc-card-12",
+    id: "dc-12",
     code: "DEAL",
     title: "$10 Off on Newsletter Sign-Up",
     description: "Sign up for the official DC House mailing list to receive exclusive coupons, warranty guides, and flash sales.",
     discount: "$10 OFF",
     type: "deal" as const,
     expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
     isVerified: true,
+    is_verified: true,
     storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml"
+    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
   },
+
+  // --- MAPLE PRIME (11 VERIFIED CARDS) ---
+  {
+    id: "mp-1",
+    code: "Methew",
+    title: "20% Off Coupon Code",
+    description: "Save 20% on all designer fragrances, luxury perfumes, and colognes using verified code Methew at checkout.",
+    discount: "20% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-2",
+    code: "DEAL",
+    title: "50% Off on Summer Sale",
+    description: "Enjoy up to 50% off during the limited-time Maple Prime summer clearance event.",
+    discount: "50% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-3",
+    code: "Methew",
+    title: "15% Off Discount Code Sitewide",
+    description: "Save 15% sitewide on top fragrance brands including Creed, Tom Ford, and Chanel with code Methew.",
+    discount: "15% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-4",
+    code: "Methew",
+    title: "10% Off Promo Code – Summer Vibes",
+    description: "Get 10% instant savings on niche perfume collections with code Methew.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-5",
+    code: "DEAL",
+    title: "Free Shipping Over $49",
+    description: "Enjoy 100% free US standard shipping on all perfume orders over $49.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-6",
+    code: "DEAL",
+    title: "89% Off on Eau De Parfum",
+    description: "Massive savings up to 89% off on premium Eau De Parfum sprays and discovery sets.",
+    discount: "89% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-7",
+    code: "DEAL",
+    title: "80% Off on Perfume Oil",
+    description: "Save 80% on long-lasting concentrated perfume oils and artisanal rollerballs.",
+    discount: "80% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-8",
+    code: "DEAL",
+    title: "75% Off on Unisex Perfumes",
+    description: "Discover luxury gender-neutral perfumes at up to 75% off regular retail pricing.",
+    discount: "75% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-9",
+    code: "DEAL",
+    title: "70% Off on Body Spray",
+    description: "Save 70% on refreshing all-over body mists and scented grooming sprays.",
+    discount: "70% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-10",
+    code: "DEAL",
+    title: "60% Off on Skincare",
+    description: "Save 60% on premium scented lotions, aftershaves, and body hydration creams.",
+    discount: "60% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+  {
+    id: "mp-11",
+    code: "DEAL",
+    title: "15% Off on Newsletter Signup",
+    description: "Subscribe to the official Maple Prime VIP list for exclusive drops and coupons.",
+    discount: "15% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "maple-prime",
+    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_link: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program",
+    affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
+  },
+
+  // --- EVERBLOG (10 VERIFIED CARDS) ---
+  {
+    id: "eb-1",
+    code: "NEW10",
+    title: "15% Off Coupon Code",
+    description: "Get 15% discount on Everblog smart digital calendar displays and starter subscriptions with code NEW10.",
+    discount: "15% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com/discount/NEW10?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-2",
+    code: "DEAL",
+    title: "$400 Off – Back to School Sale",
+    description: "Save up to $400 on Everblog smart touchscreen calendars during the limited-time seasonal event.",
+    discount: "$400 OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-3",
+    code: "EVER10",
+    title: "10% Off Discount Code Sitewide",
+    description: "Save 10% sitewide on all Everblog smart calendar devices, mounts, and accessories with code EVER10.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com/discount/EVER10?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-4",
+    code: "WELCOME10",
+    title: "10% Off Promo Code",
+    description: "Apply code WELCOME10 at checkout to unlock 10% off your first Everblog order.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com/discount/WELCOME10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com/discount/WELCOME10?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com/discount/WELCOME10?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-5",
+    code: "DEAL",
+    title: "$50 Extra Off on HomeCal Calendar",
+    description: "Get an extra $50 instant discount on the HomeCal smart display system for family coordination.",
+    discount: "$50 OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-6",
+    code: "DEAL",
+    title: "Free Shipping on All Orders",
+    description: "Enjoy 100% free US standard shipping on all Everblog calendar displays and bundles.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-7",
+    code: "DEAL",
+    title: "40% Off on FridgeCal Calendar",
+    description: "Take 40% off the flagship FridgeCal magnetic smart touchscreen calendar.",
+    discount: "40% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-8",
+    code: "DEAL",
+    title: "25% Off on Accessories",
+    description: "Save 25% on wall mount brackets, power adapters, and custom stylus pens.",
+    discount: "25% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-9",
+    code: "DEAL",
+    title: "$79 – Charging Dock Bundle Deal",
+    description: "Grab the smart charging dock and cable organizer bundle for just $79.",
+    discount: "$79 DEAL",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+  {
+    id: "eb-10",
+    code: "DEAL",
+    title: "10% Off on Newsletter Signup",
+    description: "Subscribe to the official newsletter and receive instant notification on upcoming sales.",
+    discount: "10% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "everblog",
+    affiliateLink: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
+    affiliate_url: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP"
+  },
+
+  // --- BOUQUETS BY POST (12 VERIFIED CARDS) ---
+  {
+    id: "bbp-1",
+    code: "POST10",
+    title: "10% Off Coupon Code",
+    description: "Save 10% on fresh luxury flower bouquets, gift boxes, and seasonal hampers with code POST10.",
+    discount: "10% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-2",
+    code: "SITE5",
+    title: "5% Off Discount Code Sitewide",
+    description: "Enjoy 5% discount across the entire collection of hand-tied fresh letterbox flowers with code SITE5.",
+    discount: "5% OFF",
+    type: "code" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-3",
+    code: "DEAL",
+    title: "56% Off on Sale Bouquets",
+    description: "Massive savings up to 56% off on selected seasonal floral arrangements and mixed bouquets.",
+    discount: "56% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-4",
+    code: "DEAL",
+    title: "Flowers from £14.99",
+    description: "Beautiful fresh flower bouquets delivered with free gift card starting from just £14.99.",
+    discount: "FROM £14.99",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-5",
+    code: "DEAL",
+    title: "50% Off on All Bouquets",
+    description: "Get half-price discounts on romantic roses, vibrant lilies, and cheerful sunflowers.",
+    discount: "50% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-6",
+    code: "DEAL",
+    title: "Free UK Royal Mail Shipping",
+    description: "100% free tracked delivery across the United Kingdom on all fresh letterbox orders.",
+    discount: "FREE SHIPPING",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-7",
+    code: "DEAL",
+    title: "50% Off on Birthday Flowers",
+    description: "Celebrate birthdays with special flower arrangements at 50% discount.",
+    discount: "50% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-8",
+    code: "DEAL",
+    title: "45% Off on Teddy Bears",
+    description: "Add cute plush teddy bears to any flower order for 45% off regular price.",
+    discount: "45% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-9",
+    code: "DEAL",
+    title: "40% Off on Balloons",
+    description: "Pair helium celebration balloons with fresh bouquets at 40% off.",
+    discount: "40% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-10",
+    code: "DEAL",
+    title: "Extra 20% Off on Marked Price",
+    description: "Take an extra 20% discount on already reduced special weekly clearance bouquets.",
+    discount: "EXTRA 20% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-11",
+    code: "DEAL",
+    title: "10% Off on Newsletter Sign-Up",
+    description: "Subscribe to the VIP flower club newsletter for 10% off plus secret promo codes.",
+    discount: "10% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+  {
+    id: "bbp-12",
+    code: "DEAL",
+    title: "5% Off on Chocolates",
+    description: "Add artisanal Swiss and Belgian chocolates to your flower gift box with 5% off.",
+    discount: "5% OFF",
+    type: "deal" as const,
+    expiryDate: "Dec 31, 2026",
+    expiry_date: "2026-12-31",
+    isVerified: true,
+    is_verified: true,
+    storeSlug: "bouquets-by-post",
+    affiliateLink: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
+    affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali"
+  },
+
+  // --- MAPLE PRIME (11 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  // --- EVERBLOG (10 CARDS MATCHING COMPETITOR COUPON-TIME.COM) ---
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  // --- DC HOUSE (12 CARDS MATCHING COMPETITOR COUPONGALLERIA.COM) ---
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   // --- DC HOUSE POWER VERIFIED COUPONS ---
   // --- FILTER BABY VERIFIED COUPONS ---
   {
@@ -1484,30 +1842,8 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "evolution-power-tools",
     affiliateLink: "https://store.evolutionpowertools.com/discount/METHEWDIPPY5?ref=METHEWDIPPY"
   },
-  {
-    id: "maple-card-2",
-    code: "SCENT15",
-    title: "15% Off Designer Fragrances & Perfume Bundles",
-    description: "Save 15% on best-selling designer scents including Creed, Tom Ford, Chanel, Dior, and niche brands.",
-    discount: "15% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/discount/Methew?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
-  {
-    id: "maple-card-3",
-    code: "FREESHIP",
-    title: "Free US Shipping on Orders Over $49",
-    description: "Get free fast delivery across the US on all designer fragrance orders of $49 or more.",
-    discount: "FREE SHIPPING",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/discount/Methew?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
+  
+  
   {
     id: "evolution-code-1",
     code: "METHEWDIPPY5",
@@ -1520,18 +1856,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "evolution-power-tools",
     affiliateLink: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
   },
-  {
-    id: "maple-code-1",
-    code: "Methew",
-    title: "Exclusive Maple Prime Discount Code - Save on Luxury Perfumes",
-    description: "Use official discount code 'Methew' at checkout to save on designer fragrances, colognes, and luxury beauty at Maple Prime. Verified active discount code for 2026.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    isVerified: true,
-    storeSlug: "maple-prime",
-    affiliateLink: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program"
-  },
+  
   // Young Electric Bikes (100% Direct 1-Click Deals via CSL)
   {
     id: 3010,
@@ -1630,247 +1955,22 @@ export const FALLBACK_COUPONS: Coupon[] = [
     uses_count: 360
   },
   // Everblog AI
-  {
-    id: 2010,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "15% off discount code",
-    title: "15% off discount code",
-    description: "Save 15% off instantly with this verified Everblog AI discount code at checkout.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 581
-  },
-  {
-    id: 2011,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "10% off discount code sitewide",
-    title: "10% off discount code sitewide",
-    description: "Get 10% off sitewide discount on all Everblog AI writing plans.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 562
-  },
-  {
-    id: 2012,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "50% off discount code - annual plan",
-    title: "50% off discount code - annual plan",
-    description: "Get 50% instant discount when choosing annual billing on Everblog AI auto-blogging software.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 484
-  },
-  {
-    id: 2013,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "30% off discount code - lifetime deal",
-    title: "30% off discount code - lifetime deal",
-    description: "Save 30% off on unlimited AI automated blog generation lifetime licenses.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 380
-  },
-  {
-    id: 2014,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "20% off discount code - monthly plans",
-    title: "20% off discount code - monthly plans",
-    description: "Take 20% off monthly subscription tiers for high-ranking automated content publishing.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 320
-  },
-  {
-    id: 2015,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "7-day free trial (no code needed)",
-    title: "7-day free trial (no code needed)",
-    description: "Experience all pro AI SEO writing features completely free for 7 days with zero upfront charge.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: false,
-    verified_at: "Verified August 2026",
-    uses_count: 610
-  },
-  {
-    id: 2016,
-    storeSlug: "everblog",
-    storeName: "Everblog",
-    code: "DEAL",
-    discount: "Free 10,000 AI Credits Bonus",
-    title: "Free 10,000 AI Credits Bonus",
-    description: "Sign up today and get 10,000 bonus words instantly added to your dashboard.",
-    category: "Software & AI",
-    affiliate_link: "https://everblog.com?sca_ref=12108488.4ricweGCagO1uP",
-    expiry_date: "2026-09-14",
-    is_verified: true,
-    is_exclusive: false,
-    verified_at: "Verified August 2026",
-    uses_count: 450
-  },
+  
+  
+  
+  
+  
+  
+  
   // Everblog AI
-                {
-    id: 1960,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "50% Off All Fresh Flower Bouquets",
-    title: "50% Off All Fresh Flower Bouquets",
-    description: "Click to activate 50% instant discount on fresh hand-tied postal flower bouquets across the UK.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 2450
-  },
-  {
-    id: 1961,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "Extra 10% Off Applied at Checkout",
-    title: "Extra 10% Off Applied Automatically",
-    description: "Activate your 10% discount applied automatically at checkout through this exclusive partner link.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 1890
-  },
-  {
-    id: 1962,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "FREEDEL",
-    discount: "Free Next Day UK Postal Delivery",
-    title: "Free Next Day UK Postal Delivery",
-    description: "Enjoy 100% free nationwide next-day postal delivery across the United Kingdom on all bouquets.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: false,
-    verified_at: "Verified August 2026",
-    uses_count: 3120
-  },
-  {
-    id: 1963,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "25% Off Fresh Letterbox Flowers",
-    title: "25% Off Fresh Letterbox Flowers",
-    description: "Get 25% off convenient letterbox flowers designed to fit straight through standard UK letterboxes.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 1120
-  },
-  {
-    id: 1964,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "£5 Off Birthday & Anniversary Gifts",
-    title: "£5 Off Birthday & Anniversary Flowers",
-    description: "Save £5 off celebratory floral arrangements, gift hampers, and luxury hand-tied roses.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 980
-  },
-  {
-    id: 1965,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "Free Luxury Chocolates with Select Bouquets",
-    title: "Free Luxury Chocolates with Select Bouquets",
-    description: "Complimentary box of gourmet artisan chocolates included with premium flower orders.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: false,
-    verified_at: "Verified August 2026",
-    uses_count: 850
-  },
-  {
-    id: 1966,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "20% Off Sympathy & Funeral Flowers",
-    title: "20% Off Sympathy & Funeral Flowers",
-    description: "Take 20% off respectful sympathy bouquets and condolence flower arrangements.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 720
-  },
-  {
-    id: 1967,
-    storeSlug: "bouquets-by-post",
-    storeName: "Bouquets by Post",
-    code: "DEAL",
-    discount: "10% Off Newsletter Sign-Up",
-    title: "10% Off Newsletter Sign-Up",
-    description: "Instant 10% discount activated for new subscribers on their first flower delivery order.",
-    category: "Gifts & Flowers",
-    affiliate_link: "https://bouquetsbypost.com/muhammadhaziqueali",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified August 2026",
-    uses_count: 1490
-  },
+                
+  
+  
+  
+  
+  
+  
+  
                     {
     id: 3901,
     storeSlug: "aeke",
@@ -2259,23 +2359,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     verified_at: "Verified Today",
     uses_count: 780
   },
-  {
-    id: 1957,
-    storeId: 344,
-    storeName: "DC House",
-    storeSlug: "dc-house",
-    code: "METHEWDIPPY",
-    discount: "10% OFF",
-    title: "10% Off LiFePO4 Lithium Batteries & Solar Kits",
-    description: "Get 10% instant savings on 12V/24V deep-cycle lithium batteries, solar panels, and inverters at DC House.",
-    category: "Home Improvement & Solar",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified Today",
-    uses_count: 1250
-  },
+  
   {
     id: 1952,
     storeId: 339,
@@ -2327,38 +2411,8 @@ export const FALLBACK_COUPONS: Coupon[] = [
     verified_at: "Verified Today",
     uses_count: 1100
   },
-  {
-    id: 1964,
-    storeSlug: "dc-house",
-    storeName: "DC House",
-    code: "METHEWDIPPY",
-    discount: "$50 OFF",
-    title: "$50 Off Lithium Batteries & Solar Power Kits",
-    description: "Get $50 instant discount on 100Ah LiFePO4 batteries, trolling motors, and solar inverter kits at DC House.",
-    category: "Electronics",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: true,
-    verified_at: "Verified Today",
-    uses_count: 1890
-  },
-  {
-    id: 1965,
-    storeSlug: "dc-house",
-    storeName: "DC House",
-    code: "METHEWDIPPY",
-    discount: "FREE SHIPPING",
-    title: "Free Freight Delivery on All Battery Orders",
-    description: "Enjoy 100% free US standard shipping on all lithium battery packs and accessories at DC House.",
-    category: "Electronics",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    expiry_date: "2026-12-31",
-    is_verified: true,
-    is_exclusive: false,
-    verified_at: "Verified Today",
-    uses_count: 1240
-  },
+  
+  
   {
     id: 1966,
     storeSlug: "filter-baby",
@@ -2929,17 +2983,17 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1352, code: "DEAL", discount: "Gratuit", description: "Entrée gratuite pour les enfants accompagnés d'un adulte muni d'un billet payant lors des périodes spéciales.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
   { id: 1353, code: "DEAL", discount: "Dès 49€", description: "Tarif Tribu : Obtenez un tarif réduit à partir de 49€ par personne pour tout achat simultané de 5 à 15 billets.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
   { id: 1354, code: "DEAL", discount: "Dès 10€", description: "Profitez de l'option coupe-file Filotomatix à partir de 10€ pour éviter les files d'attente aux attractions phares.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[41], affiliate_url: "https://litl.si/Tlxjk" },
-  { id: 1355, code: "DEAL", discount: "10% off", description: "Exclusive 10% off coupon code sitewide on fresh flower gifts.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1356, code: "DEAL", discount: "70% off", description: "Get up to 70% off on stunning hand-tied bouquets and flower arrangements.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1357, code: "DEAL", discount: "5% off", description: "Exclusive 5% off discount code sitewide on all order values.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1358, code: "DEAL", discount: "50% off", description: "Save 50% off on selected flower bouquets and summer collections.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1359, code: "DEAL", discount: "Free shipping", description: "Free UK standard delivery on all flower orders. No minimum spend required.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1360, code: "DEAL", discount: "50% off", description: "Birthday flowers promotion: Save 50% on special birthday flower arrangements.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1361, code: "DEAL", discount: "45% off", description: "Enjoy 45% off on cute teddy bears when added to your flower order.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1362, code: "DEAL", discount: "40% off", description: "Get 40% off on celebratory helium and latex balloons with your flowers.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1363, code: "DEAL", discount: "20% off", description: "Save 20% off on custom greeting cards and personalized messages.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1364, code: "DEAL", discount: "10% off", description: "Get 10% off your first flower delivery order when you sign up for newsletter updates.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
-  { id: 1365, code: "DEAL", discount: "5% off", description: "Save 5% on luxury chocolates and truffles bundles added to any order.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[42], affiliate_url: "https://bouquetsbypost.com/muhammadhaziqueali" },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   { id: 1366, code: "METHEW29111", discount: "20% Off", description: "Get your exclusive 20% off coupon code on IM8 Health products.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
   { id: 1367, code: "METHEW29111", discount: "15% Off", description: "Get 15% off discount code sitewide on IM8 Health Daily Essentials.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
   { id: 1368, code: "METHEW29111", discount: "30% Off Welcome Kit", description: "Save 30% off - Welcome kit + 5 free sachets when you sign up today.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[43], affiliate_url: "https://www.im8health.com/METHEW29111" },
@@ -2971,17 +3025,17 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 1394, code: "METHEWDIPPY5", discount: "$145 Off Chop Saw", description: "Get $145 off on chop saw stand combo from Evolution Power Tools.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
   { id: 1395, code: "METHEWDIPPY5", discount: "10% Off Accessories", description: "Save 10% off on service rewards and accessories.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
   { id: 1396, code: "METHEWDIPPY5", discount: "5% Off Newsletter", description: "Sign up for newsletter and get 5% off your first Evolution Power Tools order.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[45], affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY" },
-  { id: 1397, code: "REF-7442", discount: "20% Off", description: "Exclusive 20% off coupon code on all Maple Prime fragrances and perfumes.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1398, code: "REF-7442", discount: "50% Off Summer Sale", description: "Save 50% off during the summer sale on Maple Prime collection.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1399, code: "REF-7442", discount: "15% Off Sitewide", description: "Get 15% off discount code sitewide on Maple Prime products.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1400, code: "REF-7442", discount: "10% Off Summer Vibes", description: "Get 10% off promo code - summer vibes collection on Maple Prime.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1401, code: "REF-7442", discount: "Free Shipping", description: "Enjoy free shipping on all Maple Prime orders over $49.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1402, code: "REF-7442", discount: "89% Off EDP", description: "Get up to 89% off on Eau de Parfum at Maple Prime fragrance outlet.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1403, code: "REF-7442", discount: "80% Off Perfume Oil", description: "Save 80% off on luxury perfume oils and roll-ons.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1404, code: "REF-7442", discount: "75% Off Unisex", description: "Get 75% off on popular unisex perfumes and signature scents.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1405, code: "REF-7442", discount: "70% Off Body Spray", description: "Save 70% off on body sprays and daily fragrance essentials.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1406, code: "REF-7442", discount: "60% Off Skincare", description: "Get 60% off on premium skincare and cosmetics brands at Maple Prime.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
-  { id: 1407, code: "REF-7442", discount: "15% Off Newsletter", description: "Sign up for newsletter updates and get 15% off your first purchase.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[46], affiliate_url: "https://mapleprime.com/collections/all?bg_ref=al8eMAdGYf&utm_source=Muhammad%20Hazique%20Ali&utm_medium=affiliate&utm_campaign=Maple%20Prime%20Affiliate%20Program" },
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   { id: 1408, code: "WELCOME15", discount: "15% Off", description: "Get 15% off your first order on newsletter sign up at Nobody's Child.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
   { id: 1409, code: "STUDENT15", discount: "15% Off", description: "Verified 15% student discount at Nobody's Child via UNiDAYS.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
   { id: 1410, code: "KEYWORKER20", discount: "20% Off", description: "Exclusive 20% keyworker discount for healthcare, teachers & transport staff.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[47], affiliate_url: "https://www.nobodyschild.com/" },
@@ -3985,10 +4039,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 2416, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Jiaro Pack newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
   { id: 2417, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Jiaro Pack.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
   { id: 2418, code: "SALE", discount: "Up to 30% Off Sale", description: "Save up to 30% off selected items during the seasonal clearance event at Jiaro Pack.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: false, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
-  { id: 2419, code: "METHEWDIPPY", discount: "15% Off", description: "Save 15% off sitewide on all orders from DC House using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml" },
-  { id: 2420, code: "METHEWDIPPY", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official DC House newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml" },
-  { id: 2421, code: "METHEWDIPPY", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at DC House.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml" },
-  { id: 2422, code: "METHEWDIPPY", discount: "Up to 30% Off Sale", description: "Save up to 30% off selected items during the seasonal clearance event at DC House.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: false, store: FALLBACK_STORES[299], affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml" },
+  
+  
+  
+  
   { id: 2423, code: "OHMM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from OHMMU using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
   { id: 2424, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official OHMMU newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
   { id: 2425, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at OHMMU.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
