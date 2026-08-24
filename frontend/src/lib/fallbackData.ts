@@ -744,7 +744,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 293, name: "Badlands Gear US", slug: "badlands-gear-us", logo: getLogoUrl("badlands-gear-us"), website: "https://badlandsgear.com/" },
   { id: 294, name: "Fuji Sports", slug: "fuji-sports", logo: getLogoUrl("fuji-sports"), website: "https://fujisports.com/" },
   { id: 295, name: "Jiaro Pack", slug: "jiaro-pack", logo: getLogoUrl("jiaro-pack"), website: "https://jiaropack.com/" },
-  { id: 296, name: "DC House", slug: "dc-house", logo: getLogoUrl("dc-house"), website: "https://dchouse.com/" },
+  
   { id: 297, name: "OHMMU", slug: "ohmmu", logo: getLogoUrl("ohmmu"), website: "https://ohmmu.com/" },
   { id: 298, name: "Waterdrop", slug: "waterdrop", logo: getLogoUrl("waterdrop"), website: "https://waterdropfilter.com/" },
   { id: 299, name: "Octobuddy US", slug: "octobuddy-us", logo: getLogoUrl("octobuddy-us"), website: "https://octobuddy.com/" },
@@ -2097,7 +2097,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     title: "$50 Off Lithium Batteries & Solar Power Kits",
     description: "Get $50 instant discount on 100Ah LiFePO4 batteries, trolling motors, and solar inverter kits at DC House.",
     category: "Electronics",
-    affiliate_link: "https://dchousepower.com/",
+    affiliate_link: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml",
     expiry_date: "2026-12-31",
     is_verified: true,
     is_exclusive: true,
@@ -2113,7 +2113,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     title: "Free Freight Delivery on All Battery Orders",
     description: "Enjoy 100% free US standard shipping on all lithium battery packs and accessories at DC House.",
     category: "Electronics",
-    affiliate_link: "https://dchousepower.com/",
+    affiliate_link: "https://www.dchousepower.com/discount/METHEWDIPPY?ref=ikafrwml",
     expiry_date: "2026-12-31",
     is_verified: true,
     is_exclusive: false,
@@ -3746,10 +3746,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   { id: 2416, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official Jiaro Pack newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
   { id: 2417, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at Jiaro Pack.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
   { id: 2418, code: "SALE", discount: "Up to 30% Off Sale", description: "Save up to 30% off selected items during the seasonal clearance event at Jiaro Pack.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: false, store: FALLBACK_STORES[298], affiliate_url: "https://jiaropack.com/" },
-  { id: 2419, code: "DC H15", discount: "15% Off", description: "Save 15% off sitewide on all orders from DC House using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://dchouse.com/" },
-  { id: 2420, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official DC House newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://dchouse.com/" },
-  { id: 2421, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at DC House.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[299], affiliate_url: "https://dchouse.com/" },
-  { id: 2422, code: "SALE", discount: "Up to 30% Off Sale", description: "Save up to 30% off selected items during the seasonal clearance event at DC House.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: false, store: FALLBACK_STORES[299], affiliate_url: "https://dchouse.com/" },
+  
+  
+  
+  
   { id: 2423, code: "OHMM15", discount: "15% Off", description: "Save 15% off sitewide on all orders from OHMMU using this verified promo code at checkout.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
   { id: 2424, code: "WELCOME10", discount: "10% Off First Order", description: "Get 10% off your first purchase when you sign up for the official OHMMU newsletter.", expiry_date: "2026-11-30T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
   { id: 2425, code: "DEAL", discount: "Free Shipping Deal", description: "Enjoy free standard shipping on eligible orders placed at OHMMU.", expiry_date: "2026-12-31T23:59:59.000Z", is_verified: true, store: FALLBACK_STORES[300], affiliate_url: "https://ohmmu.com/" },
