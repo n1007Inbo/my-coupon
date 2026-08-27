@@ -1021,10 +1021,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "guf-deal-2",
-    code: "ALLES",
+    code: "NEWSLETTER10",
     discount: "10% RABATT",
-    title: "10% code schneider schirme",
-    description: "Erhalten Sie 10% Rabatt auf hochwertige Schneider Sonnenschirme und Zubehör mit Code ALLES.",
+    title: "10% Rabatt mit Newsletter Gutschein",
+    description: "Erhalten Sie 10% Sofort-Rabatt auf Gartenmöbel und Zubehör mit dem offiziellen Code NEWSLETTER10.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
