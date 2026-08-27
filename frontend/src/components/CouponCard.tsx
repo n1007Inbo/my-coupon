@@ -33,7 +33,7 @@ interface CouponCardProps {
 }
 
 export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => {
-  const { store, discount, code, is_verified, expiry_date, title, description } = coupon;
+  const { store, discount, code, is_verified, title, description } = coupon;
 
   const isStoreObject = typeof store === "object" && store !== null;
   const storeName = isStoreObject ? (store as Store).name : (typeof store === "string" ? store : "Store");
@@ -51,13 +51,13 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
   const hasCode = !!code && code.trim() !== "" && code !== "DEAL" && code !== "DIRECT";
   const displayTitle = title || description || discount;
 
-  const hashedValue = React.useMemo(() => {
+  const hashedUses = React.useMemo(() => {
     let hash = 0;
     const idStr = String(coupon.id);
     for (let i = 0; i < idStr.length; i++) {
       hash = (hash * 31 + idStr.charCodeAt(i)) | 0;
     }
-    return Math.abs(hash % 280) + 320; // 320 to 600 uses
+    return Math.abs(hash % 250) + 380; // 380 to 630 uses
   }, [coupon.id]);
 
   return (
@@ -76,7 +76,7 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
             loading="lazy" 
             decoding="async"
             width={130}
-            height={75}
+            height={80}
           />
         ) : (
           <div className={styles.logoFallback}>
@@ -85,9 +85,9 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
         )}
       </div>
 
-      {/* 2. Middle: Clean Visual Content Stack */}
+      {/* 2. Middle: Clean Typography & Details */}
       <div className={styles.contentContainer}>
-        {/* Top Badges Row */}
+        {/* Top Badges Row - Clean Horizontal Layout */}
         <div className={styles.topBadgesRow}>
           {discount && (
             <span className={styles.discountPill}>{discount}</span>
@@ -107,14 +107,16 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
           )}
         </div>
 
-        {/* Card Title */}
+        {/* Clean Main Title */}
         <h3 className={styles.title}>{displayTitle}</h3>
 
-        {/* Bottom Metadata Info */}
+        {/* Bottom Metadata Info - Single Line */}
         <div className={styles.metaRow}>
-          <span className={styles.usesText}>{hashedValue} uses today</span>
+          <span className={styles.usesText}>{hashedUses} uses today</span>
           <span className={styles.dotSeparator}>•</span>
-          <span className={styles.expiryText}>100% Success</span>
+          <span className={styles.successText}>100% Success Rate</span>
+          <span className={styles.dotSeparator}>•</span>
+          <span className={styles.termsText}>Free to use</span>
         </div>
       </div>
 

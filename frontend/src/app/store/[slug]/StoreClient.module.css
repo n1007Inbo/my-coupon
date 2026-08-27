@@ -491,3 +491,11 @@
     flex-direction: column;
   }
 }
+
+/* Store Page Single-Column Coupon List (Full Width, Ultra-Clean) */
+.storeCouponsList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
