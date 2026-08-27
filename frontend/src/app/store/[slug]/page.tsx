@@ -96,8 +96,11 @@ export default async function StorePage({ params }: StorePageProps) {
   if (fallbackStore) {
     store = fallbackStore;
     coupons = FALLBACK_COUPONS.filter(c => {
-      const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase());
-      return cSlug === slug;
+      const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
+      const targetSlug = slug.toLowerCase();
+      const baseSlug = targetSlug.replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "");
+      const cBaseSlug = String(cSlug).replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "");
+      return cSlug === targetSlug || cBaseSlug === baseSlug || cBaseSlug === targetSlug || cSlug === baseSlug;
     }).map(c => {
       const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
       return {
