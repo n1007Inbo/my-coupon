@@ -1005,14 +1005,14 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // 1. TRANSPARENT LABS (Verified Competitor Coupon Codes)
+  // 1. TRANSPARENT LABS (Exact Scraped GooglyCodes Live Cards & Codes)
   // =========================================================================
   {
     id: "tl-deal-1",
-    code: "TL20",
+    code: "WELCOME10",
     discount: "20% OFF",
     title: "20% off coupon code",
-    description: "Save 20% off your entire order at Transparent Labs with verified promo code TL20.",
+    description: "Get your exclusive discounts and coupon codes at Transparent Labs.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1021,10 +1021,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "tl-deal-2",
-    code: "SAVE15",
+    code: "SUBSCRIBE15",
     discount: "15% OFF",
     title: "15% off discount code sitewide",
-    description: "Get 15% off all 100% transparent clean pre-workouts, grass-fed whey protein, and creatine supplements with code SAVE15.",
+    description: "Get your exclusive discounts and coupon codes at Transparent Labs.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1033,10 +1033,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "tl-deal-3",
-    code: "PROMO10",
+    code: "APP10",
     discount: "10% OFF",
     title: "10% off promo code",
-    description: "Apply 10% instant savings across all muscle building supplements with code PROMO10.",
+    description: "Get your exclusive discounts and coupon codes at Transparent Labs.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1045,10 +1045,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "tl-deal-4",
-    code: "FREESHIP",
+    code: "",
     discount: "FREE SHIPPING",
     title: "Free shipping on orders over $99",
-    description: "Enjoy free tracked shipping on all orders over $99 within the United States.",
+    description: "Enjoy free standard shipping on all orders over $99 within the United States.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1059,8 +1059,8 @@ export const FALLBACK_COUPONS: Coupon[] = [
     id: "tl-deal-5",
     code: "WELCOME10",
     discount: "10% OFF",
-    title: "Get 10% off your first purchase when signing up",
-    description: "Sign up for the Transparent Labs VIP email list and use code WELCOME10 for 10% off.",
+    title: "10% off on newsletter signup",
+    description: "Sign up for the Transparent Labs newsletter and get 10% off your order.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1069,78 +1069,14 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
 
   // =========================================================================
-  // 2. GARTEN UND FREIZEIT (Verified German Competitor Coupon Codes)
-  // =========================================================================
-  {
-    id: "guf-deal-1",
-    code: "GARTEN40",
-    discount: "BIS ZU 40%",
-    title: "Bis zu 40% Rabatt auf Gartenmöbel & Lounges",
-    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische und Pavillons mit Code GARTEN40.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-deal-2",
-    code: "FREIZEIT50",
-    discount: "€50 RABATT",
-    title: "€50 Sofort-Rabatt ab €500 Bestellwert",
-    description: "Erhalten Sie €50 Direktabzug auf Premium Gasgrills und wetterfeste Outdoor-Möbel mit Code FREIZEIT50.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-deal-3",
-    code: "VERSANDFREI",
-    discount: "GRATIS VERSAND",
-    title: "Kostenlose Speditionslieferung in DE & AT",
-    description: "Speditionsversand ohne Aufpreis für schwere Gartentische und Loungegruppen direkt nach Hause.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-deal-4",
-    code: "SOMMER20",
-    discount: "20% SPAREN",
-    title: "20% Rabatt auf Sonnenschirme & Schutzhüllen",
-    description: "Sichern Sie sich 20% Nachlass auf Ampelschirme und wetterfeste Polster mit Code SOMMER20.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-deal-5",
-    code: "OUTLET30",
-    discount: "OUTLET SALE",
-    title: "Bis zu 50% Rabatt im großen Gartenmöbel Outlet",
-    description: "Einzelstücke und Vorjahresmodelle führender Marken wie Stern und Kettler drastisch reduziert.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-
-  // =========================================================================
-  // 3. DREAMCLOUD (Verified Competitor Coupon Codes)
+  // 2. DREAMCLOUD UK (Exact Scraped GooglyCodes Live Cards & Codes)
   // =========================================================================
   {
     id: "dc-deal-1",
-    code: "DREAM50",
-    discount: "UP TO 50%",
-    title: "Up to 50% off Luxury Hybrid Mattresses",
-    description: "Save up to 50% on the award-winning DreamCloud Luxury Hybrid Mattress with verified code DREAM50.",
+    code: "VIPONLY",
+    discount: "15% OFF",
+    title: "15% off discount code",
+    description: "Get your exclusive discounts and coupon codes at DreamCloud.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "DreamCloud",
@@ -1149,10 +1085,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "dc-deal-2",
-    code: "BUNDLE599",
-    discount: "FREE $599 GIFTS",
-    title: "Free $599 Luxury Sleep Bundle with Every Mattress",
-    description: "Get 2 cooling memory foam pillows, luxury sheet set, and mattress protector included free with code BUNDLE599.",
+    code: "BLUELIGHT",
+    discount: "10% OFF",
+    title: "10% off discount code sitewide",
+    description: "Get your exclusive discounts and coupon codes with Blue Light Card at DreamCloud.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "DreamCloud",
@@ -1161,10 +1097,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "dc-deal-3",
-    code: "NIGHT365",
-    discount: "365-NIGHT TRIAL",
-    title: "365-Night Risk-Free Home Sleep Trial & Lifetime Warranty",
-    description: "Sleep on your DreamCloud mattress for a full year with 100% money-back guarantee.",
+    code: "",
+    discount: "50% OFF",
+    title: "50% off on bundles",
+    description: "Save up to 50% on mattress bundles and luxury sleep accessories.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "DreamCloud",
@@ -1173,10 +1109,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "dc-deal-4",
-    code: "BASE40",
-    discount: "UP TO 40%",
-    title: "Up to 40% off Adjustable Bed Bases & Bed Frames",
-    description: "Save up to 40% when bundling a DreamCloud adjustable smart bed base with code BASE40.",
+    code: "",
+    discount: "40% OFF",
+    title: "40% off on mattresses",
+    description: "Save 40% on award-winning luxury hybrid mattresses with 365-night trial.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "DreamCloud",
@@ -1185,10 +1121,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "dc-deal-5",
-    code: "FREESHIP",
-    discount: "FREE DELIVERY",
-    title: "Free doorstep delivery and free returns nationwide",
-    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes.",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping & free returns",
+    description: "Enjoy 100% free doorstep delivery across the UK and US.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "DreamCloud",
@@ -1196,6 +1132,73 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/dJUkDu"
   },
 
+  // =========================================================================
+  // 3. GARTEN UND FREIZEIT (Exact Scraped GooglyCodes Live Cards & Codes)
+  // =========================================================================
+  {
+    id: "guf-deal-1",
+    code: "WELCOME10",
+    discount: "15% RABATT",
+    title: "15% gutscheincode",
+    description: "Sichern Sie sich Ihre exklusiven Rabatte und Gutscheincodes bei Garten und Freizeit.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-2",
+    code: "ALLES",
+    discount: "10% RABATT",
+    title: "10% code schneider schirme",
+    description: "Sichern Sie sich Ihre exklusiven Rabatte und Gutscheincodes bei Garten und Freizeit.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-3",
+    code: "WELCOME10",
+    discount: "10% RABATT",
+    title: "10% rabattcode",
+    description: "Sichern Sie sich Ihre exklusiven Rabatte und Gutscheincodes bei Garten und Freizeit.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-4",
+    code: "",
+    discount: "60% RABATT",
+    title: "60% rabatt auf Gartenmöbelsets",
+    description: "Sparen Sie bis zu 60% auf exklusive Gartenmöbelsets und Lounges.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-5",
+    code: "",
+    discount: "GRATIS VERSAND",
+    title: "kostenloser versand in DE & AT",
+    description: "Kostenloser Speditionsversand auf alle Gartenmöbel ab Bestellwert.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+
+
+  // =========================================================================
+          
 
   // =========================================================================
           
