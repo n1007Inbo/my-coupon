@@ -97,7 +97,7 @@ export default async function StorePage({ params }: StorePageProps) {
       const prefix = canonicalSlug === "transparent-labs" ? "tl-" : canonicalSlug === "garten-und-freizeit" ? "guf-" : "dc-";
       coupons = FALLBACK_COUPONS.filter(c => String(c.id).startsWith(prefix)).map(c => ({
         ...c,
-        code: "", // Strictly guarantee Direct Deal
+        code: c.code || "",
         affiliate_url: c.affiliate_url || fallbackStore.website,
         affiliate_link: c.affiliate_url || fallbackStore.website,
         affiliateLink: c.affiliate_url || fallbackStore.website,

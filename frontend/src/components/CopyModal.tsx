@@ -96,7 +96,7 @@ export const CopyModal: React.FC<CopyModalProps> = ({ coupon, onClose }) => {
   const [copied, setCopied] = useState(true); // Set to true as it is copied automatically on click
   const modalRef = useRef<HTMLDivElement>(null);
 
-  const isDirectDeal = !code || code === "" || code.trim() === "" || code === "DEAL" || code === "DIRECT" || code.startsWith("ADI");
+  const isDirectDeal = !code || code === "" || code.trim() === "" || code === "DEAL" || code === "DIRECT";
 
   // Set timeout to reset the copied visual state after 2.5 seconds
   useEffect(() => {
