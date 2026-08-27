@@ -1005,7 +1005,135 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // GARTEN UND FREIZEIT (100% Guaranteed Direct Deals & Rabattaktionen - No Code Errors)
+  // 1. DREAMCLOUD UK (Exact Verified Codes: VIPONLY & BLUELIGHT + Top Deals)
+  // =========================================================================
+  {
+    id: "dc-deal-1",
+    code: "VIPONLY",
+    discount: "15% OFF",
+    title: "15% off discount code",
+    description: "Get 15% off luxury hybrid mattresses at DreamCloud with verified promo code VIPONLY.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-2",
+    code: "BLUELIGHT",
+    discount: "10% OFF",
+    title: "10% off discount code sitewide",
+    description: "Get 10% off sitewide with verified Blue Light Card discount code BLUELIGHT at DreamCloud.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-3",
+    code: "",
+    discount: "50% OFF",
+    title: "50% off on bundles",
+    description: "Save up to 50% on luxury mattress bundles, pillows, and premium bedding accessories.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-4",
+    code: "",
+    discount: "40% OFF",
+    title: "40% off on mattresses",
+    description: "Save 40% on award-winning luxury hybrid mattresses with 365-night home sleep trial.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping & free returns",
+    description: "Enjoy 100% free doorstep delivery and free returns across the UK on all orders.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+
+  // =========================================================================
+  // 2. TRANSPARENT LABS US (Exact Verified Codes: WELCOME10, SUBSCRIBE15, APP10)
+  // =========================================================================
+  {
+    id: "tl-deal-1",
+    code: "WELCOME10",
+    discount: "20% OFF",
+    title: "20% off coupon code",
+    description: "Get 20% off your entire order at Transparent Labs with verified code WELCOME10.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-2",
+    code: "SUBSCRIBE15",
+    discount: "15% OFF",
+    title: "15% off discount code sitewide",
+    description: "Get 15% off all clean supplements, grass-fed whey protein, and pre-workouts with code SUBSCRIBE15.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-3",
+    code: "APP10",
+    discount: "10% OFF",
+    title: "10% off promo code",
+    description: "Apply 10% instant savings across all muscle building supplements with code APP10.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-4",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping on orders over $99",
+    description: "Enjoy free standard shipping on all orders over $99 within the United States.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-5",
+    code: "WELCOME10",
+    discount: "10% OFF",
+    title: "10% off on newsletter signup",
+    description: "Sign up for the Transparent Labs newsletter and get 10% off your first supplement order.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+
+  // =========================================================================
+  // 3. GARTEN UND FREIZEIT DE (100% Guaranteed Direct Deals & Rabattaktionen - No Code Errors)
   // =========================================================================
   {
     id: "guf-deal-1",
@@ -1067,19 +1195,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "garten-und-freizeit",
     affiliate_url: "https://litl.si/5p50u"
   },
-  {
-    id: "guf-deal-6",
-    code: "",
-    discount: "OUTLET SALE",
-    title: "Bis zu 50% Rabatt im Gartenmöbel Outlet",
-    description: "Einzelstücke und Vorjahresmodelle führender Marken drastisch reduziert im Outlet Sale.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
 
+
+  // =========================================================================
+            
 
   // =========================================================================
             
