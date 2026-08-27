@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { getLogoUrl } from "../lib/fallbackData";
 import styles from "./CouponCard.module.css";
 
 export interface Store {
@@ -81,8 +82,17 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
   const { store, discount, code, is_verified, expiry_date, title, description } = coupon;
 
   const isStoreObject = typeof store === "object" && store !== null;
-  const storeName = isStoreObject ? (store as Store).name : (store as string);
-  const storeLogo = isStoreObject ? (store as Store).logo : undefined;
+  const storeName = isStoreObject ? (store as Store).name : (coupon.storeName || (typeof store === "string" ? store : "Store"));
+  const rawSlug = (coupon as any).storeSlug || (isStoreObject ? (store as Store).slug : undefined) || (typeof store === "string" ? store.toLowerCase().replace(/[\s_]+/g, "-") : undefined);
+  const cleanBaseSlug = rawSlug ? String(rawSlug).replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "") : undefined;
+  
+  const storeLogo = 
+    (isStoreObject && (store as Store).logo ? (store as Store).logo : undefined) ||
+    (coupon as any).logo ||
+    (rawSlug ? getLogoUrl(rawSlug) : undefined) ||
+    (cleanBaseSlug ? getLogoUrl(cleanBaseSlug) : undefined) ||
+    (storeName ? getLogoUrl(storeName.toLowerCase().replace(/[\s_]+/g, "-")) : undefined) ||
+    (storeName ? getLogoUrl(storeName.toLowerCase().replace(/[\s_]+/g, "-").replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "")) : undefined);
 
   const formatExpiryDate = (dateString: string) => {
     if (!dateString) return "Dec 31, 2026";

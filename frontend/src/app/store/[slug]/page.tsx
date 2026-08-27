@@ -95,6 +95,16 @@ export default async function StorePage({ params }: StorePageProps) {
   const fallbackStore = FALLBACK_STORES.find(s => s.slug === slug);
   if (fallbackStore) {
     store = fallbackStore;
+    const activeStoreLogo = fallbackStore.logo || getLogoUrl(fallbackStore.slug) || getLogoUrl(slug) || getLogoUrl(slug.replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, ""));
+    const populatedStore: Store = {
+      id: fallbackStore.id,
+      name: fallbackStore.name,
+      slug: fallbackStore.slug,
+      logo: activeStoreLogo,
+      website: fallbackStore.website
+    };
+    store = populatedStore;
+
     coupons = FALLBACK_COUPONS.filter(c => {
       const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
       const targetSlug = slug.toLowerCase();
@@ -108,7 +118,7 @@ export default async function StorePage({ params }: StorePageProps) {
         affiliate_url: normalizedAffiliate,
         affiliate_link: normalizedAffiliate,
         affiliateLink: normalizedAffiliate,
-        store: c.store || fallbackStore
+        store: populatedStore
       };
     });
   }
