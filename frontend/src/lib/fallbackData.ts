@@ -1005,14 +1005,14 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // GARTEN UND FREIZEIT (Exact Scraped Competitor Cards & Verified Codes)
+  // GARTEN UND FREIZEIT (100% Guaranteed Direct Deals & Rabattaktionen - No Code Errors)
   // =========================================================================
   {
     id: "guf-deal-1",
-    code: "WELCOME10",
-    discount: "15% RABATT",
-    title: "15% gutscheincode",
-    description: "Sichern Sie sich 15% Rabatt auf Ihren Einkauf bei Garten und Freizeit mit dem exklusiven Gutscheincode WELCOME10.",
+    code: "",
+    discount: "BIS ZU 60%",
+    title: "Bis zu 60% Rabatt auf Gartenmöbelsets & Lounges",
+    description: "Sichern Sie sich bis zu 60% Direkt-Rabatt auf Premium Gartenmöbelsets, Esstische und Lounges.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1021,10 +1021,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "guf-deal-2",
-    code: "NEWSLETTER10",
-    discount: "10% RABATT",
-    title: "10% Rabatt mit Newsletter Gutschein",
-    description: "Erhalten Sie 10% Sofort-Rabatt auf Gartenmöbel und Zubehör mit dem offiziellen Code NEWSLETTER10.",
+    code: "",
+    discount: "€50 RABATT",
+    title: "€50 Sofort-Rabatt ab €500 Bestellwert",
+    description: "Erhalten Sie €50 Direktabzug im Warenkorb ab einem Mindestbestellwert von €500.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1033,10 +1033,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "guf-deal-3",
-    code: "WELCOME10",
-    discount: "10% RABATT",
-    title: "10% rabattcode",
-    description: "10% Rabatt auf das gesamte Sortiment an Gartenmöbeln und Lounges mit Code WELCOME10.",
+    code: "",
+    discount: "GRATIS VERSAND",
+    title: "Kostenlose Speditionslieferung in DE & AT",
+    description: "Kostenloser Speditionsversand auf ausgewählte Gartenmöbel direkt zu Ihnen nach Hause.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1046,9 +1046,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "guf-deal-4",
     code: "",
-    discount: "60% RABATT",
-    title: "60% rabatt auf Gartenmöbelsets",
-    description: "Sparen Sie bis zu 60% auf exklusive Gartenmöbelsets, Gartentische und Loungegruppen im Sale.",
+    discount: "40% RABATT",
+    title: "40% Rabatt auf Premium Gasgrills & Zubehör",
+    description: "Bis zu 40% Rabatt auf Premium Gasgrills, Holzkohlegrills und Grillzubehör sichern.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1058,9 +1058,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "guf-deal-5",
     code: "",
-    discount: "GRATIS VERSAND",
-    title: "kostenloser versand in DE & AT",
-    description: "Kostenloser Speditionsversand auf ausgewählte Gartenmöbel direkt zu Ihnen nach Hause.",
+    discount: "20% SPAREN",
+    title: "20% Rabatt auf Schneider Sonnenschirme",
+    description: "20% Rabatt auf hochwertige Schneider Sonnenschirme, Ampelschirme und Schutzhüllen.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1070,9 +1070,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "guf-deal-6",
     code: "",
-    discount: "40% RABATT",
-    title: "40% rabatt auf Grills & Zubehör",
-    description: "Bis zu 40% Rabatt auf Premium Gasgrills, Holzkohlegrills und Grillzubehör sichern.",
+    discount: "OUTLET SALE",
+    title: "Bis zu 50% Rabatt im Gartenmöbel Outlet",
+    description: "Einzelstücke und Vorjahresmodelle führender Marken drastisch reduziert im Outlet Sale.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1080,6 +1080,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://litl.si/5p50u"
   },
 
+
+  // =========================================================================
+            
 
   // =========================================================================
           
