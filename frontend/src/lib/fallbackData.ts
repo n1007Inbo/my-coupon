@@ -1009,14 +1009,14 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // TRANSPARENT LABS (CSL Link: https://vert.si/g693JE)
+  // 1. TRANSPARENT LABS (Exact 4 Competitor Deals - No Code / Direct Deal)
   // =========================================================================
   {
-    id: "tl-01",
+    id: "tl-deal-1",
     code: "",
     discount: "20% OFF",
-    title: "20% Off Sitewide - Exclusive Deal",
-    description: "Get 20% instant discount on your entire order at Transparent Labs. Direct deal activated automatically at checkout.",
+    title: "20% off coupon code",
+    description: "Save 20% off your entire order at Transparent Labs. Direct deal activated automatically at checkout.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1024,11 +1024,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/g693JE"
   },
   {
-    id: "tl-02",
+    id: "tl-deal-2",
     code: "",
     discount: "15% OFF",
-    title: "15% Off Grass-Fed Whey Protein & Pre-Workouts",
-    description: "Save 15% on 100% transparent clean sports nutrition with zero artificial sweeteners, food dyes, or fillers.",
+    title: "15% off discount code sitewide",
+    description: "Get 15% off 100% transparent clean pre-workouts, grass-fed whey protein, and creatine supplements.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1036,11 +1036,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/g693JE"
   },
   {
-    id: "tl-03",
+    id: "tl-deal-3",
     code: "",
     discount: "10% OFF",
-    title: "10% Off All Muscle Building & Recovery Stacks",
-    description: "Enjoy 10% off Creatine HMB, BCAAs, and Mass Gainer bundles with direct activation.",
+    title: "10% off promo code",
+    description: "Apply 10% instant savings across all muscle building supplements with zero minimum purchase required.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1048,23 +1048,11 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/g693JE"
   },
   {
-    id: "tl-04",
+    id: "tl-deal-4",
     code: "",
     discount: "FREE SHIPPING",
-    title: "Free Tracked Shipping on Orders Over $99",
-    description: "Claim fast, free tracked delivery across the United States on all eligible orders over $99.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    storeSlug: "transparent-labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-  {
-    id: "tl-05",
-    code: "",
-    discount: "10% OFF",
-    title: "10% Off First Purchase When Signing Up",
-    description: "Join the VIP fitness newsletter and receive an immediate 10% discount on your first order.",
+    title: "Free shipping",
+    description: "Enjoy free tracked shipping on all orders over $99 within the United States.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Transparent Labs",
@@ -1073,14 +1061,14 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
 
   // =========================================================================
-  // GARTEN UND FREIZEIT (CSL Link: https://litl.si/5p50u)
+  // 2. GARTEN UND FREIZEIT (Exact 4 Competitor Deals - No Code / Direct Deal)
   // =========================================================================
   {
-    id: "guf-01",
+    id: "guf-deal-1",
     code: "",
     discount: "BIS ZU 40%",
     title: "Bis zu 40% Rabatt auf Gartenmöbel & Lounges",
-    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische, Sonnenliegen und Pavillons bei Garten und Freizeit.",
+    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische, Sonnenliegen und Pavillons.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Garten und Freizeit",
@@ -1088,7 +1076,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://litl.si/5p50u"
   },
   {
-    id: "guf-02",
+    id: "guf-deal-2",
     code: "",
     discount: "€50 RABATT",
     title: "€50 Sofort-Rabatt ab €500 Bestellwert",
@@ -1100,7 +1088,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://litl.si/5p50u"
   },
   {
-    id: "guf-03",
+    id: "guf-deal-3",
     code: "",
     discount: "GRATIS VERSAND",
     title: "Kostenlose Speditionslieferung in DE & AT",
@@ -1112,7 +1100,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://litl.si/5p50u"
   },
   {
-    id: "guf-04",
+    id: "guf-deal-4",
     code: "",
     discount: "20% SPAREN",
     title: "20% Rabatt auf Sonnenschirme & Schutzhüllen",
@@ -1123,24 +1111,12 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "garten-und-freizeit",
     affiliate_url: "https://litl.si/5p50u"
   },
-  {
-    id: "guf-05",
-    code: "",
-    discount: "OUTLET SALE",
-    title: "Bis zu 50% Rabatt im Gartenmöbel Outlet",
-    description: "Einzelstücke und Vorjahresmodelle führender Marken wie Stern, Kettler und Zebra drastisch reduziert.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    storeSlug: "garten-und-freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
 
   // =========================================================================
-  // DREAMCLOUD (CSL Link: https://vert.si/dJUkDu)
+  // 3. DREAMCLOUD (Exact 4 Competitor Deals - No Code / Direct Deal)
   // =========================================================================
   {
-    id: "dc-01",
+    id: "dc-deal-1",
     code: "",
     discount: "UP TO 50%",
     title: "Up to 50% Off Luxury Hybrid Mattresses",
@@ -1152,7 +1128,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/dJUkDu"
   },
   {
-    id: "dc-02",
+    id: "dc-deal-2",
     code: "",
     discount: "FREE $599 GIFTS",
     title: "Free $599 Luxury Sleep Bundle Included",
@@ -1164,7 +1140,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/dJUkDu"
   },
   {
-    id: "dc-03",
+    id: "dc-deal-3",
     code: "",
     discount: "365-NIGHT TRIAL",
     title: "365-Night Risk-Free Home Sleep Trial",
@@ -1176,7 +1152,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     affiliate_url: "https://vert.si/dJUkDu"
   },
   {
-    id: "dc-04",
+    id: "dc-deal-4",
     code: "",
     discount: "UP TO 40%",
     title: "Up to 40% Off Adjustable Bed Bases & Frames",
@@ -1187,478 +1163,14 @@ export const FALLBACK_COUPONS: Coupon[] = [
     storeSlug: "dreamcloud",
     affiliate_url: "https://vert.si/dJUkDu"
   },
-  {
-    id: "dc-05",
-    code: "",
-    discount: "FREE DELIVERY",
-    title: "Free Doorstep Shipping & Returns Nationwide",
-    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    storeSlug: "dreamcloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
 
 
   // =========================================================================
-  // TRANSPARENT LABS (Direct CSL Deal Cards: https://vert.si/g693JE)
-  // =========================================================================
-  {
-    id: "tl-c-01",
-    code: "",
-    discount: "20% Off",
-    title: "20% off coupon code",
-    description: "Save 20% off your entire order at Transparent Labs with this verified discount. Direct deal activated automatically at checkout.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-  {
-    id: "tl-c-02",
-    code: "",
-    discount: "15% Off",
-    title: "15% off discount code sitewide",
-    description: "Get 15% off all 100% transparent clean pre-workouts, grass-fed whey isolate protein, and creatine supplements.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-  {
-    id: "tl-c-03",
-    code: "",
-    discount: "10% Off",
-    title: "10% off promo code",
-    description: "Apply 10% instant savings across the entire Transparent Labs catalog with zero minimum order required.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-  {
-    id: "tl-c-04",
-    code: "",
-    discount: "Free Shipping",
-    title: "Free shipping",
-    description: "Enjoy free standard shipping on all orders over $99 within the United States.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-  {
-    id: "tl-c-05",
-    code: "",
-    discount: "10% Off First Order",
-    title: "Get 10% off your first purchase when signing up at Transparent Labs.",
-    description: "Sign up for the Transparent Labs VIP newsletter and receive an instant 10% discount on your first order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://vert.si/g693JE"
-  },
-
-  // =========================================================================
-  // GARTEN UND FREIZEIT (Direct CSL Deal Cards: https://litl.si/5p50u)
-  // =========================================================================
-  {
-    id: "guf-c-01",
-    code: "",
-    discount: "Bis zu 40%",
-    title: "Bis zu 40% Rabatt auf Gartenmöbel & Lounge-Sets",
-    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische, Sonnenliegen und Pavillons bei Garten und Freizeit.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-c-02",
-    code: "",
-    discount: "€50 Rabatt",
-    title: "€50 Sofort-Rabatt ab €500 Bestellwert",
-    description: "Erhalten Sie €50 Direktabzug auf Premium Gasgrills, Terrassenheizer und wetterfeste Outdoor-Möbel.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-c-03",
-    code: "",
-    discount: "Kostenloser Versand",
-    title: "Kostenlose Lieferung auf ausgewählte Gartenmöbel in DE & AT",
-    description: "Speditionsversand ohne Aufpreis für schwere Gartentische und Loungegruppen direkt nach Hause.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-c-04",
-    code: "",
-    discount: "20% Sparen",
-    title: "20% Rabatt auf Sonnenschirme, Auflagen & Schutzhüllen",
-    description: "Sichern Sie sich 20% Nachlass auf Ampelschirme, wetterfeste Polster und Abdeckhauben für den Garten.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-  {
-    id: "guf-c-05",
-    code: "",
-    discount: "Outlet Sale",
-    title: "Bis zu 50% Rabatt im großen Gartenmöbel Outlet & Sale",
-    description: "Einzelstücke und Vorjahresmodelle führender Marken wie Stern, Kettler und Zebra drastisch reduziert.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://litl.si/5p50u"
-  },
-
-  // =========================================================================
-  // DREAMCLOUD (Direct CSL Deal Cards: https://vert.si/dJUkDu)
-  // =========================================================================
-  {
-    id: "dc-c-01",
-    code: "",
-    discount: "Up to 50% Off",
-    title: "Up to 50% off Luxury Hybrid & Memory Foam Mattresses",
-    description: "Save up to 50% on the award-winning DreamCloud Luxury Hybrid Mattress with premium cashmere blend top.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
-  {
-    id: "dc-c-02",
-    code: "",
-    discount: "Free $599 Gifts",
-    title: "Free $599 Luxury Sleep Bundle with Every Mattress Purchase",
-    description: "Get 2 cooling memory foam pillows, a luxury sheet set, and a waterproof mattress protector included free with your mattress order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
-  {
-    id: "dc-c-03",
-    code: "",
-    discount: "365-Night Trial",
-    title: "365-Night Risk-Free Home Sleep Trial + Lifetime Warranty",
-    description: "Sleep on your DreamCloud mattress for a full year. 100% money-back guarantee with free returns.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
-  {
-    id: "dc-c-04",
-    code: "",
-    discount: "Up to 40% Off",
-    title: "Up to 40% off Adjustable Bed Bases & Bed Frames",
-    description: "Save up to 40% when bundling a DreamCloud adjustable smart bed base with zero-gravity presets.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
-  {
-    id: "dc-c-05",
-    code: "",
-    discount: "Free Delivery",
-    title: "Free shipping and free returns on all orders",
-    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes from Twin to California King.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://vert.si/dJUkDu"
-  },
-
-
-  // =========================================================================
-  // TRANSPARENT LABS (Exact Competitor GooglyCodes Card Titles)
-  // =========================================================================
-  {
-    id: "tl-c-01",
-    code: "",
-    discount: "20% Off",
-    title: "20% off coupon code",
-    description: "Save 20% off your entire order at Transparent Labs with this verified discount. Direct deal activated automatically at checkout.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://www.transparentlabs.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "tl-c-02",
-    code: "",
-    discount: "15% Off",
-    title: "15% off discount code sitewide",
-    description: "Get 15% off all 100% transparent clean pre-workouts, grass-fed whey isolate protein, and creatine supplements.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://www.transparentlabs.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "tl-c-03",
-    code: "",
-    discount: "10% Off",
-    title: "10% off promo code",
-    description: "Apply 10% instant savings across the entire Transparent Labs catalog with zero minimum order required.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://www.transparentlabs.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "tl-c-04",
-    code: "",
-    discount: "Free Shipping",
-    title: "Free shipping",
-    description: "Enjoy free standard shipping on all orders over $99 within the United States.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://www.transparentlabs.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "tl-c-05",
-    code: "",
-    discount: "10% Off First Order",
-    title: "Get 10% off your first purchase when signing up at Transparent Labs.",
-    description: "Sign up for the Transparent Labs VIP newsletter and receive an instant 10% discount on your first order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Transparent Labs",
-    affiliate_url: "https://www.transparentlabs.com?utm_source=affiliate&ref=promoregistry"
-  },
-
-  // =========================================================================
-  // GARTEN UND FREIZEIT (Exact Competitor German Deal Cards)
-  // =========================================================================
-  {
-    id: "guf-c-01",
-    code: "",
-    discount: "Bis zu 40%",
-    title: "Bis zu 40% Rabatt auf Gartenmöbel & Lounge-Sets",
-    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische, Sonnenliegen und Pavillons bei Garten und Freizeit.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-c-02",
-    code: "",
-    discount: "€50 Rabatt",
-    title: "€50 Sofort-Rabatt ab €500 Bestellwert",
-    description: "Erhalten Sie €50 Direktabzug auf Premium Gasgrills, Terrassenheizer und wetterfeste Outdoor-Möbel.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-c-03",
-    code: "",
-    discount: "Kostenloser Versand",
-    title: "Kostenlose Lieferung auf ausgewählte Gartenmöbel in DE & AT",
-    description: "Speditionsversand ohne Aufpreis für schwere Gartentische und Loungegruppen direkt nach Hause.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-c-04",
-    code: "",
-    discount: "20% Sparen",
-    title: "20% Rabatt auf Sonnenschirme, Auflagen & Schutzhüllen",
-    description: "Sichern Sie sich 20% Nachlass auf Ampelschirme, wetterfeste Polster und Abdeckhauben für den Garten.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-c-05",
-    code: "",
-    discount: "Outlet Sale",
-    title: "Bis zu 50% Rabatt im großen Gartenmöbel Outlet & Sale",
-    description: "Einzelstücke und Vorjahresmodelle führender Marken wie Stern, Kettler und Zebra drastisch reduziert.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-
-  // =========================================================================
-  // DREAMCLOUD (Exact Competitor Deal Cards)
-  // =========================================================================
-  {
-    id: "dc-c-01",
-    code: "",
-    discount: "Up to 50% Off",
-    title: "Up to 50% off Luxury Hybrid & Memory Foam Mattresses",
-    description: "Save up to 50% on the award-winning DreamCloud Luxury Hybrid Mattress with premium cashmere blend top.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-c-02",
-    code: "",
-    discount: "Free $599 Gifts",
-    title: "Free $599 Luxury Sleep Bundle with Every Mattress Purchase",
-    description: "Get 2 cooling memory foam pillows, a luxury sheet set, and a waterproof mattress protector included free with your mattress order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-c-03",
-    code: "",
-    discount: "365-Night Trial",
-    title: "365-Night Risk-Free Home Sleep Trial + Lifetime Warranty",
-    description: "Sleep on your DreamCloud mattress for a full year. 100% money-back guarantee with free returns.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-c-04",
-    code: "",
-    discount: "Up to 40% Off",
-    title: "Up to 40% off Adjustable Bed Bases & Bed Frames",
-    description: "Save up to 40% when bundling a DreamCloud adjustable smart bed base with zero-gravity presets.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-c-05",
-    code: "",
-    discount: "Free Delivery",
-    title: "Free shipping and free returns on all orders",
-    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes from Twin to California King.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-
+          
 
   
-  {
-    id: "dc-deal-02",
-    code: "",
-    discount: "FREE $599 GIFTS",
-    title: "Free $599 Luxury Sleep Bundle with Every Mattress Purchase",
-    description: "Get 2 cooling memory foam pillows, a luxury sheet set, and a waterproof mattress protector included free with your mattress order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-deal-03",
-    code: "",
-    discount: "365-NIGHT TRIAL",
-    title: "365-Night Risk-Free Home Sleep Trial + Lifetime Warranty",
-    description: "Sleep on your DreamCloud mattress for a full year. 100% money-back guarantee with free returns and full lifetime warranty.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-deal-04",
-    code: "",
-    discount: "UP TO 40% OFF",
-    title: "Up to 40% Off Adjustable Bed Bases & Bed Frames",
-    description: "Save up to 40% when bundling a DreamCloud adjustable smart bed base with zero-gravity presets and massage features.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-  {
-    id: "dc-deal-05",
-    code: "",
-    discount: "FREE DELIVERY",
-    title: "Free Contactless Shipping & Returns Nationwide",
-    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes from Twin to California King.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "DreamCloud",
-    affiliate_url: "https://www.dreamcloudsleep.com?utm_source=affiliate&ref=promoregistry"
-  },
-
-  {
-    id: "guf-01",
-    code: "GARTEN15",
-    discount: "15% OFF",
-    title: "15% Off Sitewide Garden Furniture & Lounges",
-    description: "Save 15% on premium outdoor dining sets, lounge sofas, sunbeds, and garden accessories at Garten und Freizeit.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-02",
-    code: "FREIZEIT50",
-    discount: "€50 OFF",
-    title: "€50 Off Orders Over €500",
-    description: "Get €50 discount on high-end patio sets, luxury gas BBQs, and cantilever parasols when spending €500 or more.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-03",
-    code: "SOMMER20",
-    discount: "20% OFF",
-    title: "20% Off Summer Garden Decor & Fire Pits",
-    description: "Enjoy 20% off modern fire tables, garden storage boxes, and LED outdoor lighting with verified code.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-04",
-    code: "VERSANDFREI",
-    discount: "FREE SHIPPING",
-    title: "Free Delivery on All Outdoor Furniture Orders",
-    description: "Claim free shipping across Germany and Austria on all bulky garden furniture and grill deliveries.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-  {
-    id: "guf-05",
-    code: "OUTLET30",
-    discount: "UP TO 30% OFF",
-    title: "Up to 30% Off Garden Outlet & Clearance Deals",
-    description: "Save up to 30% on discontinued luxury teak tables, aluminum loungers, and rattan seating sets.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "Garten und Freizeit",
-    affiliate_url: "https://www.garten-und-freizeit.de?ref=promoregistry"
-  },
-
+        
+          
 
   // --- BOUQUETS BY POST (12 DIRECT DEAL CARDS - 100% DIRECT LINK) ---
   {
@@ -1855,199 +1367,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
 
   // --- DC HOUSE (12 VERIFIED CARDS) ---
-  {
-    id: "dc-1",
-    code: "METHEWDIPPY",
-    title: "15% Off Coupon Code",
-    description: "Save 15% on high-performance LiFePO4 batteries, trolling motors, and solar accessories with code METHEWDIPPY.",
-    discount: "15% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-2",
-    code: "METHEWDIPPY",
-    title: "10% Off Code – August Power Sale",
-    description: "Get 10% instant discount during the August Power Sale on deep cycle battery banks with code METHEWDIPPY.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-3",
-    code: "METHEWDIPPY",
-    title: "10% Off Discount Code Sitewide",
-    description: "Save 10% on all orders sitewide at DC House using verified promo code METHEWDIPPY at checkout.",
-    discount: "10% OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-4",
-    code: "METHEWDIPPY",
-    title: "$10 Off Promo Code",
-    description: "Enjoy $10 off your purchase of off-grid solar equipment and water pumps with code METHEWDIPPY.",
-    discount: "$10 OFF",
-    type: "code" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-5",
-    code: "DEAL",
-    title: "45% Off – Summer Sale",
-    description: "Get up to 45% off selected lithium battery packs and accessories during the DC House summer clearance.",
-    discount: "45% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-6",
-    code: "DEAL",
-    title: "Free Shipping on All Orders",
-    description: "Enjoy 100% free ground shipping across the US plus 5-year replacement factory warranty.",
-    discount: "FREE SHIPPING",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-7",
-    code: "DEAL",
-    title: "25% Off on Best Selling Items",
-    description: "Save 25% on top-rated 100Ah/200Ah LiFePO4 batteries and solar inverter systems.",
-    discount: "25% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-8",
-    code: "DEAL",
-    title: "22% Off on LiFePO4 Golf Cart Kit",
-    description: "Upgrade your golf cart with lightweight, fast-charging 36V/48V LiFePO4 lithium conversion kits at 22% off.",
-    discount: "22% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-9",
-    code: "DEAL",
-    title: "20% Off on 12V LiFePO4 Batteries",
-    description: "Get 20% off deep-cycle 12V batteries for marine trolling motors, RVs, and solar setups.",
-    discount: "20% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-10",
-    code: "DEAL",
-    title: "15% Off on Battery Accessories",
-    description: "Save 15% on smart battery chargers, monitors, high-amp cables, and connection terminal hardware.",
-    discount: "15% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-11",
-    code: "DEAL",
-    title: "10% Off on 36V LiFePO4 Batteries",
-    description: "Take 10% off high-voltage 36V lithium batteries designed for heavy-duty trolling motors.",
-    discount: "10% OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-  {
-    id: "dc-12",
-    code: "DEAL",
-    title: "$10 Off on Newsletter Sign-Up",
-    description: "Sign up for the official DC House mailing list to receive exclusive coupons, warranty guides, and flash sales.",
-    discount: "$10 OFF",
-    type: "deal" as const,
-    expiryDate: "Dec 31, 2026",
-    expiry_date: "2026-12-31",
-    isVerified: true,
-    is_verified: true,
-    storeSlug: "dc-house",
-    affiliateLink: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_link: "https://www.dchousepower.com/?ref=ikafrwml",
-    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml"
-  },
-
+                        
   // --- MAPLE PRIME (11 VERIFIED CARDS) ---
   {
     id: "mp-1",
