@@ -452,13 +452,9 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
-  { id: 616, name: "DreamCloud US", slug: "dreamcloud-us", logo: getLogoUrl("dreamcloud-us"), website: "https://vert.si/dJUkDu" },
-  { id: 615, name: "DreamCloud UK", slug: "dreamcloud-uk", logo: getLogoUrl("dreamcloud-uk"), website: "https://vert.si/dJUkDu" },
-  { id: 613, name: "Garten und Freizeit DE", slug: "garten-und-freizeit-de", logo: getLogoUrl("garten-und-freizeit-de"), website: "https://litl.si/5p50u" },
-  { id: 611, name: "Transparent Labs US", slug: "transparent-labs-us", logo: getLogoUrl("transparent-labs-us"), website: "https://vert.si/g693JE" },
-  { id: 610, name: "Transparent Labs", slug: "transparent-labs", logo: getLogoUrl("transparent-labs"), website: "https://vert.si/g693JE" },
   { id: 605, name: "Garten und Freizeit", slug: "garten-und-freizeit", logo: getLogoUrl("garten-und-freizeit"), website: "https://litl.si/5p50u" },
-
+  { id: 610, name: "Transparent Labs", slug: "transparent-labs", logo: getLogoUrl("transparent-labs"), website: "https://vert.si/g693JE" },
+            
   
   { id: 601, name: "AEKE", slug: "aeke", logo: getLogoUrl("aeke"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
   { id: 602, name: "AEKE US", slug: "aeke-us", logo: getLogoUrl("aeke-us"), website: "https://aeke.com/products/buy-aeke-k1?sca_ref=12122641.wJkxWQfVP6L8xws" },
@@ -844,7 +840,7 @@ export const FALLBACK_STORES: Store[] = [
   { id: 379, name: "navimow", slug: "navimow", logo: getLogoUrl("navimow"), website: "https://navimow.segway.com/" },
   { id: 380, name: "Omfort", slug: "omfort", logo: getLogoUrl("omfort"), website: "https://omfort.com/" },
   { id: 381, name: "Walking Pad", slug: "walking-pad", logo: getLogoUrl("walking-pad"), website: "https://walkingpad.com/" },
-  { id: 382, name: "DreamCloud", slug: "dreamcloud", logo: getLogoUrl("dreamcloud"), website: "https://dreamcloudsleep.com/" },
+  { id: 382, name: "DreamCloud", slug: "dreamcloud", logo: getLogoUrl("dreamcloud"), website: "https://vert.si/dJUkDu" },
   { id: 383, name: "Mousse et Coussins", slug: "mousse-et-coussins", logo: getLogoUrl("mousse-et-coussins"), website: "https://mousseetcoussins.com/" },
   { id: 384, name: "Eric Favre CPA", slug: "eric-favre-cpa", logo: getLogoUrl("eric-favre-cpa"), website: "https://ericfavre.com/" },
   { id: 385, name: "Pai Technology Inc.", slug: "pai-technology-inc", logo: getLogoUrl("pai-technology-inc"), website: "https://pai.technology/" },
@@ -1007,6 +1003,199 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+
+  // =========================================================================
+  // TRANSPARENT LABS (CSL Affiliate Link: https://vert.si/g693JE)
+  // =========================================================================
+  {
+    id: "tl-deal-1",
+    code: "",
+    discount: "20% OFF",
+    title: "20% off coupon code",
+    description: "Save 20% off your entire order at Transparent Labs. Direct deal activated automatically at checkout.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-2",
+    code: "",
+    discount: "15% OFF",
+    title: "15% off discount code sitewide",
+    description: "Get 15% off all 100% transparent clean pre-workouts, grass-fed whey protein, and creatine supplements.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-3",
+    code: "",
+    discount: "10% OFF",
+    title: "10% off promo code",
+    description: "Apply 10% instant savings across all muscle building supplements with zero minimum purchase required.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-4",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping on orders over $99",
+    description: "Enjoy free tracked shipping on all orders over $99 within the United States.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+  {
+    id: "tl-deal-5",
+    code: "",
+    discount: "10% OFF",
+    title: "Get 10% off your first purchase when signing up",
+    description: "Sign up for the Transparent Labs VIP email list and get 10% off your first supplement order.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Transparent Labs",
+    storeSlug: "transparent-labs",
+    affiliate_url: "https://vert.si/g693JE"
+  },
+
+  // =========================================================================
+  // GARTEN UND FREIZEIT (CSL Affiliate Link: https://litl.si/5p50u)
+  // =========================================================================
+  {
+    id: "guf-deal-1",
+    code: "",
+    discount: "BIS ZU 40%",
+    title: "Bis zu 40% Rabatt auf Gartenmöbel & Lounges",
+    description: "Sparen Sie bis zu 40% auf hochwertige Garten Lounges, Esstische, Sonnenliegen und Pavillons.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-2",
+    code: "",
+    discount: "€50 RABATT",
+    title: "€50 Sofort-Rabatt ab €500 Bestellwert",
+    description: "Erhalten Sie €50 Direktabzug auf Premium Gasgrills, Terrassenheizer und wetterfeste Outdoor-Möbel.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-3",
+    code: "",
+    discount: "GRATIS VERSAND",
+    title: "Kostenlose Speditionslieferung in DE & AT",
+    description: "Speditionsversand ohne Aufpreis für schwere Gartentische und Loungegruppen direkt nach Hause.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-4",
+    code: "",
+    discount: "20% SPAREN",
+    title: "20% Rabatt auf Sonnenschirme & Schutzhüllen",
+    description: "Sichern Sie sich 20% Nachlass auf Ampelschirme, wetterfeste Polster und Abdeckhauben für den Garten.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+  {
+    id: "guf-deal-5",
+    code: "",
+    discount: "OUTLET SALE",
+    title: "Bis zu 50% Rabatt im großen Gartenmöbel Outlet",
+    description: "Einzelstücke und Vorjahresmodelle führender Marken wie Stern, Kettler und Zebra drastisch reduziert.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Garten und Freizeit",
+    storeSlug: "garten-und-freizeit",
+    affiliate_url: "https://litl.si/5p50u"
+  },
+
+  // =========================================================================
+  // DREAMCLOUD (CSL Affiliate Link: https://vert.si/dJUkDu)
+  // =========================================================================
+  {
+    id: "dc-deal-1",
+    code: "",
+    discount: "UP TO 50%",
+    title: "Up to 50% off Luxury Hybrid Mattresses",
+    description: "Save up to 50% on the award-winning DreamCloud Luxury Hybrid Mattress with premium cashmere blend top.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-2",
+    code: "",
+    discount: "FREE $599 GIFTS",
+    title: "Free $599 Luxury Sleep Bundle with Every Mattress",
+    description: "Get 2 cooling memory foam pillows, luxury sheet set, and mattress protector included free with your mattress order.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-3",
+    code: "",
+    discount: "365-NIGHT TRIAL",
+    title: "365-Night Risk-Free Home Sleep Trial & Lifetime Warranty",
+    description: "Sleep on your DreamCloud mattress for a full year. 100% money-back guarantee with free returns.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-4",
+    code: "",
+    discount: "UP TO 40%",
+    title: "Up to 40% off Adjustable Bed Bases & Bed Frames",
+    description: "Save up to 40% when bundling a DreamCloud adjustable smart bed base with zero-gravity presets.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+  {
+    id: "dc-deal-5",
+    code: "",
+    discount: "FREE DELIVERY",
+    title: "Free doorstep delivery and free returns nationwide",
+    description: "Enjoy 100% free doorstep delivery across the US and UK on all mattress sizes.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "DreamCloud",
+    storeSlug: "dreamcloud",
+    affiliate_url: "https://vert.si/dJUkDu"
+  },
+
 {
   "id": "tl-deal-1",
   "code": "",

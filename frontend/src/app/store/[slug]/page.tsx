@@ -5,13 +5,23 @@ import StoreClient from "./StoreClient";
 import { Coupon, Store } from "../../../components/CouponCard";
 import { getLogoUrl, FALLBACK_STORES, FALLBACK_COUPONS } from "../../../lib/fallbackData";
 
-export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
+export const revalidate = 60; // Revalidate every 60 seconds
 
-// Pre-render all 493 stores at build time for instant 0ms TTFB and top SEO performance
+// Canonical slug map for regional aliases
+const SLUG_ALIASES: Record<string, string> = {
+  "transparent-labs-us": "transparent-labs",
+  "garten-und-freizeit-de": "garten-und-freizeit",
+  "dreamcloud-uk": "dreamcloud",
+  "dreamcloud-us": "dreamcloud"
+};
+
+// Pre-render stores at build time
 export async function generateStaticParams() {
-  return FALLBACK_STORES.map((s) => ({
-    slug: s.slug,
-  }));
+  const params = FALLBACK_STORES.map((s) => ({ slug: s.slug }));
+  Object.keys(SLUG_ALIASES).forEach(alias => {
+    params.push({ slug: alias });
+  });
+  return params;
 }
 
 interface StorePageProps {
@@ -22,34 +32,12 @@ interface StorePageProps {
 
 export async function generateMetadata({ params }: StorePageProps): Promise<Metadata> {
   const { slug } = await params;
+  const canonicalSlug = SLUG_ALIASES[slug.toLowerCase()] || slug.toLowerCase();
   
-  const fallbackStore = FALLBACK_STORES.find(s => s.slug === slug);
+  const fallbackStore = FALLBACK_STORES.find(s => s.slug === canonicalSlug || s.slug === slug);
   let storeName = fallbackStore ? fallbackStore.name : slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-  let logoUrl = getLogoUrl(slug);
+  let logoUrl = getLogoUrl(canonicalSlug) || getLogoUrl(slug);
 
-  const apiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
-  if (!fallbackStore && apiUrl && apiUrl.startsWith("http") && !apiUrl.includes("localhost")) {
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 1500);
-      const res = await fetch(`${apiUrl}/api/stores?filters[slug][$eq]=${slug}`, { 
-        next: { revalidate: 600 },
-        signal: controller.signal
-      });
-      clearTimeout(timeoutId);
-      if (res.ok) {
-        const data = await res.json();
-        if (Array.isArray(data.data) && data.data.length > 0) {
-          const s = data.data[0];
-          storeName = s.name;
-          if (s.logo?.url) {
-            logoUrl = s.logo.url.startsWith("http") ? s.logo.url : `${apiUrl}${s.logo.url}`;
-          }
-        }
-      }
-    } catch (err) {}
-  }
-  
   const logoUrlStr = logoUrl || "";
   const absoluteLogoUrl = logoUrlStr.startsWith("http") ? logoUrlStr : `https://www.promoregistry.com${logoUrlStr}`;
 
@@ -86,134 +74,62 @@ export async function generateMetadata({ params }: StorePageProps): Promise<Meta
 
 export default async function StorePage({ params }: StorePageProps) {
   const { slug } = await params;
-  const apiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
+  const canonicalSlug = SLUG_ALIASES[slug.toLowerCase()] || slug.toLowerCase();
 
   let coupons: Coupon[] = [];
   let store: Store | null = null;
 
-  // 1. Check fallback dataset first (instant 0ms resolution for all 493 stores!)
-  const fallbackStore = FALLBACK_STORES.find(s => s.slug === slug);
+  // 1. Check fallback dataset
+  const fallbackStore = FALLBACK_STORES.find(s => s.slug === canonicalSlug || s.slug === slug);
   if (fallbackStore) {
-    store = fallbackStore;
-    const activeStoreLogo = fallbackStore.logo || getLogoUrl(fallbackStore.slug) || getLogoUrl(slug) || getLogoUrl(slug.replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, ""));
+    const activeStoreLogo = fallbackStore.logo || getLogoUrl(canonicalSlug) || getLogoUrl(slug);
     const populatedStore: Store = {
       id: fallbackStore.id,
       name: fallbackStore.name,
-      slug: fallbackStore.slug,
+      slug: slug, // Keep current URL slug
       logo: activeStoreLogo,
       website: fallbackStore.website
     };
     store = populatedStore;
 
-    coupons = FALLBACK_COUPONS.filter(c => {
-      const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
-      const targetSlug = slug.toLowerCase();
-      const baseSlug = targetSlug.replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "");
-      const cBaseSlug = String(cSlug).replace(/-(us|uk|de|ca|fr|nl|es|it|au|nz)$/i, "");
-      return cSlug === targetSlug || cBaseSlug === baseSlug || cBaseSlug === targetSlug || cSlug === baseSlug;
-    }).map(c => {
-      const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
-      return {
+    // Isolate target core brands so zero rogue coupons can ever attach
+    if (canonicalSlug === "transparent-labs" || canonicalSlug === "garten-und-freizeit" || canonicalSlug === "dreamcloud") {
+      const prefix = canonicalSlug === "transparent-labs" ? "tl-" : canonicalSlug === "garten-und-freizeit" ? "guf-" : "dc-";
+      coupons = FALLBACK_COUPONS.filter(c => String(c.id).startsWith(prefix)).map(c => ({
         ...c,
-        affiliate_url: normalizedAffiliate,
-        affiliate_link: normalizedAffiliate,
-        affiliateLink: normalizedAffiliate,
+        code: "", // Strictly guarantee Direct Deal
+        affiliate_url: c.affiliate_url || fallbackStore.website,
+        affiliate_link: c.affiliate_url || fallbackStore.website,
+        affiliateLink: c.affiliate_url || fallbackStore.website,
         store: populatedStore
-      };
-    });
-  }
-
-  // 2. If not found in fallback and Strapi API is configured, check Strapi with fast timeout
-  if (!store && apiUrl && apiUrl.startsWith("http") && !apiUrl.includes("localhost")) {
-    try {
-      const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), 2000);
-
-      const storesRes = await fetch(`${apiUrl}/api/stores?filters[slug][$eq]=${slug}`, { 
-        next: { revalidate: 600 },
-        signal: controller.signal
+      }));
+    } else {
+      coupons = FALLBACK_COUPONS.filter(c => {
+        const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
+        return cSlug === canonicalSlug || cSlug === slug;
+      }).map(c => {
+        const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
+        return {
+          ...c,
+          affiliate_url: normalizedAffiliate,
+          affiliate_link: normalizedAffiliate,
+          affiliateLink: normalizedAffiliate,
+          store: populatedStore
+        };
       });
-
-      if (storesRes.ok) {
-        const storesData = await storesRes.json();
-        if (Array.isArray(storesData.data) && storesData.data.length > 0) {
-          const s = storesData.data[0];
-          store = {
-            id: s.id,
-            name: s.name,
-            slug: s.slug,
-            logo: s.logo?.url ? `${apiUrl}${s.logo.url}` : getLogoUrl(s.slug),
-            website: s.website
-          };
-
-          const couponsRes = await fetch(`${apiUrl}/api/coupons?filters[store][slug][$eq]=${slug}&populate=store&pagination[pageSize]=200`, { 
-            next: { revalidate: 600 },
-            signal: controller.signal
-          });
-
-          if (couponsRes.ok) {
-            const couponsData = await couponsRes.json();
-            if (Array.isArray(couponsData.data)) {
-              coupons = couponsData.data.map((c: any) => ({
-                id: c.id,
-                code: c.code,
-                discount: c.discount,
-                description: c.description,
-                is_verified: !!c.is_verified,
-                expiry_date: c.expiry_date,
-                affiliate_url: c.affiliate_url || "",
-                store: store!
-              }));
-            }
-          }
-        }
-      }
-      clearTimeout(timeoutId);
-    } catch (err) {}
+    }
   }
 
-  // 3. If store is still null, generate a fallback store shell with getLogoUrl
+  // 2. Fallback shell if not found
   if (!store) {
     const formattedName = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     store = {
       id: slug,
       name: formattedName,
       slug: slug,
-      logo: getLogoUrl(slug),
-      website: `https://${slug.replace(/-(us|uk|ca|de|fr|nl|es|it|au|nz)$/i, "")}.com`
+      logo: getLogoUrl(canonicalSlug) || getLogoUrl(slug),
+      website: `https://${canonicalSlug}.com`
     };
-    coupons = [
-      {
-        id: `fb-${slug}-1`,
-        code: "SAVE20",
-        discount: "20% Off",
-        description: `Save 20% off your entire order at ${formattedName} with this verified coupon code.`,
-        is_verified: true,
-        expiry_date: "2026-12-31T23:59:59.000Z",
-        store: store,
-        affiliate_url: store.website
-      },
-      {
-        id: `fb-${slug}-2`,
-        code: "WELCOME10",
-        discount: "10% Off First Order",
-        description: `Get 10% off your first purchase when signing up at ${formattedName}.`,
-        is_verified: true,
-        expiry_date: "2026-11-30T23:59:59.000Z",
-        store: store,
-        affiliate_url: store.website
-      },
-      {
-        id: `fb-${slug}-3`,
-        code: "DEAL",
-        discount: "Free Shipping Deal",
-        description: `Enjoy free shipping on eligible orders placed at ${formattedName}.`,
-        is_verified: true,
-        expiry_date: "2026-12-31T23:59:59.000Z",
-        store: store,
-        affiliate_url: store.website
-      }
-    ];
   }
 
   return <StoreClient store={store} coupons={coupons} />;
