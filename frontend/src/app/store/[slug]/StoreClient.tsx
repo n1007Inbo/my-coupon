@@ -16,6 +16,31 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [bannerLogoError, setBannerLogoError] = useState(false);
+
+  // Clearbit logo fallback for store banner
+  const bannerLogo = useMemo(() => {
+    if (bannerLogoError) return null;
+    if (store.logo) return store.logo;
+    // Try Clearbit
+    const website = store.website;
+    if (website) {
+      try {
+        const hostname = new URL(website).hostname.replace(/^www\./, "");
+        const redirectDomains = ["vert.si", "litl.si", "csl.admitad.com", "fatcoupon.com", "shrsl.com"];
+        if (!redirectDomains.some(d => hostname.includes(d))) {
+          if (hostname.endsWith(".myshopify.com")) {
+            const brand = hostname.replace(".myshopify.com", "").replace(/3d-?/g, "");
+            return `https://logo.clearbit.com/${brand}.com`;
+          }
+          return `https://logo.clearbit.com/${hostname}`;
+        }
+      } catch { /* ignore */ }
+    }
+    // Guess from store name
+    const clean = store.name.toLowerCase().replace(/[^a-z0-9]/g, "");
+    return `https://logo.clearbit.com/${clean}.com`;
+  }, [store.logo, store.website, store.name, bannerLogoError]);
 
   const handleSubscribe = (e: React.FormEvent) => {
     e.preventDefault();
@@ -253,17 +278,18 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       {/* Store Header Banner Card */}
       <section className={storeStyles.storeBanner}>
         <div className={storeStyles.storeBannerHeader}>
-          {store.logo ? (
+          {bannerLogo ? (
             <div className={storeStyles.storeLargeLogoWrapper}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img 
-                src={store.logo} 
+                src={bannerLogo} 
                 alt={store.name} 
                 className={storeStyles.storeLargeLogo} 
                 width={100}
                 height={100}
                 decoding="async"
                 fetchPriority="high"
+                onError={() => setBannerLogoError(true)}
               />
             </div>
           ) : (
