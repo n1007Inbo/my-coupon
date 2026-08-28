@@ -1,6 +1,5 @@
 /* ============================================================
    COUPON CARD — Professional Clean Design
-   Inspired by RetailMeNot / CouponFollow / Honey
    ============================================================ */
 
 /* Card Container */
@@ -8,12 +7,12 @@
   position: relative;
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 14px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 20px 24px;
-  gap: 20px;
+  padding: 22px 24px;
+  gap: 22px;
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
   width: 100%;
@@ -38,18 +37,18 @@
 
 /* ---- LEFT: Logo ---- */
 .logoSection {
-  width: 100px;
-  height: 72px;
-  min-width: 100px;
+  width: 160px;
+  height: 100px;
+  min-width: 160px;
   border: 1px solid #f1f5f9;
-  border-radius: 10px;
-  background: #fafafa;
+  border-radius: 12px;
+  background: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   flex-shrink: 0;
-  padding: 8px;
+  padding: 10px 14px;
   box-sizing: border-box;
 }
 
@@ -59,7 +58,10 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  filter: contrast(1.12) saturate(1.08);
   image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  transform: scale(1.5);
 }
 
 .logoFallback {
@@ -71,8 +73,8 @@
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
   color: #4f46e5;
   font-weight: 700;
-  font-size: 1.6rem;
-  border-radius: 6px;
+  font-size: 2rem;
+  border-radius: 8px;
 }
 
 /* ---- CENTER: Content ---- */
@@ -81,7 +83,7 @@
   min-width: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 7px;
 }
 
 /* Tags Row */
@@ -95,10 +97,10 @@
 .discountTag {
   background: #eef2ff;
   color: #4338ca;
-  font-size: 0.75rem;
+  font-size: 0.78rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 5px;
   letter-spacing: 0.01em;
   white-space: nowrap;
 }
@@ -106,10 +108,10 @@
 .codeTag {
   background: #fef3c7;
   color: #92400e;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -118,10 +120,10 @@
 .dealTag {
   background: #ecfdf5;
   color: #065f46;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 5px;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   white-space: nowrap;
@@ -129,7 +131,7 @@
 
 .verifiedTag {
   color: #059669;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
@@ -140,17 +142,17 @@
 .bestTag {
   background: #f5f3ff;
   color: #6d28d9;
-  font-size: 0.7rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 3px 8px;
-  border-radius: 4px;
+  padding: 4px 10px;
+  border-radius: 5px;
   white-space: nowrap;
 }
 
 /* Title */
 .title {
-  font-size: 1rem;
-  font-weight: 650;
+  font-size: 1.08rem;
+  font-weight: 680;
   color: #111827;
   margin: 0;
   line-height: 1.4;
@@ -163,10 +165,10 @@
 
 /* Description */
 .desc {
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   color: #6b7280;
   margin: 0;
-  line-height: 1.45;
+  line-height: 1.5;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
@@ -175,15 +177,16 @@
 
 /* Expiry */
 .expiry {
-  font-size: 0.75rem;
+  font-size: 0.76rem;
   color: #9ca3af;
   font-weight: 500;
+  margin-top: 1px;
 }
 
 /* ---- RIGHT: Action Button ---- */
 .actionSection {
   flex-shrink: 0;
-  min-width: 130px;
+  min-width: 175px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -193,7 +196,7 @@
 .codeBtn {
   display: flex;
   align-items: stretch;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   border: 2px solid #4f46e5;
   transition: box-shadow 0.2s ease;
@@ -201,14 +204,14 @@
 }
 
 .codeBtn:hover {
-  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.15);
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.18);
 }
 
 .codeBtnLabel {
   background: #4f46e5;
   color: #ffffff;
-  padding: 10px 14px;
-  font-size: 0.85rem;
+  padding: 11px 16px;
+  font-size: 0.88rem;
   font-weight: 700;
   white-space: nowrap;
   display: flex;
@@ -218,8 +221,8 @@
 .codeBtnPreview {
   background: #ffffff;
   color: #4f46e5;
-  padding: 10px 12px;
-  font-size: 0.82rem;
+  padding: 11px 14px;
+  font-size: 0.84rem;
   font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   letter-spacing: 0.03em;
@@ -235,9 +238,9 @@
   background: #4f46e5;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 0.85rem;
+  border-radius: 10px;
+  padding: 11px 22px;
+  font-size: 0.88rem;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -250,7 +253,7 @@
 
 .dealBtn:hover {
   background: #4338ca;
-  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.15);
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.18);
 }
 
 /* ============================================================
@@ -262,25 +265,26 @@
     flex-direction: column;
     align-items: stretch;
     padding: 16px;
-    gap: 12px;
+    gap: 14px;
   }
 
   .logoSection {
     width: 100%;
-    height: 56px;
+    height: 80px;
     min-width: 100%;
   }
 
   .logoImg {
-    max-height: 40px;
+    transform: scale(1.3);
+    max-height: 55px;
   }
 
   .title {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 
   .desc {
-    font-size: 0.82rem;
+    font-size: 0.84rem;
   }
 
   .tagsRow {
@@ -299,31 +303,37 @@
   .codeBtnLabel {
     flex: 1;
     justify-content: center;
+    padding: 12px 16px;
   }
 
   .codeBtnPreview {
-    flex: 0;
+    padding: 12px 14px;
   }
 
   .dealBtn {
     width: 100%;
+    padding: 12px 22px;
   }
 }
 
 @media (max-width: 480px) {
   .card {
     padding: 14px;
-    gap: 10px;
-    border-radius: 10px;
+    gap: 12px;
+    border-radius: 12px;
   }
 
   .logoSection {
-    height: 50px;
-    padding: 6px;
+    height: 70px;
+    padding: 8px 12px;
+  }
+
+  .logoImg {
+    transform: scale(1.2);
   }
 
   .title {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .discountTag,
@@ -331,6 +341,22 @@
   .dealTag,
   .verifiedTag,
   .bestTag {
-    font-size: 0.65rem;
+    font-size: 0.68rem;
+    padding: 3px 8px;
+  }
+
+  .codeBtnLabel {
+    font-size: 0.84rem;
+    padding: 11px 14px;
+  }
+
+  .codeBtnPreview {
+    font-size: 0.8rem;
+    padding: 11px 12px;
+  }
+
+  .dealBtn {
+    font-size: 0.84rem;
+    padding: 11px 18px;
   }
 }
