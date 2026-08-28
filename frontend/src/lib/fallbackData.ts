@@ -1092,9 +1092,7 @@ export const FALLBACK_COUPONS: Coupon[] = [
     store: "Mellow Sleep",
     storeSlug: "mellow-sleep",
     affiliate_url: "https://mellowsleep.com/RICHARD1"
-  }, (Mattresses & Bed Frames) (Referral Link: https://mellowsleep.com/RICHARD1)
-  // =========================================================================
-          
+  },
   // =========================================================================
   // 6. COMFRT (Weighted Anxiety Relief Hoodies & Loungewear)
   // =========================================================================
