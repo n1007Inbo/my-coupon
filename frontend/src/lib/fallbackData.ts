@@ -3,6 +3,10 @@ import { Coupon, Store } from "../components/CouponCard";
 export const getLogoUrl = (slug: string | undefined | null) => {
   if (!slug || typeof slug !== "string") return undefined;
   const logoMap: Record<string, string> = {
+    "mellow-sleep": "/logos/mellow-sleep.svg",
+    "mellow": "/logos/mellow-sleep.svg",
+    "comfrt": "/logos/comfrt.svg",
+    "comfrt-clothing": "/logos/comfrt.svg",
     "qidi": "/logos/qidi.png",
     "qidi-tech": "/logos/qidi.png",
     "qidi-us": "/logos/qidi.png",
@@ -463,6 +467,8 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
+  { id: 630, name: "Mellow Sleep", slug: "mellow-sleep", logo: getLogoUrl("mellow-sleep"), website: "https://mellowsleep.com/RICHARD1" },
+  { id: 631, name: "Comfrt", slug: "comfrt", logo: getLogoUrl("comfrt"), website: "https://comfrt.com" },
 
   { id: 620, name: "QIDI US", slug: "qidi-us", logo: getLogoUrl("qidi-us"), website: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz" },
   { id: 621, name: "QIDI DE", slug: "qidi-de", logo: getLogoUrl("qidi-de"), website: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg" },
@@ -1022,6 +1028,135 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+
+  // =========================================================================
+  // 5. MELLOW SLEEP (Mattresses & Bed Frames) (Referral Link: https://mellowsleep.com/RICHARD1)
+  // =========================================================================
+  {
+    id: "mellow-deal-1",
+    code: "RICHARD1",
+    discount: "15% OFF",
+    title: "15% off discount code sitewide",
+    description: "Save 15% on luxury memory foam mattresses and solid wood bed frames with code RICHARD1.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Mellow Sleep",
+    storeSlug: "mellow-sleep",
+    affiliate_url: "https://mellowsleep.com/RICHARD1"
+  },
+  {
+    id: "mellow-deal-2",
+    code: "WELCOME10",
+    discount: "10% OFF",
+    title: "10% off your first mattress purchase",
+    description: "Get 10% off your first order when signing up for the Mellow VIP sleep newsletter.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Mellow Sleep",
+    storeSlug: "mellow-sleep",
+    affiliate_url: "https://mellowsleep.com/RICHARD1"
+  },
+  {
+    id: "mellow-deal-3",
+    code: "SAVE15",
+    discount: "15% OFF",
+    title: "15% off memory foam mattresses & toppers",
+    description: "Save 15% on cooling memory foam mattresses, mattress toppers, and organic sheets.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Mellow Sleep",
+    storeSlug: "mellow-sleep",
+    affiliate_url: "https://mellowsleep.com/RICHARD1"
+  },
+  {
+    id: "mellow-deal-4",
+    code: "",
+    discount: "UP TO $100",
+    title: "Up to $100 off solid wood bed frames",
+    description: "Save up to $100 on modern upholstered bed frames and solid wood platform bases.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Mellow Sleep",
+    storeSlug: "mellow-sleep",
+    affiliate_url: "https://mellowsleep.com/RICHARD1"
+  },
+  {
+    id: "mellow-deal-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping & 100-night risk-free trial",
+    description: "Enjoy free doorstep delivery nationwide and a 100-night sleep trial with free returns.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Mellow Sleep",
+    storeSlug: "mellow-sleep",
+    affiliate_url: "https://mellowsleep.com/RICHARD1"
+  },
+
+  // =========================================================================
+  // 6. COMFRT (Weighted Anxiety Relief Hoodies & Loungewear)
+  // =========================================================================
+  {
+    id: "comfrt-deal-1",
+    code: "WELCOME15",
+    discount: "15% OFF",
+    title: "15% off weighted hoodies coupon code",
+    description: "Save 15% on original anxiety relief weighted hoodies and sweatpants with code WELCOME15.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Comfrt",
+    storeSlug: "comfrt",
+    affiliate_url: "https://comfrt.com"
+  },
+  {
+    id: "comfrt-deal-2",
+    code: "SAVE10",
+    discount: "10% OFF",
+    title: "10% off discount code sitewide",
+    description: "Apply 10% instant discount across all oversized hoodies, sweatpants, and lounge sets with code SAVE10.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Comfrt",
+    storeSlug: "comfrt",
+    affiliate_url: "https://comfrt.com"
+  },
+  {
+    id: "comfrt-deal-3",
+    code: "COMFRT20",
+    discount: "20% OFF",
+    title: "20% off lounge sets & sweatpants bundle",
+    description: "Save 20% when bundling any 2 weighted hoodies or lounge pants with code COMFRT20.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Comfrt",
+    storeSlug: "comfrt",
+    affiliate_url: "https://comfrt.com"
+  },
+  {
+    id: "comfrt-deal-4",
+    code: "",
+    discount: "UP TO 30%",
+    title: "Up to 30% off anxiety relief weighted collection",
+    description: "Save up to 30% on best-selling weighted hoodies engineered for calming anxiety.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Comfrt",
+    storeSlug: "comfrt",
+    affiliate_url: "https://comfrt.com"
+  },
+  {
+    id: "comfrt-deal-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free tracked shipping on orders over $75",
+    description: "Enjoy 100% free tracked shipping across the United States on all apparel orders over $75.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "Comfrt",
+    storeSlug: "comfrt",
+    affiliate_url: "https://comfrt.com"
+  },
+
 
   // =========================================================================
   // QIDI US (Exact Scraped Galleria Codes & Deals)

@@ -9,6 +9,8 @@ export const revalidate = 60; // Revalidate every 60 seconds
 
 // Canonical slug map for regional aliases
 const SLUG_ALIASES: Record<string, string> = {
+  "mellow": "mellow-sleep",
+  "comfrt-clothing": "comfrt",
   "transparent-labs-us": "transparent-labs",
   "garten-und-freizeit-de": "garten-und-freizeit",
   "dreamcloud-uk": "dreamcloud",
