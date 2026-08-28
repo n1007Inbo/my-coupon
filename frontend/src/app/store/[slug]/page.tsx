@@ -1,32 +1,19 @@
 import React from "react";
 import { Metadata } from "next";
-import { notFound } from "next/navigation";
 import StoreClient from "./StoreClient";
 import { Coupon, Store } from "../../../components/CouponCard";
 import { getLogoUrl, FALLBACK_STORES, FALLBACK_COUPONS } from "../../../lib/fallbackData";
+import { getRegisteredStore, getAllRegisteredSlugs } from "../../../lib/storeRegistry";
 
 export const revalidate = 60; // Revalidate every 60 seconds
 
-// Canonical slug map for regional aliases
-const SLUG_ALIASES: Record<string, string> = {
-  "mellow": "mellow-sleep",
-  "comfrt-clothing": "comfrt",
-  "transparent-labs-us": "transparent-labs",
-  "garten-und-freizeit-de": "garten-und-freizeit",
-  "dreamcloud-uk": "dreamcloud",
-  "dreamcloud-us": "dreamcloud",
-  "qidi-tech-us": "qidi-us",
-  "qidi-tech": "qidi-us",
-  "qidi": "qidi-de"
-};
-
 // Pre-render stores at build time
 export async function generateStaticParams() {
-  const params = FALLBACK_STORES.map((s) => ({ slug: s.slug }));
-  Object.keys(SLUG_ALIASES).forEach(alias => {
-    params.push({ slug: alias });
-  });
-  return params;
+  const registeredSlugs = getAllRegisteredSlugs();
+  const fallbackSlugs = FALLBACK_STORES.map((s) => s.slug);
+  
+  const allSlugs = Array.from(new Set([...registeredSlugs, ...fallbackSlugs]));
+  return allSlugs.map(slug => ({ slug }));
 }
 
 interface StorePageProps {
@@ -37,12 +24,49 @@ interface StorePageProps {
 
 export async function generateMetadata({ params }: StorePageProps): Promise<Metadata> {
   const { slug } = await params;
-  const canonicalSlug = SLUG_ALIASES[slug.toLowerCase()] || slug.toLowerCase();
   
-  const fallbackStore = FALLBACK_STORES.find(s => s.slug === canonicalSlug || s.slug === slug);
-  let storeName = fallbackStore ? fallbackStore.name : slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
-  let logoUrl = getLogoUrl(canonicalSlug) || getLogoUrl(slug);
+  // 1. Check Store Registry first
+  const registered = getRegisteredStore(slug);
+  if (registered) {
+    const { store } = registered;
+    const logoUrlStr = store.logo || "";
+    const absoluteLogoUrl = logoUrlStr.startsWith("http") ? logoUrlStr : `https://www.promoregistry.com${logoUrlStr}`;
 
+    return {
+      title: `${store.name} Promo Codes & Verified Discount Codes | PromoRegistry`,
+      description: `Save money today at ${store.name} with active coupon codes, verified discount offers, and free shipping deals.`,
+      alternates: {
+        canonical: `https://www.promoregistry.com/store/${slug}`,
+      },
+      openGraph: {
+        title: `${store.name} Promo Codes & Verified Discount Codes | PromoRegistry`,
+        description: `Save money today at ${store.name} with active coupon codes, verified discount offers, and free shipping deals.`,
+        url: `https://www.promoregistry.com/store/${slug}`,
+        siteName: "PromoRegistry",
+        type: "website",
+        locale: "en_US",
+        images: [
+          {
+            url: absoluteLogoUrl,
+            width: 500,
+            height: 500,
+            alt: `${store.name} Logo`,
+          }
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${store.name} Promo Codes & Verified Discount Codes | PromoRegistry`,
+        description: `Save money today at ${store.name} with active coupon codes, verified discount offers, and free shipping deals.`,
+        images: [absoluteLogoUrl],
+      }
+    };
+  }
+
+  // 2. Fallback store lookup
+  const fallbackStore = FALLBACK_STORES.find(s => s.slug.toLowerCase() === slug.toLowerCase());
+  const storeName = fallbackStore ? fallbackStore.name : slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
+  const logoUrl = getLogoUrl(slug);
   const logoUrlStr = logoUrl || "";
   const absoluteLogoUrl = logoUrlStr.startsWith("http") ? logoUrlStr : `https://www.promoregistry.com${logoUrlStr}`;
 
@@ -79,61 +103,53 @@ export async function generateMetadata({ params }: StorePageProps): Promise<Meta
 
 export default async function StorePage({ params }: StorePageProps) {
   const { slug } = await params;
-  const canonicalSlug = SLUG_ALIASES[slug.toLowerCase()] || slug.toLowerCase();
 
+  // 1. High Priority: Check Official Store Registry
+  const registered = getRegisteredStore(slug);
+  if (registered) {
+    return <StoreClient store={registered.store} coupons={registered.coupons} />;
+  }
+
+  // 2. Legacy / Fallback dataset lookup
   let coupons: Coupon[] = [];
   let store: Store | null = null;
 
-  // 1. Check fallback dataset
-  const fallbackStore = FALLBACK_STORES.find(s => s.slug === canonicalSlug || s.slug === slug);
+  const fallbackStore = FALLBACK_STORES.find(s => s.slug.toLowerCase() === slug.toLowerCase());
   if (fallbackStore) {
-    const activeStoreLogo = fallbackStore.logo || getLogoUrl(canonicalSlug) || getLogoUrl(slug);
+    const activeStoreLogo = fallbackStore.logo || getLogoUrl(slug);
     const populatedStore: Store = {
       id: fallbackStore.id,
       name: fallbackStore.name,
-      slug: slug, // Keep current URL slug
+      slug: slug,
       logo: activeStoreLogo,
       website: fallbackStore.website
     };
     store = populatedStore;
 
-    // Isolate target core brands so zero rogue coupons can ever attach
-    if (canonicalSlug === "transparent-labs" || canonicalSlug === "garten-und-freizeit" || canonicalSlug === "dreamcloud" || canonicalSlug === "qidi-tech") {
-      const prefix = canonicalSlug === "transparent-labs" ? "tl-" : canonicalSlug === "garten-und-freizeit" ? "guf-" : canonicalSlug === "qidi-tech" ? "qidi-" : "dc-";
-      coupons = FALLBACK_COUPONS.filter(c => String(c.id).startsWith(prefix)).map(c => ({
+    coupons = FALLBACK_COUPONS.filter(c => {
+      const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
+      return cSlug === slug;
+    }).map(c => {
+      const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
+      return {
         ...c,
-        code: c.code || "",
-        affiliate_url: c.affiliate_url || fallbackStore.website,
-        affiliate_link: c.affiliate_url || fallbackStore.website,
-        affiliateLink: c.affiliate_url || fallbackStore.website,
+        affiliate_url: normalizedAffiliate,
+        affiliate_link: normalizedAffiliate,
+        affiliateLink: normalizedAffiliate,
         store: populatedStore
-      }));
-    } else {
-      coupons = FALLBACK_COUPONS.filter(c => {
-        const cSlug = (c as any).storeSlug || (typeof c.store === "object" && c.store !== null ? (c.store as Store).slug : String(c.store || "").toLowerCase().replace(/[\s_]+/g, "-"));
-        return cSlug === canonicalSlug || cSlug === slug;
-      }).map(c => {
-        const normalizedAffiliate = c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink || (fallbackStore as any).affiliateLink || (fallbackStore as any).affiliate_link || fallbackStore.website;
-        return {
-          ...c,
-          affiliate_url: normalizedAffiliate,
-          affiliate_link: normalizedAffiliate,
-          affiliateLink: normalizedAffiliate,
-          store: populatedStore
-        };
-      });
-    }
+      };
+    });
   }
 
-  // 2. Fallback shell if not found
+  // 3. Fallback Shell
   if (!store) {
     const formattedName = slug.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
     store = {
       id: slug,
       name: formattedName,
       slug: slug,
-      logo: getLogoUrl(canonicalSlug) || getLogoUrl(slug),
-      website: `https://${canonicalSlug}.com`
+      logo: getLogoUrl(slug),
+      website: `https://${slug}.com`
     };
   }
 
