@@ -3,6 +3,9 @@ import { Coupon, Store } from "../components/CouponCard";
 export const getLogoUrl = (slug: string | undefined | null) => {
   if (!slug || typeof slug !== "string") return undefined;
   const logoMap: Record<string, string> = {
+    "qidi-tech": "/logos/qidi-tech.svg",
+    "qidi": "/logos/qidi.svg",
+    "qidi-tech-us": "/logos/qidi-tech.svg",
     "dreamcloud-us": "/logos/dreamcloud-us.png",
     "dreamcloud-uk": "/logos/dreamcloud-uk.png",
     "garten-und-freizeit-de": "/logos/garten-und-freizeit-de.png",
@@ -1003,6 +1006,71 @@ export const FALLBACK_STORES: Store[] = [
 ];
 
 export const FALLBACK_COUPONS: Coupon[] = [
+
+  // =========================================================================
+  // 4. QIDI TECH (3D PRINTERS) (Verified Promo Codes & High-Ticket Deals)
+  // =========================================================================
+  {
+    id: "qidi-deal-1",
+    code: "WELCOME10",
+    discount: "10% OFF",
+    title: "10% off coupon code sitewide",
+    description: "Save 10% on high-speed 3D printers, hotends, and accessories with verified code WELCOME10.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI Tech",
+    storeSlug: "qidi-tech",
+    affiliate_url: "https://qidi3d.com"
+  },
+  {
+    id: "qidi-deal-2",
+    code: "QIDI50",
+    discount: "$50 OFF",
+    title: "$50 off QIDI Plus 4 & X-Max 3 3D Printers",
+    description: "Get $50 instant discount on high-temperature industrial CoreXY 3D printers with code QIDI50.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI Tech",
+    storeSlug: "qidi-tech",
+    affiliate_url: "https://qidi3d.com"
+  },
+  {
+    id: "qidi-deal-3",
+    code: "SAVE5",
+    discount: "5% OFF",
+    title: "5% off promo code on filaments & spare parts",
+    description: "Save 5% on PLA, ABS, Carbon Fiber filaments and high-flow nozzles with code SAVE5.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI Tech",
+    storeSlug: "qidi-tech",
+    affiliate_url: "https://qidi3d.com"
+  },
+  {
+    id: "qidi-deal-4",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free tracked shipping on orders over $50",
+    description: "Enjoy 100% free tracked delivery across the US, UK, and Europe on all 3D printers.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI Tech",
+    storeSlug: "qidi-tech",
+    affiliate_url: "https://qidi3d.com"
+  },
+  {
+    id: "qidi-deal-5",
+    code: "WELCOME10",
+    discount: "10% OFF",
+    title: "10% off your first 3D printer purchase",
+    description: "Sign up for the QIDI VIP club and get 10% off your first printer order.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI Tech",
+    storeSlug: "qidi-tech",
+    affiliate_url: "https://qidi3d.com"
+  },
+
 
   // =========================================================================
   // 1. DREAMCLOUD UK (Exact Verified Codes: VIPONLY & BLUELIGHT + Top Deals)

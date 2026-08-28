@@ -9,6 +9,8 @@ export const revalidate = 60; // Revalidate every 60 seconds
 
 // Canonical slug map for regional aliases
 const SLUG_ALIASES: Record<string, string> = {
+  "qidi-tech-us": "qidi-tech",
+  "qidi": "qidi-tech",
   "transparent-labs-us": "transparent-labs",
   "garten-und-freizeit-de": "garten-und-freizeit",
   "dreamcloud-uk": "dreamcloud",
@@ -93,8 +95,8 @@ export default async function StorePage({ params }: StorePageProps) {
     store = populatedStore;
 
     // Isolate target core brands so zero rogue coupons can ever attach
-    if (canonicalSlug === "transparent-labs" || canonicalSlug === "garten-und-freizeit" || canonicalSlug === "dreamcloud") {
-      const prefix = canonicalSlug === "transparent-labs" ? "tl-" : canonicalSlug === "garten-und-freizeit" ? "guf-" : "dc-";
+    if (canonicalSlug === "transparent-labs" || canonicalSlug === "garten-und-freizeit" || canonicalSlug === "dreamcloud" || canonicalSlug === "qidi-tech") {
+      const prefix = canonicalSlug === "transparent-labs" ? "tl-" : canonicalSlug === "garten-und-freizeit" ? "guf-" : canonicalSlug === "qidi-tech" ? "qidi-" : "dc-";
       coupons = FALLBACK_COUPONS.filter(c => String(c.id).startsWith(prefix)).map(c => ({
         ...c,
         code: c.code || "",
