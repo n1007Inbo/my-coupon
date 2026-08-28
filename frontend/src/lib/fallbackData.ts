@@ -1030,14 +1030,15 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // 5. MELLOW SLEEP (Mattresses & Bed Frames) (Referral Link: https://mellowsleep.com/RICHARD1)
+  // =========================================================================
+  // 5. MELLOW SLEEP (100% Auto-Applied Direct Deals via Affiliate Link)
   // =========================================================================
   {
     id: "mellow-deal-1",
-    code: "RICHARD1",
+    code: "",
     discount: "15% OFF",
-    title: "15% off discount code sitewide",
-    description: "Save 15% on luxury memory foam mattresses and solid wood bed frames with code RICHARD1.",
+    title: "15% off discount sitewide (auto-applied at checkout)",
+    description: "Click to activate 15% instant discount on mattresses, toppers, and bed frames automatically at checkout.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Mellow Sleep",
@@ -1046,10 +1047,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "mellow-deal-2",
-    code: "WELCOME10",
-    discount: "10% OFF",
-    title: "10% off your first mattress purchase",
-    description: "Get 10% off your first order when signing up for the Mellow VIP sleep newsletter.",
+    code: "",
+    discount: "15% OFF",
+    title: "15% off memory foam mattresses & cooling toppers",
+    description: "Enjoy 15% off premium cooling memory foam mattresses. Discount applied automatically via link.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Mellow Sleep",
@@ -1058,10 +1059,10 @@ export const FALLBACK_COUPONS: Coupon[] = [
   },
   {
     id: "mellow-deal-3",
-    code: "SAVE15",
-    discount: "15% OFF",
-    title: "15% off memory foam mattresses & toppers",
-    description: "Save 15% on cooling memory foam mattresses, mattress toppers, and organic sheets.",
+    code: "",
+    discount: "UP TO $100",
+    title: "Up to $100 off solid wood bed frames & platform bases",
+    description: "Get up to $100 instant savings on modern upholstered and solid wood bed frames.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Mellow Sleep",
@@ -1071,9 +1072,9 @@ export const FALLBACK_COUPONS: Coupon[] = [
   {
     id: "mellow-deal-4",
     code: "",
-    discount: "UP TO $100",
-    title: "Up to $100 off solid wood bed frames",
-    description: "Save up to $100 on modern upholstered bed frames and solid wood platform bases.",
+    discount: "10% OFF",
+    title: "10% off your entire first sleep order",
+    description: "Activate 10% new customer discount automatically applied to your cart.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Mellow Sleep",
@@ -1084,15 +1085,16 @@ export const FALLBACK_COUPONS: Coupon[] = [
     id: "mellow-deal-5",
     code: "",
     discount: "FREE SHIPPING",
-    title: "Free shipping & 100-night risk-free trial",
-    description: "Enjoy free doorstep delivery nationwide and a 100-night sleep trial with free returns.",
+    title: "Free nationwide shipping + 100-night risk-free trial",
+    description: "Enjoy 100% free doorstep delivery across the US and a 100-night trial with free returns.",
     is_verified: true,
     expiry_date: "2026-12-31",
     store: "Mellow Sleep",
     storeSlug: "mellow-sleep",
     affiliate_url: "https://mellowsleep.com/RICHARD1"
-  },
-
+  }, (Mattresses & Bed Frames) (Referral Link: https://mellowsleep.com/RICHARD1)
+  // =========================================================================
+          
   // =========================================================================
   // 6. COMFRT (Weighted Anxiety Relief Hoodies & Loungewear)
   // =========================================================================
