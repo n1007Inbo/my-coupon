@@ -9,12 +9,13 @@ export const revalidate = 60; // Revalidate every 60 seconds
 
 // Canonical slug map for regional aliases
 const SLUG_ALIASES: Record<string, string> = {
-  "qidi-tech-us": "qidi-tech",
-  "qidi": "qidi-tech",
   "transparent-labs-us": "transparent-labs",
   "garten-und-freizeit-de": "garten-und-freizeit",
   "dreamcloud-uk": "dreamcloud",
-  "dreamcloud-us": "dreamcloud"
+  "dreamcloud-us": "dreamcloud",
+  "qidi-tech-us": "qidi-us",
+  "qidi-tech": "qidi-us",
+  "qidi": "qidi-de"
 };
 
 // Pre-render stores at build time

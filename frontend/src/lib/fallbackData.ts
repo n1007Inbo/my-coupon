@@ -3,6 +3,14 @@ import { Coupon, Store } from "../components/CouponCard";
 export const getLogoUrl = (slug: string | undefined | null) => {
   if (!slug || typeof slug !== "string") return undefined;
   const logoMap: Record<string, string> = {
+    "qidi": "/logos/qidi.png",
+    "qidi-tech": "/logos/qidi.png",
+    "qidi-us": "/logos/qidi.png",
+    "qidi-tech-us": "/logos/qidi.png",
+    "qidi-de": "/logos/qidi.png",
+    "qidi-uk": "/logos/qidi.png",
+    "qidi-ca": "/logos/qidi.png",
+    "qidi-au": "/logos/qidi.png",
     "qidi-tech": "/logos/qidi-tech.svg",
     "qidi": "/logos/qidi.svg",
     "qidi-tech-us": "/logos/qidi-tech.svg",
@@ -455,6 +463,14 @@ export const getLogoUrl = (slug: string | undefined | null) => {
 };
 
 export const FALLBACK_STORES: Store[] = [
+
+  { id: 620, name: "QIDI US", slug: "qidi-us", logo: getLogoUrl("qidi-us"), website: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz" },
+  { id: 621, name: "QIDI DE", slug: "qidi-de", logo: getLogoUrl("qidi-de"), website: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg" },
+  { id: 622, name: "QIDI UK", slug: "qidi-uk", logo: getLogoUrl("qidi-uk"), website: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV" },
+  { id: 623, name: "QIDI CA", slug: "qidi-ca", logo: getLogoUrl("qidi-ca"), website: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI" },
+  { id: 624, name: "QIDI AU", slug: "qidi-au", logo: getLogoUrl("qidi-au"), website: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex" },
+  { id: 625, name: "QIDI Tech", slug: "qidi-tech", logo: getLogoUrl("qidi-tech"), website: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz" },
+
   { id: 605, name: "Garten und Freizeit", slug: "garten-und-freizeit", logo: getLogoUrl("garten-und-freizeit"), website: "https://litl.si/5p50u" },
   { id: 610, name: "Transparent Labs", slug: "transparent-labs", logo: getLogoUrl("transparent-labs"), website: "https://vert.si/g693JE" },
             
@@ -1008,69 +1024,330 @@ export const FALLBACK_STORES: Store[] = [
 export const FALLBACK_COUPONS: Coupon[] = [
 
   // =========================================================================
-  // 4. QIDI TECH (3D PRINTERS) (Verified Promo Codes & High-Ticket Deals)
+  // QIDI US (Exact Scraped Galleria Codes & Deals)
   // =========================================================================
   {
-    id: "qidi-deal-1",
+    id: "qidi-us-1",
+    code: "40FOR700",
+    discount: "$40 OFF",
+    title: "$40 off promo code - spend over $700",
+    description: "Get $40 discount on orders over $700 with verified code 40FOR700 at QIDI US.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI US",
+    storeSlug: "qidi-us",
+    affiliate_url: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz"
+  },
+  {
+    id: "qidi-us-2",
+    code: "30FOR500",
+    discount: "$30 OFF",
+    title: "$30 off code - order over $500",
+    description: "Save $30 on 3D printer orders over $500 with code 30FOR500.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI US",
+    storeSlug: "qidi-us",
+    affiliate_url: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz"
+  },
+  {
+    id: "qidi-us-3",
     code: "WELCOME10",
     discount: "10% OFF",
     title: "10% off coupon code sitewide",
     description: "Save 10% on high-speed 3D printers, hotends, and accessories with verified code WELCOME10.",
     is_verified: true,
     expiry_date: "2026-12-31",
-    store: "QIDI Tech",
-    storeSlug: "qidi-tech",
-    affiliate_url: "https://qidi3d.com"
+    store: "QIDI US",
+    storeSlug: "qidi-us",
+    affiliate_url: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz"
   },
   {
-    id: "qidi-deal-2",
-    code: "QIDI50",
-    discount: "$50 OFF",
-    title: "$50 off QIDI Plus 4 & X-Max 3 3D Printers",
-    description: "Get $50 instant discount on high-temperature industrial CoreXY 3D printers with code QIDI50.",
+    id: "qidi-us-4",
+    code: "",
+    discount: "55% OFF",
+    title: "55% off on 3d printers & weekly deals",
+    description: "Save up to 55% on industrial high-speed CoreXY 3D printers in weekly sales.",
     is_verified: true,
     expiry_date: "2026-12-31",
-    store: "QIDI Tech",
-    storeSlug: "qidi-tech",
-    affiliate_url: "https://qidi3d.com"
+    store: "QIDI US",
+    storeSlug: "qidi-us",
+    affiliate_url: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz"
   },
   {
-    id: "qidi-deal-3",
-    code: "SAVE5",
-    discount: "5% OFF",
-    title: "5% off promo code on filaments & spare parts",
-    description: "Save 5% on PLA, ABS, Carbon Fiber filaments and high-flow nozzles with code SAVE5.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "QIDI Tech",
-    storeSlug: "qidi-tech",
-    affiliate_url: "https://qidi3d.com"
-  },
-  {
-    id: "qidi-deal-4",
+    id: "qidi-us-5",
     code: "",
     discount: "FREE SHIPPING",
-    title: "Free tracked shipping on orders over $50",
-    description: "Enjoy 100% free tracked delivery across the US, UK, and Europe on all 3D printers.",
+    title: "Free tracked US shipping",
+    description: "Enjoy 100% free tracked shipping across the United States on all 3D printers.",
     is_verified: true,
     expiry_date: "2026-12-31",
-    store: "QIDI Tech",
-    storeSlug: "qidi-tech",
-    affiliate_url: "https://qidi3d.com"
-  },
-  {
-    id: "qidi-deal-5",
-    code: "WELCOME10",
-    discount: "10% OFF",
-    title: "10% off your first 3D printer purchase",
-    description: "Sign up for the QIDI VIP club and get 10% off your first printer order.",
-    is_verified: true,
-    expiry_date: "2026-12-31",
-    store: "QIDI Tech",
-    storeSlug: "qidi-tech",
-    affiliate_url: "https://qidi3d.com"
+    store: "QIDI US",
+    storeSlug: "qidi-us",
+    affiliate_url: "https://qidi3d-us.myshopify.com?sca_ref=12082428.QUGCstR0657wz"
   },
 
+  // =========================================================================
+  // QIDI DE (Germany / EU - Exact Scraped German Codes & Deals)
+  // =========================================================================
+  {
+    id: "qidi-de-1",
+    code: "30FOR500",
+    discount: "30€ RABATT",
+    title: "30€ rabattcode bestellwert 500€",
+    description: "Sichern Sie sich 30€ Rabatt ab einem Mindestbestellwert von 500€ mit Code 30FOR500.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI DE",
+    storeSlug: "qidi-de",
+    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg"
+  },
+  {
+    id: "qidi-de-2",
+    code: "40FOR700",
+    discount: "40€ RABATT",
+    title: "40€ rabattcode bestellwert 700€",
+    description: "Erhalten Sie 40€ Direktabzug ab 700€ Bestellwert mit Code 40FOR700.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI DE",
+    storeSlug: "qidi-de",
+    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg"
+  },
+  {
+    id: "qidi-de-3",
+    code: "80FOR1200",
+    discount: "80€ RABATT",
+    title: "80€ rabattcode bestellwert 1200€",
+    description: "80€ Großbestellungs-Rabatt ab 1200€ Einkaufswert mit Code 80FOR1200.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI DE",
+    storeSlug: "qidi-de",
+    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg"
+  },
+  {
+    id: "qidi-de-4",
+    code: "",
+    discount: "40% RABATT",
+    title: "40% rabatt auf 3D drucker & filamente",
+    description: "Sparen Sie bis zu 40% auf Hochtemperatur 3D Drucker und Filament Bundles.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI DE",
+    storeSlug: "qidi-de",
+    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg"
+  },
+  {
+    id: "qidi-de-5",
+    code: "",
+    discount: "GRATIS VERSAND",
+    title: "Kostenloser Speditionsversand in DE & EU",
+    description: "Kostenlose Lieferung auf alle 3D-Drucker innerhalb Deutschlands und der EU.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI DE",
+    storeSlug: "qidi-de",
+    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg"
+  },
+
+  // =========================================================================
+  // QIDI UK (United Kingdom - Exact Scraped Codes & Deals)
+  // =========================================================================
+  {
+    id: "qidi-uk-1",
+    code: "HIGH5",
+    discount: "20% OFF",
+    title: "20% off discount code sitewide",
+    description: "Get 20% off sitewide at QIDI UK with verified promo code HIGH5.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI UK",
+    storeSlug: "qidi-uk",
+    affiliate_url: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV"
+  },
+  {
+    id: "qidi-uk-2",
+    code: "35FOR500",
+    discount: "£35 OFF",
+    title: "£35 off code - order over £500",
+    description: "Save £35 on 3D printer orders over £500 with code 35FOR500.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI UK",
+    storeSlug: "qidi-uk",
+    affiliate_url: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV"
+  },
+  {
+    id: "qidi-uk-3",
+    code: "25FOR400",
+    discount: "£25 OFF",
+    title: "£25 off code - spend over £400",
+    description: "Save £25 on 3D printers and parts with verified code 25FOR400.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI UK",
+    storeSlug: "qidi-uk",
+    affiliate_url: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV"
+  },
+  {
+    id: "qidi-uk-4",
+    code: "",
+    discount: "50% OFF",
+    title: "50% off on 3d printers & accessories",
+    description: "Save up to 50% on high-speed CoreXY 3D printers and filaments in the UK.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI UK",
+    storeSlug: "qidi-uk",
+    affiliate_url: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV"
+  },
+  {
+    id: "qidi-uk-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free tracked UK delivery",
+    description: "Enjoy 100% free tracked delivery across the UK on all printer orders.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI UK",
+    storeSlug: "qidi-uk",
+    affiliate_url: "https://qidi3d-uk.myshopify.com?sca_ref=12082424.7VZOgmHzi7mV"
+  },
+
+  // =========================================================================
+  // QIDI CA (Canada - Exact Scraped Codes & Deals)
+  // =========================================================================
+  {
+    id: "qidi-ca-1",
+    code: "PRINT10-CA",
+    discount: "10% OFF",
+    title: "10% off discount code sitewide",
+    description: "Get 10% off sitewide across Canada with code PRINT10-CA.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI CA",
+    storeSlug: "qidi-ca",
+    affiliate_url: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI"
+  },
+  {
+    id: "qidi-ca-2",
+    code: "50FOR800",
+    discount: "$50 OFF",
+    title: "$50 off code - purchase over $800 CAD",
+    description: "Save $50 on orders over $800 with verified code 50FOR800.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI CA",
+    storeSlug: "qidi-ca",
+    affiliate_url: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI"
+  },
+  {
+    id: "qidi-ca-3",
+    code: "40FOR700",
+    discount: "$40 OFF",
+    title: "$40 off code - order over $700 CAD",
+    description: "Get $40 off CoreXY 3D printers with code 40FOR700 in Canada.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI CA",
+    storeSlug: "qidi-ca",
+    affiliate_url: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI"
+  },
+  {
+    id: "qidi-ca-4",
+    code: "",
+    discount: "55% OFF",
+    title: "55% off on 3d printers & weekly deals",
+    description: "Save up to 55% on 3D printers and filaments across Canada.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI CA",
+    storeSlug: "qidi-ca",
+    affiliate_url: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI"
+  },
+  {
+    id: "qidi-ca-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping across Canada",
+    description: "Enjoy 100% free tracked delivery across all Canadian provinces.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI CA",
+    storeSlug: "qidi-ca",
+    affiliate_url: "https://qidi3d-ca.myshopify.com?sca_ref=12082426.lb4pfrcPLtarI"
+  },
+
+  // =========================================================================
+  // QIDI AU (Australia - Exact Scraped Codes & Deals)
+  // =========================================================================
+  {
+    id: "qidi-au-1",
+    code: "PRINT10-CA",
+    discount: "10% OFF",
+    title: "10% off coupon code",
+    description: "Get 10% off your entire 3D printer purchase with code PRINT10-CA in Australia.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI AU",
+    storeSlug: "qidi-au",
+    affiliate_url: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex"
+  },
+  {
+    id: "qidi-au-2",
+    code: "100FOR1600",
+    discount: "$100 OFF",
+    title: "$100 off promo - purchase over $1600 AUD",
+    description: "Get $100 instant discount on orders over $1600 with code 100FOR1600.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI AU",
+    storeSlug: "qidi-au",
+    affiliate_url: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex"
+  },
+  {
+    id: "qidi-au-3",
+    code: "35FOR700",
+    discount: "$35 OFF",
+    title: "$35 off code - order over $700 AUD",
+    description: "Save $35 on 3D printers and accessories with code 35FOR700.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI AU",
+    storeSlug: "qidi-au",
+    affiliate_url: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex"
+  },
+  {
+    id: "qidi-au-4",
+    code: "",
+    discount: "45% OFF",
+    title: "45% off on 3d printers & accessories",
+    description: "Save up to 45% on high-speed industrial 3D printers in Australia.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI AU",
+    storeSlug: "qidi-au",
+    affiliate_url: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex"
+  },
+  {
+    id: "qidi-au-5",
+    code: "",
+    discount: "FREE SHIPPING",
+    title: "Free shipping across Australia",
+    description: "Enjoy 100% free tracked delivery across Australia on all printer models.",
+    is_verified: true,
+    expiry_date: "2026-12-31",
+    store: "QIDI AU",
+    storeSlug: "qidi-au",
+    affiliate_url: "https://qiditech3d-au.myshopify.com?sca_ref=12082425.u0nAUHxvoBprsex"
+  },
+
+
+  // =========================================================================
+  // 4. QIDI TECH (3D PRINTERS) (Verified Promo Codes & High-Ticket Deals)
+  // =========================================================================
+          
 
   // =========================================================================
   // 1. DREAMCLOUD UK (Exact Verified Codes: VIPONLY & BLUELIGHT + Top Deals)
