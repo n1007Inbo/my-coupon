@@ -1,332 +1,336 @@
+/* ============================================================
+   COUPON CARD — Professional Clean Design
+   Inspired by RetailMeNot / CouponFollow / Honey
+   ============================================================ */
+
+/* Card Container */
 .card {
   position: relative;
   background: #ffffff;
-  border: 1.5px solid #f1f5f9;
-  border-radius: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 20px 24px;
-  gap: 22px;
-  box-shadow: 0 4px 16px -2px rgba(15, 23, 42, 0.04), 0 2px 6px -1px rgba(15, 23, 42, 0.02);
-  transition: all 0.24s cubic-bezier(0.16, 1, 0.3, 1);
-  font-family: var(--font-outfit), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  gap: 20px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
-  box-sizing: border-box;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .card:hover {
-  transform: translateY(-3px);
-  border-color: #cbd5e1;
-  box-shadow: 0 16px 32px -6px rgba(15, 23, 42, 0.08), 0 4px 12px -2px rgba(15, 23, 42, 0.03);
+  border-color: #c7d2fe;
+  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
 }
 
-/* 1. Left Side: Brand Logo Container */
-.logoContainer {
-  width: 180px;
-  height: 110px;
-  min-height: 110px;
-  background-color: #ffffff;
-  border: 1.5px solid #e2e8f0;
-  border-radius: 14px;
+.card:focus-visible {
+  outline: 2px solid #6366f1;
+  outline-offset: 2px;
+}
+
+/* Best Deal Highlight */
+.bestDealCard {
+  border-color: #c7d2fe;
+  background: linear-gradient(to right, #faf5ff, #ffffff);
+}
+
+/* ---- LEFT: Logo ---- */
+.logoSection {
+  width: 100px;
+  height: 72px;
+  min-width: 100px;
+  border: 1px solid #f1f5f9;
+  border-radius: 10px;
+  background: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 10px 14px;
-  flex-shrink: 0;
-  box-sizing: border-box;
   overflow: hidden;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+  flex-shrink: 0;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 .logoImg {
-  width: 100%;
-  height: 100%;
-  max-width: 160px;
-  max-height: 95px;
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
   object-fit: contain;
-  transform: scale(1.85);
-  transition: transform 0.24s ease;
-  filter: contrast(1.15) saturate(1.1);
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: crisp-edges;
-}
-
-.card:hover .logoImg {
-  transform: scale(1.95);
 }
 
 .logoFallback {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  background: linear-gradient(135deg, #f8fafc, #e2e8f0);
-  color: #4f46e5;
-  font-weight: 800;
-  font-size: 1.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+  color: #4f46e5;
+  font-weight: 700;
+  font-size: 1.6rem;
+  border-radius: 6px;
 }
 
-/* 2. Middle: Content Stack with Perfect Rhythm */
-.contentContainer {
+/* ---- CENTER: Content ---- */
+.contentSection {
   flex: 1;
+  min-width: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  min-width: 0;
-  gap: 8px;
+  gap: 6px;
 }
 
-.topBadgesRow {
+/* Tags Row */
+.tagsRow {
   display: flex;
   align-items: center;
-  gap: 8px;
-  flex-wrap: nowrap;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 
-.discountBadge {
-  background: linear-gradient(135deg, #eff6ff, #dbeafe);
-  color: #1e40af;
-  border: 1px solid #bfdbfe;
-  font-size: 0.82rem;
-  font-weight: 800;
-  padding: 4px 11px;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  letter-spacing: 0.02em;
-  white-space: nowrap;
-}
-
-.discountIcon {
-  font-size: 0.85rem;
-}
-
-.exclusiveBadge {
-  background: linear-gradient(135deg, #fef3c7, #fde68a);
-  color: #92400e;
-  border: 1px solid #fcd34d;
-  font-size: 0.76rem;
-  font-weight: 800;
-  padding: 4px 10px;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-}
-
-.dealBadge {
-  background: linear-gradient(135deg, #f0fdf4, #dcfce7);
-  color: #166534;
-  border: 1px solid #bbf7d0;
-  font-size: 0.76rem;
-  font-weight: 800;
-  padding: 4px 10px;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
-  letter-spacing: 0.03em;
-  white-space: nowrap;
-}
-
-.starIcon, .boltIcon {
-  font-size: 0.82rem;
-}
-
-.verifiedBadge {
-  background: #f0fdf4;
-  color: #15803d;
-  border: 1px solid #bbf7d0;
-  font-size: 0.76rem;
+.discountTag {
+  background: #eef2ff;
+  color: #4338ca;
+  font-size: 0.75rem;
   font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 7px;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+  padding: 3px 8px;
+  border-radius: 4px;
+  letter-spacing: 0.01em;
   white-space: nowrap;
 }
 
-.title {
-  font-size: 1.22rem;
-  font-weight: 750;
-  color: #0f172a;
-  margin: 0;
-  line-height: 1.35;
-  letter-spacing: -0.015em;
-  word-break: break-word;
+.codeTag {
+  background: #fef3c7;
+  color: #92400e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
-.description {
-  font-size: 0.89rem;
-  color: #64748b;
+.dealTag {
+  background: #ecfdf5;
+  color: #065f46;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.verifiedTag {
+  color: #059669;
+  font-size: 0.7rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.bestTag {
+  background: #f5f3ff;
+  color: #6d28d9;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+/* Title */
+.title {
+  font-size: 1rem;
+  font-weight: 650;
+  color: #111827;
+  margin: 0;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Description */
+.desc {
+  font-size: 0.85rem;
+  color: #6b7280;
   margin: 0;
   line-height: 1.45;
-  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* Trust Metadata Row */
-.metaRow {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-size: 0.85rem;
-  color: #64748b;
+/* Expiry */
+.expiry {
+  font-size: 0.75rem;
+  color: #9ca3af;
   font-weight: 500;
-  white-space: nowrap;
-  margin-top: 2px;
 }
 
-.metaItem {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.metaIcon {
-  color: #6366f1;
-}
-
-.usesHighlight {
-  color: #4f46e5;
-  font-weight: 700;
-}
-
-.successIcon {
-  color: #10b981;
-}
-
-.successText {
-  color: #059669;
-  font-weight: 700;
-}
-
-.dotSeparator {
-  color: #cbd5e1;
-}
-
-.metaTerms {
-  color: #94a3b8;
-}
-
-/* 3. Right Side: Button Stack */
-.actionContainer {
+/* ---- RIGHT: Action Button ---- */
+.actionSection {
+  flex-shrink: 0;
+  min-width: 130px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  flex-shrink: 0;
-  min-width: 195px;
 }
 
-.codeButtonWrapper {
+/* Code Button (split style) */
+.codeBtn {
   display: flex;
-  align-items: center;
-  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
-  border-radius: 12px;
+  align-items: stretch;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 14px rgba(79, 70, 229, 0.28);
-  transition: all 0.22s ease;
+  border: 2px solid #4f46e5;
+  transition: box-shadow 0.2s ease;
   width: 100%;
 }
 
-.codeButtonWrapper:hover {
-  box-shadow: 0 8px 24px rgba(79, 70, 229, 0.4);
-  transform: translateY(-1px);
+.codeBtn:hover {
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.15);
 }
 
-.btnShowCode {
-  background: transparent;
+.codeBtnLabel {
+  background: #4f46e5;
   color: #ffffff;
-  border: none;
-  padding: 13px 18px;
-  font-size: 0.95rem;
-  font-weight: 750;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  white-space: nowrap;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 7px;
-  cursor: pointer;
-  flex: 1;
-  white-space: nowrap;
 }
 
-.codeCutoutEffect {
-  background: rgba(15, 23, 42, 0.25);
-  border-left: 1.5px dashed rgba(255, 255, 255, 0.45);
-  padding: 13px 15px;
-  font-size: 0.88rem;
-  font-weight: 800;
-  color: #ffffff;
-  letter-spacing: 0.05em;
+.codeBtnPreview {
+  background: #ffffff;
+  color: #4f46e5;
+  padding: 10px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  letter-spacing: 0.03em;
   white-space: nowrap;
+  border-left: 2px dashed #c7d2fe;
+  display: flex;
+  align-items: center;
 }
 
-.btnGetDeal {
+/* Deal Button */
+.dealBtn {
   width: 100%;
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: #4f46e5;
   color: #ffffff;
   border: none;
-  border-radius: 12px;
-  padding: 13px 24px;
-  font-size: 0.95rem;
-  font-weight: 750;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+  font-weight: 700;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
   cursor: pointer;
-  transition: all 0.22s ease;
-  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.28);
+  transition: background 0.2s ease, box-shadow 0.2s ease;
   white-space: nowrap;
 }
 
-.btnGetDeal:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.4);
-  transform: translateY(-1px);
+.dealBtn:hover {
+  background: #4338ca;
+  box-shadow: 0 2px 12px rgba(79, 70, 229, 0.15);
 }
 
-.arrowIcon {
-  font-size: 1.05rem;
-  transition: transform 0.2s ease;
-}
+/* ============================================================
+   MOBILE RESPONSIVE
+   ============================================================ */
 
-.card:hover .arrowIcon {
-  transform: translateX(4px);
-}
-
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .card {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
     padding: 16px;
-    gap: 14px;
+    gap: 12px;
   }
 
-  .logoContainer {
+  .logoSection {
     width: 100%;
-    height: 85px;
-  }
-
-  .topBadgesRow {
-    flex-wrap: wrap;
-  }
-
-  .metaRow {
-    flex-wrap: wrap;
-  }
-
-  .actionContainer {
-    width: 100%;
+    height: 56px;
     min-width: 100%;
+  }
+
+  .logoImg {
+    max-height: 40px;
+  }
+
+  .title {
+    font-size: 0.95rem;
+  }
+
+  .desc {
+    font-size: 0.82rem;
+  }
+
+  .tagsRow {
+    gap: 5px;
+  }
+
+  .actionSection {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .codeBtn {
+    width: 100%;
+  }
+
+  .codeBtnLabel {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .codeBtnPreview {
+    flex: 0;
+  }
+
+  .dealBtn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 14px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .logoSection {
+    height: 50px;
+    padding: 6px;
+  }
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .discountTag,
+  .codeTag,
+  .dealTag,
+  .verifiedTag,
+  .bestTag {
+    font-size: 0.65rem;
   }
 }

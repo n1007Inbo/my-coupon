@@ -30,10 +30,11 @@ export interface Coupon {
 interface CouponCardProps {
   coupon: Coupon;
   onGetCode: (coupon: Coupon) => void;
+  isBestDeal?: boolean;
 }
 
-export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => {
-  const { store, discount, code, is_verified, title, description } = coupon;
+export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode, isBestDeal = false }) => {
+  const { store, discount, code, is_verified, title, description, expiry_date } = coupon;
 
   const isStoreObject = typeof store === "object" && store !== null;
   const storeName = isStoreObject ? (store as Store).name : (typeof store === "string" ? store : "Store");
@@ -52,24 +53,29 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
   const displayTitle = title || description || discount;
   const displayDesc = description && description !== title ? description : null;
 
-  const hashedUses = React.useMemo(() => {
-    let hash = 0;
-    const idStr = String(coupon.id);
-    for (let i = 0; i < idStr.length; i++) {
-      hash = (hash * 31 + idStr.charCodeAt(i)) | 0;
+  // Format expiry date cleanly
+  const formattedExpiry = React.useMemo(() => {
+    if (!expiry_date) return null;
+    try {
+      const d = new Date(expiry_date);
+      const now = new Date();
+      if (d.getTime() < now.getTime()) return null;
+      return d.toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
+    } catch {
+      return null;
     }
-    return Math.abs(hash % 220) + 380; // 380 to 600 uses
-  }, [coupon.id]);
+  }, [expiry_date]);
 
   return (
     <div 
-      className={styles.card}
+      className={`${styles.card} ${isBestDeal ? styles.bestDealCard : ""}`}
       onClick={() => onGetCode(coupon)}
       role="button"
       tabIndex={0}
+      onKeyDown={(e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); onGetCode(coupon); } }}
     >
-      {/* 1. Left Side: Brand Logo Container */}
-      <div className={styles.logoContainer}>
+      {/* Left: Brand Logo */}
+      <div className={styles.logoSection}>
         {storeLogo ? (
           // eslint-disable-next-line @next/next/no-img-element
           <img 
@@ -78,8 +84,8 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
             className={styles.logoImg} 
             loading="lazy" 
             decoding="async"
-            width={160}
-            height={90}
+            width={120}
+            height={60}
           />
         ) : (
           <div className={styles.logoFallback}>
@@ -88,82 +94,59 @@ export const CouponCard: React.FC<CouponCardProps> = ({ coupon, onGetCode }) => 
         )}
       </div>
 
-      {/* 2. Middle: Content Hierarchy (Badges -> Title -> Description -> Trust Bar) */}
-      <div className={styles.contentContainer}>
-        {/* Top Badges Row */}
-        <div className={styles.topBadgesRow}>
+      {/* Center: Content */}
+      <div className={styles.contentSection}>
+        {/* Tags row */}
+        <div className={styles.tagsRow}>
           {discount && (
-            <span className={styles.discountBadge}>
-              <span className={styles.discountIcon}>🏷️</span>
-              {discount}
-            </span>
+            <span className={styles.discountTag}>{discount}</span>
           )}
           {hasCode ? (
-            <span className={styles.exclusiveBadge}>
-              <span className={styles.starIcon}>★</span> EXCLUSIVE CODE
-            </span>
+            <span className={styles.codeTag}>Code</span>
           ) : (
-            <span className={styles.dealBadge}>
-              <span className={styles.boltIcon}>⚡</span> DIRECT DEAL
-            </span>
+            <span className={styles.dealTag}>Deal</span>
           )}
           {is_verified && (
-            <span className={styles.verifiedBadge}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+            <span className={styles.verifiedTag}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <polyline points="20 6 9 17 4 12" />
               </svg>
               Verified
             </span>
           )}
+          {isBestDeal && (
+            <span className={styles.bestTag}>Best Deal</span>
+          )}
         </div>
 
-        {/* Crisp Bold Main Title */}
+        {/* Title */}
         <h3 className={styles.title}>{displayTitle}</h3>
 
-        {/* Helpful Secondary Description */}
+        {/* Description */}
         {displayDesc && (
-          <p className={styles.description}>{displayDesc}</p>
+          <p className={styles.desc}>{displayDesc}</p>
         )}
 
-        {/* Live Trust & Social Proof Row */}
-        <div className={styles.metaRow}>
-          <span className={styles.metaItem}>
-            <svg className={styles.metaIcon} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
-              <circle cx="9" cy="7" r="4"></circle>
-              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
-              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
-            </svg>
-            <strong className={styles.usesHighlight}>{hashedUses} uses</strong> today
-          </span>
-          <span className={styles.dotSeparator}>•</span>
-          <span className={styles.metaItem}>
-            <svg className={styles.successIcon} width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-            </svg>
-            <span className={styles.successText}>100% Success Rate</span>
-          </span>
-          <span className={styles.dotSeparator}>•</span>
-          <span className={styles.metaTerms}>Free & Instant</span>
-        </div>
+        {/* Expiry */}
+        {formattedExpiry && (
+          <span className={styles.expiry}>Expires {formattedExpiry}</span>
+        )}
       </div>
 
-      {/* 3. Right Side: High-Converting Split / Direct Button */}
-      <div className={styles.actionContainer}>
+      {/* Right: Action Button */}
+      <div className={styles.actionSection}>
         {hasCode ? (
-          <div className={styles.codeButtonWrapper}>
-            <button className={styles.btnShowCode} aria-label="Show Coupon Code">
-              <span>Show Code</span>
-              <span className={styles.arrowIcon}>→</span>
-            </button>
-            <div className={styles.codeCutoutEffect}>
-              <span>{code.slice(0, 2)}***</span>
-            </div>
+          <div className={styles.codeBtn}>
+            <span className={styles.codeBtnLabel}>Get Code</span>
+            <span className={styles.codeBtnPreview}>{code.slice(0, 3)}···</span>
           </div>
         ) : (
-          <button className={styles.btnGetDeal} aria-label="Get Deal">
-            <span>Get Deal</span>
-            <span className={styles.arrowIcon}>→</span>
+          <button className={styles.dealBtn}>
+            Get Deal
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
           </button>
         )}
       </div>
