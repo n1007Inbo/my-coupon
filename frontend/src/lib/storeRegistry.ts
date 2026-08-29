@@ -569,7 +569,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
     name: "Comfrt",
     slug: "comfrt",
     aliases: ["comfrt-clothing"],
-    logo: "/logos/comfrt.svg",
+    logo: "/logos/comfrt.png",
     website: "https://comfrt.com",
     affiliate_url: "https://comfrt.com",
     country: "US",

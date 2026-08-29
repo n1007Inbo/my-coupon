@@ -5,8 +5,8 @@ export const getLogoUrl = (slug: string | undefined | null) => {
   const logoMap: Record<string, string> = {
     "mellow-sleep": "/logos/mellow-sleep.svg",
     "mellow": "/logos/mellow-sleep.svg",
-    "comfrt": "/logos/comfrt.svg",
-    "comfrt-clothing": "/logos/comfrt.svg",
+    "comfrt": "/logos/comfrt.png",
+    "comfrt-clothing": "/logos/comfrt.png",
     "qidi": "/logos/qidi.png",
     "qidi-tech": "/logos/qidi.png",
     "qidi-us": "/logos/qidi.png",
