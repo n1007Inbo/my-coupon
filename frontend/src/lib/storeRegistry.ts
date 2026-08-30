@@ -265,10 +265,10 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "qidi-us-4",
-        code: "WELCOME10",
-        discount: "10% OFF",
-        title: "10% off coupon code sitewide on printers & parts",
-        description: "Save 10% on high-temp hotends, tungsten carbide nozzles, and accessories with verified code WELCOME10.",
+        code: "HIGH5",
+        discount: "5% OFF",
+        title: "5% off official newsletter coupon code (verified working)",
+        description: "Save 5% on all 3D printers, high-temp hotends, and accessories with verified code HIGH5.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -276,7 +276,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "qidi-us-5",
         code: "SH5",
         discount: "5% OFF",
-        title: "5% off first order discount code sitewide",
+        title: "5% off first order instant discount code sitewide",
         description: "Apply 5% instant discount across all 3D printers, filament rolls, and drying boxes with code SH5.",
         is_verified: true,
         expiry_date: "2026-12-31"
