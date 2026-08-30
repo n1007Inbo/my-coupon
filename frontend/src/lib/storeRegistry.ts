@@ -655,37 +655,37 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "dchouse-deal-1",
-        code: "DCHOUSE5",
+        code: "METHEWDIPPY",
         discount: "5% OFF",
-        title: "5% off sitewide discount code on lithium batteries & solar",
-        description: "Save 5% on 12V 100Ah LiFePO4 batteries, solar kits, and power inverters with code DCHOUSE5.",
+        title: "5% off promo code sitewide (verified working)",
+        description: "Save 5% on all 12V 100Ah LiFePO4 lithium batteries, solar panels, and inverters with code METHEWDIPPY.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "dchouse-deal-2",
-        code: "SOLAR10",
-        discount: "10% OFF",
-        title: "10% off off-grid solar kits, inverters & charge controllers",
-        description: "Get 10% instant discount on complete off-grid solar panels and charge controllers with code SOLAR10.",
+        code: "METHEWDIPPY",
+        discount: "5% OFF",
+        title: "5% off 12V 100Ah / 24V deep-cycle trolling motor & RV batteries",
+        description: "Get 5% instant discount on deep-cycle lithium marine and RV batteries with verified code METHEWDIPPY.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "dchouse-deal-3",
-        code: "50FOR500",
-        discount: "$50 OFF",
-        title: "$50 off code - purchase over $500 on battery banks",
-        description: "Save $50 on deep cycle 12V/24V lithium battery banks over $500 with code 50FOR500.",
+        code: "METHEWDIPPY",
+        discount: "5% OFF",
+        title: "5% off off-grid solar panels, inverters & charge controllers",
+        description: "Apply 5% discount on complete off-grid solar power systems with code METHEWDIPPY.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "dchouse-deal-4",
-        code: "100FOR1000",
-        discount: "$100 OFF",
-        title: "$100 off promo - orders over $1,000 on solar power systems",
-        description: "Get $100 instant discount on high-capacity solar battery systems over $1,000 with code 100FOR1000.",
+        code: "METHEWDIPPY",
+        discount: "EXTRA 5% OFF",
+        title: "Extra 5% off large capacity battery bank orders",
+        description: "Stack an extra 5% savings on all high-capacity lithium battery bank orders using code METHEWDIPPY.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -693,7 +693,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "dchouse-deal-5",
         code: "",
         discount: "UP TO 35%",
-        title: "Up to 35% off weekly flash sales on trolling motor batteries",
+        title: "Up to 35% off weekly flash sales on LiFePO4 power systems",
         description: "Save up to 35% on lightweight waterproof trolling motor and RV marine lithium batteries.",
         is_verified: true,
         expiry_date: "2026-12-31"
