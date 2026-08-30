@@ -58,6 +58,15 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "tl-deal-2",
+        code: "TL10",
+        discount: "10% OFF",
+        title: "10% off 100% grass-fed whey protein isolate & creatine HMB",
+        description: "Get 10% off clean grass-fed whey isolate and creatine supplements with code TL10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tl-deal-3",
         code: "SUBSCRIBE15",
         discount: "15% OFF",
         title: "15% off subscription orders + free gifts",
@@ -66,7 +75,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       },
       {
-        id: "tl-deal-3",
+        id: "tl-deal-4",
         code: "APP10",
         discount: "10% OFF",
         title: "10% off your entire first mobile app order",
@@ -75,7 +84,16 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       },
       {
-        id: "tl-deal-4",
+        id: "tl-deal-5",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off bulk pre-workout, BULK black & LEAN",
+        description: "Save 10% on best-selling BULK Pre-Workout and LEAN thermogenic with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tl-deal-6",
         code: "",
         discount: "FREE SHIPPING",
         title: "Free standard shipping on orders over $99",
@@ -617,6 +635,75 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "FREE SHIPPING",
         title: "Free tracked shipping on orders over $75",
         description: "Enjoy 100% free tracked shipping across the United States on all apparel orders over $75.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 11. DC HOUSE (LiFePO4 Lithium Batteries & Solar Power)
+  {
+    id: 632,
+    name: "DC House",
+    slug: "dc-house",
+    aliases: ["dchouse", "dc-house-power"],
+    logo: "/logos/dc-house.png",
+    website: "https://www.dchousepower.com/?ref=ikafrwml",
+    affiliate_url: "https://www.dchousepower.com/?ref=ikafrwml",
+    country: "US",
+    description: "High-performance LiFePO4 lithium batteries, off-grid solar kits, inverters, and trolling motor battery solutions.",
+    coupons: [
+      {
+        id: "dchouse-deal-1",
+        code: "DCHOUSE5",
+        discount: "5% OFF",
+        title: "5% off sitewide discount code on lithium batteries & solar",
+        description: "Save 5% on 12V 100Ah LiFePO4 batteries, solar kits, and power inverters with code DCHOUSE5.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dchouse-deal-2",
+        code: "SOLAR10",
+        discount: "10% OFF",
+        title: "10% off off-grid solar kits, inverters & charge controllers",
+        description: "Get 10% instant discount on complete off-grid solar panels and charge controllers with code SOLAR10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dchouse-deal-3",
+        code: "50FOR500",
+        discount: "$50 OFF",
+        title: "$50 off code - purchase over $500 on battery banks",
+        description: "Save $50 on deep cycle 12V/24V lithium battery banks over $500 with code 50FOR500.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dchouse-deal-4",
+        code: "100FOR1000",
+        discount: "$100 OFF",
+        title: "$100 off promo - orders over $1,000 on solar power systems",
+        description: "Get $100 instant discount on high-capacity solar battery systems over $1,000 with code 100FOR1000.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dchouse-deal-5",
+        code: "",
+        discount: "UP TO 35%",
+        title: "Up to 35% off weekly flash sales on trolling motor batteries",
+        description: "Save up to 35% on lightweight waterproof trolling motor and RV marine lithium batteries.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dchouse-deal-6",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US doorstep delivery on all battery orders",
+        description: "Enjoy 100% free tracked US doorstep delivery with 10-year warranty on all DC House power systems.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
