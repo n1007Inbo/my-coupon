@@ -311,11 +311,18 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     window.location.href = storeUrl;
   };
 
-  // Dynamically find matching stores based on the search query
+  // Dynamically find matching stores based on the search query with automatic deduplication
   const matchedStores = useMemo(() => {
     if (searchQuery.trim() === "") return [];
     const query = searchQuery.toLowerCase();
-    return initialStores.filter(store => store && store.name && store.name.toLowerCase().includes(query));
+    const matches = initialStores.filter(store => store && store.name && store.name.toLowerCase().includes(query));
+    const seen = new Set<string>();
+    return matches.filter(store => {
+      const key = store.name.toLowerCase().replace(/[^a-z0-9]/g, "");
+      if (seen.has(key)) return false;
+      seen.add(key);
+      return true;
+    });
   }, [initialStores, searchQuery]);
 
   return (
