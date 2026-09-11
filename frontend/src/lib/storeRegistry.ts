@@ -882,6 +882,66 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 14. TENWAYS (Global / US / EU - Premium City Electric Bikes)
+  {
+    id: 614,
+    name: "Tenways",
+    slug: "tenways",
+    aliases: ["tenways-ebikes", "tenways-us", "tenways-uk", "tenways-nl", "tenways-coupons"],
+    logo: "/logos/tenways.png",
+    website: "https://www.tenways.com/?ref=promoregistry",
+    affiliate_url: "https://www.tenways.com/?ref=promoregistry",
+    country: "US",
+    description: "Premium lightweight electric bikes engineered for effortless urban commuting with silent belt drives, smart torque sensors, and sleek battery integration.",
+    coupons: [
+      {
+        id: "tw-deal-1",
+        code: "TENWAYS100",
+        discount: "$100 OFF",
+        title: "$100 off any adult city e-bike",
+        description: "Save $100 on CGO600 Pro, CGO800S, AGO X, and AGO T smart e-bikes with code TENWAYS100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tw-deal-2",
+        code: "RIDEPRO",
+        discount: "$150 OFF",
+        title: "$150 off CGO600 Pro lightweight urban commuter",
+        description: "Get $150 instant savings on the ultra-lightweight CGO600 Pro city commuter with code RIDEPRO.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tw-deal-3",
+        code: "GEAR50",
+        discount: "$50 OFF",
+        title: "$50 off official accessories with any bike order",
+        description: "Save $50 on mudguards, pannier bags, helmets, and kickstands with code GEAR50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tw-deal-4",
+        code: "WELCOME50",
+        discount: "$50 OFF",
+        title: "$50 off your first purchase sitewide",
+        description: "Enjoy $50 welcome discount on your first Tenways smart electric bike order with code WELCOME50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tw-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & 14-day home trial",
+        description: "Enjoy 100% free doorstep delivery plus a 14-day test ride guarantee on all e-bike models.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
