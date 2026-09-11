@@ -942,6 +942,306 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 15. DESKTRONIC (UK / EU / US - Motorized Height-Adjustable Standing Desks)
+  {
+    id: 615,
+    name: "Desktronic",
+    slug: "desktronic",
+    aliases: ["desktronic-uk", "desktronic-nl", "desktronic-us", "desktronic-se", "desktronic-de"],
+    logo: "/logos/desktronic.png",
+    website: "https://desktronic.co.uk/?ref=promoregistry",
+    affiliate_url: "https://desktronic.co.uk/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "European leader in premium ergonomic standing desks, smart motorized height-adjustable workstations, and orthopedic office chairs designed for health and productivity.",
+    coupons: [
+      {
+        id: "dt-deal-1",
+        code: "METHEWDIPPY",
+        discount: "£15 / $15 OFF",
+        title: "Save £15 / $15 off sitewide on motorized standing desks & chairs",
+        description: "Apply verified code METHEWDIPPY at checkout for an instant £15 or $15 discount on HomePro and Flytta desks.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dt-deal-2",
+        code: "METHEW",
+        discount: "€15 KORTING",
+        title: "€15 korting op in hoogte verstelbare bureaus en ergonomische stoelen",
+        description: "Pak direct €15 korting op je sta-bureau met actiecode METHEW. Geverifieerd en werkend!",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dt-deal-3",
+        code: "DESK10",
+        discount: "10% OFF",
+        title: "10% off accessories, monitor arms & anti-fatigue mats",
+        description: "Save 10% on ergonomic accessories including heavy-duty monitor arms and anti-fatigue mats with code DESK10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dt-deal-4",
+        code: "WELCOME20",
+        discount: "£20 / €20 OFF",
+        title: "£20 / €20 welcome voucher on your first standing desk",
+        description: "Enjoy £20 / €20 off your first motorized sit-stand desk purchase sitewide with code WELCOME20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dt-deal-5",
+        code: "",
+        discount: "FREE DELIVERY",
+        title: "Free tracked UK, NL & EU shipping + 5-year warranty",
+        description: "Enjoy 100% free tracked delivery across the UK and Europe plus a 5-year peace-of-mind warranty on all frames & motors.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 16. BOUQUETS BY POST (UK - Fresh Hand-Tied Flowers & Letterbox Gifts)
+  {
+    id: 616,
+    name: "Bouquets By Post",
+    slug: "bouquets-by-post",
+    aliases: ["bouquets-by-post-uk", "bouquetsbypost"],
+    logo: "/logos/bouquets-by-post.png",
+    website: "https://www.bouquetsbypost.co.uk/?ref=promoregistry",
+    affiliate_url: "https://www.bouquetsbypost.co.uk/?ref=promoregistry",
+    country: "UK",
+    description: "Fresh hand-tied flower bouquets, letterbox floral gifts, and luxury celebration hampers delivered nationwide across the UK with guaranteed freshness.",
+    coupons: [
+      {
+        id: "bbp-deal-1",
+        code: "BOUQUET15",
+        discount: "15% OFF",
+        title: "15% off hand-tied flower bouquets sitewide",
+        description: "Save 15% on fresh florist-designed bouquets, birthday blooms, and anniversary arrangements with code BOUQUET15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bbp-deal-2",
+        code: "LETTERBOX10",
+        discount: "10% OFF",
+        title: "10% off letterbox flowers & letterbox gifts",
+        description: "Get 10% off letterbox flowers carefully packed in protective packaging that fits directly through the door with code LETTERBOX10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bbp-deal-3",
+        code: "SAVE20",
+        discount: "20% OFF",
+        title: "20% off luxury bouquets, scented roses & hampers",
+        description: "Enjoy 20% discount on premium floral collections, British roses, and gift hampers with code SAVE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bbp-deal-4",
+        code: "WELCOME10",
+        discount: "10% OFF",
+        title: "Extra 10% off automatically applied at checkout",
+        description: "Claim an extra 10% welcome discount on your first order with verified code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bbp-deal-5",
+        code: "",
+        discount: "FREE DELIVERY",
+        title: "Free UK tracked delivery + free personalized greetings card",
+        description: "Every floral bouquet includes 100% free tracked Royal Mail delivery across the UK plus a complimentary card.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 17. PARC ASTÉRIX (France / EU - Parc d'Attractions & Hôtels Gaulois)
+  {
+    id: 617,
+    name: "Parc Astérix",
+    slug: "parc-asterix",
+    aliases: ["parc-asterix-fr", "parcasterix"],
+    logo: "/logos/parc-asterix-fr.png",
+    website: "https://www.parcasterix.fr/?ref=promoregistry",
+    affiliate_url: "https://www.parcasterix.fr/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Le célèbre parc d'attractions gaulois offrant plus de 50 attractions sensationnelles, des spectacles vivants uniques et des séjours immersifs dans ses hôtels thématiques.",
+    coupons: [
+      {
+        id: "pa-deal-1",
+        code: "ASTERIX25",
+        discount: "-25% SÉJOUR",
+        title: "Jusqu'à 25% de réduction sur les séjours Hôtel + Billets de Parc",
+        description: "Profitez de 25% de remise sur les séjours aux 3 hôtels du Parc Astérix (Les Quais de Lutèce, La Cité Suspendue, Les Trois Hiboux) avec accès au parc inclus.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pa-deal-2",
+        code: "FUTE49",
+        discount: "DÈS 49€",
+        title: "Billet Futé dès 49€ en réservation anticipée en ligne",
+        description: "Économisez sur vos billets datés en réservant au moins 7 jours à l'avance en ligne. Tarif préférentiel garanti.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pa-deal-3",
+        code: "TRIBU10",
+        discount: "-10% TRIBU",
+        title: "Tarif Tribu & Famille dès 5 billets achetés simultanément",
+        description: "Bénéficiez d'une réduction spéciale groupe et famille sur les entrées journée avec l'offre Billet Tribu.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pa-deal-4",
+        code: "PASS2026",
+        discount: "PASS GAULOIS",
+        title: "Pass Saison Gaulois : accès illimité + parking offert toute l'année",
+        description: "Accès illimité toute la saison aux attractions, nocturnes Peur sur le Parc et -10% dans les boutiques et restaurants.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pa-deal-5",
+        code: "",
+        discount: "ENTRÉE GRATUITE",
+        title: "Entrée 100% gratuite pour les enfants de moins de 3 ans",
+        description: "Tous les enfants de moins de 3 ans profitent d'un accès totalement gratuit à l'ensemble du parc et des spectacles.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 18. YOUNG ELECTRIC BIKES (US - High-Performance All-Terrain Electric Bikes)
+  {
+    id: 618,
+    name: "Young Electric Bikes",
+    slug: "young-electric-bikes",
+    aliases: ["young-electric", "young-electric-us", "youngelectricbikes"],
+    logo: "/logos/young-electric-bikes.png",
+    website: "https://youngelectricbikes.com/?ref=promoregistry",
+    affiliate_url: "https://youngelectricbikes.com/?ref=promoregistry",
+    country: "US",
+    description: "High-performance electric mountain bikes, fat-tire all-terrain e-bikes, and urban commuters built with powerful motors, long-range batteries, and rugged frames.",
+    coupons: [
+      {
+        id: "yeb-deal-1",
+        code: "YOUNG100",
+        discount: "$100 OFF",
+        title: "$100 off any adult electric bike model sitewide",
+        description: "Save $100 on all-terrain fat tire, hunting, and folding e-bikes with verified code YOUNG100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "yeb-deal-2",
+        code: "EBIKE20",
+        discount: "20% OFF",
+        title: "20% off sitewide on e-bikes & replacement battery packs",
+        description: "Get 20% instant discount across all electric bicycles, extra batteries, and chargers with code EBIKE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "yeb-deal-3",
+        code: "ACCESSORY15",
+        discount: "15% OFF",
+        title: "15% off bike racks, waterproof panniers & headlights",
+        description: "Save 15% on essential riding accessories, helmets, bike covers, and cargo racks with code ACCESSORY15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "yeb-deal-4",
+        code: "WELCOME50",
+        discount: "$50 OFF",
+        title: "$50 welcome voucher on your first order",
+        description: "Claim $50 instant discount on your first Young Electric bike order at checkout with code WELCOME50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "yeb-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US doorstep delivery & 2-year manufacturer warranty",
+        description: "Enjoy 100% free freight shipping across the United States plus a 2-year warranty and 14-day return trial.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 19. MAPLE PRIME (US - Luxury Designer Fragrances, Perfumes & Colognes)
+  {
+    id: 619,
+    name: "Maple Prime",
+    slug: "maple-prime",
+    aliases: ["maple-prime-us", "mapleprime"],
+    logo: "/logos/maple-prime.png",
+    website: "https://mapleprime.com/?ref=promoregistry",
+    affiliate_url: "https://mapleprime.com/?ref=promoregistry",
+    country: "US",
+    description: "Premier online luxury fragrance destination offering 100% authentic designer perfumes, colognes, niche scents, and premium beauty collections at discount prices.",
+    coupons: [
+      {
+        id: "mp-deal-1",
+        code: "Methew",
+        discount: "10% OFF",
+        title: "10% off sitewide on luxury perfumes & designer colognes",
+        description: "Official Google Ads verified coupon: Enter code Methew at checkout for 10% off authentic luxury scents.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "mp-deal-2",
+        code: "FRAGRANCE15",
+        discount: "15% OFF",
+        title: "15% off niche fragrances and gift sets over $120",
+        description: "Save 15% on best-selling designer perfume gift bundles and Eau de Parfum sprays with code FRAGRANCE15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "mp-deal-3",
+        code: "BEAUTY10",
+        discount: "10% OFF",
+        title: "10% off luxury skincare, bath collections & lotions",
+        description: "Enjoy 10% off luxury skincare essentials and scented bath collections with code BEAUTY10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "mp-deal-4",
+        code: "WELCOME5",
+        discount: "$5 OFF",
+        title: "$5 off any fragrance purchase for new customers",
+        description: "Save $5 instantly on any designer perfume or cologne order with code WELCOME5.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "mp-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US tracked shipping on all fragrance orders",
+        description: "Enjoy 100% free tracked shipping across the United States with guaranteed tamper-proof packaging.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
