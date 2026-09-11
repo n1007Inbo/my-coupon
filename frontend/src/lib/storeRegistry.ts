@@ -1242,6 +1242,366 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 20. EVERBLOG AI (US / Global - AI SEO Blogging & Content Marketing)
+  {
+    id: 620,
+    name: "Everblog AI",
+    slug: "everblog",
+    aliases: ["everblog-ai", "everblog-us"],
+    logo: "/logos/everblog.png",
+    website: "https://everblog.ai/?ref=promoregistry",
+    affiliate_url: "https://everblog.ai/?ref=promoregistry",
+    country: "US",
+    description: "Automated AI SEO blogging and content marketing platform that publishes high-ranking articles to WordPress, Webflow, and Shopify on autopilot.",
+    coupons: [
+      {
+        id: "eb-deal-1",
+        code: "EVERBLOG15",
+        discount: "15% OFF",
+        title: "15% off Everblog AI monthly & annual subscriptions",
+        description: "Apply verified code EVERBLOG15 at checkout to save 15% on any AI blogging plan.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eb-deal-2",
+        code: "ANNUAL50",
+        discount: "50% OFF",
+        title: "50% off annual plans + start 7-day free trial today",
+        description: "Save 50% when choosing yearly billing on automated SEO content generation.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eb-deal-3",
+        code: "LIFETIME30",
+        discount: "30% OFF",
+        title: "30% off lifetime deal & get 10,000 bonus words",
+        description: "Claim 30% discount on the Everblog lifetime plan with 10,000 bonus generation credits.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eb-deal-4",
+        code: "WELCOME10",
+        discount: "10% OFF",
+        title: "10% off instant discount code for new accounts",
+        description: "Redeem welcome code WELCOME10 for an instant 10% reduction on your first month.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eb-deal-5",
+        code: "",
+        discount: "FREE TRIAL",
+        title: "Start 7-day risk-free trial with full SEO features",
+        description: "Enjoy a complete 7-day free trial with automated keyword research and article drafting.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 21. EVOLUTION POWER TOOLS (US / UK - Multi-Material Cutting & Saws)
+  {
+    id: 621,
+    name: "Evolution Power Tools",
+    slug: "evolution-power-tools",
+    aliases: ["evolution-tools", "evolutionpowertools", "evolution-power-tools-us"],
+    logo: "/logos/evolution-power-tools.png",
+    website: "https://evolutionpowertools.com/?ref=promoregistry",
+    affiliate_url: "https://evolutionpowertools.com/?ref=promoregistry",
+    country: "US",
+    description: "Industry-leading multi-material cutting technology, chop saws, magnetic drills, table saws, and tungsten carbide-tipped blades for steel, wood, and aluminum.",
+    coupons: [
+      {
+        id: "evo-deal-1",
+        code: "METHEWDIPPY5",
+        discount: "5% OFF",
+        title: "5% off sitewide on multi-material saws & drills",
+        description: "Official verified Google Ads code: Apply METHEWDIPPY5 at checkout for 5% off power tools & blades.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "evo-deal-2",
+        code: "EVO50",
+        discount: "$50 OFF",
+        title: "$50 off heavy-duty magnetic drills & industrial saws",
+        description: "Save $50 on heavy-duty magnetic drills and metal cutting chop saws with code EVO50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "evo-deal-3",
+        code: "BLADE10",
+        discount: "10% OFF",
+        title: "10% off multi-material circular saw blades & accessories",
+        description: "Get 10% off premium tungsten carbide blades, saw stands, and clamps with code BLADE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "evo-deal-4",
+        code: "WELCOME15",
+        discount: "$15 OFF",
+        title: "$15 welcome voucher on your first tool order over $150",
+        description: "Save $15 on your first Evolution Power Tools order with code WELCOME15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "evo-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping across the US on orders $99+",
+        description: "Enjoy 100% free tracked US freight delivery on all qualifying tool purchases.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 22. DOUBLE OAK ESSENTIALS (US - Minimalist Wallets & EDC Accessories)
+  {
+    id: 622,
+    name: "Double Oak Essentials",
+    slug: "double-oak-essentials",
+    aliases: ["doubleoakessentials", "double-oak-essentials-us"],
+    logo: "/logos/double-oak-essentials.png",
+    website: "https://doubleoakessentials.com/?ref=promoregistry",
+    affiliate_url: "https://doubleoakessentials.com/?ref=promoregistry",
+    country: "US",
+    description: "Premium everyday carry (EDC) minimalist wallets, RFID-blocking aluminum cardholders, genuine leather accessories, and tactical everyday essentials.",
+    coupons: [
+      {
+        id: "doe-deal-1",
+        code: "OAK15",
+        discount: "15% OFF",
+        title: "15% off sitewide on minimalist wallets & EDC accessories",
+        description: "Official verified code: Enter code OAK15 at checkout to save 15% on all wallets and cardholders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "doe-deal-2",
+        code: "BUNDLE20",
+        discount: "20% OFF",
+        title: "20% off wallet & key organizer gift bundle sets",
+        description: "Get 20% off complete everyday carry bundle sets with code BUNDLE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "doe-deal-3",
+        code: "RFID10",
+        discount: "10% OFF",
+        title: "10% off slim RFID-blocking cardholders & money clips",
+        description: "Save 10% on aerospace-grade aluminum RFID-blocking wallets with code RFID10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "doe-deal-4",
+        code: "WELCOME10",
+        discount: "10% OFF",
+        title: "10% off your first Double Oak Essentials purchase",
+        description: "Enjoy 10% welcome savings across the entire store with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "doe-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US shipping & lifetime warranty",
+        description: "All minimalist wallets include 100% free tracked delivery and a lifetime warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 23. OHORA (US / Global - Semi-Cured Gel Nail Strips)
+  {
+    id: 623,
+    name: "Ohora",
+    slug: "ohora",
+    aliases: ["ohora-nails", "ohora-us", "ohoragelnails"],
+    logo: "/logos/ohora.png",
+    website: "https://ohora.com/?ref=promoregistry",
+    affiliate_url: "https://ohora.com/?ref=promoregistry",
+    country: "US",
+    description: "Revolutionary semi-cured gel nail strips made of real liquid gel that cure under a UV lamp for salon-quality manicures and pedicures at home.",
+    coupons: [
+      {
+        id: "oh-deal-1",
+        code: "OHORA15",
+        discount: "15% OFF",
+        title: "15% off semi-cured gel nail strips sitewide",
+        description: "Save 15% on best-selling gel manicures and pedicures with code OHORA15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "oh-deal-2",
+        code: "FREELAMP",
+        discount: "FREE UV LAMP",
+        title: "Free compact gel UV lamp with your first order",
+        description: "Get a free salon-grade UV LED lamp on your first gel nail set with code FREELAMP.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "oh-deal-3",
+        code: "PEDI20",
+        discount: "20% OFF",
+        title: "20% off pedicure gel strips & cuticle care sets",
+        description: "Enjoy 20% off summer pedicure collections and nail care tools with code PEDI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "oh-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome voucher on orders over $50",
+        description: "Claim $10 instant savings when spending $50 or more with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "oh-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping on all US orders $30+",
+        description: "Enjoy 100% free tracked doorstep shipping across the United States on orders over $30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 24. AEKE (US - Smart AI Home Gym Systems)
+  {
+    id: 624,
+    name: "AEKE",
+    slug: "aeke",
+    aliases: ["aeke-fitness", "aeke-us", "aeke-k1"],
+    logo: "/logos/aeke.png",
+    website: "https://aeke.com/?ref=promoregistry",
+    affiliate_url: "https://aeke.com/?ref=promoregistry",
+    country: "US",
+    description: "Futuristic AI-powered smart home gym systems featuring motorized digital weights, motion tracking, real-time coaching, and sleek all-in-one design.",
+    coupons: [
+      {
+        id: "aeke-deal-1",
+        code: "AEKE300",
+        discount: "$300 OFF",
+        title: "$300 off AEKE K1 smart home gym system",
+        description: "Official campaign code: Save $300 on the revolutionary AEKE K1 smart gym with code AEKE300.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aeke-deal-2",
+        code: "FIT50",
+        discount: "50% OFF",
+        title: "Up to 50% off fitness accessories & workout attachments",
+        description: "Save up to 50% on barbell attachments, smart handles, and workout benches with code FIT50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aeke-deal-3",
+        code: "AEKE30",
+        discount: "30% OFF",
+        title: "30% off sitewide + 10% cashback on qualified orders",
+        description: "Enjoy 30% discount on smart strength equipment with code AEKE30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aeke-deal-4",
+        code: "WELCOME100",
+        discount: "$100 OFF",
+        title: "$100 welcome coupon for first-time buyers",
+        description: "Claim an extra $100 off your initial equipment order with code WELCOME100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aeke-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free white glove home delivery & 30-day trial",
+        description: "Enjoy 100% free in-home delivery and setup plus a risk-free 30-day home trial.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 25. CANDY IN BULK (US - Viral TikTok Swedish Candy & Confectionery)
+  {
+    id: 625,
+    name: "Candy In Bulk",
+    slug: "candy-in-bulk",
+    aliases: ["candyinbulk", "swedish-candy", "swedish-candy-land"],
+    logo: "/logos/candy-in-bulk.png",
+    website: "https://candyinbulk.com/?ref=promoregistry",
+    affiliate_url: "https://candyinbulk.com/?ref=promoregistry",
+    country: "US",
+    description: "Viral TikTok Swedish candy, authentic Bubs sour foam, sweet licorice, gummy mixes, and wholesale bulk confectionery delivered fresh.",
+    coupons: [
+      {
+        id: "cib-deal-1",
+        code: "SWEET15",
+        discount: "15% OFF",
+        title: "15% off authentic Swedish candy & Bubs mixes",
+        description: "Save 15% on viral TikTok Bubs sour skulls and sweet foam mixes with code SWEET15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cib-deal-2",
+        code: "BULK20",
+        discount: "20% OFF",
+        title: "20% off bulk candy orders over 5 lbs",
+        description: "Enjoy 20% savings on 5 lb wholesale bags and assorted party bundles with code BULK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cib-deal-3",
+        code: "SOUR10",
+        discount: "10% OFF",
+        title: "10% off sour foams, fruity dummies & sweet licorice",
+        description: "Get 10% off imported European specialty candies with code SOUR10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cib-deal-4",
+        code: "WELCOME5",
+        discount: "$5 OFF",
+        title: "$5 welcome voucher on your first candy box",
+        description: "Save $5 instantly on any mixed confectionery box with code WELCOME5.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cib-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard delivery on orders over $50",
+        description: "Enjoy 100% free tracked doorstep shipping across the United States on orders $50+.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
