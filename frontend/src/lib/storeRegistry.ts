@@ -1602,6 +1602,306 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 26. HEXCLAD (US / Global - Gordon Ramsay Hybrid Non-Stick Cookware)
+  {
+    id: 626,
+    name: "HexClad",
+    slug: "hexclad",
+    aliases: ["hexclad-cookware", "hexclad-hybrid", "hexclad-us"],
+    logo: "/logos/hexclad.svg",
+    website: "https://hexclad.com/?ref=promoregistry",
+    affiliate_url: "https://hexclad.com/?ref=promoregistry",
+    country: "US",
+    description: "Revolutionary patented hybrid non-stick cookware endorsed by Michelin-star chef Gordon Ramsay. Combines stainless steel durability with effortless non-stick performance.",
+    coupons: [
+      {
+        id: "hex-deal-1",
+        code: "HEX10",
+        discount: "10% OFF",
+        title: "10% off sitewide on hybrid cookware & chef knives",
+        description: "Apply code HEX10 at checkout for an instant 10% discount on frying pans, pots, and Japanese steel knife sets.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hex-deal-2",
+        code: "COOK40",
+        discount: "UP TO 40% OFF",
+        title: "Up to 40% off complete hybrid cookware sets",
+        description: "Save up to 40% when purchasing complete 6-piece, 7-piece, and 12-piece hybrid bundle sets.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hex-deal-3",
+        code: "RAMSAY100",
+        discount: "$100 OFF",
+        title: "$100 off 12-piece hybrid stainless steel set",
+        description: "Save $100 instantly on the flagship 12-piece Gordon Ramsay endorsed hybrid cookware collection.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hex-deal-4",
+        code: "WOK15",
+        discount: "15% OFF",
+        title: "15% off hybrid woks, roasting pans & Dutch ovens",
+        description: "Get 15% discount on specialty woks, griddles, and deep roasting pans with code WOK15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hex-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US tracked shipping + lifetime warranty",
+        description: "All HexClad orders include 100% free delivery across the US with a full lifetime manufacturer warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 27. COZY EARTH (US - Oprah's Favorite Luxury Bamboo Bedding & Loungewear)
+  {
+    id: 627,
+    name: "Cozy Earth",
+    slug: "cozy-earth",
+    aliases: ["cozyearth", "cozy-earth-bedding", "cozy-earth-us"],
+    logo: "/logos/cozy-earth.svg",
+    website: "https://cozyearth.com/?ref=promoregistry",
+    affiliate_url: "https://cozyearth.com/?ref=promoregistry",
+    country: "US",
+    description: "Ultra-luxurious premium bamboo sheet sets, cooling duvet covers, temperature-regulating pajamas, and plush waffle bath towels voted Oprah's Favorite Things.",
+    coupons: [
+      {
+        id: "ce-deal-1",
+        code: "COZY40",
+        discount: "40% OFF",
+        title: "40% off sitewide bamboo sheet sets & luxury bedding",
+        description: "Exclusive verified voucher: Use code COZY40 at checkout to save 40% on 100% viscose bamboo sheets and duvet sets.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ce-deal-2",
+        code: "SLEEP25",
+        discount: "25% OFF",
+        title: "25% off ultra-soft bamboo pajama sets & lounge robes",
+        description: "Enjoy 25% off moisture-wicking, breathable loungewear, nightshirts, and robes with code SLEEP25.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ce-deal-3",
+        code: "BATH30",
+        discount: "30% OFF",
+        title: "30% off plush waffle bath sheets & towel bundles",
+        description: "Save 30% on premium ribbed waffle towels and luxury spa bath mats with code BATH30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ce-deal-4",
+        code: "WELCOME50",
+        discount: "$50 OFF",
+        title: "$50 welcome credit on orders over $250",
+        description: "Claim an extra $50 discount on your first luxury linen purchase with code WELCOME50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ce-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US delivery + 100-night risk-free sleep trial",
+        description: "Enjoy free doorstep shipping across the United States plus an industry-leading 100-night sleep guarantee.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 28. LIQUID I.V. (US - Electrolyte Hydration Multipliers)
+  {
+    id: 628,
+    name: "Liquid I.V.",
+    slug: "liquid-iv",
+    aliases: ["liquidiv", "liquid-iv-hydration", "liquid-iv-us"],
+    logo: "/logos/liquid-iv.svg",
+    website: "https://www.liquid-iv.com/?ref=promoregistry",
+    affiliate_url: "https://www.liquid-iv.com/?ref=promoregistry",
+    country: "US",
+    description: "Great-tasting electrolyte drink mix powered by Cellular Transport Technology (CTT) designed to hydrate faster and more efficiently than water alone.",
+    coupons: [
+      {
+        id: "liv-deal-1",
+        code: "HYDRATE20",
+        discount: "20% OFF",
+        title: "20% off sitewide on all hydration multipliers",
+        description: "Apply verified code HYDRATE20 at checkout for 20% off lemon lime, strawberry, and golden cherry packets.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "liv-deal-2",
+        code: "MULTI25",
+        discount: "25% OFF",
+        title: "25% off 30-pack & 60-pack bulk hydration bundles",
+        description: "Save 25% on family-sized bulk packs and flavor variety bundles with code MULTI25.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "liv-deal-3",
+        code: "ENERGY15",
+        discount: "15% OFF",
+        title: "15% off Energy Multiplier & Sleep Multiplier mixes",
+        description: "Get 15% discount on matcha energy blends and melatonin sleep aid packets with code ENERGY15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "liv-deal-4",
+        code: "WELCOME5",
+        discount: "$5 OFF",
+        title: "$5 off any starter order for new customers",
+        description: "Redeem welcome code WELCOME5 for $5 off your initial electrolyte drink order.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "liv-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping across the US on orders $35+",
+        description: "Enjoy 100% free tracked delivery across the United States on all qualifying orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 29. CARAWAY HOME (US - Non-Toxic Ceramic Non-Stick Cookware)
+  {
+    id: 629,
+    name: "Caraway",
+    slug: "caraway",
+    aliases: ["caraway-home", "carawayhome", "caraway-cookware"],
+    logo: "/logos/caraway.svg",
+    website: "https://www.carawayhome.com/?ref=promoregistry",
+    affiliate_url: "https://www.carawayhome.com/?ref=promoregistry",
+    country: "US",
+    description: "Thoughtfully designed non-toxic ceramic non-stick cookware, bakeware, food storage, and kitchen prep sets made without PTFE, PFOA, lead, or toxic chemicals.",
+    coupons: [
+      {
+        id: "cw-deal-1",
+        code: "CARAWAY20",
+        discount: "20% OFF",
+        title: "20% off sitewide on non-toxic ceramic cookware",
+        description: "Save 20% on ceramic frying pans, sauce pans, and Dutch ovens with code CARAWAY20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cw-deal-2",
+        code: "COOKSET150",
+        discount: "$150 OFF",
+        title: "$150 off 4-piece ceramic cookware set with organizers",
+        description: "Get $150 instant savings on the full Cookware Set complete with magnetic pan racks and canvas lid holder.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cw-deal-3",
+        code: "BAKE15",
+        discount: "15% OFF",
+        title: "15% off non-toxic ceramic bakeware & sheet pans",
+        description: "Enjoy 15% discount on muffin tins, baking sheets, and ceramic loaf pans with code BAKE15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cw-deal-4",
+        code: "WELCOME10",
+        discount: "10% OFF",
+        title: "10% welcome coupon on your first Caraway purchase",
+        description: "Enter code WELCOME10 at checkout for 10% off clean cooking essentials.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cw-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US delivery on orders $90+ & 30-day return trial",
+        description: "Enjoy 100% free doorstep shipping across the US with a 30-day risk-free in-home trial.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 30. AG1 / ATHLETIC GREENS (US / Global - Foundational Daily Nutrition)
+  {
+    id: 630,
+    name: "Athletic Greens",
+    slug: "athletic-greens",
+    aliases: ["ag1", "drinkag1", "athleticgreens", "ag1-athletic-greens"],
+    logo: "/logos/athletic-greens.svg",
+    website: "https://drinkag1.com/?ref=promoregistry",
+    affiliate_url: "https://drinkag1.com/?ref=promoregistry",
+    country: "US",
+    description: "Foundational daily nutrition supplement powder packing 75 vitamins, minerals, whole-food sourced superfoods, probiotics, and adaptogens into one daily scoop.",
+    coupons: [
+      {
+        id: "ag1-deal-1",
+        code: "VITAMINDK",
+        discount: "FREE BUNDLE",
+        title: "Free 1-year supply of Vitamin D3+K2 + 5 free travel packs",
+        description: "Get a free full bottle of Vitamin D3+K2 drops and 5 individual travel packs with your first AG1 order.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ag1-deal-2",
+        code: "WELCOMEKIT",
+        discount: "FREE GIFTS",
+        title: "Free premium AG1 shaker bottle & ceramic storage canister",
+        description: "Welcome gift: Stainless steel shaker and airtight canister included with initial subscription.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ag1-deal-3",
+        code: "DOUBLE20",
+        discount: "$20 OFF",
+        title: "$20 off double subscription monthly family bundle",
+        description: "Save $20 every month on the dual-pouch AG1 household health plan with code DOUBLE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ag1-deal-4",
+        code: "AG1FIRST",
+        discount: "10% OFF",
+        title: "10% off your first month of foundational nutrition",
+        description: "Save 10% on your initial monthly delivery of AG1 with verified code AG1FIRST.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ag1-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked delivery + 90-day money-back guarantee",
+        description: "Enjoy 100% free tracked delivery plus an unconditional 90-day money-back guarantee.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#2E2824"/>
+  <circle cx="45" cy="40" r="16" fill="none" stroke="#E6D7C3" stroke-width="3"/>
+  <path d="M45,28 Q52,40 45,52 Q38,40 45,28 Z" fill="#E6D7C3"/>
+  <text x="75" y="50" font-family="Georgia, serif" font-size="28" font-weight="700" letter-spacing="3" fill="#FFFFFF">COZY <tspan fill="#E6D7C3">EARTH</tspan></text>
+</svg>
