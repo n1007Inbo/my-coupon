@@ -822,6 +822,66 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 13. FILTER BABY (US Market - Dermatologist-Approved Skincare Water Filter)
+  {
+    id: 613,
+    name: "Filter Baby",
+    slug: "filter-baby",
+    aliases: ["filter-baby-coupons", "filterbaby", "filter-baby-us"],
+    logo: "/logos/filter-baby.png",
+    website: "https://filterbaby.com/discount/FILTER15?ref=promoregistry",
+    affiliate_url: "https://filterbaby.com/discount/FILTER15?ref=promoregistry",
+    country: "US",
+    description: "Clinically tested, dermatologist-approved faucet water filters designed to eliminate harsh tap water contaminants and promote clear, glowing skin.",
+    coupons: [
+      {
+        id: "fb-deal-1",
+        code: "FILTER15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all faucet filters & refills",
+        description: "Save 15% on the genuine Filterbaby 2.0 skincare water filter and replacements with code FILTER15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fb-deal-2",
+        code: "GLOW20",
+        discount: "20% OFF",
+        title: "20% off annual filter replacement subscriptions",
+        description: "Get 20% off yearly PRO refill subscriptions for continuous contaminant-free, skin-clearing water.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fb-deal-3",
+        code: "BUNDLE30",
+        discount: "30% OFF",
+        title: "Up to 30% off starter bundles & faucet adapters",
+        description: "Save up to 30% when ordering the Filterbaby Deluxe bundle complete with multi-fit universal adapters.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fb-deal-4",
+        code: "WELCOME10",
+        discount: "10% OFF",
+        title: "10% off your first purchase sitewide",
+        description: "Enjoy 10% off your entire first order of clinically proven skincare tap water filters with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fb-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US tracked shipping & 60-day money-back trial",
+        description: "Enjoy 100% free tracked delivery across the United States plus a risk-free 60-day money back guarantee.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
