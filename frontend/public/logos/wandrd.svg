@@ -1,7 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
-  <rect width="320" height="80" rx="12" fill="#111827"/>
-  <circle cx="45" cy="40" r="20" fill="#38BDF8" opacity="0.2"/>
-  <circle cx="45" cy="40" r="16" fill="none" stroke="#38BDF8" stroke-width="2.5"/>
-  <text x="45" y="47" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="900" fill="#38BDF8" text-anchor="middle">WA</text>
-  <text x="80" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" letter-spacing="1" fill="#FFFFFF">Wandrd</text>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 32" height="32" width="29">
+<g clip-path="url(#clip0_192_285)" id="Brand Mark">
+<path fill="white" d="M4.41077 15.1457L14.3145 26.2881L24.6069 15.1109L20.1482 3.76249H9.11316L4.41657 15.1515L4.41077 15.1457ZM14.2623 32L0.140625 15.9492L6.45012 0H22.8635L28.8626 15.9898L14.2652 32H14.2623Z" id="Vector"></path>
+<path fill="white" d="M8.02246 15.2647H20.9838L16.4148 7.1189L13.5458 11.3687L11.7037 9.17565L8.02246 15.2647Z" id="Vector_2"></path>
+</g>
+<defs>
+<clipPath id="clip0_192_285">
+<rect transform="translate(0.140625)" fill="white" height="32" width="28.7191"></rect>
+</clipPath>
+</defs>
 </svg>
