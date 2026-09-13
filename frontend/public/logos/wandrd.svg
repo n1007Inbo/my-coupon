@@ -1,11 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 29 32" height="32" width="29">
-<g clip-path="url(#clip0_192_285)" id="Brand Mark">
-<path fill="white" d="M4.41077 15.1457L14.3145 26.2881L24.6069 15.1109L20.1482 3.76249H9.11316L4.41657 15.1515L4.41077 15.1457ZM14.2623 32L0.140625 15.9492L6.45012 0H22.8635L28.8626 15.9898L14.2652 32H14.2623Z" id="Vector"></path>
-<path fill="white" d="M8.02246 15.2647H20.9838L16.4148 7.1189L13.5458 11.3687L11.7037 9.17565L8.02246 15.2647Z" id="Vector_2"></path>
-</g>
-<defs>
-<clipPath id="clip0_192_285">
-<rect transform="translate(0.140625)" fill="white" height="32" width="28.7191"></rect>
-</clipPath>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 90" width="320" height="90">
+  <!-- Iconic W slash emblem -->
+  <g transform="translate(15, 18)">
+    <path d="M 6 4 L 18 42 L 28 14 L 38 42 L 50 4" fill="none" stroke="#0f172a" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="82" y="53" font-family="'Arial Black', 'Inter', sans-serif" font-weight="900" font-size="34" letter-spacing="4" fill="#0f172a">WANDRD</text>
 </svg>
