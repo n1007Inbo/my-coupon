@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#0E121A"/>
+  <circle cx="45" cy="40" r="18" fill="none" stroke="#FF3344" stroke-width="3"/>
+  <line x1="27" y1="40" x2="63" y2="40" stroke="#FF3344" stroke-width="2"/>
+  <line x1="45" y1="22" x2="45" y2="58" stroke="#FF3344" stroke-width="2"/>
+  <circle cx="45" cy="40" r="4" fill="#FF3344"/>
+  <text x="75" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" letter-spacing="1" fill="#FFFFFF">OMTech<tspan fill="#FF3344"> Laser</tspan></text>
+</svg>

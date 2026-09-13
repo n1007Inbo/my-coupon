@@ -2262,6 +2262,786 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 37. OMTECH LASER (US - Precision CO2 Laser Cutters & Fiber Markers) [PENDING]
+  {
+    id: 637,
+    name: "OMTech Laser",
+    slug: "omtech-laser",
+    aliases: ["omtech", "omtechlaser", "omtech-us"],
+    logo: "/logos/omtech-laser.svg",
+    website: "https://omtechlaser.com/?ref=promoregistry",
+    affiliate_url: "https://omtechlaser.com/?ref=promoregistry",
+    country: "US",
+    description: "Leading manufacturer of precision CO2 laser engravers, fiber laser markers, and diode cutters for creators, artisans, and small business owners.",
+    coupons: [
+      {
+        id: "omt-deal-1",
+        code: "OMTECH5",
+        discount: "5% OFF",
+        title: "5% off sitewide on CO2 laser engravers & fiber markers",
+        description: "Apply code OMTECH5 at checkout for 5% off desktop CO2 and MOPA fiber laser engraving machines.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "omt-deal-2",
+        code: "LASER100",
+        discount: "$100 OFF",
+        title: "$100 off K40+ and Polar desktop laser cutters",
+        description: "Save $100 instantly on OMTech Polar and K40+ smart desktop laser cutters with code LASER100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "omt-deal-3",
+        code: "TUBE50",
+        discount: "$50 OFF",
+        title: "$50 off replacement CO2 laser glass tubes & chillers",
+        description: "Save $50 on industrial water chillers and high-output CO2 glass laser tubes with code TUBE50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "omt-deal-4",
+        code: "WELCOME50",
+        discount: "$50 OFF",
+        title: "$50 welcome voucher on your first machine purchase",
+        description: "Enjoy $50 welcome discount on your first laser cutting system with code WELCOME50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "omt-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free freight shipping across the US + 2-year warranty",
+        description: "All OMTech machines include 100% free freight delivery in the contiguous US and a 2-year warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 38. SHOPSOLAR (US - Off-Grid Solar Kits & Generators) [PENDING]
+  {
+    id: 638,
+    name: "ShopSolar",
+    slug: "shopsolar",
+    aliases: ["shopsolarkits", "shop-solar", "shopsolar-us"],
+    logo: "/logos/shopsolar.svg",
+    website: "https://shopsolarkits.com/?ref=promoregistry",
+    affiliate_url: "https://shopsolarkits.com/?ref=promoregistry",
+    country: "US",
+    description: "Premier complete off-grid solar power kits, expandable solar generator systems, solar panels, and lithium battery banks for cabins, RVs, and emergency backup.",
+    coupons: [
+      {
+        id: "ssk-deal-1",
+        code: "SOLAR100",
+        discount: "$100 OFF",
+        title: "$100 off complete off-grid solar kit bundles",
+        description: "Save $100 on complete off-grid cabin and RV solar power systems with code SOLAR100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ssk-deal-2",
+        code: "POWER50",
+        discount: "$50 OFF",
+        title: "$50 off EcoFlow, Bluetti, and rich solar generators",
+        description: "Get $50 instant discount on portable solar generator power stations with code POWER50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ssk-deal-3",
+        code: "PANEL10",
+        discount: "10% OFF",
+        title: "10% off rigid, flexible, and portable solar panels",
+        description: "Save 10% on high-efficiency monocrystalline solar panels with code PANEL10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ssk-deal-4",
+        code: "WELCOME100",
+        discount: "$100 OFF",
+        title: "$100 welcome coupon on orders over $1,500",
+        description: "Redeem welcome voucher WELCOME100 for $100 off your complete solar equipment package.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ssk-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US freight shipping + lifetime customer support",
+        description: "Enjoy 100% free tracked freight shipping across the US plus lifetime solar engineering support.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 39. INCREDIWEAR (US - Anti-Inflammatory Recovery Sleeves & Braces) [PENDING]
+  {
+    id: 639,
+    name: "Incrediwear",
+    slug: "incrediwear",
+    aliases: ["incrediwear-recovery", "incrediwear-us"],
+    logo: "/logos/incrediwear.svg",
+    website: "https://incrediwear.com/?ref=promoregistry",
+    affiliate_url: "https://incrediwear.com/?ref=promoregistry",
+    country: "US",
+    description: "Semiconductor-embedded anti-inflammatory recovery sleeves, braces, and socks that increase blood flow to reduce pain and accelerate healing.",
+    coupons: [
+      {
+        id: "inc-deal-1",
+        code: "INCREDI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on knee sleeves & recovery braces",
+        description: "Save 15% on patented circulation-boosting knee sleeves and back braces with code INCREDI15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inc-deal-2",
+        code: "HEAL20",
+        discount: "20% OFF",
+        title: "20% off active recovery bundles & circulation socks",
+        description: "Enjoy 20% discount on complete recovery kits and compression socks with code HEAL20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inc-deal-3",
+        code: "SLEEVE10",
+        discount: "10% OFF",
+        title: "10% off therapeutic ankle, elbow, and wrist sleeves",
+        description: "Get 10% off targeted joint support sleeves with code SLEEVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inc-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 off your first wellness recovery order over $60",
+        description: "Claim $10 instant checkout savings on your first order with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inc-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping on all US orders $50+",
+        description: "Enjoy 100% free tracked standard shipping on all US orders over $50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 40. ORIGIN (US - American Made Boots, Denim & Outerwear) [PENDING]
+  {
+    id: 640,
+    name: "Origin",
+    slug: "origin-maine",
+    aliases: ["origin", "originmaine", "origin-usa"],
+    logo: "/logos/origin-maine.svg",
+    website: "https://originmaine.com/?ref=promoregistry",
+    affiliate_url: "https://originmaine.com/?ref=promoregistry",
+    country: "US",
+    description: "100% American-made rugged work boots, denim jeans, durable hunting outerwear, fitness gear, and BJJ gis manufactured by Jocko Willink and Pete Roberts.",
+    coupons: [
+      {
+        id: "ori-deal-1",
+        code: "ORIGIN10",
+        discount: "10% OFF",
+        title: "10% off sitewide on American-made boots & denim jeans",
+        description: "Save 10% on handcrafted American-made leather work boots and raw denim with code ORIGIN10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ori-deal-2",
+        code: "BOOTS20",
+        discount: "$20 OFF",
+        title: "$20 off handcrafted leather heritage work & hunting boots",
+        description: "Get $20 instant savings on rugged Maine-built work and field boots with code BOOTS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ori-deal-3",
+        code: "JEANS15",
+        discount: "15% OFF",
+        title: "15% off Factory American durable denim & delta flex pants",
+        description: "Enjoy 15% discount on ultra-durable American denim and delta flex pants with code JEANS15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ori-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome discount on orders over $80",
+        description: "Save $10 on your first American-made apparel purchase with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ori-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US shipping on qualifying apparel & boots",
+        description: "Enjoy 100% free doorstep delivery across the United States on all qualifying orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 41. LONGER 3D (US / Global - Diode Laser Engravers & 3D Printers) [PENDING]
+  {
+    id: 641,
+    name: "LONGER 3D",
+    slug: "longer-3d",
+    aliases: ["longer3d", "longer", "longer-laser"],
+    logo: "/logos/longer3d.svg",
+    website: "https://www.longer3d.com/?ref=promoregistry",
+    affiliate_url: "https://www.longer3d.com/?ref=promoregistry",
+    country: "US",
+    description: "High-precision desktop diode laser engravers, UV LCD resin 3D printers, and fast FDM printers designed for makers, small workshops, and DIY creators.",
+    coupons: [
+      {
+        id: "lng-deal-1",
+        code: "LONGER30",
+        discount: "$30 OFF",
+        title: "$30 off RAY5 10W and 20W diode laser engravers",
+        description: "Save $30 instantly on the popular Longer RAY5 laser engraving series with code LONGER30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lng-deal-2",
+        code: "PRINT15",
+        discount: "15% OFF",
+        title: "15% off Orange resin 3D printers and UV curers",
+        description: "Enjoy 15% discount on high-resolution LCD resin printers with code PRINT15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lng-deal-3",
+        code: "LASER50",
+        discount: "$50 OFF",
+        title: "$50 off flagship B1 40W high-power laser cutter",
+        description: "Save $50 on the ultra-powerful Longer Laser B1 40W cutter with code LASER50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lng-deal-4",
+        code: "WELCOME20",
+        discount: "$20 OFF",
+        title: "$20 welcome voucher for first-time buyers",
+        description: "Claim $20 instant savings on any 3D printer or laser machine with code WELCOME20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lng-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US & EU delivery + 1-year warranty",
+        description: "All Longer machines include free doorstep delivery and a comprehensive 1-year warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 42. ENGWE BIKES (US / EU - Fat Tire Electric Bikes & Foldable Commuters) [APPROVED]
+  {
+    id: 642,
+    name: "Engwe",
+    slug: "engwe",
+    aliases: ["engwe-bikes", "engwe-eu", "engwe-us", "engwebikes"],
+    logo: "/logos/engwe.svg",
+    website: "https://engwe-bikes.com/?ref=promoregistry",
+    affiliate_url: "https://engwe-bikes.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "World-famous fat tire folding electric bikes, long-range all-terrain commuters, and high-torque dual motor e-bikes like Engine Pro, EP-2 Pro, and M20.",
+    coupons: [
+      {
+        id: "eng-deal-1",
+        code: "ENGWE100",
+        discount: "$100 OFF",
+        title: "$100 off any adult fat-tire electric bike sitewide",
+        description: "Save $100 on all adult folding and fat tire electric bikes with code ENGWE100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eng-deal-2",
+        code: "PRO50",
+        discount: "$50 OFF",
+        title: "$50 off Engine Pro and EP-2 Pro folding e-bikes",
+        description: "Get $50 instant savings on top-selling folding e-bike models with code PRO50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eng-deal-3",
+        code: "ACCESSORY20",
+        discount: "20% OFF",
+        title: "20% off extra lithium batteries, racks & bike bags",
+        description: "Save 20% on replacement high-capacity battery packs and cargo gear with code ACCESSORY20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eng-deal-4",
+        code: "WELCOME50",
+        discount: "$50 OFF",
+        title: "$50 welcome voucher on your first e-bike order",
+        description: "Claim $50 welcome discount on your initial e-bike purchase with code WELCOME50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eng-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free doorstep freight delivery across US & EU",
+        description: "Enjoy 100% free tracked freight shipping across the US and Europe with a 1-year warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 43. SIHOO (US / Global - Ergonomic Mesh Office Chairs & Desks) [APPROVED]
+  {
+    id: 643,
+    name: "Sihoo",
+    slug: "sihoo",
+    aliases: ["sihoo-chair", "sihoo-ergonomics", "sihoo-us"],
+    logo: "/logos/sihoo.svg",
+    website: "https://sihoo.com/?ref=promoregistry",
+    affiliate_url: "https://sihoo.com/?ref=promoregistry",
+    country: "US",
+    description: "Internationally renowned ergonomic office mesh chairs, adaptive dynamic lumbar support seating, and motorized sit-stand desks (Doro C300, M18, M57).",
+    coupons: [
+      {
+        id: "sih-deal-1",
+        code: "SIHOO30",
+        discount: "$30 OFF",
+        title: "$30 off Doro C300 & Doro S300 flagship ergonomic chairs",
+        description: "Save $30 on flagship Doro series adaptive lumbar office chairs with code SIHOO30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sih-deal-2",
+        code: "CHAIR15",
+        discount: "15% OFF",
+        title: "15% off sitewide on breathable mesh ergonomic chairs",
+        description: "Enjoy 15% discount across all ergonomic home and office desk chairs with code CHAIR15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sih-deal-3",
+        code: "M18DEAL",
+        discount: "$20 OFF",
+        title: "$20 off top-selling Sihoo M18 and M57 office chairs",
+        description: "Save $20 instantly on the best-selling M18 ergonomic high-back chair with code M18DEAL.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sih-deal-4",
+        code: "WELCOME15",
+        discount: "$15 OFF",
+        title: "$15 welcome coupon for first-time buyers",
+        description: "Claim $15 off your first ergonomic workspace purchase with code WELCOME15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sih-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US tracked shipping + 3-year warranty",
+        description: "Enjoy 100% free tracked doorstep shipping across the US plus an official 3-year warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 44. SYNTECH (US - VR Head Straps & Handheld Gaming Docks) [APPROVED]
+  {
+    id: 644,
+    name: "Syntech",
+    slug: "syntech",
+    aliases: ["syntechhome", "syntech-vr", "syntech-us"],
+    logo: "/logos/syntech.svg",
+    website: "https://syntechhome.com/?ref=promoregistry",
+    affiliate_url: "https://syntechhome.com/?ref=promoregistry",
+    country: "US",
+    description: "Ergonomic VR head straps, high-speed PC VR link cables, 6-in-1 Steam Deck docking stations, and charging docks for Meta Quest 3, Quest 2, and gaming handhelds.",
+    coupons: [
+      {
+        id: "syn-deal-1",
+        code: "SYNTECH15",
+        discount: "15% OFF",
+        title: "15% off sitewide on Meta Quest 3 head straps & docks",
+        description: "Save 15% on Quest 3 comfort head straps with battery and charging docks with code SYNTECH15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "syn-deal-2",
+        code: "DECK20",
+        discount: "20% OFF",
+        title: "20% off 6-in-1 Steam Deck & ROG Ally docking stations",
+        description: "Get 20% instant discount on 4K 60Hz HDMI docking stations with code DECK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "syn-deal-3",
+        code: "CABLE10",
+        discount: "10% OFF",
+        title: "10% off high-speed 16ft PC VR link cables",
+        description: "Save 10% on 16ft USB-C high-speed link cables for Meta Quest with code CABLE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "syn-deal-4",
+        code: "WELCOME5",
+        discount: "$5 OFF",
+        title: "$5 off any gaming or VR accessory order",
+        description: "Claim $5 instant checkout discount on any VR accessory with code WELCOME5.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "syn-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US standard delivery on orders over $35",
+        description: "Enjoy free tracked delivery across the United States on all orders $35+.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 45. TELESIN (US / Global - Action Camera Accessories & Mounts) [APPROVED]
+  {
+    id: 645,
+    name: "TELESIN",
+    slug: "telesin",
+    aliases: ["telesinstore", "telesin-action", "telesin-us"],
+    logo: "/logos/telesin.svg",
+    website: "https://www.telesinstore.com/?ref=promoregistry",
+    affiliate_url: "https://www.telesinstore.com/?ref=promoregistry",
+    country: "US",
+    description: "Top-rated action camera accessories, magnetic chest mounts, waterproof dive cases, ND filters, and triple fast-battery chargers for GoPro Hero, DJI Osmo, and Insta360.",
+    coupons: [
+      {
+        id: "tel-deal-1",
+        code: "TELESIN12",
+        discount: "12% OFF",
+        title: "12% off sitewide on action camera mounts & batteries",
+        description: "Save 12% on magnetic mounts, triple charger boxes, and selfie sticks with code TELESIN12.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tel-deal-2",
+        code: "GOPRO20",
+        discount: "20% OFF",
+        title: "20% off GoPro Hero 12 & Hero 13 battery and charger kits",
+        description: "Get 20% discount on high-capacity cold-weather battery packs with code GOPRO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tel-deal-3",
+        code: "MOUNT15",
+        discount: "15% OFF",
+        title: "15% off magnetic neck mounts, tripods & suction cups",
+        description: "Save 15% on quick-release POV magnetic neck mounts with code MOUNT15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tel-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $50",
+        description: "Claim $10 instant checkout savings on your first gear order with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tel-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide tracked delivery on orders $49+",
+        description: "Enjoy 100% free tracked international delivery on all qualifying action camera orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 46. CARLUEX (US / Global - Wireless CarPlay AI Video Boxes) [APPROVED]
+  {
+    id: 646,
+    name: "CARLUEX",
+    slug: "carluex",
+    aliases: ["carluex-store", "carluex-carplay", "carluex-us"],
+    logo: "/logos/carluex.svg",
+    website: "https://www.carluex.store/?ref=promoregistry",
+    affiliate_url: "https://www.carluex.store/?ref=promoregistry",
+    country: "US",
+    description: "High-performance multimedia Android AI video boxes and streaming adapters that turn factory wired Apple CarPlay into full wireless Android 13 with Netflix & YouTube.",
+    coupons: [
+      {
+        id: "clx-deal-1",
+        code: "CARLUEX50",
+        discount: "$50 OFF",
+        title: "$50 off CARLUEX Pro & BMW iDrive AI video boxes",
+        description: "Save $50 on flagship 8GB RAM 128GB ROM wireless multimedia boxes with code CARLUEX50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clx-deal-2",
+        code: "STREAM20",
+        discount: "20% OFF",
+        title: "20% off wireless multimedia streaming adapters",
+        description: "Get 20% discount on plug-and-play in-car video streaming sticks with code STREAM20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clx-deal-3",
+        code: "CARLUEX15",
+        discount: "15% OFF",
+        title: "15% off sitewide on smart car adapters",
+        description: "Enjoy 15% savings across all wireless CarPlay dongles with code CARLUEX15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clx-deal-4",
+        code: "WELCOME25",
+        discount: "$25 OFF",
+        title: "$25 welcome credit on your first order",
+        description: "Redeem welcome voucher WELCOME25 for $25 off your initial CARLUEX system.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clx-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide express shipping & 1-year warranty",
+        description: "All CARLUEX devices include free tracked express delivery and a 1-year product warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 47. ANDASEAT (US / Global - Premium Ergonomic Gaming & Esports Chairs) [APPROVED]
+  {
+    id: 647,
+    name: "AndaSeat",
+    slug: "andaseat",
+    aliases: ["andaseat-gaming", "andaseat-chairs", "andaseat-us"],
+    logo: "/logos/andaseat.svg",
+    website: "https://www.andaseat.com/?ref=promoregistry",
+    affiliate_url: "https://www.andaseat.com/?ref=promoregistry",
+    country: "US",
+    description: "Ergonomic esports gaming chairs and executive desk chairs crafted from PVC leather, linen fabric, memory foam pillows, and 4D armrests (Kaiser 3, Phantom 3).",
+    coupons: [
+      {
+        id: "and-deal-1",
+        code: "ANDA50",
+        discount: "$50 OFF",
+        title: "$50 off Kaiser 3 premium ergonomic gaming chairs",
+        description: "Save $50 on Kaiser 3 magnetic lumbar ergonomic gaming chairs with code ANDA50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "and-deal-2",
+        code: "SEAT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all esports chairs & desk mats",
+        description: "Enjoy 15% discount across all professional gaming seats with code SEAT15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "and-deal-3",
+        code: "PHANTOM30",
+        discount: "$30 OFF",
+        title: "$30 off Phantom 3 fabric and leather gaming chairs",
+        description: "Get $30 instant savings on Phantom 3 breathable fabric chairs with code PHANTOM30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "and-deal-4",
+        code: "WELCOME20",
+        discount: "$20 OFF",
+        title: "$20 welcome voucher for new members",
+        description: "Claim $20 off your first ergonomic gaming setup with code WELCOME20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "and-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US & EU doorstep shipping + lifetime frame warranty",
+        description: "Enjoy 100% free tracked doorstep shipping across the US and Europe plus a lifetime steel frame warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 48. RINGCONN (US / Global - Subscription-Free Smart Health Rings) [APPROVED]
+  {
+    id: 648,
+    name: "RingConn",
+    slug: "ringconn",
+    aliases: ["ringconn-smart-ring", "ringconn-us"],
+    logo: "/logos/ringconn.svg",
+    website: "https://ringconn.com/?ref=promoregistry",
+    affiliate_url: "https://ringconn.com/?ref=promoregistry",
+    country: "US",
+    description: "Subscription-free smart health ring with 7-day battery life, titanium durability, sleep tracking, continuous heart rate, blood oxygen, and stress monitoring.",
+    coupons: [
+      {
+        id: "rng-deal-1",
+        code: "RINGCONN30",
+        discount: "$30 OFF",
+        title: "$30 off RingConn Gen 2 smart health rings",
+        description: "Save $30 instantly on RingConn Gen 2 ultralight titanium smart rings with code RINGCONN30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rng-deal-2",
+        code: "HEALTH10",
+        discount: "10% OFF",
+        title: "10% off titanium rings and portable charging cases",
+        description: "Enjoy 10% discount on rings and charging docks with code HEALTH10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rng-deal-3",
+        code: "SLEEP20",
+        discount: "$20 OFF",
+        title: "$20 off smart sleep tracking starter bundles",
+        description: "Get $20 instant savings on comprehensive sleep tracking sets with code SLEEP20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rng-deal-4",
+        code: "WELCOME15",
+        discount: "$15 OFF",
+        title: "$15 welcome coupon on your first order",
+        description: "Claim $15 off your initial smart ring purchase with code WELCOME15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rng-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide tracked shipping + sizing kit included",
+        description: "Every RingConn order includes free tracked global shipping and a free precision sizing kit.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 49. DRAGONHAWK (US / Global - Professional Rotary Tattoo Machines & Pens) [APPROVED]
+  {
+    id: 649,
+    name: "Dragonhawk",
+    slug: "dragonhawk",
+    aliases: ["dragonhawktattoos", "dragonhawk-us", "dragonhawk-eu"],
+    logo: "/logos/dragonhawk.svg",
+    website: "https://www.dragonhawktattoos.com/?ref=promoregistry",
+    affiliate_url: "https://www.dragonhawktattoos.com/?ref=promoregistry",
+    country: "US",
+    description: "Worldwide favorite professional rotary tattoo machines, wireless battery tattoo pens (Mast Flip, Fold Pro), sterile cartridge needles, and tattoo power supplies.",
+    coupons: [
+      {
+        id: "dh-deal-1",
+        code: "MAST15",
+        discount: "15% OFF",
+        title: "15% off Mast rotary tattoo pens & wireless machines",
+        description: "Save 15% on Mast Tour, Mast Flip, and Fold Pro wireless battery pens with code MAST15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dh-deal-2",
+        code: "TATTOO20",
+        discount: "20% OFF",
+        title: "20% off complete starter tattoo kits with power supplies",
+        description: "Get 20% discount on complete professional tattoo kits with code TATTOO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dh-deal-3",
+        code: "NEEDLE10",
+        discount: "10% OFF",
+        title: "10% off sterile cartridge needles and grips",
+        description: "Save 10% on WJX and Mast Pro sterile cartridge needles with code NEEDLE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dh-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome discount on orders over $70",
+        description: "Claim $10 instant savings on your first tattoo supplies order with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dh-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping on orders $59+",
+        description: "Enjoy 100% free tracked standard shipping on all orders over $59.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 

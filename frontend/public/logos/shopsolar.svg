@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#111B27"/>
+  <circle cx="45" cy="40" r="14" fill="#FFA000"/>
+  <polygon points="45,18 48,25 42,25" fill="#FFA000"/>
+  <polygon points="45,62 48,55 42,55" fill="#FFA000"/>
+  <polygon points="23,40 30,43 30,37" fill="#FFA000"/>
+  <polygon points="67,40 60,43 60,37" fill="#FFA000"/>
+  <text x="75" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="900" letter-spacing="1" fill="#FFFFFF">Shop<tspan fill="#FFA000">Solar</tspan></text>
+</svg>
