@@ -3043,6 +3043,4567 @@ export const STORE_REGISTRY: RegistryStore[] = [
       }
     ]
   }
+,
+
+  // 36. GODBRICKS (Toy & Hobby)
+  {
+    id: 650,
+    name: "godbricks",
+    slug: "godbricks",
+    aliases: ["godbricks-coupons", "godbricks-discount", "godbricks-promo"],
+    logo: "/logos/godbricks.svg",
+    website: "https://godbricks.com/?ref=promoregistry",
+    affiliate_url: "https://godbricks.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Custom building blocks, modular bricks, and specialty MOC sets for AFOL collectors.",
+    coupons: [
+      {
+        id: "godbricks-deal-1",
+        code: "GODBRICK15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code GODBRICK15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "godbricks-deal-2",
+        code: "GODBRICK20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code GODBRICK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "godbricks-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all godbricks products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "godbricks-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "godbricks-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 37. FLIRTWITHSB (Fashion)
+  {
+    id: 651,
+    name: "flirtwithsb",
+    slug: "flirtwithsb",
+    aliases: ["flirtwithsb-coupons", "flirtwithsb-discount", "flirtwithsb-promo"],
+    logo: "/logos/flirtwithsb.svg",
+    website: "https://flirtwithsb.com/?ref=promoregistry",
+    affiliate_url: "https://flirtwithsb.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Trendy women boutique fashion, seasonal dresses, and chic accessories.",
+    coupons: [
+      {
+        id: "flirtwithsb-deal-1",
+        code: "FLIRTWIT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FLIRTWIT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flirtwithsb-deal-2",
+        code: "FLIRTWIT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FLIRTWIT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flirtwithsb-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all flirtwithsb products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flirtwithsb-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flirtwithsb-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 38. VOXAPOD (Health & Wellness)
+  {
+    id: 652,
+    name: "VOXAPOD",
+    slug: "voxapod",
+    aliases: ["voxapod-coupons", "voxapod-discount", "voxapod-promo"],
+    logo: "/logos/voxapod.svg",
+    website: "https://voxapod.com/?ref=promoregistry",
+    affiliate_url: "https://voxapod.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Clinically designed menstrual cups, wellness discs, and sustainable period care products.",
+    coupons: [
+      {
+        id: "voxapod-deal-1",
+        code: "VOXAPOD15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code VOXAPOD15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "voxapod-deal-2",
+        code: "VOXAPOD20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code VOXAPOD20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "voxapod-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all VOXAPOD products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "voxapod-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "voxapod-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 39. TOTAL MAN SHOP (Men Health)
+  {
+    id: 653,
+    name: "Total Man Shop",
+    slug: "total-man-shop",
+    aliases: ["total-man-shop-coupons", "total-man-shop-discount", "total-man-shop-promo"],
+    logo: "/logos/total-man-shop.svg",
+    website: "https://totalmanshop.com/?ref=promoregistry",
+    affiliate_url: "https://totalmanshop.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Men wellness gear, performance optimization devices, and recovery essentials.",
+    coupons: [
+      {
+        id: "total-man-shop-deal-1",
+        code: "TOTALMAN15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code TOTALMAN15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "total-man-shop-deal-2",
+        code: "TOTALMAN20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code TOTALMAN20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "total-man-shop-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Total Man Shop products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "total-man-shop-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "total-man-shop-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 40. ECOERFASHION (Apparel)
+  {
+    id: 654,
+    name: "ecoerfashion",
+    slug: "ecoerfashion",
+    aliases: ["ecoerfashion-coupons", "ecoerfashion-discount", "ecoerfashion-promo"],
+    logo: "/logos/ecoerfashion.svg",
+    website: "https://ecoerfashion.com/?ref=promoregistry",
+    affiliate_url: "https://ecoerfashion.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Eco-conscious sustainable fashion, organic cotton basics, and minimalist clothing.",
+    coupons: [
+      {
+        id: "ecoerfashion-deal-1",
+        code: "ECOERFAS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ECOERFAS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ecoerfashion-deal-2",
+        code: "ECOERFAS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ECOERFAS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ecoerfashion-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all ecoerfashion products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ecoerfashion-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ecoerfashion-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 41. NOTHOSAUR TOY (Toys)
+  {
+    id: 655,
+    name: "Nothosaur Toy",
+    slug: "nothosaur",
+    aliases: ["nothosaur-coupons", "nothosaur-discount", "nothosaur-promo"],
+    logo: "/logos/nothosaur.svg",
+    website: "https://nothosaur.com/?ref=promoregistry",
+    affiliate_url: "https://nothosaur.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Collectible dinosaur models, prehistoric fossil replicas, and educational robotic toys.",
+    coupons: [
+      {
+        id: "nothosaur-deal-1",
+        code: "NOTHOSAU15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code NOTHOSAU15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nothosaur-deal-2",
+        code: "NOTHOSAU20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code NOTHOSAU20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nothosaur-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Nothosaur Toy products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nothosaur-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nothosaur-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 42. FLAWLESS DIAMOND (Jewelry)
+  {
+    id: 656,
+    name: "Flawless Diamond",
+    slug: "flawless-diamond",
+    aliases: ["flawless-diamond-coupons", "flawless-diamond-discount", "flawless-diamond-promo"],
+    logo: "/logos/flawless-diamond.svg",
+    website: "https://flawless-diamond.com/?ref=promoregistry",
+    affiliate_url: "https://flawless-diamond.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Exquisite lab-grown diamond jewelry, engagement rings, and luxury diamond bands.",
+    coupons: [
+      {
+        id: "flawless-diamond-deal-1",
+        code: "FLAWLESS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FLAWLESS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flawless-diamond-deal-2",
+        code: "FLAWLESS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FLAWLESS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flawless-diamond-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Flawless Diamond products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flawless-diamond-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flawless-diamond-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 43. BLACKVIEW (Smart Tech)
+  {
+    id: 657,
+    name: "Blackview",
+    slug: "blackview",
+    aliases: ["blackview-coupons", "blackview-discount", "blackview-promo"],
+    logo: "/logos/blackview.svg",
+    website: "https://blackview.hk/?ref=promoregistry",
+    affiliate_url: "https://blackview.hk/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Rugged smartphones, shockproof tablets, and outdoor smart tech designed for extreme durability.",
+    coupons: [
+      {
+        id: "blackview-deal-1",
+        code: "BLACKVIE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code BLACKVIE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "blackview-deal-2",
+        code: "BLACKVIE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code BLACKVIE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "blackview-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Blackview products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "blackview-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "blackview-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 44. FOOT LOCKER (Footwear)
+  {
+    id: 658,
+    name: "Foot Locker",
+    slug: "foot-locker",
+    aliases: ["foot-locker-coupons", "foot-locker-discount", "foot-locker-promo"],
+    logo: "/logos/foot-locker.svg",
+    website: "https://footlocker.com/?ref=promoregistry",
+    affiliate_url: "https://footlocker.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Worldwide athletic footwear, premier sneakers, Jordan, Nike, and streetwear apparel.",
+    coupons: [
+      {
+        id: "foot-locker-deal-1",
+        code: "FOOTLOCK15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FOOTLOCK15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "foot-locker-deal-2",
+        code: "FOOTLOCK20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FOOTLOCK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "foot-locker-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Foot Locker products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "foot-locker-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "foot-locker-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 45. VELOXBOT (Software)
+  {
+    id: 659,
+    name: "VeloxBot",
+    slug: "veloxbot",
+    aliases: ["veloxbot-coupons", "veloxbot-discount", "veloxbot-promo"],
+    logo: "/logos/veloxbot.svg",
+    website: "https://veloxbot.com/?ref=promoregistry",
+    affiliate_url: "https://veloxbot.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Automated crypto trading bots, smart algorithmic execution, and algorithmic finance tools.",
+    coupons: [
+      {
+        id: "veloxbot-deal-1",
+        code: "VELOXBOT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code VELOXBOT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "veloxbot-deal-2",
+        code: "VELOXBOT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code VELOXBOT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "veloxbot-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all VeloxBot products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "veloxbot-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "veloxbot-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 46. IT ARTI (Tech)
+  {
+    id: 660,
+    name: "IT Arti",
+    slug: "itarti",
+    aliases: ["itarti-coupons", "itarti-discount", "itarti-promo"],
+    logo: "/logos/itarti.svg",
+    website: "https://itarti.io/?ref=promoregistry",
+    affiliate_url: "https://itarti.io/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Modern AI-powered digital assets, web design templates, and creative tech tools.",
+    coupons: [
+      {
+        id: "itarti-deal-1",
+        code: "ITARTI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ITARTI15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "itarti-deal-2",
+        code: "ITARTI20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ITARTI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "itarti-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all IT Arti products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "itarti-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "itarti-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 47. CULT KITS (Sports & Vintage)
+  {
+    id: 661,
+    name: "Cult Kits",
+    slug: "cult-kits",
+    aliases: ["cult-kits-coupons", "cult-kits-discount", "cult-kits-promo"],
+    logo: "/logos/cult-kits.svg",
+    website: "https://cultkits.com/?ref=promoregistry",
+    affiliate_url: "https://cultkits.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Vintage football shirts, retro soccer jerseys, classic matchwear, and football culture.",
+    coupons: [
+      {
+        id: "cult-kits-deal-1",
+        code: "CULTKITS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code CULTKITS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cult-kits-deal-2",
+        code: "CULTKITS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code CULTKITS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cult-kits-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Cult Kits products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cult-kits-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cult-kits-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 48. MARYANN ORGANICS (Skincare)
+  {
+    id: 662,
+    name: "MaryAnn Organics",
+    slug: "maryann-organics",
+    aliases: ["maryann-organics-coupons", "maryann-organics-discount", "maryann-organics-promo"],
+    logo: "/logos/maryann-organics.svg",
+    website: "https://shopmaryann.com/?ref=promoregistry",
+    affiliate_url: "https://shopmaryann.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Natural anti-aging collagen creams, organic retinol serums, and clinically clean skincare.",
+    coupons: [
+      {
+        id: "maryann-organics-deal-1",
+        code: "MARYANNO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code MARYANNO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "maryann-organics-deal-2",
+        code: "MARYANNO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code MARYANNO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "maryann-organics-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all MaryAnn Organics products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "maryann-organics-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "maryann-organics-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 49. LESMART GOLF (Golf)
+  {
+    id: 663,
+    name: "Lesmart Golf",
+    slug: "lesmart",
+    aliases: ["lesmart-coupons", "lesmart-discount", "lesmart-promo"],
+    logo: "/logos/lesmart.svg",
+    website: "https://lesmartgolf.com/?ref=promoregistry",
+    affiliate_url: "https://lesmartgolf.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Performance golf apparel, breathable golf polo shirts, and all-weather golf pants.",
+    coupons: [
+      {
+        id: "lesmart-deal-1",
+        code: "LESMART15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code LESMART15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lesmart-deal-2",
+        code: "LESMART20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code LESMART20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lesmart-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Lesmart Golf products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lesmart-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lesmart-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 50. NFSTRIKE (Tactical)
+  {
+    id: 664,
+    name: "Nfstrike",
+    slug: "nfstrike",
+    aliases: ["nfstrike-coupons", "nfstrike-discount", "nfstrike-promo"],
+    logo: "/logos/nfstrike.svg",
+    website: "https://nfstrike.com/?ref=promoregistry",
+    affiliate_url: "https://nfstrike.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Tactical gear, blaster upgrade parts, outdoor shooting accessories, and training kits.",
+    coupons: [
+      {
+        id: "nfstrike-deal-1",
+        code: "NFSTRIKE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code NFSTRIKE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nfstrike-deal-2",
+        code: "NFSTRIKE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code NFSTRIKE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nfstrike-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Nfstrike products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nfstrike-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nfstrike-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 51. APE BORN (Fitness)
+  {
+    id: 665,
+    name: "APE BORN",
+    slug: "ape-born",
+    aliases: ["ape-born-coupons", "ape-born-discount", "ape-born-promo"],
+    logo: "/logos/ape-born.svg",
+    website: "https://apebornfitness.com/?ref=promoregistry",
+    affiliate_url: "https://apebornfitness.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Hardcore bodybuilding gymwear, oversized lifting tees, and fitness apparel.",
+    coupons: [
+      {
+        id: "ape-born-deal-1",
+        code: "APEBORN15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code APEBORN15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ape-born-deal-2",
+        code: "APEBORN20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code APEBORN20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ape-born-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all APE BORN products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ape-born-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ape-born-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 52. CARERSPK (Healthcare)
+  {
+    id: 666,
+    name: "Carerspk",
+    slug: "carerspk",
+    aliases: ["carerspk-coupons", "carerspk-discount", "carerspk-promo"],
+    logo: "/logos/carerspk.svg",
+    website: "https://carerspk.com/?ref=promoregistry",
+    affiliate_url: "https://carerspk.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Specialized caregiving equipment, patient mobility aids, and home healthcare supplies.",
+    coupons: [
+      {
+        id: "carerspk-deal-1",
+        code: "CARERSPK15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code CARERSPK15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "carerspk-deal-2",
+        code: "CARERSPK20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code CARERSPK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "carerspk-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Carerspk products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "carerspk-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "carerspk-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 53. TRIBUTE MUSIC GALLERY (Art)
+  {
+    id: 667,
+    name: "Tribute Music Gallery",
+    slug: "tribute-gallery",
+    aliases: ["tribute-gallery-coupons", "tribute-gallery-discount", "tribute-gallery-promo"],
+    logo: "/logos/tribute-gallery.svg",
+    website: "https://tribute.gallery/?ref=promoregistry",
+    affiliate_url: "https://tribute.gallery/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Fine art music photography, limited edition concert prints, and iconic rock memorabilia.",
+    coupons: [
+      {
+        id: "tribute-gallery-deal-1",
+        code: "TRIBUTEG15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code TRIBUTEG15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tribute-gallery-deal-2",
+        code: "TRIBUTEG20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code TRIBUTEG20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tribute-gallery-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Tribute Music Gallery products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tribute-gallery-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "tribute-gallery-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 54. FEIERFITNESS (Fitness)
+  {
+    id: 668,
+    name: "feierfitness",
+    slug: "feierfitness",
+    aliases: ["feierfitness-coupons", "feierfitness-discount", "feierfitness-promo"],
+    logo: "/logos/feierfitness.svg",
+    website: "https://feierfitness.com/?ref=promoregistry",
+    affiliate_url: "https://feierfitness.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Smart home fitness vibration plates, deep tissue massage guns, and recovery rollers.",
+    coupons: [
+      {
+        id: "feierfitness-deal-1",
+        code: "FEIERFIT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FEIERFIT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "feierfitness-deal-2",
+        code: "FEIERFIT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FEIERFIT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "feierfitness-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all feierfitness products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "feierfitness-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "feierfitness-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 55. FARMHAVEN (Supplements)
+  {
+    id: 669,
+    name: "FarmHaven",
+    slug: "farmhaven",
+    aliases: ["farmhaven-coupons", "farmhaven-discount", "farmhaven-promo"],
+    logo: "/logos/farmhaven.svg",
+    website: "https://thefarmhaven.com/?ref=promoregistry",
+    affiliate_url: "https://thefarmhaven.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Non-GMO dietary supplements, organic milk thistle, and botanical wellness capsules.",
+    coupons: [
+      {
+        id: "farmhaven-deal-1",
+        code: "FARMHAVE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FARMHAVE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "farmhaven-deal-2",
+        code: "FARMHAVE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FARMHAVE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "farmhaven-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all FarmHaven products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "farmhaven-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "farmhaven-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 56. INCERUN MEN (Men Fashion)
+  {
+    id: 670,
+    name: "INCERUN Men",
+    slug: "incerun",
+    aliases: ["incerun-coupons", "incerun-discount", "incerun-promo"],
+    logo: "/logos/incerun.svg",
+    website: "https://incerunmen.com/?ref=promoregistry",
+    affiliate_url: "https://incerunmen.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Fashion-forward men streetwear, oversized casual shirts, and vintage avant-garde pants.",
+    coupons: [
+      {
+        id: "incerun-deal-1",
+        code: "INCERUN15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code INCERUN15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "incerun-deal-2",
+        code: "INCERUN20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code INCERUN20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "incerun-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all INCERUN Men products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "incerun-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "incerun-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 57. PLANT BASED CANDLES (Home Goods)
+  {
+    id: 671,
+    name: "Plant Based Candles",
+    slug: "plant-based-candles",
+    aliases: ["plant-based-candles-coupons", "plant-based-candles-discount", "plant-based-candles-promo"],
+    logo: "/logos/plant-based-candles.svg",
+    website: "https://plantbasedcandles.com/?ref=promoregistry",
+    affiliate_url: "https://plantbasedcandles.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Clean burning non-toxic soy wax candles infused with organic therapeutic essential oils.",
+    coupons: [
+      {
+        id: "plant-based-candles-deal-1",
+        code: "PLANTBAS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PLANTBAS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plant-based-candles-deal-2",
+        code: "PLANTBAS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PLANTBAS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plant-based-candles-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Plant Based Candles products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plant-based-candles-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plant-based-candles-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 58. PSEYECHE (Beauty)
+  {
+    id: 672,
+    name: "PsEYEche",
+    slug: "pseyeche",
+    aliases: ["pseyeche-coupons", "pseyeche-discount", "pseyeche-promo"],
+    logo: "/logos/pseyeche.svg",
+    website: "https://pseyeche.com/?ref=promoregistry",
+    affiliate_url: "https://pseyeche.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Cosplay contact lenses, colored cosmetic eye lenses, and festival optical accessories.",
+    coupons: [
+      {
+        id: "pseyeche-deal-1",
+        code: "PSEYECHE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PSEYECHE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pseyeche-deal-2",
+        code: "PSEYECHE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PSEYECHE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pseyeche-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all PsEYEche products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pseyeche-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pseyeche-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 59. XPAND LACES (Accessories)
+  {
+    id: 673,
+    name: "XPAND Laces",
+    slug: "xpand-laces",
+    aliases: ["xpand-laces-coupons", "xpand-laces-discount", "xpand-laces-promo"],
+    logo: "/logos/xpand-laces.svg",
+    website: "https://xpandlaces.com/?ref=promoregistry",
+    affiliate_url: "https://xpandlaces.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Zero-memory elastic no-tie shoelaces engineered for runners, athletes, and kids.",
+    coupons: [
+      {
+        id: "xpand-laces-deal-1",
+        code: "XPANDLAC15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code XPANDLAC15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xpand-laces-deal-2",
+        code: "XPANDLAC20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code XPANDLAC20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xpand-laces-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all XPAND Laces products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xpand-laces-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xpand-laces-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 60. J&L NATURALS (Eco Beauty)
+  {
+    id: 674,
+    name: "J&L Naturals",
+    slug: "jnl-naturals",
+    aliases: ["jnl-naturals-coupons", "jnl-naturals-discount", "jnl-naturals-promo"],
+    logo: "/logos/jnl-naturals.svg",
+    website: "https://jnlnaturals.com/?ref=promoregistry",
+    affiliate_url: "https://jnlnaturals.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Zero-waste plastic-free solid shampoo bars, deodorant sticks, and natural body care.",
+    coupons: [
+      {
+        id: "jnl-naturals-deal-1",
+        code: "JNLNATUR15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code JNLNATUR15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jnl-naturals-deal-2",
+        code: "JNLNATUR20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code JNLNATUR20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jnl-naturals-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all J&L Naturals products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jnl-naturals-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jnl-naturals-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 61. SAVANAGARDEN (Garden)
+  {
+    id: 675,
+    name: "savanagarden",
+    slug: "savanagarden",
+    aliases: ["savanagarden-coupons", "savanagarden-discount", "savanagarden-promo"],
+    logo: "/logos/savanagarden.svg",
+    website: "https://savanagarden.com/?ref=promoregistry",
+    affiliate_url: "https://savanagarden.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Outdoor garden planters, patio decor, raised garden beds, and horticultural accessories.",
+    coupons: [
+      {
+        id: "savanagarden-deal-1",
+        code: "SAVANAGA15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code SAVANAGA15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "savanagarden-deal-2",
+        code: "SAVANAGA20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code SAVANAGA20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "savanagarden-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all savanagarden products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "savanagarden-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "savanagarden-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 62. BEAUTOLOGY LAB (Beauty)
+  {
+    id: 676,
+    name: "BEAUTOLOGY LAB",
+    slug: "beautology-lab",
+    aliases: ["beautology-lab-coupons", "beautology-lab-discount", "beautology-lab-promo"],
+    logo: "/logos/beautology-lab.svg",
+    website: "https://beautologylab.com/?ref=promoregistry",
+    affiliate_url: "https://beautologylab.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Clean bio-compatible clinical skincare, detoxifying face masks, and peptide serums.",
+    coupons: [
+      {
+        id: "beautology-lab-deal-1",
+        code: "BEAUTOLO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code BEAUTOLO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "beautology-lab-deal-2",
+        code: "BEAUTOLO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code BEAUTOLO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "beautology-lab-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all BEAUTOLOGY LAB products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "beautology-lab-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "beautology-lab-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 63. PSYNC LABS (Smart Home)
+  {
+    id: 677,
+    name: "Psync Labs",
+    slug: "psync-labs",
+    aliases: ["psync-labs-coupons", "psync-labs-discount", "psync-labs-promo"],
+    logo: "/logos/psync-labs.svg",
+    website: "https://psynclabs.com/?ref=promoregistry",
+    affiliate_url: "https://psynclabs.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "AI smart home security cameras featuring visual GPT and full-color night vision.",
+    coupons: [
+      {
+        id: "psync-labs-deal-1",
+        code: "PSYNCLAB15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PSYNCLAB15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "psync-labs-deal-2",
+        code: "PSYNCLAB20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PSYNCLAB20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "psync-labs-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Psync Labs products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "psync-labs-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "psync-labs-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 64. GEETAHAIR (Hair & Beauty)
+  {
+    id: 678,
+    name: "GeetaHair",
+    slug: "geetahair",
+    aliases: ["geetahair-coupons", "geetahair-discount", "geetahair-promo"],
+    logo: "/logos/geetahair.svg",
+    website: "https://geetahair.com/?ref=promoregistry",
+    affiliate_url: "https://geetahair.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "100% virgin human hair lace front wigs, hair bundles, and HD transparent closures.",
+    coupons: [
+      {
+        id: "geetahair-deal-1",
+        code: "GEETAHAI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code GEETAHAI15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "geetahair-deal-2",
+        code: "GEETAHAI20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code GEETAHAI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "geetahair-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all GeetaHair products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "geetahair-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "geetahair-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 65. KAYGO SAFETY (Safety Gear)
+  {
+    id: 679,
+    name: "KAYGO Safety",
+    slug: "kaygo-safety",
+    aliases: ["kaygo-safety-coupons", "kaygo-safety-discount", "kaygo-safety-promo"],
+    logo: "/logos/kaygo-safety.svg",
+    website: "https://kaygosafety.com/?ref=promoregistry",
+    affiliate_url: "https://kaygosafety.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Industrial cut-resistant work gloves, polyurethane safety gloves, and PPE.",
+    coupons: [
+      {
+        id: "kaygo-safety-deal-1",
+        code: "KAYGOSAF15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code KAYGOSAF15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kaygo-safety-deal-2",
+        code: "KAYGOSAF20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code KAYGOSAF20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kaygo-safety-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all KAYGO Safety products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kaygo-safety-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kaygo-safety-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 66. CHESSBAZAAR (Games)
+  {
+    id: 680,
+    name: "chessbazaar",
+    slug: "chessbazaar",
+    aliases: ["chessbazaar-coupons", "chessbazaar-discount", "chessbazaar-promo"],
+    logo: "/logos/chessbazaar.svg",
+    website: "https://chessbazaar.in/?ref=promoregistry",
+    affiliate_url: "https://chessbazaar.in/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Luxury handcrafted wooden chess sets, reproduction antique pieces, and tournament boards.",
+    coupons: [
+      {
+        id: "chessbazaar-deal-1",
+        code: "CHESSBAZ15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code CHESSBAZ15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "chessbazaar-deal-2",
+        code: "CHESSBAZ20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code CHESSBAZ20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "chessbazaar-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all chessbazaar products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "chessbazaar-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "chessbazaar-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 67. DOUBLE STITCH (Bedding)
+  {
+    id: 681,
+    name: "Double Stitch",
+    slug: "double-stitch",
+    aliases: ["double-stitch-coupons", "double-stitch-discount", "double-stitch-promo"],
+    logo: "/logos/double-stitch.svg",
+    website: "https://doublestitch.com/?ref=promoregistry",
+    affiliate_url: "https://doublestitch.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Premium luxury bedding, modal cotton sheet sets, and temperature-regulating duvet inserts.",
+    coupons: [
+      {
+        id: "double-stitch-deal-1",
+        code: "DOUBLEST15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code DOUBLEST15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "double-stitch-deal-2",
+        code: "DOUBLEST20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code DOUBLEST20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "double-stitch-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Double Stitch products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "double-stitch-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "double-stitch-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 68. ARYLIC (Audio)
+  {
+    id: 682,
+    name: "Arylic",
+    slug: "arylic",
+    aliases: ["arylic-coupons", "arylic-discount", "arylic-promo"],
+    logo: "/logos/arylic.svg",
+    website: "https://arylic.com/?ref=promoregistry",
+    affiliate_url: "https://arylic.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Wireless multi-room stereo amplifiers, WiFi & Bluetooth audio receivers, and DIY audio boards.",
+    coupons: [
+      {
+        id: "arylic-deal-1",
+        code: "ARYLIC15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ARYLIC15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arylic-deal-2",
+        code: "ARYLIC20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ARYLIC20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arylic-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Arylic products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arylic-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arylic-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 69. GAMAKAY (Gaming)
+  {
+    id: 683,
+    name: "GamaKay",
+    slug: "gamakay",
+    aliases: ["gamakay-coupons", "gamakay-discount", "gamakay-promo"],
+    logo: "/logos/gamakay.svg",
+    website: "https://gamakay.com/?ref=promoregistry",
+    affiliate_url: "https://gamakay.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Custom mechanical gaming keyboards, hot-swappable switches, and artisan PBT keycaps.",
+    coupons: [
+      {
+        id: "gamakay-deal-1",
+        code: "GAMAKAY15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code GAMAKAY15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "gamakay-deal-2",
+        code: "GAMAKAY20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code GAMAKAY20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "gamakay-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all GamaKay products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "gamakay-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "gamakay-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 70. MET RIDERS (E-Mobility)
+  {
+    id: 684,
+    name: "Met Riders",
+    slug: "met-riders",
+    aliases: ["met-riders-coupons", "met-riders-discount", "met-riders-promo"],
+    logo: "/logos/met-riders.svg",
+    website: "https://metriders.com/?ref=promoregistry",
+    affiliate_url: "https://metriders.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "High-torque urban electric scooters, dual motor all-terrain e-scooters, and gear.",
+    coupons: [
+      {
+        id: "met-riders-deal-1",
+        code: "METRIDER15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code METRIDER15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "met-riders-deal-2",
+        code: "METRIDER20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code METRIDER20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "met-riders-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Met Riders products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "met-riders-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "met-riders-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 71. ESKUTE (E-Bikes)
+  {
+    id: 685,
+    name: "Eskute",
+    slug: "eskute",
+    aliases: ["eskute-coupons", "eskute-discount", "eskute-promo"],
+    logo: "/logos/eskute.svg",
+    website: "https://eskute.co.uk/?ref=promoregistry",
+    affiliate_url: "https://eskute.co.uk/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Sleek electric city commuter bikes, trekking e-bikes, and folding bicycles for urban transport.",
+    coupons: [
+      {
+        id: "eskute-deal-1",
+        code: "ESKUTE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ESKUTE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eskute-deal-2",
+        code: "ESKUTE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ESKUTE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eskute-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Eskute products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eskute-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "eskute-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 72. FLAIR ESPRESSO (Coffee)
+  {
+    id: 686,
+    name: "Flair Espresso",
+    slug: "flair-espresso",
+    aliases: ["flair-espresso-coupons", "flair-espresso-discount", "flair-espresso-promo"],
+    logo: "/logos/flair-espresso.svg",
+    website: "https://flairespresso.com/?ref=promoregistry",
+    affiliate_url: "https://flairespresso.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Manual lever espresso makers for handcrafted barista-quality espresso at home without electricity.",
+    coupons: [
+      {
+        id: "flair-espresso-deal-1",
+        code: "FLAIRESP15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FLAIRESP15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flair-espresso-deal-2",
+        code: "FLAIRESP20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FLAIRESP20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flair-espresso-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Flair Espresso products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flair-espresso-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "flair-espresso-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 73. ARCCAPTAIN (Tools)
+  {
+    id: 687,
+    name: "Arccaptain",
+    slug: "arccaptain",
+    aliases: ["arccaptain-coupons", "arccaptain-discount", "arccaptain-promo"],
+    logo: "/logos/arccaptain.svg",
+    website: "https://arccaptain.com/?ref=promoregistry",
+    affiliate_url: "https://arccaptain.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Professional digital inverter TIG/MIG/Stick welders, plasma cutters, and auto-darkening helmets.",
+    coupons: [
+      {
+        id: "arccaptain-deal-1",
+        code: "ARCCAPTA15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ARCCAPTA15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arccaptain-deal-2",
+        code: "ARCCAPTA20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ARCCAPTA20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arccaptain-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Arccaptain products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arccaptain-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arccaptain-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 74. HCALORY (Auto Gear)
+  {
+    id: 688,
+    name: "Hcalory",
+    slug: "hcalory",
+    aliases: ["hcalory-coupons", "hcalory-discount", "hcalory-promo"],
+    logo: "/logos/hcalory.svg",
+    website: "https://hcalory.com/?ref=promoregistry",
+    affiliate_url: "https://hcalory.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Diesel air parking heaters, portable toolbox heaters for RVs, trucks, campers, and vans.",
+    coupons: [
+      {
+        id: "hcalory-deal-1",
+        code: "HCALORY15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code HCALORY15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hcalory-deal-2",
+        code: "HCALORY20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code HCALORY20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hcalory-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Hcalory products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hcalory-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hcalory-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 75. ETOE (Home Cinema)
+  {
+    id: 689,
+    name: "ETOE",
+    slug: "etoe",
+    aliases: ["etoe-coupons", "etoe-discount", "etoe-promo"],
+    logo: "/logos/etoe.svg",
+    website: "https://etoeofficial.com/?ref=promoregistry",
+    affiliate_url: "https://etoeofficial.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Android TV smart projectors, native 1080p autofocus home cinema projectors with Dolby Audio.",
+    coupons: [
+      {
+        id: "etoe-deal-1",
+        code: "ETOE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ETOE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "etoe-deal-2",
+        code: "ETOE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ETOE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "etoe-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all ETOE products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "etoe-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "etoe-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 76. MAGICYCLE (E-Bikes)
+  {
+    id: 690,
+    name: "Magicycle",
+    slug: "magicycle",
+    aliases: ["magicycle-coupons", "magicycle-discount", "magicycle-promo"],
+    logo: "/logos/magicycle.svg",
+    website: "https://magicyclebike.com/?ref=promoregistry",
+    affiliate_url: "https://magicyclebike.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "High-power 52V fat tire electric bikes, step-thru cruisers, and hunting cargo e-bikes.",
+    coupons: [
+      {
+        id: "magicycle-deal-1",
+        code: "MAGICYCL15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code MAGICYCL15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicycle-deal-2",
+        code: "MAGICYCL20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code MAGICYCL20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicycle-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Magicycle products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicycle-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicycle-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 77. HEYBIKE (E-Bikes)
+  {
+    id: 691,
+    name: "Heybike",
+    slug: "heybike",
+    aliases: ["heybike-coupons", "heybike-discount", "heybike-promo"],
+    logo: "/logos/heybike.svg",
+    website: "https://heybike.com/?ref=promoregistry",
+    affiliate_url: "https://heybike.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Foldable fat tire e-bikes, long-range electric mountain bikes, and commuter cycles.",
+    coupons: [
+      {
+        id: "heybike-deal-1",
+        code: "HEYBIKE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code HEYBIKE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "heybike-deal-2",
+        code: "HEYBIKE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code HEYBIKE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "heybike-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Heybike products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "heybike-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "heybike-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 78. WALLKE EBIKE (E-Bikes)
+  {
+    id: 692,
+    name: "Wallke Ebike",
+    slug: "wallke",
+    aliases: ["wallke-coupons", "wallke-discount", "wallke-promo"],
+    logo: "/logos/wallke.svg",
+    website: "https://wallkeebike.com/?ref=promoregistry",
+    affiliate_url: "https://wallkeebike.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Dual-battery high-speed fat tire electric bikes engineered for extreme off-road adventures.",
+    coupons: [
+      {
+        id: "wallke-deal-1",
+        code: "WALLKE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code WALLKE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wallke-deal-2",
+        code: "WALLKE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code WALLKE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wallke-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Wallke Ebike products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wallke-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wallke-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 79. INOKIM (E-Mobility)
+  {
+    id: 693,
+    name: "Inokim",
+    slug: "inokim",
+    aliases: ["inokim-coupons", "inokim-discount", "inokim-promo"],
+    logo: "/logos/inokim.svg",
+    website: "https://inokim.shop/?ref=promoregistry",
+    affiliate_url: "https://inokim.shop/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Designer premium electric scooters with award-winning suspension and portable folding frames.",
+    coupons: [
+      {
+        id: "inokim-deal-1",
+        code: "INOKIM15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code INOKIM15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inokim-deal-2",
+        code: "INOKIM20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code INOKIM20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inokim-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Inokim products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inokim-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "inokim-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 80. KUGOO (E-Mobility)
+  {
+    id: 694,
+    name: "Kugoo",
+    slug: "kugoo",
+    aliases: ["kugoo-coupons", "kugoo-discount", "kugoo-promo"],
+    logo: "/logos/kugoo.svg",
+    website: "https://kugoo.eu/?ref=promoregistry",
+    affiliate_url: "https://kugoo.eu/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Rugged all-terrain electric scooters, dual motor off-road models, and urban commuters.",
+    coupons: [
+      {
+        id: "kugoo-deal-1",
+        code: "KUGOO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code KUGOO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kugoo-deal-2",
+        code: "KUGOO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code KUGOO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kugoo-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Kugoo products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kugoo-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "kugoo-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 81. NANROBOT (E-Mobility)
+  {
+    id: 695,
+    name: "NANROBOT",
+    slug: "nanrobot",
+    aliases: ["nanrobot-coupons", "nanrobot-discount", "nanrobot-promo"],
+    logo: "/logos/nanrobot.svg",
+    website: "https://nanrobot.com/?ref=promoregistry",
+    affiliate_url: "https://nanrobot.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "High-performance dual motor 50+ MPH electric scooters built for speed and long range.",
+    coupons: [
+      {
+        id: "nanrobot-deal-1",
+        code: "NANROBOT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code NANROBOT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nanrobot-deal-2",
+        code: "NANROBOT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code NANROBOT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nanrobot-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all NANROBOT products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nanrobot-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nanrobot-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 82. WOLFBOX (Auto Electronics)
+  {
+    id: 696,
+    name: "WOLFBOX",
+    slug: "wolfbox",
+    aliases: ["wolfbox-coupons", "wolfbox-discount", "wolfbox-promo"],
+    logo: "/logos/wolfbox.svg",
+    website: "https://wolfbox.com/?ref=promoregistry",
+    affiliate_url: "https://wolfbox.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "4K rear-view mirror dash cams, dual channel front and rear car cameras with GPS navigation.",
+    coupons: [
+      {
+        id: "wolfbox-deal-1",
+        code: "WOLFBOX15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code WOLFBOX15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wolfbox-deal-2",
+        code: "WOLFBOX20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code WOLFBOX20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wolfbox-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all WOLFBOX products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wolfbox-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wolfbox-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 83. DREAME (Home Appliances)
+  {
+    id: 697,
+    name: "Dreame",
+    slug: "dreame",
+    aliases: ["dreame-coupons", "dreame-discount", "dreame-promo"],
+    logo: "/logos/dreame.svg",
+    website: "https://dreametech.com/?ref=promoregistry",
+    affiliate_url: "https://dreametech.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Smart robot vacuums, self-emptying mop cleaners, and high-speed ionic hair dryers.",
+    coupons: [
+      {
+        id: "dreame-deal-1",
+        code: "DREAME15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code DREAME15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dreame-deal-2",
+        code: "DREAME20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code DREAME20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dreame-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Dreame products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dreame-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dreame-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 84. PROSCENIC (Smart Home)
+  {
+    id: 698,
+    name: "Proscenic",
+    slug: "proscenic",
+    aliases: ["proscenic-coupons", "proscenic-discount", "proscenic-promo"],
+    logo: "/logos/proscenic.svg",
+    website: "https://proscenic.com/?ref=promoregistry",
+    affiliate_url: "https://proscenic.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Smart robot vacuum cleaners, cordless stick vacuums, and air purifiers for modern homes.",
+    coupons: [
+      {
+        id: "proscenic-deal-1",
+        code: "PROSCENI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PROSCENI15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "proscenic-deal-2",
+        code: "PROSCENI20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PROSCENI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "proscenic-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Proscenic products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "proscenic-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "proscenic-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 85. CIRCULAR (Wearables)
+  {
+    id: 699,
+    name: "Circular",
+    slug: "circular",
+    aliases: ["circular-coupons", "circular-discount", "circular-promo"],
+    logo: "/logos/circular.svg",
+    website: "https://circular.xyz/?ref=promoregistry",
+    affiliate_url: "https://circular.xyz/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Ultralight AI smart health ring with bio-sensing metrics, sleep tracking, and silent alarm.",
+    coupons: [
+      {
+        id: "circular-deal-1",
+        code: "CIRCULAR15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code CIRCULAR15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "circular-deal-2",
+        code: "CIRCULAR20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code CIRCULAR20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "circular-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Circular products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "circular-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "circular-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 86. HEALING SAUNA (Wellness)
+  {
+    id: 700,
+    name: "Healing Sauna",
+    slug: "healing-sauna",
+    aliases: ["healing-sauna-coupons", "healing-sauna-discount", "healing-sauna-promo"],
+    logo: "/logos/healing-sauna.svg",
+    website: "https://healingsauna.square.site/?ref=promoregistry",
+    affiliate_url: "https://healingsauna.square.site/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Far infrared full-spectrum portable home saunas and detox heat therapy blankets.",
+    coupons: [
+      {
+        id: "healing-sauna-deal-1",
+        code: "HEALINGS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code HEALINGS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "healing-sauna-deal-2",
+        code: "HEALINGS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code HEALINGS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "healing-sauna-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Healing Sauna products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "healing-sauna-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "healing-sauna-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 87. WATERDROP (Water Filtration)
+  {
+    id: 701,
+    name: "Waterdrop",
+    slug: "waterdrop",
+    aliases: ["waterdrop-coupons", "waterdrop-discount", "waterdrop-promo"],
+    logo: "/logos/waterdrop.png",
+    website: "https://waterdropfilter.com/?ref=promoregistry",
+    affiliate_url: "https://waterdropfilter.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Reverse osmosis water filtration systems, under-sink water filters, and refrigerator filters.",
+    coupons: [
+      {
+        id: "waterdrop-deal-1",
+        code: "WATERDRO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code WATERDRO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "waterdrop-deal-2",
+        code: "WATERDRO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code WATERDRO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "waterdrop-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Waterdrop products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "waterdrop-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "waterdrop-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 88. SPLAY SHOES (Footwear)
+  {
+    id: 702,
+    name: "Splay Shoes",
+    slug: "splay-shoes",
+    aliases: ["splay-shoes-coupons", "splay-shoes-discount", "splay-shoes-promo"],
+    logo: "/logos/splay-shoes.svg",
+    website: "https://splayshoes.com/?ref=promoregistry",
+    affiliate_url: "https://splayshoes.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Zero-drop barefoot shoes, wide toe box canvas sneakers for natural foot health.",
+    coupons: [
+      {
+        id: "splay-shoes-deal-1",
+        code: "SPLAYSHO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code SPLAYSHO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "splay-shoes-deal-2",
+        code: "SPLAYSHO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code SPLAYSHO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "splay-shoes-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Splay Shoes products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "splay-shoes-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "splay-shoes-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 89. NOMATIC (Travel Gear)
+  {
+    id: 703,
+    name: "Nomatic",
+    slug: "nomatic",
+    aliases: ["nomatic-coupons", "nomatic-discount", "nomatic-promo"],
+    logo: "/logos/nomatic.svg",
+    website: "https://nomatic.com/?ref=promoregistry",
+    affiliate_url: "https://nomatic.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Functional minimalist travel backpacks, carry-on luggage, and camera organizers.",
+    coupons: [
+      {
+        id: "nomatic-deal-1",
+        code: "NOMATIC15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code NOMATIC15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nomatic-deal-2",
+        code: "NOMATIC20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code NOMATIC20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nomatic-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Nomatic products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nomatic-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nomatic-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 90. WANDRD (Bags & Packs)
+  {
+    id: 704,
+    name: "Wandrd",
+    slug: "wandrd",
+    aliases: ["wandrd-coupons", "wandrd-discount", "wandrd-promo"],
+    logo: "/logos/wandrd.svg",
+    website: "https://wandrd.com/?ref=promoregistry",
+    affiliate_url: "https://wandrd.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Award-winning camera backpacks, rugged photography bags, and transit travel duffels.",
+    coupons: [
+      {
+        id: "wandrd-deal-1",
+        code: "WANDRD15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code WANDRD15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wandrd-deal-2",
+        code: "WANDRD20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code WANDRD20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wandrd-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Wandrd products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wandrd-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "wandrd-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 91. PETKIT (Pet Tech)
+  {
+    id: 705,
+    name: "Petkit",
+    slug: "petkit",
+    aliases: ["petkit-coupons", "petkit-discount", "petkit-promo"],
+    logo: "/logos/petkit.svg",
+    website: "https://petkit.com/?ref=promoregistry",
+    affiliate_url: "https://petkit.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Smart automatic self-cleaning cat litter boxes, WiFi pet feeders, and fountain filters.",
+    coupons: [
+      {
+        id: "petkit-deal-1",
+        code: "PETKIT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PETKIT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "petkit-deal-2",
+        code: "PETKIT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PETKIT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "petkit-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Petkit products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "petkit-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "petkit-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 92. AKKO GEAR (PC Tech)
+  {
+    id: 706,
+    name: "AKKO Gear",
+    slug: "akko",
+    aliases: ["akko-coupons", "akko-discount", "akko-promo"],
+    logo: "/logos/akko.png",
+    website: "https://akkogear.de/?ref=promoregistry",
+    affiliate_url: "https://akkogear.de/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Designer custom mechanical keyboards, hot-swap wireless keyboards, and novelty keycaps.",
+    coupons: [
+      {
+        id: "akko-deal-1",
+        code: "AKKO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code AKKO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "akko-deal-2",
+        code: "AKKO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code AKKO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "akko-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all AKKO Gear products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "akko-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "akko-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 93. IQUNIX (PC Tech)
+  {
+    id: 707,
+    name: "IQUNIX",
+    slug: "iqunix",
+    aliases: ["iqunix-coupons", "iqunix-discount", "iqunix-promo"],
+    logo: "/logos/iqunix.svg",
+    website: "https://iqunix.store/?ref=promoregistry",
+    affiliate_url: "https://iqunix.store/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Aluminum mechanical keyboards with hot-swappable TTC switches and aesthetic designs.",
+    coupons: [
+      {
+        id: "iqunix-deal-1",
+        code: "IQUNIX15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code IQUNIX15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "iqunix-deal-2",
+        code: "IQUNIX20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code IQUNIX20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "iqunix-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all IQUNIX products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "iqunix-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "iqunix-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 94. SOLSTICE WATERSPORTS (Watersports)
+  {
+    id: 708,
+    name: "Solstice Watersports",
+    slug: "solstice-watersports",
+    aliases: ["solstice-watersports-coupons", "solstice-watersports-discount", "solstice-watersports-promo"],
+    logo: "/logos/solstice-watersports.svg",
+    website: "https://solsticewatersports.com/?ref=promoregistry",
+    affiliate_url: "https://solsticewatersports.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Inflatable stand-up paddle boards (SUPs), lake docks, kayaks, and towable tubes.",
+    coupons: [
+      {
+        id: "solstice-watersports-deal-1",
+        code: "SOLSTICE15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code SOLSTICE15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "solstice-watersports-deal-2",
+        code: "SOLSTICE20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code SOLSTICE20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "solstice-watersports-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Solstice Watersports products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "solstice-watersports-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "solstice-watersports-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 95. AIPAS EBIKE (E-Bikes)
+  {
+    id: 709,
+    name: "Aipas eBike",
+    slug: "aipas",
+    aliases: ["aipas-coupons", "aipas-discount", "aipas-promo"],
+    logo: "/logos/aipas.svg",
+    website: "https://aipasbike.com/?ref=promoregistry",
+    affiliate_url: "https://aipasbike.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Affordable long-range electric commuter bicycles and folding fat-tire ebikes.",
+    coupons: [
+      {
+        id: "aipas-deal-1",
+        code: "AIPAS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code AIPAS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aipas-deal-2",
+        code: "AIPAS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code AIPAS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aipas-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Aipas eBike products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aipas-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "aipas-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 96. JOYTUTUS (Overlanding)
+  {
+    id: 710,
+    name: "Joytutus",
+    slug: "joytutus",
+    aliases: ["joytutus-coupons", "joytutus-discount", "joytutus-promo"],
+    logo: "/logos/joytutus.svg",
+    website: "https://joytutus.com/?ref=promoregistry",
+    affiliate_url: "https://joytutus.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Portable 12V car refrigerators, truck bed tents, car organizers, and overland accessories.",
+    coupons: [
+      {
+        id: "joytutus-deal-1",
+        code: "JOYTUTUS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code JOYTUTUS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "joytutus-deal-2",
+        code: "JOYTUTUS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code JOYTUTUS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "joytutus-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Joytutus products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "joytutus-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "joytutus-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 97. BODEGACOOLER (Camp & Outdoor)
+  {
+    id: 711,
+    name: "bodegacooler",
+    slug: "bodegacooler",
+    aliases: ["bodegacooler-coupons", "bodegacooler-discount", "bodegacooler-promo"],
+    logo: "/logos/bodegacooler.svg",
+    website: "https://bodegacooler.com/?ref=promoregistry",
+    affiliate_url: "https://bodegacooler.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Dual-zone portable 12V RV car fridges, dual-door freezers, and mini camping refrigerators.",
+    coupons: [
+      {
+        id: "bodegacooler-deal-1",
+        code: "BODEGACO15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code BODEGACO15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bodegacooler-deal-2",
+        code: "BODEGACO20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code BODEGACO20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bodegacooler-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all bodegacooler products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bodegacooler-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bodegacooler-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 98. AMPERE TIME (Batteries)
+  {
+    id: 712,
+    name: "Ampere Time",
+    slug: "ampere-time",
+    aliases: ["ampere-time-coupons", "ampere-time-discount", "ampere-time-promo"],
+    logo: "/logos/ampere-time.svg",
+    website: "https://amperetime.com/?ref=promoregistry",
+    affiliate_url: "https://amperetime.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Deep-cycle LiFePO4 lithium batteries for RV, solar systems, trolling motors, and backup power.",
+    coupons: [
+      {
+        id: "ampere-time-deal-1",
+        code: "AMPERETI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code AMPERETI15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ampere-time-deal-2",
+        code: "AMPERETI20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code AMPERETI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ampere-time-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Ampere Time products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ampere-time-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "ampere-time-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 99. HOOGA HEALTH (Light Therapy)
+  {
+    id: 713,
+    name: "Hooga Health",
+    slug: "hooga",
+    aliases: ["hooga-coupons", "hooga-discount", "hooga-promo"],
+    logo: "/logos/hooga.svg",
+    website: "https://hoogahealth.com/?ref=promoregistry",
+    affiliate_url: "https://hoogahealth.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Red light therapy panels, grounding mats, blue-light blocking glasses, and recovery lamps.",
+    coupons: [
+      {
+        id: "hooga-deal-1",
+        code: "HOOGA15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code HOOGA15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hooga-deal-2",
+        code: "HOOGA20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code HOOGA20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hooga-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Hooga Health products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hooga-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hooga-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 100. OFF ROAD TENTS (Overlanding)
+  {
+    id: 714,
+    name: "Off Road Tents",
+    slug: "off-road-tents",
+    aliases: ["off-road-tents-coupons", "off-road-tents-discount", "off-road-tents-promo"],
+    logo: "/logos/off-road-tents.svg",
+    website: "https://offroadtents.com/?ref=promoregistry",
+    affiliate_url: "https://offroadtents.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Premium rooftop tents, overland vehicle awnings, and heavy-duty 4x4 camping gear.",
+    coupons: [
+      {
+        id: "off-road-tents-deal-1",
+        code: "OFFROADT15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code OFFROADT15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "off-road-tents-deal-2",
+        code: "OFFROADT20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code OFFROADT20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "off-road-tents-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Off Road Tents products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "off-road-tents-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "off-road-tents-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 101. SETPOWER (Coolers)
+  {
+    id: 715,
+    name: "Setpower",
+    slug: "setpower",
+    aliases: ["setpower-coupons", "setpower-discount", "setpower-promo"],
+    logo: "/logos/setpower.svg",
+    website: "https://setpowerusa.com/?ref=promoregistry",
+    affiliate_url: "https://setpowerusa.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Heavy-duty 12V portable fridge freezers for overland trucks, vans, and off-grid camping.",
+    coupons: [
+      {
+        id: "setpower-deal-1",
+        code: "SETPOWER15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code SETPOWER15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "setpower-deal-2",
+        code: "SETPOWER20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code SETPOWER20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "setpower-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Setpower products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "setpower-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "setpower-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 102. PECRON (Solar Generators)
+  {
+    id: 716,
+    name: "PECRON",
+    slug: "pecron",
+    aliases: ["pecron-coupons", "pecron-discount", "pecron-promo"],
+    logo: "/logos/pecron.svg",
+    website: "https://pecron.com/?ref=promoregistry",
+    affiliate_url: "https://pecron.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "High-capacity portable power stations, solar generators, and solar panels up to 3600W.",
+    coupons: [
+      {
+        id: "pecron-deal-1",
+        code: "PECRON15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code PECRON15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pecron-deal-2",
+        code: "PECRON20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code PECRON20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pecron-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all PECRON products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pecron-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pecron-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 103. ROCKBROS (Cycling)
+  {
+    id: 717,
+    name: "ROCKBROS",
+    slug: "rockbros",
+    aliases: ["rockbros-coupons", "rockbros-discount", "rockbros-promo"],
+    logo: "/logos/rockbros.png",
+    website: "https://rockbrosbike.us/?ref=promoregistry",
+    affiliate_url: "https://rockbrosbike.us/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Cycling gear, photochromic sunglasses, bike bags, helmets, and bicycle accessories.",
+    coupons: [
+      {
+        id: "rockbros-deal-1",
+        code: "ROCKBROS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code ROCKBROS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rockbros-deal-2",
+        code: "ROCKBROS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code ROCKBROS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rockbros-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all ROCKBROS products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rockbros-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rockbros-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 104. LUMIBRICKS (Toy Lights)
+  {
+    id: 718,
+    name: "Lumibricks",
+    slug: "lumibricks",
+    aliases: ["lumibricks-coupons", "lumibricks-discount", "lumibricks-promo"],
+    logo: "/logos/lumibricks.png",
+    website: "https://lumibricks.com/?ref=promoregistry",
+    affiliate_url: "https://lumibricks.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "LED light kits for LEGO building sets, architectural model lighting, and custom cables.",
+    coupons: [
+      {
+        id: "lumibricks-deal-1",
+        code: "LUMIBRIC15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code LUMIBRIC15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lumibricks-deal-2",
+        code: "LUMIBRIC20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code LUMIBRIC20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lumibricks-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Lumibricks products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lumibricks-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "lumibricks-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 105. NEOSABERS (Collectibles)
+  {
+    id: 719,
+    name: "Neosabers",
+    slug: "neosabers",
+    aliases: ["neosabers-coupons", "neosabers-discount", "neosabers-promo"],
+    logo: "/logos/neosabers.svg",
+    website: "https://neosabers.com/?ref=promoregistry",
+    affiliate_url: "https://neosabers.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Custom Xenopixel & Neopixel combat dueling lightsabers with smooth-swing sound fonts.",
+    coupons: [
+      {
+        id: "neosabers-deal-1",
+        code: "NEOSABER15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code NEOSABER15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "neosabers-deal-2",
+        code: "NEOSABER20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code NEOSABER20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "neosabers-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Neosabers products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "neosabers-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "neosabers-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 106. KOREAN SKINCARE (K-Beauty)
+  {
+    id: 720,
+    name: "Korean Skincare",
+    slug: "korean-skincare",
+    aliases: ["korean-skincare-coupons", "korean-skincare-discount", "korean-skincare-promo"],
+    logo: "/logos/korean-skincare.svg",
+    website: "https://koreanskincare.co.il/?ref=promoregistry",
+    affiliate_url: "https://koreanskincare.co.il/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Authentic K-beauty skincare, snail mucin serums, centella toners, and Korean SPF sunscreens.",
+    coupons: [
+      {
+        id: "korean-skincare-deal-1",
+        code: "KOREANSK15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code KOREANSK15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "korean-skincare-deal-2",
+        code: "KOREANSK20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code KOREANSK20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "korean-skincare-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Korean Skincare products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "korean-skincare-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "korean-skincare-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 107. BULL BOOST PERFORMANCE (Auto Racing)
+  {
+    id: 721,
+    name: "Bull Boost Performance",
+    slug: "bull-boost-performance",
+    aliases: ["bull-boost-performance-coupons", "bull-boost-performance-discount", "bull-boost-performance-promo"],
+    logo: "/logos/bull-boost-performance.svg",
+    website: "https://bullboostperformance.com/?ref=promoregistry",
+    affiliate_url: "https://bullboostperformance.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "High-performance automotive turbochargers, intercoolers, catch cans, and racing headers.",
+    coupons: [
+      {
+        id: "bull-boost-performance-deal-1",
+        code: "BULLBOOS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code BULLBOOS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bull-boost-performance-deal-2",
+        code: "BULLBOOS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code BULLBOOS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bull-boost-performance-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Bull Boost Performance products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bull-boost-performance-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "bull-boost-performance-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 108. FITUEYES (Furniture)
+  {
+    id: 722,
+    name: "Fitueyes",
+    slug: "fitueyes",
+    aliases: ["fitueyes-coupons", "fitueyes-discount", "fitueyes-promo"],
+    logo: "/logos/fitueyes.svg",
+    website: "https://fitueyes.com/?ref=promoregistry",
+    affiliate_url: "https://fitueyes.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Easel design floor TV stands, designer media consoles, and modern motorized standing desks.",
+    coupons: [
+      {
+        id: "fitueyes-deal-1",
+        code: "FITUEYES15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code FITUEYES15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fitueyes-deal-2",
+        code: "FITUEYES20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code FITUEYES20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fitueyes-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Fitueyes products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fitueyes-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "fitueyes-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 109. HELVETUS (Watches)
+  {
+    id: 723,
+    name: "Helvetus",
+    slug: "helvetus",
+    aliases: ["helvetus-coupons", "helvetus-discount", "helvetus-promo"],
+    logo: "/logos/helvetus.svg",
+    website: "https://helvetus.com/?ref=promoregistry",
+    affiliate_url: "https://helvetus.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Swiss-designed minimalist luxury chronographs, automatic watches, and sapphire crystals.",
+    coupons: [
+      {
+        id: "helvetus-deal-1",
+        code: "HELVETUS15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code HELVETUS15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "helvetus-deal-2",
+        code: "HELVETUS20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code HELVETUS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "helvetus-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Helvetus products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "helvetus-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "helvetus-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 110. RECONSTITUTION SOLUTION (Lab Supplies)
+  {
+    id: 724,
+    name: "Reconstitution Solution",
+    slug: "reconstitution-solution",
+    aliases: ["reconstitution-solution-coupons", "reconstitution-solution-discount", "reconstitution-solution-promo"],
+    logo: "/logos/reconstitution-solution.svg",
+    website: "https://reconstitution-solution.io/?ref=promoregistry",
+    affiliate_url: "https://reconstitution-solution.io/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "Laboratory-grade bacteriostatic water, sterile reconstituting solvents, and research supplies.",
+    coupons: [
+      {
+        id: "reconstitution-solution-deal-1",
+        code: "RECONSTI15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code RECONSTI15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "reconstitution-solution-deal-2",
+        code: "RECONSTI20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code RECONSTI20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "reconstitution-solution-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Reconstitution Solution products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "reconstitution-solution-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "reconstitution-solution-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 111. XSTEEL TARGETS (Shooting)
+  {
+    id: 725,
+    name: "Xsteel Targets",
+    slug: "xsteel-targets",
+    aliases: ["xsteel-targets-coupons", "xsteel-targets-discount", "xsteel-targets-promo"],
+    logo: "/logos/xsteel-targets.svg",
+    website: "https://xsteeltargets.com/?ref=promoregistry",
+    affiliate_url: "https://xsteeltargets.com/?ref=promoregistry",
+    country: "GLOBAL",
+    description: "AR500 and AR550 laser-cut steel shooting targets, gongs, and reactive target stands.",
+    coupons: [
+      {
+        id: "xsteel-targets-deal-1",
+        code: "XSTEELTA15",
+        discount: "15% OFF",
+        title: "15% off sitewide on all orders",
+        description: "Apply verified code XSTEELTA15 at checkout to save 15% on qualified items.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xsteel-targets-deal-2",
+        code: "XSTEELTA20",
+        discount: "20% OFF",
+        title: "20% off bestseller bundles & sets",
+        description: "Save 20% on top-rated bundles, gear collections, and multi-item packs with code XSTEELTA20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xsteel-targets-deal-3",
+        code: "SAVE10",
+        discount: "10% OFF",
+        title: "10% off your entire cart instantly",
+        description: "Enjoy 10% instant checkout discount on all Xsteel Targets products with code SAVE10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xsteel-targets-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome coupon on orders over $60",
+        description: "Claim $10 off your first online order with verified promo code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "xsteel-targets-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping & return guarantee",
+        description: "Enjoy 100% free tracked doorstep shipping on all qualifying orders plus safe delivery.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  }
 ];
 
 /**
