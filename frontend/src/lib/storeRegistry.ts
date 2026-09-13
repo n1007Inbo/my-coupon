@@ -1902,6 +1902,366 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 31. CARLINKIT (US / Global - Wireless CarPlay & Android Auto Adapters)
+  {
+    id: 631,
+    name: "Carlinkit",
+    slug: "carlinkit",
+    aliases: ["carlinkitcarplay", "carlinkit-us", "carlinkit-wireless"],
+    logo: "/logos/carlinkit.svg",
+    website: "https://carlinkitcarplay.com/?ref=promoregistry",
+    affiliate_url: "https://carlinkitcarplay.com/?ref=promoregistry",
+    country: "US",
+    description: "Pioneering wireless CarPlay and Android Auto adapters, multimedia AI video boxes, and plug-and-play smart automotive electronics for seamless in-car connectivity.",
+    coupons: [
+      {
+        id: "clk-deal-1",
+        code: "CARLINKIT18",
+        discount: "18% OFF",
+        title: "18% off sitewide on wireless CarPlay adapters",
+        description: "Apply verified coupon code CARLINKIT18 at checkout to save 18% on Carlinkit 5.0 2air and TBox Plus.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clk-deal-2",
+        code: "TBOX30",
+        discount: "$30 OFF",
+        title: "$30 off Carlinkit TBox Plus Android 13 AI Box",
+        description: "Save $30 instantly on the full Android AI video box with standalone GPS and 4G LTE.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clk-deal-3",
+        code: "WIRELESS20",
+        discount: "20% OFF",
+        title: "20% off Carlinkit 5.0 2air dual wireless adapter",
+        description: "Upgrade to instant wireless Apple CarPlay and Android Auto with code WIRELESS20.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clk-deal-4",
+        code: "WELCOME15",
+        discount: "$15 OFF",
+        title: "$15 welcome voucher for new customers",
+        description: "Enjoy $15 instant savings on any car tech order over $70 with code WELCOME15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "clk-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide express delivery + 1-year warranty",
+        description: "All Carlinkit devices include 100% free tracked international express delivery and a 1-year warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 32. CARPURIDE (US / Global - Portable Wireless Car Stereo Touchscreens)
+  {
+    id: 632,
+    name: "Carpuride",
+    slug: "carpuride",
+    aliases: ["carpuride-stereo", "carpuride-us"],
+    logo: "/logos/carpuride.svg",
+    website: "https://carpuride.com/?ref=promoregistry",
+    affiliate_url: "https://carpuride.com/?ref=promoregistry",
+    country: "US",
+    description: "Top-rated portable wireless Apple CarPlay and Android Auto car stereos, dash cams, smart motorcycle displays, and IPS touchscreen receivers.",
+    coupons: [
+      {
+        id: "cpr-deal-1",
+        code: "CARPURIDE50",
+        discount: "$50 OFF",
+        title: "$50 off portable wireless CarPlay touchscreen stereos",
+        description: "Apply verified coupon CARPURIDE50 at checkout for $50 off flagship W103 and W903 displays.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cpr-deal-2",
+        code: "CAR15",
+        discount: "15% OFF",
+        title: "15% off sitewide on car & motorcycle smart screens",
+        description: "Save 15% on all portable car audio receivers, backup cameras, and motorcycle navigation with code CAR15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cpr-deal-3",
+        code: "W103PRO",
+        discount: "$30 OFF",
+        title: "$30 off W103 Pro 10.3-inch wireless touchscreen",
+        description: "Enjoy $30 instant discount on the ultra-wide W103 Pro dual Bluetooth screen with code W103PRO.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cpr-deal-4",
+        code: "WELCOME20",
+        discount: "$20 OFF",
+        title: "$20 welcome coupon on your first order",
+        description: "Redeem welcome code WELCOME20 for $20 off any portable navigation unit.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "cpr-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide tracked shipping + 2-year warranty",
+        description: "Enjoy 100% free tracked doorstep shipping worldwide plus a 2-year comprehensive warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 33. ARZOPA (US / Global - Ultra-Slim Portable Laptop & Gaming Monitors)
+  {
+    id: 633,
+    name: "Arzopa",
+    slug: "arzopa",
+    aliases: ["arzopa-monitor", "arzopa-us"],
+    logo: "/logos/arzopa.svg",
+    website: "https://arzopa.com/?ref=promoregistry",
+    affiliate_url: "https://arzopa.com/?ref=promoregistry",
+    country: "US",
+    description: "Industry-leading ultra-slim portable monitors, 144Hz portable gaming screens, and FHD/4K IPS secondary displays for laptops, MacBooks, gaming consoles, and smartphones.",
+    coupons: [
+      {
+        id: "arz-deal-1",
+        code: "ARZOPA15",
+        discount: "15% OFF",
+        title: "15% off sitewide on ultra-slim portable monitors",
+        description: "Apply code ARZOPA15 at checkout to save 15% on A1 Gamut, S1 Table, and Z1FC portable monitors.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arz-deal-2",
+        code: "GAMING30",
+        discount: "$30 OFF",
+        title: "$30 off Z1FC 144Hz portable high-refresh gaming display",
+        description: "Get $30 instant savings on 144Hz ultra-smooth portable screens for Switch, PS5, and Steam Deck with code GAMING30.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arz-deal-3",
+        code: "A1MAX",
+        discount: "$20 OFF",
+        title: "$20 off A1 Max 17.3-inch big screen portable monitor",
+        description: "Save $20 on the flagship 17.3-inch Full HD portable laptop display with code A1MAX.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arz-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome voucher on your first monitor purchase",
+        description: "Claim $10 instant discount on any portable second monitor with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "arz-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US delivery + 30-day money-back guarantee",
+        description: "All Arzopa monitors include free tracked shipping across the United States and a 30-day return trial.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 34. HOMARY (US / Global - Luxury Home Furniture, Bath & Modern Lighting)
+  {
+    id: 634,
+    name: "Homary",
+    slug: "homary",
+    aliases: ["homary-furniture", "homary-us", "homary-living"],
+    logo: "/logos/homary.svg",
+    website: "https://homary.com/?ref=promoregistry",
+    affiliate_url: "https://homary.com/?ref=promoregistry",
+    country: "US",
+    description: "Global online home improvement and luxury decor platform offering contemporary furniture, luxury bathroom vanities, waterfall faucets, dining sets, and modern chandelier lighting.",
+    coupons: [
+      {
+        id: "hm-deal-1",
+        code: "HOMARY10",
+        discount: "10% OFF",
+        title: "10% off sitewide on luxury furniture & modern home decor",
+        description: "Save 10% on living room seating, coffee tables, dining sets, and chandeliers with code HOMARY10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hm-deal-2",
+        code: "SAVE100",
+        discount: "$100 OFF",
+        title: "$100 off furniture & vanity orders over $1,000",
+        description: "Get $100 instant checkout savings on high-end furniture and bedroom sets with code SAVE100.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hm-deal-3",
+        code: "BATH50",
+        discount: "$50 OFF",
+        title: "$50 off freestanding bathtubs & modern bathroom vanities",
+        description: "Save $50 on luxury bathroom remodels, vanities, and LED mirrors with code BATH50.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hm-deal-4",
+        code: "LIGHT12",
+        discount: "12% OFF",
+        title: "12% off designer chandeliers, pendants & wall sconces",
+        description: "Enjoy 12% discount on contemporary ceiling light fixtures and lamps with code LIGHT12.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "hm-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free white-glove doorstep delivery + 3-year warranty",
+        description: "Enjoy 100% free tracked shipping across the United States with a 3-year product warranty.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 35. SMALLRIG (US / Global - Professional Camera Cages, Rigs & Accessories)
+  {
+    id: 635,
+    name: "SmallRig",
+    slug: "smallrig",
+    aliases: ["smallrigs", "smallrig-us", "smallrig-de"],
+    logo: "/logos/smallrig.svg",
+    website: "https://smallrig.com/?ref=promoregistry",
+    affiliate_url: "https://smallrig.com/?ref=promoregistry",
+    country: "US",
+    description: "World's leading developer of camera cages, filmmaking rigs, carbon fiber tripods, wireless follow focus systems, and studio lighting gear for creators and cinematographers.",
+    coupons: [
+      {
+        id: "sr-deal-1",
+        code: "RIG10",
+        discount: "10% OFF",
+        title: "10% off sitewide on camera cages, handles & mounts",
+        description: "Apply code RIG10 at checkout for 10% off camera cages for Sony A7IV, FX3, Canon R5, and BMPCC.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sr-deal-2",
+        code: "TRIPOD15",
+        discount: "15% OFF",
+        title: "15% off heavy-duty carbon fiber tripods & fluid heads",
+        description: "Save 15% on professional video tripods, monopod kits, and ball heads with code TRIPOD15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sr-deal-3",
+        code: "KIT25",
+        discount: "$25 OFF",
+        title: "$25 off full filmmaking rig kits & matte box sets",
+        description: "Get $25 instant savings on complete creator kits and vlogging rigs with code KIT25.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sr-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome voucher on your first gear order over $70",
+        description: "Claim $10 off your first camera accessory purchase with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "sr-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free worldwide tracked shipping on orders $69+",
+        description: "Enjoy 100% free tracked international delivery on all qualifying videography orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 36. JOCKO FUEL (US - Clean Sports Nutrition, MÖLK & GO Energy Drinks)
+  {
+    id: 636,
+    name: "Jocko Fuel",
+    slug: "jocko-fuel",
+    aliases: ["jockofuel", "jocko-fuel-us"],
+    logo: "/logos/jocko-fuel.svg",
+    website: "https://store.jockofuel.com/?ref=promoregistry",
+    affiliate_url: "https://store.jockofuel.com/?ref=promoregistry",
+    country: "US",
+    description: "Clean sports nutrition created by retired Navy SEAL Jocko Willink. Featuring sugar-free Jocko GO energy drinks, MÖLK whey protein, pre-workout, and discipline-tested supplements.",
+    coupons: [
+      {
+        id: "jf-deal-1",
+        code: "JOCKO10",
+        discount: "10% OFF",
+        title: "10% off sitewide on Jocko GO energy drinks & MÖLK protein",
+        description: "Save 10% on clean energy cans, grass-fed protein powder, and joint supplements with code JOCKO10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jf-deal-2",
+        code: "MOLK15",
+        discount: "15% OFF",
+        title: "15% off MÖLK protein tubs & protein shake cases",
+        description: "Get 15% off best-selling chocolate, vanilla, and peanut butter MÖLK protein with code MOLK15.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jf-deal-3",
+        code: "GOENERGY",
+        discount: "20% OFF",
+        title: "20% off Jocko GO energy drink 12-pack cases",
+        description: "Save 20% on natural, sugar-free nootropic energy drink cases with code GOENERGY.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jf-deal-4",
+        code: "WELCOME10",
+        discount: "$10 OFF",
+        title: "$10 welcome discount on orders over $60",
+        description: "Claim $10 instant checkout savings on your first fitness nutrition order with code WELCOME10.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "jf-deal-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US standard shipping on orders $99+",
+        description: "Enjoy 100% free tracked delivery across the United States on all qualifying supplement orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 

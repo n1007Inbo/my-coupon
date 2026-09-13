@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#0A0E17"/>
+  <!-- Carlinkit Wi-Fi Wave Icon -->
+  <circle cx="45" cy="40" r="18" fill="none" stroke="#0088FF" stroke-width="3"/>
+  <circle cx="45" cy="40" r="10" fill="none" stroke="#00C8FF" stroke-width="3"/>
+  <circle cx="45" cy="40" r="4" fill="#00E5FF"/>
+  <!-- Text -->
+  <text x="75" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="32" font-weight="900" letter-spacing="1" fill="#FFFFFF">Carlink<tspan fill="#00C8FF">it</tspan></text>
+</svg>

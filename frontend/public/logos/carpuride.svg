@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#14171F"/>
+  <!-- Screen Icon -->
+  <rect x="25" y="24" width="36" height="26" rx="4" fill="none" stroke="#FF5722" stroke-width="3"/>
+  <circle cx="43" cy="37" r="4" fill="#FF5722"/>
+  <path d="M37,54 L49,54" stroke="#FF5722" stroke-width="3" stroke-linecap="round"/>
+  <!-- Text -->
+  <text x="75" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="900" letter-spacing="2" fill="#FFFFFF">CARPU<tspan fill="#FF5722">RIDE</tspan></text>
+</svg>

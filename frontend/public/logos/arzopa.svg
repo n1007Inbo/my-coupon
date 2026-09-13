@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="320" height="80">
+  <rect width="320" height="80" rx="12" fill="#0F111A"/>
+  <!-- Monitor Angle Icon -->
+  <rect x="26" y="22" width="34" height="24" rx="3" fill="none" stroke="#7C4DFF" stroke-width="3"/>
+  <line x1="33" y1="52" x2="53" y2="52" stroke="#7C4DFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="43" y1="46" x2="43" y2="52" stroke="#7C4DFF" stroke-width="3"/>
+  <!-- Text -->
+  <text x="74" y="53" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" letter-spacing="2" fill="#FFFFFF">ARZOPA</text>
+</svg>
