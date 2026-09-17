@@ -87,6 +87,21 @@ export default function RootLayout({
         />
         <meta name="fo-verify" content="21153cba-a2c3-435d-aff2-e91717e8564c" />
         <meta name="verify-admitad" content="dc1c933d28" />
+        {/* Sovrn / Commerce (emrldtp) Verification & Affiliate Tracking */}
+        <script
+          data-cmp-ab="2"
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function () {
+                  var script = document.createElement("script");
+                  script.async = 1;
+                  script.setAttribute("data-cmp-ab","2");
+                  script.src = 'https://emrldtp.com/NTc1MDEw.js?t=575010';
+                  document.head.appendChild(script);
+              })();
+            `
+          }}
+        />
         <link rel="icon" href="/favicon.png" type="image/png" />
         {/* Rich Structured JSON-LD Schema Markup */}
         <script
