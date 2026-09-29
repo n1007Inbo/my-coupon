@@ -60,6 +60,16 @@ export default function RootLayout({
                 gtag('config', '${gaId}');
               `}
             </Script>
+            <Script id="mrge-script" strategy="afterInteractive">
+              {`
+                (function(){
+                  var loc = window.location.href;
+                  var dd = document.createElement('script');
+                  dd.type = 'text/javascript'; dd.src = '//static.publisher.mrge.com/promoregistry.js?loc=' + encodeURIComponent(loc);
+                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(dd, s);
+                })();
+              `}
+            </Script>
           </>
         )}
         {/* Crisp Live Chat Widget */}
