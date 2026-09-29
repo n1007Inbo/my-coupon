@@ -81,6 +81,16 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/go/wjd-exclusives-us",
+        destination: "https://lkmstore.com/g/hIgUjRa",
+        permanent: false,
+      },
+      {
+        source: "/go/silver-cross-us",
+        destination: "https://app.linkscircle.com/short/0pSe401hQq",
+        permanent: false,
+      },
+      {
         source: "/go/desktronic-4leg",
         destination: "https://desktronic.co.uk/products/4-leg-standing-desk?bg_ref=fek2GZmWHH&utm_source=fek2GZmWHH&utm_medium=partner&utm_campaign=Beginner%20Program",
         permanent: true,
