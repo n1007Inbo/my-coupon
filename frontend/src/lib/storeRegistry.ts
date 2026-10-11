@@ -752,6 +752,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-1",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "20% OFF",
         title: "20% off exclusive promo code sitewide (verified working)",
         description: "Save 20% on Daily Ultimate Essentials and Longevity supplements with code METHEW29111.",
@@ -761,6 +762,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-2",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "30% OFF",
         title: "30% off Welcome Kit + 5 free travel sachets + shaker cup",
         description: "Get 30% discount on the complete IM8 Welcome Starter Kit with exclusive code METHEW29111.",
@@ -770,6 +772,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-3",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "15% OFF",
         title: "15% off first order discount code on all longevity powders",
         description: "Apply 15% instant discount across all single and multi-pack nutrition orders with code METHEW29111.",
@@ -779,6 +782,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-4",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "30% OFF",
         title: "30% off Daily Ultimate Essentials Pro 90-day subscription",
         description: "Unlock 30% recurring savings on the 90-day supply bundle using code METHEW29111.",
@@ -788,6 +792,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-5",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "EXTRA 20% OFF",
         title: "Extra 20% off Daily Ultimate Longevity monthly subscription",
         description: "Stack an extra 20% off on all monthly recurring wellness subscriptions with code METHEW29111.",
@@ -797,6 +802,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-6",
         code: "METHEW29111",
+        is_auto_applied: true,
         discount: "$208/MO STACK",
         title: "The Beckham Stack Bundle starting from just $208/mo",
         description: "Get the complete David Beckham Longevity Stack at special promotional pricing with code METHEW29111.",
@@ -806,6 +812,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-7",
         code: "",
+        is_auto_applied: true,
         discount: "FREE GIFTS",
         title: "Free signature shaker + travel tin with any starter kit",
         description: "Receive a free premium shaker bottle and signature travel tin automatically on starter orders.",
@@ -815,6 +822,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "im8-deal-8",
         code: "",
+        is_auto_applied: true,
         discount: "FREE SHIPPING",
         title: "Free tracked US doorstep delivery on all orders",
         description: "Enjoy 100% free tracked US doorstep delivery on all starter kits and supplement subscriptions.",
