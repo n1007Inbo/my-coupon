@@ -7552,45 +7552,48 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "redu-deal-1",
-        code: "METHEW46097",
+        code: "",
         is_auto_applied: true,
         discount: "15% OFF",
-        title: "15% off exclusive promo code sitewide (verified working)",
-        description: "Get 15% discount on Redu Sculpt body sculpting massager and firming gels with verified code METHEW46097.",
+        title: "15% off coupon code (automatically applied at checkout)",
+        description: "Get 15% discount on Redu Sculpt body sculpting massager and firming gels. No code entry needed, discount activates automatically.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "redu-deal-2",
         code: "",
+        is_auto_applied: true,
         discount: "33% OFF",
         title: "33% off starter bundle + free green tea gel & vitamin C",
-        description: "Save $50 instantly on complete body contouring kit ($99.99 instead of $149.99) with automatic discount.",
+        description: "Save $50 instantly on complete body contouring kit ($99.99 instead of $149.99) with automatic checkout discount.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "redu-deal-3",
-        code: "METHEW46097",
+        code: "",
         is_auto_applied: true,
-        discount: "10% OFF",
-        title: "10% off discount code sitewide on all orders",
-        description: "Apply 10% instant savings across all body contouring and skincare orders with code METHEW46097.",
+        discount: "UP TO 60% OFF",
+        title: "Up to 60% off sitewide & seasonal clearance deals",
+        description: "Save up to 60% on replacement firming gel packs and body sculpting devices with verified partner savings.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "redu-deal-4",
         code: "",
-        discount: "60% OFF",
-        title: "Up to 60% off on subscription & gel refill packs",
-        description: "Save up to 60% with auto-delivery on replacement firming gel pads and body sculpting refills.",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off sitewide discount (auto-applied in cart)",
+        description: "Apply 10% instant savings across all body contouring tools and skincare orders automatically.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "redu-deal-5",
         code: "",
+        is_auto_applied: true,
         discount: "FREE SHIPPING",
         title: "Free tracked US delivery + 90-day money-back guarantee",
         description: "Enjoy 100% free nationwide express shipping with a 90-day risk-free money-back satisfaction guarantee.",
@@ -7599,17 +7602,18 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "redu-deal-6",
-        code: "METHEW46097",
+        code: "",
         is_auto_applied: true,
         discount: "15% OFF",
-        title: "15% off first order discount code for new customers",
-        description: "Claim 15% off your first Redu Sculpt order with verified ambassador discount code METHEW46097.",
+        title: "15% off first order discount for new customers",
+        description: "Claim 15% off your first Redu Sculpt order with automatic partner discount activated in cart.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "redu-deal-7",
         code: "",
+        is_auto_applied: true,
         discount: "40% OFF",
         title: "40% off seasonal clearance & body sculpting essentials",
         description: "Save up to 40% off on premium body massagers during limited-time seasonal promotional events.",
@@ -7618,11 +7622,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "redu-deal-8",
-        code: "METHEW46097",
+        code: "",
         is_auto_applied: true,
         discount: "SPECIAL DEAL",
-        title: "Code METHEW46097 - Auto-applied ambassador discount",
-        description: "Save instantly with verified partner ambassador promo code METHEW46097 automatically activated.",
+        title: "Exclusive partner discount - Automatically applied in cart",
+        description: "Save instantly with verified partner discount automatically applied at checkout. No promo code entry required.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
