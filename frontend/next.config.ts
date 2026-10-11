@@ -66,6 +66,16 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/go/redusculpt",
+        destination: "https://www.redusculpt.com/METHEW46097",
+        permanent: false,
+      },
+      {
+        source: "/go/redu-sculpt",
+        destination: "https://www.redusculpt.com/METHEW46097",
+        permanent: false,
+      },
+      {
         source: "/go/desktronic-uk",
         destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.co.uk%2F",
         permanent: false,
