@@ -7715,9 +7715,10 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "nushape-8",
         code: "",
+        is_auto_applied: true,
         discount: "SPECIAL DEAL",
-        title: "Code METHEW88461 - Exclusive ambassador discount",
-        description: "Claim instant partner discount with official affiliate promo code METHEW88461 auto-applied.",
+        title: "Exclusive ambassador discount - Automatically applied in cart",
+        description: "Claim instant partner discount on medical-grade phototherapy wraps. Applied automatically at checkout.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
@@ -7738,17 +7739,18 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "seeq-1",
-        code: "METHEW87649",
+        code: "",
         is_auto_applied: true,
         discount: "10% OFF",
-        title: "10% off your entire order sitewide (verified promo code)",
-        description: "Save an extra 10% on clear whey protein isolate tubs and starter packs with verified coupon code METHEW87649.",
+        title: "10% off your entire order (automatically applied in cart)",
+        description: "Save an extra 10% on clear whey protein isolate tubs and starter packs. Discount applies automatically at checkout.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "seeq-2",
         code: "",
+        is_auto_applied: true,
         discount: "FREE GIFT",
         title: "Free custom shaker bottle on orders over $35",
         description: "Get a free custom SEEQ shaker bottle automatically added at checkout with qualifying orders over $35.",
@@ -7757,17 +7759,18 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "seeq-3",
-        code: "METHEW87649",
+        code: "",
         is_auto_applied: true,
         discount: "15% OFF",
         title: "15% off multi-tub clear whey bundles & variety packs",
-        description: "Stack savings on 2-tub and 3-tub clear whey isolate variety packs with code METHEW87649.",
+        description: "Stack savings on 2-tub and 3-tub clear whey isolate variety packs with automatic bundle discount.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "seeq-4",
         code: "",
+        is_auto_applied: true,
         discount: "FREE SHIPPING",
         title: "Free US tracked shipping on all orders over $75",
         description: "Get free fast tracked standard shipping across the United States on orders of $75 or more.",
@@ -7777,6 +7780,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "seeq-5",
         code: "",
+        is_auto_applied: true,
         discount: "20% OFF",
         title: "20% off with subscribe & save auto-delivery",
         description: "Save 20% on every recurring shipment with flexible delivery intervals and no long-term commitment.",
@@ -7785,17 +7789,18 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "seeq-6",
-        code: "METHEW87649",
+        code: "",
         is_auto_applied: true,
         discount: "10% OFF",
         title: "10% off single-serve stick packs & trial bundles",
-        description: "Save 10% on convenient travel-ready clear protein isolate single serve stick packs with METHEW87649.",
+        description: "Save 10% on convenient travel-ready clear protein isolate single serve stick packs automatically.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "seeq-7",
         code: "",
+        is_auto_applied: true,
         discount: "10% OFF",
         title: "10% off student & first responder discount",
         description: "Verified active military, first responders, and students unlock 10% off their purchases.",
@@ -7804,11 +7809,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "seeq-8",
-        code: "METHEW87649",
+        code: "",
         is_auto_applied: true,
         discount: "SPECIAL DEAL",
-        title: "Code METHEW87649 - Ambassador clear whey discount",
-        description: "Apply ambassador referral code METHEW87649 for instant checkout savings on delicious clear protein.",
+        title: "Exclusive partner discount - Automatically applied in cart",
+        description: "Claim verified partner discount on all delicious clear protein flavors. Applied automatically at checkout.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
@@ -7829,36 +7834,38 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "skinny-1",
-        code: "METHEW18019",
+        code: "",
         is_auto_applied: true,
         discount: "15% OFF",
-        title: "15% off sitewide discount code on multi-collagen",
-        description: "Save 15% on Super Youth multi-collagen and beauty nutrition with verified promo code METHEW18019.",
+        title: "15% off sitewide discount (automatically applied in cart)",
+        description: "Save 15% on Super Youth multi-collagen and beauty nutrition. Discount activates automatically at checkout.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "skinny-2",
         code: "",
+        is_auto_applied: true,
         discount: "UP TO 40% OFF",
         title: "Up to 40% off Super Youth multi-collagen bundles",
-        description: "Save up to 40% when purchasing 3-month or 6-month Super Youth collagen bundles.",
+        description: "Save up to 40% when purchasing 3-month or 6-month Super Youth collagen bundles with automatic savings.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "skinny-3",
-        code: "METHEW18019",
+        code: "",
         is_auto_applied: true,
         discount: "$10 OFF",
         title: "$10 off detox wellness tea 28-day cleanse",
-        description: "Take $10 off SkinnyFit Detox and ZzzTox cleansing tea blends with code METHEW18019.",
+        description: "Take $10 off SkinnyFit Detox and ZzzTox cleansing tea blends with instant discount in cart.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "skinny-4",
         code: "",
+        is_auto_applied: true,
         discount: "FREE GIFT",
         title: "Free glass bottle, shaker & nutrition guide on bundles",
         description: "Receive a free SkinnyFit glass bottle, shaker, and nutrition plan with select bundle orders.",
@@ -7868,6 +7875,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       {
         id: "skinny-5",
         code: "",
+        is_auto_applied: true,
         discount: "FREE SHIPPING",
         title: "Free tracked US shipping on subscription orders",
         description: "Enjoy zero delivery fees and automatic monthly savings with flexible subscription plans.",
@@ -7876,17 +7884,18 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "skinny-6",
-        code: "METHEW18019",
+        code: "",
         is_auto_applied: true,
         discount: "20% OFF",
         title: "20% off Skinny Greens & Beauty Juice superfoods",
-        description: "Save 20% on Skinny Greens and Beauty Juice superfood blends at checkout with code METHEW18019.",
+        description: "Save 20% on Skinny Greens and Beauty Juice superfood blends at checkout with auto-applied discount.",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "skinny-7",
         code: "",
+        is_auto_applied: true,
         discount: "90-DAY GUARANTEE",
         title: "90-Day 100% money-back satisfaction guarantee",
         description: "Experience risk-free shopping with SkinnyFit's industry-leading 90-day satisfaction guarantee.",
@@ -7895,11 +7904,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "skinny-8",
-        code: "METHEW18019",
+        code: "",
         is_auto_applied: true,
         discount: "SPECIAL DEAL",
-        title: "Code METHEW18019 - Auto-applied ambassador discount",
-        description: "Get verified ambassador discount on all collagen, detox teas, and superfood gummies with METHEW18019.",
+        title: "Exclusive partner discount - Automatically applied in cart",
+        description: "Get verified partner discount on all collagen, detox teas, and superfood gummies. Applied automatically at checkout.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
