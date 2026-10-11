@@ -7540,7 +7540,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
 
   // 14. REDU SCULPT (At-Home Body Sculpting & Fat Cavitation Massager)
   {
-    id: 634,
+    id: 726,
     name: "Redu Sculpt",
     slug: "redusculpt",
     aliases: ["redu-sculpt", "redusculpt-us", "redu-sculpt-us"],
@@ -7623,6 +7623,279 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "SPECIAL DEAL",
         title: "Code METHEW46097 - Auto-applied ambassador discount",
         description: "Save instantly with verified partner ambassador promo code METHEW46097 automatically activated.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 15. NUSHAPE (Clinical Red Light Therapy & Photobiomodulation Wraps)
+  {
+    id: 727,
+    name: "Nushape",
+    slug: "nushape",
+    aliases: ["nushape-pt", "nushape-red-light", "nushape-therapy", "nu-shape"],
+    website: "https://www.nushape.com/METHEW88461",
+    affiliate_url: "https://www.nushape.com/METHEW88461",
+    logo: "/logos/nushape.png",
+    country: "US",
+    description: "Nushape designs clinical-grade red light therapy and photobiomodulation devices, including the patented Red Light Therapy Belt and targeted phototherapy wraps for body contouring and cellular recovery.",
+    coupons: [
+      {
+        id: "nushape-1",
+        code: "METHEW88461",
+        is_auto_applied: true,
+        discount: "$50 OFF",
+        title: "$50 off clinical red light therapy wrap (verified working)",
+        description: "Save $50 on patented phototherapy wraps and body contouring systems with verified code METHEW88461.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-2",
+        code: "METHEW88461",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off sitewide discount code on all LED therapy devices",
+        description: "Enjoy 10% savings across all medical-grade LED red light therapy devices at checkout with METHEW88461.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-3",
+        code: "",
+        discount: "UP TO $100 OFF",
+        title: "Up to $100 off red light therapy bundles",
+        description: "Save up to $100 when purchasing complete clinical photobiomodulation bundle packages.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-4",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US & worldwide express delivery",
+        description: "All Nushape therapy devices include complimentary tracked delivery with full tracking.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-5",
+        code: "METHEW88461",
+        is_auto_applied: true,
+        discount: "$70 OFF",
+        title: "$70 off phototherapy pain relief belt and wrap systems",
+        description: "Get $70 off targeted near-infrared and 660nm red light relief wrap devices with code METHEW88461.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-6",
+        code: "",
+        discount: "1-YEAR WARRANTY",
+        title: "100% Free 1-year manufacturer warranty + 14-day trial",
+        description: "Every Nushape system includes full 1-year coverage and a 14-day clinical trial guarantee.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-7",
+        code: "METHEW88461",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off practitioner, studio & multi-unit clinic orders",
+        description: "Save 15% on multi-unit professional clinic and wellness studio packages with code METHEW88461.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nushape-8",
+        code: "",
+        discount: "SPECIAL DEAL",
+        title: "Code METHEW88461 - Exclusive ambassador discount",
+        description: "Claim instant partner discount with official affiliate promo code METHEW88461 auto-applied.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 16. SEEQ SUPPLY (Viral Clear Whey Isolate Protein)
+  {
+    id: 728,
+    name: "SEEQ Supply",
+    slug: "seeq-supply",
+    aliases: ["seeqsupply", "seeq", "seeq-protein", "seeqsupply-us"],
+    website: "https://www.seeqsupply.com/METHEW87649",
+    affiliate_url: "https://www.seeqsupply.com/METHEW87649",
+    logo: "/logos/seeqsupply.png",
+    country: "US",
+    description: "SEEQ Supply creates revolutionary clear whey protein isolate that tastes crisp, light, and refreshing like fruit juice with 20g+ protein per serving and zero milky aftertaste.",
+    coupons: [
+      {
+        id: "seeq-1",
+        code: "METHEW87649",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off your entire order sitewide (verified promo code)",
+        description: "Save an extra 10% on clear whey protein isolate tubs and starter packs with verified coupon code METHEW87649.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-2",
+        code: "",
+        discount: "FREE GIFT",
+        title: "Free custom shaker bottle on orders over $35",
+        description: "Get a free custom SEEQ shaker bottle automatically added at checkout with qualifying orders over $35.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-3",
+        code: "METHEW87649",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off multi-tub clear whey bundles & variety packs",
+        description: "Stack savings on 2-tub and 3-tub clear whey isolate variety packs with code METHEW87649.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-4",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free US tracked shipping on all orders over $75",
+        description: "Get free fast tracked standard shipping across the United States on orders of $75 or more.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-5",
+        code: "",
+        discount: "20% OFF",
+        title: "20% off with subscribe & save auto-delivery",
+        description: "Save 20% on every recurring shipment with flexible delivery intervals and no long-term commitment.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-6",
+        code: "METHEW87649",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off single-serve stick packs & trial bundles",
+        description: "Save 10% on convenient travel-ready clear protein isolate single serve stick packs with METHEW87649.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-7",
+        code: "",
+        discount: "10% OFF",
+        title: "10% off student & first responder discount",
+        description: "Verified active military, first responders, and students unlock 10% off their purchases.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "seeq-8",
+        code: "METHEW87649",
+        is_auto_applied: true,
+        discount: "SPECIAL DEAL",
+        title: "Code METHEW87649 - Ambassador clear whey discount",
+        description: "Apply ambassador referral code METHEW87649 for instant checkout savings on delicious clear protein.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 17. SKINNYFIT (Super Youth Collagen Peptides & Detox Teas)
+  {
+    id: 729,
+    name: "SkinnyFit",
+    slug: "skinnyfit",
+    aliases: ["skinny-fit", "skinnyfit-tea", "skinnyfit-collagen", "skinnyfit-us"],
+    website: "https://www.skinnyfit.com/METHEW18019",
+    affiliate_url: "https://www.skinnyfit.com/METHEW18019",
+    logo: "/logos/skinnyfit.png",
+    country: "US",
+    description: "SkinnyFit produces top-rated Super Youth multi-collagen peptides, detox cleansing teas, and beauty superfoods formulated for vibrant skin, joints, and gut health.",
+    coupons: [
+      {
+        id: "skinny-1",
+        code: "METHEW18019",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off sitewide discount code on multi-collagen",
+        description: "Save 15% on Super Youth multi-collagen and beauty nutrition with verified promo code METHEW18019.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-2",
+        code: "",
+        discount: "UP TO 40% OFF",
+        title: "Up to 40% off Super Youth multi-collagen bundles",
+        description: "Save up to 40% when purchasing 3-month or 6-month Super Youth collagen bundles.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-3",
+        code: "METHEW18019",
+        is_auto_applied: true,
+        discount: "$10 OFF",
+        title: "$10 off detox wellness tea 28-day cleanse",
+        description: "Take $10 off SkinnyFit Detox and ZzzTox cleansing tea blends with code METHEW18019.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-4",
+        code: "",
+        discount: "FREE GIFT",
+        title: "Free glass bottle, shaker & nutrition guide on bundles",
+        description: "Receive a free SkinnyFit glass bottle, shaker, and nutrition plan with select bundle orders.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-5",
+        code: "",
+        discount: "FREE SHIPPING",
+        title: "Free tracked US shipping on subscription orders",
+        description: "Enjoy zero delivery fees and automatic monthly savings with flexible subscription plans.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-6",
+        code: "METHEW18019",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off Skinny Greens & Beauty Juice superfoods",
+        description: "Save 20% on Skinny Greens and Beauty Juice superfood blends at checkout with code METHEW18019.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-7",
+        code: "",
+        discount: "90-DAY GUARANTEE",
+        title: "90-Day 100% money-back satisfaction guarantee",
+        description: "Experience risk-free shopping with SkinnyFit's industry-leading 90-day satisfaction guarantee.",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "skinny-8",
+        code: "METHEW18019",
+        is_auto_applied: true,
+        discount: "SPECIAL DEAL",
+        title: "Code METHEW18019 - Auto-applied ambassador discount",
+        description: "Get verified ambassador discount on all collagen, detox teas, and superfood gummies with METHEW18019.",
         is_verified: true,
         expiry_date: "2026-12-31"
       }

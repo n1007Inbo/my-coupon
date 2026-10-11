@@ -76,6 +76,31 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/go/nushape",
+        destination: "https://www.nushape.com/METHEW88461",
+        permanent: false,
+      },
+      {
+        source: "/go/seeqsupply",
+        destination: "https://www.seeqsupply.com/METHEW87649",
+        permanent: false,
+      },
+      {
+        source: "/go/seeq-supply",
+        destination: "https://www.seeqsupply.com/METHEW87649",
+        permanent: false,
+      },
+      {
+        source: "/go/skinnyfit",
+        destination: "https://www.skinnyfit.com/METHEW18019",
+        permanent: false,
+      },
+      {
+        source: "/go/skinny-fit",
+        destination: "https://www.skinnyfit.com/METHEW18019",
+        permanent: false,
+      },
+      {
         source: "/go/desktronic-uk",
         destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.co.uk%2F",
         permanent: false,
