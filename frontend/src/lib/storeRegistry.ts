@@ -8,6 +8,7 @@ export interface RegistryCoupon {
   title: string;
   description: string;
   is_verified: boolean;
+  is_auto_applied?: boolean;
   expiry_date?: string;
   affiliate_url?: string;
 }
