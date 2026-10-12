@@ -111,6 +111,16 @@ const nextConfig: NextConfig = {
         permanent: false,
       },
       {
+        source: "/go/chompshop",
+        destination: "https://chompshop.com?sca_ref=12513706.FPVyii8Sr4k&utm_source=chompsquad&utm_medium=referral&utm_campaign=methew-dippy",
+        permanent: false,
+      },
+      {
+        source: "/go/chomp-shop",
+        destination: "https://chompshop.com?sca_ref=12513706.FPVyii8Sr4k&utm_source=chompsquad&utm_medium=referral&utm_campaign=methew-dippy",
+        permanent: false,
+      },
+      {
         source: "/go/desktronic-uk",
         destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.co.uk%2F",
         permanent: false,
