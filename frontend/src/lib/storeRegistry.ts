@@ -8038,6 +8038,146 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 19. RONE NUTRITION (Run On Nature's Energy - Clean Natural Energy & Performance)
+  {
+    id: 731,
+    name: "RONE Nutrition",
+    slug: "rone-nutrition",
+    aliases: ["ronenutrition", "rone", "rone-nutrition-us", "ronenutrition-us"],
+    website: "https://www.ronenutrition.com/Methew",
+    affiliate_url: "https://www.ronenutrition.com/Methew",
+    logo: "/logos/rone-nutrition.png",
+    country: "US",
+    description: "Run On Nature's Energy. Clean, all-natural functional energy drinks alternative, organic electrolytes, and plant-based vitality nutrition.",
+    coupons: [
+      {
+        id: "rone-deal-1",
+        code: "METHEW",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off exclusive promo code sitewide (verified working)",
+        description: "Apply verified promo code METHEW at checkout to save an instant 15% across all natural energy powders and hydration bundles.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rone-deal-2",
+        code: "METHEW",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off RONE Starter Bundle + Free Shaker Cup",
+        description: "Get 20% off the complete Run On Nature's Energy Starter Pack including 30-day powder supply and shaker with code METHEW.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rone-deal-3",
+        code: "METHEW",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off first order discount code on all energy powders",
+        description: "Save 10% on your first order of clean plant-powered energy and mental clarity formulas using code METHEW.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rone-deal-4",
+        code: "METHEW",
+        is_auto_applied: true,
+        discount: "EXTRA 20% OFF",
+        title: "Extra 20% off monthly recurring natural energy subscriptions",
+        description: "Stack an extra 20% savings on all auto-delivery orders for uninterrupted natural stamina with code METHEW.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rone-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 30%",
+        title: "Up to 30% off multi-pack hydration & energy bundles",
+        description: "Save up to 30% automatically on 3-pack and 6-pack vitality bundles. No coupon code required.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rone-deal-6",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked US doorstep delivery on all orders $50+",
+        description: "Enjoy 100% free nationwide delivery automatically calculated on all qualifying domestic orders.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 20. USA BERKEY FILTERS (Gravity-Fed Water Purification Systems & Replacement Elements)
+  {
+    id: 732,
+    name: "USA Berkey Filters",
+    slug: "usa-berkey-filters",
+    aliases: ["usaberkeyfilters", "berkey-filters", "berkey"],
+    website: "https://www.usaberkeyfilters.com/aff/256/",
+    affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+    logo: "/logos/usa-berkey-filters.png",
+    country: "US",
+    description: "World-leader in gravity-fed water purification systems, authentic Black Berkey replacement filters, stainless steel systems, and fluoride reduction elements.",
+    coupons: [
+      {
+        id: "berkey-deal-1",
+        code: "USA20",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off exclusive coupon code sitewide",
+        description: "Apply verified promo code USA20 at checkout to save 20% on authentic Berkey water filtration systems and bundles.",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "berkey-deal-2",
+        code: "MOM10",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off discount code on Black Berkey replacement elements",
+        description: "Save 15% on genuine Black Berkey replacement filters and fluoride elements using promo code MOM10.",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "berkey-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 35%",
+        title: "Up to 35% off weekly flash sales on Big Berkey systems",
+        description: "Save up to 35% on complete stainless steel gravity water filter systems. Applied automatically in cart.",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "berkey-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked US shipping on all system orders",
+        description: "Enjoy zero shipping costs automatically calculated on all Berkey water purification system orders.",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
