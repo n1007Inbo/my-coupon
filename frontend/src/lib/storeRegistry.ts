@@ -8050,73 +8050,117 @@ export const STORE_REGISTRY: RegistryStore[] = [
     affiliate_url: "https://www.ronenutrition.com/Methew",
     logo: "/logos/rone-nutrition.png",
     country: "US",
-    description: "Run On Nature's Energy. Clean, all-natural functional energy drinks alternative, organic electrolytes, and plant-based vitality nutrition.",
+    description: "Run On Nature's Energy (RONE Nutrition). 100% natural Supercharged Honey energy packs, raw honey with green tea caffeine, lion's mane mushroom adaptogens, and electrolyte hydration.",
     coupons: [
       {
         id: "rone-deal-1",
         code: "METHEW",
         is_auto_applied: true,
-        discount: "15% OFF",
-        title: "15% off exclusive promo code sitewide (verified working)",
-        description: "Apply verified promo code METHEW at checkout to save an instant 15% across all natural energy powders and hydration bundles.",
+        discount: "20% OFF",
+        title: "20% off coupon code",
+        description: "Get an exclusive 20% discount on your order at RONE Nutrition with verified promo code METHEW.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-19"
       },
       {
         id: "rone-deal-2",
-        code: "METHEW",
+        code: "",
         is_auto_applied: true,
-        discount: "20% OFF",
-        title: "20% off RONE Starter Bundle + Free Shaker Cup",
-        description: "Get 20% off the complete Run On Nature's Energy Starter Pack including 30-day powder supply and shaker with code METHEW.",
+        discount: "55% OFF",
+        title: "55% off - Summer Sale",
+        description: "Save up to 55% during the Summer & Seasonal Sale on selected Supercharged Honey packs and vitality bundles.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-14"
       },
       {
         id: "rone-deal-3",
         code: "METHEW",
         is_auto_applied: true,
-        discount: "10% OFF",
-        title: "10% off first order discount code on all energy powders",
-        description: "Save 10% on your first order of clean plant-powered energy and mental clarity formulas using code METHEW.",
+        discount: "15% OFF",
+        title: "15% off discount code sitewide",
+        description: "Apply exclusive discount code METHEW to receive an instant 15% off sitewide on all natural energy honey.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-16"
       },
       {
         id: "rone-deal-4",
-        code: "METHEW",
+        code: "",
         is_auto_applied: true,
-        discount: "EXTRA 20% OFF",
-        title: "Extra 20% off monthly recurring natural energy subscriptions",
-        description: "Stack an extra 20% savings on all auto-delivery orders for uninterrupted natural stamina with code METHEW.",
+        discount: "$49.95/ea",
+        title: "$49.95/ea - Supercharged honey 1 bag",
+        description: "Grab a 30-serving pouch of flagship Supercharged Honey (raw honey + organic caffeine + lion's mane) for just $49.95.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-16"
       },
       {
         id: "rone-deal-5",
         code: "",
         is_auto_applied: true,
-        discount: "UP TO 30%",
-        title: "Up to 30% off multi-pack hydration & energy bundles",
-        description: "Save up to 30% automatically on 3-pack and 6-pack vitality bundles. No coupon code required.",
+        discount: "FREE SHIPPING",
+        title: "free shipping",
+        description: "Enjoy free nationwide doorstep shipping automatically on all qualifying domestic US orders.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-14"
       },
       {
         id: "rone-deal-6",
         code: "",
         is_auto_applied: true,
-        discount: "FREE SHIPPING",
-        title: "Free tracked US doorstep delivery on all orders $50+",
-        description: "Enjoy 100% free nationwide delivery automatically calculated on all qualifying domestic orders.",
+        discount: "50% OFF",
+        title: "50% off on selected flovour",
+        description: "Save 50% on select seasonal and specialty Supercharged Honey flavors. Limited stock available.",
         affiliate_url: "https://www.ronenutrition.com/Methew",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "2026-11-13"
+      },
+      {
+        id: "rone-deal-7",
+        code: "",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off on Supercharged honey 4+ bag",
+        description: "Buy in bulk and save an automatic 15% off when you purchase 4 or more bags of Supercharged Honey.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-11-16"
+      },
+      {
+        id: "rone-deal-8",
+        code: "",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% off on Supercharged honey 3 bag",
+        description: "Order a 3-bag vitality pack of natural honey energy and get 10% off automatically at checkout.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-11-17"
+      },
+      {
+        id: "rone-deal-9",
+        code: "",
+        is_auto_applied: true,
+        discount: "5% OFF",
+        title: "5% off on Supercharged honey 2 bag",
+        description: "Get 5% instant discount when you grab a 2-bag pack of clean endurance Supercharged Honey.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-11-16"
+      },
+      {
+        id: "rone-deal-10",
+        code: "",
+        is_auto_applied: true,
+        discount: "5% OFF",
+        title: "5% off on newsletter sign-up",
+        description: "Sign up for the official RONE Nutrition newsletter to claim a 5% discount on your very first order.",
+        affiliate_url: "https://www.ronenutrition.com/Methew",
+        is_verified: true,
+        expiry_date: "2026-11-16"
       }
     ]
   },
