@@ -8222,6 +8222,242 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 21. DAKVOORDEELSHOP (Netherlands EPDM & Roofing Specialist - MRGE 4.9% CPA)
+  {
+    id: 801,
+    name: "Dakvoordeelshop",
+    slug: "dakvoordeelshop",
+    aliases: ["dakvoordeelshop-nl", "dakvoordeel"],
+    website: "https://www.dakvoordeelshop.nl/",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+    logo: "/logos/dakvoordeelshop.png",
+    country: "GLOBAL",
+    description: "Dé specialist in complete EPDM dakbedekking pakketten, PIR isolatieplaten, aluminium daktrimmen en hemelwaterafvoer in Nederland.",
+    coupons: [
+      {
+        id: "dak-deal-1",
+        code: "DAK10",
+        is_auto_applied: true,
+        discount: "10% KORTING",
+        title: "10% kortingscode op complete EPDM dakbedekking pakketten",
+        description: "Gebruik kortingscode DAK10 bij het afrekenen voor 10% directe korting op EPDM folie en montagelijm.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dak-deal-2",
+        code: "VOORDEEL15",
+        is_auto_applied: true,
+        discount: "15% KORTING",
+        title: "15% actiecode op PIR dakisolatie en onderlagen",
+        description: "Bespaar 15% op hoogwaardige PIR thermische dakisolatieplaten met actiecode VOORDEEL15.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dak-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "TOT 25%",
+        title: "Tot 25% voordeel op aluminium daktrimmen en ontluchting",
+        description: "Automatische staffelkorting op daktrimmen, hoekstukken en regenwaterafvoeren bij Dakvoordeelshop.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "dak-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "GRATIS BEZORGD",
+        title: "Gratis bezorging in Nederland bij orders vanaf €150",
+        description: "Geniet van kosteloze en snelle levering op je werkplek of thuis in heel Nederland.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 22. INTO-LED (Netherlands & Europe LED Lighting Expert - MRGE 9% CPA)
+  {
+    id: 802,
+    name: "Into-LED",
+    slug: "into-led",
+    aliases: ["intoled", "into-led-nl", "intoled-nl"],
+    website: "https://www.into-led.com/nl",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+    logo: "/logos/into-led.png",
+    country: "GLOBAL",
+    description: "Dé grootste online specialist in energiezuinige LED verlichting, smart verlichting, industriële LED panelen en buitenverlichting.",
+    coupons: [
+      {
+        id: "intoled-deal-1",
+        code: "LED10",
+        is_auto_applied: true,
+        discount: "10% KORTING",
+        title: "10% exclusieve kortingscode op alle LED verlichting",
+        description: "Activeer kortingscode LED10 voor 10% voordeel op LED breedstralers, inbouwspots en TL armaturen.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "intoled-deal-2",
+        code: "SMART15",
+        is_auto_applied: true,
+        discount: "15% KORTING",
+        title: "15% korting op slimme WiFi lampen en smart home sensoren",
+        description: "Bespaar 15% op slimme app-gestuurde verlichting en dimbare LED oplossingen met code SMART15.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "intoled-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "TOT 50%",
+        title: "Tot 50% voordeel op tuinverlichting, solar spots en grondspots",
+        description: "Directe seizoenskorting op waterdichte IP65 LED tuinverlichting. Automatisch verrekend in winkelmand.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "intoled-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "GRATIS VERZENDING",
+        title: "Gratis verzending in Nederland en België vanaf €50",
+        description: "Bestel voor minstens €50 aan LED lampen en ontvang gratis snelle bezorging met 5 jaar garantie.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 23. MAGICSHINE (High-Performance Bike Lights & Cycling Gear - MRGE 10% CPA)
+  {
+    id: 803,
+    name: "Magicshine",
+    slug: "magicshine",
+    aliases: ["magicshine-us", "magic-shine"],
+    website: "https://magicshine.com",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+    logo: "/logos/magicshine.png",
+    country: "US",
+    description: "World leader in high-lumen bike headlights, rechargeable cycling tail lights, Garmin-compatible mounts, and night-riding cycling safety gear.",
+    coupons: [
+      {
+        id: "magicshine-deal-1",
+        code: "MAGIC15",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off coupon code on all bike lights and accessories",
+        description: "Apply promo code MAGIC15 at checkout to receive 15% off sitewide on Monteer, Allty, and Seemee series.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicshine-deal-2",
+        code: "RIDE20",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off high-lumen MTB trail & road bike headlight bundles",
+        description: "Save 20% on ultra-bright 3000+ lumen mountain bike headlight packages with coupon RIDE20.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicshine-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 30%",
+        title: "Up to 30% off monthly cycling gear & tail light flash sale",
+        description: "Get smart brake-sensing tail lights and helmet mounts at up to 30% discount. Applied in cart.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "magicshine-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE US SHIPPING",
+        title: "Free tracked US shipping on orders over $50",
+        description: "Qualify for free nationwide US delivery on all Magicshine bike lights and rechargeable battery packs.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 24. RENPHO (Smart Health Scales, Massagers & Wellness Gear - MRGE 5% CPA)
+  {
+    id: 804,
+    name: "RENPHO",
+    slug: "renpho",
+    aliases: ["renpho-us"],
+    website: "https://renpho.com",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+    logo: "/logos/renpho.png",
+    country: "US",
+    description: "Pioneering smart wellness technology: Bluetooth smart body fat scales, percussion massage guns, heated eye massagers, and smart fitness bikes.",
+    coupons: [
+      {
+        id: "renpho-deal-1",
+        code: "HEALTH20",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off promo code on smart body composition scales",
+        description: "Enter promo code HEALTH20 at checkout to save 20% on bestselling Elis 1 & Elis Chroma smart scales.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "renpho-deal-2",
+        code: "RELAX25",
+        is_auto_applied: true,
+        discount: "25% OFF",
+        title: "25% discount code on heated eye massagers & massage guns",
+        description: "Get 25% off Eyeris 3 eye massagers and active deep-tissue percussion massage guns using code RELAX25.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "renpho-deal-3",
+        code: "WELLNESS15",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% off sitewide on all RENPHO health & fitness equipment",
+        description: "Save 15% across the entire RENPHO online store on air purifiers, food scales, and AI exercise bikes with code WELLNESS15.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "renpho-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free standard shipping on all US orders",
+        description: "Enjoy zero shipping fees calculated automatically on all orders delivered anywhere within the continental United States.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 

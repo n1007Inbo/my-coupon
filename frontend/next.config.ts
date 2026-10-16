@@ -329,6 +329,31 @@ const nextConfig: NextConfig = {
         source: "/go/shipt",
         destination: "https://redirect.partner.fatcoupon.com/go?cid=575&mid=9&url=https%3A%2F%2Fwww.shipt.com%2F",
         permanent: true,
+      },
+      {
+        source: "/go/dakvoordeelshop",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        permanent: false,
+      },
+      {
+        source: "/go/into-led",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        permanent: false,
+      },
+      {
+        source: "/go/intoled",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        permanent: false,
+      },
+      {
+        source: "/go/magicshine",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        permanent: false,
+      },
+      {
+        source: "/go/renpho",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        permanent: false,
       }
     ];
   },
