@@ -8224,14 +8224,14 @@ export const STORE_REGISTRY: RegistryStore[] = [
     ]
   },
 
-  // 21. DAKVOORDEELSHOP (Netherlands EPDM & Roofing Specialist - MRGE 4.9% CPA)
+  // 21. DAKVOORDEELSHOP (Netherlands EPDM Roofing Expert - MRGE 4.9% CPA)
   {
     id: 801,
     name: "Dakvoordeelshop",
     slug: "dakvoordeelshop",
     aliases: ["dakvoordeelshop-nl", "dakvoordeel"],
     website: "https://www.dakvoordeelshop.nl/",
-    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
     logo: "/logos/dakvoordeelshop.png",
     country: "GLOBAL",
     description: "Dé specialist in complete EPDM dakbedekking pakketten, PIR isolatieplaten, aluminium daktrimmen en hemelwaterafvoer in Nederland.",
@@ -8243,7 +8243,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "5% KORTING",
         title: "5% kortingscode op gehele bestelling bij Dakvoordeelshop",
         description: "Gebruik actiecode MARKTPLAATS in het winkelmandje voor 5% directe korting op EPDM dakbedekking en accessoires.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8254,7 +8254,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "5% KORTING",
         title: "5% weekend actiecode op dakisolatie en EPDM folie",
         description: "Ontvang 5% extra voordeel op hoogwaardige PIR isolatieplaten en daktrimmen met actiecode WEEKENDVOORDEEL5.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8265,7 +8265,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "5% WELKOMSTKORTING",
         title: "5% welkomstkorting voor nieuwe klanten bij Dakvoordeelshop",
         description: "Direct 5% korting op je eerste bestelling EPDM pakketten en PIR dakisolatie met actiecode WELKOM5.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8276,7 +8276,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "GRATIS BEZORGD",
         title: "Gratis verzending in Nederland en België vanaf €250",
         description: "Plaats een bestelling vanaf €250 en ontvang gratis levering van EPDM rollen en zware isolatieplaten.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
@@ -8290,30 +8290,30 @@ export const STORE_REGISTRY: RegistryStore[] = [
     slug: "into-led",
     aliases: ["intoled", "into-led-nl", "intoled-nl"],
     website: "https://www.into-led.com/nl",
-    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
     logo: "/logos/into-led.png",
     country: "GLOBAL",
     description: "Dé grootste online specialist in energiezuinige LED verlichting, smart verlichting, industriële LED panelen en buitenverlichting.",
     coupons: [
       {
         id: "intoled-deal-1",
-        code: "D12",
-        is_auto_applied: false,
-        discount: "12% EXTRA KORTING",
-        title: "12% extra actiekortingscode op LED verlichting en spots",
-        description: "Gebruik actiecode D12 voor 12% extra korting op geselecteerde LED spots, buitenverlichting en armaturen.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        code: "",
+        is_auto_applied: true,
+        discount: "TOT 60% KORTING",
+        title: "Tot 60% korting op LED binnen- en buitenverlichting in de sale",
+        description: "Profiteer van directe seizoensafprijzingen op WiFi lampen, inbouwspots en waterdichte tuinverlichting. Geen code nodig, korting wordt automatisch verrekend in de winkelwagen.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "intoled-deal-2",
-        code: "NIEUWSBRIEF10",
-        is_auto_applied: false,
-        discount: "10% KORTING",
-        title: "10% welkomstkortingscode via nieuwsbrief aanmelding",
-        description: "Meld je aan voor de officiële INTO-LED nieuwsbrief en ontvang direct 10% kortingscode op je eerste aankoop.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        code: "",
+        is_auto_applied: true,
+        discount: "GRATIS VERZENDING",
+        title: "Gratis verzending binnen Nederland en België vanaf €50",
+        description: "Bestel voor minstens €50 aan LED panelen, slimme lampen of toebehoren en ontvang gratis snelle bezorging inclusief betrouwbare Track & Trace.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8321,10 +8321,10 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "intoled-deal-3",
         code: "",
         is_auto_applied: true,
-        discount: "TOT 60% SALE",
-        title: "Tot 60% korting op smart home LED verlichting en tuinspots",
-        description: "Profiteer van directe seizoensafprijzingen op WiFi lampen, grondspots en waterdichte IP65 buitenverlichting.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        discount: "5 JAAR GARANTIE",
+        title: "Standaard 5 jaar omruilgarantie op professionele LED panelen",
+        description: "Zorgeloos zakelijk en particulier bestellen met 5 jaar fabrieksgarantie en 30 dagen bedenktermijn op armaturen en professionele LED panelen.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8332,10 +8332,10 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "intoled-deal-4",
         code: "",
         is_auto_applied: true,
-        discount: "GRATIS VERZENDING",
-        title: "Gratis verzending binnen Nederland en België vanaf €50",
-        description: "Alle bestellingen vanaf €50 worden gratis en razendsnel bezorgd inclusief betrouwbare Track & Trace.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        discount: "TOT 40% STAFFEL",
+        title: "Tot 40% staffelkorting op grootverpakkingen en projectverlichting",
+        description: "Directe volumekorting voor doe-het-zelvers, installateurs en bedrijven bij grotere aantallen. Automatisch berekend bij het toevoegen aan winkelmand.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
@@ -8349,7 +8349,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
     slug: "magicshine",
     aliases: ["magicshine-us", "magic-shine"],
     website: "https://magicshine.com",
-    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
     logo: "/logos/magicshine.png",
     country: "US",
     description: "World leader in high-lumen bike headlights, rechargeable cycling tail lights, Garmin-compatible mounts, and night-riding cycling safety gear.",
@@ -8361,7 +8361,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off MTB trail lights and bike headlights with coupon code",
         description: "Apply verified promo code MTBVIP at checkout to receive 15% off on Monteer, Allty, and Seemee series.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8372,7 +8372,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off first order with email newsletter registration",
         description: "Save 15% on high-lumen bicycle headlights and cycling safety gear using discount code WELCOM15.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8383,7 +8383,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off official fan community promo code sitewide",
         description: "Enter coupon code MSFANS for 15% off bike lights and rechargeable cycling safety bundles.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8394,7 +8394,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "FREE US SHIPPING",
         title: "Free tracked US shipping on orders over $50",
         description: "Automatic free delivery applied at checkout for all domestic orders reaching $50 or more.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fmagicshine.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
@@ -8408,7 +8408,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
     slug: "renpho",
     aliases: ["renpho-us"],
     website: "https://renpho.com",
-    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
     logo: "/logos/renpho.png",
     country: "US",
     description: "Pioneering smart wellness technology: Bluetooth smart body fat scales, percussion massage guns, heated eye massagers, and smart fitness bikes.",
@@ -8420,7 +8420,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "10% OFF",
         title: "10% off verified partner discount code sitewide",
         description: "Apply working coupon code WBROOKS8 in your cart for 10% off smart body composition scales and massagers.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8431,7 +8431,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off promo code on smart scales & eye massagers",
         description: "Save 15% on bestselling Eyeris eye massagers and Elis smart scales with verified code WRRENPHO15L.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8442,7 +8442,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off seasonal wellness promo code",
         description: "Use active discount code KICK15 for 15% off percussion massage guns, air purifiers, and AI smart bikes.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8453,7 +8453,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "FREE SHIPPING",
         title: "Free standard shipping on all US orders",
         description: "Enjoy zero shipping fees calculated automatically on all orders delivered anywhere within the continental United States.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
