@@ -354,6 +354,21 @@ const nextConfig: NextConfig = {
         source: "/go/renpho",
         destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Frenpho.com",
         permanent: false,
+      },
+      {
+        source: "/go/pongbot",
+        destination: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        permanent: false,
+      },
+      {
+        source: "/go/pongbot-sports",
+        destination: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        permanent: false,
+      },
+      {
+        source: "/go/pongbotsports",
+        destination: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        permanent: false,
       }
     ];
   },

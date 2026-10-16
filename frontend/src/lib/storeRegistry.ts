@@ -8458,6 +8458,76 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 25. PONGBOT (AI Tennis Ball Machines & Intelligent Table Tennis Robots - Direct UpPromote)
+  {
+    id: 805,
+    name: "PongBot",
+    slug: "pongbot",
+    aliases: ["pongbot-sports", "pongbotsports", "pong-bot"],
+    website: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+    affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+    logo: "/logos/pongbot.svg",
+    country: "US",
+    description: "Industry-leading AI tennis ball machines and smart table tennis robots: Pace S Pro, Nova S Pro, Omni S Pro, and adaptive solo training systems.",
+    coupons: [
+      {
+        id: "pongbot-deal-1",
+        code: "TIGLIO10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off verified promo code sitewide on AI sports robots",
+        description: "Apply discount code TIGLIO10 at checkout to save 10% on Pongbot Pace S Pro, Nova S Pro, and table tennis training machines.",
+        affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pongbot-deal-2",
+        code: "SPROM",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off coupon code on eligible tennis & ping pong robots",
+        description: "Enter promo code SPROM at checkout for 15% discount on high-performance training units and accessories.",
+        affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pongbot-deal-3",
+        code: "RAMONPADEL",
+        is_auto_applied: false,
+        discount: "$150 OFF",
+        title: "$150 off voucher code on Pace S Pro flagship tennis robot",
+        description: "Apply promo code RAMONPADEL to unlock $150 instant savings on premium smart tennis ball launching machines.",
+        affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pongbot-deal-4",
+        code: "LASKAR5",
+        is_auto_applied: false,
+        discount: "5% EXTRA OFF",
+        title: "5% extra discount code on Pongbot Pace S Pro tennis machine",
+        description: "Use official ambassador code LASKAR5 to stack an additional 5% off AI ball machines and drill accessories.",
+        affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "pongbot-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked US shipping on intelligent sports robots",
+        description: "Receive free ground shipping across the continental US with reliable courier tracking on all PongBot models.",
+        affiliate_url: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
