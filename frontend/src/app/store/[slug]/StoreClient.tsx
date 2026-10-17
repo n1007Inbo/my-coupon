@@ -285,8 +285,8 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                 src={bannerLogo} 
                 alt={store.name} 
                 className={storeStyles.storeLargeLogo} 
-                width={100}
-                height={100}
+                width={220}
+                height={124}
                 decoding="async"
                 fetchPriority="high"
                 onError={() => setBannerLogoError(true)}
