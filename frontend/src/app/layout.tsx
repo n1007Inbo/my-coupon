@@ -89,14 +89,22 @@ export default function RootLayout({
         {/* AvantLink Affiliate Verification */}
         <script
           type="text/javascript"
-          src="http://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=376c8fc11d613d19a45cd4c0fa5dddd7e411c6c9"
-        />
-        <script
-          type="text/javascript"
           src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=376c8fc11d613d19a45cd4c0fa5dddd7e411c6c9"
         />
         <meta name="fo-verify" content="21153cba-a2c3-435d-aff2-e91717e8564c" />
         <meta name="verify-admitad" content="dc1c933d28" />
+        {/* Offline High-Availability Service Worker Registration */}
+        <Script id="sw-register" strategy="afterInteractive">
+          {`
+            if ('serviceWorker' in navigator) {
+              window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/sw.js').catch(function(err) {
+                  console.log('SW registration error:', err);
+                });
+              });
+            }
+          `}
+        </Script>
         {/* Sovrn / Commerce (emrldtp) Verification & Affiliate Tracking */}
         <script
           data-cmp-ab="2"
@@ -113,6 +121,7 @@ export default function RootLayout({
           }}
         />
         <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="manifest" href="/manifest.json" />
         {/* Rich Structured JSON-LD Schema Markup */}
         <script
           type="application/ld+json"

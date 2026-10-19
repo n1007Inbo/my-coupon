@@ -1,0 +1,16 @@
+{
+  "name": "PromoRegistry",
+  "short_name": "PromoRegistry",
+  "description": "100% Verified Promo Codes & Discount Coupons",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0284c7",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
