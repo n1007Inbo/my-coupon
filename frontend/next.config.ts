@@ -357,22 +357,22 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/dakvoordeelshop",
-        destination: "https://www.dakvoordeelshop.nl/",
+        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
         permanent: false,
       },
       {
         source: "/go/into-led",
-        destination: "https://www.into-led.com/nl",
+        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         permanent: false,
       },
       {
         source: "/go/intoled",
-        destination: "https://www.into-led.com/nl",
+        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
         permanent: false,
       },
       {
         source: "/go/magicshine",
-        destination: "https://magicshine.com",
+        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
         permanent: false,
       },
       {
