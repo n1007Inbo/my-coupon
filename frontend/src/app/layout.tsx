@@ -87,9 +87,10 @@ export default function RootLayout({
           `}
         </Script>
         {/* AvantLink Affiliate Verification */}
-        <script
-          type="text/javascript"
+        <Script
+          id="avantlink-verification"
           src="https://classic.avantlink.com/affiliate_app_confirm.php?mode=js&authResponse=376c8fc11d613d19a45cd4c0fa5dddd7e411c6c9"
+          strategy="lazyOnload"
         />
         <meta name="fo-verify" content="21153cba-a2c3-435d-aff2-e91717e8564c" />
         <meta name="verify-admitad" content="dc1c933d28" />
