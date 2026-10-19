@@ -8550,11 +8550,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "woodland-deal-1",
-        code: "WOODLAND10",
-        is_auto_applied: false,
+        code: "",
+        is_auto_applied: true,
         discount: "10% OFF",
-        title: "10% off verified exclusive coupon code sitewide",
-        description: "Apply exclusive coupon code WOODLAND10 at checkout to save 10% on your entire order of fireplaces, patio furniture, and accessories.",
+        title: "10% off verified discount on fireplaces, patio & outdoor living",
+        description: "Save 10% automatically applied through this exclusive partner link on fireplaces, fire pits, patio furniture, and accessories.",
         affiliate_url: "https://chirpy.st/u26844_U5XHl0",
         is_verified: true,
         expiry_date: "2026-12-31"
@@ -8572,11 +8572,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "woodland-deal-3",
-        code: "DCS10",
-        is_auto_applied: false,
+        code: "",
+        is_auto_applied: true,
         discount: "10% OFF",
-        title: "10% off verified promo code on DCS grills & outdoor kitchens",
-        description: "Use active discount code DCS10 at checkout to receive 10% off premium DCS gas grills and outdoor kitchen components.",
+        title: "10% off on DCS grills & premium outdoor kitchens",
+        description: "Instant 10% discount automatically unlocked on DCS gas grills and outdoor kitchen components.",
         affiliate_url: "https://chirpy.st/u26844_U5XHl0",
         is_verified: true,
         expiry_date: "2026-12-31"
@@ -8594,11 +8594,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "woodland-deal-5",
-        code: "GASLOG10",
-        is_auto_applied: false,
+        code: "",
+        is_auto_applied: true,
         discount: "10% OFF",
-        title: "10% off promo code on vented & ventless gas log sets",
-        description: "Save 10% on top-rated gas log sets with working code GASLOG10. Includes natural gas and liquid propane configurations.",
+        title: "10% off on vented & ventless gas log sets",
+        description: "Save 10% automatically on top-rated gas log sets. Includes natural gas and liquid propane configurations.",
         affiliate_url: "https://chirpy.st/u26844_U5XHl0",
         is_verified: true,
         expiry_date: "2026-12-31"
@@ -8638,22 +8638,22 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "woodland-deal-9",
-        code: "SIGNUP10",
-        is_auto_applied: false,
+        code: "",
+        is_auto_applied: true,
         discount: "10% OFF",
-        title: "10% off your order with newsletter email sign-up",
-        description: "Sign up for Woodland Direct emails to receive an instant 10% coupon code valid on your upcoming purchase.",
+        title: "10% off on newsletter email sign-up",
+        description: "Sign up for Woodland Direct emails to receive an instant 10% discount on your upcoming purchase.",
         affiliate_url: "https://chirpy.st/u26844_U5XHl0",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "woodland-deal-10",
-        code: "GRILL5",
-        is_auto_applied: false,
+        code: "",
+        is_auto_applied: true,
         discount: "5% OFF",
-        title: "5% off verified promo code on BBQ grills & smokers",
-        description: "Apply discount code GRILL5 at checkout to save 5% on built-in and freestanding BBQ grills and smokers.",
+        title: "5% off on BBQ grills & smokers",
+        description: "Automatic 5% savings applied on built-in and freestanding BBQ grills and smokers.",
         affiliate_url: "https://chirpy.st/u26844_U5XHl0",
         is_verified: true,
         expiry_date: "2026-12-31"
@@ -8795,6 +8795,252 @@ export const STORE_REGISTRY: RegistryStore[] = [
         title: "Mystery Saber Box offers with guaranteed pixel & hilt upgrades",
         description: "Unlock limited edition mystery saber box tiers with guaranteed high-tier blade upgrades and accessory cases.",
         affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // Staged for live launch upon user request:
+  /*
+  // 29. LARINE (Remineralizing Gum, Mints & Oral Probiotic Care - Snowball / BuyLarine)
+  {
+    id: 809,
+    name: "Larine",
+    slug: "larine",
+    aliases: ["larine-us", "buylarine", "buylarine-com", "larine-co"],
+    website: "https://www.buylarine.com",
+    affiliate_url: "https://www.buylarine.com/METHEW23131",
+    logo: "/logos/larine.png",
+    country: "US",
+    description: "Doctor-formulated remineralizing oral care: sugar-free enamel repair chewing gum, breath mints, remineralizing pouches, and oral probiotic starter kits.",
+    coupons: [
+      {
+        id: "larine-deal-1",
+        code: "METHEW23131",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off verified exclusive discount code sitewide",
+        description: "Apply working coupon code METHEW23131 at checkout to save 15% on remineralizing gum, mints, and oral health bundles.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "larine-deal-2",
+        code: "METHEW23131",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off verified promo code on all enamel care kits",
+        description: "Use active discount code METHEW23131 to unlock savings on Enamel Starter Kits and variety packs.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "larine-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 60% OFF",
+        title: "Up to 60% off on Enamel Starter Kits & bundles",
+        description: "Save up to 60% on complete remineralizing starter sets with gum, mints, and pouches automatically at checkout.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "larine-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO $80 OFF",
+        title: "Up to $80 off on bulk remineralizing gum boxes",
+        description: "Get up to $80 in instant volume savings when purchasing multi-box bundles of nano-hydroxyapatite gum.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "larine-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "25% OFF",
+        title: "25% off on long-lasting fresh breath mints",
+        description: "Enjoy 25% off clean ingredient breath mints designed to balance your oral microbiome.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "larine-deal-6",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free US standard shipping on qualifying orders",
+        description: "Automatic free delivery applied at checkout on all eligible domestic US subscriptions and bundles.",
+        affiliate_url: "https://www.buylarine.com/METHEW23131",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  }
+  */,
+
+  // 30. PLATED SKIN SCIENCE (Exosome Skincare & Anti-Aging Serums - MRGE 10% CPA)
+  {
+    id: 810,
+    name: "Plated Skin Science",
+    slug: "plated-skin",
+    aliases: ["plated-skin-science", "plated", "buypated", "platedskinscience"],
+    website: "https://platedskinscience.com",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+    logo: "/logos/plated-skin.png",
+    country: "US",
+    description: "Breakthrough exosome skincare formulated with Renewosome™ technology. Clinically proven to accelerate cellular renewal, reduce redness, and smooth deep wrinkles.",
+    coupons: [
+      {
+        id: "plated-deal-1",
+        code: "WELCOME15",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off verified exclusive coupon code sitewide",
+        description: "Apply promo code WELCOME15 at checkout to receive 15% off your order of clinically proven exosome serums.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plated-deal-2",
+        code: "INTENSE20",
+        is_auto_applied: false,
+        discount: "20% OFF",
+        title: "20% off INTENSE Serum for rapid collagen & wrinkle renewal",
+        description: "Get 20% off highest-concentration exosome INTENSE Serum with working discount code INTENSE20.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plated-deal-3",
+        code: "DAILY15",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off DAILY Serum for radiant skin barrier repair",
+        description: "Save 15% on DAILY exosome serum designed to defend against environmental aging with code DAILY15.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plated-deal-4",
+        code: "HAIR20",
+        is_auto_applied: false,
+        discount: "20% OFF",
+        title: "20% off CALM Serum and Hair Density Recovery Serum",
+        description: "Use active voucher code HAIR20 to save 20% on scalp revitalization and post-procedure calm serums.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plated-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO $65 OFF",
+        title: "Up to $65 off on Duo & Trio Skincare Bundles",
+        description: "Save up to $65 automatically when purchasing the complete Intense + Daily serum regimen bundle.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "plated-deal-6",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked US shipping on all skincare orders",
+        description: "Enjoy 100% complimentary tracked delivery across the United States automatically applied at checkout.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 31. NUVIO RECOVERY (Red Light Therapy, Infrared Saunas & Ice Baths)
+  {
+    id: 811,
+    name: "Nuvio Recovery",
+    slug: "nuvio-recovery",
+    aliases: ["nuvio", "nuviorecovery", "nuvio-us"],
+    website: "https://nuviorecovery.com",
+    affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+    logo: "/logos/nuvio-recovery.png",
+    country: "US",
+    description: "Professional-grade wellness and recovery equipment: high-irradiance red light therapy panels, portable infrared home saunas, ice baths, and cold plunge systems.",
+    coupons: [
+      {
+        id: "nuvio-deal-1",
+        code: "METHEW50",
+        is_auto_applied: false,
+        discount: "$50 OFF",
+        title: "$50 off verified discount code sitewide",
+        description: "Save an instant $50 on any red light therapy panel, infrared sauna, or cold plunge tub with code METHEW50.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nuvio-deal-2",
+        code: "METHEW50",
+        is_auto_applied: false,
+        discount: "$50 OFF",
+        title: "$50 off clinical red light therapy panels",
+        description: "Apply promo code METHEW50 to receive $50 off targeted and full-body medical-grade red light panels.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nuvio-deal-3",
+        code: "METHEW50",
+        is_auto_applied: false,
+        discount: "$50 OFF",
+        title: "$50 off portable infrared home saunas & domes",
+        description: "Get $50 off premium low-EMF infrared saunas and sauna blankets with working voucher code METHEW50.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nuvio-deal-4",
+        code: "METHEW50",
+        is_auto_applied: false,
+        discount: "$50 OFF",
+        title: "$50 off portable ice baths & cold plunge tubs",
+        description: "Take $50 off insulated ice bath recovery tubs and cold water plunge systems using code METHEW50.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nuvio-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 35% OFF",
+        title: "Up to 35% off recovery bundle packs",
+        description: "Save up to 35% on combo recovery kits combining infrared sauna blankets and red light therapy units.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "nuvio-deal-6",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free express shipping + 1-year full warranty",
+        description: "All orders include fast express doorstep shipping, 30-day money-back guarantee, and full 1-year product warranty.",
+        affiliate_url: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
         is_verified: true,
         expiry_date: "2026-12-31"
       }

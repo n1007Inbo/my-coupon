@@ -439,6 +439,41 @@ const nextConfig: NextConfig = {
         source: "/go/swa-saber",
         destination: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
         permanent: false,
+      },
+      {
+        source: "/go/larine",
+        destination: "https://www.buylarine.com/METHEW23131",
+        permanent: false,
+      },
+      {
+        source: "/go/larine-us",
+        destination: "https://www.buylarine.com/METHEW23131",
+        permanent: false,
+      },
+      {
+        source: "/go/buylarine",
+        destination: "https://www.buylarine.com/METHEW23131",
+        permanent: false,
+      },
+      {
+        source: "/go/plated-skin",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        permanent: false,
+      },
+      {
+        source: "/go/plated-skin-science",
+        destination: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        permanent: false,
+      },
+      {
+        source: "/go/nuvio-recovery",
+        destination: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        permanent: false,
+      },
+      {
+        source: "/go/nuvio",
+        destination: "https://nuviorecovery.com/collections/all-products?sca_ref=12515963.4GAOkTKNceGUU",
+        permanent: false,
       }
     ];
   },
