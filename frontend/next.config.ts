@@ -137,7 +137,17 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/usa-berkey-filters",
-        destination: "https://www.usaberkeyfilters.com/aff/256/",
+        destination: "https://www.usaberkeyfilters.com/aff/282/",
+        permanent: false,
+      },
+      {
+        source: "/go/usaberkeyfilters",
+        destination: "https://www.usaberkeyfilters.com/aff/282/",
+        permanent: false,
+      },
+      {
+        source: "/go/berkey",
+        destination: "https://www.usaberkeyfilters.com/aff/282/",
         permanent: false,
       },
       {

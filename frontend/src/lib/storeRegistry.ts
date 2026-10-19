@@ -8171,8 +8171,8 @@ export const STORE_REGISTRY: RegistryStore[] = [
     name: "USA Berkey Filters",
     slug: "usa-berkey-filters",
     aliases: ["usaberkeyfilters", "berkey-filters", "berkey"],
-    website: "https://www.usaberkeyfilters.com/aff/256/",
-    affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+    website: "https://www.usaberkeyfilters.com/aff/282/",
+    affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
     logo: "/logos/usa-berkey-filters.png",
     country: "US",
     description: "World-leader in gravity-fed water purification systems, authentic Black Berkey replacement filters, stainless steel systems, and fluoride reduction elements.",
@@ -8184,7 +8184,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "20% OFF",
         title: "20% off exclusive coupon code sitewide",
         description: "Apply verified promo code USA20 at checkout to save 20% on authentic Berkey water filtration systems and bundles.",
-        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8195,7 +8195,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off discount code on Black Berkey replacement elements",
         description: "Save 15% on genuine Black Berkey replacement filters and fluoride elements using promo code MOM10.",
-        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8206,7 +8206,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "UP TO 35%",
         title: "Up to 35% off weekly flash sales on Big Berkey systems",
         description: "Save up to 35% on complete stainless steel gravity water filter systems. Applied automatically in cart.",
-        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -8217,7 +8217,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "FREE SHIPPING",
         title: "Free tracked US shipping on all system orders",
         description: "Enjoy zero shipping costs automatically calculated on all Berkey water purification system orders.",
-        affiliate_url: "https://www.usaberkeyfilters.com/aff/256/",
+        affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
