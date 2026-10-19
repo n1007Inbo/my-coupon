@@ -51,6 +51,21 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/go/dc-house",
+        destination: "https://www.dchousepower.com/?ref=ikafrwml",
+        permanent: false,
+      },
+      {
+        source: "/go/dchouse",
+        destination: "https://www.dchousepower.com/?ref=ikafrwml",
+        permanent: false,
+      },
+      {
+        source: "/go/dc-house-power",
+        destination: "https://www.dchousepower.com/?ref=ikafrwml",
+        permanent: false,
+      },
+      {
         source: "/go/im8",
         destination: "https://www.im8health.com/METHEW29111",
         permanent: false,
@@ -152,7 +167,7 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/desktronic-uk",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.co.uk%2F",
+        destination: "https://desktronic.co.uk/",
         permanent: false,
       },
       {
@@ -162,12 +177,12 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/desktronic-nl",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.nl%2F",
+        destination: "https://desktronic.nl/",
         permanent: false,
       },
       {
         source: "/go/desktronic-de",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fdesktronic.de%2F",
+        destination: "https://desktronic.de/",
         permanent: false,
       },
       {
@@ -342,27 +357,27 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/go/dakvoordeelshop",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.dakvoordeelshop.nl%2F",
+        destination: "https://www.dakvoordeelshop.nl/",
         permanent: false,
       },
       {
         source: "/go/into-led",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        destination: "https://www.into-led.com/nl",
         permanent: false,
       },
       {
         source: "/go/intoled",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fwww.into-led.com%2Fnl",
+        destination: "https://www.into-led.com/nl",
         permanent: false,
       },
       {
         source: "/go/magicshine",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fmagicshine.com",
+        destination: "https://magicshine.com",
         permanent: false,
       },
       {
         source: "/go/renpho",
-        destination: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Frenpho.com",
+        destination: "https://renpho.com",
         permanent: false,
       },
       {
