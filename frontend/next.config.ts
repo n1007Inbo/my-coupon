@@ -409,6 +409,36 @@ const nextConfig: NextConfig = {
         source: "/go/woodland-direct-us",
         destination: "https://chirpy.st/u26844_U5XHl0",
         permanent: false,
+      },
+      {
+        source: "/go/rgb-halo-kits",
+        destination: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        permanent: false,
+      },
+      {
+        source: "/go/rgbhalokits",
+        destination: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        permanent: false,
+      },
+      {
+        source: "/go/rgb-halo-kit",
+        destination: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        permanent: false,
+      },
+      {
+        source: "/go/swa-sabers",
+        destination: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        permanent: false,
+      },
+      {
+        source: "/go/swasabers",
+        destination: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        permanent: false,
+      },
+      {
+        source: "/go/swa-saber",
+        destination: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        permanent: false,
       }
     ];
   },

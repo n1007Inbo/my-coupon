@@ -8659,6 +8659,146 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 27. RGB HALO KITS (Automotive Headlight Halos, Underglow & LED Lighting - UpPromote)
+  {
+    id: 807,
+    name: "RGB Halo Kits",
+    slug: "rgb-halo-kits",
+    aliases: ["rgbhalokits", "rgb-halo-kit", "rgbhalokit"],
+    website: "https://rgbhalokits.com",
+    affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+    logo: "/logos/rgb-halo-kits.png",
+    country: "US",
+    description: "Industry-leading automotive custom lighting: Flow Series color-chasing halo headlight kits, RGBW DRL boards, LED underglow kits, lighted badges, and twinkle starlight headliners.",
+    coupons: [
+      {
+        id: "rgb-deal-1",
+        code: "RGBMETHEWDIPPY",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off verified exclusive partner discount code sitewide",
+        description: "Apply working coupon code RGBMETHEWDIPPY at checkout to unlock 15% off halo kits, DRL boards, underglow, and LED emblems.",
+        affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rgb-deal-2",
+        code: "FLOW10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off promo code on Flow Series multicolor halo kits",
+        description: "Save 10% on app-controlled sequential chasing LED halo rings and custom vehicle DRL board upgrades with code FLOW10.",
+        affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rgb-deal-3",
+        code: "UNDERGLOW15",
+        is_auto_applied: false,
+        discount: "15% OFF",
+        title: "15% off discount code on LED underglow & wheel ring kits",
+        description: "Use active voucher code UNDERGLOW15 to receive 15% off high-output 4pc & 6pc flexible underbody light strips and quad wheel lights.",
+        affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rgb-deal-4",
+        code: "STARLIGHT20",
+        is_auto_applied: false,
+        discount: "$20 OFF",
+        title: "$20 off coupon on twinkle starlight fiber optic ceiling kits",
+        description: "Get $20 instant savings on 650-piece and 1000-piece Bluetooth twinkle fiber optic starlight headliner bundles with code STARLIGHT20.",
+        affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "rgb-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked US ground shipping on orders over $150",
+        description: "Enjoy zero shipping costs automatically applied at checkout for all domestic US orders over $150.",
+        affiliate_url: "https://rgbhalokits.com?sca_ref=12581527.Berepf0CbvflW",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
+  },
+
+  // 28. SWA SABERS (Combat Dueling Sabers, Neopixel & Replica Lightsabers - UpPromote Direct)
+  {
+    id: 808,
+    name: "SWA Sabers",
+    slug: "swa-sabers",
+    aliases: ["swasabers", "swa-saber", "swasaber"],
+    website: "https://swasabers.com",
+    affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+    logo: "/logos/swa-sabers.png",
+    country: "US",
+    description: "The most trusted lightsabers in the galaxy: heavy dueling combat sabers, Neopixel, Xenopixel V3, Proffie 2.2 boards, and collector-grade screen-accurate replica hilts.",
+    coupons: [
+      {
+        id: "swa-deal-1",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 25% OFF",
+        title: "Up to 25% off automatic sitewide discount on custom lightsabers",
+        description: "Instant discount automatically activated through this official partner link on all Xenopixel, Proffie, and Baselit dueling sabers.",
+        affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "swa-deal-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO $100 OFF",
+        title: "Save up to $100 on Neopixel & Proffie flagship replica hilts",
+        description: "Automatic price drops on iconic collector replica sabers including Ahsoka, Anakin, Luke, Vader, and Kenobi configurations.",
+        affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "swa-deal-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "FROM $79",
+        title: "Baselit combat dueling lightsabers starting from just $79",
+        description: "Heavy-grade aircraft aluminum hilt dueling sabers with 12 sound fonts and smooth swing technology starting at $79.",
+        affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "swa-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free tracked galaxy courier shipping on orders over $100",
+        description: "Receive free insured delivery with live tracking numbers on all lightsaber orders totaling $100 or more.",
+        affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "swa-deal-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "SPECIAL DEAL",
+        title: "Mystery Saber Box offers with guaranteed pixel & hilt upgrades",
+        description: "Unlock limited edition mystery saber box tiers with guaranteed high-tier blade upgrades and accessory cases.",
+        affiliate_url: "https://swasabers.com?sca_ref=12581612.1kP736bJt9AA",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 
