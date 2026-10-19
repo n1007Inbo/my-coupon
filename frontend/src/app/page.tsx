@@ -4,7 +4,7 @@ import { Coupon, Store } from "../components/CouponCard";
 import { getLogoUrl, FALLBACK_STORES, FALLBACK_COUPONS } from "../lib/fallbackData";
 import { STORE_REGISTRY } from "../lib/storeRegistry";
 
-export const revalidate = 600; // Cache page and revalidate in background every 10 minutes
+export const revalidate = false; // Pure static generation - 0 runtime ISR writes
 
 export default async function HomePage() {
   const apiUrl = process.env.NEXT_PUBLIC_STRAPI_API_URL;
@@ -59,11 +59,11 @@ export default async function HomePage() {
 
       const [couponsRes, storesRes] = await Promise.all([
         fetch(`${apiUrl}/api/coupons?populate=store&pagination[pageSize]=200`, { 
-          next: { revalidate: 600 },
+          cache: "force-cache",
           signal: controller.signal
         }),
         fetch(`${apiUrl}/api/stores?pagination[pageSize]=200`, { 
-          next: { revalidate: 600 },
+          cache: "force-cache",
           signal: controller.signal
         })
       ]);

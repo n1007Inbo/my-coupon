@@ -5,7 +5,7 @@ import { Coupon, Store } from "../../../components/CouponCard";
 import { getLogoUrl, FALLBACK_STORES, FALLBACK_COUPONS } from "../../../lib/fallbackData";
 import { getRegisteredStore, getAllRegisteredSlugs } from "../../../lib/storeRegistry";
 
-export const revalidate = 86400; // Cache page and serve from global Edge CDN (saves ISR quota)
+export const revalidate = false; // Pure static generation - 0 runtime ISR writes
 
 // Pre-render stores at build time
 export async function generateStaticParams() {
