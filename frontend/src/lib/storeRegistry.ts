@@ -8534,6 +8534,131 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
+  },
+
+  // 26. WOODLAND DIRECT (Fireplaces, Gas Logs, Fire Pits & Outdoor Living - Chirpy Link)
+  {
+    id: 806,
+    name: "Woodland Direct",
+    slug: "woodland-direct",
+    aliases: ["woodland-direct-us", "woodlanddirect", "woodlanddirect-us"],
+    website: "https://www.woodlanddirect.com",
+    affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+    logo: "/logos/woodland-direct.png",
+    country: "US",
+    description: "America's premier online store for gas & wood fireplaces, chimney caps, gas logs, fire pits, patio heaters, BBQ grills, and premium outdoor living.",
+    coupons: [
+      {
+        id: "woodland-deal-1",
+        code: "WOODLAND10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off verified exclusive coupon code sitewide",
+        description: "Apply exclusive coupon code WOODLAND10 at checkout to save 10% on your entire order of fireplaces, patio furniture, and accessories.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "Up to 20% off on selected items and seasonal clearance",
+        description: "Save up to 20% on selected gas logs, fire bowls, and outdoor accessories. Discount applied automatically at checkout.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-3",
+        code: "DCS10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off verified promo code on DCS grills & outdoor kitchens",
+        description: "Use active discount code DCS10 at checkout to receive 10% off premium DCS gas grills and outdoor kitchen components.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free shipping on qualifying orders over $99",
+        description: "Enjoy free standard shipping to the contiguous US on thousands of products when you spend $99 or more.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-5",
+        code: "GASLOG10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off promo code on vented & ventless gas log sets",
+        description: "Save 10% on top-rated gas log sets with working code GASLOG10. Includes natural gas and liquid propane configurations.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-6",
+        code: "",
+        is_auto_applied: true,
+        discount: "FROM $349",
+        title: "Gas fire pits and outdoor fire tables starting from $349",
+        description: "Explore a massive selection of propane and natural gas fire pits starting at just $349 with fast home delivery.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-7",
+        code: "",
+        is_auto_applied: true,
+        discount: "FROM $476",
+        title: "Luxury patio furniture and dining collections from $476",
+        description: "Shop all-weather wicker, aluminum, and teak outdoor patio furniture sets starting from $476.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-8",
+        code: "",
+        is_auto_applied: true,
+        discount: "FROM $1,069",
+        title: "Wood fireplaces and high-efficiency wood inserts from $1,069",
+        description: "Discover EPA-certified wood burning fireplaces, zero-clearance models, and stove inserts starting at $1,069.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-9",
+        code: "SIGNUP10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% off your order with newsletter email sign-up",
+        description: "Sign up for Woodland Direct emails to receive an instant 10% coupon code valid on your upcoming purchase.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
+      {
+        id: "woodland-deal-10",
+        code: "GRILL5",
+        is_auto_applied: false,
+        discount: "5% OFF",
+        title: "5% off verified promo code on BBQ grills & smokers",
+        description: "Apply discount code GRILL5 at checkout to save 5% on built-in and freestanding BBQ grills and smokers.",
+        affiliate_url: "https://chirpy.st/u26844_U5XHl0",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      }
+    ]
   }
 ];
 

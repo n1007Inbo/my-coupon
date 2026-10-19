@@ -394,6 +394,21 @@ const nextConfig: NextConfig = {
         source: "/go/pongbotsports",
         destination: "https://store.pongbotsports.com/?sca_ref=12565715.tCWxyKe3eRDS01",
         permanent: false,
+      },
+      {
+        source: "/go/woodland-direct",
+        destination: "https://chirpy.st/u26844_U5XHl0",
+        permanent: false,
+      },
+      {
+        source: "/go/woodlanddirect",
+        destination: "https://chirpy.st/u26844_U5XHl0",
+        permanent: false,
+      },
+      {
+        source: "/go/woodland-direct-us",
+        destination: "https://chirpy.st/u26844_U5XHl0",
+        permanent: false,
       }
     ];
   },
