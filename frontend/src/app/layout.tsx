@@ -97,11 +97,16 @@ export default function RootLayout({
         <Script id="sw-register" strategy="afterInteractive">
           {`
             if ('serviceWorker' in navigator) {
-              window.addEventListener('load', function() {
+              function regSW() {
                 navigator.serviceWorker.register('/sw.js').catch(function(err) {
                   console.log('SW registration error:', err);
                 });
-              });
+              }
+              if (document.readyState === 'complete') {
+                regSW();
+              } else {
+                window.addEventListener('load', regSW);
+              }
             }
           `}
         </Script>
