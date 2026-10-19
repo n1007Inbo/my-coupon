@@ -112,8 +112,12 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   );
 
   // Filter coupons based on search query and active store filter
+  // Filter and rank coupons based on search query and active store filter
   const filteredCoupons = useMemo(() => {
-    return initialCoupons.filter((coupon) => {
+    const rawQuery = searchQuery.trim().toLowerCase();
+    const tokens = rawQuery ? rawQuery.split(/\s+/).filter(Boolean) : [];
+
+    const matched = initialCoupons.filter((coupon) => {
       if (!coupon) return false;
       const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
       const storeName = isStoreObject ? ((coupon.store as Store)?.name || "") : (typeof coupon.store === "string" ? coupon.store : "");
@@ -125,18 +129,50 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       }
 
       // Filter by search query (match store name, coupon code, or description)
-      if (searchQuery.trim() !== "") {
-        const query = searchQuery.toLowerCase();
-        const matchesStore = storeName ? storeName.toLowerCase().includes(query) : false;
-        const matchesCode = coupon.code ? coupon.code.toLowerCase().includes(query) : false;
-        const matchesDesc = coupon.description ? coupon.description.toLowerCase().includes(query) : false;
-        const matchesDiscount = coupon.discount ? coupon.discount.toLowerCase().includes(query) : false;
+      if (rawQuery !== "") {
+        const matchesStore = storeName ? storeName.toLowerCase().includes(rawQuery) : false;
+        const matchesSlug = storeSlug ? storeSlug.toLowerCase().includes(rawQuery) : false;
+        const matchesCode = coupon.code ? coupon.code.toLowerCase().includes(rawQuery) : false;
+        const matchesDesc = coupon.description ? coupon.description.toLowerCase().includes(rawQuery) : false;
+        const matchesDiscount = coupon.discount ? coupon.discount.toLowerCase().includes(rawQuery) : false;
 
-        return matchesStore || matchesCode || matchesDesc || matchesDiscount;
+        const directMatch = matchesStore || matchesSlug || matchesCode || matchesDesc || matchesDiscount;
+        if (directMatch) return true;
+
+        if (tokens.length > 1) {
+          const allTokensMatch = tokens.every(token => 
+            (storeName && storeName.toLowerCase().includes(token)) ||
+            (storeSlug && storeSlug.toLowerCase().includes(token)) ||
+            (coupon.code && coupon.code.toLowerCase().includes(token)) ||
+            (coupon.description && coupon.description.toLowerCase().includes(token)) ||
+            (coupon.discount && coupon.discount.toLowerCase().includes(token))
+          );
+          if (allTokensMatch) return true;
+        }
+
+        return false;
       }
 
       return true;
     });
+
+    // If searching, prioritize coupons from stores whose names start with or match the search query
+    if (rawQuery !== "") {
+      matched.sort((a, b) => {
+        const aStore = (typeof a.store === "object" && a.store !== null ? (a.store as Store).name : (a.store as string) || "").toLowerCase();
+        const bStore = (typeof b.store === "object" && b.store !== null ? (b.store as Store).name : (b.store as string) || "").toLowerCase();
+
+        const aStartsWith = aStore.startsWith(rawQuery) ? 1 : 0;
+        const bStartsWith = bStore.startsWith(rawQuery) ? 1 : 0;
+        if (bStartsWith !== aStartsWith) return bStartsWith - aStartsWith;
+
+        const aIncludes = aStore.includes(rawQuery) ? 1 : 0;
+        const bIncludes = bStore.includes(rawQuery) ? 1 : 0;
+        return bIncludes - aIncludes;
+      });
+    }
+
+    return matched;
   }, [initialCoupons, searchQuery, selectedStoreSlug]);
 
   const paginatedStores = useMemo(() => {
@@ -311,18 +347,68 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     window.location.href = storeUrl;
   };
 
-  // Dynamically find matching stores based on the search query with automatic deduplication
+  // Dynamically find and rank matching stores based on relevance
   const matchedStores = useMemo(() => {
-    if (searchQuery.trim() === "") return [];
-    const query = searchQuery.toLowerCase();
-    const matches = initialStores.filter(store => store && store.name && store.name.toLowerCase().includes(query));
+    const rawQuery = searchQuery.trim();
+    if (!rawQuery) return [];
+    const q = rawQuery.toLowerCase();
+    const tokens = q.split(/\s+/).filter(Boolean);
+
+    const scored: { store: Store; score: number }[] = [];
     const seen = new Set<string>();
-    return matches.filter(store => {
-      const key = store.name.toLowerCase().replace(/[^a-z0-9]/g, "");
-      if (seen.has(key)) return false;
-      seen.add(key);
-      return true;
+
+    for (const store of initialStores) {
+      if (!store || typeof store !== "object" || !store.name) continue;
+      const name = store.name.toLowerCase().trim();
+      const slug = (store.slug || "").toLowerCase().trim();
+      const key = slug || name.replace(/[^a-z0-9]/g, "");
+
+      if (seen.has(key)) continue;
+
+      let score = 0;
+
+      // 1. Exact full name or slug match
+      if (name === q || slug === q) {
+        score = 100;
+      }
+      // 2. Name or slug starts with full query (e.g. "USA Berkey Filters" starts with "usa" or "usa berkey")
+      else if (name.startsWith(q) || slug.startsWith(q)) {
+        score = 85;
+      }
+      // 3. Any individual word in store name starts with query (e.g. "Berkey" in "USA Berkey Filters")
+      else if (name.split(/\s+/).some(word => word.startsWith(q))) {
+        score = 75;
+      }
+      // 4. Multi-token: All query tokens are contained in name or slug (e.g. "usa" and "berkey")
+      else if (tokens.length > 1 && tokens.every(token => name.includes(token) || slug.includes(token))) {
+        score = 70;
+      }
+      // 5. Full query as a substring anywhere in name
+      else if (name.includes(q)) {
+        score = 50;
+      }
+      // 6. Full query as substring in slug
+      else if (slug.includes(q)) {
+        score = 30;
+      }
+      // 7. Multi-token partial match
+      else if (tokens.length > 1 && tokens.some(token => name.startsWith(token))) {
+        score = 20;
+      }
+
+      if (score > 0) {
+        seen.add(key);
+        scored.push({ store, score });
+      }
+    }
+
+    // Sort by highest relevance score first, then shorter store name (tighter match)
+    scored.sort((a, b) => {
+      if (b.score !== a.score) return b.score - a.score;
+      return a.store.name.length - b.store.name.length;
     });
+
+    return scored.map(item => item.store);
   }, [initialStores, searchQuery]);
 
   return (
