@@ -8802,8 +8802,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
   },
 
   // Staged for live launch upon user request:
-  /*
-  // 29. LARINE (Remineralizing Gum, Mints & Oral Probiotic Care - Snowball / BuyLarine)
+    // 29. LARINE (Remineralizing Gum, Mints & Oral Probiotic Care - Snowball / BuyLarine)
   {
     id: 809,
     name: "Larine",
@@ -8882,8 +8881,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         expiry_date: "2026-12-31"
       }
     ]
-  }
-  */,
+  },
 
   // 30. PLATED SKIN SCIENCE (Exosome Skincare & Anti-Aging Serums - MRGE 10% CPA)
   {
