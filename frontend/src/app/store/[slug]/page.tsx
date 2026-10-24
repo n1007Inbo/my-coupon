@@ -35,6 +35,12 @@ export async function generateMetadata({ params }: StorePageProps): Promise<Meta
     return {
       title: `${store.name} Promo Codes & Verified Discount Codes | PromoRegistry`,
       description: `Save money today at ${store.name} with active coupon codes, verified discount offers, and free shipping deals.`,
+      robots: {
+        index: false,
+        follow: false,
+        noarchive: true,
+        nosnippet: true,
+      },
       alternates: {
         canonical: `https://www.promoregistry.com/store/${slug}`,
       },

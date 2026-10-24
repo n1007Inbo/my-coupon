@@ -21,7 +21,40 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   const STORES_PER_PAGE = 16;
   const COUPONS_PER_PAGE = 12;
 
+  // Secret backdoor operator '--' states (e.g. 'im8--' or 'dchouse--')
+  const [secretStores, setSecretStores] = useState<Store[]>([]);
+  const [isSecretSearching, setIsSecretSearching] = useState(false);
+  const isSecretMode = searchQuery.trim().endsWith("--") || searchQuery.trim().includes("--");
+
   const isFirstRender = React.useRef(true);
+
+  // Secret backdoor operator '--' handler (fetches target campaigns only when secret operator is entered)
+  React.useEffect(() => {
+    const trimmed = searchQuery.trim();
+    if (trimmed.endsWith("--") || trimmed.includes("--")) {
+      const clean = trimmed.replace(/-+$/, "").trim();
+      if (clean.length > 0) {
+        setIsSecretSearching(true);
+        fetch(`/api/vault-search?q=${encodeURIComponent(trimmed)}`)
+          .then((res) => res.json())
+          .then((data) => {
+            if (data && Array.isArray(data.results)) {
+              setSecretStores(data.results);
+            } else {
+              setSecretStores([]);
+            }
+          })
+          .catch(() => setSecretStores([]))
+          .finally(() => setIsSecretSearching(false));
+      } else {
+        setSecretStores([]);
+      }
+    } else {
+      if (secretStores.length > 0) {
+        setSecretStores([]);
+      }
+    }
+  }, [searchQuery]);
 
   // Reset pagination when filters change to ensure the user always sees results from page 1
   React.useEffect(() => {
@@ -94,6 +127,35 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   }, []);
 
   // Search Icon Component
+  // Handle Enter key for instant secret store navigation
+  const handleSearchKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      const trimmed = searchQuery.trim();
+      if (trimmed.endsWith("--") || trimmed.includes("--")) {
+        e.preventDefault();
+        const clean = trimmed.replace(/-+$/, "").trim().toLowerCase();
+        if (secretStores.length > 0) {
+          window.location.href = `/store/${secretStores[0].slug}`;
+          return;
+        }
+        if (clean) {
+          fetch(`/api/vault-search?q=${encodeURIComponent(trimmed)}`)
+            .then(res => res.json())
+            .then(data => {
+              if (data && data.results && data.results.length > 0) {
+                window.location.href = `/store/${data.results[0].slug}`;
+              } else {
+                window.location.href = `/store/${clean}`;
+              }
+            })
+            .catch(() => {
+              window.location.href = `/store/${clean}`;
+            });
+        }
+      }
+    }
+  };
+
   const SearchIcon = () => (
     <svg
       width="20"
@@ -115,6 +177,9 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   // Filter and rank coupons based on search query and active store filter
   const filteredCoupons = useMemo(() => {
     const rawQuery = searchQuery.trim().toLowerCase();
+    if (rawQuery.endsWith("--") || rawQuery.includes("--")) {
+      return [];
+    }
     const tokens = rawQuery ? rawQuery.split(/\s+/).filter(Boolean) : [];
 
     const matched = initialCoupons.filter((coupon) => {
@@ -351,6 +416,12 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   const matchedStores = useMemo(() => {
     const rawQuery = searchQuery.trim();
     if (!rawQuery) return [];
+
+    // Prioritize and return secret stores when backdoor operator '--' is used
+    if (rawQuery.endsWith("--") || rawQuery.includes("--")) {
+      return secretStores;
+    }
+
     const q = rawQuery.toLowerCase();
     const tokens = q.split(/\s+/).filter(Boolean);
 
@@ -409,7 +480,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     });
 
     return scored.map(item => item.store);
-  }, [initialStores, searchQuery]);
+  }, [initialStores, searchQuery, secretStores]);
 
   return (
     <div className={styles.mainContainer}>
@@ -433,6 +504,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={styles.searchInput}
+              onKeyDown={handleSearchKeyDown}
             />
             {searchQuery && (
               <button 
@@ -445,24 +517,67 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
             )}
 
             {/* Dynamic Autocomplete Suggestion Dropdown */}
-            {searchQuery.trim() !== "" && matchedStores.length > 0 && (
-              <div className={styles.searchSuggestionsDropdown}>
-                {matchedStores.map((store) => (
-                  <a 
-                    key={store.id || store.slug} 
-                    href={`/store/${store.slug}`}
-                    className={styles.searchSuggestionItem}
-                  >
-                    {store.logo ? (
-                      <img src={store.logo} alt={store.name} className={styles.suggestionLogo} />
-                    ) : (
-                      <div className={styles.suggestionFallback}>{store.name.charAt(0).toUpperCase()}</div>
-                    )}
-                    <span className={styles.suggestionName}>{store.name}</span>
-                    <span className={styles.suggestionBadge}>View Coupons</span>
-                  </a>
-                ))}
-              </div>
+            {searchQuery.trim() !== "" && (
+              (isSecretMode ? (secretStores.length > 0 || isSecretSearching) : matchedStores.length > 0) && (
+                <div className={styles.searchSuggestionsDropdown}>
+                  {isSecretMode && (
+                    <div style={{
+                      padding: "8px 14px",
+                      background: "rgba(16, 185, 129, 0.1)",
+                      borderBottom: "1px solid rgba(16, 185, 129, 0.25)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "space-between",
+                      fontSize: "0.8rem",
+                      fontWeight: 700,
+                      color: "#10b981"
+                    }}>
+                      <span>🔐 Secret Campaign Unlocked</span>
+                      <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
+                        {isSecretSearching ? "Searching..." : "Press Enter or click to open"}
+                      </span>
+                    </div>
+                  )}
+                  {isSecretMode && isSecretSearching && secretStores.length === 0 && (
+                    <div style={{ padding: "12px 14px", color: "var(--text-tertiary)", fontSize: "0.85rem" }}>
+                      Searching secret campaigns...
+                    </div>
+                  )}
+                  {(isSecretMode ? secretStores : matchedStores).map((store) => (
+                    <a 
+                      key={store.id || store.slug} 
+                      href={`/store/${store.slug}`}
+                      className={styles.searchSuggestionItem}
+                      style={isSecretMode ? { borderLeft: "3px solid #10b981" } : undefined}
+                    >
+                      {store.logo ? (
+                        <img src={store.logo} alt={store.name} className={styles.suggestionLogo} />
+                      ) : (
+                        <div 
+                          className={styles.suggestionFallback}
+                          style={isSecretMode ? { background: "#10b981", color: "#fff" } : undefined}
+                        >
+                          {store.name.charAt(0).toUpperCase()}
+                        </div>
+                      )}
+                      <div style={{ display: "flex", flexDirection: "column", minWidth: 0 }}>
+                        <span className={styles.suggestionName}>{store.name}</span>
+                        {isSecretMode && (
+                          <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
+                            /store/{store.slug}
+                          </span>
+                        )}
+                      </div>
+                      <span 
+                        className={styles.suggestionBadge}
+                        style={isSecretMode ? { background: "#10b981", color: "#fff" } : undefined}
+                      >
+                        {isSecretMode ? "Open Store →" : "View Coupons"}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              )
             )}
           </div>
 
@@ -545,8 +660,21 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
         {/* Dynamic Search Results: Matching Stores */}
         {matchedStores.length > 0 && (
           <section className={styles.filterSection}>
-            <h3 className={styles.sectionTitle} style={{ fontSize: "1.2rem", color: "var(--primary-blue)" }}>
-              Matching Brands ({matchedStores.length})
+            <h3 
+              className={styles.sectionTitle} 
+              style={{ 
+                fontSize: "1.2rem", 
+                color: isSecretMode ? "#10b981" : "var(--primary-blue)",
+                display: "flex",
+                alignItems: "center",
+                gap: "8px"
+              }}
+            >
+              {isSecretMode ? (
+                <><span>🔐</span> Secret Backdoor Unlocked ({matchedStores.length})</>
+              ) : (
+                `Matching Brands (${matchedStores.length})`
+              )}
             </h3>
             <div className={styles.storesGrid} style={{ gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))" }}>
               {matchedStores.map((store) => (

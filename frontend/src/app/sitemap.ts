@@ -1,5 +1,6 @@
 import { MetadataRoute } from "next";
-import { FALLBACK_STORES, FALLBACK_POSTS } from "../lib/fallbackData";
+import { HOMEPAGE_NEUTRAL_BRANDS } from "../lib/neutralBrands";
+import { FALLBACK_POSTS } from "../lib/fallbackData";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://www.promoregistry.com";
@@ -63,15 +64,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
   ];
 
-  // All 493 store pages
-  const storePages = (FALLBACK_STORES || []).map((s) => ({
+  // Public neutral store pages (protects affiliate campaigns from discovery via sitemap.xml)
+  const storePages = (HOMEPAGE_NEUTRAL_BRANDS || []).map((s) => ({
     url: `${baseUrl}/store/${s.slug}`,
     lastModified: staticDate,
     changeFrequency: "weekly" as const,
-    priority: 0.9,
+    priority: 0.8,
   }));
 
-  // All 284 blog guide pages
+  // All blog guide pages
   const blogPages = (FALLBACK_POSTS || []).map((p) => ({
     url: `${baseUrl}/blog/${p.slug}`,
     lastModified: staticDate,

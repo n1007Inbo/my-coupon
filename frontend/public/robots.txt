@@ -1,5 +1,41 @@
 User-agent: *
 Disallow: /images/
+Disallow: /api/
 Allow: /
+
+# Block SEO Spy Tools & Intelligence Scrapers
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+User-agent: SemrushBot-SA
+User-agent: SemrushBot-BA
+User-agent: SemrushBot-SI
+User-agent: SemrushBot-SVI
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
+User-agent: DataForSeoBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: serpstatbot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
 
 Sitemap: https://www.promoregistry.com/sitemap.xml
