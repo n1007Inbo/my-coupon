@@ -7251,16 +7251,16 @@ export const STORE_REGISTRY: RegistryStore[] = [
     id: 719,
     name: "Neosabers",
     slug: "neosabers",
-    aliases: ["neosabers-coupons", "neosabers-discount", "neosabers-promo"],
+    aliases: ["neosabers-us", "neo-sabers", "neosabers-coupons", "neosabers-discount", "neosabers-promo"],
     logo: "/logos/neosabers.svg",
-    website: "https://neosabers.com/?ref=promoregistry",
-    affiliate_url: "https://neosabers.com/?ref=promoregistry",
+    website: "https://neosabers.com/?ref=METHEWDIPPY",
+    affiliate_url: "https://neosabers.com/?ref=METHEWDIPPY",
     country: "GLOBAL",
     description: "Custom Xenopixel & Neopixel combat dueling lightsabers with smooth-swing sound fonts.",
     coupons: [
       {
         id: "neosabers-deal-1",
-        code: "NEOSABE15",
+        code: "METHEWDIPPY",
         discount: "15% OFF",
         title: "15% off sitewide on all Neosabers favorites",
         description: "Apply verified code NEOSABE15 at checkout to enjoy 15% off bestselling products and new arrivals.",
@@ -7269,7 +7269,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "neosabers-deal-2",
-        code: "VIP20",
+        code: "METHEWDIPPY",
         discount: "20% OFF",
         title: "20% off collection bundles & multi-item packs",
         description: "Save 20% when purchasing curated bundles, gift packs, and seasonal essentials with code VIP20.",
@@ -7278,7 +7278,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "neosabers-deal-3",
-        code: "WELCOME10",
+        code: "METHEWDIPPY",
         discount: "10% OFF",
         title: "10% off your first purchase with newsletter",
         description: "First-time shoppers receive an instant 10% discount on their entire cart using promo code WELCOME10.",
@@ -7287,7 +7287,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "neosabers-deal-4",
-        code: "",
+        code: "METHEWDIPPY",
         discount: "UP TO 40% OFF",
         title: "Up to 40% off seasonal markdowns & flash offers",
         description: "Explore discounted outlet items, limited-time promos, and special seasonal savings with no code required.",
@@ -7296,7 +7296,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "neosabers-deal-5",
-        code: "",
+        code: "METHEWDIPPY",
         discount: "FREE SHIPPING",
         title: "Free tracked delivery on qualifying orders over $50",
         description: "Receive 100% free tracked standard shipping with 30-day money-back satisfaction guarantee.",
