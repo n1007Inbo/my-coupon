@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import HeaderClient from "./HeaderClient";
 import FooterClient from "./FooterClient";
 
-const outfit = Outfit({
+const inter = Inter({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  variable: "--font-outfit",
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-inter",
   display: "swap",
   preload: true,
 });
@@ -42,7 +42,7 @@ export default function RootLayout({
   const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   return (
-    <html lang="en" className={outfit.variable}>
+    <html lang="en" className={inter.variable}>
       <head>
         <meta name="impact-site-verification" value="e8243051-e329-4f57-aedc-5f4539bfc2ac" />
         <meta name="impact-site-verification" content="e8243051-e329-4f57-aedc-5f4539bfc2ac" />

@@ -1,10 +1,9 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
-import styles from "../../page.module.css";
+import React, { useState, useEffect } from "react";
 import storeStyles from "./StoreClient.module.css";
-import CouponCard, { Coupon, Store } from "../../../components/CouponCard";
 import CopyModal from "../../../components/CopyModal";
+import { Coupon, Store } from "../../../components/CouponCard";
 
 interface StoreClientProps {
   store: Store;
@@ -12,290 +11,101 @@ interface StoreClientProps {
 }
 
 export default function StoreClient({ store, coupons }: StoreClientProps) {
-  const [searchQuery, setSearchQuery] = useState("");
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
+  const [copiedId, setCopiedId] = useState<string | number | null>(null);
   const [bannerLogoError, setBannerLogoError] = useState(false);
 
-  // Clearbit logo fallback for store banner
-  const bannerLogo = useMemo(() => {
-    if (bannerLogoError) return null;
-    if (store.logo) return store.logo;
-    // Try Clearbit
-    const website = store.website;
-    if (website) {
-      try {
-        const hostname = new URL(website).hostname.replace(/^www\./, "");
-        const redirectDomains = ["vert.si", "litl.si", "csl.admitad.com", "fatcoupon.com", "shrsl.com"];
-        if (!redirectDomains.some(d => hostname.includes(d))) {
-          if (hostname.endsWith(".myshopify.com")) {
-            const brand = hostname.replace(".myshopify.com", "").replace(/3d-?/g, "");
-            return `https://logo.clearbit.com/${brand}.com`;
-          }
-          return `https://logo.clearbit.com/${hostname}`;
-        }
-      } catch { /* ignore */ }
-    }
-    // Guess from store name
-    const clean = store.name.toLowerCase().replace(/[^a-z0-9]/g, "");
-    return `https://logo.clearbit.com/${clean}.com`;
-  }, [store.logo, store.website, store.name, bannerLogoError]);
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (email.trim()) {
-      if (typeof window !== "undefined") {
-        localStorage.setItem(`subscribed_${store.slug}`, email);
-        if ((window as any).gtag) {
-          (window as any).gtag("event", "sign_up", {
-            event_category: "Newsletter",
-            event_label: store.name,
-            method: "Email"
-          });
+  // Auto-open modal if URL has ?coupon= param (from tabunder flow)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const couponId = params.get("coupon");
+      if (couponId) {
+        const found = coupons.find((c) => String(c.id) === couponId);
+        if (found) {
+          setActiveCoupon(found);
         }
       }
-      setSubscribed(true);
-      setEmail("");
-    }
-  };
-
-  // Auto-open coupon modal if coupon parameter is present in URL
-  React.useEffect(() => {
-    if (typeof window !== "undefined") {
-      const checkParams = () => {
-        const params = new URLSearchParams(window.location.search);
-        const couponParam = params.get("coupon");
-        const codeParam = params.get("code");
-        if (couponParam || codeParam) {
-          const found = coupons.find(c => 
-            (couponParam && String(c.id) === String(couponParam)) ||
-            (codeParam && c.code === codeParam)
-          );
-          if (found) {
-            setActiveCoupon(found);
-          }
-        }
-      };
-
-      // Check instantly
-      checkParams();
-
-      // Check with a small delay to handle hydration perfectly
-      const timer = setTimeout(checkParams, 150);
-      return () => clearTimeout(timer);
     }
   }, [coupons]);
 
-  // Search Icon Component
-  const SearchIcon = () => (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={styles.searchIcon}
-    >
-      <circle cx="11" cy="11" r="8" />
-      <line x1="21" y1="21" x2="16.65" y2="16.65" />
-    </svg>
-  );
+  const handleAction = (e: React.MouseEvent, coupon: Coupon) => {
+    e.preventDefault();
+    e.stopPropagation();
 
-  // Back Arrow Icon
-  const BackIcon = () => (
-    <svg
-      width="16"
-      height="16"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <line x1="19" y1="12" x2="5" y2="12" />
-      <polyline points="12 19 5 12 12 5" />
-    </svg>
-  );
+    const targetUrl = coupon.affiliate_url || store.website || "https://www.google.com";
 
-  const GlobeIcon = () => (
-    <svg
-      width="14"
-      height="14"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <circle cx="12" cy="12" r="10" />
-      <line x1="2" y1="12" x2="22" y2="12" />
-      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-    </svg>
-  );
-
-  // Filter coupons based on search query within this store
-  const filteredCoupons = useMemo(() => {
-    if (searchQuery.trim() === "") return coupons;
-    const query = searchQuery.toLowerCase();
-    return coupons.filter((coupon) => {
-      const matchesCode = coupon.code ? coupon.code.toLowerCase().includes(query) : false;
-      const matchesDesc = coupon.description ? coupon.description.toLowerCase().includes(query) : false;
-      const matchesDiscount = coupon.discount ? coupon.discount.toLowerCase().includes(query) : false;
-      return matchesCode || matchesDesc || matchesDiscount;
-    });
-  }, [coupons, searchQuery]);
-
-  const verifiedCount = coupons.filter(c => c.is_verified).length;
-  const successRate = coupons.length > 0 ? Math.round((verifiedCount / coupons.length) * 100) : 100;
-
-  const handleGetCode = (coupon: Coupon) => {
-    const isStoreObject = typeof coupon.store === "object" && coupon.store !== null;
-    const storeName = isStoreObject ? (coupon.store as Store).name : (coupon.store as string);
-    const website = isStoreObject ? (coupon.store as Store).website : undefined;
-    const rawStoreUrl = coupon.affiliate_url || (coupon as any).affiliate_link || (coupon as any).affiliateLink || (store as any).affiliateLink || (store as any).affiliate_link || (store as any).affiliate_url || website || `https://www.google.com/search?q=${encodeURIComponent(storeName + " official website")}`;
-    
-    // Append Google Ads campaign and keyword SubIDs if it's an affiliate redirect link
-    let storeUrl = rawStoreUrl;
-    if (typeof window !== "undefined" && rawStoreUrl) {
-      const isAffiliate = rawStoreUrl.includes("admitad") || 
-                          rawStoreUrl.includes("convert") || 
-                          rawStoreUrl.includes("csl") || 
-                          rawStoreUrl.includes("bouquetsbypost") || 
-                          rawStoreUrl.includes("litl.si") ||
-                          rawStoreUrl.includes("fatcoupon") ||
-                          rawStoreUrl.includes("/go/");
-      if (isAffiliate) {
+    // 1. Instant Clipboard Copy
+    if (coupon.code && coupon.code !== "DEAL") {
+      if (typeof document !== "undefined") {
         try {
-          const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
-          const utmTerm = sessionStorage.getItem("utm_term") || "";
-          const gclid = sessionStorage.getItem("gclid") || "";
-          
-          const urlObj = rawStoreUrl.startsWith("http")
-            ? new URL(rawStoreUrl)
-            : new URL(rawStoreUrl, window.location.origin);
-          
-          if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
-          if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
-          if (gclid) urlObj.searchParams.set("subid3", gclid);
-          
-          storeUrl = urlObj.toString();
-        } catch (e) {
-          console.warn("Failed to append tracking SubIDs:", e);
-        }
+          const textArea = document.createElement("textarea");
+          textArea.value = coupon.code;
+          textArea.style.position = "fixed";
+          textArea.style.left = "-9999px";
+          textArea.style.top = "-9999px";
+          textArea.style.opacity = "0";
+          document.body.appendChild(textArea);
+          textArea.select();
+          document.execCommand("copy");
+          document.body.removeChild(textArea);
+        } catch {}
       }
-    }
-    
-    const isDirect = !coupon.code || coupon.code === "DEAL" || coupon.code === "DIRECT";
-
-    // Automatically copy code to user's clipboard instantly on click if it's not a direct deal
-    if (!isDirect) {
-      try {
-        if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(coupon.code);
-        }
-      } catch (err) {
-        console.warn("Failed to automatically copy code to clipboard:", err);
+      if (typeof navigator !== "undefined" && navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(coupon.code).catch(() => {});
       }
+      setCopiedId(coupon.id);
+      setTimeout(() => setCopiedId(null), 4000);
     }
 
-    // 1. Open our own website in a new tab, passing the coupon query params to auto-trigger the modal
+    // 2. Open modal in a NEW TAB (keeps user on our page)
     try {
-      const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}&code=${coupon.code || "DEAL"}`;
-      window.open(ourSiteUrl, "_blank", "noopener,noreferrer");
+      if (typeof window !== "undefined") {
+        const ourSiteUrl = `${window.location.origin}${window.location.pathname}?coupon=${coupon.id}&code=${coupon.code || "DEAL"}`;
+        window.open(ourSiteUrl, "_blank", "noopener,noreferrer");
+      }
     } catch (err) {
-      console.warn("Failed to open our website in a new tab:", err);
+      console.warn("Failed to open popup tab:", err);
     }
 
-    // GA4 Button Click Event Tracking
-    if (typeof window !== "undefined" && (window as any).gtag) {
-      (window as any).gtag("event", "generate_lead", {
-        event_category: "Affiliate Button Click",
-        event_label: `${storeName} - ${coupon.discount}`,
-        value: 1.0,
-        currency: "USD",
-        coupon_id: String(coupon.id),
-        is_direct_deal: isDirect
-      });
+    // 3. TABUNDER: Redirect CURRENT tab to official merchant store
+    if (typeof window !== "undefined") {
+      window.location.href = targetUrl;
     }
-
-    // 2. Redirect the current active tab to the merchant store's affiliate URL
-    window.location.href = storeUrl;
   };
 
-  const [officialWebsiteUrl, setOfficialWebsiteUrl] = useState<string | null>(null);
-
-  const baseStoreUrl = (store as any).affiliateLink || (store as any).affiliate_link || (store as any).affiliate_url || coupons.find(c => c.affiliate_url || (c as any).affiliate_link || (c as any).affiliateLink)?.affiliate_url || (coupons.find(c => (c as any).affiliate_link) as any)?.affiliate_link || (coupons.find(c => (c as any).affiliateLink) as any)?.affiliateLink || store.website || `https://www.google.com/search?q=${encodeURIComponent(store.name + " official website")}`;
-
-  React.useEffect(() => {
-    let finalUrl = baseStoreUrl;
-    try {
-      if (baseStoreUrl) {
-        const isAffiliate = baseStoreUrl.includes("admitad") || 
-                            baseStoreUrl.includes("convert") || 
-                            baseStoreUrl.includes("csl") || 
-                            baseStoreUrl.includes("bouquetsbypost") || 
-                            baseStoreUrl.includes("litl.si") ||
-                            baseStoreUrl.includes("fatcoupon") ||
-                            baseStoreUrl.includes("/go/");
-        if (isAffiliate) {
-          const utmCampaign = sessionStorage.getItem("utm_campaign") || "";
-          const utmTerm = sessionStorage.getItem("utm_term") || "";
-          const gclid = sessionStorage.getItem("gclid") || "";
-          
-          const urlObj = baseStoreUrl.startsWith("http")
-            ? new URL(baseStoreUrl)
-            : new URL(baseStoreUrl, window.location.origin);
-          
-          if (utmCampaign) urlObj.searchParams.set("subid1", utmCampaign);
-          if (utmTerm) urlObj.searchParams.set("subid2", utmTerm);
-          if (gclid) urlObj.searchParams.set("subid3", gclid);
-          
-          finalUrl = urlObj.toString();
-        }
-      }
-    } catch (e) {
-      console.warn("Failed to process officialWebsiteUrl:", e);
-    }
-    setOfficialWebsiteUrl(finalUrl);
-  }, [baseStoreUrl]);
+  const bannerLogo = !bannerLogoError && store.logo ? store.logo : null;
 
   return (
     <div className={storeStyles.pageContainer}>
-      {/* Back button link */}
+      {/* Back to All Stores */}
       <div className={storeStyles.backLinkContainer}>
         <a href="/" className={storeStyles.backLink}>
-          <BackIcon />
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12" />
+            <polyline points="12 19 5 12 12 5" />
+          </svg>
           <span>Back to All Stores</span>
         </a>
       </div>
 
-      {/* Clean Elevated Store Header (PerkVue Luxury Standard) */}
+      {/* Focused Store Header (Exact PerkVue Standard) */}
       <section className={storeStyles.storeHeader}>
         <div className={storeStyles.brandInfo}>
           {bannerLogo ? (
-            <img 
-              src={bannerLogo} 
-              alt={`${store.name} Logo`} 
-              className={storeStyles.storeLogo} 
+            <img
+              src={bannerLogo}
+              alt={`${store.name} Logo`}
               width={96}
               height={96}
-              decoding="async"
-              fetchPriority="high"
+              className={storeStyles.storeLogo}
               onError={() => setBannerLogoError(true)}
             />
           ) : (
-            <div className={storeStyles.fallbackLogo}>
-              {store.name.charAt(0).toUpperCase()}
-            </div>
+            <div className={storeStyles.fallbackLogo}>{store.name.charAt(0).toUpperCase()}</div>
           )}
           <div>
-            <h1 className={storeStyles.storeTitle}>{store.name} Promo Codes & Deals</h1>
+            <h1 className={storeStyles.storeTitle}>{store.name} Exclusive Offers</h1>
             <p className={storeStyles.storeSubtitle}>
               Direct verified savings &amp; exclusive partner discounts. Tested active today.
             </p>
@@ -307,24 +117,92 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
         </div>
       </section>
 
-      {/* Direct Coupon Cards Focus Grid (Above-the-fold) */}
+      {/* 2-Card Focus Grid (Above-the-fold) */}
       <section className={storeStyles.cardsGrid}>
-        {filteredCoupons.length > 0 ? (
-          filteredCoupons.map((coupon, idx) => (
-            <div key={coupon.id} className={storeStyles.cardWrapper}>
-              <CouponCard 
-                coupon={coupon} 
-                onGetCode={handleGetCode} 
-                isBestDeal={idx === 0} 
-              />
+        {coupons.map((coupon, idx) => {
+          const isDirectDeal = !coupon.code || coupon.code === "DEAL";
+          const discountParts = (coupon.discount || "20% OFF").trim().split(" ");
+          const graphicMain = discountParts[0] || "20%";
+          const graphicSub = discountParts.slice(1).join(" ") || "OFF";
+          const isCopied = copiedId === coupon.id;
+
+          return (
+            <div
+              key={coupon.id}
+              className={`${storeStyles.cardContainer} ${idx === 0 ? storeStyles.primaryCard : ""}`}
+              onClick={(e) => handleAction(e, coupon)}
+            >
+              {/* Header */}
+              <div className={storeStyles.cardHeader}>
+                <span className={storeStyles.verifiedPill}>
+                  <span className={storeStyles.pulsingDot}></span> Verified Active Today
+                </span>
+                <span className={storeStyles.badge3dExtruded}>
+                  {isDirectDeal ? "DIRECT REWARD" : "100% SUCCESS"}
+                </span>
+              </div>
+
+              {/* Main Body with 3D Graphic */}
+              <div className={storeStyles.cardBody}>
+                <div className={storeStyles.offerRow}>
+                  <div className={isDirectDeal ? storeStyles.valueGraphicEmerald : storeStyles.valueGraphicNavy}>
+                    <span className={storeStyles.graphicMain}>{graphicMain}</span>
+                    <span className={storeStyles.graphicSub}>{graphicSub}</span>
+                  </div>
+                  <div className={storeStyles.offerText}>
+                    <h3 className={storeStyles.cardTitle}>{coupon.title || `${coupon.discount} at ${store.name}`}</h3>
+                    <p className={storeStyles.cardDesc}>{coupon.description}</p>
+                  </div>
+                </div>
+
+                {/* 3D Code Box */}
+                {!isDirectDeal ? (
+                  <div className={storeStyles.codeBox3d}>
+                    <div className={storeStyles.codeLabelWrapper}>
+                      <span className={storeStyles.codeLabel}>Promo Code:</span>
+                      <span className={storeStyles.codeBadge}>{coupon.code}</span>
+                    </div>
+                    <span className={storeStyles.autoCopiedPill}>
+                      {isCopied ? "Copied! ✓" : "Auto-Copied"}
+                    </span>
+                  </div>
+                ) : (
+                  <div className={storeStyles.dealFeatureRow}>
+                    <span className={storeStyles.dealFeatureText}>Auto-applied at checkout</span>
+                    <span className={storeStyles.dealFeatureBadge}>No Code Needed ✓</span>
+                  </div>
+                )}
+              </div>
+
+              {/* Push Button */}
+              <div className={storeStyles.cardFooter}>
+                <button
+                  type="button"
+                  onClick={(e) => handleAction(e, coupon)}
+                  className={`${storeStyles.ctaButton} ${isDirectDeal ? storeStyles.btn3dEmerald : storeStyles.btn3dNavy}`}
+                >
+                  {!isDirectDeal ? (
+                    <>
+                      <span>{isCopied ? "CODE COPIED! OPENING SITE..." : "GET CODE & OPEN SITE"}</span>
+                      <span className={storeStyles.arrowIcon}>→</span>
+                    </>
+                  ) : (
+                    <>
+                      <span>CLAIM REWARD ON {store.name.toUpperCase()}</span>
+                      <span className={storeStyles.arrowIcon}>→</span>
+                    </>
+                  )}
+                </button>
+
+                <div className={storeStyles.trustFooter}>
+                  <span>✓ Official Checkout Guarantee</span>
+                  <span>•</span>
+                  <span>Verified Working Today</span>
+                </div>
+              </div>
             </div>
-          ))
-        ) : (
-          <div className={styles.noResults}>
-            <h3>No active coupons found</h3>
-            <p>Please check back later or explore other partner stores.</p>
-          </div>
-        )}
+          );
+        })}
       </section>
 
       {/* Clean Trust Strip */}
