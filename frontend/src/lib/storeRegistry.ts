@@ -751,94 +751,78 @@ export const STORE_REGISTRY: RegistryStore[] = [
     slug: "im8health",
     aliases: ["im8-health", "im8", "im8health-us", "im8-health-us"],
     logo: "/logos/im8health.png",
-    website: "https://www.im8health.com/METHEW29111",
-    affiliate_url: "https://www.im8health.com/METHEW29111",
+    website: "https://www.im8health.com/PERK",
+    affiliate_url: "https://www.im8health.com/PERK",
     country: "US",
     description: "Daily all-in-one ultimate longevity nutrition and essential multivitamin powder founded by David Beckham.",
     coupons: [
+      {
+        id: "im8-deal-perk",
+        code: "PERK",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% off exclusive promo code sitewide (code: PERK)",
+        description: "Apply verified promo code PERK at checkout to save an instant 20% on Daily Ultimate Essentials and Longevity nutrition packs.",
+        affiliate_url: "https://www.im8health.com/PERK",
+        is_verified: true,
+        expiry_date: "2026-12-31"
+      },
       {
         id: "im8-deal-1",
         code: "METHEW29111",
         is_auto_applied: true,
         discount: "20% OFF",
-        title: "20% off exclusive promo code sitewide (verified working)",
+        title: "20% off verified discount code on daily nutrition",
         description: "Save 20% on Daily Ultimate Essentials and Longevity supplements with code METHEW29111.",
+        affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "im8-deal-2",
-        code: "METHEW29111",
+        code: "PERK",
         is_auto_applied: true,
         discount: "30% OFF",
         title: "30% off Welcome Kit + 5 free travel sachets + shaker cup",
-        description: "Get 30% discount on the complete IM8 Welcome Starter Kit with exclusive code METHEW29111.",
+        description: "Get 30% discount on the complete IM8 Welcome Starter Kit with exclusive code PERK.",
+        affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "im8-deal-3",
-        code: "METHEW29111",
+        code: "PERK",
         is_auto_applied: true,
         discount: "15% OFF",
         title: "15% off first order discount code on all longevity powders",
-        description: "Apply 15% instant discount across all single and multi-pack nutrition orders with code METHEW29111.",
+        description: "Apply 15% instant discount across all single and multi-pack nutrition orders with code PERK.",
+        affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "im8-deal-4",
-        code: "METHEW29111",
+        code: "PERK",
         is_auto_applied: true,
         discount: "30% OFF",
         title: "30% off Daily Ultimate Essentials Pro 90-day subscription",
-        description: "Unlock 30% recurring savings on the 90-day supply bundle using code METHEW29111.",
+        description: "Unlock 30% recurring savings on the 90-day supply bundle using code PERK.",
+        affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
       {
         id: "im8-deal-5",
-        code: "METHEW29111",
-        is_auto_applied: true,
-        discount: "EXTRA 20% OFF",
-        title: "Extra 20% off Daily Ultimate Longevity monthly subscription",
-        description: "Stack an extra 20% off on all monthly recurring wellness subscriptions with code METHEW29111.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "im8-deal-6",
-        code: "METHEW29111",
-        is_auto_applied: true,
-        discount: "$208/MO STACK",
-        title: "The Beckham Stack Bundle starting from just $208/mo",
-        description: "Get the complete David Beckham Longevity Stack at special promotional pricing with code METHEW29111.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "im8-deal-7",
         code: "",
-        is_auto_applied: true,
-        discount: "FREE GIFTS",
-        title: "Free signature shaker + travel tin with any starter kit",
-        description: "Receive a free premium shaker bottle and signature travel tin automatically on starter orders.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "im8-deal-8",
-        code: "",
-        is_auto_applied: true,
         discount: "FREE SHIPPING",
-        title: "Free tracked US doorstep delivery on all orders",
-        description: "Enjoy 100% free tracked US doorstep delivery on all starter kits and supplement subscriptions.",
+        title: "Free tracked US delivery on all subscription orders",
+        description: "Enjoy 100% free tracked shipping across the United States on all daily longevity subscription packs.",
+        affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
     ]
   },
-
   // 13. FILTER BABY (US Market - Dermatologist-Approved Skincare Water Filter)
   {
     id: 613,

@@ -275,43 +275,54 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
         </a>
       </div>
 
-      {/* Store Header Banner Card */}
-      <section className={storeStyles.storeBanner}>
-        <div className={storeStyles.storeBannerHeader}>
-          {bannerLogo ? (
-            <div className={storeStyles.storeLargeLogoWrapper}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
+      {/* PromoRegistry Executive Registry Profile Header */}
+      <section className={storeStyles.registryProfileBanner}>
+        <div className={storeStyles.profileTopBar}>
+          <div className={storeStyles.registryShieldBadge}>
+            <span className={storeStyles.shieldDot}></span>
+            <span>Official Merchant Registry • Direct Partner</span>
+          </div>
+          <div className={storeStyles.verifiedDateBadge}>
+            <span>Validated: October 2026</span>
+          </div>
+        </div>
+
+        <div className={storeStyles.profileMainRow}>
+          <div className={storeStyles.profileLogoWrapper}>
+            {bannerLogo ? (
               <img 
                 src={bannerLogo} 
                 alt={store.name} 
-                className={storeStyles.storeLargeLogo} 
-                width={220}
-                height={124}
+                className={storeStyles.profileLogoImg} 
+                width={120}
+                height={120}
                 decoding="async"
                 fetchPriority="high"
                 onError={() => setBannerLogoError(true)}
               />
+            ) : (
+              <div className={storeStyles.profileLogoFallback}>
+                {store.name.charAt(0).toUpperCase()}
+              </div>
+            )}
+            <div className={storeStyles.sealCheckmark} title="Verified Authenticated Partner">✓</div>
+          </div>
+
+          <div className={storeStyles.profileMetaInfo}>
+            <div className={storeStyles.profileTitleRow}>
+              <h1 className={storeStyles.profileTitle}>{store.name} Promo Codes & Vouchers</h1>
             </div>
-          ) : (
-            <div className={storeStyles.storeLargeLogoFallback}>
-              {store.name.charAt(0).toUpperCase()}
-            </div>
-          )}
-          
-          <div className={storeStyles.storeMetaInfo}>
-            <div className={storeStyles.storeTitleRow}>
-              <h1 className={storeStyles.storeTitle}>{store.name} Deals & Discounts</h1>
-              <span className={storeStyles.storeVerifiedBadge}>100% Working</span>
-            </div>
-            <p className={storeStyles.storeSubtitle}>
-              Save money today at {store.name} with verified discounts, free shipping codes, and promotional deals.
+            <p className={storeStyles.profileDescription}>
+              Authorized discount coupons, promotional codes, and savings registry for {store.name}. Hand-tested and verified daily by PromoRegistry editorial staff.
             </p>
-            
+          </div>
+
+          <div className={storeStyles.profileCtaSection}>
             <a 
               href={officialWebsiteUrl || baseStoreUrl} 
               target="_blank" 
               rel="noopener noreferrer" 
-              className={storeStyles.storeWebsiteLink}
+              className={storeStyles.officialStoreButton}
               onClick={() => {
                 if (typeof window !== "undefined" && (window as any).gtag) {
                   (window as any).gtag("event", "generate_lead", {
@@ -323,27 +334,42 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                 }
               }}
             >
-              <GlobeIcon />
-              <span>Visit Official Website</span>
+              <span>Visit Official Store</span>
+              <span className={storeStyles.buttonExternalIcon}>↗</span>
             </a>
+            <span className={storeStyles.directLinkText}>Direct merchant landing page</span>
           </div>
         </div>
 
-        {/* Store Coupon Statistics Grid */}
-        <div className={storeStyles.statsGrid}>
-          <div className={storeStyles.statCard}>
-            <span className={storeStyles.statValue}>{coupons.length}</span>
-            <span className={storeStyles.statLabel}>Available Offers</span>
+        {/* Editorial Audit Strip (Distinct from CouponFlock) */}
+        <div className={storeStyles.editorialAuditStrip}>
+          <div className={storeStyles.auditPill}>
+            <span className={storeStyles.auditIcon}>🛡️</span>
+            <div>
+              <span className={storeStyles.auditValue}>{verifiedCount} Active Codes</span>
+              <span className={storeStyles.auditLabel}>Tested & Verified</span>
+            </div>
           </div>
-          <div className={storeStyles.statCard}>
-            <span className={storeStyles.statValue}>{verifiedCount}</span>
-            <span className={storeStyles.statLabel}>Verified Deals</span>
+          <div className={storeStyles.auditPill}>
+            <span className={storeStyles.auditIcon}>⚡</span>
+            <div>
+              <span className={storeStyles.auditValue}>Instant Cart Discount</span>
+              <span className={storeStyles.auditLabel}>Direct Checkout Savings</span>
+            </div>
           </div>
-          <div className={storeStyles.statCard}>
-            <span className={storeStyles.statValue} style={{ color: "var(--accent-green)" }}>
-              {successRate}%
-            </span>
-            <span className={storeStyles.statLabel}>Success Rate</span>
+          <div className={storeStyles.auditPill}>
+            <span className={storeStyles.auditIcon}>📈</span>
+            <div>
+              <span className={storeStyles.auditValue}>{successRate}% Success Rate</span>
+              <span className={storeStyles.auditLabel}>Based on Community Redemptions</span>
+            </div>
+          </div>
+          <div className={storeStyles.auditPill}>
+            <span className={storeStyles.auditIcon}>🔒</span>
+            <div>
+              <span className={storeStyles.auditValue}>SSL Safe & Encrypted</span>
+              <span className={storeStyles.auditLabel}>Zero Data Stored</span>
+            </div>
           </div>
         </div>
       </section>

@@ -506,3 +506,228 @@
   gap: 18px;
   width: 100%;
 }
+
+
+/* ============================================================
+   PROMOREGISTRY EXECUTIVE REGISTRY PROFILE BANNER
+   (Distinct High-Authority Corporate Styling)
+   ============================================================ */
+.registryProfileBanner {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  border: 1px solid #334155;
+  border-radius: 18px;
+  padding: 30px 32px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.12);
+  margin-bottom: 36px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.profileTopBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.registryShieldBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #38bdf8;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.shieldDot {
+  width: 8px;
+  height: 8px;
+  background: #10b981;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #10b981;
+}
+
+.verifiedDateBadge {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.profileMainRow {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.profileLogoWrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  min-width: 110px;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  border: 2px solid #38bdf8;
+}
+
+.profileLogoImg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.profileLogoFallback {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.sealCheckmark {
+  position: absolute;
+  bottom: -6px;
+  right: -6px;
+  width: 26px;
+  height: 26px;
+  background: #10b981;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 900;
+  border: 2px solid #0f172a;
+}
+
+.profileMetaInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.profileTitleRow {
+  margin-bottom: 8px;
+}
+
+.profileTitle {
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.profileDescription {
+  font-size: 0.92rem;
+  color: #cbd5e1;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.profileCtaSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.officialStoreButton {
+  background: #10b981;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 12px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.35);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.officialStoreButton:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(16, 185, 129, 0.45);
+}
+
+.buttonExternalIcon {
+  font-size: 1.1rem;
+}
+
+.directLinkText {
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.editorialAuditStrip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.auditPill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  padding: 10px 14px;
+}
+
+.auditIcon {
+  font-size: 1.25rem;
+}
+
+.auditValue {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.auditLabel {
+  display: block;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .editorialAuditStrip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .profileMainRow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profileCtaSection {
+    align-items: flex-start;
+    width: 100%;
+  }
+  .officialStoreButton {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .editorialAuditStrip {
+    grid-template-columns: 1fr;
+  }
+}

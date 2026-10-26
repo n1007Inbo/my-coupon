@@ -597,62 +597,49 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
         </div>
       </section>
 
-      {/* Infinite Auto-Scrolling Trending Brands Carousel */}
-      <div className={styles.carouselContainer}>
-        <p className={styles.carouselTitle}>🔥 Hot Trending Brands</p>
-        <div className={styles.carouselSlider}>
-          <div className={styles.carouselTrack}>
-            {/* First Set of Brands */}
-            {initialStores.slice(0, 20).map((store) => (
-              <a 
-                key={`slide1-${store.id || store.slug}`} 
-                href={`/store/${store.slug}`} 
-                className={styles.carouselItem}
-                title={`Visit ${store.name} Store`}
-              >
-                {store.logo ? (
-                  <img 
-                    src={store.logo} 
-                    alt={store.name} 
-                    className={styles.carouselLogo} 
-                    loading="lazy" 
-                    decoding="async"
-                    width={36}
-                    height={36}
-                  />
-                ) : (
-                  <div className={styles.carouselFallback}>{store.name.charAt(0).toUpperCase()}</div>
-                )}
-                <span>{store.name}</span>
-              </a>
-            ))}
-            {/* Second Duplicate Set for Seamless Loop */}
-            {initialStores.slice(0, 20).map((store) => (
-              <a 
-                key={`slide2-${store.id || store.slug}`} 
-                href={`/store/${store.slug}`} 
-                className={styles.carouselItem}
-                title={`Visit ${store.name} Store`}
-              >
-                {store.logo ? (
-                  <img 
-                    src={store.logo} 
-                    alt={store.name} 
-                    className={styles.carouselLogo} 
-                    loading="lazy" 
-                    decoding="async"
-                    width={36}
-                    height={36}
-                  />
-                ) : (
-                  <div className={styles.carouselFallback}>{store.name.charAt(0).toUpperCase()}</div>
-                )}
-                <span>{store.name}</span>
-              </a>
-            ))}
+      {/* Official Curated Partner Merchants (Static Verified Grid - NO SLIDING MARQUEE) */}
+      <section className={styles.featuredSection}>
+        <div className={styles.featuredHeader}>
+          <div className={styles.featuredHeaderLeft}>
+            <span className={styles.featuredIcon}>🏛️</span>
+            <div>
+              <h2 className={styles.featuredTitle}>Featured Partner Merchants</h2>
+              <p className={styles.featuredSubtitle}>Hand-tested active promo codes & direct verified vouchers</p>
+            </div>
           </div>
+          <span className={styles.featuredVerifiedTag}>✓ Direct Network Validated</span>
         </div>
-      </div>
+        <div className={styles.featuredGrid}>
+          {initialStores.slice(0, 8).map((store) => (
+            <a 
+              key={`featured-${store.id || store.slug}`} 
+              href={`/store/${store.slug}`} 
+              className={styles.featuredCard}
+              title={`View verified ${store.name} discounts`}
+            >
+              <div className={styles.featuredLogoBox}>
+                {store.logo ? (
+                  <img 
+                    src={store.logo} 
+                    alt={store.name} 
+                    className={styles.featuredLogoImg} 
+                    loading="lazy" 
+                    width={40}
+                    height={40}
+                  />
+                ) : (
+                  <div className={styles.featuredFallback}>{store.name.charAt(0).toUpperCase()}</div>
+                )}
+              </div>
+              <div className={styles.featuredMeta}>
+                <span className={styles.featuredStoreName}>{store.name}</span>
+                <span className={styles.featuredBadge}>Active Vouchers Available</span>
+              </div>
+              <span className={styles.featuredArrow}>→</span>
+            </a>
+          ))}
+        </div>
+      </section>
 
       {/* Main Content Layout */}
       <div className={styles.contentLayout}>
