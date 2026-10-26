@@ -6,33 +6,42 @@
 .card {
   position: relative;
   background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 22px 24px;
   gap: 22px;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
   cursor: pointer;
   width: 100%;
   box-sizing: border-box;
+  box-shadow: 
+    0 1px 3px rgba(15, 23, 42, 0.03),
+    0 8px 18px -4px rgba(15, 23, 42, 0.05),
+    inset 0 1px 0 #ffffff;
 }
 
 .card:hover {
-  border-color: #c7d2fe;
-  box-shadow: 0 4px 20px rgba(99, 102, 241, 0.08);
+  transform: translateY(-3px);
+  border-color: #93c5fd;
+  box-shadow: 
+    0 4px 12px rgba(15, 23, 42, 0.05),
+    0 16px 32px -6px rgba(30, 58, 138, 0.12),
+    inset 0 1px 0 #ffffff;
 }
 
 .card:focus-visible {
-  outline: 2px solid #6366f1;
+  outline: 2px solid #1e3a8a;
   outline-offset: 2px;
 }
 
 /* Best Deal Highlight */
 .bestDealCard {
-  border-color: #c7d2fe;
-  background: linear-gradient(to right, #faf5ff, #ffffff);
+  border-color: #bfdbfe;
+  border-top: 2px solid #1e3a8a;
+  background: #ffffff;
 }
 
 /* ---- LEFT: Logo ---- */
@@ -70,7 +79,7 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, #eef2ff, #e0e7ff);
-  color: #4f46e5;
+  color: #1e3a8a;
   font-weight: 700;
   font-size: 2rem;
   border-radius: 8px;
@@ -95,7 +104,7 @@
 
 .discountTag {
   background: #eef2ff;
-  color: #4338ca;
+  color: #1d4ed8;
   font-size: 0.78rem;
   font-weight: 700;
   padding: 4px 10px;
@@ -197,7 +206,7 @@
   align-items: stretch;
   border-radius: 10px;
   overflow: hidden;
-  border: 2px solid #4f46e5;
+  border: 2px solid #1e3a8a;
   transition: box-shadow 0.2s ease;
   width: 100%;
 }
@@ -207,7 +216,7 @@
 }
 
 .codeBtnLabel {
-  background: #4f46e5;
+  background: #1e3a8a;
   color: #ffffff;
   padding: 11px 16px;
   font-size: 0.88rem;
@@ -219,7 +228,7 @@
 
 .codeBtnPreview {
   background: #ffffff;
-  color: #4f46e5;
+  color: #1e3a8a;
   padding: 11px 14px;
   font-size: 0.84rem;
   font-weight: 700;
@@ -234,7 +243,7 @@
 /* Deal Button */
 .dealBtn {
   width: 100%;
-  background: #4f46e5;
+  background: #1e3a8a;
   color: #ffffff;
   border: none;
   border-radius: 10px;
@@ -251,7 +260,7 @@
 }
 
 .dealBtn:hover {
-  background: #4338ca;
+  background: #1d4ed8;
   box-shadow: 0 2px 12px rgba(79, 70, 229, 0.18);
 }
 

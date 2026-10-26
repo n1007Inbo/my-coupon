@@ -487,12 +487,12 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
       {/* Hero Search Section */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
-          <span className={styles.heroBadge}>🔥 Trusted by 10,000+ smart shoppers every month</span>
+          <span className={styles.heroBadge}>🛡️ Official Merchant Registry & Verification Directory</span>
           <h1 className={styles.heroTitle}>
-            Stop paying full price. <span className={styles.gradientText}>Start saving today.</span>
+            Direct Merchant Promo Codes. <span className={styles.gradientText}>Verified & Tested Daily.</span>
           </h1>
           <p className={styles.heroSubtitle}>
-            We test every single code before adding it here. If it&apos;s on PromoRegistry, it works — guaranteed. No expired junk, no clickbait traps.
+            Access authenticated discount vouchers and direct checkout promotions across authorized US retail partners. Every code is audited and tested for instant cart savings.
           </p>
 
           {/* Premium Search Bar */}
@@ -500,7 +500,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
             <SearchIcon />
             <input
               type="text"
-              placeholder="Search for brands, discount codes, or items..."
+              placeholder="Search verified merchants, store names, or coupon codes..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               className={styles.searchInput}
@@ -583,8 +583,8 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
 
           {/* Premium Popular Searches Tagline */}
           <div className={styles.popularSearches}>
-            <span className={styles.popularSearchesTitle}>⚡ Popular Searches:</span>
-            {["Apple", "Amazon", "Nike", "Hostinger"].map((tag) => (
+            <span className={styles.popularSearchesTitle}>🔍 Verified Store Directories:</span>
+            {["Walmart", "Target", "Best Buy", "Home Depot", "Costco", "Wayfair"].map((tag) => (
               <button
                 key={tag}
                 onClick={() => setSearchQuery(tag)}
@@ -699,8 +699,8 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
 
         {/* Featured Brands Grid */}
         <section id="stores" className={styles.filterSection}>
-          <h2 className={styles.sectionTitle}>Browse Coupons by Brand</h2>
-          <p className={styles.sectionSubtitle}>Click on any brand to open its dedicated store page and view verified discount codes.</p>
+          <h2 className={styles.sectionTitle}>Authenticated Partner Store Directory</h2>
+          <p className={styles.sectionSubtitle}>Explore verified merchants with active promotions, discount codes, and guaranteed checkout savings.</p>
           <div className={styles.storesGrid}>
             {paginatedStores.map((store) => (
               <a

@@ -266,7 +266,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
   }, [baseStoreUrl]);
 
   return (
-    <div className={styles.mainContainer}>
+    <div className={storeStyles.pageContainer}>
       {/* Back button link */}
       <div className={storeStyles.backLinkContainer}>
         <a href="/" className={storeStyles.backLink}>
@@ -275,372 +275,72 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
         </a>
       </div>
 
-      {/* PromoRegistry Executive Registry Profile Header */}
-      <section className={storeStyles.registryProfileBanner}>
-        <div className={storeStyles.profileTopBar}>
-          <div className={storeStyles.registryShieldBadge}>
-            <span className={storeStyles.shieldDot}></span>
-            <span>Official Merchant Registry • Direct Partner</span>
-          </div>
-          <div className={storeStyles.verifiedDateBadge}>
-            <span>Validated: October 2026</span>
-          </div>
-        </div>
-
-        <div className={storeStyles.profileMainRow}>
-          <div className={storeStyles.profileLogoWrapper}>
-            {bannerLogo ? (
-              <img 
-                src={bannerLogo} 
-                alt={store.name} 
-                className={storeStyles.profileLogoImg} 
-                width={120}
-                height={120}
-                decoding="async"
-                fetchPriority="high"
-                onError={() => setBannerLogoError(true)}
-              />
-            ) : (
-              <div className={storeStyles.profileLogoFallback}>
-                {store.name.charAt(0).toUpperCase()}
-              </div>
-            )}
-            <div className={storeStyles.sealCheckmark} title="Verified Authenticated Partner">✓</div>
-          </div>
-
-          <div className={storeStyles.profileMetaInfo}>
-            <div className={storeStyles.profileTitleRow}>
-              <h1 className={storeStyles.profileTitle}>{store.name} Promo Codes & Vouchers</h1>
+      {/* Clean Elevated Store Header (PerkVue Luxury Standard) */}
+      <section className={storeStyles.storeHeader}>
+        <div className={storeStyles.brandInfo}>
+          {bannerLogo ? (
+            <img 
+              src={bannerLogo} 
+              alt={`${store.name} Logo`} 
+              className={storeStyles.storeLogo} 
+              width={96}
+              height={96}
+              decoding="async"
+              fetchPriority="high"
+              onError={() => setBannerLogoError(true)}
+            />
+          ) : (
+            <div className={storeStyles.fallbackLogo}>
+              {store.name.charAt(0).toUpperCase()}
             </div>
-            <p className={storeStyles.profileDescription}>
-              Authorized discount coupons, promotional codes, and savings registry for {store.name}. Hand-tested and verified daily by PromoRegistry editorial staff.
+          )}
+          <div>
+            <h1 className={storeStyles.storeTitle}>{store.name} Promo Codes & Deals</h1>
+            <p className={storeStyles.storeSubtitle}>
+              Direct verified savings &amp; exclusive partner discounts. Tested active today.
             </p>
           </div>
-
-          <div className={storeStyles.profileCtaSection}>
-            <a 
-              href={officialWebsiteUrl || baseStoreUrl} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className={storeStyles.officialStoreButton}
-              onClick={() => {
-                if (typeof window !== "undefined" && (window as any).gtag) {
-                  (window as any).gtag("event", "generate_lead", {
-                    event_category: "Official Website Link Click",
-                    event_label: store.name,
-                    value: 1.0,
-                    currency: "USD"
-                  });
-                }
-              }}
-            >
-              <span>Visit Official Store</span>
-              <span className={storeStyles.buttonExternalIcon}>↗</span>
-            </a>
-            <span className={storeStyles.directLinkText}>Direct merchant landing page</span>
-          </div>
         </div>
 
-        {/* Editorial Audit Strip (Distinct from CouponFlock) */}
-        <div className={storeStyles.editorialAuditStrip}>
-          <div className={storeStyles.auditPill}>
-            <span className={storeStyles.auditIcon}>🛡️</span>
-            <div>
-              <span className={storeStyles.auditValue}>{verifiedCount} Active Codes</span>
-              <span className={storeStyles.auditLabel}>Tested & Verified</span>
-            </div>
-          </div>
-          <div className={storeStyles.auditPill}>
-            <span className={storeStyles.auditIcon}>⚡</span>
-            <div>
-              <span className={storeStyles.auditValue}>Instant Cart Discount</span>
-              <span className={storeStyles.auditLabel}>Direct Checkout Savings</span>
-            </div>
-          </div>
-          <div className={storeStyles.auditPill}>
-            <span className={storeStyles.auditIcon}>📈</span>
-            <div>
-              <span className={storeStyles.auditValue}>{successRate}% Success Rate</span>
-              <span className={storeStyles.auditLabel}>Based on Community Redemptions</span>
-            </div>
-          </div>
-          <div className={storeStyles.auditPill}>
-            <span className={storeStyles.auditIcon}>🔒</span>
-            <div>
-              <span className={storeStyles.auditValue}>SSL Safe & Encrypted</span>
-              <span className={storeStyles.auditLabel}>Zero Data Stored</span>
-            </div>
-          </div>
+        <div className={storeStyles.trustPill}>
+          <span className={storeStyles.pulseDot}></span> Tested Active Today
         </div>
       </section>
 
-      {/* Search and Grid Filter Layout */}
-      <div className={styles.contentLayout}>
-        <div className={storeStyles.searchAndTitleRow}>
-          <h2 className={styles.sectionTitle}>Active {store.name} Deals & Discounts</h2>
-          
-          <div className={`${styles.searchBarWrapper} ${storeStyles.searchBarOverride}`}>
-            <SearchIcon />
-            <input
-              type="text"
-              placeholder={`Search ${store.name} deals...`}
-              value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
-              className={styles.searchInput}
-            />
-            {searchQuery && (
-              <button 
-                onClick={() => setSearchQuery("")} 
-                className={styles.btnClearSearch}
-              >
-                Clear
-              </button>
-            )}
+      {/* Direct Coupon Cards Focus Grid (Above-the-fold) */}
+      <section className={storeStyles.cardsGrid}>
+        {filteredCoupons.length > 0 ? (
+          filteredCoupons.map((coupon, idx) => (
+            <div key={coupon.id} className={storeStyles.cardWrapper}>
+              <CouponCard 
+                coupon={coupon} 
+                onGetCode={handleGetCode} 
+                isBestDeal={idx === 0} 
+              />
+            </div>
+          ))
+        ) : (
+          <div className={styles.noResults}>
+            <h3>No active coupons found</h3>
+            <p>Please check back later or explore other partner stores.</p>
           </div>
+        )}
+      </section>
+
+      {/* Clean Trust Strip */}
+      <section className={storeStyles.trustNote}>
+        <div className={storeStyles.trustNoteText}>
+          <strong>PromoRegistry Direct Checkout Standard:</strong> Clicking any offer automatically copies your code and opens the official {store.name} checkout.
         </div>
+        <span className={storeStyles.secureBadge}>🔒 Direct Checkout Verified</span>
+      </section>
 
-        <section className={styles.couponsSection}>
-          {filteredCoupons.length > 0 ? (
-            <div className={storeStyles.storeCouponsList}>
-              {filteredCoupons.map((coupon, idx) => (
-                <div key={coupon.id}>
-                  <CouponCard coupon={coupon} onGetCode={handleGetCode} isBestDeal={idx === 0} />
-                </div>
-              ))}
-            </div>
-          ) : (
-            <div className={styles.noResults}>
-              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 15h8M9 9h.01M15 9h.01" strokeLinecap="round" />
-              </svg>
-              <h3>No coupons found</h3>
-              <p>No matching coupons were found for &quot;{searchQuery}&quot; in this store.</p>
-              <button 
-                onClick={() => setSearchQuery("")} 
-                className={styles.btnResetFilters}
-              >
-                Clear Search
-              </button>
-            </div>
-          )}
-        </section>
-
-        {/* Email Subscription Box */}
-        <section className={storeStyles.newsletterSection}>
-          {subscribed ? (
-            <div className={storeStyles.newsletterSuccess}>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ color: "#10b981", marginBottom: "8px" }}>
-                <polyline points="20 6 9 17 4 12" />
-              </svg>
-              <h4>Successfully subscribed!</h4>
-              <p>We will alert you as soon as new {store.name} discount codes are released.</p>
-            </div>
-          ) : (
-            <div className={storeStyles.newsletterBody}>
-              <div className={storeStyles.newsletterContent}>
-                <h4>Never miss a {store.name} discount again!</h4>
-                <p>Subscribe to get the best verified coupons and deals sent straight to your inbox.</p>
-              </div>
-              <form onSubmit={handleSubscribe} className={storeStyles.newsletterForm}>
-                <input 
-                  type="email" 
-                  placeholder="Enter your email address" 
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required 
-                  className={storeStyles.newsletterInput}
-                />
-                <button type="submit" className={storeStyles.newsletterSubmit}>
-                  Subscribe
-                </button>
-              </form>
-            </div>
-          )}
-        </section>
-
-        {/* 4. SEO Coupon Redemption Guide */}
-        <section className={storeStyles.seoGuideSection}>
-          <h2 className={storeStyles.seoGuideTitle}>How to Redeem a {store.name} Promo Code</h2>
-          <div className={storeStyles.seoGuideContent}>
-            <p>
-              Saving money at {store.name} is quick and easy when you use a verified coupon code from PromoRegistry. 
-              Follow these simple steps to claim your discount:
-            </p>
-            <ol className={storeStyles.seoGuideSteps}>
-              <li>
-                <strong>Choose Your Offer:</strong> Browse our list of active {store.name} discount codes and deals above. 
-                Find the offer that matches your shopping needs and click <strong>&quot;Show Coupon Code&quot;</strong> or <strong>&quot;Get Deal&quot;</strong>.
-              </li>
-              <li>
-                <strong>Copy the Code:</strong> A popup window will display the promo code. Click the code box to automatically copy 
-                it to your clipboard.
-              </li>
-              <li>
-                <strong>Shop the Store:</strong> Click the link to go to the official {store.name} website, select your items, and add 
-                them to your shopping cart.
-              </li>
-              <li>
-                <strong>Apply the Discount:</strong> At checkout, look for the promo code input box (often labeled &quot;Promo Code&quot;, &quot;Discount Code&quot;, 
-                or &quot;Voucher&quot;). Paste your copied code into this box and click apply. Your total price will be reduced instantly!
-              </li>
-            </ol>
-            <p className={storeStyles.seoGuideFooter}>
-              All {store.name} coupons on PromoRegistry are verified daily by our team to ensure you get the best possible discount at checkout.
-            </p>
-          </div>
-        </section>
-
-        {/* 5. Custom Brand SEO Content & FAQs for High Rankings */}
-        {store.slug === "hotel-tonight" && (
-          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
-            <h2 className={storeStyles.seoGuideTitle}>Expert Savings Guide for HotelTonight</h2>
-            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p>
-                To get the absolute lowest prices on your next booking with HotelTonight, keep these proven tips in mind:
-              </p>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. How do I use a Hotel Tonight Promo Code?</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Unlike typical booking engines, HotelTonight promo codes are designed to be applied directly in their mobile app. Open the app, go to your Account Profile, select &quot;Invites &amp; Promo Codes&quot;, and paste your coupon there. The credits will be deducted from your next reservation.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Join HT Perks Loyalty Program</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  HT Perks is HotelTonight&apos;s official rewards program. You level up automatically as you spend. Level 1 gets you extra 8% off, Level 2 gets you 12% off plus other perks, and Level 3 unlocks up to 15% off and additional booking credits.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Reveal the Daily Drop Deal</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Checking the app daily unlocks the &quot;Daily Drop&quot; feature, which provides highly discounted, localized rates (sometimes 30% to 40% off). These deals expire within 15 minutes of being revealed, so act fast!
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {store.slug === "swatch" && (
-          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
-            <h2 className={storeStyles.seoGuideTitle}>How to Get the Best Deals on Swatch Watches</h2>
-            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p>
-                Swatch watches are highly sought-after Swiss timepieces. While they rarely offer massive sitewide sales, you can easily save using these strategies:
-              </p>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Join the Swatch Club</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Becoming a member of the Swatch Club grants you exclusive access to limited-edition watch releases (such as the MoonSwatch series), free entry to brand events, and members-only discount codes throughout the year.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Get Free Shipping on Your Order</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Swatch offers free standard shipping on all orders over $50. Since most Swatch watches cost between $80 and $250, you are almost guaranteed to qualify for free shipping.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Swatch Warranty and Returns</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Every Swatch watch purchased using verified links comes with a 24-month international warranty, covering material and manufacturing defects. Plus, you get 14-day free returns on unworn items.
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {store.slug === "tuxmat-us" && (
-          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
-            <h2 className={storeStyles.seoGuideTitle}>Why TuxMat Floor Liners Are Worth the Investment</h2>
-            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p>
-                TuxMat custom-fit floor liners offer ultimate cabin protection. Here is how to maximize your savings:
-              </p>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Maximum Coverage &amp; Perfect Fit</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  TuxMat liners are laser-measured for exact vehicle specifications, providing up to 3x more coverage than competing brands. They cover the entire footwell and side panels, protecting your vehicle from snow, water, mud, and salt.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Does TuxMat Have a Lifetime Warranty?</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Yes, TuxMat floor liners come with a lifetime warranty against manufacturer defects. This means your purchase is fully protected for the lifetime of your vehicle, making it a high-value purchase.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Save with TuxMat Promo Codes</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Use verified TuxMat promo codes to save up to 10% off sitewide, plus get free standard shipping across the United States. Signing up for their email list is also a great way to receive exclusive first-purchase coupon codes.
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {store.slug === "harrys" && (
-          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
-            <h2 className={storeStyles.seoGuideTitle}>Harry&apos;s Shaving &amp; Grooming Savings Guide</h2>
-            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p>
-                Harry&apos;s provides premium shaving kits, blades, and body care. Follow these tips to get the best value:
-              </p>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Get the $5 Trial Shave Set</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  New customers can purchase a Harry&apos;s Starter Set for just $5 (valued at $13). This includes a Truman razor handle, a 5-blade cartridge, foaming shave gel, and a travel blade cover.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Subscribe to Shave Plan Refills</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  By joining a custom shave plan, you save on replacement blade cartridges and receive free shipping on all recurring refills. You can easily adjust, pause, or cancel your subscription at any time.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. How to Apply a Harry&apos;s Promo Code?</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  To redeem your coupon code at Harry&apos;s, add your razor sets, blades, or body wash to the cart. During checkout, paste your promo code in the discount field and click apply to see your updated total.
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {store.slug === "shipt" && (
-          <section className={storeStyles.seoGuideSection} style={{ marginTop: "24px" }}>
-            <h2 className={storeStyles.seoGuideTitle}>How to Save Big on Shipt Grocery Delivery</h2>
-            <div className={storeStyles.seoGuideContent} style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
-              <p>
-                Shipt offers convenient grocery and same-day home delivery. Maximize your budget with these savings hacks:
-              </p>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>1. Save 50% on Shipt Annual Membership</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Look out for active promo codes that offer up to 50% off the annual Shipt membership, reducing the cost from $99 to just $49 for your first year of unlimited free deliveries on orders over $35.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>2. Get Free Delivery on Orders Over $35</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Shipt members get free delivery on all eligible retail, grocery, and pharmacy orders over $35. Combine smaller orders into a single weekly delivery to avoid standard delivery fees.
-                </p>
-              </div>
-              <div>
-                <h4 style={{ fontWeight: 700, marginBottom: "4px" }}>3. Shop Exclusives &amp; Weekly Retailer Deals</h4>
-                <p style={{ color: "var(--text-secondary)" }}>
-                  Check the Shipt app daily for exclusive digital coupons and buy-one-get-one deals from popular local retailers like Target, CVS, Costco, and major grocery chains.
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
-      </div>
-
-      {/* Copy modal popup */}
+      {/* Copy Modal */}
       {activeCoupon && (
-        <CopyModal coupon={activeCoupon} onClose={() => setActiveCoupon(null)} />
+        <CopyModal
+          coupon={activeCoupon}
+          onClose={() => setActiveCoupon(null)}
+        />
       )}
     </div>
   );

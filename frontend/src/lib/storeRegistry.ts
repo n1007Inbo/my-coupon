@@ -769,11 +769,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "im8-deal-1",
-        code: "METHEW29111",
+        code: "PERK",
         is_auto_applied: true,
         discount: "20% OFF",
-        title: "20% off verified discount code on daily nutrition",
-        description: "Save 20% on Daily Ultimate Essentials and Longevity supplements with code METHEW29111.",
+        title: "20% off verified partner discount code (code: PERK)",
+        description: "Save 20% on Daily Ultimate Essentials and Longevity supplements with verified code PERK.",
         affiliate_url: "https://www.im8health.com/PERK",
         is_verified: true,
         expiry_date: "2026-12-31"
