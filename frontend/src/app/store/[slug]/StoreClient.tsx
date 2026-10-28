@@ -33,7 +33,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
     e.preventDefault();
     e.stopPropagation();
 
-    const targetUrl = coupon.affiliate_url || store.website || "https://www.google.com";
+    const targetUrl = coupon.affiliate_url || (store as any).affiliate_url || (store as any).affiliateLink || store.website || "https://www.google.com";
 
     // 1. Instant Clipboard Copy
     if (coupon.code && coupon.code !== "DEAL") {
@@ -96,8 +96,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
             <img
               src={bannerLogo}
               alt={`${store.name} Logo`}
-              width={96}
-              height={96}
+              width={160} height={84}
               className={storeStyles.storeLogo}
               onError={() => setBannerLogoError(true)}
             />
@@ -160,10 +159,10 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                   <div className={storeStyles.codeBox3d}>
                     <div className={storeStyles.codeLabelWrapper}>
                       <span className={storeStyles.codeLabel}>Promo Code:</span>
-                      <span className={storeStyles.codeBadge}>{coupon.code}</span>
+                      <span className={storeStyles.codeBadge}>{coupon.code && coupon.code.toLowerCase() === "methew" ? coupon.code : "••••••••"}</span>
                     </div>
                     <span className={storeStyles.autoCopiedPill}>
-                      {isCopied ? "Copied! ✓" : "Auto-Copied"}
+                      {isCopied ? "Copied! ✓" : (coupon.code && coupon.code.toLowerCase() === "methew" ? "Exclusive Code" : "Click to Reveal")}
                     </span>
                   </div>
                 ) : (
@@ -183,12 +182,12 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                 >
                   {!isDirectDeal ? (
                     <>
-                      <span>{isCopied ? "CODE COPIED! OPENING SITE..." : "GET CODE & OPEN SITE"}</span>
+                      <span>{isCopied ? "Code Copied! ✓" : "Get Code"}</span>
                       <span className={storeStyles.arrowIcon}>→</span>
                     </>
                   ) : (
                     <>
-                      <span>CLAIM REWARD ON {store.name.toUpperCase()}</span>
+                      <span>{isCopied ? "Opening Offer..." : "Get Deal"}</span>
                       <span className={storeStyles.arrowIcon}>→</span>
                     </>
                   )}
