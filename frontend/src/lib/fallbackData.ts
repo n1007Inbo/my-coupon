@@ -39,7 +39,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
     "caraway": "/logos/caraway.svg",
     "athletic-greens": "/logos/athletic-greens.svg",
     "carlinkit": "/logos/carlinkit.svg",
-    "carpuride": "/logos/carpuride.svg",
+    "carpuride": "/logos/carpuride.png",
     "arzopa": "/logos/arzopa.svg",
     "homary": "/logos/homary.svg",
     "smallrig": "/logos/smallrig.svg",
