@@ -38,7 +38,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
     "liquid-iv": "/logos/liquid-iv.svg",
     "caraway": "/logos/caraway.svg",
     "athletic-greens": "/logos/athletic-greens.svg",
-    "carlinkit": "/logos/carlinkit.svg",
+    "carlinkit": "/logos/carlinkit.png",
     "carpuride": "/logos/carpuride.png",
     "arzopa": "/logos/arzopa.svg",
     "homary": "/logos/homary.svg",
