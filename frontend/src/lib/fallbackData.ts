@@ -123,7 +123,7 @@ export const getLogoUrl = (slug: string | undefined | null) => {
     "solstice-watersports": "/logos/solstice-watersports.png",
     "aipas": "/logos/aipas.svg",
     "joytutus": "/logos/joytutus.png",
-    "bodegacooler": "/logos/bodegacooler.svg",
+    "bodegacooler": "/logos/bodegacooler.png",
     "ampere-time": "/logos/ampere-time.svg",
     "hooga": "/logos/hooga.png",
     "off-road-tents": "/logos/off-road-tents.png",
