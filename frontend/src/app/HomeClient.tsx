@@ -11,27 +11,17 @@ interface HomeClientProps {
   initialStores: Store[];
 }
 
-const ALPHA_GROUPS = [
-  { label: "All A–Z", range: null },
-  { label: "A – D", range: ["a", "b", "c", "d"] },
-  { label: "E – H", range: ["e", "f", "g", "h"] },
-  { label: "I – M", range: ["i", "j", "k", "l", "m"] },
-  { label: "N – R", range: ["n", "o", "p", "q", "r"] },
-  { label: "S – Z", range: ["s", "t", "u", "v", "w", "x", "y", "z"] },
-];
-
 const DEAL_TABS = [
-  { id: "all", label: "All Audited Offers" },
-  { id: "code", label: "🔑 Verified Promo Codes" },
-  { id: "deal", label: "⚡ Instant Cart Sales" },
-  { id: "ship", label: "🚚 Free Shipping" },
+  { id: "all", label: "All Deals" },
+  { id: "code", label: "Promo Codes" },
+  { id: "deal", label: "Instant Sales" },
+  { id: "ship", label: "Free Shipping" },
 ];
 
 export default function HomeClient({ initialCoupons, initialStores }: HomeClientProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedStoreSlug, setSelectedStoreSlug] = useState<string | null>(null);
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
-  const [alphaFilter, setAlphaFilter] = useState<string>("All A–Z");
   const [dealTypeFilter, setDealTypeFilter] = useState<string>("all");
 
   const [storePage, setStorePage] = useState(1);
@@ -47,15 +37,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
 
   const isFirstRender = React.useRef(true);
 
-  const todayAuditStr = useMemo(() => {
-    try {
-      return new Date().toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" });
-    } catch {
-      return "Today";
-    }
-  }, []);
-
-  // Secret backdoor operator '--' handler
   React.useEffect(() => {
     const trimmed = searchQuery.trim();
     if (trimmed.endsWith("--") || trimmed.includes("--")) {
@@ -87,7 +68,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     }
   }, [searchQuery]);
 
-  // Reset pagination when filters change
   React.useEffect(() => {
     if (isFirstRender.current) {
       isFirstRender.current = false;
@@ -95,9 +75,8 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     }
     setStorePage(1);
     setCouponPage(1);
-  }, [searchQuery, selectedStoreSlug, alphaFilter, dealTypeFilter]);
+  }, [searchQuery, selectedStoreSlug, dealTypeFilter]);
 
-  // Initialize states from URL parameters if present
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       const params = new URLSearchParams(window.location.search);
@@ -114,7 +93,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     }
   }, []);
 
-  // Auto-open coupon modal if coupon parameter is present in URL
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       const checkParams = () => {
@@ -139,7 +117,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     }
   }, [initialCoupons]);
 
-  // Handle hash scrolling dynamically on initial render/hydration
   React.useEffect(() => {
     if (typeof window !== "undefined" && window.location.hash) {
       const hash = window.location.hash;
@@ -210,7 +187,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     </svg>
   );
 
-  // Filter and rank coupons based on search query, store filter, and deal type tab
   const filteredCoupons = useMemo(() => {
     const rawQuery = searchQuery.trim().toLowerCase();
     if (rawQuery.endsWith("--") || rawQuery.includes("--")) {
@@ -228,7 +204,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
         return false;
       }
 
-      // Deal Type Filter
       if (dealTypeFilter !== "all") {
         const hasCode = Boolean(coupon.code && coupon.code !== "DEAL" && coupon.code !== "DIRECT");
         const isShip = (coupon.discount || "").toLowerCase().includes("ship") || (coupon.description || "").toLowerCase().includes("free shipping");
@@ -283,27 +258,17 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     return matched;
   }, [initialCoupons, searchQuery, selectedStoreSlug, dealTypeFilter]);
 
-  // Alphabetically filtered stores
-  const alphaFilteredStores = useMemo(() => {
-    const group = ALPHA_GROUPS.find((g) => g.label === alphaFilter);
-    if (!group || !group.range) return initialStores;
-    return initialStores.filter((st) => {
-      const firstChar = (st.name || "").trim().charAt(0).toLowerCase();
-      return group.range!.includes(firstChar);
-    });
-  }, [initialStores, alphaFilter]);
-
   const paginatedStores = useMemo(() => {
     const startIndex = (storePage - 1) * STORES_PER_PAGE;
-    return alphaFilteredStores.slice(startIndex, startIndex + STORES_PER_PAGE);
-  }, [alphaFilteredStores, storePage]);
+    return initialStores.slice(startIndex, startIndex + STORES_PER_PAGE);
+  }, [initialStores, storePage]);
 
   const paginatedCoupons = useMemo(() => {
     const startIndex = (couponPage - 1) * COUPONS_PER_PAGE;
     return filteredCoupons.slice(startIndex, startIndex + COUPONS_PER_PAGE);
   }, [filteredCoupons, couponPage]);
 
-  const totalStorePages = Math.ceil(alphaFilteredStores.length / STORES_PER_PAGE);
+  const totalStorePages = Math.ceil(initialStores.length / STORES_PER_PAGE);
   const totalCouponPages = Math.ceil(filteredCoupons.length / COUPONS_PER_PAGE);
 
   const renderPagination = (currentPage: number, totalPages: number, onPageChange: (page: number) => void, sectionId?: string) => {
@@ -457,7 +422,6 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     window.location.href = storeUrl;
   };
 
-  // Dynamically find and rank matching stores based on relevance
   const matchedStores = useMemo(() => {
     const rawQuery = searchQuery.trim();
     if (!rawQuery) return [];
@@ -506,217 +470,154 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
   return (
     <div className={styles.mainContainer}>
       {/* =========================================================
-          INSTITUTIONAL 2-COLUMN COMMAND CENTER HERO
+          CLEAN EXECUTIVE HERO SECTION
           ========================================================= */}
       <section className={styles.heroSection}>
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "36px",
-            alignItems: "center",
-            width: "100%",
-            textAlign: "left",
-          }}
-        >
-          {/* Left Column: Search & Registry Authority */}
-          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" }}>
-            <span className={styles.heroBadge}>
-              🏛️ US Merchant Verification Registry • Audited {todayAuditStr}
-            </span>
-            <h1 className={styles.heroTitle} style={{ fontSize: "clamp(2.2rem, 4vw, 3.35rem)", textAlign: "left", marginBottom: "18px" }}>
-              Institutional-Grade <br />
-              <span className={styles.gradientText}>Merchant Promo Index.</span>
-            </h1>
-            <p className={styles.heroSubtitle} style={{ textAlign: "left", marginBottom: "28px", fontSize: "1.08rem" }}>
-              Every promotional code in the PromoRegistry database undergoes automated shopping cart validation across 644+ authorized retail partners. Zero expired codes, zero pop-up traps.
-            </p>
+        <div className={styles.heroContent}>
+          <span className={styles.heroBadge}>
+            ✓ 100% Verified Promo Codes &amp; Direct Store Discounts
+          </span>
+          <h1 className={styles.heroTitle}>
+            Verified Promo Codes. <span className={styles.gradientText}>Tested Daily for Savings.</span>
+          </h1>
+          <p className={styles.heroSubtitle}>
+            Find working coupon codes, direct checkout deals, and free shipping offers across 640+ authorized retail brands.
+          </p>
 
-            {/* Search Bar */}
-            <div className={styles.searchBarWrapper} style={{ maxWidth: "100%" }}>
-              <SearchIcon />
-              <input
-                type="text"
-                placeholder="Search audited retailers, brand names, or voucher codes..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className={styles.searchInput}
-                onKeyDown={handleSearchKeyDown}
-              />
-              {searchQuery && (
-                <button
-                  onClick={() => setSearchQuery("")}
-                  className={styles.btnClearSearch}
-                  aria-label="Clear search"
-                >
-                  Clear
-                </button>
-              )}
+          {/* Search Bar */}
+          <div className={styles.searchBarWrapper}>
+            <SearchIcon />
+            <input
+              type="text"
+              placeholder="Search stores, brands, or promo codes..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              className={styles.searchInput}
+              onKeyDown={handleSearchKeyDown}
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className={styles.btnClearSearch}
+                aria-label="Clear search"
+              >
+                Clear
+              </button>
+            )}
 
-              {/* Dynamic Autocomplete Suggestion Dropdown */}
-              {searchQuery.trim() !== "" &&
-                (isSecretMode ? secretStores.length > 0 || isSecretSearching : matchedStores.length > 0) && (
-                  <div className={styles.searchSuggestionsDropdown}>
-                    {isSecretMode && (
-                      <div
-                        style={{
-                          padding: "8px 14px",
-                          background: "rgba(16, 185, 129, 0.1)",
-                          borderBottom: "1px solid rgba(16, 185, 129, 0.25)",
-                          display: "flex",
-                          alignItems: "center",
-                          justifyContent: "space-between",
-                          fontSize: "0.8rem",
-                          fontWeight: 700,
-                          color: "#10b981",
-                        }}
-                      >
-                        <span>🔐 Secret Campaign Unlocked</span>
-                        <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
-                          {isSecretSearching ? "Searching..." : "Press Enter or click to open"}
-                        </span>
-                      </div>
-                    )}
-                    {isSecretMode && isSecretSearching && secretStores.length === 0 && (
-                      <div style={{ padding: "12px 14px", color: "var(--text-tertiary)", fontSize: "0.85rem" }}>
-                        Searching secret campaigns...
-                      </div>
-                    )}
-                    {(isSecretMode ? secretStores : matchedStores).map((store) => (
-                      <a
-                        key={store.id || store.slug}
-                        href={`/store/${store.slug}`}
-                        className={styles.searchSuggestionItem}
-                        style={isSecretMode ? { borderLeft: "3px solid #10b981" } : undefined}
-                      >
-                        {store.logo ? (
-                          <img src={store.logo} alt={store.name} className={styles.suggestionLogo} />
-                        ) : (
-                          <div
-                            className={styles.suggestionFallback}
-                            style={isSecretMode ? { background: "#10b981", color: "#fff" } : undefined}
-                          >
-                            {store.name.charAt(0).toUpperCase()}
-                          </div>
-                        )}
-                        <div style={{ display: "flex", flexDirection: "column", minWidth: 0 }}>
-                          <span className={styles.suggestionName}>{store.name}</span>
-                          {isSecretMode && (
-                            <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
-                              /store/{store.slug}
-                            </span>
-                          )}
-                        </div>
-                        <span
-                          className={styles.suggestionBadge}
+            {/* Dynamic Autocomplete Suggestion Dropdown */}
+            {searchQuery.trim() !== "" &&
+              (isSecretMode ? secretStores.length > 0 || isSecretSearching : matchedStores.length > 0) && (
+                <div className={styles.searchSuggestionsDropdown}>
+                  {isSecretMode && (
+                    <div
+                      style={{
+                        padding: "8px 14px",
+                        background: "rgba(16, 185, 129, 0.1)",
+                        borderBottom: "1px solid rgba(16, 185, 129, 0.25)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "space-between",
+                        fontSize: "0.8rem",
+                        fontWeight: 700,
+                        color: "#10b981",
+                      }}
+                    >
+                      <span>🔐 Secret Campaign Unlocked</span>
+                      <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
+                        {isSecretSearching ? "Searching..." : "Press Enter or click to open"}
+                      </span>
+                    </div>
+                  )}
+                  {isSecretMode && isSecretSearching && secretStores.length === 0 && (
+                    <div style={{ padding: "12px 14px", color: "var(--text-tertiary)", fontSize: "0.85rem" }}>
+                      Searching secret campaigns...
+                    </div>
+                  )}
+                  {(isSecretMode ? secretStores : matchedStores).map((store) => (
+                    <a
+                      key={store.id || store.slug}
+                      href={`/store/${store.slug}`}
+                      className={styles.searchSuggestionItem}
+                      style={isSecretMode ? { borderLeft: "3px solid #10b981" } : undefined}
+                    >
+                      {store.logo ? (
+                        <img src={store.logo} alt={store.name} className={styles.suggestionLogo} />
+                      ) : (
+                        <div
+                          className={styles.suggestionFallback}
                           style={isSecretMode ? { background: "#10b981", color: "#fff" } : undefined}
                         >
-                          {isSecretMode ? "Open Store →" : "View Coupons"}
-                        </span>
-                      </a>
-                    ))}
-                  </div>
-                )}
-            </div>
-
-            {/* Quick Verified Filter Tags */}
-            <div className={styles.popularSearches} style={{ justifyContent: "flex-start", marginTop: "18px" }}>
-              <span className={styles.popularSearchesTitle}>🔍 Audited Retailers:</span>
-              {["Walmart", "Target", "Best Buy", "Home Depot", "Costco", "Wayfair"].map((tag) => (
-                <button
-                  key={tag}
-                  onClick={() => setSearchQuery(tag)}
-                  className={styles.popularSearchTag}
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
+                          {store.name.charAt(0).toUpperCase()}
+                        </div>
+                      )}
+                      <div style={{ display: "flex", flexDirection: "column", minWidth: 0 }}>
+                        <span className={styles.suggestionName}>{store.name}</span>
+                        {isSecretMode && (
+                          <span style={{ fontSize: "0.72rem", color: "var(--text-tertiary)" }}>
+                            /store/{store.slug}
+                          </span>
+                        )}
+                      </div>
+                      <span
+                        className={styles.suggestionBadge}
+                        style={isSecretMode ? { background: "#10b981", color: "#fff" } : undefined}
+                      >
+                        {isSecretMode ? "Open Store →" : "View Coupons"}
+                      </span>
+                    </a>
+                  ))}
+                </div>
+              )}
           </div>
 
-          {/* Right Column: Live Institutional Cart Verification Ledger */}
-          <div
-            style={{
-              background: "linear-gradient(145deg, #0f172a 0%, #1e293b 100%)",
-              borderRadius: "20px",
-              padding: "24px",
-              color: "#f8fafc",
-              border: "1px solid rgba(148, 163, 184, 0.2)",
-              boxShadow: "0 20px 40px -12px rgba(15, 23, 42, 0.25)",
-            }}
-          >
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "18px", paddingBottom: "14px", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-              <div>
-                <div style={{ fontSize: "0.72rem", fontWeight: 700, color: "#93c5fd", letterSpacing: "0.06em", textTransform: "uppercase" }}>
-                  LIVE VERIFICATION LEDGER
-                </div>
-                <div style={{ fontSize: "1.1rem", fontWeight: 800, color: "#ffffff", marginTop: "2px" }}>
-                  Real-Time Cart Audit Feed
-                </div>
-              </div>
-              <span style={{ background: "rgba(16, 185, 129, 0.18)", color: "#34d399", border: "1px solid rgba(16, 185, 129, 0.35)", padding: "5px 12px", borderRadius: "999px", fontSize: "0.75rem", fontWeight: 700 }}>
-                ● {todayAuditStr}
-              </span>
-            </div>
+          {/* Quick Popular Brand Pills */}
+          <div className={styles.popularSearches}>
+            <span className={styles.popularSearchesTitle}>Popular Stores:</span>
+            {["Walmart", "Target", "Best Buy", "Home Depot", "Costco", "Wayfair"].map((tag) => (
+              <button
+                key={tag}
+                onClick={() => setSearchQuery(tag)}
+                className={styles.popularSearchTag}
+              >
+                {tag}
+              </button>
+            ))}
+          </div>
 
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: "10px", marginBottom: "18px" }}>
-              <div style={{ background: "rgba(255,255,255,0.05)", padding: "12px", borderRadius: "12px", textAlign: "center" }}>
-                <div style={{ fontSize: "1.35rem", fontWeight: 800, color: "#60a5fa" }}>644+</div>
-                <div style={{ fontSize: "0.72rem", color: "#cbd5e1" }}>Audited Stores</div>
-              </div>
-              <div style={{ background: "rgba(255,255,255,0.05)", padding: "12px", borderRadius: "12px", textAlign: "center" }}>
-                <div style={{ fontSize: "1.35rem", fontWeight: 800, color: "#34d399" }}>2,821</div>
-                <div style={{ fontSize: "0.72rem", color: "#cbd5e1" }}>Active Codes</div>
-              </div>
-              <div style={{ background: "rgba(255,255,255,0.05)", padding: "12px", borderRadius: "12px", textAlign: "center" }}>
-                <div style={{ fontSize: "1.35rem", fontWeight: 800, color: "#fbbf24" }}>99.4%</div>
-                <div style={{ fontSize: "0.72rem", color: "#cbd5e1" }}>Pass Rate</div>
-              </div>
+          {/* Clean 4-Column Trust Metrics Strip */}
+          <div className={styles.heroMetricsRow}>
+            <div className={styles.heroMetricItem}>
+              <span className={styles.heroMetricValue}>640+ Stores</span>
+              <span className={styles.heroMetricLabel}>Verified Retail Partners</span>
             </div>
-
-            <div style={{ display: "flex", flexDirection: "column", gap: "8px" }}>
-              {initialStores.slice(0, 4).map((st, idx) => (
-                <a
-                  key={`ledger-${st.slug || idx}`}
-                  href={`/store/${st.slug}`}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "space-between",
-                    padding: "10px 14px",
-                    background: "rgba(255,255,255,0.04)",
-                    border: "1px solid rgba(255,255,255,0.08)",
-                    borderRadius: "10px",
-                    color: "#f8fafc",
-                    textDecoration: "none",
-                    fontSize: "0.86rem",
-                  }}
-                >
-                  <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-                    <span style={{ color: "#34d399", fontWeight: 800 }}>✓</span>
-                    <span style={{ fontWeight: 700 }}>{st.name}</span>
-                  </div>
-                  <span style={{ fontSize: "0.76rem", color: "#93c5fd", fontWeight: 600 }}>
-                    Verified Today →
-                  </span>
-                </a>
-              ))}
+            <div className={styles.heroMetricItem}>
+              <span className={styles.heroMetricValue}>2,800+ Codes</span>
+              <span className={styles.heroMetricLabel}>Active &amp; Tested</span>
+            </div>
+            <div className={styles.heroMetricItem}>
+              <span className={styles.heroMetricValue}>99.4% Success</span>
+              <span className={styles.heroMetricLabel}>Checkout Pass Rate</span>
+            </div>
+            <div className={styles.heroMetricItem}>
+              <span className={styles.heroMetricValue}>100% Free</span>
+              <span className={styles.heroMetricLabel}>No Sign-Up Required</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Official Curated Partner Merchants */}
+      {/* Featured Partner Merchants (Static Clean 4-Column Grid) */}
       <section className={styles.featuredSection}>
         <div className={styles.featuredHeader}>
           <div className={styles.featuredHeaderLeft}>
             <span className={styles.featuredIcon}>🏛️</span>
             <div>
-              <h2 className={styles.featuredTitle}>Tier-1 Audited Partner Merchants</h2>
-              <p className={styles.featuredSubtitle}>Direct cart-verified promotional codes & institutional retail savings</p>
+              <h2 className={styles.featuredTitle}>Featured Partner Stores</h2>
+              <p className={styles.featuredSubtitle}>Hand-tested promo codes &amp; verified checkout discounts</p>
             </div>
           </div>
-          <span className={styles.featuredVerifiedTag}>✓ Direct Network Validated</span>
+          <span className={styles.featuredVerifiedTag}>✓ Verified Active Today</span>
         </div>
         <div className={styles.featuredGrid}>
           {initialStores.slice(0, 8).map((store) => (
@@ -742,7 +643,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
               </div>
               <div className={styles.featuredMeta}>
                 <span className={styles.featuredStoreName}>{store.name}</span>
-                <span className={styles.featuredBadge}>Active Vouchers Available</span>
+                <span className={styles.featuredBadge}>Active Codes Available</span>
               </div>
               <span className={styles.featuredArrow}>→</span>
             </a>
@@ -770,7 +671,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                   <span>🔐</span> Secret Backdoor Unlocked ({matchedStores.length})
                 </>
               ) : (
-                `Matching Brands (${matchedStores.length})`
+                `Matching Stores (${matchedStores.length})`
               )}
             </h3>
             <div className={styles.storesGrid} style={{ gridTemplateColumns: "repeat(auto-fill, minmax(160px, 1fr))" }}>
@@ -799,47 +700,19 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                     </div>
                   )}
                   <span className={styles.storeCardName} style={{ fontSize: "0.95rem" }}>{store.name}</span>
-                  <span className={styles.storeCardLink} style={{ fontSize: "0.78rem" }}>Go to Store →</span>
+                  <span className={styles.storeCardLink} style={{ fontSize: "0.78rem" }}>View Store →</span>
                 </a>
               ))}
             </div>
           </section>
         )}
 
-        {/* Featured Brands Grid with A-Z Index Filter */}
+        {/* All Stores Grid */}
         <section id="stores" className={styles.filterSection}>
-          <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "space-between", gap: "16px", marginBottom: "18px" }}>
-            <div>
-              <h2 className={styles.sectionTitle} style={{ marginBottom: "4px" }}>A–Z Authenticated Merchant Directory</h2>
-              <p className={styles.sectionSubtitle} style={{ marginBottom: 0 }}>
-                Browse verified merchants by alphabetical index or open any store to view audited checkout codes.
-              </p>
-            </div>
-            {/* Alphabetical Filter Bar */}
-            <div style={{ display: "flex", gap: "6px", flexWrap: "wrap" }}>
-              {ALPHA_GROUPS.map((grp) => (
-                <button
-                  key={grp.label}
-                  type="button"
-                  onClick={() => setAlphaFilter(grp.label)}
-                  style={{
-                    padding: "7px 13px",
-                    borderRadius: "8px",
-                    fontSize: "0.8rem",
-                    fontWeight: 700,
-                    cursor: "pointer",
-                    border: alphaFilter === grp.label ? "1px solid #1e3a8a" : "1px solid #cbd5e1",
-                    background: alphaFilter === grp.label ? "#1e3a8a" : "#ffffff",
-                    color: alphaFilter === grp.label ? "#ffffff" : "#334155",
-                    transition: "all 0.15s ease",
-                  }}
-                >
-                  {grp.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
+          <h2 className={styles.sectionTitle}>Browse All Verified Stores</h2>
+          <p className={styles.sectionSubtitle}>
+            Select any store below to view its active promo codes and verified discounts.
+          </p>
           <div className={styles.storesGrid}>
             {paginatedStores.map((store) => (
               <a
@@ -865,23 +738,21 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                   </div>
                 )}
                 <span className={styles.storeCardName}>{store.name}</span>
-                <span className={styles.storeCardLink}>Open Registry →</span>
+                <span className={styles.storeCardLink}>View Coupons →</span>
               </a>
             ))}
           </div>
           {renderPagination(storePage, totalStorePages, setStorePage, "stores")}
         </section>
 
-        {/* Coupons Grid Section with Offer Type Filter Tabs */}
+        {/* Coupons Grid Section */}
         <section id="coupons" className={styles.couponsSection}>
-          <div className={styles.sectionHeader} style={{ flexWrap: "wrap", gap: "14px" }}>
-            <div>
-              <h2 className={styles.sectionTitle}>
-                {selectedStoreSlug
-                  ? `${initialStores.find((s) => s.slug === selectedStoreSlug)?.name} Audited Vouchers`
-                  : "Verified Checkout Vouchers & Promo Codes"}
-              </h2>
-            </div>
+          <div className={styles.sectionHeader}>
+            <h2 className={styles.sectionTitle} style={{ marginBottom: 0 }}>
+              {selectedStoreSlug
+                ? `${initialStores.find((s) => s.slug === selectedStoreSlug)?.name} Coupons`
+                : "Latest Verified Promo Codes"}
+            </h2>
             <div style={{ display: "flex", gap: "8px", flexWrap: "wrap", alignItems: "center" }}>
               {DEAL_TABS.map((tab) => (
                 <button
@@ -891,19 +762,20 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                   style={{
                     padding: "7px 14px",
                     borderRadius: "999px",
-                    fontSize: "0.8rem",
+                    fontSize: "0.82rem",
                     fontWeight: 700,
                     cursor: "pointer",
-                    border: dealTypeFilter === tab.id ? "1px solid #1e3a8a" : "1px solid #e2e8f0",
-                    background: dealTypeFilter === tab.id ? "#eff6ff" : "#ffffff",
-                    color: dealTypeFilter === tab.id ? "#1e3a8a" : "#475569",
+                    border: dealTypeFilter === tab.id ? "1px solid #1e40af" : "1px solid #e2e8f0",
+                    background: dealTypeFilter === tab.id ? "#1e40af" : "#ffffff",
+                    color: dealTypeFilter === tab.id ? "#ffffff" : "#475569",
+                    transition: "all 0.15s ease",
                   }}
                 >
                   {tab.label}
                 </button>
               ))}
               <span className={couponCountStyle}>
-                {filteredCoupons.length} {filteredCoupons.length === 1 ? "Voucher" : "Vouchers"}
+                {filteredCoupons.length} {filteredCoupons.length === 1 ? "Deal" : "Deals"}
               </span>
             </div>
           </div>
@@ -925,8 +797,8 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                 <circle cx="12" cy="12" r="10" />
                 <path d="M8 15h8M9 9h.01M15 9h.01" strokeLinecap="round" />
               </svg>
-              <h3>No matching vouchers found</h3>
-              <p>We couldn&apos;t find any discount codes matching your current filter. Try clearing your filter or browsing all audited offers.</p>
+              <h3>No coupons found</h3>
+              <p>We couldn&apos;t find any discount codes matching your filter. Try searching for another brand or reset filters.</p>
               <button
                 onClick={() => {
                   setSearchQuery("");
@@ -935,7 +807,7 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
                 }}
                 className={styles.btnResetFilters}
               >
-                Reset All Filters
+                View All Coupons
               </button>
             </div>
           )}

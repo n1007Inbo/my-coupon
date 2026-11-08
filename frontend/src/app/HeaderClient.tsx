@@ -9,51 +9,6 @@ export default function HeaderClient() {
 
   return (
     <>
-      {/* Institutional Audit Top Bar */}
-      <div
-        style={{
-          background: "linear-gradient(90deg, #0f172a 0%, #1e3a8a 50%, #0f172a 100%)",
-          color: "#f8fafc",
-          fontSize: "0.75rem",
-          fontWeight: 600,
-          padding: "7px 16px",
-          borderBottom: "1px solid rgba(255,255,255,0.1)",
-        }}
-      >
-        <div
-          style={{
-            maxWidth: "1200px",
-            margin: "0 auto",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            flexWrap: "wrap",
-            gap: "8px",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
-            <span
-              style={{
-                display: "inline-block",
-                width: "7px",
-                height: "7px",
-                borderRadius: "50%",
-                backgroundColor: "#10b981",
-                boxShadow: "0 0 8px #10b981",
-              }}
-            />
-            <span style={{ letterSpacing: "0.03em" }}>
-              OFFICIAL US MERCHANT VERIFICATION REGISTRY • LIVE CART AUDIT ACTIVE
-            </span>
-          </div>
-          <div style={{ display: "flex", alignItems: "center", gap: "16px", color: "#cbd5e1" }}>
-            <span>🏛️ 644+ Audited Retailers</span>
-            <span>•</span>
-            <span style={{ color: "#fbbf24", fontWeight: 700 }}>✓ 99.4% Code Pass Rate</span>
-          </div>
-        </div>
-      </div>
-
       <header className="mainHeader">
         <div className="headerContainer">
           {/* Logo Area */}
@@ -61,71 +16,28 @@ export default function HeaderClient() {
             <img
               src="/favicon.png"
               alt="PromoRegistry Logo"
-              width="34"
-              height="34"
-              style={{
-                borderRadius: "8px",
-                objectFit: "contain",
-                border: "1px solid #dbeafe",
-                padding: "2px",
-                background: "#eff6ff",
-              }}
+              width="32"
+              height="32"
+              style={{ borderRadius: "8px", objectFit: "contain" }}
             />
-            <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.1 }}>
-              <span className="logoText">
-                Promo<span style={{ color: "var(--primary-blue)" }}>Registry</span>
-              </span>
-              <span
-                style={{
-                  fontSize: "0.65rem",
-                  fontWeight: 700,
-                  color: "#64748b",
-                  letterSpacing: "0.06em",
-                  textTransform: "uppercase",
-                }}
-              >
-                Verified Code Index
-              </span>
-            </div>
+            <span className="logoText">
+              Promo<span style={{ color: "var(--primary-blue)" }}>Registry</span>
+            </span>
           </a>
 
           {/* Desktop Nav Links */}
           <nav className="navLinks desktopOnly">
-            <a href="/" className="navLinkItem">
-              Registry Home
-            </a>
-            <a href="/#stores" className="navLinkItem">
-              A–Z Store Index
-            </a>
-            <a href="/#coupons" className="navLinkItem">
-              Audited Vouchers
-            </a>
-            <a href="/blog" className="navLinkItem">
-              Research & Guides
-            </a>
-            <a href="/about" className="navLinkItem">
-              Verification Standards
-            </a>
+            <a href="/" className="navLinkItem">Home</a>
+            <a href="/#stores" className="navLinkItem">All Stores</a>
+            <a href="/#coupons" className="navLinkItem">Top Coupons</a>
+            <a href="/blog" className="navLinkItem">Blog</a>
+            <a href="/about" className="navLinkItem">About Us</a>
+            <a href="/contact" className="navLinkItem">Contact</a>
           </nav>
 
           {/* Desktop Action Area */}
-          <div className="actionsArea desktopOnly" style={{ display: "flex", alignItems: "center", gap: "10px" }}>
-            <span
-              style={{
-                fontSize: "0.74rem",
-                fontWeight: 700,
-                color: "#059669",
-                background: "#ecfdf5",
-                border: "1px solid #a7f3d0",
-                padding: "6px 12px",
-                borderRadius: "999px",
-              }}
-            >
-              🛡️ Audit Status: Live
-            </span>
-            <a href="/#stores" className="ctaButton">
-              Merchant Directory →
-            </a>
+          <div className="actionsArea desktopOnly">
+            <a href="/#stores" className="ctaButton">Browse Stores</a>
           </div>
 
           {/* Mobile Hamburger Toggle Button */}
@@ -153,7 +65,7 @@ export default function HeaderClient() {
               alt="PromoRegistry Logo"
               width="28"
               height="28"
-              style={{ borderRadius: "var(--radius-sm)", objectFit: "contain" }}
+              style={{ borderRadius: "8px", objectFit: "contain" }}
             />
             <span className="logoText" style={{ fontSize: "1.2rem" }}>
               Promo<span style={{ color: "var(--primary-blue)" }}>Registry</span>
@@ -169,30 +81,30 @@ export default function HeaderClient() {
 
         <nav className="sidebarNavLinks">
           <a href="/" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">🏛️</span> Registry Home
+            <span className="sidebarLinkIcon">🏠</span> Home
           </a>
           <a href="/#stores" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">🗂️</span> A–Z Store Index
+            <span className="sidebarLinkIcon">🏷️</span> All Stores
           </a>
           <a href="/#coupons" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">🛡️</span> Audited Vouchers
+            <span className="sidebarLinkIcon">🔥</span> Top Coupons
           </a>
           <a href="/blog" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">📘</span> Research & Guides
+            <span className="sidebarLinkIcon">📘</span> Blog
           </a>
           <a href="/about" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">✨</span> Verification Standards
+            <span className="sidebarLinkIcon">✨</span> About Us
           </a>
           <a href="/contact" className="sidebarNavLinkItem" onClick={toggleSidebar}>
-            <span className="sidebarLinkIcon">📞</span> Contact Compliance
+            <span className="sidebarLinkIcon">📞</span> Contact Us
           </a>
         </nav>
 
         <div className="sidebarFooter">
           <a href="/#stores" className="sidebarCtaButton" onClick={toggleSidebar}>
-            Explore Merchant Directory
+            Browse Stores
           </a>
-          <p className="sidebarFooterText">Institutional Retail Coupon Verification</p>
+          <p className="sidebarFooterText">100% Verified Promo Codes &amp; Coupons</p>
         </div>
       </aside>
     </>

@@ -221,94 +221,11 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                   <span>✓ Official Checkout Guarantee</span>
                   <span>•</span>
                   <span>Verified Working • {todayLabel}</span>
-                  <span>•</span>
-                  <span
-                    onClick={(ev) => {
-                      ev.stopPropagation();
-                      setVotedIds((prev) => ({ ...prev, [String(coupon.id)]: "up" }));
-                      trackEvent({
-                        site: "PromoRegistry",
-                        eventType: "feedback_vote",
-                        storeSlug: store.slug,
-                        storeName: store.name,
-                        couponId: String(coupon.id),
-                        couponCode: coupon.code || "DEAL",
-                      });
-                    }}
-                    style={{
-                      cursor: "pointer",
-                      color: votedIds[String(coupon.id)] === "up" ? "#059669" : "#1e3a8a",
-                      fontWeight: 700,
-                    }}
-                  >
-                    {votedIds[String(coupon.id)] === "up" ? "✓ Confirmed Working!" : "👍 Works?"}
-                  </span>
                 </div>
               </div>
             </div>
           );
         })}
-      </section>
-
-      {/* Interactive Cart Savings Estimator Widget (Unique to PromoRegistry) */}
-      <section
-        style={{
-          marginTop: "24px",
-          background: "linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)",
-          color: "#ffffff",
-          borderRadius: "16px",
-          padding: "20px 24px",
-          display: "flex",
-          flexWrap: "wrap",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "16px",
-          boxShadow: "0 10px 25px rgba(15, 23, 42, 0.14)",
-        }}
-      >
-        <div>
-          <span style={{ fontSize: "0.72rem", fontWeight: 700, color: "#93c5fd", textTransform: "uppercase", letterSpacing: "0.06em" }}>
-            🧮 Interactive Checkout Savings Calculator
-          </span>
-          <h3 style={{ fontSize: "1.1rem", fontWeight: 800, margin: "4px 0 2px" }}>
-            Estimate Your {store.name} Order Savings
-          </h3>
-          <p style={{ fontSize: "0.82rem", color: "#cbd5e1", margin: 0 }}>
-            Slide your estimated cart total to calculate instant voucher savings with today&apos;s top verified offer ({coupons[0]?.discount || "20% OFF"}).
-          </p>
-        </div>
-        <div style={{ display: "flex", alignItems: "center", gap: "18px", flexWrap: "wrap" }}>
-          <div style={{ display: "flex", flexDirection: "column", gap: "4px" }}>
-            <label style={{ fontSize: "0.75rem", color: "#cbd5e1", fontWeight: 600 }}>
-              Cart Order Total: <strong>${cartEstimate}</strong>
-            </label>
-            <input
-              type="range"
-              min={25}
-              max={1000}
-              step={25}
-              value={cartEstimate}
-              onChange={(e) => setCartEstimate(Number(e.target.value))}
-              style={{ width: "160px", accentColor: "#34d399", cursor: "pointer" }}
-            />
-          </div>
-          <div
-            style={{
-              background: "rgba(16, 185, 129, 0.18)",
-              border: "1px solid rgba(52, 211, 153, 0.4)",
-              borderRadius: "12px",
-              padding: "10px 16px",
-              textAlign: "center",
-            }}
-          >
-            <div style={{ fontSize: "0.7rem", color: "#a7f3d0", fontWeight: 700, textTransform: "uppercase" }}>
-              Estimated Savings
-            </div>
-            <div style={{ fontSize: "1.35rem", fontWeight: 900, color: "#34d399" }}>
-              -${Math.max(5, Math.round(cartEstimate * 0.2))} USD
-            </div>
-          </div>
-        </div>
       </section>
 
       {/* Clean Trust Strip */}
