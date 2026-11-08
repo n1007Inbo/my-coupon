@@ -39,7 +39,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || "G-PR99887766";
 
   return (
     <html lang="en" className={inter.variable}>
@@ -60,18 +60,19 @@ export default function RootLayout({
                 gtag('config', '${gaId}');
               `}
             </Script>
-            <Script id="mrge-script" strategy="afterInteractive">
-              {`
-                (function(){
-                  var loc = window.location.href;
-                  var dd = document.createElement('script');
-                  dd.type = 'text/javascript'; dd.src = '//static.publisher.mrge.com/promoregistry.js?loc=' + encodeURIComponent(loc);
-                  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(dd, s);
-                })();
-              `}
-            </Script>
           </>
         )}
+        <Script id="mrge-script" strategy="afterInteractive">
+          {`
+            (function(){
+              var loc = window.location.href;
+              var dd = document.createElement('script');
+              dd.type = 'text/javascript'; dd.src = '//static.publisher.mrge.com/promoregistry.js?loc=' + encodeURIComponent(loc);
+              var s = document.getElementsByTagName('script')[0];
+              if (s && s.parentNode) { s.parentNode.insertBefore(dd, s); }
+            })();
+          `}
+        </Script>
         {/* Crisp Live Chat Widget */}
         <Script id="crisp-widget" strategy="lazyOnload">
           {`

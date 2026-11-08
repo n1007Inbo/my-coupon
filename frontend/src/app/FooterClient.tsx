@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect, useCallback } from "react";
+import { trackEvent, captureUrlTrackingParams } from "../lib/telemetry";
 
 export default function FooterClient() {
   const [clickCount, setClickCount] = useState(0);
@@ -24,7 +25,7 @@ export default function FooterClient() {
     }
   }, [clickCount]);
 
-  // Secret keyboard shortcut: Ctrl+Shift+K to navigate to AI Portal, Ctrl+Shift+D to Dashboard
+  // Secret keyboard shortcut: Ctrl+Shift+K to navigate to AI Portal, Ctrl+Shift+D to Dashboard, Ctrl+Shift+T to Telemetry
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
     if (e.ctrlKey && e.shiftKey) {
       if (e.key === "K" || e.key === "k") {
@@ -33,6 +34,9 @@ export default function FooterClient() {
       } else if (e.key === "D" || e.key === "d") {
         e.preventDefault();
         window.location.href = "/admin/dashboard";
+      } else if (e.key === "T" || e.key === "t") {
+        e.preventDefault();
+        window.location.href = "/admin/telemetry";
       }
     }
   }, []);
@@ -42,21 +46,19 @@ export default function FooterClient() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [handleKeyDown]);
 
-  // Capture Google Ads tracking parameters and store them in sessionStorage
+  // Capture Google Ads tracking parameters and record live visitor telemetry
   useEffect(() => {
     if (typeof window !== "undefined") {
-      try {
-        const urlParams = new URLSearchParams(window.location.search);
-        const trackingKeys = ["utm_campaign", "utm_term", "gclid", "utm_source"];
-        trackingKeys.forEach(key => {
-          const val = urlParams.get(key);
-          if (val) {
-            sessionStorage.setItem(key, val);
-          }
-        });
-      } catch (err) {
-        console.warn("Failed to capture tracking query parameters:", err);
-      }
+      captureUrlTrackingParams();
+      const pathname = window.location.pathname || "/";
+      const isStore = pathname.startsWith("/store/") || pathname.startsWith("/deals/");
+      const slug = isStore ? pathname.split("/").filter(Boolean)[1] || "" : "";
+      trackEvent({
+        site: "PromoRegistry",
+        eventType: isStore ? "store_view" : "page_view",
+        path: pathname,
+        storeSlug: slug,
+      });
     }
   }, []);
 
@@ -78,7 +80,7 @@ export default function FooterClient() {
             </span>
           </a>
           <p style={{ color: "var(--text-secondary)", fontSize: "0.9rem", lineHeight: "1.6", maxWidth: "320px" }}>
-            Your premier source for 100% verified shopping coupons, promotional codes, and discount offers online.
+            Your premier institutional registry for 100% verified shopping coupons, promotional codes, and direct merchant checkout discounts.
           </p>
           <p style={{ color: "var(--text-tertiary)", fontSize: "0.75rem", lineHeight: "1.5", maxWidth: "320px", marginTop: "12px" }}>
             PromoRegistry utilizes secure OAuth integrations, including the Google Ads API, strictly for internal campaign performance reporting, ad spend auditing, and ROI analysis.
@@ -87,21 +89,21 @@ export default function FooterClient() {
 
         <div className="footerLinksContainer">
           <div className="footerColumn">
-            <h4 className="footerColHeader">Quick Links</h4>
-            <a href="/" className="footerLinkItem">Home</a>
-            <a href="/#stores" className="footerLinkItem">Featured Stores</a>
-            <a href="/blog" className="footerLinkItem">Trending Blog</a>
-            <a href="/about" className="footerLinkItem">About Us</a>
-            <a href="/contact" className="footerLinkItem">Contact Us</a>
+            <h4 className="footerColHeader">Registry Index</h4>
+            <a href="/" className="footerLinkItem">Home Directory</a>
+            <a href="/#stores" className="footerLinkItem">A–Z Verified Stores</a>
+            <a href="/blog" className="footerLinkItem">Consumer Savings Research</a>
+            <a href="/about" className="footerLinkItem">Audit Methodology</a>
+            <a href="/contact" className="footerLinkItem">Compliance & Support</a>
           </div>
           <div className="footerColumn">
-            <h4 className="footerColHeader">Premium Planners</h4>
+            <h4 className="footerColHeader">Digital Tools</h4>
             <a href="/budget-tracker" className="footerLinkItem">Budget Google Sheets</a>
             <a href="/notion-second-brain" className="footerLinkItem">Notion Second Brain</a>
             <a href="/giveaway" className="footerLinkItem">Gift Card Giveaways</a>
           </div>
           <div className="footerColumn">
-            <h4 className="footerColHeader">Legal Policies</h4>
+            <h4 className="footerColHeader">Governance & Legal</h4>
             <a href="/privacy" className="footerLinkItem">Privacy Policy</a>
             <a href="/terms" className="footerLinkItem">Terms of Service</a>
           </div>
@@ -112,10 +114,10 @@ export default function FooterClient() {
           style={{ fontSize: "0.85rem", color: "var(--text-tertiary)", cursor: "default", userSelect: "none" }}
           onClick={handleCopyrightClick}
         >
-          © {new Date().getFullYear()} PromoRegistry.com. All Rights Reserved.
+          © {new Date().getFullYear()} PromoRegistry.com — Official Retail Voucher Verification Index. All Rights Reserved.
         </p>
 
-        {/* Secret AI Portal Link - Only appears after 5 rapid clicks on copyright */}
+        {/* Secret Owner Portal Links - Only appears after 5 rapid clicks on copyright */}
         {showPortalLink && (
           <div style={{ display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap", marginTop: "12px" }}>
             <a 
@@ -132,8 +134,6 @@ export default function FooterClient() {
                 border: "1px solid rgba(99, 102, 241, 0.15)",
                 borderRadius: "999px",
                 textDecoration: "none",
-                animation: "fadeIn 0.3s ease",
-                transition: "all 0.2s ease"
               }}
             >
               <span>🤖</span> AI Creator Portal
@@ -152,11 +152,27 @@ export default function FooterClient() {
                 border: "1px solid rgba(16, 185, 129, 0.15)",
                 borderRadius: "999px",
                 textDecoration: "none",
-                animation: "fadeIn 0.3s ease",
-                transition: "all 0.2s ease"
               }}
             >
               <span>📈</span> AI ROI Dashboard
+            </a>
+            <a 
+              href="/admin/telemetry"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "6px",
+                padding: "6px 16px",
+                fontSize: "0.78rem",
+                fontWeight: 600,
+                color: "#d97706",
+                backgroundColor: "rgba(217, 119, 6, 0.08)",
+                border: "1px solid rgba(217, 119, 6, 0.22)",
+                borderRadius: "999px",
+                textDecoration: "none",
+              }}
+            >
+              <span>📡</span> Live User & Click Telemetry
             </a>
           </div>
         )}
@@ -164,4 +180,3 @@ export default function FooterClient() {
     </footer>
   );
 }
-// Trigger rebuild with new Vercel env variables
