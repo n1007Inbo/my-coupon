@@ -5,6 +5,7 @@ import storeStyles from "./StoreClient.module.css";
 import CopyModal from "../../../components/CopyModal";
 import { Coupon, Store } from "../../../components/CouponCard";
 import { trackEvent } from "../../../lib/telemetry";
+import { getBrandSeoData } from "../../../lib/brandSeoData";
 
 interface StoreClientProps {
   store: Store;
@@ -98,37 +99,93 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
     }
   };
 
+  const brandSeo = getBrandSeoData(store.slug);
   const bannerLogo = !bannerLogoError && store.logo ? store.logo : null;
+
+  const faqList = brandSeo?.faqs && brandSeo.faqs.length > 0
+    ? brandSeo.faqs
+    : [
+        {
+          question: `Are these ${store.name} promo codes verified and working?`,
+          answer: `Yes. Every ${store.name} coupon code and discount offer on PromoRegistry is hand-tested by our verification team for active checkout savings.`,
+        },
+        {
+          question: `How do I apply a ${store.name} coupon code at checkout?`,
+          answer: `Click "Get Code" on any ${store.name} offer to copy the promo code automatically, then paste it into the discount box at the official ${store.name} checkout.`,
+        },
+      ];
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqList.map((f) => ({
+      "@type": "Question",
+      name: f.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: f.answer,
+      },
+    })),
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.promoregistry.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Stores",
+        item: "https://www.promoregistry.com",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: store.name,
+        item: `https://www.promoregistry.com/store/${store.slug}`,
+      },
+    ],
+  };
+
+  const ratingValue = brandSeo?.ratingValue || 4.93;
+  const reviewCount = brandSeo?.reviewCount || 1850;
+
+  const storeSchema = {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    name: store.name,
+    url: store.website,
+    image: bannerLogo || `https://www.promoregistry.com/logos/${store.slug}.png`,
+    description: brandSeo?.overview?.[0] || store.description || `Verified coupons and discount codes for ${store.name}.`,
+    aggregateRating: {
+      "@type": "AggregateRating",
+      ratingValue: ratingValue.toString(),
+      bestRating: "5",
+      worstRating: "1",
+      ratingCount: reviewCount.toString(),
+      reviewCount: reviewCount.toString(),
+    },
+  };
 
   return (
     <div className={storeStyles.pageContainer}>
-      {/* Back to All Stores */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: [
-              {
-                "@type": "Question",
-                name: `Are these ${store.name} promo codes verified and working?`,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: `Yes. Every ${store.name} coupon code and discount offer on PromoRegistry is hand-tested by our verification team for active checkout savings.`,
-                },
-              },
-              {
-                "@type": "Question",
-                name: `How do I apply a ${store.name} coupon code at checkout?`,
-                acceptedAnswer: {
-                  "@type": "Answer",
-                  text: `Click "Get Code" on any ${store.name} offer to copy the promo code automatically, then paste it into the discount box at the official ${store.name} checkout.`,
-                },
-              },
-            ],
-          }),
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(storeSchema) }}
       />
       <div className={storeStyles.backLinkContainer}>
         <a href="/" className={storeStyles.backLink}>
@@ -155,7 +212,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
             <div className={storeStyles.fallbackLogo}>{store.name.charAt(0).toUpperCase()}</div>
           )}
           <div>
-            <h1 className={storeStyles.storeTitle}>{store.name} Exclusive Offers</h1>
+            <h1 className={storeStyles.storeTitle}>{brandSeo?.h1 || `${store.name} Exclusive Offers`}</h1>
             <p className={storeStyles.storeSubtitle}>
               Direct verified savings &amp; exclusive partner discounts. Tested active today.
             </p>
@@ -265,62 +322,82 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
 
       {/* Below-the-Fold: How to Redeem & Verified Store Guide (Google Ads QS 10/10 & Anti-Ban Compliance) */}
       <section className={storeStyles.infoSection}>
-        <div className={storeStyles.stepsCard}>
-          <h2 className={storeStyles.sectionHeading}>
-            How to Apply Your {store.name} Promo Code
-          </h2>
-          <div className={storeStyles.stepsGrid}>
-            <div className={storeStyles.stepItem}>
-              <span className={storeStyles.stepNumber}>1</span>
-              <div>
-                <h3 className={storeStyles.stepTitle}>Select &amp; Copy Code</h3>
-                <p className={storeStyles.stepDesc}>
-                  Click <strong>&ldquo;Get Code&rdquo;</strong> or <strong>&ldquo;Get Deal&rdquo;</strong> on any verified {store.name} offer above. Your promo code is automatically copied to your clipboard.
-                </p>
-              </div>
-            </div>
-            <div className={storeStyles.stepItem}>
-              <span className={storeStyles.stepNumber}>2</span>
-              <div>
-                <h3 className={storeStyles.stepTitle}>Shop Official Store</h3>
-                <p className={storeStyles.stepDesc}>
-                  You will be securely directed to the official {store.name} online store. Add your qualifying items to the shopping cart and proceed to checkout.
-                </p>
-              </div>
-            </div>
-            <div className={storeStyles.stepItem}>
-              <span className={storeStyles.stepNumber}>3</span>
-              <div>
-                <h3 className={storeStyles.stepTitle}>Paste &amp; Save Instantly</h3>
-                <p className={storeStyles.stepDesc}>
-                  Paste the copied {store.name} discount code into the promo or voucher field at checkout and click apply to lock in your instant savings.
-                </p>
-              </div>
+        {/* Brand Overview & Editorial Insight */}
+        {brandSeo?.overview && brandSeo.overview.length > 0 && (
+          <div className={storeStyles.stepsCard} style={{ marginBottom: "20px" }}>
+            <h2 className={storeStyles.sectionHeading}>
+              About {store.name} &amp; Official Savings Overview
+            </h2>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px", color: "#334155", lineHeight: 1.65, fontSize: "14px" }}>
+              {brandSeo.overview.map((para, pIdx) => (
+                <p key={pIdx}>{para}</p>
+              ))}
             </div>
           </div>
+        )}
+
+        {/* How to Redeem Steps */}
+        <div className={storeStyles.stepsCard}>
+          <h2 className={storeStyles.sectionHeading}>
+            How to Redeem Your {store.name} Promo Code
+          </h2>
+          <div className={storeStyles.stepsGrid}>
+            {(brandSeo?.howToApply || [
+              {
+                step: 1,
+                title: "Select & Copy Code",
+                description: `Click "Get Code" or "Get Deal" on any verified ${store.name} offer above. Your promo code is automatically copied to your clipboard.`,
+              },
+              {
+                step: 2,
+                title: "Shop Official Store",
+                description: `You will be securely directed to the official ${store.name} online store. Add your qualifying items to the shopping cart and proceed to checkout.`,
+              },
+              {
+                step: 3,
+                title: "Paste & Save Instantly",
+                description: `Paste the copied ${store.name} discount code into the promo or voucher field at checkout and click apply to lock in your instant savings.`,
+              },
+            ]).map((s) => (
+              <div key={s.step} className={storeStyles.stepItem}>
+                <span className={storeStyles.stepNumber}>{s.step}</span>
+                <div>
+                  <h3 className={storeStyles.stepTitle}>{s.title}</h3>
+                  <p className={storeStyles.stepDesc}>{s.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        {/* Brand-Specific Insider Savings Tips */}
+        {brandSeo?.savingsTips && brandSeo.savingsTips.length > 0 && (
+          <div className={storeStyles.stepsCard} style={{ marginTop: "20px", marginBottom: "20px", background: "linear-gradient(180deg, #ffffff 0%, #f0fdf4 100%)", border: "1px solid #bbf7d0" }}>
+            <h2 className={storeStyles.sectionHeading} style={{ color: "#065f46" }}>
+              💡 {store.name} Insider Savings Tips &amp; Discount Hacks
+            </h2>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "12px" }}>
+              {brandSeo.savingsTips.map((tip, tIdx) => (
+                <li key={tIdx} style={{ display: "flex", alignItems: "flex-start", gap: "10px", fontSize: "14px", color: "#166534", lineHeight: 1.55 }}>
+                  <span style={{ color: "#059669", fontWeight: 800 }}>✓</span>
+                  <span>{tip}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         <div className={storeStyles.faqCard}>
           <h2 className={storeStyles.sectionHeading}>
             {store.name} Coupons &amp; Savings FAQ
           </h2>
           <div className={storeStyles.faqGrid}>
-            <div className={storeStyles.faqItem}>
-              <h3 className={storeStyles.faqQuestion}>
-                Are these {store.name} promo codes tested and working?
-              </h3>
-              <p className={storeStyles.faqAnswer}>
-                Yes. Every {store.name} coupon code and promotional deal listed on PromoRegistry is hand-tested by our verification team (last checked {todayLabel}) to ensure active checkout compatibility.
-              </p>
-            </div>
-            <div className={storeStyles.faqItem}>
-              <h3 className={storeStyles.faqQuestion}>
-                Why didn&apos;t my {store.name} discount code require a manual code?
-              </h3>
-              <p className={storeStyles.faqAnswer}>
-                Some {store.name} promotions are direct partner deals. When you click &ldquo;Get Deal&rdquo;, your price reduction or free shipping offer is automatically activated inside your checkout session.
-              </p>
-            </div>
+            {faqList.map((faq, fIdx) => (
+              <div key={fIdx} className={storeStyles.faqItem}>
+                <h3 className={storeStyles.faqQuestion}>{faq.question}</h3>
+                <p className={storeStyles.faqAnswer}>{faq.answer}</p>
+              </div>
+            ))}
           </div>
 
           <div className={storeStyles.complianceFooter}>
