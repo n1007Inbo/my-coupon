@@ -467,8 +467,25 @@ export default function HomeClient({ initialCoupons, initialStores }: HomeClient
     return scored.map((item) => item.store);
   }, [initialStores, searchQuery, secretStores]);
 
+  const jsonLdSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "PromoRegistry",
+    url: "https://promoregistry.com",
+    description: "Verified promo codes, direct store discounts, and free shipping offers across 640+ authorized retail brands.",
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://promoregistry.com/?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <div className={styles.mainContainer}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdSchema) }}
+      />
       {/* =========================================================
           CLEAN EXECUTIVE HERO SECTION
           ========================================================= */}

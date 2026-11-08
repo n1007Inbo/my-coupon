@@ -103,6 +103,33 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
   return (
     <div className={storeStyles.pageContainer}>
       {/* Back to All Stores */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: `Are these ${store.name} promo codes verified and working?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `Yes. Every ${store.name} coupon code and discount offer on PromoRegistry is hand-tested by our verification team for active checkout savings.`,
+                },
+              },
+              {
+                "@type": "Question",
+                name: `How do I apply a ${store.name} coupon code at checkout?`,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: `Click "Get Code" on any ${store.name} offer to copy the promo code automatically, then paste it into the discount box at the official ${store.name} checkout.`,
+                },
+              },
+            ],
+          }),
+        }}
+      />
       <div className={storeStyles.backLinkContainer}>
         <a href="/" className={storeStyles.backLink}>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
