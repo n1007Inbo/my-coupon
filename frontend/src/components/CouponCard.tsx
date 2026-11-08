@@ -10,6 +10,12 @@ export interface Store {
   logo?: string;
   slug?: string;
   website?: string;
+  description?: string;
+  category?: string;
+  affiliate_url?: string;
+  affiliate_link?: string;
+  affiliateLink?: string;
+  coupons_count?: number;
 }
 
 export interface Coupon {
@@ -18,10 +24,16 @@ export interface Coupon {
   discount: string;
   title?: string;
   description: string;
-  is_verified: boolean;
-  expiry_date: string;
-  store: string | Store;
+  is_verified?: boolean;
+  expiry_date?: string;
+  store?: string | Store;
+  storeName?: string;
+  storeId?: string | number;
   storeSlug?: string;
+  category?: string;
+  is_exclusive?: boolean;
+  verified_at?: string;
+  uses_count?: number;
   affiliate_url?: string;
   affiliate_link?: string;
   affiliateLink?: string;
