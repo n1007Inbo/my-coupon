@@ -798,9 +798,9 @@ export const CAMPAIGN_BRAND_SEO_DATA: Record<string, BrandSeoEntry> = {
     aliases: ["plated-skin-science", "plated", "buypated", "platedskinscience", "platedskin", "plated-skin-us"],
     brandName: "Plated Skin Science",
     category: "Exosome Skincare & Anti-Aging Serums",
-    h1: "Plated Skin Science Promo Codes, Verified Discounts & Exosome Deals",
-    metaTitle: "20% Off Plated Skin Science Promo Codes & Serum Deals (Nov 2026)",
-    metaDescription: "Save up to 20% on Plated Skin Science INTENSE and DAILY exosome serums with verified promo codes WELCOME15 and INTENSE20. Clinically proven Renewosome™ cellular renewal.",
+    h1: "Plated Skin Science Verified Discounts & Auto-Applied Exosome Deals",
+    metaTitle: "20% Off Plated Skin Science Auto-Applied Discounts & Serum Deals (Nov 2026)",
+    metaDescription: "Save up to 20% on Plated Skin Science INTENSE and DAILY exosome serums. Discounts auto-applied directly at checkout with zero coupon codes required.",
     keywords: [
       "plated skin science discount code", "plated skin science promo code",
       "plated skin science coupon", "plated intense serum coupon", "plated skin code"
@@ -809,18 +809,18 @@ export const CAMPAIGN_BRAND_SEO_DATA: Record<string, BrandSeoEntry> = {
     reviewCount: 2680,
     overview: [
       "Plated Skin Science is a groundbreaking, physician-formulated skincare brand powered by proprietary Renewosome™ platelet-derived exosome technology. Clinically demonstrated to accelerate cellular rejuvenation, stimulate collagen production, smooth deep wrinkles, and reduce redness, Plated represents the pinnacle of anti-aging dermatology.",
-      "Unlike conventional topical peptides, Renewosome™ vesicles deliver millions of regenerative cofactors directly to skin cells. Our deal curators test Plated Skin Science promo codes daily to ensure instant checkout discounts."
+      "Unlike conventional topical peptides, Renewosome™ vesicles deliver millions of regenerative cofactors directly to skin cells. Our deal curators verify Plated Skin Science auto-applied savings daily to ensure instant checkout discounts without requiring manual codes."
     ],
     savingsTips: [
-      "Use Code INTENSE20 or WELCOME15: Save 15% to 20% on your first order of INTENSE or DAILY cellular exosome serums.",
+      "Automatic 20% Cart Savings: Save up to 20% automatically on your order of INTENSE or DAILY cellular exosome serums.",
       "Regimen Bundle Savings Up to $65: Purchasing the complete Day & Night serum duo automatically saves up to $65 off individual bottle prices.",
       "Free Insured US Shipping: All Plated Skin Science orders include complimentary insured tracked doorstep delivery."
     ],
     howToApply: [
       {
         step: 1,
-        title: "Copy Exosome Code",
-        description: "Click 'Get Code' to copy code INTENSE20 or WELCOME15 to your clipboard."
+        title: "Activate Auto-Discount",
+        description: "Click 'Get Deal' or 'Claim Offer' to activate your automatic 20% checkout savings."
       },
       {
         step: 2,
@@ -829,14 +829,14 @@ export const CAMPAIGN_BRAND_SEO_DATA: Record<string, BrandSeoEntry> = {
       },
       {
         step: 3,
-        title: "Redeem at Checkout",
-        description: "Enter your discount code in the promo box at checkout to apply your savings immediately."
+        title: "Instant Cart Savings",
+        description: "Your discount applies automatically at checkout—no promo code entry required."
       }
     ],
     faqs: [
       {
-        question: "What is the best Plated Skin Science promo code?",
-        answer: "Code INTENSE20 provides 20% off the flagship INTENSE exosome serum, while WELCOME15 grants 15% off sitewide."
+        question: "Is a promo code required for Plated Skin Science?",
+        answer: "No coupon code is required. All discounts and promotions are automatically activated and applied directly at checkout via our verified link."
       },
       {
         question: "How quickly does Plated Skin Science show results?",
