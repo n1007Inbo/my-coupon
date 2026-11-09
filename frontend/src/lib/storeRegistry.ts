@@ -9030,7 +9030,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
     slug: "plated-skin",
     aliases: ["plated-skin-science", "plated", "buypated", "platedskinscience"],
     website: "https://platedskinscience.com",
-    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
     logo: "/logos/plated-skin.png",
     country: "US",
     description: "Breakthrough exosome skincare formulated with Renewosome™ technology. Clinically proven to accelerate cellular renewal, reduce redness, and smooth deep wrinkles.",
@@ -9039,10 +9039,10 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "plated-deal-1",
         code: "WELCOME15",
         is_auto_applied: false,
-        discount: "15% OFF",
-        title: "15% off verified exclusive coupon code sitewide",
-        description: "Apply promo code WELCOME15 at checkout to receive 15% off your order of clinically proven exosome serums.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        discount: "20% OFF",
+        title: "20% off verified exclusive coupon code sitewide",
+        description: "Apply promo code WELCOME15 at checkout to receive 20% off your order of clinically proven exosome serums.",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -9053,7 +9053,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "20% OFF",
         title: "20% off INTENSE Serum for rapid collagen & wrinkle renewal",
         description: "Get 20% off highest-concentration exosome INTENSE Serum with working discount code INTENSE20.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -9064,7 +9064,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "15% OFF",
         title: "15% off DAILY Serum for radiant skin barrier repair",
         description: "Save 15% on DAILY exosome serum designed to defend against environmental aging with code DAILY15.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -9075,7 +9075,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "20% OFF",
         title: "20% off CALM Serum and Hair Density Recovery Serum",
         description: "Use active voucher code HAIR20 to save 20% on scalp revitalization and post-procedure calm serums.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -9086,7 +9086,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "UP TO $65 OFF",
         title: "Up to $65 off on Duo & Trio Skincare Bundles",
         description: "Save up to $65 automatically when purchasing the complete Intense + Daily serum regimen bundle.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       },
@@ -9097,7 +9097,7 @@ export const STORE_REGISTRY: RegistryStore[] = [
         discount: "FREE SHIPPING",
         title: "Free tracked US shipping on all skincare orders",
         description: "Enjoy 100% complimentary tracked delivery across the United States automatically applied at checkout.",
-        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fplatedskinscience.com%2F",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=4scw8ip03bvjtb1113tujbn362i4gnjwwbtf6e27fhe0piecupu&url=https%3A%2F%2Fplatedskinscience.com%2F",
         is_verified: true,
         expiry_date: "2026-12-31"
       }
