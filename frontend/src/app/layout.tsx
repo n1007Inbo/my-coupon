@@ -31,6 +31,7 @@ export const metadata: Metadata = {
   },
   other: {
     'impact-site-verification': 'e8243051-e329-4f57-aedc-5f4539bfc2ac',
+    'linkscircleverifycode': '4dcc2529-30cf-4f04-b0a6-bc6819ed1d15',
   },
 };
 
@@ -46,6 +47,7 @@ export default function RootLayout({
       <head>
         <meta name="impact-site-verification" value="e8243051-e329-4f57-aedc-5f4539bfc2ac" />
         <meta name="impact-site-verification" content="e8243051-e329-4f57-aedc-5f4539bfc2ac" />
+        <meta name="linkscircleverifycode" content="4dcc2529-30cf-4f04-b0a6-bc6819ed1d15" />
         {gaId && (
           <>
             <Script
