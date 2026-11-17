@@ -50,13 +50,13 @@
 }
 
 .storeLogo {
-  width: 68px;
+  width: auto;
+  max-width: 200px;
   height: 68px;
-  min-width: 68px;
-  min-height: 68px;
+  min-height: 56px;
   object-fit: contain;
   background: #ffffff;
-  padding: 6px;
+  padding: 6px 10px;
   border-radius: 14px;
   border: 1px solid #e2e8f0;
   box-shadow: 
