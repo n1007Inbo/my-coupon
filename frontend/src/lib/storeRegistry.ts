@@ -56,11 +56,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "sc-pr-1",
-        code: "WELCOME15",
-        is_auto_applied: false,
-        discount: "15% OFF",
-        title: "15% Off Your First Order with Silver Cross Promo Code",
-        description: "Save 15% on your first order of luxury strollers, Wave 3 prams, and nursery essentials with promo code WELCOME15.",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO $125 OFF",
+        title: "Black Friday Sale: Save Up to $125 on Luxury Strollers & Cribs",
+        description: "Activate instant Black Friday savings of up to $125 on Wave 3 prams, Reef 2 strollers, and Slumber travel cribs. Discount applied automatically — no code needed.",
         is_verified: true,
         expiry_date: "2026-12-31",
         affiliate_url: "https://app.linkscircle.com/track?linkmid=91515237&linkaffid=96610225"
