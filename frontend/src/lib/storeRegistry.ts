@@ -8529,11 +8529,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
     coupons: [
       {
         id: "berkey-deal-1",
-        code: "USA30",
+        code: "USA20",
         is_auto_applied: true,
-        discount: "30% OFF",
-        title: "30% off exclusive coupon code sitewide",
-        description: "Apply verified promo code USA30 at checkout to save 30% on authentic Berkey water filtration systems and bundles.",
+        discount: "20% OFF",
+        title: "20% off exclusive coupon code sitewide",
+        description: "Apply verified promo code USA20 at checkout to save 20% on authentic Berkey water filtration systems and bundles.",
         affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
