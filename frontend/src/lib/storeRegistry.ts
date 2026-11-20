@@ -8551,11 +8551,11 @@ export const STORE_REGISTRY: RegistryStore[] = [
       },
       {
         id: "berkey-deal-2",
-        code: "MOM25",
+        code: "USA20",
         is_auto_applied: true,
-        discount: "25% OFF",
-        title: "25% off discount code on Black Berkey replacement elements",
-        description: "Save 25% on genuine Black Berkey replacement filters and fluoride elements using promo code MOM25.",
+        discount: "20% OFF",
+        title: "20% off discount code on Black Berkey replacement elements",
+        description: "Save 20% on genuine Black Berkey replacement filters and fluoride elements using promo code USA20.",
         affiliate_url: "https://www.usaberkeyfilters.com/aff/282/",
         is_verified: true,
         expiry_date: "2026-12-31"
