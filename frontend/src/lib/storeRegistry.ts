@@ -111,6 +111,69 @@ export const STORE_REGISTRY: RegistryStore[] = [
     ]
   },
   {
+    id: 76720045,
+    name: "Vessi",
+    slug: "vessi",
+    aliases: [
+      "vessi-shoes",
+      "vessishoes",
+      "vessi-footwear",
+      "vessi-us",
+      "vessi-waterproof"
+    ],
+    website: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225",
+    affiliate_url: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225",
+    logo: "/logos/vessi.png",
+    country: "US",
+    description: "Official Vessi verified deals portal. Discover 100% waterproof knit sneakers, lightweight city shoes, stormproof boots, and travel slip-ons built for all-weather comfort.",
+    coupons: [
+      {
+        id: "vessi-pr-1",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 30% OFF",
+        title: "Save Up to 30% on 100% Waterproof Sneakers & Boots",
+        description: "Activate instant seasonal savings of up to 30% on Everyday Classic, Weekend, Storm Burst, and Soho waterproof footwear. Applied automatically — no code needed.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225"
+      },
+      {
+        id: "vessi-pr-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "$20 OFF",
+        title: "$20 Off Orders Over $100 Direct Store Deal",
+        description: "Get an instant $20 discount on qualifying waterproof shoe orders over $100. No coupon code required.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225"
+      },
+      {
+        id: "vessi-pr-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "20% Off Student, Teacher & Healthcare Discount",
+        description: "Verified 20% off savings for students, educators, and healthcare professionals via official verification.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225"
+      },
+      {
+        id: "vessi-pr-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIPPING",
+        title: "Free US Shipping on All Orders Over $80",
+        description: "Automatic free standard US shipping on all waterproof sneaker, boot, and accessory orders over $80.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=76720045&linkaffid=96610225"
+      }
+    ]
+  },
+  {
     id: 91515237,
     name: "Silver Cross",
     slug: "silvercross",
