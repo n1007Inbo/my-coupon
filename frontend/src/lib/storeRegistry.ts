@@ -9701,7 +9701,70 @@ export function searchSecretRegistryStores(secretKey: string): Store[] {
   if (!clean) return [];
 
   const exactSlugMatch = ALIAS_LOOKUP[secretKey.toLowerCase().trim()];
-  const results: Store[] = [];
+  const results: Store[] = [,
+  {
+    id: 41543958,
+    name: "Archers Sleepcentre",
+    slug: "archers-sleepcentre",
+    aliases: [
+      "archerssleepcentre",
+      "archers-sleep-centre",
+      "archers-sleepcentre-uk",
+      "archers-beds"
+    ],
+    website: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225",
+    affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225",
+    logo: "/logos/archers-sleepcentre.png",
+    country: "UK",
+    description: "Archers Sleepcentre is one of the UK's leading independent bed, mattress, and bedroom furniture specialists offering luxury sleep brands at direct prices.",
+    coupons: [
+      {
+        id: "archers-pr-1",
+        code: "",
+        is_auto_applied: true,
+        discount: "UP TO 50% OFF",
+        title: "Seasonal Bed & Mattress Sale — Save Up to 50%",
+        description: "Save up to 50% on luxury pocket sprung mattresses, divan beds, ottoman storage beds, and bedroom furniture. Applied automatically — no code required.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225"
+      },
+      {
+        id: "archers-pr-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "NEXT DAY",
+        title: "Free & Next Day UK Delivery on Selected Beds & Mattresses",
+        description: "Enjoy fast next-day UK delivery options on in-stock mattresses, bed frames, and bedroom furniture sets.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225"
+      },
+      {
+        id: "archers-pr-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "CLEARANCE",
+        title: "Huge Discounts in the Archers Sleepcentre Outlet & Clearance",
+        description: "Shop end-of-line luxury bed frames, headboards, and brand-name mattresses at heavily reduced clearance prices.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225"
+      },
+      {
+        id: "archers-pr-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "0% FINANCE",
+        title: "Interest-Free Finance Available on Eligible Bed & Mattress Orders",
+        description: "Spread the cost of your new bed or luxury mattress with flexible 0% APR finance options at checkout.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225"
+      }
+    ]
+  }
+];
   const seenSlugs = new Set<string>();
 
   if (exactSlugMatch) {
