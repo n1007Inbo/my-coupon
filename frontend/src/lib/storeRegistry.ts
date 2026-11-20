@@ -54,6 +54,17 @@ export const STORE_REGISTRY: RegistryStore[] = [
     description: "Archers Sleepcentre is one of the UK's leading independent bed, mattress, and bedroom furniture specialists offering luxury sleep brands at direct prices.",
     coupons: [
       {
+        id: "archers-pr-save5",
+        code: "SAVE5",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% Off Sitewide with Archers Sleepcentre Discount Code",
+        description: "Enter verified discount code SAVE5 in your basket to enjoy 10% off sitewide on beds, mattresses, and bedroom furniture.",
+        is_verified: true,
+        expiry_date: "2026-12-31",
+        affiliate_url: "https://app.linkscircle.com/track?linkmid=41543958&linkaffid=96610225"
+      },
+      {
         id: "archers-pr-1",
         code: "",
         is_auto_applied: true,
@@ -120,9 +131,9 @@ export const STORE_REGISTRY: RegistryStore[] = [
         id: "sc-pr-1",
         code: "",
         is_auto_applied: true,
-        discount: "UP TO $125 OFF",
-        title: "Black Friday Sale: Save Up to $125 on Luxury Strollers & Cribs",
-        description: "Activate instant Black Friday savings of up to $125 on Wave 3 prams, Reef 2 strollers, and Slumber travel cribs. Discount applied automatically — no code needed.",
+        discount: "15%–20% OFF",
+        title: "Save 15% to 20% on Luxury Strollers, Prams & Travel Cribs",
+        description: "Activate instant 15%–20% Black Friday savings on Wave 3 prams, Reef 2 strollers, and Slumber travel cribs. Applied automatically — no promo code needed.",
         is_verified: true,
         expiry_date: "2026-12-31",
         affiliate_url: "https://app.linkscircle.com/track?linkmid=91515237&linkaffid=96610225"
