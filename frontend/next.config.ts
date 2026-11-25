@@ -41,6 +41,16 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
+        source: "/go/waterdrop",
+        destination: "https://www.waterdropfilter.com/?ref=aynlalsd&utm_medium=affiliate&utm_source=goaffpro",
+        permanent: false,
+      },
+      {
+        source: "/go/waterdrop-filter",
+        destination: "https://www.waterdropfilter.com/?ref=aynlalsd&utm_medium=affiliate&utm_source=goaffpro",
+        permanent: false,
+      },
+      {
         source: "/go/the-berkey",
         destination: "https://theberkey.com/?rfsn=9428965.01bcd90",
         permanent: false,
