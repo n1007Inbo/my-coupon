@@ -47,12 +47,12 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
     description: "Official BOROUX verified discount codes and promotional offers. Shop premium gravity-fed stainless steel water filtration systems, BOROUX Black replacement elements, and borosilicate glass bottles with exclusive deals and free US shipping.",
         coupons: [
       {
-        id: "boroux-holiday-20",
+        id: "boroux-holiday-30",
         code: "HOLIDAY25",
         is_auto_applied: false,
-        discount: "20% OFF",
-        title: "20% off coupon code",
-        description: "20% off water filtration systems and accessories.",
+        discount: "30% OFF",
+        title: "Up to 30% Off BOROUX Foundation Systems & Bundles",
+        description: "Save up to 30% on stainless steel gravity water filtration systems.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -62,8 +62,8 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         code: "FARMHOUSE",
         is_auto_applied: false,
         discount: "25% OFF",
-        title: "25% off code – Early Black Friday Sale",
-        description: "Save 25% on stainless steel gravity water filters.",
+        title: "25% Off Early Black Friday & Holiday Sale",
+        description: "Save 25% on BOROUX gravity water filters and accessories.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -72,9 +72,9 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         id: "boroux-reg-1",
         code: "",
         is_auto_applied: true,
-        discount: "15% OFF",
-        title: "15% Off BOROUX Replacement Filter Bundles",
-        description: "15% off multi-pack replacement filter bundles.",
+        discount: "20% OFF",
+        title: "20% Off BOROUX Black Replacement Filter Bundles",
+        description: "Instant 20% off multi-pack replacement filter bundles.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
