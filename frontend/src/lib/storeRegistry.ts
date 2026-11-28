@@ -36,6 +36,63 @@ export interface RegistryStore {
  * - Guarantees 100% affiliate link propagation across all deal buttons.
  */
 export const STORE_REGISTRY: RegistryStore[] = [  {
+    id: 99452,
+    name: "SunGoldPower",
+    slug: "sungoldpower",
+    aliases: ["sun-gold-power", "sungold-power", "sungoldpower-com", "sun-gold-power-us"],
+    website: "https://sungoldpower.com/",
+    affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com",
+    logo: "/logos/sungoldpower.png",
+    country: "US",
+    description: "Official SunGoldPower verified promotional deals and discounts. Shop premium hybrid solar inverters, server rack LiFePO4 lithium batteries, off-grid solar kits, and bifacial solar panels with up to 35% off and fast free US shipping.",
+    coupons: [
+      {
+        id: "sgp-reg-1",
+        code: "",
+        is_auto_applied: true,
+        discount: "35% OFF",
+        title: "Up to 35% Off Complete Solar Kit Systems",
+        description: "Save up to 35% automatically on off-grid solar kits, hybrid inverters, and high-capacity battery storage systems during the official seasonal sale.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com%2Fpages%2Fsale"
+      },
+      {
+        id: "sgp-reg-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "30% OFF",
+        title: "30% Off Hybrid Inverters & LiFePO4 Batteries",
+        description: "Instant 30% markdown on 48V server rack batteries, wall-mounted PowerMax packs, and all-in-one solar charge inverters.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com%2Fpages%2Fsale"
+      },
+      {
+        id: "sgp-reg-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "3% OFF",
+        title: "3% Off First Order with Newsletter Sign-Up",
+        description: "Subscribe to the official SunGoldPower newsletter or referral club to get 3% off your entire first purchase instantly.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com"
+      },
+      {
+        id: "sgp-reg-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIP",
+        title: "Fast & Free Shipping Across Continental USA",
+        description: "Enjoy zero delivery fees on all solar panels, heavy-duty battery racks, and inverters shipped anywhere in the continental United States.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com"
+      }
+    ]
+  },
+  {
     id: 99451,
     name: "Meaco UK",
     slug: "meaco",
