@@ -1017,61 +1017,59 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
   },
 
   // 5. QIDI DE (Germany / EU)
-  {
+    {
     id: 621,
-    name: "QIDI DE",
-    slug: "qidi-de",
-    aliases: ["qidi"],
-    logo: "/logos/qidi.png",
-    website: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg",
-    affiliate_url: "https://qidi3d-de.myshopify.com?sca_ref=12082423.h3UYEVqJ6Tg",
-    country: "DE",
-    description: "Hochgeschwindigkeits-CoreXY 3D-Drucker für anspruchsvolle Ingenieure in Deutschland und EU.",
+    name: "Evolution Power Tools",
+    slug: "evolution-power-tools",
+    aliases: ["evolution-tools", "evolutionpowertools", "evolution-power-tools-us", "evolution"],
+    logo: "/logos/evolution-power-tools.png",
+    website: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY",
+    affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY",
+    country: "US",
+    description: "Industry-leading multi-material cutting technology, chop saws, magnetic drills, table saws, and tungsten carbide-tipped blades for steel, wood, and aluminum.",
     coupons: [
       {
-        id: "qidi-de-1",
-        code: "30FOR500",
-        discount: "30€ RABATT",
-        title: "30€ rabattcode bestellwert 500€",
-        description: "Sichern Sie sich 30€ Rabatt ab einem Mindestbestellwert von 500€ mit Code 30FOR500.",
+        id: "evo-deal-1",
+        code: "METHEWDIPPY5",
+        discount: "5% OFF",
+        title: "5% Off Sitewide on Multi-Material Saws & Power Tools",
+        description: "Official verified discount code: Apply code METHEWDIPPY5 at checkout for 5% off all chop saws, miter saws, table saws, and blades.",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
       },
       {
-        id: "qidi-de-2",
-        code: "40FOR700",
-        discount: "40€ RABATT",
-        title: "40€ rabattcode bestellwert 700€",
-        description: "Erhalten Sie 40€ Direktabzug ab 700€ Bestellwert mit Code 40FOR700.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "qidi-de-3",
-        code: "80FOR1200",
-        discount: "80€ RABATT",
-        title: "80€ rabattcode bestellwert 1200€",
-        description: "80€ Großbestellungs-Rabatt ab 1200€ Einkaufswert mit Code 80FOR1200.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "qidi-de-4",
+        id: "evo-deal-2",
         code: "",
-        discount: "40% RABATT",
-        title: "40% rabatt auf 3D drucker & filamente",
-        description: "Sparen Sie bis zu 40% auf Hochtemperatur 3D Drucker und Filament Bundles.",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "Up to 20% Off Multi-Material Chop Saws & Miter Saws",
+        description: "Instant promotional savings on patented multi-material cutting saws capable of slicing mild steel, aluminum, and wood with zero burrs.",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
       },
       {
-        id: "qidi-de-5",
+        id: "evo-deal-3",
         code: "",
-        discount: "GRATIS VERSAND",
-        title: "Kostenloser Speditionsversand in DE & EU",
-        description: "Kostenlose Lieferung auf alle 3D-Drucker innerhalb Deutschlands und der EU.",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% Off TCT Saw Blades & Tool Accessories",
+        description: "Save 10% on high-performance Japanese tungsten carbide-tipped cutting blades and work stands.",
         is_verified: true,
-        expiry_date: "2026-12-31"
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
+      },
+      {
+        id: "evo-deal-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIP",
+        title: "Free Fast Shipping Across Continental USA",
+        description: "Enjoy free standard delivery across the United States on all qualifying power tool and blade orders automatically applied at checkout.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
       }
     ]
   },
