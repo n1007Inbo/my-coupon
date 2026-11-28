@@ -36,6 +36,63 @@ export interface RegistryStore {
  * - Guarantees 100% affiliate link propagation across all deal buttons.
  */
 export const STORE_REGISTRY: RegistryStore[] = [  {
+    id: 99453,
+    name: "BOROUX",
+    slug: "boroux",
+    aliases: ["boroux-water", "boroux-filters", "boroux-water-filters", "boroux-water-filter", "boroux-us"],
+    website: "https://www.boroux.com/",
+    affiliate_url: "https://lkmstore.com/g/ndacFQE",
+    logo: "/logos/boroux.png",
+    country: "US",
+    description: "Official BOROUX verified discount codes and promotional offers. Shop premium gravity-fed stainless steel water filtration systems, BOROUX Black replacement elements, and borosilicate glass bottles with exclusive deals and free US shipping.",
+    coupons: [
+      {
+        id: "boroux-reg-1",
+        code: "",
+        is_auto_applied: true,
+        discount: "15% OFF",
+        title: "15% Off BOROUX Replacement Filter Bundles",
+        description: "Save 15% automatically on multi-pack BOROUX Black replacement water filter elements designed for maximum contaminant reduction.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://lkmstore.com/g/ndacFQE"
+      },
+      {
+        id: "boroux-reg-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "10% OFF",
+        title: "10% Off First Order on BOROUX Foundation Systems",
+        description: "Get 10% off your entire first purchase of premium stainless steel gravity-fed water filter systems upon newsletter sign-up.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://lkmstore.com/g/ndacFQE"
+      },
+      {
+        id: "boroux-reg-3",
+        code: "",
+        is_auto_applied: true,
+        discount: "20% OFF",
+        title: "Up to 20% Off Seasonal Water Filtration Sets",
+        description: "Instant promotional savings of up to 20% on complete gravity-fed filter systems, borosilicate bottles, and glass accessories.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://lkmstore.com/g/ndacFQE"
+      },
+      {
+        id: "boroux-reg-4",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIP",
+        title: "Free US Shipping on Orders Over $50",
+        description: "Fast and free standard tracked delivery across the United States automatically applied at checkout on orders over $50.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://lkmstore.com/g/ndacFQE"
+      }
+    ]
+  },
+  {
     id: 99452,
     name: "SunGoldPower",
     slug: "sungoldpower",
