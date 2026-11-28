@@ -35,7 +35,75 @@ export interface RegistryStore {
  * - Guarantees 100% coupon isolation (zero rogue coupons from other stores).
  * - Guarantees 100% affiliate link propagation across all deal buttons.
  */
-export const STORE_REGISTRY: RegistryStore[] = [
+export const STORE_REGISTRY: RegistryStore[] = [  {
+    id: 99451,
+    name: "Meaco UK",
+    slug: "meaco",
+    aliases: ["meaco-uk", "meacouk", "meaco-dehumidifiers", "meacodehumidifiers", "meaco-fans", "meaco-discount-code"],
+    website: "https://www.meaco.com/",
+    affiliate_url: "https://www.meaco.com/",
+    logo: "/logos/meaco.svg",
+    country: "UK",
+    description: "Official Meaco UK verified discount voucher codes and deals. Save on Which? Best Buy award-winning low-energy dehumidifiers, whisper-quiet MeacoFans, and HEPA air purifiers with exclusive savings and free UK mainland delivery.",
+    coupons: [
+      {
+        id: "meaco-reg-1",
+        code: "MEACO10",
+        is_auto_applied: false,
+        discount: "10% OFF",
+        title: "10% Off Verified Meaco Discount Code Sitewide",
+        description: "Get an instant 10% off your entire order including Which? Best Buy dehumidifiers, MeacoFans, and replacement filters.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://www.meaco.com/"
+      },
+      {
+        id: "meaco-reg-2",
+        code: "",
+        is_auto_applied: true,
+        discount: "30% OFF",
+        title: "Up to 30% Off on Meaco Dehumidifiers and Air Care",
+        description: "Exclusive limited-time promotional savings of up to 30% on selected MeacoDry dehumidifiers, air purifiers, and cooling accessories.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://www.meaco.com/"
+      },
+      {
+        id: "meaco-reg-3",
+        code: "SAVE20",
+        is_auto_applied: false,
+        discount: "20% OFF",
+        title: "20% Off Meaco® Voucher Code - Special Offer",
+        description: "Hand-verified voucher code saving 20% on selected air treatment and whisper-quiet cooling units.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://www.meaco.com/"
+      },
+      {
+        id: "meaco-reg-4",
+        code: "AIR12",
+        is_auto_applied: false,
+        discount: "12% OFF",
+        title: "12% Off MeacoDry Arete® One Dehumidifiers",
+        description: "Save 12% on Which? Best Buy MeacoDry Arete One 10L, 12L, 20L and 25L dual dehumidifiers and air purifiers.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://www.meaco.com/"
+      },
+      {
+        id: "meaco-reg-5",
+        code: "",
+        is_auto_applied: true,
+        discount: "FREE SHIP",
+        title: "Free UK Mainland Delivery on Orders Over £50",
+        description: "Enjoy fast, free standard delivery across UK mainland on all orders over £50 automatically applied at checkout.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://www.meaco.com/"
+      }
+    ]
+  },
+
   {
     id: 99450,
     name: "Waterdrop",
