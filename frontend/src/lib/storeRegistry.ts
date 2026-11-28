@@ -52,7 +52,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: false,
         discount: "20% OFF",
         title: "20% off coupon code",
-        description: "Apply verified promo code HOLIDAY25 at checkout for 20% off your purchase of BOROUX water filtration systems and accessories.",
+        description: "Apply this verified promo code at checkout for 20% off your purchase of BOROUX water filtration systems and accessories.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -63,7 +63,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: false,
         discount: "25% OFF",
         title: "25% off code – Early Black Friday Sale",
-        description: "Special seasonal Early Black Friday offer: Use code FARMHOUSE at checkout to save 25% on BOROUX stainless steel gravity water filters.",
+        description: "Special seasonal Early Black Friday offer: Redeem this verified promo code at checkout to save 25% on BOROUX stainless steel gravity water filters.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -1022,7 +1022,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         code: "METHEWDIPPY5",
         discount: "5% OFF",
         title: "5% Off Sitewide on Multi-Material Saws & Power Tools",
-        description: "Official verified discount code: Apply code METHEWDIPPY5 at checkout for 5% off all chop saws, miter saws, table saws, and blades.",
+        description: "Official verified discount code: Apply promo code at checkout for 5% off all chop saws, miter saws, table saws, and blades.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"

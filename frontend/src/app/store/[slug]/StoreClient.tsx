@@ -15,6 +15,7 @@ interface StoreClientProps {
 export default function StoreClient({ store, coupons }: StoreClientProps) {
   const [activeCoupon, setActiveCoupon] = useState<Coupon | null>(null);
   const [copiedId, setCopiedId] = useState<string | number | null>(null);
+  const [revealedIds, setRevealedIds] = useState<Record<string | number, boolean>>({});
   const [bannerLogoError, setBannerLogoError] = useState(false);
   const [todayLabel, setTodayLabel] = useState<string>("Today");
 
@@ -33,6 +34,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       const params = new URLSearchParams(window.location.search);
       const couponId = params.get("coupon");
       if (couponId) {
+        setRevealedIds((prev) => ({ ...prev, [couponId]: true }));
         const found = coupons.find((c) => String(c.id) === couponId);
         if (found) {
           setActiveCoupon(found);
@@ -44,6 +46,9 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
   const handleAction = (e: React.MouseEvent, coupon: Coupon) => {
     e.preventDefault();
     e.stopPropagation();
+
+    // Mark as revealed on user interaction
+    setRevealedIds((prev) => ({ ...prev, [coupon.id]: true }));
 
     const targetUrl =
       coupon.affiliate_url ||
@@ -263,10 +268,18 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                 </div>
               </div>
 
-              {/* Right Side: Code Pill + Simple CTA Button */}
+              {/* Right Side: Masked Code Pill + CTA Button */}
               <div className={storeStyles.cardRight}>
                 {!isDirectDeal ? (
-                  <span className={storeStyles.codePill}>{coupon.code}</span>
+                  revealedIds[coupon.id] || isCopied ? (
+                    <span className={storeStyles.codePillRevealed}>
+                      <span className={storeStyles.checkIcon}>✓</span> {coupon.code}
+                    </span>
+                  ) : (
+                    <span className={storeStyles.codePillMasked}>
+                      <span className={storeStyles.scissorsIcon}>✂</span> ••••••••
+                    </span>
+                  )
                 ) : (
                   <span className={storeStyles.dealPill}>Auto-Applied</span>
                 )}
@@ -277,7 +290,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
                 >
                   {!isDirectDeal ? (
                     <>
-                      <span>{isCopied ? "Copied! ✓" : "Get Code"}</span>
+                      <span>{isCopied ? "Copied! ✓" : (revealedIds[coupon.id] ? "Copy Code" : "Show Code")}</span>
                       <span className={storeStyles.arrowIcon}>→</span>
                     </>
                   ) : (

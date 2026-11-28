@@ -258,6 +258,55 @@
   flex-shrink: 0;
 }
 
+.codePillMasked {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8fafc;
+  border: 1.5px dashed #94a3b8;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 2px;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.codePillMasked:hover {
+  border-color: #1e3a8a;
+  color: #1e3a8a;
+  background: #f1f5f9;
+}
+
+.codePillRevealed {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #ecfdf5;
+  border: 1.5px solid #10b981;
+  padding: 5px 12px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #065f46;
+  letter-spacing: 1px;
+}
+
+.scissorsIcon {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.checkIcon {
+  font-size: 0.9rem;
+  color: #10b981;
+  font-weight: 800;
+}
+
 .codePill {
   display: inline-flex;
   align-items: center;
