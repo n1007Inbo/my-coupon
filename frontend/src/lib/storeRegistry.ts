@@ -1031,29 +1031,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         id: "evo-deal-2",
         code: "",
         is_auto_applied: true,
-        discount: "20% OFF",
-        title: "Up to 20% Off Multi-Material Chop Saws & Miter Saws",
-        description: "Instant promotional savings on patented multi-material cutting saws capable of slicing mild steel, aluminum, and wood with zero burrs.",
-        is_verified: true,
-        expiry_date: "Dec 31, 2026",
-        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
-      },
-      {
-        id: "evo-deal-3",
-        code: "",
-        is_auto_applied: true,
-        discount: "10% OFF",
-        title: "10% Off TCT Saw Blades & Tool Accessories",
-        description: "Save 10% on high-performance Japanese tungsten carbide-tipped cutting blades and work stands.",
-        is_verified: true,
-        expiry_date: "Dec 31, 2026",
-        affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
-      },
-      {
-        id: "evo-deal-4",
-        code: "",
-        is_auto_applied: true,
-        discount: "FREE SHIP",
+        discount: "FREE SHIPPING",
         title: "Free Fast Shipping Across Continental USA",
         description: "Enjoy free standard delivery across the United States on all qualifying power tool and blade orders automatically applied at checkout.",
         is_verified: true,
@@ -1062,7 +1040,6 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
       }
     ]
   },
-
   // 6. QIDI UK (United Kingdom)
   {
     id: 622,
@@ -2006,65 +1983,6 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
     ]
   },
 
-  // 21. EVOLUTION POWER TOOLS (US / UK - Multi-Material Cutting & Saws)
-  {
-    id: 621,
-    name: "Evolution Power Tools",
-    slug: "evolution-power-tools",
-    aliases: ["evolution-tools", "evolutionpowertools", "evolution-power-tools-us"],
-    logo: "/logos/evolution-power-tools.png",
-    website: "https://evolutionpowertools.com/?ref=promoregistry",
-    affiliate_url: "https://evolutionpowertools.com/?ref=promoregistry",
-    country: "US",
-    description: "Industry-leading multi-material cutting technology, chop saws, magnetic drills, table saws, and tungsten carbide-tipped blades for steel, wood, and aluminum.",
-    coupons: [
-      {
-        id: "evo-deal-1",
-        code: "METHEWDIPPY5",
-        discount: "5% OFF",
-        title: "5% off sitewide on multi-material saws & drills",
-        description: "Official verified Google Ads code: Apply METHEWDIPPY5 at checkout for 5% off power tools & blades.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "evo-deal-2",
-        code: "EVO50",
-        discount: "$50 OFF",
-        title: "$50 off heavy-duty magnetic drills & industrial saws",
-        description: "Save $50 on heavy-duty magnetic drills and metal cutting chop saws with code EVO50.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "evo-deal-3",
-        code: "BLADE10",
-        discount: "10% OFF",
-        title: "10% off multi-material circular saw blades & accessories",
-        description: "Get 10% off premium tungsten carbide blades, saw stands, and clamps with code BLADE10.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "evo-deal-4",
-        code: "WELCOME15",
-        discount: "$15 OFF",
-        title: "$15 welcome voucher on your first tool order over $150",
-        description: "Save $15 on your first Evolution Power Tools order with code WELCOME15.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      },
-      {
-        id: "evo-deal-5",
-        code: "",
-        discount: "FREE SHIPPING",
-        title: "Free standard shipping across the US on orders $99+",
-        description: "Enjoy 100% free tracked US freight delivery on all qualifying tool purchases.",
-        is_verified: true,
-        expiry_date: "2026-12-31"
-      }
-    ]
-  },
 
   // 22. DOUBLE OAK ESSENTIALS (US - Minimalist Wallets & EDC Accessories)
   {

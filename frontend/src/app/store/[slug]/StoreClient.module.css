@@ -1,46 +1,42 @@
 .pageContainer {
-  max-width: 980px;
+  max-width: 880px;
   margin: 0 auto;
-  padding: 36px 20px 80px 20px;
+  padding: 32px 20px 60px 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #0f172a;
 }
 
 .backLinkContainer {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .backLink {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: #64748b;
-  font-size: 0.92rem;
+  font-size: 0.85rem;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: color 0.15s ease;
 }
 
 .backLink:hover {
-  color: #1e3a8a;
-  transform: translateX(-3px);
+  color: #0f172a;
 }
 
-/* Elevated Store Header - Physical Card Depth */
+/* Clean Store Header */
 .storeHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
   background: #ffffff;
-  border-radius: 20px;
-  padding: 24px 30px;
-  margin-bottom: 28px;
+  border-radius: 16px;
+  padding: 24px 28px;
+  margin-bottom: 24px;
   border: 1px solid #e2e8f0;
-  border-top: 1px solid #ffffff;
-  box-shadow: 
-    0 1px 3px rgba(15, 23, 42, 0.04),
-    0 10px 24px -4px rgba(15, 23, 42, 0.06),
-    0 20px 36px -8px rgba(15, 23, 42, 0.04),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
+  box-shadow: 0 4px 12px -2px rgba(15, 23, 42, 0.04);
 }
 
 .brandInfo {
@@ -51,47 +47,54 @@
 
 .storeLogo {
   width: auto;
-  max-width: 200px;
-  height: 68px;
-  min-height: 56px;
+  max-width: 140px;
+  height: 56px;
   object-fit: contain;
   background: #ffffff;
-  padding: 6px 10px;
-  border-radius: 14px;
+  padding: 4px 8px;
+  border-radius: 10px;
   border: 1px solid #e2e8f0;
-  box-shadow: 
-    0 2px 8px rgba(15, 23, 42, 0.06),
-    0 1px 3px rgba(15, 23, 42, 0.04);
   flex-shrink: 0;
 }
 
 .fallbackLogo {
-  width: 68px;
-  height: 68px;
-  min-width: 68px;
-  min-height: 68px;
-  border-radius: 14px;
-  background: linear-gradient(145deg, #1e3a8a 0%, #0f172a 100%);
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background: #1e3a8a;
   color: #ffffff;
-  font-weight: 850;
-  font-size: 26px;
+  font-weight: 800;
+  font-size: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.2);
   flex-shrink: 0;
 }
 
+.storeBadge {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 750;
+  letter-spacing: 0.05em;
+  color: #0369a1;
+  background: #f0f9ff;
+  border: 1px solid #bae6fd;
+  padding: 2px 8px;
+  border-radius: 6px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
 .storeTitle {
-  font-size: 21px;
-  font-weight: 850;
+  font-size: 1.45rem;
+  font-weight: 800;
   color: #0f172a;
   margin: 0 0 4px 0;
-  letter-spacing: -0.4px;
+  line-height: 1.25;
 }
 
 .storeSubtitle {
-  font-size: 13.5px;
+  font-size: 0.88rem;
   color: #64748b;
   margin: 0;
 }
@@ -100,555 +103,264 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 100%);
-  color: #059669;
-  font-size: 12px;
-  font-weight: 750;
-  padding: 8px 16px;
-  border-radius: 9999px;
-  border: 1px solid #a7f3d0;
-  box-shadow: 0 2px 8px rgba(5, 150, 105, 0.1);
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #334155;
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .pulseDot {
   width: 7px;
   height: 7px;
-  background: #059669;
   border-radius: 50%;
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.25);
+  background: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
 }
 
-/* 2-Column Clean Above-the-Fold Grid */
+/* Clean, Simple Cards Grid */
 .cardsGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 24px;
-  margin-bottom: 36px;
-}
-
-/* Style A: Physical 3D Hardware Bevel & Tactile Depth */
-.cardContainer {
-  background: #ffffff;
-  border-radius: 20px;
-  border: 1px solid #e2e8f0;
-  box-shadow: 
-    0 2px 4px rgba(15, 23, 42, 0.04),
-    0 12px 24px -4px rgba(15, 23, 42, 0.08),
-    0 24px 48px -12px rgba(15, 23, 42, 0.12),
-    inset 0 1px 0 #ffffff,
-    inset 0 -2px 0 #e2e8f0;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  position: relative;
-  padding: 24px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  cursor: pointer;
-  user-select: none;
+  gap: 14px;
+  margin-bottom: 24px;
 }
 
-.cardContainer:hover {
-  transform: translateY(-4px);
-  box-shadow: 
-    0 4px 8px rgba(15, 23, 42, 0.04),
-    0 20px 36px -6px rgba(15, 23, 42, 0.12),
-    0 32px 64px -12px rgba(30, 58, 138, 0.15),
-    inset 0 1px 0 #ffffff,
-    inset 0 -2px 0 #cbd5e1;
-}
-
-.primaryCard {
-  border-color: #bfdbfe;
-  border-top: 2px solid #1e3a8a;
-}
-
-.primaryCard:hover {
-  border-color: #1e3a8a;
-}
-
-/* Card Header */
-.cardHeader {
+.couponCard {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  margin-bottom: 18px;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 20px 24px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px -1px rgba(15, 23, 42, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
 }
 
-.verifiedPill {
-  display: inline-flex;
+.couponCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px -2px rgba(15, 23, 42, 0.08);
+  border-color: #cbd5e1;
+}
+
+.couponCard.featuredCard {
+  border-color: #93c5fd;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  box-shadow: 0 4px 14px -2px rgba(37, 99, 235, 0.07);
+}
+
+.cardLeft {
+  display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 12px;
-  border-radius: 9999px;
-  font-size: 11.5px;
-  font-weight: 750;
-  background: #ecfdf5;
-  color: #047857;
-  border: 1px solid #a7f3d0;
-  box-shadow: 0 1px 2px rgba(5, 150, 105, 0.08);
+  gap: 18px;
+  flex: 1;
 }
 
-.pulsingDot {
+.discountBadge {
+  min-width: 86px;
+  height: 68px;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.discountBadgeEmerald {
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+}
+
+.discountVal {
+  font-size: 1.25rem;
+  font-weight: 850;
+  color: #1e3a8a;
+  line-height: 1.1;
+}
+
+.discountBadgeEmerald .discountVal {
+  color: #065f46;
+}
+
+.discountTag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #2563eb;
+  text-transform: uppercase;
+}
+
+.discountBadgeEmerald .discountTag {
+  color: #059669;
+}
+
+.cardDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.cardMetaRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2px;
+}
+
+.cardStatusPill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #059669;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.greenDot {
   width: 6px;
   height: 6px;
-  background-color: #059669;
   border-radius: 50%;
-  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.3);
-}
-
-.badge3dExtruded {
-  background: #f1f5f9;
-  border-radius: 8px;
-  box-shadow: 
-    inset 1.5px 1.5px 3px rgba(15, 23, 42, 0.06),
-    inset -1.5px -1.5px 3px #ffffff,
-    0 1px 2px rgba(15, 23, 42, 0.04);
-  border: 1px solid #e2e8f0;
-  font-weight: 850;
-  font-size: 11px;
-  padding: 4px 10px;
-  color: #334155;
-  letter-spacing: 0.6px;
-}
-
-/* Card Body */
-.cardBody {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.offerRow {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 16px;
-}
-
-.valueGraphicNavy {
-  width: 62px;
-  height: 62px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #1e3a8a 0%, #1d4ed8 100%);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 
-    0 8px 18px rgba(30, 58, 138, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-.valueGraphicEmerald {
-  width: 62px;
-  height: 62px;
-  flex-shrink: 0;
-  border-radius: 16px;
-  background: linear-gradient(135deg, #059669 0%, #047857 100%);
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid rgba(255, 255, 255, 0.85);
-  box-shadow: 
-    0 8px 18px rgba(5, 150, 105, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.4);
-}
-
-.graphicMain {
-  font-size: 17px;
-  font-weight: 900;
-  line-height: 1;
-}
-
-.graphicSub {
-  font-size: 10px;
-  font-weight: 850;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  opacity: 0.95;
-  margin-top: 3px;
-}
-
-.offerText {
-  flex: 1;
+  background: #10b981;
 }
 
 .cardTitle {
-  font-size: 17.5px;
-  font-weight: 850;
+  font-size: 1.05rem;
+  font-weight: 750;
   color: #0f172a;
+  margin: 0;
   line-height: 1.35;
-  margin: 0 0 6px 0;
-  letter-spacing: -0.3px;
 }
 
 .cardDesc {
-  font-size: 13.5px;
+  font-size: 0.84rem;
   color: #64748b;
-  line-height: 1.5;
   margin: 0;
+  line-height: 1.45;
 }
 
-/* 3D Code Box with Inset Depth */
-.codeBox3d {
-  background: #f8fafc;
-  border: 2px dashed #94a3b8;
-  box-shadow: inset 0 2px 4px rgba(15, 23, 42, 0.05);
-  border-radius: 10px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-}
-
-.codeLabelWrapper {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.codeLabel {
-  font-size: 11px;
-  font-weight: 750;
-  color: #64748b;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.codeBadge {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 14px;
-  font-weight: 900;
-  color: #0f172a;
-  background: #ffffff;
-  padding: 3px 9px;
-  border-radius: 6px;
-  border: 1px solid #cbd5e1;
-  letter-spacing: 0.8px;
-  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.05);
-}
-
-.autoCopiedPill {
-  font-size: 11px;
-  font-weight: 750;
-  color: #059669;
-  background: #ecfdf5;
-  padding: 3px 8px;
-  border-radius: 6px;
-  border: 1px solid #a7f3d0;
-}
-
-.dealFeatureRow {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  box-shadow: inset 0 1px 2px rgba(15, 23, 42, 0.03);
-  border-radius: 10px;
-  padding: 10px 14px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.dealFeatureText {
-  font-size: 12px;
-  color: #64748b;
-  font-weight: 550;
-}
-
-.dealFeatureBadge {
-  font-size: 12px;
-  font-weight: 800;
-  color: #059669;
-}
-
-/* Footer & 3D Tactile Buttons */
-.cardFooter {
+/* Right side Action */
+.cardRight {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  align-items: flex-end;
+  gap: 8px;
+  flex-shrink: 0;
 }
 
-.ctaButton {
-  width: 100%;
-  height: 50px;
-  border-radius: 12px;
-  font-size: 14px;
-  font-weight: 850;
-  cursor: pointer;
-  display: flex;
+.codePill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  border: 1px dashed #94a3b8;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-family: monospace;
+  font-size: 0.85rem;
+  font-weight: 750;
+  color: #0f172a;
+  letter-spacing: 0.05em;
+}
+
+.dealPill {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: #059669;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.ctaBtn {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  font-weight: 700;
   text-decoration: none;
-  letter-spacing: 0.3px;
-  transition: all 0.1s ease;
-}
-
-.btn3dNavy {
-  background: linear-gradient(180deg, #1e3a8a 0%, #172554 100%);
-  color: #ffffff;
   border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 
-    0 4px 0 #0f172a,
-    0 8px 16px rgba(30, 58, 138, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
-}
-
-.btn3dNavy:hover {
-  background: linear-gradient(180deg, #1d4ed8 0%, #1e3a8a 100%);
-}
-
-.btn3dNavy:active {
-  transform: translateY(3px);
-  box-shadow: 
-    0 1px 0 #0f172a,
-    0 2px 4px rgba(30, 58, 138, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
-}
-
-.btn3dEmerald {
-  background: linear-gradient(180deg, #059669 0%, #047857 100%);
+  cursor: pointer;
+  background: #1e3a8a;
   color: #ffffff;
-  border: none;
-  border-top: 1px solid rgba(255, 255, 255, 0.35);
-  box-shadow: 
-    0 4px 0 #065f46,
-    0 8px 16px rgba(5, 150, 105, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+  transition: all 0.15s ease;
+  min-width: 125px;
 }
 
-.btn3dEmerald:hover {
-  background: linear-gradient(180deg, #047857 0%, #065f46 100%);
+.ctaBtn:hover {
+  background: #1d4ed8;
+  box-shadow: 0 4px 12px rgba(30, 58, 138, 0.22);
 }
 
-.btn3dEmerald:active {
-  transform: translateY(3px);
-  box-shadow: 
-    0 1px 0 #065f46,
-    0 2px 4px rgba(5, 150, 105, 0.2),
-    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+.ctaBtnEmerald {
+  background: #059669;
+}
+
+.ctaBtnEmerald:hover {
+  background: #047857;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.22);
 }
 
 .arrowIcon {
-  font-size: 15px;
-  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1;
 }
 
-.trustFooter {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  font-size: 11.5px;
-  color: #64748b;
-  font-weight: 600;
-  padding-top: 2px;
-}
-
-/* 3D Elevated Trust Note */
-.trustNote {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 20px 26px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  border: 1px solid #e2e8f0;
-  border-top: 1px solid #ffffff;
-  box-shadow: 
-    0 1px 3px rgba(15, 23, 42, 0.03),
-    0 6px 18px -4px rgba(15, 23, 42, 0.05),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
-}
-
-.trustNoteText {
-  font-size: 13px;
-  color: #64748b;
-  line-height: 1.5;
-}
-
-.trustNoteText strong {
-  color: #0f172a;
-}
-
-.secureBadge {
-  font-size: 11.5px;
-  font-weight: 750;
-  color: #1e3a8a;
-  background: #eff6ff;
-  padding: 5px 12px;
-  border-radius: 8px;
-  border: 1px solid #bfdbfe;
-  white-space: nowrap;
-  box-shadow: 0 2px 6px rgba(30, 58, 138, 0.08);
-}
-
-/* Below-the-Fold SEO & Compliance Section */
-.infoSection {
-  margin-top: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
-.stepsCard,
-.faqCard {
-  background: #ffffff;
-  border-radius: 18px;
-  padding: 26px 28px;
-  border: 1px solid #e2e8f0;
-  box-shadow:
-    0 1px 3px rgba(15, 23, 42, 0.03),
-    0 6px 18px -4px rgba(15, 23, 42, 0.05);
-}
-
-.sectionHeading {
-  font-size: 16.5px;
-  font-weight: 850;
-  color: #0f172a;
-  margin: 0 0 18px 0;
-  letter-spacing: -0.3px;
-}
-
-.stepsGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-.stepItem {
-  display: flex;
-  align-items: flex-start;
-  gap: 12px;
+/* Minimal Trust Strip */
+.trustStrip {
+  text-align: center;
+  padding: 12px 16px;
   background: #f8fafc;
   border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 16px;
-}
-
-.stepNumber {
-  width: 28px;
-  height: 28px;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: #1e3a8a;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 850;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.stepTitle {
-  font-size: 14px;
-  font-weight: 800;
-  color: #0f172a;
-  margin: 0 0 4px 0;
-}
-
-.stepDesc {
-  font-size: 12.5px;
-  color: #64748b;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.faqGrid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 18px;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: #475569;
   margin-bottom: 20px;
 }
 
-.faqItem {
-  background: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 14px;
-  padding: 16px 18px;
-}
-
-.faqQuestion {
-  font-size: 14px;
-  font-weight: 800;
+.trustStrip strong {
   color: #0f172a;
-  margin: 0 0 6px 0;
 }
 
-.faqAnswer {
-  font-size: 12.5px;
-  color: #64748b;
-  line-height: 1.55;
-  margin: 0;
+/* Minimal Muted Disclosure */
+.disclosure {
+  text-align: center;
+  font-size: 0.74rem;
+  color: #94a3b8;
+  line-height: 1.5;
 }
 
-.complianceFooter {
-  border-top: 1px solid #e2e8f0;
-  padding-top: 16px;
-  font-size: 11.5px;
-  color: #64748b;
-  line-height: 1.55;
-}
-
-.complianceFooter strong {
-  color: #334155;
-}
-
-@media (max-width: 768px) {
-  .pageContainer {
-    padding: 14px 12px 48px 12px;
-  }
+@media (max-width: 640px) {
   .storeHeader {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 14px;
-    margin-bottom: 14px;
-    gap: 12px;
-    border-radius: 14px;
-  }
-  .storeLogo,
-  .fallbackLogo {
-    width: 52px;
-    height: 52px;
-    min-width: 52px;
-    min-height: 52px;
-    padding: 4px;
-    border-radius: 10px;
-    font-size: 20px;
-  }
-  .storeTitle {
-    font-size: 17px;
-  }
-  .storeSubtitle {
-    font-size: 12px;
-  }
-  .trustPill {
-    display: none;
-  }
-  .cardContainer {
-    padding: 16px;
-    border-radius: 16px;
-  }
-  .cardsGrid,
-  .stepsGrid,
-  .faqGrid {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
-  .trustNote {
     flex-direction: column;
     align-items: flex-start;
+    padding: 18px;
+  }
+  .couponCard {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 16px;
+  }
+  .cardRight {
+    width: 100%;
+    align-items: stretch;
+    margin-top: 10px;
+  }
+  .ctaBtn {
+    width: 100%;
   }
 }

@@ -111,11 +111,11 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       : [
           {
             question: `Are these ${store.name} promo codes verified and working?`,
-            answer: `Yes. Every ${store.name} coupon code and discount offer on PromoRegistry is hand-tested by our verification team for active checkout savings.`,
+            answer: `Yes. Every ${store.name} coupon code and discount offer on PromoRegistry is verified for active checkout savings.`,
           },
           {
             question: `How do I apply a ${store.name} coupon code at checkout?`,
-            answer: `Click "Get Code" on any ${store.name} offer to copy the promo code automatically, then paste it into the discount box at the official ${store.name} checkout.`,
+            answer: `Click "Get Code" on any offer to copy the code automatically, then paste it into the promo box at the official ${store.name} checkout.`,
           },
         ];
 
@@ -179,7 +179,7 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
 
   return (
     <div className={storeStyles.pageContainer}>
-      {/* Search Engine Schemas (Preserved 100% for Google Ads QS 10/10 & Rich Snippets) */}
+      {/* Search Engine Schemas (Preserved 100% for Google Ads QS 10/10) */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -196,23 +196,19 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
       {/* Clean Navigation */}
       <div className={storeStyles.backLinkContainer}>
         <a href="/" className={storeStyles.backLink}>
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-            <line x1="19" y1="12" x2="5" y2="12" />
-            <polyline points="12 19 5 12 12 5" />
-          </svg>
-          <span>All Stores</span>
+          ← All Stores
         </a>
       </div>
 
-      {/* Clean, Elevated Store Header (Distinct PromoRegistry Styling) */}
+      {/* Clean, Simple Store Header */}
       <section className={storeStyles.storeHeader}>
         <div className={storeStyles.brandInfo}>
           {bannerLogo ? (
             <img
               src={bannerLogo}
               alt={`${store.name} Logo`}
-              width={160}
-              height={64}
+              width={140}
+              height={56}
               className={storeStyles.storeLogo}
               onError={() => setBannerLogoError(true)}
             />
@@ -220,22 +216,22 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
             <div className={storeStyles.fallbackLogo}>{store.name.charAt(0).toUpperCase()}</div>
           )}
           <div>
-            <div style={{ display: "inline-block", fontSize: "0.72rem", fontWeight: 800, letterSpacing: "0.06em", color: "#0284c7", background: "#f0f9ff", border: "1px solid #bae6fd", padding: "3px 8px", borderRadius: "6px", marginBottom: "6px", textTransform: "uppercase" }}>
-              PROMOREGISTRY VERIFIED PARTNER
+            <div className={storeStyles.storeBadge}>
+              VERIFIED STORE
             </div>
             <h1 className={storeStyles.storeTitle}>{store.name} Promo Codes &amp; Coupons</h1>
             <p className={storeStyles.storeSubtitle}>
-              Direct verified savings &amp; official discount codes. Audited active on {todayLabel}.
+              Verified active offers. Tested on {todayLabel}.
             </p>
           </div>
         </div>
 
         <div className={storeStyles.trustPill}>
-          <span className={storeStyles.pulseDot}></span> Verified Active • {todayLabel}
+          <span className={storeStyles.pulseDot}></span> Audited Active • {todayLabel}
         </div>
       </section>
 
-      {/* Focused, High-Converting Coupon Cards Grid */}
+      {/* Clean, Simple Cards Grid (No extra bloated text) */}
       <section className={storeStyles.cardsGrid}>
         {coupons.map((coupon, idx) => {
           const isDirectDeal = !coupon.code || coupon.code === "DEAL";
@@ -247,107 +243,65 @@ export default function StoreClient({ store, coupons }: StoreClientProps) {
           return (
             <div
               key={coupon.id}
-              className={`${storeStyles.cardContainer} ${idx === 0 ? storeStyles.primaryCard : ""}`}
+              className={`${storeStyles.couponCard} ${idx === 0 ? storeStyles.featuredCard : ""}`}
               onClick={(e) => handleAction(e, coupon)}
             >
-              {/* Header */}
-              <div className={storeStyles.cardHeader}>
-                <span className={storeStyles.verifiedPill}>
-                  <span className={storeStyles.pulsingDot}></span> Verified Active
-                </span>
-                <span className={storeStyles.badge3dExtruded}>
-                  {isDirectDeal ? "AUTO-APPLIED" : "VERIFIED CODE"}
-                </span>
-              </div>
-
-              {/* Main Body */}
-              <div className={storeStyles.cardBody}>
-                <div className={storeStyles.offerRow}>
-                  <div className={isDirectDeal ? storeStyles.valueGraphicEmerald : storeStyles.valueGraphicNavy}>
-                    <span className={storeStyles.graphicMain}>{graphicMain}</span>
-                    <span className={storeStyles.graphicSub}>{graphicSub}</span>
-                  </div>
-                  <div className={storeStyles.offerText}>
-                    <h3 className={storeStyles.cardTitle}>{coupon.title || `${coupon.discount} at ${store.name}`}</h3>
-                    <p className={storeStyles.cardDesc}>{coupon.description}</p>
-                  </div>
+              {/* Left Side: Discount Badge + Title & Description */}
+              <div className={storeStyles.cardLeft}>
+                <div className={`${storeStyles.discountBadge} ${isDirectDeal ? storeStyles.discountBadgeEmerald : ""}`}>
+                  <span className={storeStyles.discountVal}>{graphicMain}</span>
+                  <span className={storeStyles.discountTag}>{graphicSub}</span>
                 </div>
-
-                {/* Code / Deal Feature Indicator */}
-                {!isDirectDeal ? (
-                  <div className={storeStyles.codeBox3d}>
-                    <div className={storeStyles.codeLabelWrapper}>
-                      <span className={storeStyles.codeLabel}>Promo Code:</span>
-                      <span className={storeStyles.codeBadge}>
-                        {coupon.code ? coupon.code : "••••••••"}
-                      </span>
-                    </div>
-                    <span className={storeStyles.autoCopiedPill}>
-                      {isCopied ? "Copied! ✓" : "Click to Copy & Visit"}
+                <div className={storeStyles.cardDetails}>
+                  <div className={storeStyles.cardMetaRow}>
+                    <span className={storeStyles.cardStatusPill}>
+                      <span className={storeStyles.greenDot}></span> Verified
                     </span>
                   </div>
-                ) : (
-                  <div className={storeStyles.dealFeatureRow}>
-                    <span className={storeStyles.dealFeatureText}>Direct merchant discount</span>
-                    <span className={storeStyles.dealFeatureBadge}>No Code Required ✓</span>
-                  </div>
-                )}
+                  <h3 className={storeStyles.cardTitle}>{coupon.title || `${coupon.discount} at ${store.name}`}</h3>
+                  <p className={storeStyles.cardDesc}>{coupon.description}</p>
+                </div>
               </div>
 
-              {/* CTA Push Button */}
-              <div className={storeStyles.cardFooter}>
+              {/* Right Side: Code Pill + Simple CTA Button */}
+              <div className={storeStyles.cardRight}>
+                {!isDirectDeal ? (
+                  <span className={storeStyles.codePill}>{coupon.code}</span>
+                ) : (
+                  <span className={storeStyles.dealPill}>Auto-Applied</span>
+                )}
                 <button
                   type="button"
                   onClick={(e) => handleAction(e, coupon)}
-                  className={`${storeStyles.ctaButton} ${isDirectDeal ? storeStyles.btn3dEmerald : storeStyles.btn3dNavy}`}
+                  className={`${storeStyles.ctaBtn} ${isDirectDeal ? storeStyles.ctaBtnEmerald : ""}`}
                 >
                   {!isDirectDeal ? (
                     <>
-                      <span>{isCopied ? "Code Copied! ✓" : "Get Code & Save"}</span>
+                      <span>{isCopied ? "Copied! ✓" : "Get Code"}</span>
                       <span className={storeStyles.arrowIcon}>→</span>
                     </>
                   ) : (
                     <>
-                      <span>{isCopied ? "Opening Store..." : "Claim Deal"}</span>
+                      <span>{isCopied ? "Opening..." : "Get Deal"}</span>
                       <span className={storeStyles.arrowIcon}>→</span>
                     </>
                   )}
                 </button>
-
-                <div className={storeStyles.trustFooter}>
-                  <span>✓ 100% Checkout Verified</span>
-                  <span>•</span>
-                  <span>Free &amp; Instant Access</span>
-                </div>
               </div>
             </div>
           );
         })}
       </section>
 
-      {/* Clean Trust Guarantee Strip */}
-      <section className={storeStyles.trustNote}>
-        <div className={storeStyles.trustNoteText}>
-          <strong>PromoRegistry Guarantee:</strong> Clicking any offer automatically copies your discount code and opens the official {store.name} online checkout.
-        </div>
-        <span className={storeStyles.secureBadge}>🔒 Direct Checkout Verified</span>
-      </section>
+      {/* Simple 1-Line Trust Note */}
+      <div className={storeStyles.trustStrip}>
+        <strong>Direct Checkout Verified:</strong> Clicking any offer copies your code automatically and opens the official {store.name} store.
+      </div>
 
-      {/* Streamlined, Compact FAQ & Disclosure (Clean & Minimal below fold) */}
-      <section style={{ marginTop: "32px", borderTop: "1px solid #e2e8f0", paddingTop: "24px" }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px", marginBottom: "24px" }}>
-          {faqList.slice(0, 2).map((faq, fIdx) => (
-            <div key={fIdx} style={{ background: "#f8fafc", borderRadius: "12px", padding: "16px", border: "1px solid #e2e8f0" }}>
-              <h3 style={{ fontSize: "0.88rem", fontWeight: 700, color: "#0f172a", marginBottom: "6px" }}>{faq.question}</h3>
-              <p style={{ fontSize: "0.82rem", color: "#475569", lineHeight: 1.5, margin: 0 }}>{faq.answer}</p>
-            </div>
-          ))}
-        </div>
-
-        <div style={{ textAlign: "center", fontSize: "0.74rem", color: "#94a3b8", lineHeight: 1.5 }}>
-          PromoRegistry curates verified promotional discounts and deals for {store.name}. When you make a purchase through our links, we may earn an affiliate commission at zero extra cost to you.
-        </div>
-      </section>
+      {/* Simple 1-Line Muted Disclosure */}
+      <div className={storeStyles.disclosure}>
+        PromoRegistry may earn an affiliate commission from purchases made through our links at zero extra cost to you.
+      </div>
 
       {/* VIP Modal (Retained 100%) */}
       {activeCoupon && (
