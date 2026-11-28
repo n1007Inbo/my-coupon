@@ -99,7 +99,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
     aliases: ["meaco-uk", "meacouk", "meaco-dehumidifiers", "meacodehumidifiers", "meaco-fans", "meaco-discount-code"],
     website: "https://www.meaco.com/",
     affiliate_url: "https://www.meaco.com/",
-    logo: "/logos/meaco.svg",
+    logo: "/logos/meaco.png",
     country: "UK",
     description: "Official Meaco UK verified discount voucher codes and deals. Save on Which? Best Buy award-winning low-energy dehumidifiers, whisper-quiet MeacoFans, and HEPA air purifiers with exclusive savings and free UK mainland delivery.",
     coupons: [
