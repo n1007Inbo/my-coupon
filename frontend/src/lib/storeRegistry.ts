@@ -52,7 +52,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: false,
         discount: "20% OFF",
         title: "20% off coupon code",
-        description: "Apply this verified promo code at checkout for 20% off your purchase of BOROUX water filtration systems and accessories.",
+        description: "20% off water filtration systems and accessories.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -63,7 +63,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: false,
         discount: "25% OFF",
         title: "25% off code – Early Black Friday Sale",
-        description: "Special seasonal Early Black Friday offer: Redeem this verified promo code at checkout to save 25% on BOROUX stainless steel gravity water filters.",
+        description: "Save 25% on stainless steel gravity water filters.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -74,7 +74,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "15% OFF",
         title: "15% Off BOROUX Replacement Filter Bundles",
-        description: "Save 15% automatically on multi-pack BOROUX Black replacement water filter elements designed for maximum contaminant reduction.",
+        description: "15% off multi-pack replacement filter bundles.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -85,7 +85,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "FREE SHIP",
         title: "Free US Shipping on Orders Over $50",
-        description: "Fast and free standard tracked delivery across the United States automatically applied at checkout on orders over $50.",
+        description: "Free delivery on all US orders over $50.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://lkmstore.com/g/ndacFQE"
@@ -109,7 +109,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "35% OFF",
         title: "Up to 35% Off Complete Solar Kit Systems",
-        description: "Save up to 35% automatically on off-grid solar kits, hybrid inverters, and high-capacity battery storage systems during the official seasonal sale.",
+        description: "Save up to 35% on complete off-grid solar kits.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com%2Fpages%2Fsale"
@@ -120,7 +120,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "30% OFF",
         title: "30% Off Hybrid Inverters & LiFePO4 Batteries",
-        description: "Instant 30% markdown on 48V server rack batteries, wall-mounted PowerMax packs, and all-in-one solar charge inverters.",
+        description: "30% off hybrid inverters and LiFePO4 batteries.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com%2Fpages%2Fsale"
@@ -131,7 +131,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "3% OFF",
         title: "3% Off First Order with Newsletter Sign-Up",
-        description: "Subscribe to the official SunGoldPower newsletter or referral club to get 3% off your entire first purchase instantly.",
+        description: "3% off your first purchase with newsletter sign-up.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com"
@@ -142,7 +142,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "FREE SHIP",
         title: "Fast & Free Shipping Across Continental USA",
-        description: "Enjoy zero delivery fees on all solar panels, heavy-duty battery racks, and inverters shipped anywhere in the continental United States.",
+        description: "Free shipping across continental USA on all orders.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://connectadtrack.com/?s=cpa&u=ceisna8bjodc5606cmdomnp2q8bf1f346w9t9racuvlvn48j4jw&url=https%3A%2F%2Fsungoldpower.com"
@@ -1022,7 +1022,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         code: "METHEWDIPPY5",
         discount: "5% OFF",
         title: "5% Off Sitewide on Multi-Material Saws & Power Tools",
-        description: "Official verified discount code: Apply promo code at checkout for 5% off all chop saws, miter saws, table saws, and blades.",
+        description: "5% off all chop saws, miter saws, and blades.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
@@ -1033,7 +1033,7 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
         is_auto_applied: true,
         discount: "FREE SHIPPING",
         title: "Free Fast Shipping Across Continental USA",
-        description: "Enjoy free standard delivery across the United States on all qualifying power tool and blade orders automatically applied at checkout.",
+        description: "Free standard shipping on all qualifying US orders.",
         is_verified: true,
         expiry_date: "Dec 31, 2026",
         affiliate_url: "https://store.evolutionpowertools.com/?ref=METHEWDIPPY"
