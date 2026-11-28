@@ -47,6 +47,17 @@ export const STORE_REGISTRY: RegistryStore[] = [  {
     description: "Official BOROUX verified discount codes and promotional offers. Shop premium gravity-fed stainless steel water filtration systems, BOROUX Black replacement elements, and borosilicate glass bottles with exclusive deals and free US shipping.",
     coupons: [
       {
+        id: "boroux-holiday-25",
+        code: "HOLIDAY25",
+        is_auto_applied: false,
+        discount: "25% OFF",
+        title: "25% Off BOROUX Holiday Discount Code",
+        description: "Apply promo code HOLIDAY25 at checkout for an exclusive 25% discount on BOROUX water filter systems, replacement filters, and accessories.",
+        is_verified: true,
+        expiry_date: "Dec 31, 2026",
+        affiliate_url: "https://lkmstore.com/g/ndacFQE"
+      },
+      {
         id: "boroux-reg-1",
         code: "",
         is_auto_applied: true,
